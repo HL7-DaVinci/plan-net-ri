@@ -1,5 +1,4 @@
 #!/bin/sh
 
-mvn package && \
-  docker build -t hapi-fhir/hapi-fhir-jpaserver-starter .
+docker build -t artifacts.mitre.org:8200/plan-net-reference-server:latest .
 
