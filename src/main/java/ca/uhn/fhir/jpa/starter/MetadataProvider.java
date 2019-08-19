@@ -23,7 +23,7 @@ public class MetadataProvider extends JpaConformanceProviderR4 {
   @Override
   public CapabilityStatement getServerConformance(HttpServletRequest theRequest) {
     CapabilityStatement metadata = super.getServerConformance(theRequest);
-    metadata.setTitle("Da Vinci US Drug Formulary Reference Implementation");
+    metadata.setTitle("Da Vinci Payer Data exchange Plan Network Reference Implementation");
     metadata.setStatus(PublicationStatus.DRAFT);
     metadata.setExperimental(true);
     metadata.setPublisher("Da Vinci");
@@ -38,8 +38,8 @@ public class MetadataProvider extends JpaConformanceProviderR4 {
     // software.setName("https://github.com/HL7-DaVinci/drug-formulary");
     // metadata.setSoftware(software);
 
-    metadata.addImplementationGuide("http://build.fhir.org/ig/HL7/davinci-pdex-formulary/index.html");
-    metadata.addImplementationGuide("https://wiki.hl7.org/Da_Vinci_PDex-formulary_FHIR_IG_Proposal");
+    metadata.addImplementationGuide("https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/index.html");
+    metadata.addImplementationGuide("https://wiki.hl7.org/Da_Vinci_PDex-plan-net_FHIR_IG_Proposal");
 
     updateRestComponents(metadata.getRest());
     return metadata;
@@ -59,10 +59,32 @@ public class MetadataProvider extends JpaConformanceProviderR4 {
         interactions.add(new ResourceInteractionComponent().setCode(TypeRestfulInteraction.VREAD));
         resource.setInteraction(interactions);
 
-        if(resource.getType() == "MedicationKnowledge") {
-          resource.setProfile("http://hl7.org/fhir/us/Davinci-drug-formulary/StructureDefinition/usdf-FormularyDrug");
-        } else if(resource.getType() == "List") {
-          resource.setProfile("http://hl7.org/fhir/us/Davinci-drug-formulary/StructureDefinition/usdf-CoveragePlan");
+        switch(resource.getType()) {
+        case "Endpoint":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint");
+          break;
+        case "HealthcareService":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService");
+          break;
+        case "InsurancePlan":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan");
+          break;
+        case "Location":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location");
+          break;
+        case "Organization":
+          resource.getSupportedProfile().add(new CanonicalType("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"));
+          resource.getSupportedProfile().add(new CanonicalType("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"));
+          break;
+        case "OrganizationAffiliation":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation");
+          break;
+        case "Practitioner":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner");
+          break;
+        case "PractitionerRole":
+          resource.setProfile("http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole");
+          break;
         }
       }
     }
