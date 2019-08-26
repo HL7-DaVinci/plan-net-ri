@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  formulary:
+  plan-net:
     image: hapi-fhir/hapi-fhir-jpaserver-starter:latest
     volumes:
       - ./data:/var/lib/jetty/target

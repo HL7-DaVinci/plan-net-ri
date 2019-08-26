@@ -4,7 +4,7 @@ require 'pry'
 FHIR_SERVER = 'http://localhost:8080/hapi-fhir-jpaserver/fhir/'
 
 def upload_plan_net_resources
-  # conformance_file_path = File.join(__dir__, 'conformance', '*.json')
+  # file_path = File.join(__dir__, 'conformance', '*.json')
   file_path = File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
   filenames = Dir.glob(file_path)
                 .select { |filename| filename.end_with? '.json' }
