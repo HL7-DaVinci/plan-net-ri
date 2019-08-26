@@ -5,7 +5,8 @@ FHIR_SERVER = 'http://localhost:8080/hapi-fhir-jpaserver/fhir/'
 
 def upload_plan_net_resources
   # file_path = File.join(__dir__, 'conformance', '*.json')
-  file_path = File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
+  # file_path = File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
+  file_path = File.join(__dir__, 'conformance', 'SearchParameter*')
   filenames = Dir.glob(file_path)
                 .select { |filename| filename.end_with? '.json' }
   puts "#{filenames.length} resources to upload"
@@ -46,6 +47,7 @@ end
 
 def upload_resource(resource)
   resource_type = resource[:resourceType]
+  resource[:status] = 'active' if resource_type == 'SearchParameter'
   id = resource[:id]
   HTTParty.put(
     "#{FHIR_SERVER}/#{resource_type}/#{id}",
