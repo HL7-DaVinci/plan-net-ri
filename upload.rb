@@ -5,15 +5,15 @@ FHIR_SERVER = 'http://localhost:8080/hapi-fhir-jpaserver/fhir/'
 
 def upload_plan_net_resources
   # file_path = File.join(__dir__, 'conformance', '*.json')
-  # file_path = File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
-  file_path = File.join(__dir__, 'conformance', 'SearchParameter*')
+  file_path = File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
+  # file_path = File.join(__dir__, 'conformance', 'SearchParameter*')
   filenames = Dir.glob(file_path)
                 .select { |filename| filename.end_with? '.json' }
   puts "#{filenames.length} resources to upload"
   old_retry_count = filenames.length
   loop do
     filenames_to_retry = []
-    filenames.each do |filename|
+    filenames.each_with_index do |filename, index|
       resource = JSON.parse(File.read(filename), symbolize_names: true)
       if filename.end_with? ".transaction.json"
 
@@ -31,6 +31,9 @@ def upload_plan_net_resources
         filenames_to_retry << filename unless response.success?
       end
 
+      if index % 100 == 0
+        puts index
+      end
     end
     break if filenames_to_retry.empty?
     retry_count = filenames_to_retry.length
