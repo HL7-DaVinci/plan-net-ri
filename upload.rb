@@ -4,11 +4,14 @@ require 'pry'
 FHIR_SERVER = 'http://localhost:8080/hapi-fhir-jpaserver/fhir/'
 
 def upload_plan_net_resources
-  # file_path = File.join(__dir__, 'conformance', '*.json')
-  file_path = File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
-  # file_path = File.join(__dir__, 'conformance', 'SearchParameter*')
-  filenames = Dir.glob(file_path)
-                .select { |filename| filename.end_with? '.json' }
+  file_paths = [
+    File.join(__dir__, 'conformance', '*.json'),
+    File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
+  ]
+  filenames = file_paths.flat_map do |file_path|
+    Dir.glob(file_path)
+      .select { |filename| filename.end_with? '.json' }
+  end
   puts "#{filenames.length} resources to upload"
   old_retry_count = filenames.length
   loop do
