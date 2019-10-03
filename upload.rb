@@ -5,7 +5,7 @@ FHIR_SERVER = 'http://localhost:8080/hapi-fhir-jpaserver/fhir/'
 
 def upload_plan_net_resources
   file_paths = [
-    File.join(__dir__, 'conformance', '*.json'),
+    File.join(__dir__, 'conformance', '*', '*.json'),
     File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
   ]
   filenames = file_paths.flat_map do |file_path|
