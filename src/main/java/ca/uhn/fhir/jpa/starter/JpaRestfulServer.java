@@ -1,34 +1,30 @@
 package ca.uhn.fhir.jpa.starter;
 
+import java.util.Arrays;
+
+import javax.servlet.ServletException;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.cors.CorsConfiguration;
+
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.context.FhirVersionEnum;
 import ca.uhn.fhir.interceptor.api.IInterceptorService;
 import ca.uhn.fhir.jpa.dao.DaoConfig;
 import ca.uhn.fhir.jpa.dao.IFhirSystemDao;
 import ca.uhn.fhir.jpa.provider.SubscriptionTriggeringProvider;
-import ca.uhn.fhir.jpa.provider.r4.JpaConformanceProviderR4;
 import ca.uhn.fhir.jpa.provider.r4.JpaSystemProviderR4;
 import ca.uhn.fhir.jpa.provider.r4.TerminologyUploaderProviderR4;
 import ca.uhn.fhir.jpa.search.DatabaseBackedPagingProvider;
-import ca.uhn.fhir.jpa.starter.MetadataProvider;
-import ca.uhn.fhir.jpa.starter.ReadOnlyInterceptor;
 import ca.uhn.fhir.jpa.subscription.SubscriptionInterceptorLoader;
 import ca.uhn.fhir.jpa.subscription.module.interceptor.SubscriptionDebugLogInterceptor;
 import ca.uhn.fhir.jpa.util.ResourceProviderFactory;
-import ca.uhn.fhir.model.dstu2.composite.MetaDt;
 import ca.uhn.fhir.narrative.DefaultThymeleafNarrativeGenerator;
 import ca.uhn.fhir.rest.server.HardcodedServerAddressStrategy;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.interceptor.CorsInterceptor;
 import ca.uhn.fhir.rest.server.interceptor.LoggingInterceptor;
 import ca.uhn.fhir.rest.server.interceptor.ResponseHighlighterInterceptor;
-import org.hl7.fhir.dstu3.model.Bundle;
-import org.hl7.fhir.dstu3.model.Meta;
-import org.springframework.context.ApplicationContext;
-import org.springframework.web.cors.CorsConfiguration;
-
-import javax.servlet.ServletException;
-import java.util.Arrays;
 
 public class JpaRestfulServer extends RestfulServer {
 
@@ -110,9 +106,11 @@ public class JpaRestfulServer extends RestfulServer {
          */
         ResponseHighlighterInterceptor responseHighlighterInterceptor = new ResponseHighlighterInterceptor();
         ReadOnlyInterceptor readOnlyInterceptor = new ReadOnlyInterceptor();
-        ;
+        NearQueryInterceptor nearQueryInterceptor = new NearQueryInterceptor();
+        
         this.registerInterceptor(responseHighlighterInterceptor);
         this.registerInterceptor(readOnlyInterceptor);
+        this.registerInterceptor(nearQueryInterceptor);
 
         /*
          * Add some logging for each request
