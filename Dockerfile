@@ -8,8 +8,4 @@ RUN mvn -f /usr/src/app/pom.xml clean package
 
 FROM jetty:9-jre8-alpine
 COPY --from=build /usr/src/app/target/hapi-fhir-jpaserver.war /var/lib/jetty/webapps/hapi-fhir-jpaserver.war
-ADD ./data /var/lib/jetty/target
-USER root
-RUN chown -R jetty:jetty /var/lib/jetty/target
-USER jetty:jetty
 EXPOSE 8080

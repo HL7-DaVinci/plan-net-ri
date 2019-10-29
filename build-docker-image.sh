@@ -1,4 +1,4 @@
 #!/bin/sh
 
-docker build -t artifacts.mitre.org:8200/plan-net-reference-server:latest .
+docker build -t plan-net-write:latest .
 

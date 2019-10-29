@@ -2,7 +2,7 @@ version: '3'
 
 services:
   plan-net:
-    image: hapi-fhir/hapi-fhir-jpaserver-starter:latest
+    image: plan-net-write:latest
     volumes:
       - ./data:/var/lib/jetty/target
     ports:
