@@ -15,6 +15,7 @@ import org.hl7.fhir.r4.model.Organization;
 import org.hl7.fhir.r4.model.OrganizationAffiliation;
 import org.hl7.fhir.r4.model.PractitionerRole;
 import org.hl7.fhir.r4.model.Reference;
+import org.hl7.fhir.r4.model.api.IAnyResource;
 import org.hl7.fhir.r4.model.api.IBaseResource;
 
 import ca.uhn.fhir.jpa.provider.r4.JpaResourceProviderR4;
@@ -218,7 +219,6 @@ public class NearQueryInterceptor extends InterceptorAdapter {
         ArrayList<String> ids = new ArrayList<String>();
 
         for (IBaseResource res : resources) {
-            boolean inRange = false;
             List<Reference> locationRefs;
             String thisID;
             try { // kinda gross code but no clear alternative, working with a list of lightly defined IBaseResources
@@ -251,13 +251,44 @@ public class NearQueryInterceptor extends InterceptorAdapter {
     private ArrayList<String> getReverseChainNearIDs(ArrayList<IBaseResource> resources, Range range, 
                                                     String[] chain, String type) {
         ArrayList<String> aggregatorIDs = getChainNearIDs(resources, range, chain[1]);
+        ArrayList<String> ids = new ArrayList<String>();
 
         for (IBaseResource res : resources) {
-            String resClassName = res.getClass().getName();
-            if (!resClassName.endsWith(type)) continue;
+
+            String thisID;
+            List<Reference> refs;
+            try { // also kinda uncomfortable
+                Class resClass = res.getClass();
+                if (!resClass.getName().endsWith(chain[1])) continue;
+                Method getId = resClass.getMethod("getId", null);
+                thisID = (String) getId.invoke(res, null);
+                if (!aggregatorIDs.contains(thisID)) continue;
+                Method getType = resClass.getMethod("get" + type, null);
+                if (getType.getReturnType().getName().endsWith("Reference")) {
+                    refs = new ArrayList<Reference>();
+                    refs.add((Reference) getType.invoke(res, null));
+                } else {
+                    refs = (List<Reference>) getType.invoke(res, null);
+                }
+            } catch (Exception e) {
+                thisID = "";
+                refs = null;
+                continue;
+            }
 
             boolean inAggregator = false;
-            
+            for (IBaseResource innerRes : resources) {
+                if (!(innerRes instanceof IAnyResource) || !innerRes.getClass().getName().endsWith(type)) continue;
+                String innerResID = ((IAnyResource) innerRes).getId();
+                for (Reference ref : refs) {
+                    inAggregator = ref.getReference().contains(innerResID.substring(0, innerResID.indexOf("/", 24)));
+                    if (inAggregator) break;
+                }
+                if (inAggregator) break;
+            }
+            if (inAggregator) ids.add(thisID);
         }
+
+        return ids;
     }
 }
