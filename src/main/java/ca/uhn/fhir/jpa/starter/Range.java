@@ -16,16 +16,39 @@ public class Range {
     private DistanceUnit unit;
     private double distanceMultiplier;
 
-    public Range(BigDecimal latitude, BigDecimal longitude, BigDecimal radius, DistanceUnit unit){
+    public Range(double latitude, double longitude, double radius, DistanceUnit unit){
         setLatitude(latitude);
         setLongitude(longitude);
-        this.radius = radius == null || radius.doubleValue() == 0.0 ? 25.0 : radius.doubleValue();
+        this.radius = radius == 0.0 ? 25.0 : radius;
         this.unit = unit;
         setDistanceMultiplier();
     }
 
-    public  Range(BigDecimal latitude, BigDecimal longitude, BigDecimal radius, String unit){
+    public Range(double latitude, double longitude, double radius, String unit){
         this(latitude, longitude, radius, cleanUnit(unit));
+    }
+
+    /**
+     * @param params 2..*, params[0] -> lat, params[1] -> lon, params[2] -> rad, params[3] -> unit
+     */
+    public Range(String[] params) {
+        setLatitude(Double.parseDouble(params[0]));
+        setLongitude(Double.parseDouble(params[1]));
+
+        double radius = 25.0;
+        try {
+            if (params.length > 2) radius = Double.parseDouble(params[2]);
+            if (radius == 0.0) radius = 25.0;
+        } catch (Exception e) {
+            radius = 25.0;
+        }
+        this.radius = radius;
+
+        String unit = "km";
+        if (params.length > 3) unit = params[3];
+        this.unit = cleanUnit(unit);
+
+        setDistanceMultiplier();
     }
 
     // much help from http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates
