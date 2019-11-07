@@ -53,8 +53,11 @@ public class Range {
 
     // much help from http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates
     public boolean encompasses(Location location){
-        double paramLat = Math.toRadians(location.getPosition().getLatitude().doubleValue());
-        double paramLon = Math.toRadians(location.getPosition().getLongitude().doubleValue());
+        if (location == null) return false;
+        Location.LocationPositionComponent pos = location.getPosition();
+        if (pos == null || pos.getLatitude() == null || pos.getLongitude() == null) return false;
+        double paramLat = Math.toRadians(pos.getLatitude().doubleValue());
+        double paramLon = Math.toRadians(pos.getLongitude().doubleValue());
 
         //arccos(sin(lat1) · sin(lat2) + cos(lat1) · cos(lat2) · cos(lon1 - lon2)) · R
         double innerFirst = Math.sin(this.latitude) * Math.sin(paramLat);

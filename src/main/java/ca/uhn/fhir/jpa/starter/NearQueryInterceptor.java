@@ -15,8 +15,8 @@ import org.hl7.fhir.r4.model.Organization;
 import org.hl7.fhir.r4.model.OrganizationAffiliation;
 import org.hl7.fhir.r4.model.PractitionerRole;
 import org.hl7.fhir.r4.model.Reference;
-import org.hl7.fhir.r4.model.api.IAnyResource;
-import org.hl7.fhir.r4.model.api.IBaseResource;
+import org.hl7.fhir.instance.model.api.IAnyResource;
+import org.hl7.fhir.instance.model.api.IBaseResource;
 
 import ca.uhn.fhir.jpa.provider.r4.JpaResourceProviderR4;
 import ca.uhn.fhir.jpa.rp.r4.HealthcareServiceResourceProvider;
@@ -36,10 +36,10 @@ import ca.uhn.fhir.rest.server.interceptor.InterceptorAdapter;
 
 /**
  * Fakes support for Location.near searching (which is not supported by HAPI).
- * Supports near searching for Location, Organization, OrganizationAffiliation,
- * HealthcareService, Practitioner, and PractitionerRole. Does not yet handle
- * requests with multiple near searches. Does not yet handle requests with
- * chains that exceed a depth of one.
+ * Only "supports" generally limited near searching for Location, Organization,
+ * OrganizationAffiliation, HealthcareService, Practitioner, and 
+ * PractitionerRole. Does not yet handle requests with multiple near searches. 
+ * Does not yet handle requests with chains that exceed a depth of one.
  */
 public class NearQueryInterceptor extends InterceptorAdapter {
     @Override
@@ -64,13 +64,14 @@ public class NearQueryInterceptor extends InterceptorAdapter {
             }
 
             ArrayList<String> ids = getIDParams(rd, nearParam);
+            System.out.println("\n\n\n\n\n----------\nids: " + ids.size() + "\n----------\n\n\n\n\n");
 
             url = stripNearParams(url, nearParam);
-            System.out.println("\n\n\n\n\n----------\n" + url + "\n----------\n\n\n\n\n");
+            System.out.println("\n\n\n\n\n----------\nurl: " + url + "\n----------\n\n\n\n\n");
             // @TODO add ids to url
             rd.setCompleteUrl(url);
 
-            System.out.println("\n\n\n\n\n----------\n" + newParams + "\n----------\n\n\n\n\n");
+            System.out.println("\n\n\n\n\n----------\nparams: " + newParams + "\n----------\n\n\n\n\n");
             // @TODO add id param
             rd.setParameters(newParams);
         }
@@ -156,7 +157,7 @@ public class NearQueryInterceptor extends InterceptorAdapter {
                 if (chainElements.length != 4) return null;
                 ArrayList<String> includes = new ArrayList<String>();
                 includes.add(chainElements[1] + ":" + chainElements[2]);
-                includes.add(chainElements[1] + ":" + chainElements[3]);
+                includes.add(chainElements[1] +":" + chainElements[3].substring(0, chainElements[3].indexOf(".near")));
                 resources = getResources(getResourceProvider(rd, chainElements[1]), includes);
                 ids = getReverseChainNearIDs(resources, range, chainElements, rd.getResourceName());
 
@@ -217,6 +218,7 @@ public class NearQueryInterceptor extends InterceptorAdapter {
     private ArrayList<String> getChainNearIDs(ArrayList<IBaseResource> resources, Range range, String type) {
         ArrayList<Location> locationsInRange = getLocationsInRange(resources, range);
         ArrayList<String> ids = new ArrayList<String>();
+        System.out.println("\n\n\n\n\n----------\nchain type: " + type + "\n----------\n\n\n\n\n");
 
         for (IBaseResource res : resources) {
             List<Reference> locationRefs;
@@ -237,7 +239,8 @@ public class NearQueryInterceptor extends InterceptorAdapter {
             boolean inRange = false;
             for (Reference ref : locationRefs) {
                 for (Location loc : locationsInRange) {
-                    inRange = ref.getReference().equals(loc.getId().substring(0, loc.getId().indexOf("/", 9)));
+                    String locID = loc.getId().substring(0, loc.getId().indexOf("/", loc.getId().indexOf("/") + 1));
+                    inRange = ref.getReference().equals(locID);
                     if (inRange) break;
                 }
                 if (inRange) break;
@@ -251,8 +254,10 @@ public class NearQueryInterceptor extends InterceptorAdapter {
     private ArrayList<String> getReverseChainNearIDs(ArrayList<IBaseResource> resources, Range range, 
                                                     String[] chain, String type) {
         ArrayList<String> aggregatorIDs = getChainNearIDs(resources, range, chain[1]);
+        System.out.println("\n\n\n\n\n----------\nids in range: " + aggregatorIDs.size() + "\n----------\n\n\n\n\n");
         ArrayList<String> ids = new ArrayList<String>();
 
+        System.out.println("\n\n\n\n\n----------\nresources: " + resources.size() + "\n----------\n\n\n\n\n");
         for (IBaseResource res : resources) {
 
             String thisID;
@@ -280,8 +285,9 @@ public class NearQueryInterceptor extends InterceptorAdapter {
             for (IBaseResource innerRes : resources) {
                 if (!(innerRes instanceof IAnyResource) || !innerRes.getClass().getName().endsWith(type)) continue;
                 String innerResID = ((IAnyResource) innerRes).getId();
+                innerResID = innerResID.substring(0, innerResID.indexOf("/", innerResID.indexOf("/") + 1)); 
                 for (Reference ref : refs) {
-                    inAggregator = ref.getReference().contains(innerResID.substring(0, innerResID.indexOf("/", 24)));
+                    inAggregator = ref.getReference().contains(innerResID);
                     if (inAggregator) break;
                 }
                 if (inAggregator) break;
