@@ -25,11 +25,11 @@ import ca.uhn.fhir.rest.server.exceptions.AuthenticationException;
 import ca.uhn.fhir.rest.server.interceptor.InterceptorAdapter;
 
 /**
- * Fakes support for Location.near searching (which is not supported by HAPI).
- * Only tested for generally limited near searching with Location, 
- * Organization, OrganizationAffiliation, HealthcareService, Practitioner, and 
- * PractitionerRole. Does not yet handle requests with multiple near searches. 
- * Does not yet handle requests with chains that exceed a depth of one.
+ * Fakes support for Location near searching (which is not yet supported by
+ * HAPI). Only tested with generally limited near searching on Location,
+ * Organization, OrganizationAffiliation, HealthcareService, Practitioner, and
+ * PractitionerRole. Does not yet handle requests with multiple near searches.
+ * Does not yet handle requests with chains exceeding a depth of one.
  */
 public class NearQueryInterceptor extends InterceptorAdapter {
     @Override
@@ -89,6 +89,17 @@ public class NearQueryInterceptor extends InterceptorAdapter {
         return getResourceProvider(rd, rd.getResourceName());
     }
 
+    /**
+     * Gets the IDs of the resources that fall within the range specified by
+     * nearParam
+     * 
+     * @param rd        RequestDetails to describe the http request this is working
+     *                  form
+     * @param nearParam The near query string, with the field as the key for the
+     *                  associated value
+     * @return An ArrayList<String> populated with the relevent resource IDs within
+     *         the specified range
+     */
     private ArrayList<String> getIDParams(RequestDetails rd, HashMap<String, String[]> nearParam) {
         String searchPointer = nearParam.keySet().toArray(new String[1])[0];
         Range range = new Range(nearParam.get(searchPointer)[0].split("\\|"));
@@ -108,7 +119,7 @@ public class NearQueryInterceptor extends InterceptorAdapter {
                 if (chainElements.length != 4) return null;
                 ArrayList<String> includes = new ArrayList<String>();
                 includes.add(chainElements[1] + ":" + chainElements[2]);
-                includes.add(chainElements[1] +":" + chainElements[3].substring(0, chainElements[3].indexOf(".near")));
+                includes.add(chainElements[1] + ":" + chainElements[3].substring(0, chainElements[3].indexOf(".near")));
                 resources = getResources(getResourceProvider(rd, chainElements[1]), includes);
                 ids = getReverseChainNearIDs(resources, range, chainElements, rd.getResourceName());
 
@@ -124,17 +135,21 @@ public class NearQueryInterceptor extends InterceptorAdapter {
     }
 
     /**
+     * Gets every resource of rp's type, plus any specified by the includes
+     * ArrayList<String>
      * 
-     * @param rp
-     * @param nearParams
-     * @return
+     * @param rp       JpaResourceProviderR4 runs the search for all desired
+     *                 resources
+     * @param includes ArrayList<String> indicates what resources to include that
+     *                 are linked to rp's inherent type
+     * @return ArrayList<IBaseResource> of the requested resources
      */
     private ArrayList<IBaseResource> getResources(JpaResourceProviderR4 rp, ArrayList<String> includes) {
         SearchParameterMap spm = new SearchParameterMap();
         for (String include : includes) {
             spm.addInclude(new Include(include));
         }
-        
+
         int maxPageSize = HapiProperties.getMaximumPageSize();
         spm.setCount(maxPageSize);
         spm.setLoadSynchronous(true);
@@ -146,10 +161,29 @@ public class NearQueryInterceptor extends InterceptorAdapter {
         return retVal;
     }
 
+    /**
+     * Gets every resource of rp's type
+     * 
+     * @param rp JpaResourceProviderR4 runs the search for all resources of this
+     *           type
+     * @return ArrayList<IBaseResource> of every instance of the resource specified
+     *         by rp's type
+     */
     private ArrayList<IBaseResource> getResources(JpaResourceProviderR4 rp) {
         return getResources(rp, new ArrayList<String>());
     }
 
+    /**
+     * Sifts through resources for every Location. Deletes each Location from
+     * resources and returns the Locations that fall in the provided range
+     * 
+     * @param resources ArrayList<IBaseResource> to remove Locations from while
+     *                  pulling out the desirable ones
+     * @param range     Range describing the area a Location must fall in to be
+     *                  returned
+     * @return ArrayList<Location> of every Location from resources encompassed by
+     *         range
+     */
     private ArrayList<Location> getLocationsInRange(ArrayList<IBaseResource> resources, Range range) {
         ArrayList<Location> locations = new ArrayList<Location>();
         for (int i = 0; i < resources.size(); i++) {
@@ -164,6 +198,20 @@ public class NearQueryInterceptor extends InterceptorAdapter {
         return locations;
     }
 
+    /**
+     * Gets the IDs of every IBaseResource: from resources, of the type indicated by
+     * type, and within range. Removes IBaseResources from resources (all Locations
+     * and every instance of type that falls outside the range)
+     * 
+     * @param resources ArrayList<IBaseResource> to get appropriate IDs from. Also
+     *                  gets filtered to improve future searches.
+     * @param range     Range describing the area a resources associated Location
+     *                  must be encompassed by to be returned
+     * @param type      String name of the desired resource (e.g.
+     *                  "HealthcareService" indicates the
+     *                  org.hl7.fhir.r4.model.HealthcareService object)
+     * @return ArrayList<String> of every ID from the resources of type within range
+     */
     private ArrayList<String> getChainNearIDs(ArrayList<IBaseResource> resources, Range range, String type) {
         ArrayList<Location> locationsInRange = getLocationsInRange(resources, range);
         ArrayList<String> ids = new ArrayList<String>();
@@ -194,7 +242,7 @@ public class NearQueryInterceptor extends InterceptorAdapter {
                 }
                 if (inRange) break;
             }
-            if (inRange){
+            if (inRange) {
                 ids.add(thisID);
             } else {
                 resources.remove(i--);
@@ -204,8 +252,25 @@ public class NearQueryInterceptor extends InterceptorAdapter {
         return ids;
     }
 
-    private ArrayList<String> getReverseChainNearIDs(ArrayList<IBaseResource> resources, Range range, 
-                                                    String[] chain, String type) {
+    /**
+     * Gets the IDs of every IBaseResource: from resources, of the type indicated by
+     * type, and that points to a chain[1] which points to a Location that falls
+     * within range. Removes IBaseResources from resources (all Locations and every
+     * instance of chain[1] that falls outside the range)
+     * 
+     * @param resources ArrayList<IBaseResource> to get appropriate IDs from. Also
+     *                  gets filtered to improve future searches.
+     * @param range     Range describing the area a resources associated Location
+     *                  must be encompassed by to be returned
+     * @param chain     The near parameter query string value after being split on
+     *                  '|'. Length should be 2..4
+     * @param type      String name of the desired resource (e.g.
+     *                  "HealthcareService" indicates the
+     *                  org.hl7.fhir.r4.model.HealthcareService object)
+     * @return ArrayList<String> of every ID from the resources of type within range
+     */
+    private ArrayList<String> getReverseChainNearIDs(ArrayList<IBaseResource> resources, Range range, String[] chain,
+            String type) {
         ArrayList<String> aggregatorIDs = getChainNearIDs(resources, range, chain[1]);
         ArrayList<String> ids = new ArrayList<String>();
 
@@ -234,7 +299,7 @@ public class NearQueryInterceptor extends InterceptorAdapter {
             for (IBaseResource innerRes : resources) {
                 if (!(innerRes instanceof IAnyResource) || !innerRes.getClass().getName().endsWith(type)) continue;
                 innerResID = ((IAnyResource) innerRes).getId();
-                innerResID = innerResID.substring(0, innerResID.indexOf("/", innerResID.indexOf("/") + 1)); 
+                innerResID = innerResID.substring(0, innerResID.indexOf("/", innerResID.indexOf("/") + 1));
                 for (Reference ref : refs) {
                     inAggregator = ref.getReference().contains(innerResID);
                     if (inAggregator) break;
