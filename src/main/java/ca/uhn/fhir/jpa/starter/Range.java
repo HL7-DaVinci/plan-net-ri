@@ -1,7 +1,5 @@
 package ca.uhn.fhir.jpa.starter;
 
-import java.math.BigDecimal;
-
 import org.hl7.fhir.r4.model.Location;
 
 public class Range {
@@ -74,10 +72,6 @@ public class Range {
         this.latitude = Math.toRadians(latitude);
     }
 
-    public void setLatitude(BigDecimal latitude) {
-        setLatitude(latitude.doubleValue());
-    }
-
     public double getLongitude() {
         return this.longitude;
     }
@@ -86,21 +80,12 @@ public class Range {
         this.longitude = Math.toRadians(longitude);
     }
 
-    public void setLongitude(BigDecimal longitude) {
-        setLongitude(longitude.doubleValue());
-    }
-
     public double getRadius() {
         return this.radius;
     }
 
     public void setRadius(double radius) {
         this.radius = radius == 0.0 ? 25.0 : radius;
-        setDistanceMultiplier();
-    }
-
-    public void setRadius(BigDecimal radius) {
-        this.radius = radius == null || radius.doubleValue() == 0.0 ? 25.0 : radius.doubleValue();
         setDistanceMultiplier();
     }
 
