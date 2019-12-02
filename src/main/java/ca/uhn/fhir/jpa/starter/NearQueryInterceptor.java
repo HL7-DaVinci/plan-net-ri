@@ -9,6 +9,7 @@ import java.lang.reflect.Method;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.Location;
 import org.hl7.fhir.r4.model.Reference;
 import org.hl7.fhir.instance.model.api.IAnyResource;
@@ -18,6 +19,7 @@ import ca.uhn.fhir.jpa.provider.r4.JpaResourceProviderR4;
 import ca.uhn.fhir.jpa.searchparam.SearchParameterMap;
 import ca.uhn.fhir.model.api.Include;
 import ca.uhn.fhir.rest.api.server.RequestDetails;
+import ca.uhn.fhir.rest.api.server.ResponseDetails;
 import ca.uhn.fhir.rest.server.IResourceProvider;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.SimpleBundleProvider;
@@ -32,10 +34,14 @@ import ca.uhn.fhir.rest.server.interceptor.InterceptorAdapter;
  * Does not yet handle requests with chains exceeding a depth of one.
  */
 public class NearQueryInterceptor extends InterceptorAdapter {
+
+    static List<String[]> urlTracker = new ArrayList<String[]>();
+
     @Override
     public boolean incomingRequestPostProcessed(RequestDetails rd, HttpServletRequest req, HttpServletResponse res)
             throws AuthenticationException {
-        int nearStartI = rd.getCompleteUrl().indexOf("near=");
+        String originalUrl = rd.getCompleteUrl();
+        int nearStartI = originalUrl.indexOf("near=");
         if (nearStartI != -1) {
             HashMap<String, String[]> oldParams = new HashMap<String, String[]>(rd.getParameters());
             HashMap<String, String[]> nearParam = new HashMap<String, String[]>();
@@ -52,8 +58,59 @@ public class NearQueryInterceptor extends InterceptorAdapter {
             String[] joinedIDs = { String.join(",", getIDParams(rd, nearParam)) };
             newParams.put("_id", joinedIDs);
             rd.setParameters(newParams);
+
+            String[] urlToTrack = { joinedIDs[0], originalUrl };
+            NearQueryInterceptor.urlTracker.add(0, urlToTrack);
+            int newSize = Math.min(5, NearQueryInterceptor.urlTracker.size());
+            NearQueryInterceptor.urlTracker = NearQueryInterceptor.urlTracker.subList(0, newSize);
         }
         return true;
+    }
+
+    @Override
+    public boolean outgoingResponse(RequestDetails req, ResponseDetails res, HttpServletRequest hReq, 
+            HttpServletResponse hRes) throws AuthenticationException {
+        String[] idParams = req.getParameters().get("_id");
+        String originalUrl = getOriginalUrl((idParams == null) ? "" : idParams[0]);
+        if (!originalUrl.isEmpty()) {
+            Bundle bundle = (Bundle) res.getResponseResource();
+            List<Bundle.BundleLinkComponent> bundleLinks = bundle.getLink();
+            Bundle.BundleLinkComponent selfLink = null;
+            for (Bundle.BundleLinkComponent link : bundleLinks) {
+                if (link.getRelation().equals("self")) {
+                    selfLink = link;
+                }
+            }
+            if (selfLink != null) bundleLinks.remove(selfLink);
+            Bundle.BundleLinkComponent newSelf = new Bundle.BundleLinkComponent();
+            newSelf.setRelation("self");
+            newSelf.setUrl(originalUrl);
+            bundleLinks.add(newSelf);
+            bundle.setLink(bundleLinks);
+            res.setResponseResource(bundle);
+        }
+        return true;
+    }
+
+    /**
+     * Checks NearQueryInterceptor.urlTracker for a string matching the provided _id
+     * query param string. If found, returns the original url associated with the
+     * _id param string and removes that url from NearQueryInterceptor.urlTracker
+     * 
+     * @param responseIDs String to match existing _id param value string
+     * @return String url of the original request associated with the provided _id
+     *         param string
+     */
+    private String getOriginalUrl(String responseIDs) {
+        String originalUrl = "";
+        for (String[] trackedInfo : NearQueryInterceptor.urlTracker) {
+            if (responseIDs.equals(trackedInfo[0])) {
+                originalUrl = trackedInfo[1];
+                NearQueryInterceptor.urlTracker.remove(trackedInfo);
+                break;
+            }
+        }
+        return originalUrl;
     }
 
     /**
