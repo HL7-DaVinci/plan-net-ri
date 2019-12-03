@@ -84,22 +84,22 @@ Below are the **required** and *optional* query parameters for `near=lat|lon|rad
     * *Optional*
     * The units that the radius of the searching range will be interpretted as
     * Supports 4 units of distance, each with 4 valid identifiers for querying
-        * KILOMETERS, which can be referred to by `unit=`
+        * KILOMETERS, which can be referred to by
             * `km`
             * `kms`
             * `kilometer`
             * `kilometers`
-        * MILES, which can be referred to by `unit=`
+        * MILES, which can be referred to by
             * `mi`
             * `mis`
             * `mile`
             * `miles`
-        * METERS, which can be referred to by `unit=`
+        * METERS, which can be referred to by
             * `m`
             * `ms`
             * `meter`
             * `meters`
-        * FEET, which can be referred to by `unit=`
+        * FEET, which can be referred to by
             * `ft`
             * `fts`
             * `foot`
