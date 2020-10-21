@@ -1,11 +1,17 @@
-FROM jetty:9-jre8-alpine
-USER jetty:jetty
-EXPOSE 8080
-FROM maven:3.6.1-jdk-8 AS build
-COPY src /usr/src/app/src
-COPY pom.xml /usr/src/app
-RUN mvn -f /usr/src/app/pom.xml clean package
+FROM maven:3.6.3-jdk-11-slim as build-hapi
+WORKDIR /tmp/hapi-fhir-jpaserver-starter
 
-FROM jetty:9-jre8-alpine
-COPY --from=build /usr/src/app/target/hapi-fhir-jpaserver.war /var/lib/jetty/webapps/hapi-fhir-jpaserver.war
+COPY pom.xml .
+RUN mvn -ntp dependency:go-offline
+
+COPY src/ /tmp/hapi-fhir-jpaserver-starter/src/
+RUN mvn clean install -DskipTests
+
+FROM tomcat:9.0.38-jdk11-openjdk-slim-buster
+
+RUN mkdir -p /data/hapi/lucenefiles && chmod 775 /data/hapi/lucenefiles
+COPY --from=build-hapi /tmp/hapi-fhir-jpaserver-starter/target/*.war /usr/local/tomcat/webapps/
+
 EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
