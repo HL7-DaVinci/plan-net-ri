@@ -1,12 +1,12 @@
 require 'httparty'
 require 'pry'
 
-FHIR_SERVER = 'http://localhost:8080/hapi-fhir-jpaserver/fhir/'
+FHIR_SERVER = 'http://localhost:8080/fhir/'
 
 def upload_plan_net_resources
   file_paths = [
     File.join(__dir__, 'conformance', '*', '*.json'),
-    File.join(__dir__, '..', 'plan-net-resources', 'output', '**', '*.json')
+    File.join(__dir__, '..', 'pdex-plan-net-sample-data', 'output', '**', '*.json')
   ]
   filenames = file_paths.flat_map do |file_path|
     Dir.glob(file_path)
