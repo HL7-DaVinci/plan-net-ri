@@ -21,8 +21,13 @@ public class JpaRestfulServer extends BaseJpaRestfulServer {
   protected void initialize() throws ServletException {
     super.initialize();
 
-    // Add your own customization here
+    // Add ReadOnly Interceptor
+    ReadOnlyInterceptor readOnlyInterceptor = new ReadOnlyInterceptor(); 
+    this.registerInterceptor(readOnlyInterceptor);
 
+    // Add MetaData provider
+    MetadataProvider metadata = new MetadataProvider(this, this.fhirSystemDao, this.daoConfig);
+    this.setServerConformanceProvider(metadata);
   }
 
 }

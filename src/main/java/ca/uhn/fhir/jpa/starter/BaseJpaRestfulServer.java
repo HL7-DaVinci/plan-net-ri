@@ -128,54 +128,11 @@ public class BaseJpaRestfulServer extends RestfulServer {
     registerProviders(resourceProviders.createProviders());
     registerProvider(jpaSystemProvider);
 
-    FhirVersionEnum fhirVersion = fhirSystemDao.getContext().getVersion().getVersion();
-    /*
-     * The conformance provider exports the supported resources, search parameters, etc for
-     * this server. The JPA version adds resourceProviders counts to the exported statement, so it
-     * is a nice addition.
-     *
-     * You can also create your own subclass of the conformance provider if you need to
-     * provide further customization of your server's CapabilityStatement
-     */
-
-
-    if (fhirVersion == FhirVersionEnum.DSTU2) {
-
-      JpaConformanceProviderDstu2 confProvider = new JpaConformanceProviderDstu2(this, fhirSystemDao,
-        daoConfig);
-      confProvider.setImplementationDescription("HAPI FHIR DSTU2 Server");
-      setServerConformanceProvider(confProvider);
-    } else {
-      if (fhirVersion == FhirVersionEnum.DSTU3) {
-
-        JpaConformanceProviderDstu3 confProvider = new JpaConformanceProviderDstu3(this, fhirSystemDao,
-          daoConfig, searchParamRegistry);
-        confProvider.setImplementationDescription("HAPI FHIR DSTU3 Server");
-        setServerConformanceProvider(confProvider);
-      } else if (fhirVersion == FhirVersionEnum.R4) {
-
-        JpaConformanceProviderR4 confProvider = new JpaConformanceProviderR4(this, fhirSystemDao,
-          daoConfig, searchParamRegistry);
-        confProvider.setImplementationDescription("HAPI FHIR R4 Server");
-        setServerConformanceProvider(confProvider);
-      } else if (fhirVersion == FhirVersionEnum.R5) {
-
-        JpaConformanceProviderR5 confProvider = new JpaConformanceProviderR5(this, fhirSystemDao,
-          daoConfig, searchParamRegistry);
-        confProvider.setImplementationDescription("HAPI FHIR R5 Server");
-        setServerConformanceProvider(confProvider);
-      } else {
-        throw new IllegalStateException();
-      }
-    }
-
     /*
      * ETag Support
      */
-
     if (appProperties.getEtag_support_enabled() == false)
       setETagSupport(ETagSupportEnum.DISABLED);
-
 
     /*
      * This server tries to dynamically generate narratives
@@ -320,9 +277,7 @@ public class BaseJpaRestfulServer extends RestfulServer {
 
     // GraphQL
     if (appProperties.getGraphql_enabled()) {
-      if (fhirVersion.isEqualOrNewerThan(FhirVersionEnum.DSTU3)) {
         registerProvider(graphQLProvider.get());
-      }
     }
 
     if (appProperties.getAllowed_bundle_types() != null) {
