@@ -1,9 +1,7 @@
-version: '3'
+version: "3"
 
 services:
   plan-net:
-    image: plan-net-write:latest
-    volumes:
-      - ./data:/var/lib/jetty/target
+    image: plan_net
     ports:
-      - '8080:8080'
+      - "8080:8080"

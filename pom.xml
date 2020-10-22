@@ -299,7 +299,7 @@
     <build>
 
         <!-- Tells Maven to name the generated WAR file as ROOT.war -->
-        <finalName>ROOT</finalName>
+        <finalName>root</finalName>
 
         <plugins>
             <plugin>
