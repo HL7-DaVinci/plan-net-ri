@@ -26,7 +26,7 @@ public class JpaRestfulServer extends BaseJpaRestfulServer {
     this.registerInterceptor(readOnlyInterceptor);
 
     // Add MetaData provider
-    MetadataProvider metadata = new MetadataProvider(this, this.fhirSystemDao, this.daoConfig);
+    MetadataProvider metadata = new MetadataProvider(this, this.fhirSystemDao, this.daoConfig, this.searchParamRegistry);
     this.setServerConformanceProvider(metadata);
   }
 

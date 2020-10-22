@@ -7,22 +7,25 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import ca.uhn.fhir.jpa.provider.r4.JpaConformanceProviderR4;
+import ca.uhn.fhir.jpa.searchparam.registry.ISearchParamRegistry;
+
 import org.hl7.fhir.r4.model.*;
 import org.hl7.fhir.r4.model.CapabilityStatement.*;
 import org.hl7.fhir.r4.model.Enumerations.PublicationStatus;
-import ca.uhn.fhir.jpa.dao.DaoConfig;
-import ca.uhn.fhir.jpa.dao.IFhirSystemDao;
+import ca.uhn.fhir.jpa.api.config.DaoConfig;
+import ca.uhn.fhir.jpa.api.dao.IFhirSystemDao;
+import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.rest.server.RestfulServer;
 
 public class MetadataProvider extends JpaConformanceProviderR4 {
-  MetadataProvider(RestfulServer theRestfulServer, IFhirSystemDao<Bundle, Meta> theSystemDao, DaoConfig theDaoConfig) {
-    super(theRestfulServer, theSystemDao, theDaoConfig);
+  MetadataProvider(RestfulServer theRestfulServer, IFhirSystemDao<Bundle, Meta> theSystemDao, DaoConfig theDaoConfig, ISearchParamRegistry theSearchParamRegistry) {
+    super(theRestfulServer, theSystemDao, theDaoConfig, theSearchParamRegistry);
     setCache(false);
   }
 
   @Override
-  public CapabilityStatement getServerConformance(HttpServletRequest theRequest) {
-    CapabilityStatement metadata = super.getServerConformance(theRequest);
+  public CapabilityStatement getServerConformance(HttpServletRequest theRequest, RequestDetails theRequestDetails) {
+    CapabilityStatement metadata = super.getServerConformance(theRequest, theRequestDetails);
     metadata.setTitle("Da Vinci Payer Data exchange Plan Network Reference Implementation");
     metadata.setStatus(PublicationStatus.DRAFT);
     metadata.setExperimental(true);
