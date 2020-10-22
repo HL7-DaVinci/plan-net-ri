@@ -5,9 +5,10 @@ target/
 # Compiled class file
 *.class
 
-# Project and Classpath
+# Project files
 .classpath
 .project
+.settings
 
 # Log file
 *.log
