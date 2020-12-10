@@ -1,7 +1,7 @@
 require 'httparty'
 require 'pry'
 
-FHIR_SERVER = 'http://localhost:8080/fhir/'
+FHIR_SERVER = 'http://localhost:8080/plan-net/fhir/'
 
 def upload_plan_net_resources
   file_paths = [
