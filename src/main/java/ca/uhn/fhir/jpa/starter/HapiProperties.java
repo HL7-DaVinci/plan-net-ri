@@ -218,7 +218,7 @@ public class HapiProperties {
             return FhirVersionEnum.valueOf(fhirVersionString);
         }
 
-        return FhirVersionEnum.DSTU3;
+        return FhirVersionEnum.R4;
     }
 
     public static boolean isBinaryStorageEnabled() {

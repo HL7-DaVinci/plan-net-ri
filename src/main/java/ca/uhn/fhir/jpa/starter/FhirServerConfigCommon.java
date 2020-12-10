@@ -46,10 +46,6 @@ public class FhirServerConfigCommon {
   private Integer emailPort = HapiProperties.getEmailPort();
   private String emailUsername = HapiProperties.getEmailUsername();
   private String emailPassword = HapiProperties.getEmailPassword();
-  private Boolean emailAuth = HapiProperties.getEmailAuth();
-  private Boolean emailStartTlsEnable = HapiProperties.getEmailStartTlsEnable();
-  private Boolean emailStartTlsRequired = HapiProperties.getEmailStartTlsRequired();
-  private Boolean emailQuitWait = HapiProperties.getEmailQuitWait();
 
   @Autowired
   private SubscriptionDeliveryHandlerFactory mySubscriptionDeliveryHandlerFactory;

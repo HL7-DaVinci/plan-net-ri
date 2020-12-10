@@ -1,4 +1,3 @@
 #!/bin/sh
 
-docker build -t plan-net-write:latest .
-
+docker build -t plan_net .
