@@ -1,7 +1,8 @@
+require 'zip'
 require 'httparty'
-require 'pry'
 
-FHIR_SERVER = 'http://localhost:8080/plan-net/fhir/'
+FHIR_SERVER = 'http://localhost:8080/fhir/'
+# FHIR_SERVER = 'https://api.logicahealth.org/DVJan21CnthnPDex/open'
 
 def upload_plan_net_resources
   file_paths = [
@@ -89,4 +90,30 @@ def execute_transaction(transaction)
   )
 end
 
+def upload_ig_examples
+    puts "Uploading ig examples..."
+    definitions_url = 'https://build.fhir.org/ig/HL7/carin-bb/examples.json.zip'
+    definitions_data = HTTParty.get(definitions_url, verify: false)
+    definitions_file = Tempfile.new
+    begin
+        definitions_file.write(definitions_data)
+    ensure
+        definitions_file.close
+    end
+
+    Zip::File.open(definitions_file.path) do |zip_file|
+        zip_file.entries
+        .select { |entry| entry.name.end_with? '.json' }
+        .reject { |entry| entry.name.start_with? 'ImplementationGuide' }
+        .each do |entry|
+            resource = JSON.parse(entry.get_input_stream.read, symbolize_names: true)
+            response = upload_resource(resource)
+        end
+    end
+    puts " ...done"
+ensure
+    definitions_file.unlink
+end
+
 upload_plan_net_resources
+upload_ig_examples
