@@ -149,6 +149,8 @@ public class JpaRestfulServer extends RestfulServer {
      */
     ReadOnlyInterceptor readOnlyInterceptor = new ReadOnlyInterceptor();
     this.registerInterceptor(readOnlyInterceptor);
+    ExportInterceptor exportInterceptor = new ExportInterceptor();
+    this.registerInterceptor(exportInterceptor);
 
     /*
      * Add Search Parameter interceptor
