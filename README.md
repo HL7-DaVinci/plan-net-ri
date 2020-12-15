@@ -32,9 +32,13 @@ docker-compose up
 ```
 
 The server will then be browseable at
-[http://localhost:8080/](http://localhost:8080/), and the
+[http://localhost:8080/](http://localhost:8080/plan-net), and the
 server's FHIR endpoint will be available at
-[http://localhost:8080/fhir](http://localhost:8080/fhir)
+[http://localhost:8080/fhir](http://localhost:8080/plan-net/fhir)
+
+# Bulk data $export
+
+This server implements `$export` function for bulk data exchange. To generate these files see [PDEX Plan Net Sample Data Repo](https://github.com/HL7-DaVinci/pdex-plan-net-sample-data). Move the `.ndjson` files into `src/main/webapp/resources`. Everything in this folder will be accessible at the `/resources` endpoint.
 
 # Updating the data
 
