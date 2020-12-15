@@ -1,7 +1,7 @@
 require 'zip'
 require 'httparty'
 
-FHIR_SERVER = 'http://localhost:8080/fhir/'
+FHIR_SERVER = 'http://localhost:8080/plan-net/fhir'
 # FHIR_SERVER = 'https://api.logicahealth.org/DVJan21CnthnPDex/open'
 
 def upload_plan_net_resources
