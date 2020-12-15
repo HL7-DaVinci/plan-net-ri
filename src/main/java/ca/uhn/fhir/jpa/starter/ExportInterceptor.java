@@ -4,17 +4,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.rest.api.server.ResponseDetails;
+import ca.uhn.fhir.jpa.starter.ExportData;
 import java.util.*;
 import java.io.*;
-import ca.uhn.fhir.jpa.starter.TaskHandler;
-import ca.uhn.fhir.jpa.starter.PatientFinder;
-
-import ca.uhn.fhir.jpa.starter.JSONWrapper;
 
 public class ExportInterceptor extends InterceptorAdapter {
 
    /**
-    * Override the incomingRequestPostProcessed method, which is called
+    * Override the incomingRequestPreProcessed method, which is called
     * for each incoming request before any processing is done
     */
    @Override
@@ -33,7 +30,7 @@ public class ExportInterceptor extends InterceptorAdapter {
        PrintWriter out = theResponse.getWriter();
        theResponse.setContentType("application/json");
        theResponse.setCharacterEncoding("UTF-8");
-       String exportString = "";
+       String exportString = ExportData.loadExportData();
        out.print(exportString);
        out.flush();
    }

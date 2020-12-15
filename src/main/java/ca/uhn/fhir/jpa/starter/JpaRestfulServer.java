@@ -35,6 +35,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.cors.CorsConfiguration;
 
+import ca.uhn.fhir.jpa.starter.ExportInterceptor;
+
 import javax.servlet.ServletException;
 import java.util.Arrays;
 import java.util.Collections;
