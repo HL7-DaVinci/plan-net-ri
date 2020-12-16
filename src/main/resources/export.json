@@ -1,6 +1,6 @@
 {
   "transactionTime": "15/12/2020 09:48",
-  "request": "http://davinci-plan-net-ri.logicahealth.org/plan-net/$export",
+  "request": "http://davinci-plan-net-ri.logicahealth.org/plan-net/fhir/$export",
   "requiresAccessToken": false,
   "output": [
     {
