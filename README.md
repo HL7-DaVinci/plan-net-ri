@@ -38,7 +38,7 @@ server's FHIR endpoint will be available at
 
 # Bulk data $export
 
-This server implements `$export` function for bulk data exchange. To generate these files see [PDEX Plan Net Sample Data Repo](https://github.com/HL7-DaVinci/pdex-plan-net-sample-data). Move the `.ndjson` files into `src/main/webapp/resources`. Everything in this folder will be accessible at the `/resources` endpoint.
+This server implements `$export` function for bulk data exchange. To generate these files see [PDEX Plan Net Sample Data Repo](https://github.com/HL7-DaVinci/pdex-plan-net-sample-data). Move the `export.json` file into `src/resources`. Move the `.ndjson` files into `src/main/webapp/resources`. Everything in this folder will be accessible at the `/resources` endpoint.
 
 # Updating the data
 
