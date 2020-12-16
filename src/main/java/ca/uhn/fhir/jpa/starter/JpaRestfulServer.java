@@ -35,6 +35,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.cors.CorsConfiguration;
 
+import ca.uhn.fhir.jpa.starter.ExportInterceptor;
+
 import javax.servlet.ServletException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -149,6 +151,12 @@ public class JpaRestfulServer extends RestfulServer {
      */
     ReadOnlyInterceptor readOnlyInterceptor = new ReadOnlyInterceptor();
     this.registerInterceptor(readOnlyInterceptor);
+
+    /*
+     * This interceptor handles the $export operation
+     */
+    ExportInterceptor exportInterceptor = new ExportInterceptor();
+    this.registerInterceptor(exportInterceptor);
 
     /*
      * Add Search Parameter interceptor
