@@ -17,7 +17,7 @@ public class ExportInterceptor extends InterceptorAdapter {
    @Override
    public boolean incomingRequestPreProcessed(HttpServletRequest theRequest, HttpServletResponse theResponse) {
      String endPoint = theRequest.getRequestURL().substring(theRequest.getRequestURL().lastIndexOf("/")+1);
-     if (endPoint.equals("$export")) {
+     if (endPoint.equals("$export") && theRequest.getMethod().equals("GET")) {
          try {
             handleExport(theResponse);
          } catch (Exception e) {System.out.println("Exception: " + e.getMessage());}
