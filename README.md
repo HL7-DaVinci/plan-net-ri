@@ -32,9 +32,9 @@ docker-compose up
 ```
 
 The server will then be browseable at
-[http://localhost:8080/plan-net](http://localhost:8080/plan-net), and the
+[http://localhost:8080](http://localhost:8080), and the
 server's FHIR endpoint will be available at
-[http://localhost:8080/plan-net/fhir](http://localhost:8080/plan-net/fhir)
+[http://localhost:8080/fhir](http://localhost:8080/fhir)
 
 # Bulk data $export
 
