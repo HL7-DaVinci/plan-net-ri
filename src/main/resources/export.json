@@ -1,43 +1,43 @@
 {
   "transactionTime": "15/12/2020 09:48",
-  "request": "http://davinci-plan-net-ri.logicahealth.org/plan-net/fhir/$export",
+  "request": "http://davinci-plan-net-ri.logicahealth.org/fhir/$export",
   "requiresAccessToken": false,
   "output": [
     {
       "type": "Organization",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/Organization.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/Organization.ndjson"
     },
     {
       "type": "Practitioner",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/Practitioner.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/Practitioner.ndjson"
     },
     {
       "type": "Location",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/Location.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/Location.ndjson"
     },
     {
       "type": "HealthcareService",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/HealthcareService.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/HealthcareService.ndjson"
     },
     {
       "type": "Endpoint",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/Endpoint.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/Endpoint.ndjson"
     },
     {
       "type": "InsurancePlan",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/InsurancePlan.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/InsurancePlan.ndjson"
     },
     {
       "type": "PractitionerRole",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/PractitionerRole.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/PractitionerRole.ndjson"
     },
     {
       "type": "OrganizationAffiliation",
-      "url": "http://davinci-plan-net-ri.logicahealth.org/plan-net/resources/OrganizationAffiliation.ndjson"
+      "url": "http://davinci-plan-net-ri.logicahealth.org/resources/OrganizationAffiliation.ndjson"
     }
   ],
   "error": {
     "type": "OperationOutcome",
-    "url": "http://serverpath2/err_file_1.ndjson"
+    "url": "http://davinci-plan-net-ri.logicahealth.org/resources/err_file.ndjson"
   }
 }
