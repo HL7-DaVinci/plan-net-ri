@@ -27,6 +27,7 @@ public class Metadata extends ServerCapabilityStatementProvider {
         CapabilityStatement c = super.getServerConformance(request, requestDetails);
         c.setTitle("Da Vinci Payer Data exchange Plan Network Reference Implementation");
         c.setStatus(PublicationStatus.DRAFT);
+        c.setVersion("1.0.0");
         c.setExperimental(true);
         c.setPublisher("Da Vinci");
 

@@ -2,9 +2,6 @@ package ca.uhn.fhir.jpa.starter;
 import ca.uhn.fhir.rest.server.interceptor.*;
 import javax.servlet.http.HttpServletResponse;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.http.HttpServletRequest;
 
 public class ExportInterceptor extends InterceptorAdapter {
