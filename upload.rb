@@ -4,6 +4,8 @@ require 'httparty'
 FHIR_SERVER = 'http://localhost:8080/plan-net/fhir'
 # FHIR_SERVER = 'https://api.logicahealth.org/DVJan21CnthnPDex/open'
 
+#FHIR_SERVER = 'https://api.logicahealth.org/DVPDexR4Payer1/open'
+
 def upload_plan_net_resources
   file_paths = [
     File.join(__dir__, 'conformance', '*', '*.json'),
