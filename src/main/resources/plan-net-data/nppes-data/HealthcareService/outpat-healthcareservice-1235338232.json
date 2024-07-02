@@ -1,0 +1,96 @@
+{
+  "id": "outpat-healthcareservice-1235338232",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "newpt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS",
+                "code": "physical",
+                "display": "Physical"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/plannet-organization-1235338232",
+    "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
+          "code": "outpat",
+          "display": "Outpat"
+        }
+      ],
+      "text": "outpat"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1235338232",
+      "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+    }
+  ],
+  "name": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "608-576-7613 x97442",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(413) 099-4509 x7172",
+      "use": "work"
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "allDay": false,
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ],
+  "resourceType": "HealthcareService"
+}

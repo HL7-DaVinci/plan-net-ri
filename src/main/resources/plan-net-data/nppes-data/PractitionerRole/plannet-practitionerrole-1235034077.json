@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1235034077",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://soundview-orthopaedic-assoc-llp.com",
+      "value": "65b4d5c26a281f"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235034077",
+    "display": "Doloris Zboncak"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1230188327",
+    "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207R00000X",
+          "display": "Internal Medicine"
+        }
+      ],
+      "text": "Internal Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1230188327",
+      "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1230188327",
+      "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "867.096.6539 x768",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-125-149-1197 x70983",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

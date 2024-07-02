@@ -1,0 +1,132 @@
+{
+  "id": "plannet-practitionerrole-1235035694",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID050000",
+        "display": "Green Circle of Connecticut HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID110000",
+        "display": "State of Connecticut HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID040000",
+        "display": "Acme of Connecticut Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://farmington-surgery-center-llc.com",
+      "value": "cfe745b300db72"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235035694",
+    "display": "Harvey Dickens"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1236348148",
+    "display": "FARMINGTON SURGERY CENTER LLC"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207X00000X",
+          "display": "Orthopaedic Surgery"
+        }
+      ],
+      "text": "Orthopaedic Surgery"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1236348148",
+      "display": "FARMINGTON SURGERY CENTER LLC"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1236348148",
+      "display": "FARMINGTON SURGERY CENTER LLC"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "543-673-0589",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-330-739-1077 x11166",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

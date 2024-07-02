@@ -1,0 +1,179 @@
+{
+  "id": "pharm-healthcareservice-f34aec9810a69f29d148b216f",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "newpt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS",
+                "code": "physical",
+                "display": "Physical"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/plannet-organization-f34aec9810a69f29d148b216f",
+    "display": "SHOPRITE"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
+          "code": "pharm",
+          "display": "Pharm"
+        }
+      ],
+      "text": "pharm"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336H0001X",
+          "display": "Home Infusion Therapy Pharmacy"
+        }
+      ],
+      "text": "Home Infusion Therapy Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0001172",
+      "display": "SHOPRITE PHARMACY OF WEST HARTFORD"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005121",
+      "display": "SHOPRITE PHARMACY OF WATERBURY"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000342",
+      "display": "SHOPRITE PHARMACY OF ORANGE"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001262",
+      "display": "SHOPRITE PHARMACY OF NORWICH"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008172",
+      "display": "SHOPRITE PHARMACY OF HAMDEN"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009162",
+      "display": "SHOPRITE PHARMACY OF CLINTON"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000701",
+      "display": "SHOPRITE PHARMACY OF BRISTOL #308"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003182",
+      "display": "SHOPRITE OF STRATFORD"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003741",
+      "display": "SHOPRITE OF NEW LONDON"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004332",
+      "display": "SHOPRITE OF MILFORD"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008382",
+      "display": "SHOPRITE OF CROMWELL"
+    }
+  ],
+  "name": "SHOPRITE",
+  "comment": "Pharmacy; Clinic Pharmacy; Community/Retail Pharmacy; Home Infusion Therapy Pharmacy",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "140-829-9256",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "977-828-1066",
+      "use": "work"
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "allDay": false,
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ],
+  "resourceType": "HealthcareService"
+}

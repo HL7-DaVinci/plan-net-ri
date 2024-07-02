@@ -1,0 +1,799 @@
+{
+  "id": "plannet-organizationaffiliation-6bda74c96c41df2b39496aeb2",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "active": true,
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-6bda74c96c41df2b39496aeb2",
+    "display": "CVS"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID030000",
+      "display": "Massachusetts Persona Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID010000",
+      "display": "Acme of Massachusetts Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID100000",
+      "display": "State of Massachusetts Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/organization-role",
+          "code": "pharmacy",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336L0003X",
+          "display": "Long Term Care Pharmacy"
+        }
+      ],
+      "text": "Long Term Care Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0004581",
+      "display": "CVS PHARMACY #954"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003321",
+      "display": "CVS PHARMACY #953"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006321",
+      "display": "CVS PHARMACY #941"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003222",
+      "display": "CVS PHARMACY #935"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002461",
+      "display": "CVS PHARMACY #918"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009291",
+      "display": "CVS PHARMACY #916"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009281",
+      "display": "CVS PHARMACY #865"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004301",
+      "display": "CVS PHARMACY #857"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003281",
+      "display": "CVS PHARMACY #854"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006242",
+      "display": "CVS PHARMACY #85"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006281",
+      "display": "CVS PHARMACY #840"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006271",
+      "display": "CVS PHARMACY #839"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009142",
+      "display": "CVS PHARMACY #8249"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001271",
+      "display": "CVS PHARMACY #822"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000271",
+      "display": "CVS PHARMACY #811"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001261",
+      "display": "CVS PHARMACY #798"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006032",
+      "display": "CVS PHARMACY #7916"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008272",
+      "display": "CVS PHARMACY #7856"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004671",
+      "display": "CVS PHARMACY #785"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002251",
+      "display": "CVS PHARMACY #775"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002241",
+      "display": "CVS PHARMACY #760"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004231",
+      "display": "CVS PHARMACY #750"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008221",
+      "display": "CVS PHARMACY #738"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009231",
+      "display": "CVS PHARMACY #718"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006112",
+      "display": "CVS PHARMACY #71"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003002",
+      "display": "CVS PHARMACY #7093"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000211",
+      "display": "CVS PHARMACY #696"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001211",
+      "display": "CVS PHARMACY #692"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009221",
+      "display": "CVS PHARMACY #691"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003420",
+      "display": "CVS PHARMACY #6807"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005201",
+      "display": "CVS PHARMACY #671"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006222",
+      "display": "CVS PHARMACY #6702"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002211",
+      "display": "CVS PHARMACY #629"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004241",
+      "display": "CVS PHARMACY #623"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004302",
+      "display": "CVS PHARMACY #5881"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007811",
+      "display": "CVS PHARMACY #5848"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001222",
+      "display": "CVS PHARMACY #5703"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007242",
+      "display": "CVS PHARMACY #556"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006801",
+      "display": "CVS PHARMACY #5450"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003252",
+      "display": "CVS PHARMACY #5263"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005161",
+      "display": "CVS PHARMACY #459"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005142",
+      "display": "CVS PHARMACY #4473"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002142",
+      "display": "CVS PHARMACY #4436"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000112",
+      "display": "CVS PHARMACY #4149"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008181",
+      "display": "CVS PHARMACY #388"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000132",
+      "display": "CVS PHARMACY #3835"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007781",
+      "display": "CVS PHARMACY #3795"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002141",
+      "display": "CVS PHARMACY #377"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004182",
+      "display": "CVS PHARMACY #3719"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003141",
+      "display": "CVS PHARMACY #364"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000282",
+      "display": "CVS PHARMACY #3549"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008440",
+      "display": "CVS PHARMACY #350"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006000",
+      "display": "CVS PHARMACY #349"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003900",
+      "display": "CVS PHARMACY #348"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001182",
+      "display": "CVS PHARMACY #343"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002831",
+      "display": "CVS PHARMACY #3373"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007121",
+      "display": "CVS PHARMACY #333"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008121",
+      "display": "CVS PHARMACY #294"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008122",
+      "display": "CVS PHARMACY #2896"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001330",
+      "display": "CVS PHARMACY #288"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006122",
+      "display": "CVS PHARMACY #2839"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001801",
+      "display": "CVS PHARMACY #2682"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006761",
+      "display": "CVS PHARMACY #2584"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008751",
+      "display": "CVS PHARMACY #2573"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007751",
+      "display": "CVS PHARMACY #2572"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005871",
+      "display": "CVS PHARMACY #2545"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000691",
+      "display": "CVS PHARMACY #2525"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000801",
+      "display": "CVS PHARMACY #2502"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000980",
+      "display": "CVS PHARMACY #2475"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008701",
+      "display": "CVS PHARMACY #2388"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005081",
+      "display": "CVS PHARMACY #231"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009791",
+      "display": "CVS PHARMACY #2259"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003312",
+      "display": "CVS PHARMACY #2258"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008242",
+      "display": "CVS PHARMACY #2253"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007831",
+      "display": "CVS PHARMACY #2220"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004731",
+      "display": "CVS PHARMACY #2219"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007621",
+      "display": "CVS PHARMACY #2210"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008631",
+      "display": "CVS PHARMACY #2153"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002212",
+      "display": "CVS PHARMACY #2151"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007581",
+      "display": "CVS PHARMACY #2143"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009641",
+      "display": "CVS PHARMACY #2140"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003681",
+      "display": "CVS PHARMACY #2119"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009651",
+      "display": "CVS PHARMACY #2109"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002791",
+      "display": "CVS PHARMACY #2099"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004771",
+      "display": "CVS PHARMACY #2097"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006731",
+      "display": "CVS PHARMACY #2056"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009890",
+      "display": "CVS PHARMACY #2022"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000671",
+      "display": "CVS PHARMACY #2018"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009372",
+      "display": "CVS PHARMACY #1987"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005541",
+      "display": "CVS PHARMACY #1968"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000511",
+      "display": "CVS PHARMACY #1966"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006501",
+      "display": "CVS PHARMACY #1960"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006511",
+      "display": "CVS PHARMACY #1948"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002531",
+      "display": "CVS PHARMACY #1941"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008471",
+      "display": "CVS PHARMACY #1912"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003990",
+      "display": "CVS PHARMACY #1910"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009491",
+      "display": "CVS PHARMACY #1903"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002491",
+      "display": "CVS PHARMACY #1898"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005621",
+      "display": "CVS PHARMACY #1897"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003101",
+      "display": "CVS PHARMACY #185"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000392",
+      "display": "CVS/PHARMACY # 17777"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004032",
+      "display": "CVS PHARMACY #1775"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002122",
+      "display": "CVS/PHARMACY #17491"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003142",
+      "display": "CVS PHARMACY #17490"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001122",
+      "display": "CVS PHARMACY #17489"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002980",
+      "display": "CVS/PHARMACY #17425"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009092",
+      "display": "CVS/PHARMACY #17373"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002092",
+      "display": "CVS/PHARMACY #17324"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000072",
+      "display": "CVS/PHARMACY #17291"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009062",
+      "display": "CVS/PHARMACY #17238"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004411",
+      "display": "CVS PHARMACY #172"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005032",
+      "display": "CVS/PHARMACY #17137"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006951",
+      "display": "CVS/PHARMACY #17072"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004951",
+      "display": "CVS/PHARMACY #17071"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006891",
+      "display": "CVS/PHARMACY #17034"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002841",
+      "display": "CVS/PHARMACY #16925"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009851",
+      "display": "CVS/PHARMACY #16858"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005791",
+      "display": "CVS/PHARMACY #16712"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005751",
+      "display": "CVS/PHARMACY #16633"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000761",
+      "display": "CVS PHARMACY #16614"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000791",
+      "display": "CVS/PHARMACY #16603"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004751",
+      "display": "CVS/PHARMACY #16597"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004541",
+      "display": "CVS PHARMACY #145"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008561",
+      "display": "CVS PHARMACY #135"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001561",
+      "display": "CVS PHARMACY #133"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004551",
+      "display": "CVS PHARMACY #1284"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002431",
+      "display": "CVS PHARMACY #1280"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003471",
+      "display": "CVS PHARMACY #1276"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009481",
+      "display": "CVS PHARMACY #1268"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008680",
+      "display": "CVS PHARMACY #1244"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002421",
+      "display": "CVS PHARMACY #1242"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004421",
+      "display": "CVS PHARMACY #1241"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006551",
+      "display": "CVS PHARMACY #124"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005511",
+      "display": "CVS PHARMACY #123"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009521",
+      "display": "CVS PHARMACY #1219"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000421",
+      "display": "CVS PHARMACY #1213"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004481",
+      "display": "CVS PHARMACY #1202"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000451",
+      "display": "CVS PHARMACY #1183"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008371",
+      "display": "CVS PHARMACY #1180"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005681",
+      "display": "CVS PHARMACY #1166"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001461",
+      "display": "CVS PHARMACY #1156"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007361",
+      "display": "CVS PHARMACY #1155"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005581",
+      "display": "CVS PHARMACY #1154"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005431",
+      "display": "CVS PHARMACY #1153"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002391",
+      "display": "CVS PHARMACY #1152"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001381",
+      "display": "CVS PHARMACY #1151"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000371",
+      "display": "CVS PHARMACY #1149"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004650",
+      "display": "CVS PHARMACY #1148"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006571",
+      "display": "CVS PHARMACY #1139"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003391",
+      "display": "CVS PHARMACY #1125"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008381",
+      "display": "CVS PHARMACY #1123"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000381",
+      "display": "CVS PHARMACY #1109"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006250",
+      "display": "CVS PHARMACY #11072"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004021",
+      "display": "CVS PHARMACY #1102"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009980",
+      "display": "CVS PHARMACY #1101"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002352",
+      "display": "CVS PHARMACY # 11007"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000021",
+      "display": "CVS PHARMACY #1098"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006151",
+      "display": "CVS PHARMACY #1097"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008361",
+      "display": "CVS PHARMACY #1089"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009351",
+      "display": "CVS PHARMACY #1080"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003700",
+      "display": "CVS PHARMACY #1070"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005302",
+      "display": "CVS PHARMACY #10605"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001351",
+      "display": "CVS PHARMACY #1060"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003341",
+      "display": "CVS PHARMACY #1051"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007292",
+      "display": "CVS PHARMACY #10462"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002131",
+      "display": "CVS PHARMACY #1044"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002371",
+      "display": "CVS PHARMACY #1043"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009321",
+      "display": "CVS PHARMACY #1038"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008200",
+      "display": "CVS PHARMACY #10367"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001302",
+      "display": "CVS PHARMACY #10317"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003382",
+      "display": "CVS PHARMACY #10316"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005491",
+      "display": "CVS PHARMACY #1028"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008311",
+      "display": "CVS PHARMACY #1027"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006232",
+      "display": "CVS PHARMACY #10130"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005222",
+      "display": "CVS PHARMACY #10100"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003711",
+      "display": "CVS PHARMACY #0943"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/pharm-healthcareservice-6bda74c96c41df2b39496aeb2",
+      "display": "pharm"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

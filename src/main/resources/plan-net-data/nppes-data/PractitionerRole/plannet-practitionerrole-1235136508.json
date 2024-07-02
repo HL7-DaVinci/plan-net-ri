@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1235136508",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID030000",
+        "display": "Massachusetts Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://mount-auburn-hospital.com",
+      "value": "c73c680a779310"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235136508",
+    "display": "Genevie Stoltenberg"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1239670259",
+    "display": "MOUNT AUBURN HOSPITAL"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207R00000X",
+          "display": "Internal Medicine"
+        }
+      ],
+      "text": "Internal Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1239670259",
+      "display": "MOUNT AUBURN HOSPITAL"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/hosp-healthcareservice-1239670259",
+      "display": "MOUNT AUBURN HOSPITAL"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "583.267.4360 x42959",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "408.453.0903 x53848",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

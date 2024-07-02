@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1237056795",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://quincy-medical-center.com",
+      "value": "02429a4b650995"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1237056795",
+    "display": "Marcene Kohler"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1239972445",
+    "display": "QUINCY MEDICAL CENTER"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207RG0100X",
+          "display": "Gastroenterology"
+        }
+      ],
+      "text": "Gastroenterology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1239972445",
+      "display": "QUINCY MEDICAL CENTER"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1239972445",
+      "display": "QUINCY MEDICAL CENTER"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "764-176-3404",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "239-358-9901 x6270",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

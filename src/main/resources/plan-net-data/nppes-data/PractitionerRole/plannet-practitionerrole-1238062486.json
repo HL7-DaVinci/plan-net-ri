@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1238062486",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID030000",
+        "display": "Massachusetts Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://mount-auburn-hospital.com",
+      "value": "169510b34fd24e"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1238062486",
+    "display": "Dewitt Bergnaum"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1239670259",
+    "display": "MOUNT AUBURN HOSPITAL"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "1223P0221X",
+          "display": "Pediatric Dentistry"
+        }
+      ],
+      "text": "Pediatric Dentistry"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1239670259",
+      "display": "MOUNT AUBURN HOSPITAL"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/hosp-healthcareservice-1239670259",
+      "display": "MOUNT AUBURN HOSPITAL"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(765) 161-4914 x1429",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(655) 111-9062 x2006",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

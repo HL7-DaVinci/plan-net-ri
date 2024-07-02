@@ -1,0 +1,125 @@
+{
+  "id": "plannet-location-1235338232",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "newpt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-1235338232",
+        "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER",
+  "description": "Main campus of JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "608-576-7613 x97442",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "(413) 099-4509 x7172",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "24 BATTLE ST, P.O. BOX 750, SOMERS, CT 060711629",
+    "line": [
+      "24 BATTLE ST",
+      "P.O. BOX 750"
+    ],
+    "city": "SOMERS",
+    "state": "CT",
+    "postalCode": "060711629",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.44259,
+    "latitude": 41.986656
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-1235338232",
+    "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

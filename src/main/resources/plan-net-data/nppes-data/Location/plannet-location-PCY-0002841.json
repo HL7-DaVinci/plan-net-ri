@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0002841",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://cvspharmacy-16925.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-6bda74c96c41df2b39496aeb2",
+        "display": "CVS"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "CVS/PHARMACY #16925",
+  "description": "Main campus of CVS/PHARMACY #16925",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "402.603.5614 x79451",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "(558) 242-1865 x90542",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "3265 BERLIN TPKE, NEWINGTON, CT 06111-5101",
+    "line": [
+      "3265 BERLIN TPKE"
+    ],
+    "city": "NEWINGTON",
+    "state": "CT",
+    "postalCode": "06111-5101",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.72417,
+    "latitude": 41.65844
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-6bda74c96c41df2b39496aeb2",
+    "display": "CVS"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

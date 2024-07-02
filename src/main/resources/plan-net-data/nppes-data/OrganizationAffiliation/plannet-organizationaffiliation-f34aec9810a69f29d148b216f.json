@@ -1,0 +1,127 @@
+{
+  "id": "plannet-organizationaffiliation-f34aec9810a69f29d148b216f",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "active": true,
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-f34aec9810a69f29d148b216f",
+    "display": "SHOPRITE"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/organization-role",
+          "code": "pharmacy",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336H0001X",
+          "display": "Home Infusion Therapy Pharmacy"
+        }
+      ],
+      "text": "Home Infusion Therapy Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0001172",
+      "display": "SHOPRITE PHARMACY OF WEST HARTFORD"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005121",
+      "display": "SHOPRITE PHARMACY OF WATERBURY"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000342",
+      "display": "SHOPRITE PHARMACY OF ORANGE"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001262",
+      "display": "SHOPRITE PHARMACY OF NORWICH"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008172",
+      "display": "SHOPRITE PHARMACY OF HAMDEN"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009162",
+      "display": "SHOPRITE PHARMACY OF CLINTON"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000701",
+      "display": "SHOPRITE PHARMACY OF BRISTOL #308"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003182",
+      "display": "SHOPRITE OF STRATFORD"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003741",
+      "display": "SHOPRITE OF NEW LONDON"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004332",
+      "display": "SHOPRITE OF MILFORD"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008382",
+      "display": "SHOPRITE OF CROMWELL"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/pharm-healthcareservice-f34aec9810a69f29d148b216f",
+      "display": "pharm"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

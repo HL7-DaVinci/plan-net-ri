@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1238263494",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://discovery-house-utah.com",
+      "value": "0c154d70537166"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1238263494",
+    "display": "Chance Durgan"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1237955733",
+    "display": "DISCOVERY HOUSE UTAH"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208000000X",
+          "display": "Pediatrics"
+        }
+      ],
+      "text": "Pediatrics"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1237955733",
+      "display": "DISCOVERY HOUSE UTAH"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1237955733",
+      "display": "DISCOVERY HOUSE UTAH"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(612) 063-5873 x09301",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "563.598.8212",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

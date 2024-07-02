@@ -1,0 +1,511 @@
+{
+  "id": "plannet-organizationaffiliation-f021b8fc3135592c53d50ef64",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "active": true,
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-f021b8fc3135592c53d50ef64",
+    "display": "WALGREENS"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID100000",
+      "display": "State of Massachusetts Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/organization-role",
+          "code": "pharmacy",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336I0012X",
+          "display": "Institutional Pharmacy"
+        }
+      ],
+      "text": "Institutional Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0004851",
+      "display": "WALGREENS #19893"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007251",
+      "display": "WALGREENS #19888"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008811",
+      "display": "WALGREENS #19842"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001341",
+      "display": "WALGREENS #19836"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008641",
+      "display": "WALGREENS #19532"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002340",
+      "display": "WALGREENS #19414"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007721",
+      "display": "WALGREENS #19244"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007431",
+      "display": "WALGREENS #18969"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001731",
+      "display": "WALGREENS #18243"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007651",
+      "display": "WALGREENS #17929"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006411",
+      "display": "WALGREENS #17893"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008291",
+      "display": "WALGREENS #17767"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002501",
+      "display": "WALGREENS #17726"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003161",
+      "display": "WALGREENS #17537"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007101",
+      "display": "WALGREENS #17500"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001201",
+      "display": "WALGREENS #17224"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003451",
+      "display": "WALGREENS #17216"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006342",
+      "display": "WALGREENS # 16549"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008101",
+      "display": "WALGREENS #16080"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005251",
+      "display": "WALGREENS #15590"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005242",
+      "display": "WALGREENS #15389"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001451",
+      "display": "WALGREENS #15207"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002192",
+      "display": "WALGREENS #13969"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000202",
+      "display": "WALGREENS #13947"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003202",
+      "display": "WALGREENS #13945"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003172",
+      "display": "WALGREENS #12338"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009202",
+      "display": "WALGREENS #12315"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004142",
+      "display": "WALGREENS #12120"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000152",
+      "display": "WALGREENS #12058"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008142",
+      "display": "WALGREENS #11919"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001251",
+      "display": "WALGREENS #11825"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009152",
+      "display": "WALGREENS #11620"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002401",
+      "display": "WALGREENS #11619"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005801",
+      "display": "WALGREENS #11604"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007152",
+      "display": "WALGREENS #11533"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006132",
+      "display": "WALGREENS #11164"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006371",
+      "display": "WALGREENS #10647"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008721",
+      "display": "WALGREENS #10483"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000122",
+      "display": "WALGREENS #10310"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000102",
+      "display": "WALGREENS #10309"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003112",
+      "display": "WALGREENS #10261"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007102",
+      "display": "WALGREENS #10244"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009082",
+      "display": "WALGREENS #10203"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005122",
+      "display": "WALGREENS #10177"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008082",
+      "display": "WALGREENS #10144"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007821",
+      "display": "WALGREENS #10119"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004112",
+      "display": "WALGREENS #10058"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003032",
+      "display": "WALGREENS #10003"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006950",
+      "display": "WALGREENS #09821"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006102",
+      "display": "WALGREENS #09820"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001102",
+      "display": "WALGREENS #09818"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009341",
+      "display": "WALGREENS #09785"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005461",
+      "display": "WALGREENS #09784"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007122",
+      "display": "WALGREENS #09746"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000062",
+      "display": "WALGREENS #09612"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009052",
+      "display": "WALGREENS #09521"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006072",
+      "display": "WALGREENS #09432"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001062",
+      "display": "WALGREENS #09101"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006391",
+      "display": "WALGREENS #09071"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003071",
+      "display": "WALGREENS #07935"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001891",
+      "display": "WALGREENS #07814"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000901",
+      "display": "WALGREENS #07759"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001012",
+      "display": "WALGREENS #07750"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001901",
+      "display": "WALGREENS #07641"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004871",
+      "display": "WALGREENS #07602"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007421",
+      "display": "WALGREENS #07585"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003311",
+      "display": "WALGREENS #07584"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002351",
+      "display": "WALGREENS #07566"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005851",
+      "display": "WALGREENS #07522"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000960",
+      "display": "WALGREENS #07333"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002921",
+      "display": "WALGREENS #07258"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004841",
+      "display": "WALGREENS #07145"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001811",
+      "display": "WALGREENS #07086"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002012",
+      "display": "WALGREENS #07047"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006851",
+      "display": "WALGREENS #06992"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008231",
+      "display": "WALGREENS #06968"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002811",
+      "display": "WALGREENS #06966"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003941",
+      "display": "WALGREENS #06914"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008831",
+      "display": "WALGREENS #06757"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006811",
+      "display": "WALGREENS  #06654"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000811",
+      "display": "WALGREENS #06503"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008771",
+      "display": "WALGREENS #06474"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007761",
+      "display": "WALGREENS #06308"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002781",
+      "display": "WALGREENS #05949"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009761",
+      "display": "WALGREENS #05948"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008411",
+      "display": "WALGREENS #05723"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007241",
+      "display": "WALGREENS  #05407"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008761",
+      "display": "WALGREENS #05406"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009021",
+      "display": "WALGREENS #05134"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001950",
+      "display": "WALGREENS #04490"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007990",
+      "display": "WALGREENS #03944"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008950",
+      "display": "WALGREENS #03827"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001130",
+      "display": "WALGREENS #03579"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007571",
+      "display": "WALGREENS #03523"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009531",
+      "display": "WALGREENS #03359"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001521",
+      "display": "WALGREENS #03192"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001471",
+      "display": "WALGREENS #02976"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001511",
+      "display": "WALGREENS #02858"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005391",
+      "display": "WALGREENS #02410"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002112",
+      "display": "WALGREENS #02228"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003012",
+      "display": "WALGREENS #01977"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003970",
+      "display": "WALGREENS #01873"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005131",
+      "display": "WALGREENS #01826"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007261",
+      "display": "WALGREENS #01824"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005981",
+      "display": "WALGREENS #01455"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000951",
+      "display": "WALGREENS #01451"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/pharm-healthcareservice-f021b8fc3135592c53d50ef64",
+      "display": "pharm"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "plannet-location-1230780047",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "existptonly"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://harrington-memorial-hospital-inc.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-1230780047",
+        "display": "HARRINGTON MEMORIAL HOSPITAL, INC."
+      }
+    }
+  ],
+  "status": "active",
+  "name": "HARRINGTON MEMORIAL HOSPITAL, INC.",
+  "description": "Main campus of HARRINGTON MEMORIAL HOSPITAL, INC.",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "721-471-9332",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "1-544-454-1399 x51415",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "100 SOUTH STREET, SOUTHBRIDGE, MA 01550",
+    "line": [
+      "100 SOUTH STREET"
+    ],
+    "city": "SOUTHBRIDGE",
+    "state": "MA",
+    "postalCode": "01550",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.04298,
+    "latitude": 42.07706
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-1230780047",
+    "display": "HARRINGTON MEMORIAL HOSPITAL, INC."
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

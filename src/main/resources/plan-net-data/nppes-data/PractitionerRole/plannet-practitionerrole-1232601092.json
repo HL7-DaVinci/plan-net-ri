@@ -1,0 +1,118 @@
+{
+  "id": "plannet-practitionerrole-1232601092",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID030000",
+        "display": "Massachusetts Persona Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://springfield-rehabilitation-center-inc.com",
+      "value": "898c3a2a5c7e7c"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1232601092",
+    "display": "Trenton Hessel"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1237659264",
+    "display": "SPRINGFIELD REHABILITATION CENTER INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "152W00000X",
+          "display": "Optometrist"
+        }
+      ],
+      "text": "Optometrist"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1237659264",
+      "display": "SPRINGFIELD REHABILITATION CENTER INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1237659264",
+      "display": "SPRINGFIELD REHABILITATION CENTER INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "483.670.8562 x02727",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "436-238-9087 x375",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

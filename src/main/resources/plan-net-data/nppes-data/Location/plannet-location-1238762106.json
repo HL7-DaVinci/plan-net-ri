@@ -1,0 +1,125 @@
+{
+  "id": "plannet-location-1238762106",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "nopt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://tollgate-sleep-disorders-center-inc.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-1238762106",
+        "display": "TOLLGATE SLEEP DISORDERS CENTER, INC."
+      }
+    }
+  ],
+  "status": "active",
+  "name": "TOLLGATE SLEEP DISORDERS CENTER, INC.",
+  "description": "Main campus of TOLLGATE SLEEP DISORDERS CENTER, INC.",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "922.984.8356 x127",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "1-141-144-2506 x2231",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "400 BALD HILL RD, SUITE 529, WARWICK, RI 028861617",
+    "line": [
+      "400 BALD HILL RD",
+      "SUITE 529"
+    ],
+    "city": "WARWICK",
+    "state": "RI",
+    "postalCode": "028861617",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -100.445882,
+    "latitude": 39.78373
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-1238762106",
+    "display": "TOLLGATE SLEEP DISORDERS CENTER, INC."
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

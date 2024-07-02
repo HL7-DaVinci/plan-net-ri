@@ -1,0 +1,182 @@
+{
+  "id": "plannet-practitioner-1234227703",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number",
+            "userSelected": true
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1234227703",
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Hodkiewicz",
+      "given": [
+        "Tiffany",
+        "Sophia"
+      ],
+      "suffix": [
+        "M.D."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-441-512-9168 x197",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(791) 684-9832",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 42.124695
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -72.610275
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "3455 MAIN ST, STE 5, SPRINGFIELD, MA 011071147",
+      "line": [
+        "3455 MAIN ST",
+        "STE 5"
+      ],
+      "city": "SPRINGFIELD",
+      "state": "MA",
+      "postalCode": "011071147",
+      "country": "USA"
+    }
+  ],
+  "gender": "female",
+  "qualification": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "MA",
+                    "display": "Massachusetts",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Massachusetts"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://www.mass.gov/orgs",
+          "value": "71759",
+          "assigner": {
+            "display": "Board of Registration in Medicine (BORIM)"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "207N00000X",
+            "display": "Dermatology"
+          }
+        ],
+        "text": "Dermatology"
+      },
+      "period": {
+        "start": "2021-08-20",
+        "end": "2024-08-20"
+      },
+      "issuer": {
+        "display": "Board of Registration in Medicine (BORIM)"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    }
+  ],
+  "resourceType": "Practitioner"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "plannet-insuranceplan-HPID270000",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "text": "HIOS product ID"
+      },
+      "system": "http://www.cms.gov/CCIIO",
+      "value": "HPID270000",
+      "assigner": {
+        "display": "Centers for Medicare and Medicaid Services"
+      }
+    }
+  ],
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/InsuranceProductTypeCS",
+          "code": "CommercialPPO",
+          "display": "Commercial PPO"
+        }
+      ],
+      "text": "Health insurance provided through a Preferred Provider Organization (PPO)"
+    }
+  ],
+  "name": "Acme Insurance Co of ConnecticutBronze PPO Plan",
+  "alias": [
+    "Acme CT BRONZE PPO"
+  ],
+  "ownedBy": {
+    "reference": "Organization/plannet-organization-1230210000",
+    "display": "Acme Insurance Co"
+  },
+  "administeredBy": {
+    "reference": "Organization/plannet-organization-1230210000",
+    "display": "Acme Insurance Co"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID040000",
+      "display": "Acme of Connecticut Preferred Provider Network"
+    }
+  ],
+  "resourceType": "InsurancePlan"
+}

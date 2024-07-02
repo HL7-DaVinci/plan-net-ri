@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1235339248",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID030000",
+        "display": "Massachusetts Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://greater-new-bedford-community-health-center-inc.com",
+      "value": "0bc9a23de5ca74"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235339248",
+    "display": "Loan Ward"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1232607537",
+    "display": "GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207VG0400X",
+          "display": "Gynecology"
+        }
+      ],
+      "text": "Gynecology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1232607537",
+      "display": "GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1232607537",
+      "display": "GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "591.134.7706",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(267) 295-1521 x330",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

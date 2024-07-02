@@ -1,0 +1,143 @@
+{
+  "id": "pharm-healthcareservice-2c7e777ff2057a9d76798a5b3",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "nopt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS",
+                "code": "physical",
+                "display": "Physical"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/plannet-organization-2c7e777ff2057a9d76798a5b3",
+    "display": "PRICE CHOPPER"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
+          "code": "pharm",
+          "display": "Pharm"
+        }
+      ],
+      "text": "pharm"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336N0007X",
+          "display": "Nuclear Pharmacy"
+        }
+      ],
+      "text": "Nuclear Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0008851",
+      "display": "PRICE CHOPPER PHARMACY #204"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007851",
+      "display": "PRICE CHOPPER #203"
+    }
+  ],
+  "name": "PRICE CHOPPER",
+  "comment": "Pharmacy; Clinic Pharmacy; Community/Retail Pharmacy; Nuclear Pharmacy",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(531) 457-2138 x586",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "919.655.5623",
+      "use": "work"
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "allDay": false,
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ],
+  "resourceType": "HealthcareService"
+}

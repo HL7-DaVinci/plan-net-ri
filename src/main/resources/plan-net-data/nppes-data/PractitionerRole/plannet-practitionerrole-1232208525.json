@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1232208525",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://seacoast-affiliated-group-practice-inc.com",
+      "value": "f32489881eb714"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1232208525",
+    "display": "Bobbie Carter"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1231892344",
+    "display": "SEACOAST AFFILIATED GROUP PRACTICE, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207N00000X",
+          "display": "Dermatology"
+        }
+      ],
+      "text": "Dermatology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1231892344",
+      "display": "SEACOAST AFFILIATED GROUP PRACTICE, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1231892344",
+      "display": "SEACOAST AFFILIATED GROUP PRACTICE, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "485.197.5755 x209",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "922-938-7817 x232",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

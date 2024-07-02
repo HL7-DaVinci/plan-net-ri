@@ -1,0 +1,263 @@
+{
+  "id": "pharm-healthcareservice-154978d886a614681927b2351",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "newpt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS",
+                "code": "physical",
+                "display": "Physical"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/plannet-organization-154978d886a614681927b2351",
+    "display": "WAL-MART"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
+          "code": "pharm",
+          "display": "Pharm"
+        }
+      ],
+      "text": "pharm"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336H0001X",
+          "display": "Home Infusion Therapy Pharmacy"
+        }
+      ],
+      "text": "Home Infusion Therapy Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0008931",
+      "display": "WAL-MART STORE #5095"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000082",
+      "display": "WAL-MART STORE #3803"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003831",
+      "display": "WAL-MART STORE #3547"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009811",
+      "display": "WAL-MART STORE #3546"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009801",
+      "display": "WAL-MART STORE #3545"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000821",
+      "display": "WAL-MART STORE #3543"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006741",
+      "display": "WAL-MART STORE #2897"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002801",
+      "display": "WAL-MART STORE #2585"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004272",
+      "display": "WAL-MART PHARMACY #10-5777"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003871",
+      "display": "WAL-MART PHARMACY #10-5439"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001092",
+      "display": "WAL-MART PHARMACY #10-5294"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003811",
+      "display": "WAL-MART PHARMACY #10-3548"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006781",
+      "display": "WAL-MART PHARMACY #10-2965"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006751",
+      "display": "WAL-MART PHARMACY #10-2954"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009741",
+      "display": "WAL-MART PHARMACY  #10-2900"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004761",
+      "display": "WAL-MART PHARMACY #10-2899"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004781",
+      "display": "WAL-MART PHARMACY #10-2898"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003781",
+      "display": "WAL-MART PHARMACY #10-2854"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005761",
+      "display": "WAL-MART PHARMACY #10-2719"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009561",
+      "display": "WAL-MART PHARMACY #10-2371"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001581",
+      "display": "WAL-MART PHARMACY #10-2331"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005631",
+      "display": "WAL-MART PHARMACY #10-2299"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000641",
+      "display": "WAL-MART PHARMACY #10-2284"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003631",
+      "display": "WAL-MART PHARMACY #10-2232"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009511",
+      "display": "WAL-MART PHARMACY #10-2170"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002581",
+      "display": "WAL-MART PHARMACY #10-2163"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008581",
+      "display": "WAL-MART PHARMACY #10-2144"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008491",
+      "display": "WAL-MART PHARMACY #10-2022"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003551",
+      "display": "WAL-MART PHARMACY #10-1980"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005451",
+      "display": "WAL-MART PHARMACY #10-1891"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002631",
+      "display": "WAL-MART #2282"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008511",
+      "display": "WAL-MART  #10-2200"
+    }
+  ],
+  "name": "WAL-MART",
+  "comment": "Pharmacy; Clinic Pharmacy; Community/Retail Pharmacy; Home Infusion Therapy Pharmacy",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-603-210-5789",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "285.274.4610 x0163",
+      "use": "work"
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "allDay": false,
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ],
+  "resourceType": "HealthcareService"
+}

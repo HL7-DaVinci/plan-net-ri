@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0008111",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://medicine-shoppe-the.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-15f66382807d6dcc2b51b3493",
+        "display": "MEDICINE SHOPPE (THE)"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "MEDICINE SHOPPE (THE)",
+  "description": "Main campus of MEDICINE SHOPPE (THE)",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "1-909-477-5693 x89354",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "1-579-048-7695 x55218",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "613 BROAD STREET, NEW LONDON, CT 06320",
+    "line": [
+      "613 BROAD STREET"
+    ],
+    "city": "NEW LONDON",
+    "state": "CT",
+    "postalCode": "06320",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.12294,
+    "latitude": 41.366467
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-15f66382807d6dcc2b51b3493",
+    "display": "MEDICINE SHOPPE (THE)"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

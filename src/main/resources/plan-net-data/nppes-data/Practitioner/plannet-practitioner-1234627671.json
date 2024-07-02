@@ -1,0 +1,530 @@
+{
+  "id": "plannet-practitioner-1234627671",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number",
+            "userSelected": true
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1234627671",
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Botsford",
+      "given": [
+        "Albert",
+        "Thomas"
+      ],
+      "prefix": [
+        "Mr."
+      ],
+      "suffix": [
+        "RPT"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "931-225-1962 x10514",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "474.040.6077",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.65822
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -72.67843
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "506 CROMWELL AVE, SUITE 103, ROCKY HILL, CT 060671851",
+      "line": [
+        "506 CROMWELL AVE",
+        "SUITE 103"
+      ],
+      "city": "ROCKY HILL",
+      "state": "CT",
+      "postalCode": "060671851",
+      "country": "USA"
+    }
+  ],
+  "gender": "male",
+  "qualification": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "CT",
+                    "display": "Connecticut",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Connecticut"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://ct.gov/DPH",
+          "value": "2509",
+          "assigner": {
+            "display": "Connecticut Medical Examining Board"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "225100000X",
+            "display": "Physical Therapist"
+          }
+        ],
+        "text": "Physical Therapist"
+      },
+      "period": {
+        "start": "2021-10-08",
+        "end": "2024-10-08"
+      },
+      "issuer": {
+        "display": "Connecticut Medical Examining Board"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "CT",
+                    "display": "Connecticut",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Connecticut"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://ct.gov/DPH",
+          "value": "2509",
+          "assigner": {
+            "display": "Connecticut Medical Examining Board"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "2251G0304X",
+            "display": "Geriatrics"
+          }
+        ],
+        "text": "Geriatrics"
+      },
+      "period": {
+        "start": "2022-10-10",
+        "end": "2025-10-10"
+      },
+      "issuer": {
+        "display": "Connecticut Medical Examining Board"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "CT",
+                    "display": "Connecticut",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Connecticut"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://ct.gov/DPH",
+          "value": "2509",
+          "assigner": {
+            "display": "Connecticut Medical Examining Board"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "2251N0400X",
+            "display": "Neurology"
+          }
+        ],
+        "text": "Neurology"
+      },
+      "period": {
+        "start": "2024-02-04",
+        "end": "2027-02-04"
+      },
+      "issuer": {
+        "display": "Connecticut Medical Examining Board"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "CT",
+                    "display": "Connecticut",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Connecticut"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://ct.gov/DPH",
+          "value": "2509",
+          "assigner": {
+            "display": "Connecticut Medical Examining Board"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "2251S0007X",
+            "display": "Sports"
+          }
+        ],
+        "text": "Sports"
+      },
+      "period": {
+        "start": "2022-04-28",
+        "end": "2025-04-28"
+      },
+      "issuer": {
+        "display": "Connecticut Medical Examining Board"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "CT",
+                    "display": "Connecticut",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Connecticut"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://ct.gov/DPH",
+          "value": "2509",
+          "assigner": {
+            "display": "Connecticut Medical Examining Board"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "2251X0800X",
+            "display": "Orthopedic"
+          }
+        ],
+        "text": "Orthopedic"
+      },
+      "period": {
+        "start": "2023-12-07",
+        "end": "2026-12-07"
+      },
+      "issuer": {
+        "display": "Connecticut Medical Examining Board"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "CT",
+                    "display": "Connecticut",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Connecticut"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://ct.gov/DPH",
+          "value": "2509",
+          "assigner": {
+            "display": "Connecticut Medical Examining Board"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "225400000X",
+            "display": "Rehabilitation Practitioner"
+          }
+        ],
+        "text": "Rehabilitation Practitioner"
+      },
+      "period": {
+        "start": "2023-01-22",
+        "end": "2026-01-22"
+      },
+      "issuer": {
+        "display": "Connecticut Medical Examining Board"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
+    }
+  ],
+  "resourceType": "Practitioner"
+}

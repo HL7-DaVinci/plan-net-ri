@@ -1,0 +1,150 @@
+{
+  "id": "plannet-organization-1238863986",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1238863986",
+      "assigner": {
+        "display": "Centers for Medicare and Medicaid Services"
+      }
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS",
+          "code": "prvgrp",
+          "display": "Provider Group"
+        }
+      ],
+      "text": "A healthcare provider entity"
+    }
+  ],
+  "name": "CAMBRIDGE HEALTH ALLIANCE ELDER SERVICE PLAN",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "842.145.2744 x77036",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "599-603-6757",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 42.364403
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -71.10361
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "270 GREEN ST, CAMBRIDGE, MA 021393312",
+      "line": [
+        "270 GREEN ST"
+      ],
+      "city": "CAMBRIDGE",
+      "state": "MA",
+      "postalCode": "021393312",
+      "country": "USA"
+    }
+  ],
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Lanora Kuphal",
+        "family": "Kuphal",
+        "given": [
+          "Lanora"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "07:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "18:00:00"
+                }
+              ],
+              "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+            }
+          ],
+          "system": "phone",
+          "value": "842.145.2744 x77036",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "both",
+        "text": "270 GREEN ST, CAMBRIDGE, MA 021393312",
+        "line": [
+          "270 GREEN ST"
+        ],
+        "city": "CAMBRIDGE",
+        "state": "MA",
+        "postalCode": "021393312",
+        "country": "USA"
+      }
+    }
+  ],
+  "resourceType": "Organization"
+}

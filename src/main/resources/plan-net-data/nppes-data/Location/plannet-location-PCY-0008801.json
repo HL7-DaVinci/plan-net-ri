@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0008801",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://cornell-scott--hill-health-center-pharmacy.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-c62791d9de7b05bb99d4e50bc",
+        "display": "CORNELL SCOTT - HILL HEALTH CENTER"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "CORNELL SCOTT - HILL HEALTH CENTER PHARMACY",
+  "description": "Main campus of CORNELL SCOTT - HILL HEALTH CENTER PHARMACY",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "1-961-680-7590",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "152.205.2171 x72094",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "428 Columbus Ave, NEW HAVEN, CT 06519-1233",
+    "line": [
+      "428 Columbus Ave"
+    ],
+    "city": "NEW HAVEN",
+    "state": "CT",
+    "postalCode": "06519-1233",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.93853,
+    "latitude": 41.2977
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-c62791d9de7b05bb99d4e50bc",
+    "display": "CORNELL SCOTT - HILL HEALTH CENTER"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

@@ -1,0 +1,206 @@
+{
+  "id": "plannet-practitioner-1233417145",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number",
+            "userSelected": true
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1233417145",
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Stark",
+      "given": [
+        "Jayson"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-296-246-9454 x79721",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-172-653-1157 x24338",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 39.78373
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -100.445882
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "131 OLD ROAD NINE ACRE CORNER, JCB SUITE 500, CONCORD, MA 01742",
+      "line": [
+        "131 OLD ROAD NINE ACRE CORNER",
+        "JCB SUITE 500"
+      ],
+      "city": "CONCORD",
+      "state": "MA",
+      "postalCode": "01742",
+      "country": "USA"
+    }
+  ],
+  "gender": "male",
+  "qualification": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "MA",
+                    "display": "Massachusetts",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Massachusetts"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://www.mass.gov/orgs",
+          "value": "243890",
+          "assigner": {
+            "display": "Board of Registration in Medicine (BORIM)"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "208600000X",
+            "display": "Surgery"
+          }
+        ],
+        "text": "Surgery"
+      },
+      "period": {
+        "start": "2021-09-08",
+        "end": "2024-09-08"
+      },
+      "issuer": {
+        "display": "Board of Registration in Medicine (BORIM)"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
+    }
+  ],
+  "resourceType": "Practitioner"
+}

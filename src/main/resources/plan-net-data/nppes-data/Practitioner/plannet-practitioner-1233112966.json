@@ -1,0 +1,118 @@
+{
+  "id": "plannet-practitioner-1233112966",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number",
+            "userSelected": true
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1233112966",
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Sanford",
+      "given": [
+        "Margorie",
+        "Keitha"
+      ],
+      "prefix": [
+        "Dr."
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "711-165-0106",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(595) 577-7761 x550",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 42.600903
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -70.65508
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "45 EASTERN POINT RD, GLOUCESTER, MA 019304139",
+      "line": [
+        "45 EASTERN POINT RD"
+      ],
+      "city": "GLOUCESTER",
+      "state": "MA",
+      "postalCode": "019304139",
+      "country": "USA"
+    }
+  ],
+  "gender": "female",
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    }
+  ],
+  "resourceType": "Practitioner"
+}

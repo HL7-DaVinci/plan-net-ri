@@ -1,0 +1,91 @@
+{
+  "id": "plannet-organizationaffiliation-ae66c08de1b0dda010004eada",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "active": true,
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-ae66c08de1b0dda010004eada",
+    "display": "SERAFINOS"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID030000",
+      "display": "Massachusetts Persona Preferred Provider Network"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/organization-role",
+          "code": "pharmacy",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336I0012X",
+          "display": "Institutional Pharmacy"
+        }
+      ],
+      "text": "Institutional Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0005490",
+      "display": "SERAFINOS PHARMACY INC"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/pharm-healthcareservice-ae66c08de1b0dda010004eada",
+      "display": "pharm"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

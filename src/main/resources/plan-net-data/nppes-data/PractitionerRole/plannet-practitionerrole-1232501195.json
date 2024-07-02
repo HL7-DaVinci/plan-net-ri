@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1232501195",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://hospital-of-saint-raphael.com",
+      "value": "ed6ff0687b5278"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1232501195",
+    "display": "Soila Torp"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1238269624",
+    "display": "HOSPITAL OF SAINT RAPHAEL"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "1223G0001X",
+          "display": "General Practice"
+        }
+      ],
+      "text": "General Practice"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1238269624",
+      "display": "HOSPITAL OF SAINT RAPHAEL"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/hosp-healthcareservice-1238269624",
+      "display": "HOSPITAL OF SAINT RAPHAEL"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-381-253-4796 x31531",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-182-229-3334",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

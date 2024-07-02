@@ -1,0 +1,118 @@
+{
+  "id": "plannet-practitionerrole-1235337366",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://rhode-island-substance-abuse-treatment-inc.com",
+      "value": "df3615b00aeef7"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235337366",
+    "display": "Shantae Murphy"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1234521488",
+    "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207Q00000X",
+          "display": "Family Medicine"
+        }
+      ],
+      "text": "Family Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1234521488",
+      "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1234521488",
+      "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "888.173.5248",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "975-025-5959 x630",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

@@ -1,0 +1,181 @@
+{
+  "id": "plannet-practitioner-1230982087",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number",
+            "userSelected": true
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1230982087",
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Adams",
+      "given": [
+        "Ivey"
+      ],
+      "suffix": [
+        "D.C."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "679.932.8318",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "558.471.7886 x046",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 42.114613
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -70.82856
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "24 ROCKLAND ST, UNIT 1, HANOVER, MA 023392385",
+      "line": [
+        "24 ROCKLAND ST",
+        "UNIT 1"
+      ],
+      "city": "HANOVER",
+      "state": "MA",
+      "postalCode": "023392385",
+      "country": "USA"
+    }
+  ],
+  "gender": "female",
+  "qualification": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "MA",
+                    "display": "Massachusetts",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Massachusetts"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://www.mass.gov/orgs",
+          "value": "870",
+          "assigner": {
+            "display": "Board of Registration in Medicine (BORIM)"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "111N00000X",
+            "display": "Chiropractor"
+          }
+        ],
+        "text": "Chiropractor"
+      },
+      "period": {
+        "start": "2022-11-22",
+        "end": "2025-11-22"
+      },
+      "issuer": {
+        "display": "Board of Registration in Medicine (BORIM)"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    }
+  ],
+  "resourceType": "Practitioner"
+}

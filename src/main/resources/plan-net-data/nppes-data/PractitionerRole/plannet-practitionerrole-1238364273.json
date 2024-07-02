@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1238364273",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://roger-williams-medical-center.com",
+      "value": "4084a31139b041"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1238364273",
+    "display": "Andy Goodwin"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1239278250",
+    "display": "ROGER WILLIAMS MEDICAL CENTER"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "2085R0202X",
+          "display": "Diagnostic Radiology"
+        }
+      ],
+      "text": "Diagnostic Radiology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1239278250",
+      "display": "ROGER WILLIAMS MEDICAL CENTER"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1239278250",
+      "display": "ROGER WILLIAMS MEDICAL CENTER"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "194-395-6259 x4232",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(484) 028-4593 x7913",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

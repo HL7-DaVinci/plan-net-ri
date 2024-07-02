@@ -1,0 +1,124 @@
+{
+  "id": "plannet-location-1235630533",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS",
+            "code": "handiaccess",
+            "display": "handicap accessible"
+          }
+        ],
+        "text": "Offers a variety of services and programs for persons with disabilities"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "existptonly"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://community-health-connections-inc.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-1235630533",
+        "display": "COMMUNITY HEALTH CONNECTIONS, INC."
+      }
+    }
+  ],
+  "status": "active",
+  "name": "COMMUNITY HEALTH CONNECTIONS, INC.",
+  "description": "Main campus of COMMUNITY HEALTH CONNECTIONS, INC.",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "469.774.3903 x544",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "(644) 408-6244 x166",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "326 NICHOLS ROAD, FITCHBURG, MA 014201914",
+    "line": [
+      "326 NICHOLS ROAD"
+    ],
+    "city": "FITCHBURG",
+    "state": "MA",
+    "postalCode": "014201914",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -71.80481,
+    "latitude": 42.594322
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-1235630533",
+    "display": "COMMUNITY HEALTH CONNECTIONS, INC."
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

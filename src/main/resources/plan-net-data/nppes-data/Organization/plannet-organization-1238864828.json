@@ -1,0 +1,152 @@
+{
+  "id": "plannet-organization-1238864828",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1238864828",
+      "assigner": {
+        "display": "Centers for Medicare and Medicaid Services"
+      }
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS",
+          "code": "prvgrp",
+          "display": "Provider Group"
+        }
+      ],
+      "text": "A healthcare provider entity"
+    }
+  ],
+  "name": "FAMILY MEDICINE ASSOCIATES P. C.",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(818) 135-6285",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-344-274-1258 x8110",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 42.58602
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -70.88505
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "38R ENON ST, STE 1, BEVERLY, MA 019151166",
+      "line": [
+        "38R ENON ST",
+        "STE 1"
+      ],
+      "city": "BEVERLY",
+      "state": "MA",
+      "postalCode": "019151166",
+      "country": "USA"
+    }
+  ],
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Tracy Gleichner",
+        "family": "Gleichner",
+        "given": [
+          "Tracy"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "07:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "18:00:00"
+                }
+              ],
+              "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+            }
+          ],
+          "system": "phone",
+          "value": "(818) 135-6285",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "both",
+        "text": "38R ENON ST, STE 1, BEVERLY, MA 019151166",
+        "line": [
+          "38R ENON ST",
+          "STE 1"
+        ],
+        "city": "BEVERLY",
+        "state": "MA",
+        "postalCode": "019151166",
+        "country": "USA"
+      }
+    }
+  ],
+  "resourceType": "Organization"
+}

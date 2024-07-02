@@ -1,0 +1,313 @@
+{
+  "id": "plannet-practitioner-1236243698",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number",
+            "userSelected": true
+          }
+        ],
+        "text": "NPI"
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1236243698",
+      "assigner": {
+        "display": "CMS"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Prosacco",
+      "given": [
+        "Matthew",
+        "Issac"
+      ],
+      "prefix": [
+        "Dr."
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "651.091.3521 x5195",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "250-551-6164 x1668",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 42.51255
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -70.90804
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "55 HIGHLAND AVE, STE 104, SALEM, MA 019702100",
+      "line": [
+        "55 HIGHLAND AVE",
+        "STE 104"
+      ],
+      "city": "SALEM",
+      "state": "MA",
+      "postalCode": "019702100",
+      "country": "USA"
+    }
+  ],
+  "gender": "male",
+  "qualification": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "MA",
+                    "display": "Massachusetts",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Massachusetts"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://www.mass.gov/orgs",
+          "value": "29592",
+          "assigner": {
+            "display": "Board of Registration in Medicine (BORIM)"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "207RC0200X",
+            "display": "Critical Care Medicine"
+          }
+        ],
+        "text": "Critical Care Medicine"
+      },
+      "period": {
+        "start": "2023-06-09",
+        "end": "2026-06-09"
+      },
+      "issuer": {
+        "display": "Board of Registration in Medicine (BORIM)"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "MA",
+                    "display": "Massachusetts",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Massachusetts"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://www.mass.gov/orgs",
+          "value": "29592",
+          "assigner": {
+            "display": "Board of Registration in Medicine (BORIM)"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "207RP1001X",
+            "display": "Pulmonary Disease"
+          }
+        ],
+        "text": "Pulmonary Disease"
+      },
+      "period": {
+        "start": "2021-11-17",
+        "end": "2024-11-17"
+      },
+      "issuer": {
+        "display": "Board of Registration in Medicine (BORIM)"
+      }
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "status",
+              "valueCode": "active"
+            },
+            {
+              "url": "whereValid",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://www.usps.com/",
+                    "code": "MA",
+                    "display": "Massachusetts",
+                    "userSelected": true
+                  }
+                ],
+                "text": "Massachusetts"
+              }
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "MD",
+                "display": "Medical License Number"
+              }
+            ],
+            "text": "Medical License Number"
+          },
+          "system": "https://www.mass.gov/orgs",
+          "value": "29592",
+          "assigner": {
+            "display": "Board of Registration in Medicine (BORIM)"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://nucc.org/provider-taxonomy",
+            "code": "207RS0012X",
+            "display": "Sleep Medicine"
+          }
+        ],
+        "text": "Sleep Medicine"
+      },
+      "period": {
+        "start": "2024-05-31",
+        "end": "2027-05-31"
+      },
+      "issuer": {
+        "display": "Board of Registration in Medicine (BORIM)"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "en",
+          "display": "English"
+        }
+      ],
+      "text": "English"
+    }
+  ],
+  "resourceType": "Practitioner"
+}

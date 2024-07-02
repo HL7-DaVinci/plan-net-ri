@@ -1,0 +1,107 @@
+{
+  "id": "plannet-organizationaffiliation-ecb7918ab94e6511405c2d414",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "active": true,
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-ecb7918ab94e6511405c2d414",
+    "display": "BEACON PRESCRIPTIONS"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID010000",
+      "display": "Acme of Massachusetts Preferred Provider Network"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/organization-role",
+          "code": "pharmacy",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336N0007X",
+          "display": "Nuclear Pharmacy"
+        }
+      ],
+      "text": "Nuclear Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0006011",
+      "display": "BEACON PRESCRIPTIONS #3"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006081",
+      "display": "BEACON PRESCRIPTIONS"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000010",
+      "display": "BEACON PRESCRIPTIONS"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002330",
+      "display": "BEACON PRESCRIPTIONS"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004331",
+      "display": "BEACON PRESCRIPTIONS"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009711",
+      "display": "BEACON PRESCRIPTIONS"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/pharm-healthcareservice-ecb7918ab94e6511405c2d414",
+      "display": "pharm"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

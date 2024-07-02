@@ -1,0 +1,60 @@
+{
+  "id": "plannet-organization-1230020000",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1230020000",
+      "assigner": {
+        "display": "Centers for Medicare and Medicaid Services"
+      }
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS",
+          "code": "fac",
+          "display": "Facility"
+        }
+      ],
+      "text": "A physical healthcare facility."
+    }
+  ],
+  "name": "Acme Healthcare",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-871-578-8324 x05629",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-990-186-6633 x491",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "both",
+      "text": "263 Farmington Avenue, Farmington, CT 06030",
+      "line": [
+        "263 Farmington Avenue"
+      ],
+      "city": "Farmington",
+      "state": "CT",
+      "postalCode": "06030",
+      "country": "USA"
+    }
+  ],
+  "resourceType": "Organization"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1238869678",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://lifebridge-community-services-inc.com",
+      "value": "58be725b706a30"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1238869678",
+    "display": "Romeo Hickle"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1232006923",
+    "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207RC0000X",
+          "display": "Cardiovascular Disease"
+        }
+      ],
+      "text": "Cardiovascular Disease"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1232006923",
+      "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1232006923",
+      "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(561) 111-0006 x0980",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(633) 384-6938 x85381",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

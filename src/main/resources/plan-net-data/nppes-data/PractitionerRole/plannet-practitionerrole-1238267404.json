@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1238267404",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID030000",
+        "display": "Massachusetts Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://greater-new-bedford-community-health-center-inc.com",
+      "value": "154d1009b464a0"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1238267404",
+    "display": "Caleb Kunze"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1232607537",
+    "display": "GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208G00000X",
+          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        }
+      ],
+      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1232607537",
+      "display": "GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1232607537",
+      "display": "GREATER NEW BEDFORD COMMUNITY HEALTH CENTER, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "935.942.3165",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-279-321-5680",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

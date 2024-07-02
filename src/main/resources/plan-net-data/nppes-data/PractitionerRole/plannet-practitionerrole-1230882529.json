@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1230882529",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://kent-county-memorial-hospital.com",
+      "value": "cc2d45cd3e1131"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1230882529",
+    "display": "Max Smitham"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1236643294",
+    "display": "KENT COUNTY MEMORIAL HOSPITAL"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "2080A0000X",
+          "display": "Adolescent Medicine"
+        }
+      ],
+      "text": "Adolescent Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1236643294",
+      "display": "KENT COUNTY MEMORIAL HOSPITAL"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/hosp-healthcareservice-1236643294",
+      "display": "KENT COUNTY MEMORIAL HOSPITAL"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-753-516-7283",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(754) 983-3352 x830",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

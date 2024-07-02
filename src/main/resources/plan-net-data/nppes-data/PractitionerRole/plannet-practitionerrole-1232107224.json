@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1232107224",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://discovery-house-utah.com",
+      "value": "82de642023b763"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1232107224",
+    "display": "Donny Herman"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1237955733",
+    "display": "DISCOVERY HOUSE UTAH"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207RC0000X",
+          "display": "Cardiovascular Disease"
+        }
+      ],
+      "text": "Cardiovascular Disease"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1237955733",
+      "display": "DISCOVERY HOUSE UTAH"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1237955733",
+      "display": "DISCOVERY HOUSE UTAH"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(313) 046-5712 x501",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(423) 584-0892 x005",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

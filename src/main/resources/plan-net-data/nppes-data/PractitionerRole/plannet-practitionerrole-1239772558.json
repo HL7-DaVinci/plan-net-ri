@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1239772558",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://deutsches-altenheim-inc.com",
+      "value": "b0d44664729dd1"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1239772558",
+    "display": "Stacia Brown"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1238062387",
+    "display": "DEUTSCHES ALTENHEIM INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "367500000X",
+          "display": "Nurse Anesthetist, Certified Registered"
+        }
+      ],
+      "text": "Nurse Anesthetist, Certified Registered"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1238062387",
+      "display": "DEUTSCHES ALTENHEIM INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1238062387",
+      "display": "DEUTSCHES ALTENHEIM INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "614-276-7015 x5011",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(674) 881-4140 x8828",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

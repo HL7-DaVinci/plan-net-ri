@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1239974169",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID050000",
+        "display": "Green Circle of Connecticut HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
+      "value": "13fdc960e09b33"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1239974169",
+    "display": "Ty Koepp"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1239177926",
+    "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207X00000X",
+          "display": "Orthopaedic Surgery"
+        }
+      ],
+      "text": "Orthopaedic Surgery"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1239177926",
+      "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1239177926",
+      "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(608) 251-0200 x0346",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "710-802-2542 x3145",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

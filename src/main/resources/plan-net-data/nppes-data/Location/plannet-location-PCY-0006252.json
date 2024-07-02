@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0006252",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://hancock-pharmacy-iii-llc.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-78472e358f92ae541b5e3346c",
+        "display": "HANCOCK"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "HANCOCK PHARMACY III LLC",
+  "description": "Main campus of HANCOCK PHARMACY III LLC",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "447.269.6793 x515",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "786-395-2588",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "3768 MAIN ST, BRIDGEPORT, CT 06606-3610",
+    "line": [
+      "3768 MAIN ST"
+    ],
+    "city": "BRIDGEPORT",
+    "state": "CT",
+    "postalCode": "06606-3610",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -73.2109,
+    "latitude": 41.212746
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-78472e358f92ae541b5e3346c",
+    "display": "HANCOCK"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

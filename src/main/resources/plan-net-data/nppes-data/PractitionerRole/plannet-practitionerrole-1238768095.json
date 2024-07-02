@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1238768095",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://rhode-island-substance-abuse-treatment-inc.com",
+      "value": "7a1246ff688977"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1238768095",
+    "display": "Olin Jast"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1233319368",
+    "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "1223G0001X",
+          "display": "General Practice"
+        }
+      ],
+      "text": "General Practice"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1233319368",
+      "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1233319368",
+      "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "226-289-5583 x5157",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-306-034-3454 x913",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

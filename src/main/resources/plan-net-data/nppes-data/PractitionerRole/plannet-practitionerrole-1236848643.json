@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1236848643",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://physical-therapy-center-inc.com",
+      "value": "a4d5d458777940"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1236848643",
+    "display": "Rafael Gleichner"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1234723478",
+    "display": "PHYSICAL THERAPY CENTER, INC"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207X00000X",
+          "display": "Orthopaedic Surgery"
+        }
+      ],
+      "text": "Orthopaedic Surgery"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1234723478",
+      "display": "PHYSICAL THERAPY CENTER, INC"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1234723478",
+      "display": "PHYSICAL THERAPY CENTER, INC"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(513) 568-0222 x431",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-857-173-6319 x372",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

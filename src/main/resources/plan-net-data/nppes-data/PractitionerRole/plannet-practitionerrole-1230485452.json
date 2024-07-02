@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1230485452",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://lifebridge-community-services-inc.com",
+      "value": "ecafee7a96fe12"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1230485452",
+    "display": "Marlon Abshire"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1232006923",
+    "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "1223G0001X",
+          "display": "General Practice"
+        }
+      ],
+      "text": "General Practice"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1232006923",
+      "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1232006923",
+      "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-792-630-5660",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "899.215.8281",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

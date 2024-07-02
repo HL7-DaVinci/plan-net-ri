@@ -1,0 +1,51 @@
+{
+  "id": "plannet-organizationaffiliation-1239177926",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Network Provider ID"
+      },
+      "system": "https://plannetorganization.com",
+      "value": "31e2d6ae3c42eb",
+      "assigner": {
+        "display": "Hartford Connecticut HIE"
+      }
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/plannet-organization-1230050000",
+    "display": "Hartford Connecticut HIE"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-1239177926",
+    "display": "EASTER SEALS CAPITAL REGION & EASTERN CONNECTICUT, INC."
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID050000",
+      "display": "Green Circle of Connecticut HMO"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1239177926",
+      "display": "group"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

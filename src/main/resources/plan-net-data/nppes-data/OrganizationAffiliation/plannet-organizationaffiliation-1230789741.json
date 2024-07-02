@@ -1,0 +1,55 @@
+{
+  "id": "plannet-organizationaffiliation-1230789741",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Network Provider ID"
+      },
+      "system": "https://plannetorganization.com",
+      "value": "83e4e4cd4b4bd8",
+      "assigner": {
+        "display": "Western Massachusetts HIE"
+      }
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/plannet-organization-1230040000",
+    "display": "Western Massachusetts HIE"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-1230789741",
+    "display": "EYE ASSOCIATES PC"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID010000",
+      "display": "Acme of Massachusetts Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1230789741",
+      "display": "group"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

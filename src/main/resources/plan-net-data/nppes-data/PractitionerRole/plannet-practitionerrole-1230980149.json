@@ -1,0 +1,118 @@
+{
+  "id": "plannet-practitionerrole-1230980149",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID110000",
+        "display": "State of Connecticut HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID050000",
+        "display": "Green Circle of Connecticut HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
+      "value": "76a3f025973656"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1230980149",
+    "display": "Concetta Trantow"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1235338232",
+    "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207R00000X",
+          "display": "Internal Medicine"
+        }
+      ],
+      "text": "Internal Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1235338232",
+      "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1235338232",
+      "display": "JOHNSON HEALTH CARE, INC. DBA JOHNSON SURGERY CENTER"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(933) 689-9627 x6929",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-563-754-2766 x834",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

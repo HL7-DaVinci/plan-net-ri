@@ -1,0 +1,55 @@
+{
+  "id": "plannet-organizationaffiliation-1238762106",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Network Provider ID"
+      },
+      "system": "https://plannetorganization.com",
+      "value": "f1336edcaab281",
+      "assigner": {
+        "display": "Rhode Island HIE"
+      }
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/plannet-organization-1230060000",
+    "display": "Rhode Island HIE"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-1238762106",
+    "display": "TOLLGATE SLEEP DISORDERS CENTER, INC."
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID120000",
+      "display": "State of Rhode Island Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID080000",
+      "display": "Green Circle of Rhode Island HMO"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1238762106",
+      "display": "outpat"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

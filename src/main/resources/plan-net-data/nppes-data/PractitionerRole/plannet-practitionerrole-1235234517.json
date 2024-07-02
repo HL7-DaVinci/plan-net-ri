@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1235234517",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://lowell-community-health-center-inc.com",
+      "value": "19caa9070e4869"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1235234517",
+    "display": "Tiffiny Parisian"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1232307530",
+    "display": "LOWELL COMMUNITY HEALTH CENTER, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "363A00000X",
+          "display": "Physician Assistant"
+        }
+      ],
+      "text": "Physician Assistant"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1232307530",
+      "display": "LOWELL COMMUNITY HEALTH CENTER, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1232307530",
+      "display": "LOWELL COMMUNITY HEALTH CENTER, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "640-766-0050 x1498",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "728-978-1240 x26466",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

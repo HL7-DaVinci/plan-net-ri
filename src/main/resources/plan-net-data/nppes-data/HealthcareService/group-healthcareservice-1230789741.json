@@ -1,0 +1,96 @@
+{
+  "id": "group-healthcareservice-1230789741",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "nopt"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS",
+                "code": "physical",
+                "display": "Physical"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/plannet-organization-1230789741",
+    "display": "EYE ASSOCIATES PC"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
+          "code": "group",
+          "display": "Group"
+        }
+      ],
+      "text": "group"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1230789741",
+      "display": "EYE ASSOCIATES PC"
+    }
+  ],
+  "name": "EYE ASSOCIATES PC",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-427-289-0469",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-509-011-6249 x71460",
+      "use": "work"
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "allDay": false,
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ],
+  "resourceType": "HealthcareService"
+}

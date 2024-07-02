@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1236944127",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://soundview-orthopaedic-assoc-llp.com",
+      "value": "71f25a5471b339"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1236944127",
+    "display": "Susanna Kiehn"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1230188327",
+    "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "2086S0120X",
+          "display": "Pediatric Surgery"
+        }
+      ],
+      "text": "Pediatric Surgery"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1230188327",
+      "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1230188327",
+      "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "807.519.5551",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "1-272-422-8749 x0607",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1233617831",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://family-medicine-associates-p-c.com",
+      "value": "cb384bf0583fba"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1233617831",
+    "display": "Nery Purdy"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1238864828",
+    "display": "FAMILY MEDICINE ASSOCIATES P. C."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "367500000X",
+          "display": "Nurse Anesthetist, Certified Registered"
+        }
+      ],
+      "text": "Nurse Anesthetist, Certified Registered"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1238864828",
+      "display": "FAMILY MEDICINE ASSOCIATES P. C."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1238864828",
+      "display": "FAMILY MEDICINE ASSOCIATES P. C."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(470) 864-5557 x8137",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(427) 253-1106",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

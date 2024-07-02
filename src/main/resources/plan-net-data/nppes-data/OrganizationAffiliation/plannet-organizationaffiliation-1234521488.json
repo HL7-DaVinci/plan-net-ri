@@ -1,0 +1,59 @@
+{
+  "id": "plannet-organizationaffiliation-1234521488",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Network Provider ID"
+      },
+      "system": "https://plannetorganization.com",
+      "value": "a935ed72cdc0a9",
+      "assigner": {
+        "display": "Blue Hope"
+      }
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/plannet-organization-1230030000",
+    "display": "Blue Hope"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-1234521488",
+    "display": "RHODE ISLAND SUBSTANCE ABUSE TREATMENT INC"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID070000",
+      "display": "Acme of Rhode Island Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID080000",
+      "display": "Green Circle of Rhode Island HMO"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID090000",
+      "display": "Rhode Island Persona Preferred Provider Network"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1234521488",
+      "display": "group"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

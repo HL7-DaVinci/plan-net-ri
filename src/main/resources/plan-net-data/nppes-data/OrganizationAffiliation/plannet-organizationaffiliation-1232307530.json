@@ -1,0 +1,51 @@
+{
+  "id": "plannet-organizationaffiliation-1232307530",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Network Provider ID"
+      },
+      "system": "https://plannetorganization.com",
+      "value": "76e2a28ce9d682",
+      "assigner": {
+        "display": "King Hospital System"
+      }
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/plannet-organization-1230010000",
+    "display": "King Hospital System"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-1232307530",
+    "display": "LOWELL COMMUNITY HEALTH CENTER, INC."
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/outpat-healthcareservice-1232307530",
+      "display": "outpat"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

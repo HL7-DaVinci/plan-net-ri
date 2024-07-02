@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1230782852",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://deutsches-altenheim-inc.com",
+      "value": "1808a32f930cf4"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1230782852",
+    "display": "Tona Kessler"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1238062387",
+    "display": "DEUTSCHES ALTENHEIM INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207V00000X",
+          "display": "Obstetrics and Gynecology"
+        }
+      ],
+      "text": "Obstetrics and Gynecology"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1238062387",
+      "display": "DEUTSCHES ALTENHEIM INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1238062387",
+      "display": "DEUTSCHES ALTENHEIM INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "540.009.7190",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(198) 295-2547 x972",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

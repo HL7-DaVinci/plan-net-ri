@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0001102",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://walgreens-09818.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-f021b8fc3135592c53d50ef64",
+        "display": "WALGREENS"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "WALGREENS #09818",
+  "description": "Main campus of WALGREENS #09818",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "(352) 843-6569 x314",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "394-650-2368 x68491",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "4 HAMMERHEAD PL, CROMWELL, CT 06416-1805",
+    "line": [
+      "4 HAMMERHEAD PL"
+    ],
+    "city": "CROMWELL",
+    "state": "CT",
+    "postalCode": "06416-1805",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.68129,
+    "latitude": 41.60205
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-f021b8fc3135592c53d50ef64",
+    "display": "WALGREENS"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

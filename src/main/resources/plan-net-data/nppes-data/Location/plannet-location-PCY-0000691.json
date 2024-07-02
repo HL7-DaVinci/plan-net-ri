@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0000691",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://cvs-pharmacy-2525.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-6bda74c96c41df2b39496aeb2",
+        "display": "CVS"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "CVS PHARMACY #2525",
+  "description": "Main campus of CVS PHARMACY #2525",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "283-489-8544 x9205",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "1-628-091-9546 x9337",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "323 CROMWELL AVE, ROCKY HILL, CT 06067-1801",
+    "line": [
+      "323 CROMWELL AVE"
+    ],
+    "city": "ROCKY HILL",
+    "state": "CT",
+    "postalCode": "06067-1801",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.679855,
+    "latitude": 41.655
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-6bda74c96c41df2b39496aeb2",
+    "display": "CVS"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1239975257",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://soundview-orthopaedic-assoc-llp.com",
+      "value": "9fe0341ec8d55a"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1239975257",
+    "display": "Vanita Nolan"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1230188327",
+    "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "363L00000X",
+          "display": "Nurse Practitioner"
+        }
+      ],
+      "text": "Nurse Practitioner"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1230188327",
+      "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1230188327",
+      "display": "SOUNDVIEW ORTHOPAEDIC ASSOC. LLP"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(941) 075-0816 x830",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "856-213-7808",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

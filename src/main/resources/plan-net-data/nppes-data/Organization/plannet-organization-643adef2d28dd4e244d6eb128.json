@@ -1,0 +1,137 @@
+{
+  "id": "plannet-organization-643adef2d28dd4e244d6eb128",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://i.made/this/up",
+      "value": 276536
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS",
+          "code": "fac",
+          "display": "Facility"
+        }
+      ],
+      "text": "A physical healthcare facility."
+    }
+  ],
+  "name": "BUNKER HILL",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-793-105-9345 x98153",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "516.124.3756 x86472",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.54454
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -73.209002
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": ",  00000",
+      "postalCode": "00000",
+      "country": "USA"
+    }
+  ],
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Jayna Romaguera",
+        "family": "Romaguera",
+        "given": [
+          "Jayna"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "07:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "18:00:00"
+                }
+              ],
+              "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+            }
+          ],
+          "system": "phone",
+          "value": "1-793-105-9345 x98153",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "both",
+        "text": ",  00000",
+        "postalCode": "00000",
+        "country": "USA"
+      }
+    }
+  ],
+  "resourceType": "Organization"
+}

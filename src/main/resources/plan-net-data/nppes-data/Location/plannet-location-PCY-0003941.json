@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0003941",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://walgreens-06914.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-f021b8fc3135592c53d50ef64",
+        "display": "WALGREENS"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "WALGREENS #06914",
+  "description": "Main campus of WALGREENS #06914",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "1-173-930-0975 x4191",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "541-883-0298 x6876",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "87 FOXON ST, NEW HAVEN, CT 06513-2365",
+    "line": [
+      "87 FOXON ST"
+    ],
+    "city": "NEW HAVEN",
+    "state": "CT",
+    "postalCode": "06513-2365",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.87272,
+    "latitude": 41.319576
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-f021b8fc3135592c53d50ef64",
+    "display": "WALGREENS"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

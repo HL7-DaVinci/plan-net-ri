@@ -1,0 +1,137 @@
+{
+  "id": "plannet-organization-496e67a62e2098ce0da348d9c",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://i.made/this/up",
+      "value": 900058
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS",
+          "code": "fac",
+          "display": "Facility"
+        }
+      ],
+      "text": "A physical healthcare facility."
+    }
+  ],
+  "name": "PETRICONE'S TORRINGTON",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-505-041-5291 x23911",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "299.342.2637",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 41.54454
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": -73.209002
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": ",  00000",
+      "postalCode": "00000",
+      "country": "USA"
+    }
+  ],
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Temple Tromp",
+        "family": "Tromp",
+        "given": [
+          "Temple"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "mon"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "tue"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "wed"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "thu"
+                },
+                {
+                  "url": "daysOfWeek",
+                  "valueCode": "fri"
+                },
+                {
+                  "url": "availableStartTime",
+                  "valueTime": "07:00:00"
+                },
+                {
+                  "url": "availableEndTime",
+                  "valueTime": "18:00:00"
+                }
+              ],
+              "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+            }
+          ],
+          "system": "phone",
+          "value": "1-505-041-5291 x23911",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "use": "work",
+        "type": "both",
+        "text": ",  00000",
+        "postalCode": "00000",
+        "country": "USA"
+      }
+    }
+  ],
+  "resourceType": "Organization"
+}

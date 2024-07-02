@@ -1,0 +1,111 @@
+{
+  "id": "plannet-practitionerrole-1237751622",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID110000",
+        "display": "State of Connecticut HMO"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID040000",
+        "display": "Acme of Connecticut Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://vassar-health-connecticut-inc.com",
+      "value": "3bf46026c7d6dc"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1237751622",
+    "display": "Granville Parisian"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1235131442",
+    "display": "VASSAR HEALTH CONNECTICUT, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207U00000X",
+          "display": "Nuclear Medicine"
+        }
+      ],
+      "text": "Nuclear Medicine"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1235131442",
+      "display": "VASSAR HEALTH CONNECTICUT, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1235131442",
+      "display": "VASSAR HEALTH CONNECTICUT, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(573) 080-5360 x39001",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "441.889.3056 x2879",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

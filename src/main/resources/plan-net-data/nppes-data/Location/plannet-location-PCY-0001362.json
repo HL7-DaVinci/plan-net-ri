@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0001362",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://genoa-healthcare--llc.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-b907819b0610594072bacee52",
+        "display": "GENOA HEALTHCARE LLC"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "GENOA HEALTHCARE  LLC",
+  "description": "Main campus of GENOA HEALTHCARE  LLC",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "774.644.1934 x4190",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "(782) 225-0096 x48116",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "56 COVENTRY ST STE B, HARTFORD, CT 06112-1524",
+    "line": [
+      "56 COVENTRY ST STE B"
+    ],
+    "city": "HARTFORD",
+    "state": "CT",
+    "postalCode": "06112-1524",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.69003,
+    "latitude": 41.797462
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-b907819b0610594072bacee52",
+    "display": "GENOA HEALTHCARE LLC"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

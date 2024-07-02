@@ -1,0 +1,55 @@
+{
+  "id": "plannet-organizationaffiliation-1235131442",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ],
+        "text": "Network Provider ID"
+      },
+      "system": "https://plannetorganization.com",
+      "value": "91bb6ea055f246",
+      "assigner": {
+        "display": "Hartford Connecticut HIE"
+      }
+    }
+  ],
+  "active": true,
+  "organization": {
+    "reference": "Organization/plannet-organization-1230050000",
+    "display": "Hartford Connecticut HIE"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/plannet-organization-1235131442",
+    "display": "VASSAR HEALTH CONNECTICUT, INC."
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID110000",
+      "display": "State of Connecticut HMO"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID040000",
+      "display": "Acme of Connecticut Preferred Provider Network"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1235131442",
+      "display": "group"
+    }
+  ],
+  "resourceType": "OrganizationAffiliation"
+}

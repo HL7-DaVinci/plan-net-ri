@@ -1,0 +1,104 @@
+{
+  "id": "plannet-practitionerrole-1233914332",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
+      "valueReference": {
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider Number"
+          }
+        ],
+        "text": "Hospital ID"
+      },
+      "system": "https://lifebridge-community-services-inc.com",
+      "value": "2cdddec86ca15c"
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/plannet-practitioner-1233914332",
+    "display": "Roscoe Haag"
+  },
+  "organization": {
+    "reference": "Organization/plannet-organization-1232006923",
+    "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS",
+          "code": "ph",
+          "display": "Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "207X00000X",
+          "display": "Orthopaedic Surgery"
+        }
+      ],
+      "text": "Orthopaedic Surgery"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-1232006923",
+      "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/group-healthcareservice-1232006923",
+      "display": "LIFEBRIDGE COMMUNITY SERVICES, INC."
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "331-763-2866 x16621",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(115) 220-5991 x55379",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "resourceType": "PractitionerRole"
+}

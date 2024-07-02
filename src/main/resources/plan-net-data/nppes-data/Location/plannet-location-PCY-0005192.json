@@ -1,0 +1,104 @@
+{
+  "id": "plannet-location-PCY-0005192",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "system": "https://beacon-medication-services.com",
+      "value": "main campus",
+      "assigner": {
+        "reference": "Organization/plannet-organization-a5f6ad81efb60d3a43965d29f",
+        "display": "BEACON MEDICATION SERVICES"
+      }
+    }
+  ],
+  "status": "active",
+  "name": "BEACON MEDICATION SERVICES",
+  "description": "Main campus of BEACON MEDICATION SERVICES",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "OUTPHARM"
+        }
+      ],
+      "text": "Outpatient pharmacy"
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "phone",
+      "value": "(329) 816-3190 x145",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "allDay",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+        }
+      ],
+      "system": "fax",
+      "value": "831.602.6407 x76223",
+      "use": "work"
+    }
+  ],
+  "address": {
+    "use": "work",
+    "type": "both",
+    "text": "25 MELLEN ST, BRISTOL, CT 06010-6313",
+    "line": [
+      "25 MELLEN ST"
+    ],
+    "city": "BRISTOL",
+    "state": "CT",
+    "postalCode": "06010-6313",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.93669,
+    "latitude": 41.671867
+  },
+  "managingOrganization": {
+    "reference": "Organization/plannet-organization-a5f6ad81efb60d3a43965d29f",
+    "display": "BEACON MEDICATION SERVICES"
+  },
+  "hoursOfOperation": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "allDay": true
+    }
+  ],
+  "availabilityExceptions": "visiting hours from 6:00 am - 10:00 pm",
+  "resourceType": "Location"
+}

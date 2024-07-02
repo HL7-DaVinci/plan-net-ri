@@ -1,0 +1,419 @@
+{
+  "id": "pharm-healthcareservice-7fe3cf9285af4d439f865b369",
+  "meta": {
+    "lastUpdated": "2020-08-17T10:03:10Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "acceptingPatients",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS",
+                "code": "existptfam"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS",
+                "code": "physical",
+                "display": "Physical"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/plannet-organization-7fe3cf9285af4d439f865b369",
+    "display": "STOP & SHOP"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
+          "code": "pharm",
+          "display": "Pharm"
+        }
+      ],
+      "text": "pharm"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "333600000X",
+          "display": "Pharmacy"
+        }
+      ],
+      "text": "Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0002X",
+          "display": "Clinic Pharmacy"
+        }
+      ],
+      "text": "Clinic Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0003X",
+          "display": "Community/Retail Pharmacy"
+        }
+      ],
+      "text": "Community/Retail Pharmacy"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336M0002X",
+          "display": "Mail Order Pharmacy"
+        }
+      ],
+      "text": "Mail Order Pharmacy"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/plannet-location-PCY-0001371",
+      "display": "STOP & SHOP SUPERMARKET #635"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008591",
+      "display": "STOP & SHOP PHARMACY #727"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005551",
+      "display": "STOP & SHOP PHARMACY #697"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008042",
+      "display": "STOP & SHOP PHARMACY #696"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005741",
+      "display": "STOP & SHOP PHARMACY #694"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005501",
+      "display": "STOP & SHOP PHARMACY #693"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000221",
+      "display": "STOP & SHOP PHARMACY #692"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002451",
+      "display": "STOP & SHOP PHARMACY #689"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000281",
+      "display": "STOP & SHOP PHARMACY #687"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007481",
+      "display": "STOP & SHOP PHARMACY #684"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006201",
+      "display": "STOP & SHOP PHARMACY #683"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007291",
+      "display": "STOP & SHOP PHARMACY #682"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009261",
+      "display": "STOP & SHOP PHARMACY #679"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001781",
+      "display": "STOP & SHOP PHARMACY #675"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008241",
+      "display": "STOP & SHOP PHARMACY #674"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007701",
+      "display": "STOP & SHOP PHARMACY #670"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009821",
+      "display": "STOP & SHOP PHARMACY #665"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002621",
+      "display": "STOP & SHOP PHARMACY #663"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004571",
+      "display": "STOP & SHOP PHARMACY #662"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009241",
+      "display": "STOP & SHOP PHARMACY #659"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009841",
+      "display": "STOP & SHOP PHARMACY #658"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004791",
+      "display": "STOP & SHOP PHARMACY #657"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006921",
+      "display": "STOP & SHOP PHARMACY #656"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009721",
+      "display": "STOP & SHOP PHARMACY #654"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001651",
+      "display": "STOP & SHOP PHARMACY #650"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000471",
+      "display": "STOP & SHOP PHARMACY #648"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007741",
+      "display": "STOP & SHOP PHARMACY #647"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001761",
+      "display": "STOP & SHOP PHARMACY #645"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005371",
+      "display": "STOP & SHOP PHARMACY #644"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006671",
+      "display": "STOP & SHOP PHARMACY #642"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008681",
+      "display": "STOP & SHOP PHARMACY #640"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000321",
+      "display": "STOP & SHOP PHARMACY #639"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002641",
+      "display": "STOP & SHOP PHARMACY #637"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004391",
+      "display": "STOP & SHOP PHARMACY #636"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000521",
+      "display": "STOP & SHOP PHARMACY #634"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007301",
+      "display": "STOP & SHOP PHARMACY #632"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007181",
+      "display": "STOP & SHOP PHARMACY #629"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005591",
+      "display": "STOP & SHOP PHARMACY #625"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007391",
+      "display": "STOP & SHOP PHARMACY #622"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008012",
+      "display": "STOP & SHOP PHARMACY #621"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009671",
+      "display": "STOP & SHOP PHARMACY #620"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009431",
+      "display": "STOP & SHOP PHARMACY #618"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007930",
+      "display": "STOP & SHOP PHARMACY #615"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004002",
+      "display": "STOP & SHOP PHARMACY #614"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005641",
+      "display": "STOP & SHOP PHARMACY #613"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003791",
+      "display": "STOP & SHOP PHARMACY #611"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009591",
+      "display": "STOP & SHOP PHARMACY #608"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006481",
+      "display": "STOP & SHOP PHARMACY #607"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005221",
+      "display": "STOP & SHOP PHARMACY #606"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001821",
+      "display": "STOP & SHOP PHARMACY #605"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0003761",
+      "display": "STOP & SHOP PHARMACY #603"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005561",
+      "display": "STOP & SHOP PHARMACY #600"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001551",
+      "display": "STOP & SHOP PHARMACY #2614"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006581",
+      "display": "STOP & SHOP PHARMACY #2613"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000861",
+      "display": "STOP & SHOP PHARMACY #2612"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002072",
+      "display": "STOP & SHOP PHARMACY #2611"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005341",
+      "display": "STOP & SHOP PHARMACY #2605"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004991",
+      "display": "STOP & SHOP #695"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007351",
+      "display": "STOP & SHOP #688"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0000261",
+      "display": "STOP & SHOP #667"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006421",
+      "display": "STOP & SHOP #653"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0002231",
+      "display": "STOP & SHOP #652"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008351",
+      "display": "STOP & SHOP #638"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0006591",
+      "display": "STOP & SHOP #631"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0004451",
+      "display": "STOP & SHOP #630"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0005311",
+      "display": "STOP & SHOP #628"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008741",
+      "display": "STOP & SHOP #624"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0009421",
+      "display": "STOP & SHOP #623"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0007591",
+      "display": "STOP & SHOP #619"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0001391",
+      "display": "STOP & SHOP #610"
+    },
+    {
+      "reference": "Location/plannet-location-PCY-0008341",
+      "display": "STOP & SHOP #604"
+    }
+  ],
+  "name": "STOP & SHOP",
+  "comment": "Pharmacy; Clinic Pharmacy; Community/Retail Pharmacy; Mail Order Pharmacy",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "590.368.7130 x397",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "(537) 774-6602",
+      "use": "work"
+    }
+  ],
+  "appointmentRequired": true,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "allDay": false,
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ],
+  "resourceType": "HealthcareService"
+}
