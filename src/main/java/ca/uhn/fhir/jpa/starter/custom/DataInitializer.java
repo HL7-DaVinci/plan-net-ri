@@ -1,6 +1,10 @@
 package ca.uhn.fhir.jpa.starter.custom;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
@@ -11,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.io.support.ResourcePatternUtils;
-import org.springframework.util.FileCopyUtils;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.jpa.api.dao.DaoRegistry;
@@ -40,7 +43,7 @@ public class DataInitializer {
     try {
       resources = ResourcePatternUtils.getResourcePatternResolver(resourceLoader).getResources("classpath:" + directoryPath + "/**/*.json");
     } catch (Exception e) {
-      logger.error("Error loading resources from directory: " + directoryPath, e);
+      logger.error("Error loading resources from directory: " + directoryPath, e.getMessage());
       return;
     }
 
@@ -49,7 +52,7 @@ public class DataInitializer {
 
     for (Resource resource : resources) {
       try {
-        String resourceText = new String(FileCopyUtils.copyToByteArray(resource.getInputStream()), StandardCharsets.UTF_8);
+        String resourceText = loadResource(resource);
 
         IBaseResource fhirResource = fhirContext.newJsonParser().parseResource(resourceText);
 
@@ -58,11 +61,25 @@ public class DataInitializer {
         // logger.info("Loaded resource: " + resource.getFilename());
         count++;
       } catch (Exception e) {
-        logger.error("Error loading resource: " + resource.getFilename(), e);
+        logger.error("Error loading resource: " + resource.getFilename(), e.getMessage());
       }
     }
 
     logger.info("Loaded " + count + " resources from directory: " + directoryPath);
+
+  }
+
+
+  protected String loadResource(Resource resource) throws IOException {
+
+    InputStreamReader isr = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8);
+    
+    BufferedReader br = new BufferedReader(isr);
+    String text = br.lines().collect(Collectors.joining("\n"));
+    
+    isr.close();
+    br.close();
+    return text;
 
   }
 
