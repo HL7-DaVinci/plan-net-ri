@@ -13,9 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.ResourceLoader;
-import org.springframework.core.io.support.ResourcePatternUtils;
-
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternResolver;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.jpa.api.dao.DaoRegistry;
 import ca.uhn.fhir.jpa.api.dao.IFhirResourceDao;
@@ -30,8 +29,6 @@ public class DataInitializer {
 
   @Autowired
   private DaoRegistry daoRegistry;
-  @Autowired
-  private ResourceLoader resourceLoader;
 
   @PostConstruct
   public void initializeData() {
@@ -41,7 +38,10 @@ public class DataInitializer {
     String directoryPath = "plan-net-data";
 
     try {
-      resources = ResourcePatternUtils.getResourcePatternResolver(resourceLoader).getResources("classpath:" + directoryPath + "/**/*.json");
+      ClassLoader cl = this.getClass().getClassLoader();
+			ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(cl);
+
+      resources = resolver.getResources("classpath*:" + directoryPath + "/**/*.json");
     } catch (Exception e) {
       logger.error("Error loading resources from directory: " + directoryPath, e.getMessage());
       return;
