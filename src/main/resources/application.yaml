@@ -66,7 +66,11 @@ hapi:
     #    server_address: http://hapi.fhir.org/baseR4
     #    defer_indexing_for_codesystems_of_size: 101
     #    install_transitive_ig_dependencies: true
-    #    implementationguides:
+    implementationguides:
+      plan_net:
+        name: hl7.fhir.us.davinci-pdex-plan-net
+        version: 1.1.0
+        installMode: STORE_AND_INSTALL
     ###    example from registry (packages.fhir.org)
     #      swiss:
     #        name: swiss.mednet.fhir
