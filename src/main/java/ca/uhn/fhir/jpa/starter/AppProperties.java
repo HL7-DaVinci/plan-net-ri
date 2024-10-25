@@ -839,4 +839,17 @@ public class AppProperties {
   public void setEnable_index_of_type(boolean enable_index_of_type) {
     this.enable_index_of_type = enable_index_of_type;
   }
+
+
+  // custom data initializing property
+  private List<String> initialData;
+
+  public List<String> getInitialData() {
+    return initialData;
+  }
+
+  public void setInitialData(List<String> initialData) {
+    this.initialData = initialData;
+  }
+  
 }

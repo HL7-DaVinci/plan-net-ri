@@ -13,12 +13,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternUtils;
+import org.springframework.util.FileCopyUtils;
+
 import ca.uhn.fhir.context.FhirContext;
+import ca.uhn.fhir.jpa.api.config.DaoConfig;
 import ca.uhn.fhir.jpa.api.dao.DaoRegistry;
 import ca.uhn.fhir.jpa.api.dao.IFhirResourceDao;
 import ca.uhn.fhir.jpa.partition.SystemRequestDetails;
+import ca.uhn.fhir.jpa.starter.AppProperties;
 
 public class DataInitializer {
 
@@ -30,57 +36,120 @@ public class DataInitializer {
   @Autowired
   private DaoRegistry daoRegistry;
 
+  @Autowired
+  private AppProperties appProperties;
+
+  @Autowired
+  private ResourceLoader resourceLoader;
+
+  @Autowired
+  private DaoConfig daoConfig;
+
+
   @PostConstruct
   public void initializeData() {
-    logger.info("Loading data from plan-net-data");
 
-    Resource[] resources = null;
-    String directoryPath = "plan-net-data";
-
-    try {
-      ClassLoader cl = this.getClass().getClassLoader();
-			ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(cl);
-
-      resources = resolver.getResources("classpath*:" + directoryPath + "/**/*.json");
-    } catch (Exception e) {
-      logger.error("Error loading resources from directory: " + directoryPath, e.getMessage());
+    if (appProperties.getInitialData() == null || appProperties.getInitialData().isEmpty()) {
       return;
     }
 
-    logger.info("Found " + resources.length + " resources in directory: " + directoryPath);
-    int count = 0;
+    logger.info("Initializing data");
 
-    for (Resource resource : resources) {
+    // Disable referential integrity checks so that resources can be loaded in any order
+    daoConfig.setEnforceReferentialIntegrityOnWrite(false);
+
+    for (String directoryPath : appProperties.getInitialData()) {
+      logger.info("Loading resources from directory: " + directoryPath);
+
+      Resource[] resources = null;
+
       try {
-        String resourceText = loadResource(resource);
-
-        IBaseResource fhirResource = fhirContext.newJsonParser().parseResource(resourceText);
-
-        IFhirResourceDao<IBaseResource> dao = daoRegistry.getResourceDao(fhirResource);
-        dao.update(fhirResource, new SystemRequestDetails());
-        // logger.info("Loaded resource: " + resource.getFilename());
-        count++;
+        resources = ResourcePatternUtils.getResourcePatternResolver(resourceLoader).getResources("classpath:" + directoryPath + "/**/*.json");  
       } catch (Exception e) {
-        logger.error("Error loading resource: " + resource.getFilename(), e.getMessage());
+        logger.error("Error loading resources from directory: " + directoryPath, e);
+        continue;
       }
+
+      for (Resource resource : resources) {
+        try {
+          String resourceText = new String(FileCopyUtils.copyToByteArray(resource.getInputStream()), StandardCharsets.UTF_8);
+
+          IBaseResource fhirResource = fhirContext.newJsonParser().parseResource(resourceText);
+
+          IFhirResourceDao<IBaseResource> dao = daoRegistry.getResourceDao(fhirResource);
+          dao.update(fhirResource, new SystemRequestDetails());
+          logger.info("Loaded resource: " + resource.getFilename());
+        } catch (Exception e) {
+          logger.error("Error loading resource: " + resource.getFilename(), e);
+        }
+      }
+
     }
 
-    logger.info("Loaded " + count + " resources from directory: " + directoryPath);
+    // Re-enable referential integrity checks if they were previously enabled
+    daoConfig.setEnforceReferentialIntegrityOnWrite(appProperties.getEnforce_referential_integrity_on_write());
 
   }
 
+  // @PostConstruct
+  // public void initializeData() {
+  //   logger.info("Loading data from plan-net-data");
 
-  protected String loadResource(Resource resource) throws IOException {
+  //   Resource[] resources = null;
+  //   // String directoryPath = "plan-net-data";
 
-    InputStreamReader isr = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8);
+  //   if (appProperties.getInitialData() == null || appProperties.getInitialData().isEmpty()) {
+  //     return;
+  //   }
+
+  //   for (String directoryPath : appProperties.getInitialData()) {  
+
+  //     try {
+  //       ClassLoader cl = this.getClass().getClassLoader();
+  //       ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver(cl);
+
+  //       resources = resolver.getResources("classpath*:" + directoryPath + "/**/*.json");
+  //     } catch (Exception e) {
+  //       logger.error("Error loading resources from directory: " + directoryPath, e.getMessage());
+  //       return;
+  //     }
+
+  //     logger.info("Found " + resources.length + " resources in directory: " + directoryPath);
+  //     int count = 0;
+
+  //     for (Resource resource : resources) {
+  //       try {
+  //         String resourceText = loadResource(resource);
+
+  //         IBaseResource fhirResource = fhirContext.newJsonParser().parseResource(resourceText);
+
+  //         IFhirResourceDao<IBaseResource> dao = daoRegistry.getResourceDao(fhirResource);
+  //         dao.update(fhirResource, new SystemRequestDetails());
+  //         // logger.info("Loaded resource: " + resource.getFilename());
+  //         count++;
+  //       } catch (Exception e) {
+  //         logger.error("Error loading resource: " + resource.getFilename(), e.getMessage());
+  //       }
+  //     }
+
+  //     logger.info("Loaded " + count + " resources from directory: " + directoryPath);
+
+  //   }
+
+  // }
+
+
+  // protected String loadResource(Resource resource) throws IOException {
+
+  //   InputStreamReader isr = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8);
     
-    BufferedReader br = new BufferedReader(isr);
-    String text = br.lines().collect(Collectors.joining("\n"));
+  //   BufferedReader br = new BufferedReader(isr);
+  //   String text = br.lines().collect(Collectors.joining("\n"));
     
-    isr.close();
-    br.close();
-    return text;
+  //   isr.close();
+  //   br.close();
+  //   return text;
 
-  }
+  // }
 
 }
