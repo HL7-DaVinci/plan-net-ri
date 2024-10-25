@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Larkin",
+      "family": "D'Amore",
       "given": [
-        "Eli",
-        "Zachary"
+        "Jonah",
+        "Lesley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-973-984-0966 x752",
+      "value": "(360) 849-1089 x804",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "180-904-4808",
+      "value": "293-102-5701",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2022-05-18",
-        "end": "2025-05-18"
+        "start": "2023-11-09",
+        "end": "2026-11-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

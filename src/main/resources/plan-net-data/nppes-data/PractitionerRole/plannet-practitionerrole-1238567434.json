@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "8d05f061d8ebb4"
+      "value": "53c6c8d5580d96"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238567434",
-    "display": "Merle DuBuque"
+    "display": "Jeramy Turner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(259) 012-4330 x965",
+      "value": "999.683.1243 x6028",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-562-634-1172 x49468",
+      "value": "(742) 085-4649 x05727",
       "use": "work"
     }
   ],

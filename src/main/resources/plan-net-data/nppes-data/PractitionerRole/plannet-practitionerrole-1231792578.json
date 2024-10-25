@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "d2cf932eaee709"
+      "value": "054cc26d74ffab"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231792578",
-    "display": "Gisela Okuneva"
+    "display": "Kittie Terry"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(957) 102-5332 x458",
+      "value": "981-097-8505",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "365-941-4213 x121",
+      "value": "154.099.4691 x71458",
       "use": "work"
     }
   ],

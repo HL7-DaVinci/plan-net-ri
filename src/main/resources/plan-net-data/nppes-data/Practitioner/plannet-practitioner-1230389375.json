@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ziemann",
+      "family": "Treutel",
       "given": [
-        "Tiffani",
-        "Fredia"
+        "Wendie",
+        "Veronika"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "865.624.4049",
+      "value": "(729) 705-0974 x754",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(474) 954-3509 x8816",
+      "value": "328-355-6631 x71257",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-12-26",
-        "end": "2024-12-26"
+        "start": "2024-01-03",
+        "end": "2027-01-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

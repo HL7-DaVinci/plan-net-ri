@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gerhold",
+      "family": "Kilback",
       "given": [
-        "Ivory",
-        "Kanisha"
+        "Sylvia",
+        "Patrice"
       ],
       "suffix": [
         "MSPT"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "839-428-4409 x5213",
+      "value": "1-770-646-2069",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "903-231-6744 x5944",
+      "value": "333.208.7957",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-11-06",
-        "end": "2026-11-06"
+        "start": "2022-11-11",
+        "end": "2025-11-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

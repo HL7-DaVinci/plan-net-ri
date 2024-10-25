@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "62fd2e810aa6a5"
+      "value": "aafcb2681aa172"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239177496",
-    "display": "Jeffery Ryan"
+    "display": "Reyes Rutherford"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(387) 270-5740 x380",
+      "value": "1-268-107-0090 x818",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(613) 114-0825",
+      "value": "(930) 470-2796",
       "use": "work"
     }
   ],

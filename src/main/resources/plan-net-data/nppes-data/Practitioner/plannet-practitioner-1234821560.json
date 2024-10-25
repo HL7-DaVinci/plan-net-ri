@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hayes",
+      "family": "Corwin",
       "given": [
-        "Evan",
-        "Marlon"
+        "Adolfo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "135.470.0503 x635",
+      "value": "249.749.9818 x65218",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "718.682.6614 x331",
+      "value": "205-302-8385",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-02-20",
-        "end": "2026-02-20"
+        "start": "2023-10-11",
+        "end": "2026-10-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

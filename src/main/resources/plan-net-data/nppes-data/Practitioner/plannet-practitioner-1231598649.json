@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dooley",
+      "family": "Casper",
       "given": [
-        "Howard",
-        "Armando"
+        "Frankie",
+        "Monroe"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "117.577.1543 x4593",
+      "value": "(310) 362-5050 x222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "590.501.4863",
+      "value": "(866) 924-3427 x92082",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2024-06-24",
-        "end": "2027-06-24"
+        "start": "2023-01-17",
+        "end": "2026-01-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

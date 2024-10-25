@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "2f80e5c730596e"
+      "value": "32739dd1c17487"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239477477",
-    "display": "Henry Kuhn"
+    "display": "Wesley Rogahn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "393-539-9230 x05625",
+      "value": "1-248-461-5263 x94053",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "840.919.6992",
+      "value": "(600) 233-7613 x4464",
       "use": "work"
     }
   ],

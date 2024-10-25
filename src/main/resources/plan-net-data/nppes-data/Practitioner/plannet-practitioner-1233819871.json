@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolf",
+      "family": "Beer",
       "given": [
-        "Brooke",
-        "Bev"
+        "Lahoma"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-750-230-0108 x0074",
+      "value": "556.521.0833 x646",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-454-856-7171 x743",
+      "value": "(331) 474-8281 x01845",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-05-30",
-        "end": "2026-05-30"
+        "start": "2023-01-08",
+        "end": "2026-01-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

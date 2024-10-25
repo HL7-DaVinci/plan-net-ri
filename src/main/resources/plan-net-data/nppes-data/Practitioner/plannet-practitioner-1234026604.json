@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Watsica",
+      "family": "Schimmel",
       "given": [
-        "Sean"
+        "Devon",
+        "Rolland"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "604-836-7245 x4701",
+      "value": "(944) 417-8216",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "541-137-7930 x6623",
+      "value": "636-831-7493 x719",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-05-01",
-        "end": "2026-05-01"
+        "start": "2022-03-07",
+        "end": "2025-03-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

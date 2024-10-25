@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "203bf0ffcde8f2"
+      "value": "d2d84ae6919708"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230782993",
-    "display": "Zula Carroll"
+    "display": "Maia Hirthe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "408-960-4545 x29421",
+      "value": "911.553.2561",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "281.325.7396 x2873",
+      "value": "457-316-8821 x056",
       "use": "work"
     }
   ],

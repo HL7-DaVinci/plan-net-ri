@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "d4506d4c67adfc"
+      "value": "b12b70ac7189ff"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230087430",
-    "display": "Noe O'Reilly"
+    "display": "Brice Feil"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "347-513-9598",
+      "value": "146.024.9070 x06632",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "611.755.2225 x23562",
+      "value": "185-205-9952 x2732",
       "use": "work"
     }
   ],

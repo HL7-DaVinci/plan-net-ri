@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "3d6183f62cd9e2"
+      "value": "91468fc8b8cbb2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238761546",
-    "display": "Adolfo Braun"
+    "display": "Elton Parisian"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(582) 116-9926 x1370",
+      "value": "224.638.6654 x711",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-394-349-0809 x032",
+      "value": "1-794-947-9983 x40711",
       "use": "work"
     }
   ],

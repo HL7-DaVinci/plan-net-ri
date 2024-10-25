@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Borer",
+      "family": "Lang",
       "given": [
-        "Eve",
-        "Estefana"
+        "Yoko",
+        "Robena"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(594) 382-8413",
+      "value": "704.401.8001 x701",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "632-141-3102 x944",
+      "value": "(935) 758-3117 x8728",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2022-03-02",
-        "end": "2025-03-02"
+        "start": "2024-08-28",
+        "end": "2027-08-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

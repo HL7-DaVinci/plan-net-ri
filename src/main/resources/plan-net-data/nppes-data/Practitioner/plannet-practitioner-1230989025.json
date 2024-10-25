@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Rohan",
       "given": [
-        "Errol",
-        "Abel"
+        "Gil",
+        "Jewell"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(688) 463-8112 x32025",
+      "value": "1-430-378-8002 x282",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "107.079.5482 x6167",
+      "value": "565-287-3194",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-15",
-        "end": "2025-12-15"
+        "start": "2022-06-16",
+        "end": "2025-06-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Crist",
+      "family": "Jones",
       "given": [
-        "Herschel"
+        "Pablo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "970-610-3285 x53268",
+      "value": "1-911-927-8975 x23706",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "540-582-4980",
+      "value": "(583) 669-8193 x891",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-10-27",
-        "end": "2026-10-27"
+        "start": "2022-09-02",
+        "end": "2025-09-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2023-05-06",
-        "end": "2026-05-06"
+        "start": "2023-02-21",
+        "end": "2026-02-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -266,14 +266,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086X0206X",
-            "display": "Surgical Oncology"
+            "display": "Surgical Oncology Physician"
           }
         ],
-        "text": "Surgical Oncology"
+        "text": "Surgical Oncology Physician"
       },
       "period": {
-        "start": "2023-06-02",
-        "end": "2026-06-02"
+        "start": "2023-01-16",
+        "end": "2026-01-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -325,11 +325,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

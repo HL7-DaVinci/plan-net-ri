@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "7d8281d3b8237f"
+      "value": "72f6b0afe46170"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238167432",
-    "display": "Jared Dibbert"
+    "display": "Emile Rempel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "798-953-8030 x13166",
+      "value": "1-479-807-1323 x83847",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-342-600-0506 x0487",
+      "value": "757-714-7259 x566",
       "use": "work"
     }
   ],

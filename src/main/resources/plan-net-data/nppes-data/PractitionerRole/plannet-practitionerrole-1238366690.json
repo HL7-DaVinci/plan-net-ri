@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "71093709bbabdc"
+      "value": "550159609d98a3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238366690",
-    "display": "Solomon Cassin"
+    "display": "Kim Renner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "103TC0700X",
-          "display": "Clinical"
+          "display": "Clinical Psychologist"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Psychologist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "214.496.4921 x6153",
+      "value": "898-248-8296 x91916",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "936.312.7258 x0628",
+      "value": "1-120-669-7026 x17005",
       "use": "work"
     }
   ],

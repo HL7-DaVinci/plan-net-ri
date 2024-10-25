@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "78c43a56610f9b"
+      "value": "1dbac245b50279"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234629867",
-    "display": "Linnie Schinner"
+    "display": "Ryan Kohler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "367500000X",
-          "display": "Nurse Anesthetist, Certified Registered"
+          "display": "Certified Registered Nurse Anesthetist"
         }
       ],
-      "text": "Nurse Anesthetist, Certified Registered"
+      "text": "Certified Registered Nurse Anesthetist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "563-091-8213 x41340",
+      "value": "933.680.3928 x26542",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(118) 740-1007 x0767",
+      "value": "(339) 903-1082 x97870",
       "use": "work"
     }
   ],

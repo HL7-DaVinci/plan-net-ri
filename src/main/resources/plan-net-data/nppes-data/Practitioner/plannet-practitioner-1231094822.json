@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfeffer",
+      "family": "Paucek",
       "given": [
-        "Elvin",
-        "Elroy"
+        "Arturo"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "384.207.8304",
+      "value": "1-297-666-4518 x975",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-297-471-1105 x60784",
+      "value": "112.623.9178 x08175",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2024-06-28",
-        "end": "2027-06-28"
+        "start": "2024-04-04",
+        "end": "2027-04-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

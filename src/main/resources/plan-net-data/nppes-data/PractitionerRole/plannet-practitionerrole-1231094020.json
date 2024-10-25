@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "4c7a09aeeff97d"
+      "value": "7d36981a691abf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231094020",
-    "display": "Florentino Jacobs"
+    "display": "Hong Haley"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(870) 059-5561 x078",
+      "value": "1-103-992-6665 x489",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-865-803-2613 x3965",
+      "value": "746-655-8187 x0519",
       "use": "work"
     }
   ],

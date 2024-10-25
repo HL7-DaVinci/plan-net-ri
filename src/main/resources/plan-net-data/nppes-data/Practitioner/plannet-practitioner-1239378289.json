@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bode",
+      "family": "Feest",
       "given": [
-        "Joe",
-        "Lorie"
+        "Floria",
+        "Dorthea"
       ],
       "suffix": [
         "CCC-A"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "562-660-2015",
+      "value": "480.174.2558",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-174-467-8858 x9493",
+      "value": "975-632-7622 x40923",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2022-01-29",
-        "end": "2025-01-29"
+        "start": "2022-08-02",
+        "end": "2025-08-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

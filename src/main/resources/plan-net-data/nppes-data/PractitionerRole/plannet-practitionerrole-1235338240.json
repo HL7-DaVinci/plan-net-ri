@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://codac-inc.com",
-      "value": "cb32464ae02e74"
+      "value": "9d2576845992a4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235338240",
-    "display": "Chadwick Schiller"
+    "display": "Jonas Kris"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235731321",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080P0210X",
-          "display": "Pediatric Nephrology"
+          "display": "Pediatric Nephrology Physician"
         }
       ],
-      "text": "Pediatric Nephrology"
+      "text": "Pediatric Nephrology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "921-589-4647 x740",
+      "value": "(864) 631-5225",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-628-782-3095 x0481",
+      "value": "1-992-893-4009 x21191",
       "use": "work"
     }
   ],

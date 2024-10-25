@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "8f994043ee272e"
+      "value": "c2c6193206c9bc"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231499675",
-    "display": "Reggie Bartell"
+    "display": "Raymundo Mitchell"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084P0800X",
-          "display": "Psychiatry"
+          "display": "Psychiatry Physician"
         }
       ],
-      "text": "Psychiatry"
+      "text": "Psychiatry Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(221) 798-7043 x56802",
+      "value": "(502) 033-4400 x32213",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-747-207-7519 x1095",
+      "value": "390-275-8362",
       "use": "work"
     }
   ],

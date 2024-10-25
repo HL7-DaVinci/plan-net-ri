@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Heathcote",
+      "family": "Legros",
       "given": [
-        "Jarod"
+        "Donny",
+        "Carmelo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(702) 586-9832",
+      "value": "(685) 109-2599 x6331",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "429-684-6374 x69730",
+      "value": "250-999-6663 x16767",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-11-16",
-        "end": "2024-11-16"
+        "start": "2024-04-12",
+        "end": "2027-04-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-03-14",
-        "end": "2025-03-14"
+        "start": "2023-05-27",
+        "end": "2026-05-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

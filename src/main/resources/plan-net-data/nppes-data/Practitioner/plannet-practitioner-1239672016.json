@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogan",
+      "family": "Turner",
       "given": [
-        "Valentine",
-        "Harvey"
+        "Refugio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(966) 741-0670 x39883",
+      "value": "355.058.7949 x905",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(423) 002-7737",
+      "value": "175.451.0604",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-07-06",
-        "end": "2024-07-06"
+        "start": "2024-07-20",
+        "end": "2027-07-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

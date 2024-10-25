@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Berge",
+      "family": "Wunsch",
       "given": [
-        "Ricardo"
+        "Conrad",
+        "Leo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "964.428.3342 x06905",
+      "value": "(467) 987-7458 x81592",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "865-167-4168 x48073",
+      "value": "931-712-7474",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2021-07-29",
-        "end": "2024-07-29"
+        "start": "2022-01-11",
+        "end": "2025-01-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

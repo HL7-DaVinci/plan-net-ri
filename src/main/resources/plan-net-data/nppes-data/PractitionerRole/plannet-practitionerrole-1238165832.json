@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "9fb1234eeaa91d"
+      "value": "260e82e2a2af0a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238165832",
-    "display": "Vince Reinger"
+    "display": "Phillip Dickens"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-150-793-4118 x8173",
+      "value": "(152) 402-8648 x9971",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(963) 251-6995 x24475",
+      "value": "(580) 383-9825 x004",
       "use": "work"
     }
   ],

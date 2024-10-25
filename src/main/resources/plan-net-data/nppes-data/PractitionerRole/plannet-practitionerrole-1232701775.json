@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "bee62512a8bef1"
+      "value": "5dd372b5401c30"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232701775",
-    "display": "Dewayne O'Hara"
+    "display": "Michel Klocko"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(960) 219-5331 x28059",
+      "value": "(851) 794-5606 x99165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(994) 744-0161 x454",
+      "value": "661-554-8325",
       "use": "work"
     }
   ],

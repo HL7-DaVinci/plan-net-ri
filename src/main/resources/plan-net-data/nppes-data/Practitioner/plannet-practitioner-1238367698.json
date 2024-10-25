@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Flatley",
+      "family": "Effertz",
       "given": [
-        "Saturnina"
+        "Angelina"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(922) 292-0959 x5546",
+      "value": "938-270-5032 x98893",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "631.852.9561 x42745",
+      "value": "653-267-1639 x1047",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2022-05-15",
-        "end": "2025-05-15"
+        "start": "2023-11-04",
+        "end": "2026-11-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-06-13",
-        "end": "2025-06-13"
+        "start": "2021-12-27",
+        "end": "2024-12-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

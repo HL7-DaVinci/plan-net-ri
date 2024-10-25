@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Klein",
+      "family": "Hessel",
       "given": [
-        "Javier"
+        "Leland"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "631-247-7966",
+      "value": "(861) 890-5218 x827",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "769.988.4516 x95839",
+      "value": "112.687.3063 x815",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VE0102X",
-            "display": "Reproductive Endocrinology"
+            "display": "Reproductive Endocrinology Physician"
           }
         ],
-        "text": "Reproductive Endocrinology"
+        "text": "Reproductive Endocrinology Physician"
       },
       "period": {
-        "start": "2024-05-16",
-        "end": "2027-05-16"
+        "start": "2021-10-28",
+        "end": "2024-10-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

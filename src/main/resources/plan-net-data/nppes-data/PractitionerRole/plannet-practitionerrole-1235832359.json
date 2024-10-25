@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harrington-memorial-hospital-inc.com",
-      "value": "a9724ade911161"
+      "value": "e57f6fe5fb3958"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235832359",
-    "display": "Zachary O'Conner"
+    "display": "Lucas Erdman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230780047",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "152WV0400X",
-          "display": "Vision Therapy"
+          "display": "Vision Therapy Optometrist"
         }
       ],
-      "text": "Vision Therapy"
+      "text": "Vision Therapy Optometrist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "549.891.5467 x31540",
+      "value": "312.247.5567 x413",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-657-762-3955 x55819",
+      "value": "1-390-809-0478 x384",
       "use": "work"
     }
   ],

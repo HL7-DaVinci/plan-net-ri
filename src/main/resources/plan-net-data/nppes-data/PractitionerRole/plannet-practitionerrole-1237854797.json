@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "521554730f6594"
+      "value": "402a2015286ad3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237854797",
-    "display": "Angela Daugherty"
+    "display": "Jayme Lockman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-591-533-0115 x3781",
+      "value": "1-104-131-3343 x62570",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "527.731.6573",
+      "value": "256.822.4057 x6514",
       "use": "work"
     }
   ],

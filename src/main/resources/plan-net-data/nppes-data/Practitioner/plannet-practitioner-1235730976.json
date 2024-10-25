@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Fritsch",
+      "family": "Kuhic",
       "given": [
-        "Tyrone",
-        "Damian"
+        "Darrin"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(101) 208-6945",
+      "value": "918.764.4421",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "307-157-8194",
+      "value": "223-905-6264 x45246",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-10-21",
-        "end": "2025-10-21"
+        "start": "2022-06-22",
+        "end": "2025-06-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

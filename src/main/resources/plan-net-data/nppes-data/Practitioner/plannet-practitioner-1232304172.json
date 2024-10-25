@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wisoky",
+      "family": "Huels",
       "given": [
-        "Bertram",
-        "Normand"
+        "Irving"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "759.761.6404",
+      "value": "1-939-663-3971 x704",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "849-957-7920",
+      "value": "951.848.4382",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2021-10-23",
-        "end": "2024-10-23"
+        "start": "2022-12-12",
+        "end": "2025-12-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pollich",
+      "family": "Johns",
       "given": [
-        "Ina"
+        "Robbi"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-163-582-9868",
+      "value": "(905) 906-7753 x2473",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-144-275-7569 x7797",
+      "value": "364-133-2044",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2023-12-30",
-        "end": "2026-12-30"
+        "start": "2022-08-12",
+        "end": "2025-08-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brown",
+      "family": "Reynolds",
       "given": [
-        "Kam",
-        "Damaris"
+        "Lashunda",
+        "Ernestine"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-672-643-1698 x09285",
+      "value": "354-395-0720 x4408",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "122.902.2509 x150",
+      "value": "362.966.1218",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-02-28",
-        "end": "2025-02-28"
+        "start": "2022-05-25",
+        "end": "2025-05-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

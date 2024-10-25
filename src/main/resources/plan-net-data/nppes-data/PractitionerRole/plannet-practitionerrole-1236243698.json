@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "0ee5696aff476f"
+      "value": "badd2ef5d3dff4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236243698",
-    "display": "Matthew Prosacco"
+    "display": "Weldon Cartwright"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0200X",
-          "display": "Critical Care Medicine"
+          "display": "Critical Care Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Critical Care Medicine"
+      "text": "Critical Care Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "651.091.3521 x5195",
+      "value": "(929) 821-7813 x62320",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "250-551-6164 x1668",
+      "value": "(821) 687-7322",
       "use": "work"
     }
   ],

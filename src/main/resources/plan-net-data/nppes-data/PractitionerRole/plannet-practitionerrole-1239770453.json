@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "0019d0a9d56237"
+      "value": "7cd7e0f0b42b84"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239770453",
-    "display": "Wilbur Ebert"
+    "display": "Willard Keebler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0200X",
-          "display": "Critical Care Medicine"
+          "display": "Critical Care Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Critical Care Medicine"
+      "text": "Critical Care Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(531) 772-9657 x946",
+      "value": "574-703-0417 x974",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "692-130-7312 x7122",
+      "value": "614.474.7590",
       "use": "work"
     }
   ],

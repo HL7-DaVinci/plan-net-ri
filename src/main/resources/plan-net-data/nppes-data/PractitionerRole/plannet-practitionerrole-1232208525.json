@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "f32489881eb714"
+      "value": "f4c05f3f07bdfc"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232208525",
-    "display": "Bobbie Carter"
+    "display": "Arnulfo Becker"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "485.197.5755 x209",
+      "value": "880.253.2233",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "922-938-7817 x232",
+      "value": "1-217-194-1580 x5605",
       "use": "work"
     }
   ],

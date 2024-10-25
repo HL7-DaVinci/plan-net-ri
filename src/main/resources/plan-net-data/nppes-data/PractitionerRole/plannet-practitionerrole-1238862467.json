@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "65086af421372f"
+      "value": "99ce61c5dbf804"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238862467",
-    "display": "Cody Bechtelar"
+    "display": "Emilio Douglas"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(749) 553-2046 x13067",
+      "value": "1-893-607-5893 x58820",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "614.827.4780",
+      "value": "866.308.3072 x5111",
       "use": "work"
     }
   ],

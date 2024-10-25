@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "63b00a8a548c00"
+      "value": "3f907cec4e12f2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235631424",
-    "display": "Valorie Douglas"
+    "display": "Lyla Gleichner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-375-099-5694 x0147",
+      "value": "742.956.7515 x886",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(356) 985-2068 x844",
+      "value": "1-803-776-4550",
       "use": "work"
     }
   ],

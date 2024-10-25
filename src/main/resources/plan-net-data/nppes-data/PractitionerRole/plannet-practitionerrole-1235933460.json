@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "852b4e87fa2639"
+      "value": "4dafe6ef3f621e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235933460",
-    "display": "Tracy Littel"
+    "display": "Giovanni Dibbert"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208G00000X",
-          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
         }
       ],
-      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(274) 609-7322 x64555",
+      "value": "1-874-637-1174 x5743",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(421) 564-5914",
+      "value": "(703) 953-3479",
       "use": "work"
     }
   ],

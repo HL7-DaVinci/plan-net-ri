@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "e2cbdcfc6648c6"
+      "value": "c5cd80dc28bd8c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235631531",
-    "display": "Winfred Wiegand"
+    "display": "Walter Prohaska"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208G00000X",
-          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
         }
       ],
-      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "243.037.5527 x7721",
+      "value": "529-891-7981 x647",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(669) 881-9329",
+      "value": "576-439-6378 x491",
       "use": "work"
     }
   ],

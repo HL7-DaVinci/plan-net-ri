@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "82259f94314813"
+      "value": "dfd119ea5f5390"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235733566",
-    "display": "Leonila Stoltenberg"
+    "display": "Samatha Littel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(308) 401-4778 x31162",
+      "value": "(216) 691-4206 x4275",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "397-932-3020",
+      "value": "1-110-830-1212",
       "use": "work"
     }
   ],

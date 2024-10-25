@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://codac-inc.com",
-      "value": "14e97a1144d5fd"
+      "value": "75ec843be7c5e3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230185570",
-    "display": "Marlin Nikolaus"
+    "display": "Garland Cormier"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235731321",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "612-324-8238 x60060",
+      "value": "1-228-692-5932 x67244",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-490-566-6564",
+      "value": "697.055.3951 x07901",
       "use": "work"
     }
   ],

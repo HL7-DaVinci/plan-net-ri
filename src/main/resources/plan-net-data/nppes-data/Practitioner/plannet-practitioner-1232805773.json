@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hermann",
+      "family": "Boyer",
       "given": [
-        "Santos",
-        "Cedric"
+        "Jeromy",
+        "Troy"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "648-122-1992 x4642",
+      "value": "(287) 078-5932 x6980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-651-830-1766 x6449",
+      "value": "1-284-813-3869 x2147",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2022-12-13",
-        "end": "2025-12-13"
+        "start": "2022-02-24",
+        "end": "2025-02-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "a06cdb332095c6"
+      "value": "a644cfa0225b69"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233117437",
-    "display": "Nicky Pacocha"
+    "display": "Israel Fisher"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "882.202.8650 x70703",
+      "value": "516-256-5449 x5665",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(247) 939-3228 x8274",
+      "value": "288-068-5812 x2729",
       "use": "work"
     }
   ],

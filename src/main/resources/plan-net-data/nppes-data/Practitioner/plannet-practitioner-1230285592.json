@@ -32,22 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Medhurst",
+      "family": "Pagac",
       "given": [
-        "Ivan",
-        "Colby"
+        "Prince"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "757-394-0696 x960",
+      "value": "1-251-724-4031",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "710.915.1793 x5542",
+      "value": "1-451-282-9798 x76236",
       "use": "work"
     }
   ],
@@ -133,14 +132,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-05-20",
-        "end": "2025-05-20"
+        "start": "2024-04-25",
+        "end": "2027-04-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -192,11 +191,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

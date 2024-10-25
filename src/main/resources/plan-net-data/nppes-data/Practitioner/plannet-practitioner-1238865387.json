@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koch",
+      "family": "Moore",
       "given": [
-        "Ezequiel",
-        "Scotty"
+        "Fredrick"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "674.701.7232 x61041",
+      "value": "1-442-070-0011",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-814-832-2987",
+      "value": "(911) 422-8392",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-10-09",
-        "end": "2025-10-09"
+        "start": "2022-03-05",
+        "end": "2025-03-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

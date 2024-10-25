@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rice",
+      "family": "Cormier",
       "given": [
-        "Dana"
+        "Derick"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(818) 751-9955",
+      "value": "1-370-144-1652",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "672-683-8059 x771",
+      "value": "1-983-240-9797 x50884",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-01-03",
-        "end": "2025-01-03"
+        "start": "2024-09-23",
+        "end": "2027-09-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

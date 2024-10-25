@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "5608a772b6ea5b"
+      "value": "dd72508cb1411f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236247152",
-    "display": "Maggie Mante"
+    "display": "Neda Ortiz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-130-010-0721 x470",
+      "value": "968-251-6445 x49642",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(273) 205-4584 x02900",
+      "value": "1-249-736-2107 x94905",
       "use": "work"
     }
   ],

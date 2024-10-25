@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hills",
+      "family": "Anderson",
       "given": [
-        "Barrett"
+        "Spencer"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "290.721.5108 x1371",
+      "value": "(293) 292-6579 x9668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "390.380.8845 x29232",
+      "value": "1-815-184-9999",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-05-16",
-        "end": "2026-05-16"
+        "start": "2022-04-06",
+        "end": "2025-04-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

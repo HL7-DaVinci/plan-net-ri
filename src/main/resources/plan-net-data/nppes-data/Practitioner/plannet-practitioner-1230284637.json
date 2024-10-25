@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bayer",
+      "family": "Gleichner",
       "given": [
-        "Lauren",
-        "Wilburn"
+        "Stanley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "365.529.5836 x45028",
+      "value": "809.971.0722 x0493",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-918-784-3377 x769",
+      "value": "242.091.9375",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2023-02-23",
-        "end": "2026-02-23"
+        "start": "2022-11-23",
+        "end": "2025-11-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

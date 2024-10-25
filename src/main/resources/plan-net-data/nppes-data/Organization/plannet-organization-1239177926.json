@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(763) 248-4659 x96531",
+      "value": "(239) 985-2013 x600",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-844-865-7237 x0446",
+      "value": "544.587.5027 x09224",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Belinda Klein",
-        "family": "Klein",
+        "text": "Stefany Halvorson",
+        "family": "Halvorson",
         "given": [
-          "Belinda"
+          "Stefany"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "(763) 248-4659 x96531",
+          "value": "(239) 985-2013 x600",
           "use": "work"
         }
       ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Hoppe",
       "given": [
-        "Stephen"
+        "Frank",
+        "Scott"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "870-138-4932 x2390",
+      "value": "243.672.5405 x181",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "132.472.7413",
+      "value": "(429) 012-5748 x8335",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-10-22",
-        "end": "2025-10-22"
+        "start": "2023-08-31",
+        "end": "2026-08-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0131X",
-            "display": "Foot Surgery"
+            "display": "Foot Surgery Podiatrist"
           }
         ],
-        "text": "Foot Surgery"
+        "text": "Foot Surgery Podiatrist"
       },
       "period": {
-        "start": "2022-10-24",
-        "end": "2025-10-24"
+        "start": "2022-12-11",
+        "end": "2025-12-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

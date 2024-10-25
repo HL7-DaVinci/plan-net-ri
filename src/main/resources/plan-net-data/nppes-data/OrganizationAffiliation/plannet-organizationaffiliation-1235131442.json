@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "91bb6ea055f246",
+      "value": "cc8f2f976d4eb5",
       "assigner": {
         "display": "Hartford Connecticut HIE"
       }
@@ -37,12 +37,12 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID110000",
-      "display": "State of Connecticut HMO"
+      "reference": "Organization/plannet-network-HPID060000",
+      "display": "Connecticut Persona Preferred Provider Network"
     },
     {
-      "reference": "Organization/plannet-network-HPID040000",
-      "display": "Acme of Connecticut Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID110000",
+      "display": "State of Connecticut HMO"
     }
   ],
   "healthcareService": [

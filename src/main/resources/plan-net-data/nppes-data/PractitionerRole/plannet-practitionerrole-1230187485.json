@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "82b9481819f379"
+      "value": "3315e2ed2abe3d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230187485",
-    "display": "Dino Kautzer"
+    "display": "Issac Kunde"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "148-685-2197 x1796",
+      "value": "584-904-6755 x440",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "518-117-0451 x0419",
+      "value": "(995) 328-9114 x84593",
       "use": "work"
     }
   ],

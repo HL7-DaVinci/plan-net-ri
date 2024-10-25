@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Quitzon",
+      "family": "Armstrong",
       "given": [
-        "Ian"
+        "Joseph"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-191-055-8602 x5955",
+      "value": "1-455-168-6048 x217",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "554-390-9093 x90961",
+      "value": "(867) 741-8723",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-03-14",
-        "end": "2025-03-14"
+        "start": "2023-09-02",
+        "end": "2026-09-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0203X",
-            "display": "Therapeutic Radiology"
+            "display": "Therapeutic Radiology Physician"
           }
         ],
-        "text": "Therapeutic Radiology"
+        "text": "Therapeutic Radiology Physician"
       },
       "period": {
-        "start": "2022-02-23",
-        "end": "2025-02-23"
+        "start": "2023-07-10",
+        "end": "2026-07-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -238,31 +238,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

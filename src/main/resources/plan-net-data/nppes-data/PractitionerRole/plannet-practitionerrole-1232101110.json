@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-health-care-of-mass-inc.com",
-      "value": "57a097a3d81f6a"
+      "value": "189b1ea88b553f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232101110",
-    "display": "Claud Franecki"
+    "display": "Rodrigo Schamberger"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237552602",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0200X",
-          "display": "Critical Care Medicine"
+          "display": "Critical Care Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Critical Care Medicine"
+      "text": "Critical Care Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "999.186.3015",
+      "value": "(672) 007-5787",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "542.523.3035 x49473",
+      "value": "506.024.9730 x68995",
       "use": "work"
     }
   ],

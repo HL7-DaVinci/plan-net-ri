@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cormier",
+      "family": "Klein",
       "given": [
-        "Deandrea"
+        "Willow"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "584-925-9005 x426",
+      "value": "256.704.7327 x448",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(462) 107-5312",
+      "value": "(692) 609-2759 x437",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2024-03-01",
-        "end": "2027-03-01"
+        "start": "2024-08-10",
+        "end": "2027-08-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

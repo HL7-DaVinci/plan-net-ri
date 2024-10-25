@@ -32,22 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Morissette",
+      "family": "Schuster",
       "given": [
-        "Felisha",
-        "Ashanti"
+        "Nelly"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "709.349.7973 x0440",
+      "value": "(370) 041-6656 x841",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "730-311-3594 x9414",
+      "value": "1-609-586-7542 x14083",
       "use": "work"
     }
   ],
@@ -133,14 +132,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-09-19",
-        "end": "2025-09-19"
+        "start": "2024-02-24",
+        "end": "2027-02-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -172,6 +171,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jacobi",
+      "family": "Gleichner",
       "given": [
-        "Raul",
-        "Vernon"
+        "Ernesto",
+        "Octavio"
       ],
       "suffix": [
         "PHD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-304-131-1482",
+      "value": "1-977-351-2458 x39145",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "185.034.2382 x41274",
+      "value": "1-744-971-8810",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2023-08-13",
-        "end": "2026-08-13"
+        "start": "2023-08-15",
+        "end": "2026-08-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

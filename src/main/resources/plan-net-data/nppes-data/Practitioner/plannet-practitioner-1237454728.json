@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "VonRueden",
+      "family": "Homenick",
       "given": [
-        "Kris",
-        "Jean"
+        "Marcus"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-860-921-7920 x080",
+      "value": "(393) 794-2358 x6031",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "137.561.6213 x0297",
+      "value": "1-637-889-3502 x5044",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-06-06",
-        "end": "2026-06-06"
+        "start": "2024-03-03",
+        "end": "2027-03-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0107X",
-            "display": "Retina Specialist"
+            "display": "Retina Specialist (Ophthalmology) Physician"
           }
         ],
-        "text": "Retina Specialist"
+        "text": "Retina Specialist (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2024-04-26",
-        "end": "2027-04-26"
+        "start": "2022-01-23",
+        "end": "2025-01-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

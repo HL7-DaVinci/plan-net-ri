@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "3bbc2418d8d268"
+      "value": "15507e5fbd90d6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232900424",
-    "display": "Lucien Maggio"
+    "display": "Arron Walter"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "596.942.4379 x2292",
+      "value": "(737) 549-1003 x9614",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "494.491.3714",
+      "value": "(510) 350-0116 x281",
       "use": "work"
     }
   ],

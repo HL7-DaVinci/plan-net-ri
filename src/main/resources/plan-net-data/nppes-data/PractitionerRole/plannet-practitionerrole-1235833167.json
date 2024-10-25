@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "d1bbbeabfb86d4"
+      "value": "f73e199ad4be43"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235833167",
-    "display": "Mickey Schamberger"
+    "display": "Amado Osinski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(382) 939-9392 x41380",
+      "value": "412-584-4816",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(286) 499-6438 x15250",
+      "value": "(190) 191-0885 x56208",
       "use": "work"
     }
   ],

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "59e620e18d6b3e"
+      "value": "e949cba6dc563c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232905621",
-    "display": "Mitchel DuBuque"
+    "display": "Josef Weimann"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "613.039.3072",
+      "value": "1-401-796-2204 x7234",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(607) 166-5842 x5553",
+      "value": "1-203-292-9320",
       "use": "work"
     }
   ],

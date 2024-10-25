@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfannerstill",
+      "family": "Harris",
       "given": [
-        "Scot",
-        "Ramiro"
+        "Aaron",
+        "Zack"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(949) 880-4593",
+      "value": "1-880-594-2222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "956-423-9757 x429",
+      "value": "1-700-405-4193 x4943",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2021-10-01",
-        "end": "2024-10-01"
+        "start": "2022-01-18",
+        "end": "2025-01-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "9d84cab67d92c5"
+      "value": "cbfd9ea30acac1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232903709",
-    "display": "King Wintheiser"
+    "display": "Benton Kessler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "171.747.4269 x692",
+      "value": "1-895-294-3265 x005",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(523) 613-0537 x0148",
+      "value": "(977) 205-6846 x780",
       "use": "work"
     }
   ],

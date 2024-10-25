@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bashirian",
+      "family": "Crona",
       "given": [
-        "Elias",
-        "Cyril"
+        "Robby"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "596.701.4639 x4621",
+      "value": "1-190-939-5080 x8311",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(110) 130-4525 x85532",
+      "value": "213-946-3244 x310",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2022-05-21",
-        "end": "2025-05-21"
+        "start": "2023-02-08",
+        "end": "2026-02-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2023-06-06",
-        "end": "2026-06-06"
+        "start": "2023-09-02",
+        "end": "2026-09-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

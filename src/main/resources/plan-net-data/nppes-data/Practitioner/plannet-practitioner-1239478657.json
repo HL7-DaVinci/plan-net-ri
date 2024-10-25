@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Russel",
+      "family": "Gorczany",
       "given": [
-        "Tawnya"
+        "Jina",
+        "Anisa"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "228.891.5163 x43280",
+      "value": "767-024-0296 x46907",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-278-292-1630 x588",
+      "value": "213-293-5355",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208C00000X",
-            "display": "Colon and Rectal Surgery"
+            "display": "Colon & Rectal Surgery Physician"
           }
         ],
-        "text": "Colon and Rectal Surgery"
+        "text": "Colon & Rectal Surgery Physician"
       },
       "period": {
-        "start": "2022-05-20",
-        "end": "2025-05-20"
+        "start": "2023-06-22",
+        "end": "2026-06-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

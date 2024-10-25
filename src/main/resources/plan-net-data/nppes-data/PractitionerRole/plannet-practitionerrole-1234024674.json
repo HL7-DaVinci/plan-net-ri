@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "36afa8b90f3907"
+      "value": "d0e0364686fa0d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234024674",
-    "display": "Sammy Monahan"
+    "display": "Wilber Stoltenberg"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "489.343.2588 x4181",
+      "value": "786.823.9472 x00003",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "378-910-2840 x505",
+      "value": "747-709-8979 x5631",
       "use": "work"
     }
   ],

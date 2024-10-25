@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "251699c030eeba"
+      "value": "577627cf1bdd5a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237457523",
-    "display": "Jena Dickens"
+    "display": "Patrick Flatley"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207KA0200X",
-          "display": "Allergy"
+          "display": "Allergy Physician"
         }
       ],
-      "text": "Allergy"
+      "text": "Allergy Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "621.767.9014",
+      "value": "489.318.4303 x84951",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "166.392.1332 x376",
+      "value": "183.294.0390 x998",
       "use": "work"
     }
   ],

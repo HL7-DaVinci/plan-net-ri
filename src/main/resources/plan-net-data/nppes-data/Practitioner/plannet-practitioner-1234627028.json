@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dooley",
+      "family": "Streich",
       "given": [
-        "Connie",
-        "Laverne"
+        "Britt"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "823-673-3723",
+      "value": "1-577-591-8496 x493",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(648) 469-1365 x452",
+      "value": "1-338-769-1367 x8208",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZC0500X",
-            "display": "Cytopathology"
+            "display": "Cytopathology Physician"
           }
         ],
-        "text": "Cytopathology"
+        "text": "Cytopathology Physician"
       },
       "period": {
-        "start": "2021-09-25",
-        "end": "2024-09-25"
+        "start": "2024-04-09",
+        "end": "2027-04-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0102X",
-            "display": "Anatomic Pathology and Clinical Pathology"
+            "display": "Anatomic Pathology & Clinical Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology and Clinical Pathology"
+        "text": "Anatomic Pathology & Clinical Pathology Physician"
       },
       "period": {
-        "start": "2023-01-05",
-        "end": "2026-01-05"
+        "start": "2022-08-17",
+        "end": "2025-08-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

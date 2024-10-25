@@ -13,34 +13,6 @@
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -57,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://farmington-surgery-center-llc.com",
-      "value": "05cab848757b86"
+      "value": "5c9b6d70ff815d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233517850",
-    "display": "Joesph Bergstrom"
+    "display": "Danilo Baumbach"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236348148",
@@ -86,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -107,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "232.346.1760 x8084",
+      "value": "730-728-1872 x568",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(935) 503-5916",
+      "value": "1-227-699-9906",
       "use": "work"
     }
   ],

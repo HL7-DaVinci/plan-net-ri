@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Fritsch",
+      "family": "Robel",
       "given": [
-        "Lyndsey",
-        "Jacinda"
+        "Latina"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(967) 400-6683",
+      "value": "578-263-8254 x724",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "283.828.2251",
+      "value": "172-270-2334 x427",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2024-02-14",
-        "end": "2027-02-14"
+        "start": "2023-02-24",
+        "end": "2026-02-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "d01c334794ab46"
+      "value": "4c4801684b9d02"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235639740",
-    "display": "Timothy Beier"
+    "display": "Terry Padberg"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "942-842-6475 x24756",
+      "value": "589.001.3071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "502-910-6807 x0995",
+      "value": "158-587-1669 x323",
       "use": "work"
     }
   ],

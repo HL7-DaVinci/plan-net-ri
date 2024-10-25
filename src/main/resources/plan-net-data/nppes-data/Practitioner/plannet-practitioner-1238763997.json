@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ziemann",
+      "family": "Hoeger",
       "given": [
-        "Murray"
+        "Oren"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(683) 391-3036 x454",
+      "value": "601-660-9466 x97919",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(486) 302-9427 x8464",
+      "value": "1-965-526-9133 x1871",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VE0102X",
-            "display": "Reproductive Endocrinology"
+            "display": "Reproductive Endocrinology Physician"
           }
         ],
-        "text": "Reproductive Endocrinology"
+        "text": "Reproductive Endocrinology Physician"
       },
       "period": {
-        "start": "2024-04-19",
-        "end": "2027-04-19"
+        "start": "2022-12-29",
+        "end": "2025-12-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2023-05-13",
-        "end": "2026-05-13"
+        "start": "2023-11-23",
+        "end": "2026-11-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "19caa9070e4869"
+      "value": "2238cf80162d0e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235234517",
-    "display": "Tiffiny Parisian"
+    "display": "Marlys Lemke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "640-766-0050 x1498",
+      "value": "1-485-809-5820",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "728-978-1240 x26466",
+      "value": "565-050-2677",
       "use": "work"
     }
   ],

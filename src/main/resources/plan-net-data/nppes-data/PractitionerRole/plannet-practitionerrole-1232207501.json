@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "a7740a6e02ef26"
+      "value": "0d0f857b141e3a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232207501",
-    "display": "Lincoln Franecki"
+    "display": "Ahmed Willms"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "422.965.3709 x0213",
+      "value": "591-329-1371",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "415-110-6461 x174",
+      "value": "613-533-6620",
       "use": "work"
     }
   ],

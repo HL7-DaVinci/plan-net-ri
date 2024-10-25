@@ -10,27 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://travis-corp.com",
-      "value": "843d8eea6b9fe4"
+      "value": "6c327111b18dd5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235135336",
-    "display": "Hollis Hamill"
+    "display": "Damion Daniel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231790820",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "535-639-8843",
+      "value": "375-896-5367 x90271",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(548) 609-2595 x82276",
+      "value": "267.308.0160 x9189",
       "use": "work"
     }
   ],

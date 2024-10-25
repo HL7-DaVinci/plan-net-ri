@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "8dc71b9796685d"
+      "value": "c0bf1826260863"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230186222",
-    "display": "Byron Nicolas"
+    "display": "Emmitt Schowalter"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "204C00000X",
-          "display": "Neuromusculoskeletal Medicine, Sports Medicine"
+          "display": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
         }
       ],
-      "text": "Neuromusculoskeletal Medicine, Sports Medicine"
+      "text": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-692-278-5646 x7024",
+      "value": "(200) 242-8515 x6518",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(830) 897-2857 x87691",
+      "value": "1-535-912-4098 x31669",
       "use": "work"
     }
   ],

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "aee2fbf698b074"
+      "value": "26dade38f9c45e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237458216",
-    "display": "Tomas Larson"
+    "display": "Damien Crooks"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-921-875-6944",
+      "value": "365-067-1614 x23707",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(310) 323-2666 x60247",
+      "value": "(192) 574-0566 x6221",
       "use": "work"
     }
   ],

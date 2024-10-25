@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "fdeaf0e7718498"
+      "value": "090662afbd8150"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231298833",
-    "display": "Elvin Gislason"
+    "display": "Quentin Wilkinson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "273.416.2839",
+      "value": "157.627.6984 x352",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "656-114-3416 x561",
+      "value": "(166) 714-1234 x157",
       "use": "work"
     }
   ],

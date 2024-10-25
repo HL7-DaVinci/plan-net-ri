@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "7bb62e26e579d9"
+      "value": "e0c6fb8f982425"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234127913",
-    "display": "Cletus Konopelski"
+    "display": "Milford Lebsack"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "729.960.5209 x80410",
+      "value": "(847) 612-7167 x2964",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "954-305-3275 x3711",
+      "value": "1-205-618-0015 x34729",
       "use": "work"
     }
   ],

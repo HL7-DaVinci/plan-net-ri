@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walter",
+      "family": "Wehner",
       "given": [
-        "Floyd"
+        "Percy",
+        "Les"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(778) 725-7813 x0975",
+      "value": "817-683-5503",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-562-826-9002 x63172",
+      "value": "(275) 708-8260 x82318",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080N0001X",
-            "display": "Neonatal-Perinatal Medicine"
+            "display": "Neonatal-Perinatal Medicine Physician"
           }
         ],
-        "text": "Neonatal-Perinatal Medicine"
+        "text": "Neonatal-Perinatal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-22",
-        "end": "2027-02-22"
+        "start": "2023-06-16",
+        "end": "2026-06-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "38746d9a150e3f"
+      "value": "190487108b0104"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232000249",
-    "display": "Jarrett Pouros"
+    "display": "Domingo Homenick"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213EP1101X",
-          "display": "Primary Podiatric Medicine"
+          "display": "Primary Podiatric Medicine Podiatrist"
         }
       ],
-      "text": "Primary Podiatric Medicine"
+      "text": "Primary Podiatric Medicine Podiatrist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "247.565.7298 x01286",
+      "value": "(459) 965-7198 x726",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-592-518-4911 x706",
+      "value": "1-811-483-5133 x23321",
       "use": "work"
     }
   ],

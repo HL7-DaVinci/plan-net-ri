@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "1a4dae4afe3d0e"
+      "value": "8ac845c6c1046e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234823897",
-    "display": "Willard Smith"
+    "display": "Rob Kihn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "231.510.6236 x7207",
+      "value": "(553) 952-9562 x450",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "928.485.9793",
+      "value": "(962) 435-3588 x2530",
       "use": "work"
     }
   ],

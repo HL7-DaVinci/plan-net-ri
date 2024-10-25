@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Crist",
+      "family": "Moore",
       "given": [
-        "Minna"
+        "Birdie",
+        "Carola"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-737-099-0990",
+      "value": "1-178-917-9562 x779",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(812) 536-3464 x47241",
+      "value": "371-686-4121 x282",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-04-03",
-        "end": "2025-04-03"
+        "start": "2022-11-06",
+        "end": "2025-11-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "0efd9af2a2dade"
+      "value": "2efadaad020626"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237055854",
-    "display": "Terence Pfannerstill"
+    "display": "Merlin Schmitt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "614.771.3737 x042",
+      "value": "1-129-590-1245 x900",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-965-299-1221 x84428",
+      "value": "(487) 715-0024 x938",
       "use": "work"
     }
   ],

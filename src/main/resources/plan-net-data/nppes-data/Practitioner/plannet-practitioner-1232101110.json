@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Franecki",
+      "family": "Schamberger",
       "given": [
-        "Claud",
-        "Russ"
+        "Rodrigo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "999.186.3015",
+      "value": "(672) 007-5787",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "542.523.3035 x49473",
+      "value": "506.024.9730 x68995",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-08-19",
-        "end": "2024-08-19"
+        "start": "2022-03-03",
+        "end": "2025-03-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-01-12",
-        "end": "2026-01-12"
+        "start": "2023-09-13",
+        "end": "2026-09-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -243,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

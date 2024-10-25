@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "3d839a4e5c1ab2"
+      "value": "3997f684c65bca"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232401703",
-    "display": "Daryl Bogisich"
+    "display": "Coy Roberts"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "152WC0802X",
-          "display": "Corneal and Contact Management"
+          "display": "Corneal and Contact Management Optometrist"
         }
       ],
-      "text": "Corneal and Contact Management"
+      "text": "Corneal and Contact Management Optometrist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "758.739.3139 x0733",
+      "value": "489-696-3693 x63168",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "862.676.0320",
+      "value": "748-126-8063",
       "use": "work"
     }
   ],

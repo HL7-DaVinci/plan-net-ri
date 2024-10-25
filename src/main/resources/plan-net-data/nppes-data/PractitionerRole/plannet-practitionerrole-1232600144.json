@@ -10,27 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://travis-corp.com",
-      "value": "134ac0b67a0131"
+      "value": "2d76299ae35ce1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232600144",
-    "display": "Irwin Kuhlman"
+    "display": "Amos Casper"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231790820",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Physician"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(497) 564-1393",
+      "value": "464.107.0328 x487",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-853-926-1135 x157",
+      "value": "1-641-135-3940 x93026",
       "use": "work"
     }
   ],

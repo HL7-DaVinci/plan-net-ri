@@ -13,34 +13,6 @@
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -57,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://farmington-surgery-center-llc.com",
-      "value": "e0fed6c6cdbbff"
+      "value": "7d31f4c624b0b5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236449324",
-    "display": "Kasey Daugherty"
+    "display": "Levi Koelpin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236348148",
@@ -86,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -107,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-617-183-0546 x1124",
+      "value": "786.447.3367 x6038",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "849.561.0526",
+      "value": "1-407-750-7466",
       "use": "work"
     }
   ],

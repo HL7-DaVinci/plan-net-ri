@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kirlin",
+      "family": "Willms",
       "given": [
-        "Adolph"
+        "Wm"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(418) 173-2574 x4141",
+      "value": "(806) 950-4864 x578",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(891) 737-2790 x855",
+      "value": "1-637-685-9575 x420",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-11-15",
-        "end": "2025-11-15"
+        "start": "2024-09-13",
+        "end": "2027-09-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

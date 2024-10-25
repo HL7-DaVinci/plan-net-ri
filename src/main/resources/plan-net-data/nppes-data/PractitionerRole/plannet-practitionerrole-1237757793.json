@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b63ccf143221c1"
+      "value": "0fa65d37ccb613"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237757793",
-    "display": "Rolando Schmidt"
+    "display": "Rolland Prohaska"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "101.761.3393 x665",
+      "value": "1-650-255-6886 x7558",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "222-063-3810 x8136",
+      "value": "828-095-2244 x6180",
       "use": "work"
     }
   ],

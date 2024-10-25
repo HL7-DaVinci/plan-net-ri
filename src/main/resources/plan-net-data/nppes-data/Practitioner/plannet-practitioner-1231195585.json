@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jaskolski",
+      "family": "Metz",
       "given": [
-        "Alvaro"
+        "Lloyd",
+        "Luther"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(965) 972-9440 x209",
+      "value": "(673) 614-1555 x6094",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "800.704.5765",
+      "value": "(738) 272-4314",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213EP1101X",
-            "display": "Primary Podiatric Medicine"
+            "display": "Primary Podiatric Medicine Podiatrist"
           }
         ],
-        "text": "Primary Podiatric Medicine"
+        "text": "Primary Podiatric Medicine Podiatrist"
       },
       "period": {
-        "start": "2023-02-20",
-        "end": "2026-02-20"
+        "start": "2022-03-20",
+        "end": "2025-03-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

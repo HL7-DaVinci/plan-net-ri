@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Konopelski",
+      "family": "Davis",
       "given": [
-        "Jannet",
-        "Mikki"
+        "Kristine"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-453-358-5162 x0538",
+      "value": "1-533-575-1716 x603",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(604) 139-6185 x283",
+      "value": "224-031-6551 x18003",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2022-02-05",
-        "end": "2025-02-05"
+        "start": "2024-04-21",
+        "end": "2027-04-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

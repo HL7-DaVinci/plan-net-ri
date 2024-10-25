@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Torp",
+      "family": "Dietrich",
       "given": [
-        "Genevieve",
-        "Odette"
+        "Rose"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(967) 739-3590",
+      "value": "748-333-8396 x56961",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "823.094.7534 x1250",
+      "value": "1-638-219-2719 x68640",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-10-29",
-        "end": "2026-10-29"
+        "start": "2022-09-17",
+        "end": "2025-09-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

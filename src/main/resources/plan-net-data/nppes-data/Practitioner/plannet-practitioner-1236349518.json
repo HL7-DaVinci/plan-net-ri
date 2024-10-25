@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Boyle",
+      "family": "O'Keefe",
       "given": [
-        "Arthur"
+        "Edwin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "483-240-4970",
+      "value": "(583) 570-7066 x42940",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(182) 181-8552 x33491",
+      "value": "723-672-4798",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-12-16",
-        "end": "2025-12-16"
+        "start": "2022-01-04",
+        "end": "2025-01-04"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086X0206X",
-            "display": "Surgical Oncology"
+            "display": "Surgical Oncology Physician"
           }
         ],
-        "text": "Surgical Oncology"
+        "text": "Surgical Oncology Physician"
       },
       "period": {
-        "start": "2023-06-02",
-        "end": "2026-06-02"
+        "start": "2022-05-11",
+        "end": "2025-05-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -258,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

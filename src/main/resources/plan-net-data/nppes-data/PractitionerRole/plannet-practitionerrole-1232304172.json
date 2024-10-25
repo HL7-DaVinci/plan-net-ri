@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "eec06c46710a03"
+      "value": "16e3613ba94997"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232304172",
-    "display": "Bertram Wisoky"
+    "display": "Irving Huels"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "759.761.6404",
+      "value": "1-939-663-3971 x704",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "849-957-7920",
+      "value": "951.848.4382",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "c5b1995be46856"
+      "value": "2968843e4c463d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230085400",
-    "display": "Korey Hand"
+    "display": "Malcolm Stehr"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(674) 135-4115 x87608",
+      "value": "1-101-424-3057 x91252",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "515.777.5964",
+      "value": "1-793-868-0673 x827",
       "use": "work"
     }
   ],

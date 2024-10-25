@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-health-care-of-mass-inc.com",
-      "value": "10f900df7e8f5c"
+      "value": "0cb2b3e04a52f8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235630988",
-    "display": "Stanford Dibbert"
+    "display": "Mohammed Fay"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237552602",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(132) 848-3147 x48165",
+      "value": "389.878.9657 x22066",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "664.053.1599 x452",
+      "value": "(687) 350-0299",
       "use": "work"
     }
   ],

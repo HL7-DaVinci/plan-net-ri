@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Shields",
+      "family": "Schmeler",
       "given": [
-        "Maximo",
-        "Jarrod"
+        "Forest"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(109) 119-4710",
+      "value": "988-373-0501 x39892",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-136-569-9358 x9063",
+      "value": "555.068.7476 x18698",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0221X",
-            "display": "Pediatric Dentistry"
+            "display": "Pediatric Dentist"
           }
         ],
-        "text": "Pediatric Dentistry"
+        "text": "Pediatric Dentist"
       },
       "period": {
-        "start": "2023-12-30",
-        "end": "2026-12-30"
+        "start": "2023-10-02",
+        "end": "2026-10-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

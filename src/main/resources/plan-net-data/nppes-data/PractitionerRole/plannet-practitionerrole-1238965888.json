@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "fc7b920ee42215"
+      "value": "8e6eff68fd8d69"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238965888",
-    "display": "Nita Renner"
+    "display": "Francina Buckridge"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "236-870-1310 x173",
+      "value": "670-613-4139 x75949",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-118-102-3624 x84670",
+      "value": "403.475.4336",
       "use": "work"
     }
   ],

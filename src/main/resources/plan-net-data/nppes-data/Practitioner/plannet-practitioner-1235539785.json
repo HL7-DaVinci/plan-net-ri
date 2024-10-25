@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "DuBuque",
+      "family": "Sawayn",
       "given": [
-        "Ruben"
+        "Nick",
+        "Kasey"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(210) 882-3504 x582",
+      "value": "837-397-6372",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "121-607-6101 x483",
+      "value": "995-351-4902",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-03-25",
-        "end": "2027-03-25"
+        "start": "2022-05-19",
+        "end": "2025-05-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2022-03-12",
-        "end": "2025-03-12"
+        "start": "2022-01-26",
+        "end": "2025-01-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -261,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "7cb0676669977b"
+      "value": "039fc3dd3a113b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233510756",
-    "display": "Gaye McDermott"
+    "display": "Zelda Conroy"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2086S0122X",
-          "display": "Plastic and Reconstructive Surgery"
+          "display": "Plastic and Reconstructive Surgery Physician"
         }
       ],
-      "text": "Plastic and Reconstructive Surgery"
+      "text": "Plastic and Reconstructive Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "626.596.6924 x856",
+      "value": "(984) 252-4930 x2746",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-201-618-5404",
+      "value": "1-618-931-9608",
       "use": "work"
     }
   ],

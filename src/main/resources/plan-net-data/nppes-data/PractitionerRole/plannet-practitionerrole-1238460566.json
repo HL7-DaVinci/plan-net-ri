@@ -13,34 +13,6 @@
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -57,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://farmington-surgery-center-llc.com",
-      "value": "a4d5f66a0a8826"
+      "value": "bcff10ae608e4c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238460566",
-    "display": "Ramonita Medhurst"
+    "display": "Alesha Zboncak"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236348148",
@@ -107,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(583) 241-4036 x892",
+      "value": "100.621.8255 x937",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-693-866-6597",
+      "value": "641-507-4822",
       "use": "work"
     }
   ],

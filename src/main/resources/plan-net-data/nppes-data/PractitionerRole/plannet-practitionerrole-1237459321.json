@@ -10,27 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-lawrence-family-health-center-inc.com",
-      "value": "6e2d769f066488"
+      "value": "f15d71e12d7797"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237459321",
-    "display": "Scot Pfannerstill"
+    "display": "Aaron Harris"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239774646",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0001X",
-          "display": "Radiation Oncology"
+          "display": "Radiation Oncology Physician"
         }
       ],
-      "text": "Radiation Oncology"
+      "text": "Radiation Oncology Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(949) 880-4593",
+      "value": "1-880-594-2222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "956-423-9757 x429",
+      "value": "1-700-405-4193 x4943",
       "use": "work"
     }
   ],

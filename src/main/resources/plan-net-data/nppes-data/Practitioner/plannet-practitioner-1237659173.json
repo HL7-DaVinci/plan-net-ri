@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schulist",
+      "family": "Bergnaum",
       "given": [
-        "Walter"
+        "Kirby",
+        "Jae"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-275-280-5333 x1770",
+      "value": "1-231-427-4254 x104",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(471) 594-2588 x1723",
+      "value": "(439) 688-5365 x69247",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2022-08-09",
-        "end": "2025-08-09"
+        "start": "2022-09-11",
+        "end": "2025-09-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

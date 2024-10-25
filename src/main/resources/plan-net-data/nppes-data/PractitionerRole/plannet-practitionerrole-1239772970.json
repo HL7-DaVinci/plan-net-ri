@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "84e90a9ef4c210"
+      "value": "486fb6932d2bca"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239772970",
-    "display": "Josh Jaskolski"
+    "display": "Mitch Rodriguez"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223P0221X",
-          "display": "Pediatric Dentistry"
+          "display": "Pediatric Dentist"
         }
       ],
-      "text": "Pediatric Dentistry"
+      "text": "Pediatric Dentist"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(707) 718-6578",
+      "value": "1-714-695-7877",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.609.4542 x84748",
+      "value": "1-299-261-2347",
       "use": "work"
     }
   ],

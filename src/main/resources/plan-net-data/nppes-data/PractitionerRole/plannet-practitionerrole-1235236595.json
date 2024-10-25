@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "b52d5a99c8f9d5"
+      "value": "39958ae0d65ff3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235236595",
-    "display": "Peggie Ledner"
+    "display": "Richard Ledner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(764) 409-1166 x241",
+      "value": "(302) 522-7395",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(629) 941-5565 x788",
+      "value": "1-915-289-6742 x41063",
       "use": "work"
     }
   ],

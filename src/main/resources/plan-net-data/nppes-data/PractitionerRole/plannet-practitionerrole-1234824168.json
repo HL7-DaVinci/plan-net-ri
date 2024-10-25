@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "7d309eac62f81a"
+      "value": "81224f21dc1d41"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234824168",
-    "display": "Reed Brekke"
+    "display": "Bobby Ward"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-884-616-3005 x87257",
+      "value": "288.864.8701 x10650",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(638) 484-9343 x874",
+      "value": "(985) 358-0319",
       "use": "work"
     }
   ],

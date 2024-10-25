@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "0a1b67c78a8497"
+      "value": "4823f89307c060"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231298254",
-    "display": "Chere Flatley"
+    "display": "Shanae Littel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "367500000X",
-          "display": "Nurse Anesthetist, Certified Registered"
+          "display": "Certified Registered Nurse Anesthetist"
         }
       ],
-      "text": "Nurse Anesthetist, Certified Registered"
+      "text": "Certified Registered Nurse Anesthetist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "885.147.3362 x56488",
+      "value": "662.183.8060",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "705.930.2618 x3367",
+      "value": "210.749.1744 x299",
       "use": "work"
     }
   ],

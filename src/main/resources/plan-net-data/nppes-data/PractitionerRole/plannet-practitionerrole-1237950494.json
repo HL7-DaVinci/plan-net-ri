@@ -13,34 +13,6 @@
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -57,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://farmington-surgery-center-llc.com",
-      "value": "f55663b36accbe"
+      "value": "1c618090bcb055"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237950494",
-    "display": "Rickey Stracke"
+    "display": "Vernon Gottlieb"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236348148",
@@ -86,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RX0202X",
-          "display": "Medical Oncology"
+          "display": "Medical Oncology Physician"
         }
       ],
-      "text": "Medical Oncology"
+      "text": "Medical Oncology Physician"
     }
   ],
   "location": [
@@ -107,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-425-374-0276 x27353",
+      "value": "831.013.5208 x0796",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "710-428-5610 x377",
+      "value": "238-764-5688 x309",
       "use": "work"
     }
   ],

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harrington-memorial-hospital-inc.com",
-      "value": "b1186d26779dd2"
+      "value": "e2705168036346"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231691475",
-    "display": "Alta Swaniawski"
+    "display": "Glennie Donnelly"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230780047",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "690-094-1849",
+      "value": "161-144-6482 x46379",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(816) 506-1412",
+      "value": "728-852-9657 x7224",
       "use": "work"
     }
   ],

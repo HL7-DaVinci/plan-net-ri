@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lubowitz",
+      "family": "Goyette",
       "given": [
-        "Lenard"
+        "Jonathan",
+        "Michael"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "892.573.5717 x527",
+      "value": "456.151.1297",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-735-483-6342 x09079",
+      "value": "1-748-696-7251 x33704",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2021-08-24",
-        "end": "2024-08-24"
+        "start": "2024-10-20",
+        "end": "2027-10-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

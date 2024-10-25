@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b6ba786abc5872"
+      "value": "3ae38dfe8caff9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238865387",
-    "display": "Ezequiel Koch"
+    "display": "Fredrick Moore"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "674.701.7232 x61041",
+      "value": "1-442-070-0011",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-814-832-2987",
+      "value": "(911) 422-8392",
       "use": "work"
     }
   ],

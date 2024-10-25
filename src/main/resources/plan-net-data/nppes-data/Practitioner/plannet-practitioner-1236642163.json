@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Romaguera",
+      "family": "Kuhlman",
       "given": [
-        "Spencer"
+        "Whitney",
+        "Donte"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-217-860-1777",
+      "value": "1-904-911-6496 x42310",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(634) 301-1874 x7875",
+      "value": "976.057.0436 x96731",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2021-09-14",
-        "end": "2024-09-14"
+        "start": "2023-12-01",
+        "end": "2026-12-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

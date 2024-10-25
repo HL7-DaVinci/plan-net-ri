@@ -13,34 +13,6 @@
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -57,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://farmington-surgery-center-llc.com",
-      "value": "56bb21f49d55c1"
+      "value": "96a06cb898f2aa"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232602868",
-    "display": "Les Keeling"
+    "display": "Tyler Hoppe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236348148",
@@ -86,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207XX0005X",
-          "display": "Sports Medicine"
+          "display": "Sports Medicine (Orthopaedic Surgery) Physician"
         }
       ],
-      "text": "Sports Medicine"
+      "text": "Sports Medicine (Orthopaedic Surgery) Physician"
     }
   ],
   "location": [
@@ -107,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "157-596-5453 x577",
+      "value": "1-287-224-1922 x0054",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-938-561-2527 x734",
+      "value": "1-384-621-7890",
       "use": "work"
     }
   ],

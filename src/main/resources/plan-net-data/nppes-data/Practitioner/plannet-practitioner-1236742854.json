@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Harris",
+      "family": "Thiel",
       "given": [
-        "Delmer",
-        "Russ"
+        "Augustus"
       ],
       "suffix": [
         "OD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "308.243.4404 x888",
+      "value": "985-878-1727",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "935.350.8542 x743",
+      "value": "1-839-264-7705 x21744",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-02-28",
-        "end": "2026-02-28"
+        "start": "2022-03-14",
+        "end": "2025-03-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

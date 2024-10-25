@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "b49a0e41838d14"
+      "value": "d1fa90cf8fec72"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232903824",
-    "display": "Martin Bahringer"
+    "display": "Rob Borer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "596-701-0554 x12422",
+      "value": "655.914.7046 x9293",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "622.228.7601 x1120",
+      "value": "371.050.5140 x73903",
       "use": "work"
     }
   ],

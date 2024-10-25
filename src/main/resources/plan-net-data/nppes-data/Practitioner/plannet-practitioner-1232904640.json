@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reinger",
+      "family": "Schmitt",
       "given": [
-        "Ralph",
-        "Len"
+        "Bobbie",
+        "Perry"
       ],
       "suffix": [
         "DMD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-147-522-3246",
+      "value": "244-624-2766 x84677",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(165) 941-2211 x691",
+      "value": "870-362-1550 x3131",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0221X",
-            "display": "Pediatric Dentistry"
+            "display": "Pediatric Dentist"
           }
         ],
-        "text": "Pediatric Dentistry"
+        "text": "Pediatric Dentist"
       },
       "period": {
-        "start": "2022-10-30",
-        "end": "2025-10-30"
+        "start": "2024-06-15",
+        "end": "2027-06-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

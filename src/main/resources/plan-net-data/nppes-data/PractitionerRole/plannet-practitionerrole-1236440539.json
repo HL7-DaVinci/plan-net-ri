@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "97a9c1ff5b6b34"
+      "value": "4d7835bd1d5e02"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236440539",
-    "display": "Karyn Powlowski"
+    "display": "Maria Bartoletti"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2083X0100X",
-          "display": "Occupational Medicine"
+          "display": "Occupational Medicine Physician"
         }
       ],
-      "text": "Occupational Medicine"
+      "text": "Occupational Medicine Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-308-211-0002 x260",
+      "value": "261.481.1689",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-458-283-4167 x739",
+      "value": "(524) 312-6425 x02498",
       "use": "work"
     }
   ],

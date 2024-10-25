@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "21bf760056854e"
+      "value": "4e9036102661d7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231890165",
-    "display": "Augustine Reilly"
+    "display": "Dusty Hermiston"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2083P0901X",
-          "display": "Public Health and General Preventive Medicine"
+          "display": "Public Health & General Preventive Medicine Physician"
         }
       ],
-      "text": "Public Health and General Preventive Medicine"
+      "text": "Public Health & General Preventive Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "274-984-5817 x2740",
+      "value": "730-312-8583 x476",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "887.868.6344 x008",
+      "value": "436.395.3162 x3001",
       "use": "work"
     }
   ],

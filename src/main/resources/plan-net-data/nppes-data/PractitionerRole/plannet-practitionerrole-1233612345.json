@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "41cfde14161131"
+      "value": "495dfd4f81505f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233612345",
-    "display": "Laquanda Upton"
+    "display": "Silvia Tremblay"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-489-165-0278 x556",
+      "value": "242-442-1083 x367",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "573.479.6196 x716",
+      "value": "(341) 806-3985 x317",
       "use": "work"
     }
   ],

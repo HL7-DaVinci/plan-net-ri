@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "0eb53c34fd3358"
+      "value": "47411b088535e7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232400911",
-    "display": "Lucas Thompson"
+    "display": "Lazaro Spencer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(836) 469-9500",
+      "value": "1-705-201-5337",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "846.119.0271 x525",
+      "value": "459-731-4257",
       "use": "work"
     }
   ],

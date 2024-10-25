@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "ce76ad2a377458"
+      "value": "e7474a0bec76ba"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234727149",
-    "display": "Adelia Johns"
+    "display": "Darnell Lynch"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-585-788-9702",
+      "value": "1-677-918-2483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(789) 275-6235 x3549",
+      "value": "311.069.8316",
       "use": "work"
     }
   ],

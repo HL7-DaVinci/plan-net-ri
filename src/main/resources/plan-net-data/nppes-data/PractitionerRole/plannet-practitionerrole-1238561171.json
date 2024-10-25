@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "060da27d906ea7"
+      "value": "abb44586d2ffc9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238561171",
-    "display": "Darrick Spinka"
+    "display": "Stefan Franecki"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-542-940-6758",
+      "value": "1-964-246-4957 x83715",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "607-129-8704 x89821",
+      "value": "721-252-8032 x11507",
       "use": "work"
     }
   ],

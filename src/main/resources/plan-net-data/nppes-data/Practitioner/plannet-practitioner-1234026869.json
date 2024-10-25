@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rippin",
+      "family": "Bahringer",
       "given": [
-        "Wendell",
-        "Christopher"
+        "Laverne",
+        "Douglas"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(736) 212-4182 x4431",
+      "value": "(606) 577-7376 x6762",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(743) 619-9977 x40119",
+      "value": "452.975.7872 x667",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-02-25",
-        "end": "2025-02-25"
+        "start": "2024-03-31",
+        "end": "2027-03-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2023-12-12",
-        "end": "2026-12-12"
+        "start": "2024-07-22",
+        "end": "2027-07-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -243,31 +243,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

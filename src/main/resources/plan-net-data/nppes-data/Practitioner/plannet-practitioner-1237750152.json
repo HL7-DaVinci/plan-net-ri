@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolf",
+      "family": "Denesik",
       "given": [
-        "Archie"
+        "Gonzalo",
+        "Filiberto"
       ],
       "suffix": [
         "DO"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "263-997-0062",
+      "value": "(638) 616-3844",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(766) 122-2591",
+      "value": "798-837-2302",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-03-13",
-        "end": "2026-03-13"
+        "start": "2023-09-25",
+        "end": "2026-09-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-02-09",
-        "end": "2026-02-09"
+        "start": "2023-05-03",
+        "end": "2026-05-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2021-12-19",
-        "end": "2024-12-19"
+        "start": "2023-08-29",
+        "end": "2026-08-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -322,11 +323,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

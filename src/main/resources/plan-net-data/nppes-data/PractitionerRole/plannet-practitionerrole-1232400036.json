@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "b4ba06906be3fa"
+      "value": "7896665ffa4463"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232400036",
-    "display": "Janeen Bayer"
+    "display": "Etsuko Tillman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "848.600.6904",
+      "value": "(382) 689-5930 x2599",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-177-486-0384 x233",
+      "value": "260.313.2408 x618",
       "use": "work"
     }
   ],

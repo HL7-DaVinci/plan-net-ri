@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Harber",
+      "family": "Jacobi",
       "given": [
-        "Solange",
-        "Elfreda"
+        "Etta"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-230-075-4584 x428",
+      "value": "1-760-222-5930 x1134",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-498-318-2508 x709",
+      "value": "752-278-4126 x9338",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-06-05",
-        "end": "2026-06-05"
+        "start": "2024-05-07",
+        "end": "2027-05-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

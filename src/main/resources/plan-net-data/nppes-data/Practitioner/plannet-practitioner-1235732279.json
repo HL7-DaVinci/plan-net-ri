@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Davis",
+      "family": "Volkman",
       "given": [
-        "Mora",
-        "Jacinda"
+        "Zora",
+        "Janis"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "531-466-1824 x181",
+      "value": "100-772-6725 x32191",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "909.383.1676 x763",
+      "value": "670-885-9002 x5875",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-12-22",
-        "end": "2025-12-22"
+        "start": "2024-10-07",
+        "end": "2027-10-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "eba89f5592c0cf"
+      "value": "4bad0925d54f8a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231094715",
-    "display": "Claud Heller"
+    "display": "Isidro Sauer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450.148.6811 x211",
+      "value": "304-251-1164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "431.659.1518",
+      "value": "146-641-3329",
       "use": "work"
     }
   ],

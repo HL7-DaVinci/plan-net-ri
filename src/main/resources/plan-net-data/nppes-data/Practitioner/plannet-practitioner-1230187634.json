@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hodkiewicz",
+      "family": "Koch",
       "given": [
-        "Adrienne"
+        "Ellamae",
+        "Jeanine"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "443-024-2781 x48785",
+      "value": "746.216.6012 x19151",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "159.037.3625 x01717",
+      "value": "1-414-716-1364 x45530",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-03-08",
-        "end": "2025-03-08"
+        "start": "2024-08-07",
+        "end": "2027-08-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

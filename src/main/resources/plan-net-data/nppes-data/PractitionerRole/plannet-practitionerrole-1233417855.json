@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "bbf3e887af208b"
+      "value": "ca8d114569b18c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233417855",
-    "display": "Jenise Fadel"
+    "display": "Meredith Treutel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LP0808X",
-          "display": "Psychiatric/Mental Health"
+          "display": "Psychiatric/Mental Health Nurse Practitioner"
         }
       ],
-      "text": "Psychiatric/Mental Health"
+      "text": "Psychiatric/Mental Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "818-089-9910 x622",
+      "value": "1-836-467-8600 x308",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "121-715-6087",
+      "value": "352.249.2315 x807",
       "use": "work"
     }
   ],

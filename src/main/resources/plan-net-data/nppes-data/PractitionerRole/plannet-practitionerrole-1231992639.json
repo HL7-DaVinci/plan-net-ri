@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "9d22d333413311"
+      "value": "4299a5658c2c06"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231992639",
-    "display": "Lucius Morissette"
+    "display": "Earl Hansen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "278.290.5219",
+      "value": "889.794.2602 x9696",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(223) 951-8087 x81123",
+      "value": "1-848-008-1569",
       "use": "work"
     }
   ],

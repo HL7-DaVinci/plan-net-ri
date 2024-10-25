@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reinger",
+      "family": "Dickens",
       "given": [
-        "Vince",
-        "Graham"
+        "Phillip",
+        "Elliot"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-150-793-4118 x8173",
+      "value": "(152) 402-8648 x9971",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(963) 251-6995 x24475",
+      "value": "(580) 383-9825 x004",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-11-08",
-        "end": "2024-11-08"
+        "start": "2022-01-30",
+        "end": "2025-01-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

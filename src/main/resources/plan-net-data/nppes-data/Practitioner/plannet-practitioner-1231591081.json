@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Yost",
+      "family": "Grimes",
       "given": [
-        "Robert"
+        "Kurt"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "956-672-5593",
+      "value": "176-535-6099 x827",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "616.682.1577 x3386",
+      "value": "1-618-364-1690 x803",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-04-28",
-        "end": "2025-04-28"
+        "start": "2022-09-20",
+        "end": "2025-09-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

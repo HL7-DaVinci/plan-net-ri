@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "10e2a11fc68a66"
+      "value": "c23fb8bd3d6dac"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235037906",
-    "display": "Jennell Wilderman"
+    "display": "Krishna Yundt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(336) 125-3056 x79956",
+      "value": "653.429.2374 x9869",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "836.281.1531 x2144",
+      "value": "1-417-578-0819",
       "use": "work"
     }
   ],

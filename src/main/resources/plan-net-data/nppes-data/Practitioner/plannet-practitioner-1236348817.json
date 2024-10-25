@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turner",
+      "family": "Parisian",
       "given": [
-        "Markus"
+        "Lemuel",
+        "Burl"
       ],
       "prefix": [
         "Dr."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-217-602-2721 x41622",
+      "value": "816-569-6869 x93601",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "919-879-3770",
+      "value": "(595) 690-6002",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0204X",
-            "display": "Vascular and Interventional Radiology"
+            "display": "Vascular & Interventional Radiology Physician"
           }
         ],
-        "text": "Vascular and Interventional Radiology"
+        "text": "Vascular & Interventional Radiology Physician"
       },
       "period": {
-        "start": "2021-11-13",
-        "end": "2024-11-13"
+        "start": "2024-03-24",
+        "end": "2027-03-24"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

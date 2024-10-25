@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "2ed2e308458ebf"
+      "value": "13f6b1c3774544"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231590737",
-    "display": "Joseph Hegmann"
+    "display": "Theresia Ebert"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RR0500X",
-          "display": "Rheumatology"
+          "display": "Rheumatology Physician"
         }
       ],
-      "text": "Rheumatology"
+      "text": "Rheumatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-553-666-1458 x219",
+      "value": "299.408.5912 x82606",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-156-964-7205 x283",
+      "value": "301-234-3539 x637",
       "use": "work"
     }
   ],

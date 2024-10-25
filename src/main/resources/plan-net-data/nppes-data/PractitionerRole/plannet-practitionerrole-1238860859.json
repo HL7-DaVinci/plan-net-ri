@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "54b1f5d8a3c74a"
+      "value": "5739e3ff3bd8a5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238860859",
-    "display": "Andres Lockman"
+    "display": "Roland Donnelly"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-897-412-3334",
+      "value": "561.874.0483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "747.768.0616",
+      "value": "1-252-818-9694 x95984",
       "use": "work"
     }
   ],

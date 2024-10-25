@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bashirian",
+      "family": "Deckow",
       "given": [
-        "Sharleen",
-        "Sherryl"
+        "Jeremy"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "863-068-5059",
+      "value": "785-714-5906",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "134.377.3252 x4666",
+      "value": "(830) 218-3052 x02064",
       "use": "work"
     }
   ],
@@ -112,6 +111,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

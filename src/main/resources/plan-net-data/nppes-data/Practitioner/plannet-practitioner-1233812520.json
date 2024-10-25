@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Erdman",
+      "family": "Zboncak",
       "given": [
-        "Tuan",
-        "Jacob"
+        "Joshua"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-434-046-4012",
+      "value": "(963) 731-1501 x72741",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(283) 271-8381 x69032",
+      "value": "205.434.1884 x6374",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2022-12-30",
-        "end": "2025-12-30"
+        "start": "2023-09-25",
+        "end": "2026-09-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

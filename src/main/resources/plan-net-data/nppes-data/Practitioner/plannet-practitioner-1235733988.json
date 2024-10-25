@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuphal",
+      "family": "Champlin",
       "given": [
-        "Corey",
-        "Lemuel"
+        "Cedric"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "415-349-9343",
+      "value": "242-681-9835 x83825",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "621.541.6539",
+      "value": "(483) 154-5666 x261",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-08-24",
-        "end": "2025-08-24"
+        "start": "2024-03-28",
+        "end": "2027-03-28"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2022-06-12",
-        "end": "2025-06-12"
+        "start": "2022-11-08",
+        "end": "2025-11-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

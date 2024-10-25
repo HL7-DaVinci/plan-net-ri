@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "1094540b58585b"
+      "value": "89dd2633326668"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234525497",
-    "display": "Pete Huel"
+    "display": "Tommie Ryan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(629) 016-4444 x3430",
+      "value": "1-327-421-6721 x64201",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "414.011.5640",
+      "value": "(156) 331-6506 x5539",
       "use": "work"
     }
   ],

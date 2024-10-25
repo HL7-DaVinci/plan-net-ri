@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "5d70a04321cb20"
+      "value": "50e80b629adc03"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232800832",
-    "display": "Issac Collier"
+    "display": "Lester Gutkowski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Physician"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "261.433.9549 x838",
+      "value": "979.615.6935 x179",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(965) 541-2800",
+      "value": "790.694.2696",
       "use": "work"
     }
   ],

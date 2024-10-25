@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolf",
+      "family": "Rau",
       "given": [
-        "Young",
-        "Kristeen"
+        "Shawn",
+        "Racheal"
       ],
       "suffix": [
         "MA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "649-052-0646 x136",
+      "value": "(916) 930-9633",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-636-307-6596",
+      "value": "(431) 231-4098 x797",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2022-05-05",
-        "end": "2025-05-05"
+        "start": "2022-09-09",
+        "end": "2025-09-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

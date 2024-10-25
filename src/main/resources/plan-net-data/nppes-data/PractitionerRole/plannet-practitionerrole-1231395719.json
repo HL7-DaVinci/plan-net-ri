@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "1318324abbd465"
+      "value": "0e098de8fc6ca6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231395719",
-    "display": "Edison Watsica"
+    "display": "Harold Zulauf"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "863.995.0867 x6780",
+      "value": "209.075.3624 x26202",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(152) 122-8042 x7207",
+      "value": "(432) 324-5029",
       "use": "work"
     }
   ],

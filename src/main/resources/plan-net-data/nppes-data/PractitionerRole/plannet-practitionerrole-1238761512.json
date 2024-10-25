@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "302c71c484a332"
+      "value": "41a77a9d4c6a4d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238761512",
-    "display": "Benton Farrell"
+    "display": "Porfirio Lynch"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(846) 052-2364",
+      "value": "192.815.3950 x40799",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(394) 693-1774 x77310",
+      "value": "968.170.6418 x10763",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "235e09fbeb80dc"
+      "value": "1cb40c94965444"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239374734",
-    "display": "Tyree Kertzmann"
+    "display": "Justin Harvey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "975-933-1762",
+      "value": "778-330-3960 x36024",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "476.058.6720",
+      "value": "486-869-4968",
       "use": "work"
     }
   ],

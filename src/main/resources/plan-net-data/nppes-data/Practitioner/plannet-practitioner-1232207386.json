@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Blick",
+      "family": "Shanahan",
       "given": [
-        "Gale"
+        "Renato",
+        "Trent"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(638) 995-8157 x34457",
+      "value": "948.776.6913 x644",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-400-613-9566",
+      "value": "843-848-8027 x45506",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2023-04-04",
-        "end": "2026-04-04"
+        "start": "2023-05-28",
+        "end": "2026-05-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

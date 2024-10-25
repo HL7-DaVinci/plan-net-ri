@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "55fd0a123d27a6"
+      "value": "44fa7906092d56"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230282706",
-    "display": "Raelene Ankunding"
+    "display": "Regan Bartoletti"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234521488",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2200X",
-          "display": "Adult Health"
+          "display": "Adult Health Nurse Practitioner"
         }
       ],
-      "text": "Adult Health"
+      "text": "Adult Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "729-740-1599 x43689",
+      "value": "428.855.7773 x456",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(286) 354-2650 x0589",
+      "value": "1-232-623-9725 x714",
       "use": "work"
     }
   ],

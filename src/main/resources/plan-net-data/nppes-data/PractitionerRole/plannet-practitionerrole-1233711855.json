@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "800b2b7e3c4035"
+      "value": "a80b39fa9929a1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233711855",
-    "display": "Mervin Hoeger"
+    "display": "Refugio Sipes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-903-493-5388 x025",
+      "value": "(728) 700-2821 x4761",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "616-937-8349 x919",
+      "value": "(306) 537-4383 x906",
       "use": "work"
     }
   ],

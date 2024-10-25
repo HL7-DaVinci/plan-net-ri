@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Goodwin",
+      "family": "Gulgowski",
       "given": [
-        "Vannesa",
-        "Rosana"
+        "Darcey",
+        "Jacelyn"
       ],
       "suffix": [
         "LCSW"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "631.430.3449 x55023",
+      "value": "144.033.4359",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "390.610.8735 x108",
+      "value": "1-872-064-8947 x5846",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2022-09-27",
-        "end": "2025-09-27"
+        "start": "2024-03-20",
+        "end": "2027-03-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

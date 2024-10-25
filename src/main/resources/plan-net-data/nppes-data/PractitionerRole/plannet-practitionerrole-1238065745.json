@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "f2d0166a3416ba"
+      "value": "f40954617d3e65"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238065745",
-    "display": "Seymour Schaden"
+    "display": "Edmond Walsh"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(550) 180-4353 x805",
+      "value": "316-916-1692 x4409",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "768-951-4492 x0786",
+      "value": "(795) 975-8080 x646",
       "use": "work"
     }
   ],

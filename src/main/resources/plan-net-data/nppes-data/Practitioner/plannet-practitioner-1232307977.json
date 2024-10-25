@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hintz",
+      "family": "Nienow",
       "given": [
-        "Berry",
-        "Paris"
+        "Rico",
+        "Ethan"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(615) 956-8142",
+      "value": "375.087.4425 x971",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(909) 627-9492 x294",
+      "value": "(632) 210-8548 x02853",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2022-01-05",
-        "end": "2025-01-05"
+        "start": "2023-05-20",
+        "end": "2026-05-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

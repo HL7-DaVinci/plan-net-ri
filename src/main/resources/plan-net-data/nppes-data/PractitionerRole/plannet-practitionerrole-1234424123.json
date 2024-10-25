@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "97f91013dea077"
+      "value": "c02e634afb0673"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234424123",
-    "display": "Tracee Champlin"
+    "display": "Concha Cole"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-639-554-6245 x003",
+      "value": "685.119.9743 x55012",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-722-189-8983 x3341",
+      "value": "857-890-3547 x74183",
       "use": "work"
     }
   ],

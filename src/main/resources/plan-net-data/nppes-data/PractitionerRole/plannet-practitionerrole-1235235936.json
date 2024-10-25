@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "c6e949a6ad496e"
+      "value": "29b4a62ffc4254"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235235936",
-    "display": "Burton Pacocha"
+    "display": "Vernon Olson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208G00000X",
-          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
         }
       ],
-      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "433.477.9276 x264",
+      "value": "310.408.2869 x433",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "818.294.5076",
+      "value": "1-739-158-3007 x6573",
       "use": "work"
     }
   ],

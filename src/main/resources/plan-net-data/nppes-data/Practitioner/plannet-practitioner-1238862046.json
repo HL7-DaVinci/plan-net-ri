@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Spinka",
+      "family": "Hackett",
       "given": [
-        "Kendall"
+        "Jeff"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "489-238-5850 x27675",
+      "value": "1-421-778-6508",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "913.456.6917",
+      "value": "552.036.9068",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-12-20",
-        "end": "2025-12-20"
+        "start": "2024-08-14",
+        "end": "2027-08-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

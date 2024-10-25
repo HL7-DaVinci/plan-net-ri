@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "c1d26c72909dcd"
+      "value": "a4eef820337b08"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235539785",
-    "display": "Ruben DuBuque"
+    "display": "Nick Sawayn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(210) 882-3504 x582",
+      "value": "837-397-6372",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "121-607-6101 x483",
+      "value": "995-351-4902",
       "use": "work"
     }
   ],

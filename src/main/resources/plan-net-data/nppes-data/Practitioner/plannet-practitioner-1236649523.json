@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Heathcote",
+      "family": "Olson",
       "given": [
-        "Bill",
-        "Elwood"
+        "Eugenio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(990) 825-0090",
+      "value": "400.154.7007 x36849",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(597) 663-6006 x817",
+      "value": "575.417.5812 x5663",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-02-03",
-        "end": "2027-02-03"
+        "start": "2024-06-13",
+        "end": "2027-06-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

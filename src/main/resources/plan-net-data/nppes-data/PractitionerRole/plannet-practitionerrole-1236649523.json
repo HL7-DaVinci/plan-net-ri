@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "9c74bbd7198088"
+      "value": "d1f215a3a64474"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236649523",
-    "display": "Bill Heathcote"
+    "display": "Eugenio Olson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(990) 825-0090",
+      "value": "400.154.7007 x36849",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(597) 663-6006 x817",
+      "value": "575.417.5812 x5663",
       "use": "work"
     }
   ],

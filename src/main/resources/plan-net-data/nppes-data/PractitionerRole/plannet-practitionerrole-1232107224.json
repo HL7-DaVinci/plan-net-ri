@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "82de642023b763"
+      "value": "bc9a03cfeddaed"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232107224",
-    "display": "Donny Herman"
+    "display": "Randy Lueilwitz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(313) 046-5712 x501",
+      "value": "1-416-599-8124 x607",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(423) 584-0892 x005",
+      "value": "1-160-592-5123 x999",
       "use": "work"
     }
   ],

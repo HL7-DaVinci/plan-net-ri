@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Daugherty",
+      "family": "Pfeffer",
       "given": [
-        "Leon",
-        "Andrew"
+        "Camellia"
       ],
       "suffix": [
         "N.P."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "465-565-0667 x42945",
+      "value": "575.878.1395",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-929-317-8706 x12345",
+      "value": "691-098-7719 x066",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-04-06",
-        "end": "2025-04-06"
+        "start": "2024-09-10",
+        "end": "2027-09-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

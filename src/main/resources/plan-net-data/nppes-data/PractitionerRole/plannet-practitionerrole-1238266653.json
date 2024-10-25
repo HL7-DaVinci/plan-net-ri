@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "2a132d3c92d627"
+      "value": "f03ed29ce34933"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238266653",
-    "display": "Alex Lehner"
+    "display": "Nicholas Schroeder"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-802-359-6949",
+      "value": "665.100.5633 x14528",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "446-730-3440 x0518",
+      "value": "620-873-3882 x552",
       "use": "work"
     }
   ],

@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "c90f71613e8278"
+      "value": "48316a01440cca"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237152246",
-    "display": "Allan Stehr"
+    "display": "Lenard Deckow"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0011X",
-          "display": "Interventional Cardiology"
+          "display": "Interventional Cardiology Physician"
         }
       ],
-      "text": "Interventional Cardiology"
+      "text": "Interventional Cardiology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "135.227.5725 x30259",
+      "value": "1-548-137-1686 x472",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-127-126-8745",
+      "value": "541.050.3871 x92942",
       "use": "work"
     }
   ],

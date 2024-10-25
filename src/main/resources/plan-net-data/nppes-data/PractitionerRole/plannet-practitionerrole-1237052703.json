@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "2fa1d1672866b8"
+      "value": "434727c63d2af9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237052703",
-    "display": "Douglass Bechtelar"
+    "display": "Joan Schiller"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2081P2900X",
-          "display": "Pain Medicine"
+          "display": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
         }
       ],
-      "text": "Pain Medicine"
+      "text": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "515-215-4869 x2901",
+      "value": "(920) 409-8581 x244",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(560) 653-2413 x7898",
+      "value": "(138) 155-2147 x076",
       "use": "work"
     }
   ],

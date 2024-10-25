@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jerde",
+      "family": "Padberg",
       "given": [
-        "Ollie"
+        "Carrol"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(805) 803-6040 x75630",
+      "value": "836.609.9196",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(368) 724-2067 x265",
+      "value": "426.543.4667 x71674",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2023-08-04",
-        "end": "2026-08-04"
+        "start": "2024-08-10",
+        "end": "2027-08-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

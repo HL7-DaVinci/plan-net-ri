@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "26fa3945053f6a"
+      "value": "19da333ad901fc"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234025606",
-    "display": "Darren Bosco"
+    "display": "Jamison Hayes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "994.160.9952 x25583",
+      "value": "506-416-1752 x158",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-333-046-6134 x28528",
+      "value": "1-852-217-7398 x465",
       "use": "work"
     }
   ],

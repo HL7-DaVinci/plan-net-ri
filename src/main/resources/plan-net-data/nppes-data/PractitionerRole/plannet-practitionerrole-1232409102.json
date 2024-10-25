@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "c4aba6bc3636a4"
+      "value": "b4311578d59291"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232409102",
-    "display": "Hannah Ward"
+    "display": "Sue Considine"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "690.660.4667 x6469",
+      "value": "503.685.0872",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "259-911-4359 x599",
+      "value": "(806) 680-4114 x31974",
       "use": "work"
     }
   ],

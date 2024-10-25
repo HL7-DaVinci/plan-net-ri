@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "4ee30e1895c792"
+      "value": "efe71ceabf00f8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233416683",
-    "display": "Vern Bashirian"
+    "display": "Abe Schaefer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "346.949.1414 x05239",
+      "value": "(122) 781-8625 x8945",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-294-939-1299 x8082",
+      "value": "941.528.6533 x561",
       "use": "work"
     }
   ],

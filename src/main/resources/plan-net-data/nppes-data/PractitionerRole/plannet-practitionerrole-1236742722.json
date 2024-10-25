@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "7f5d46641d38eb"
+      "value": "3a4a98b6a6a8c7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236742722",
-    "display": "Sherry Wiza"
+    "display": "Joye Rippin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RR0500X",
-          "display": "Rheumatology"
+          "display": "Rheumatology Physician"
         }
       ],
-      "text": "Rheumatology"
+      "text": "Rheumatology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-428-711-0830 x58780",
+      "value": "238-058-6126 x06710",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "696-161-6367 x36458",
+      "value": "1-274-586-0703 x662",
       "use": "work"
     }
   ],

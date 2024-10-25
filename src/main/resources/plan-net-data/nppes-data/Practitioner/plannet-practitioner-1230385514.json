@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Keeling",
+      "family": "Zulauf",
       "given": [
-        "Vicky"
+        "Kandice"
       ],
       "suffix": [
         "DPM"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-168-791-5644 x099",
+      "value": "(810) 754-6428",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "822-867-4164 x1674",
+      "value": "1-190-896-9401",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-12-15",
-        "end": "2026-12-15"
+        "start": "2023-06-17",
+        "end": "2026-06-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

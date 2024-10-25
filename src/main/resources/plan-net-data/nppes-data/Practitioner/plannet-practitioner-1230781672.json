@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Williamson",
+      "family": "Langworth",
       "given": [
-        "Hunter",
-        "Julius"
+        "Armando",
+        "Ethan"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-565-535-9395 x0049",
+      "value": "376-304-5596 x22064",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "107-141-8276 x3893",
+      "value": "900-546-0757 x90817",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-01-28",
-        "end": "2026-01-28"
+        "start": "2023-03-04",
+        "end": "2026-03-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

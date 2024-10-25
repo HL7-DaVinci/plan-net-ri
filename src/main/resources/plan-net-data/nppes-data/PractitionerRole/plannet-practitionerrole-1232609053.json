@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "7d99f9dcdf4f6d"
+      "value": "4f659b0260ac83"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232609053",
-    "display": "Rolland Johnston"
+    "display": "Glenn Medhurst"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "106H00000X",
-          "display": "Marriage and Family Therapist"
+          "display": "Marriage & Family Therapist"
         }
       ],
-      "text": "Marriage and Family Therapist"
+      "text": "Marriage & Family Therapist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(215) 305-7201 x989",
+      "value": "1-701-778-8721 x08322",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(295) 009-9821 x483",
+      "value": "1-849-227-4863",
       "use": "work"
     }
   ],

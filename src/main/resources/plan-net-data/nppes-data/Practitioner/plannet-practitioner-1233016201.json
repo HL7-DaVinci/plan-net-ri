@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Monahan",
+      "family": "Schinner",
       "given": [
-        "Pierre"
+        "Lindsey",
+        "Ramiro"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "275-961-7450 x5953",
+      "value": "(575) 195-8924 x21021",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "842-623-9938 x6574",
+      "value": "377.665.1130 x1036",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-07-20",
-        "end": "2026-07-20"
+        "start": "2023-10-31",
+        "end": "2026-10-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

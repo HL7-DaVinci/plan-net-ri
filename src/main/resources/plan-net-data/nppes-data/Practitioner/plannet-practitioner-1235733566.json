@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stoltenberg",
+      "family": "Littel",
       "given": [
-        "Leonila",
-        "Ehtel"
+        "Samatha",
+        "Alina"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(308) 401-4778 x31162",
+      "value": "(216) 691-4206 x4275",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "397-932-3020",
+      "value": "1-110-830-1212",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2024-01-29",
-        "end": "2027-01-29"
+        "start": "2023-01-09",
+        "end": "2026-01-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

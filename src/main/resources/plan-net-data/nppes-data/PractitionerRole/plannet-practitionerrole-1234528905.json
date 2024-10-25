@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "7448f755ba6b0d"
+      "value": "a7bc18209665c7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234528905",
-    "display": "Nathan Koss"
+    "display": "Normand Kautzer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(128) 500-0814 x632",
+      "value": "1-214-820-3658 x69507",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-865-153-0570",
+      "value": "286-042-7228",
       "use": "work"
     }
   ],

@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "ca8391b2c5cfd3"
+      "value": "655575d207f5d0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230883527",
-    "display": "January Abernathy"
+    "display": "Zana Ledner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "636.076.2029",
+      "value": "(877) 678-2006 x06534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(422) 583-0699 x619",
+      "value": "770-058-4742 x04550",
       "use": "work"
     }
   ],

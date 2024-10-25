@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Quigley",
+      "family": "Fahey",
       "given": [
-        "Preston",
-        "Stephen"
+        "Guadalupe"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "125.888.8437 x2348",
+      "value": "1-783-558-8231 x10583",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(622) 414-3185 x9556",
+      "value": "657.999.5910 x64648",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2023-06-12",
-        "end": "2026-06-12"
+        "start": "2024-06-23",
+        "end": "2027-06-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Heller",
+      "family": "Witting",
       "given": [
-        "Major",
-        "Darron"
+        "Thanh",
+        "Austin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(103) 895-7423 x9584",
+      "value": "(623) 893-3901 x40763",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-737-318-8240 x43555",
+      "value": "890.827.0319 x46086",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2023-08-24",
-        "end": "2026-08-24"
+        "start": "2023-11-10",
+        "end": "2026-11-10"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fritsch",
+      "family": "Hirthe",
       "given": [
-        "Marty",
-        "Gino"
+        "Markus",
+        "Wilbert"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "550.944.4003 x736",
+      "value": "632-826-8957 x40328",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "696-235-4016 x5485",
+      "value": "167.259.3791 x9406",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2022-05-10",
-        "end": "2025-05-10"
+        "start": "2023-11-03",
+        "end": "2026-11-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

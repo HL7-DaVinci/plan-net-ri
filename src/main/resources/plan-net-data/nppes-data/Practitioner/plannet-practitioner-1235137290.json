@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Langosh",
+      "family": "Abshire",
       "given": [
-        "Chung",
-        "Korey"
+        "Milan"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-547-822-3707",
+      "value": "1-426-765-7294 x7162",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "486.371.3013 x798",
+      "value": "(318) 552-6622 x903",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-08-13",
-        "end": "2024-08-13"
+        "start": "2024-07-11",
+        "end": "2027-07-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "08b6ab49fa337a"
+      "value": "e083eb70d2831f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234727412",
-    "display": "Adan Kerluke"
+    "display": "Loyd Cronin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-895-494-9592",
+      "value": "1-582-899-9043 x991",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "393.788.8453 x3568",
+      "value": "1-918-682-5654 x062",
       "use": "work"
     }
   ],

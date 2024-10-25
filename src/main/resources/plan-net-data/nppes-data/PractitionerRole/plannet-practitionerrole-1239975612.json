@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "9eef37ab9d99ed"
+      "value": "75d1df060bd050"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239975612",
-    "display": "Milo Rodriguez"
+    "display": "Wendell Treutel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(173) 410-6777 x11237",
+      "value": "740-735-1497 x116",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-322-708-3278 x0271",
+      "value": "1-472-743-6469 x7055",
       "use": "work"
     }
   ],

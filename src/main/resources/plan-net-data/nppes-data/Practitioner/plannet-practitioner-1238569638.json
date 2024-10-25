@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Towne",
+      "family": "Simonis",
       "given": [
-        "Alethea"
+        "Missy",
+        "Aleida"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-980-576-1264 x7382",
+      "value": "(993) 567-3597 x321",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "915-863-4509 x4717",
+      "value": "1-999-485-8363",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-11-28",
-        "end": "2025-11-28"
+        "start": "2024-10-12",
+        "end": "2027-10-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

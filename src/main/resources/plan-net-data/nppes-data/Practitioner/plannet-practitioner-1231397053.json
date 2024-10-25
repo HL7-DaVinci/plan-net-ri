@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhn",
+      "family": "Heller",
       "given": [
-        "Kory"
+        "Alvaro",
+        "Mitchel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "302-390-8191 x14888",
+      "value": "(540) 274-2503 x03668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "154-258-2889",
+      "value": "1-171-527-7081 x3801",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207YP0228X",
-            "display": "Pediatric Otolaryngology"
+            "display": "Pediatric Otolaryngology Physician"
           }
         ],
-        "text": "Pediatric Otolaryngology"
+        "text": "Pediatric Otolaryngology Physician"
       },
       "period": {
-        "start": "2024-03-10",
-        "end": "2027-03-10"
+        "start": "2023-07-03",
+        "end": "2026-07-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

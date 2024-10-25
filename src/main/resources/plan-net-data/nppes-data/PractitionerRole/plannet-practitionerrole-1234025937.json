@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "db02b0f5d8a5c7"
+      "value": "d0f6a22787d541"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234025937",
-    "display": "Landon Marks"
+    "display": "Antony Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2086S0120X",
-          "display": "Pediatric Surgery"
+          "display": "Pediatric Surgery Physician"
         }
       ],
-      "text": "Pediatric Surgery"
+      "text": "Pediatric Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "610.271.8049",
+      "value": "1-585-370-1256 x33513",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-653-692-8496 x6883",
+      "value": "(648) 332-6921 x9841",
       "use": "work"
     }
   ],

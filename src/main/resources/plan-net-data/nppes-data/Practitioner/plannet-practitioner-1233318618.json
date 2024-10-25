@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Ruecker",
       "given": [
-        "Janae",
-        "Alvera"
+        "Shu",
+        "Katie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(666) 540-1068",
+      "value": "945-239-0316 x2139",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "609-727-9393",
+      "value": "164.219.8761 x66642",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-05-05",
-        "end": "2025-05-05"
+        "start": "2022-06-18",
+        "end": "2025-06-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

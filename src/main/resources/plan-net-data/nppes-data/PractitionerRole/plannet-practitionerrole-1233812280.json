@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "b0a84573f03beb"
+      "value": "ec98277775fcf8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233812280",
-    "display": "Davis Considine"
+    "display": "Mose Fadel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213ES0131X",
-          "display": "Foot Surgery"
+          "display": "Foot Surgery Podiatrist"
         }
       ],
-      "text": "Foot Surgery"
+      "text": "Foot Surgery Podiatrist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "801-730-8594 x30175",
+      "value": "338.322.3865 x5605",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "354.964.4955",
+      "value": "757-835-5142 x3176",
       "use": "work"
     }
   ],

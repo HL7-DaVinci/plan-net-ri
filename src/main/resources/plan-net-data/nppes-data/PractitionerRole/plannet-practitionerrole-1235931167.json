@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "892a6df4efbdd9"
+      "value": "ec2bd5e55ae293"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235931167",
-    "display": "Dixie Schimmel"
+    "display": "Joelle Hudson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-162-572-5364 x399",
+      "value": "243-686-1485 x6327",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(994) 892-8871 x30244",
+      "value": "1-570-956-1144 x43350",
       "use": "work"
     }
   ],

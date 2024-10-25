@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Krajcik",
+      "family": "Marvin",
       "given": [
-        "Quintin"
+        "Vaughn"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(805) 573-6232 x61557",
+      "value": "605-973-5167",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-352-119-6306",
+      "value": "778.703.1173",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223X0400X",
-            "display": "Orthodontics and Dentofacial Orthopedics"
+            "display": "Orthodontics and Dentofacial Orthopedic Dentist"
           }
         ],
-        "text": "Orthodontics and Dentofacial Orthopedics"
+        "text": "Orthodontics and Dentofacial Orthopedic Dentist"
       },
       "period": {
-        "start": "2023-06-25",
-        "end": "2026-06-25"
+        "start": "2024-01-09",
+        "end": "2027-01-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

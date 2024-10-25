@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bayer",
+      "family": "Muller",
       "given": [
-        "Garret"
+        "John"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "470.385.8222 x32028",
+      "value": "(551) 986-0531 x346",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(626) 839-1618 x6226",
+      "value": "1-123-030-9331",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2024-06-19",
-        "end": "2027-06-19"
+        "start": "2022-01-05",
+        "end": "2025-01-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

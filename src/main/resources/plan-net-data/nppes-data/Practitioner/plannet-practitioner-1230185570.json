@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nikolaus",
+      "family": "Cormier",
       "given": [
-        "Marlin",
-        "Roosevelt"
+        "Garland",
+        "Herbert"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "612-324-8238 x60060",
+      "value": "1-228-692-5932 x67244",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-490-566-6564",
+      "value": "697.055.3951 x07901",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-06-20",
-        "end": "2025-06-20"
+        "start": "2023-11-02",
+        "end": "2026-11-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

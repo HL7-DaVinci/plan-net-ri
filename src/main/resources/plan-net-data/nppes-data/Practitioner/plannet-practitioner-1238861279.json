@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Graham",
+      "family": "Dietrich",
       "given": [
-        "Danny"
+        "Lloyd"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "309-773-1195 x49259",
+      "value": "1-536-511-7370 x018",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(787) 547-0101 x67777",
+      "value": "(800) 284-0651 x447",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204D00000X",
-            "display": "Neuromusculoskeletal Medicine and OMM"
+            "display": "Neuromusculoskeletal Medicine & OMM Physician"
           }
         ],
-        "text": "Neuromusculoskeletal Medicine and OMM"
+        "text": "Neuromusculoskeletal Medicine & OMM Physician"
       },
       "period": {
-        "start": "2022-06-21",
-        "end": "2025-06-21"
+        "start": "2024-04-10",
+        "end": "2027-04-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

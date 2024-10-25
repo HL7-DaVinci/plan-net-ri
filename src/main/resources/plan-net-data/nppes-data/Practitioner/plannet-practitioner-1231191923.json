@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stroman",
+      "family": "Murray",
       "given": [
-        "Vance",
-        "Barrett"
+        "Ben"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(644) 014-5976 x862",
+      "value": "514-770-1727 x973",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "459-445-4982 x3861",
+      "value": "1-386-929-9672",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-04-12",
-        "end": "2026-04-12"
+        "start": "2024-09-14",
+        "end": "2027-09-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

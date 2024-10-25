@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Glover",
+      "family": "Renner",
       "given": [
-        "Krissy",
-        "Kori"
+        "Joycelyn",
+        "Manuela"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "836.050.6420",
+      "value": "890.119.9118 x753",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(767) 526-5182 x531",
+      "value": "855.003.3203 x820",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-05-22",
-        "end": "2027-05-22"
+        "start": "2023-10-28",
+        "end": "2026-10-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2021-08-30",
-        "end": "2024-08-30"
+        "start": "2022-08-27",
+        "end": "2025-08-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -263,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

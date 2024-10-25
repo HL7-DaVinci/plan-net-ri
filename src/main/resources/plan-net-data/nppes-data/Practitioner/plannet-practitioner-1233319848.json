@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Smith",
+      "family": "Gleichner",
       "given": [
-        "Latrina",
-        "Kenyatta"
+        "Glynda"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "280.226.9033 x4158",
+      "value": "(939) 197-5183",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(711) 422-6569 x30882",
+      "value": "1-589-820-8533",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2023-04-19",
-        "end": "2026-04-19"
+        "start": "2023-05-30",
+        "end": "2026-05-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

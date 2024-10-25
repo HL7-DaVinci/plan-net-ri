@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "65bd0b0fa86630"
+      "value": "45f32a72c1730b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234429056",
-    "display": "Lyndsey Fritsch"
+    "display": "Latina Robel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(967) 400-6683",
+      "value": "578-263-8254 x724",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "283.828.2251",
+      "value": "172-270-2334 x427",
       "use": "work"
     }
   ],

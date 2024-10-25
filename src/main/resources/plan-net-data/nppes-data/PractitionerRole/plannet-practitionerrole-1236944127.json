@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "71f25a5471b339"
+      "value": "249be66814b848"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236944127",
-    "display": "Susanna Kiehn"
+    "display": "Catheryn Flatley"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2086S0120X",
-          "display": "Pediatric Surgery"
+          "display": "Pediatric Surgery Physician"
         }
       ],
-      "text": "Pediatric Surgery"
+      "text": "Pediatric Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "807.519.5551",
+      "value": "676.280.7885",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-272-422-8749 x0607",
+      "value": "157.031.3513 x288",
       "use": "work"
     }
   ],

@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-healthcare--ayer-inc.com",
-      "value": "2e86c32281afef"
+      "value": "f27737a5ede7fa"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237559052",
-    "display": "Tamica Reichert"
+    "display": "Debora Runolfsson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234427431",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(392) 841-2900",
+      "value": "(948) 872-9053 x84930",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "434-529-4461",
+      "value": "512-658-9932 x953",
       "use": "work"
     }
   ],

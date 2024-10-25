@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stanton",
+      "family": "Koepp",
       "given": [
-        "Lana",
-        "Marget"
+        "Whitney",
+        "Lorrine"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(869) 151-2978 x5314",
+      "value": "854.031.6389",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-168-071-2831",
+      "value": "749.212.1254",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2023-12-10",
-        "end": "2026-12-10"
+        "start": "2023-08-02",
+        "end": "2026-08-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

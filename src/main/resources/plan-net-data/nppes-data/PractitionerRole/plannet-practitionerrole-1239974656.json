@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "b7b685cc0c63cc"
+      "value": "5584276f5ac774"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239974656",
-    "display": "Neville Hauck"
+    "display": "Burl Will"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Physician"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-389-347-0947",
+      "value": "385-605-2546",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(895) 848-5088",
+      "value": "1-110-596-1751 x888",
       "use": "work"
     }
   ],

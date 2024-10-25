@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koelpin",
+      "family": "Williamson",
       "given": [
-        "Shane",
-        "Kory"
+        "Toby"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "125.817.2074 x68919",
+      "value": "343-950-8348",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-119-656-3658 x2910",
+      "value": "190.445.9786 x702",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2021-08-05",
-        "end": "2024-08-05"
+        "start": "2023-01-18",
+        "end": "2026-01-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

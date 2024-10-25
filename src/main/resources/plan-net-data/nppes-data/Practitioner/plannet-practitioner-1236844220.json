@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hettinger",
+      "family": "Thiel",
       "given": [
-        "Oswaldo"
+        "Willis"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(743) 726-3544 x9387",
+      "value": "255.308.5391 x23716",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(207) 659-4496 x9308",
+      "value": "573-024-3185 x872",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-11-26",
-        "end": "2026-11-26"
+        "start": "2023-11-16",
+        "end": "2026-11-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0600X",
-            "display": "Clinical Neurophysiology"
+            "display": "Clinical Neurophysiology Physician"
           }
         ],
-        "text": "Clinical Neurophysiology"
+        "text": "Clinical Neurophysiology Physician"
       },
       "period": {
-        "start": "2024-01-08",
-        "end": "2027-01-08"
+        "start": "2024-10-09",
+        "end": "2027-10-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -239,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wilderman",
+      "family": "Howe",
       "given": [
-        "Rebeca"
+        "Cinderella",
+        "Adell"
       ],
       "suffix": [
         "A.P.R.N."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "776-063-1773 x01675",
+      "value": "(749) 437-8470",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-272-948-2002 x292",
+      "value": "(946) 187-8496 x90948",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "364SP0809X",
-            "display": "Psychiatric/Mental Health, Adult"
+            "display": "Adult Psychiatric/Mental Health Clinical Nurse Specialist"
           }
         ],
-        "text": "Psychiatric/Mental Health, Adult"
+        "text": "Adult Psychiatric/Mental Health Clinical Nurse Specialist"
       },
       "period": {
-        "start": "2022-07-20",
-        "end": "2025-07-20"
+        "start": "2024-02-11",
+        "end": "2027-02-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

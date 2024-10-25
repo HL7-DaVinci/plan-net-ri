@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "f1b6e4b972638b"
+      "value": "236bfa67159d30"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234521397",
-    "display": "Von Hessel"
+    "display": "Renato Considine"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208100000X",
-          "display": "Physical Medicine and Rehabilitation"
+          "display": "Physical Medicine & Rehabilitation Physician"
         }
       ],
-      "text": "Physical Medicine and Rehabilitation"
+      "text": "Physical Medicine & Rehabilitation Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "751.078.0764 x602",
+      "value": "1-768-286-8469 x566",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "136.786.2788 x152",
+      "value": "(471) 134-0645 x089",
       "use": "work"
     }
   ],

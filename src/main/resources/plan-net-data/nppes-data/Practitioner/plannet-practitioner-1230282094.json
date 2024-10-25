@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kutch",
+      "family": "Stiedemann",
       "given": [
-        "Orlando",
-        "Brooks"
+        "Theodore"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(194) 617-1617",
+      "value": "(506) 465-3467 x832",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(204) 458-0754 x7733",
+      "value": "121.516.8777 x10089",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-06-09",
-        "end": "2025-06-09"
+        "start": "2022-08-19",
+        "end": "2025-08-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

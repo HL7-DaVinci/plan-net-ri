@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnson",
+      "family": "Thiel",
       "given": [
-        "Gregg"
+        "Josue",
+        "Jacinto"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "816-201-2152 x793",
+      "value": "1-219-078-3685 x6346",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "353-946-0622 x714",
+      "value": "1-507-942-1184 x096",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-02-20",
-        "end": "2026-02-20"
+        "start": "2023-08-31",
+        "end": "2026-08-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-08-02",
-        "end": "2025-08-02"
+        "start": "2024-04-27",
+        "end": "2027-04-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -267,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2083P0901X",
-            "display": "Public Health and General Preventive Medicine"
+            "display": "Public Health & General Preventive Medicine Physician"
           }
         ],
-        "text": "Public Health and General Preventive Medicine"
+        "text": "Public Health & General Preventive Medicine Physician"
       },
       "period": {
-        "start": "2021-09-25",
-        "end": "2024-09-25"
+        "start": "2024-03-29",
+        "end": "2027-03-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -326,11 +327,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

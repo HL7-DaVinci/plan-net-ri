@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beer",
+      "family": "Wiegand",
       "given": [
-        "Armando",
-        "Jesus"
+        "Man",
+        "Reuben"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "743-810-1386 x38503",
+      "value": "1-114-628-0989 x946",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-417-371-3541 x16971",
+      "value": "974.531.7594",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-12-31",
-        "end": "2025-12-31"
+        "start": "2023-11-19",
+        "end": "2026-11-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RX0202X",
-            "display": "Medical Oncology"
+            "display": "Medical Oncology Physician"
           }
         ],
-        "text": "Medical Oncology"
+        "text": "Medical Oncology Physician"
       },
       "period": {
-        "start": "2022-08-15",
-        "end": "2025-08-15"
+        "start": "2023-07-22",
+        "end": "2026-07-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

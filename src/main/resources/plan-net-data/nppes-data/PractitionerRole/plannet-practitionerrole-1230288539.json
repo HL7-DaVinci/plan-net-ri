@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "f5924b66a75002"
+      "value": "5ddc3265cfae80"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230288539",
-    "display": "Cecile Nienow"
+    "display": "Connie Ullrich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(380) 069-1322 x15311",
+      "value": "1-263-037-7550 x70926",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-691-557-3416 x5042",
+      "value": "(478) 051-9319",
       "use": "work"
     }
   ],

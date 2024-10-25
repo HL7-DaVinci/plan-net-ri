@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schulist",
+      "family": "Romaguera",
       "given": [
-        "Wesley",
-        "Kay"
+        "Inger"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-426-845-2090 x2667",
+      "value": "211.164.6352 x330",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(437) 681-8448 x93873",
+      "value": "1-210-885-0770 x80220",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-05-14",
-        "end": "2025-05-14"
+        "start": "2024-03-14",
+        "end": "2027-03-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harrington-memorial-hospital-inc.com",
-      "value": "36109cecd9c3d2"
+      "value": "e397c437669f35"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231994635",
-    "display": "Henry Bauch"
+    "display": "Gavin Schmitt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230780047",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207L00000X",
-          "display": "Anesthesiology"
+          "display": "Anesthesiology Physician"
         }
       ],
-      "text": "Anesthesiology"
+      "text": "Anesthesiology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "395.911.7994 x2529",
+      "value": "1-513-292-1119 x58045",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "679.338.4960 x8610",
+      "value": "1-996-417-9496 x649",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hamill",
+      "family": "Runolfsson",
       "given": [
-        "Orville",
-        "Arlen"
+        "Eric"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(686) 588-3862 x6675",
+      "value": "441.251.3190 x60676",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "251-228-8789 x075",
+      "value": "598-481-5596 x456",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2024-01-15",
-        "end": "2027-01-15"
+        "start": "2023-09-15",
+        "end": "2026-09-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-06-22",
-        "end": "2026-06-22"
+        "start": "2024-06-30",
+        "end": "2027-06-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

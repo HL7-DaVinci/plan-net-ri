@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feil",
+      "family": "Casper",
       "given": [
-        "Tawna"
+        "Martin",
+        "Samara"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "979-333-0280 x40955",
+      "value": "(415) 028-0982 x3323",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(686) 101-6994 x2749",
+      "value": "(687) 535-4105",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-10-14",
-        "end": "2025-10-14"
+        "start": "2023-01-15",
+        "end": "2026-01-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-05-04",
-        "end": "2026-05-04"
+        "start": "2022-05-13",
+        "end": "2025-05-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -242,6 +243,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

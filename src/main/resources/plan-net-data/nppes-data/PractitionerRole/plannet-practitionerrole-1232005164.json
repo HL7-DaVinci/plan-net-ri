@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "0606ccab8ce180"
+      "value": "52786171b75b47"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232005164",
-    "display": "Tai Reichert"
+    "display": "Shalanda Turcotte"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-958-526-9101",
+      "value": "266-566-5930 x6806",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "552-313-9875 x772",
+      "value": "1-751-156-7651 x167",
       "use": "work"
     }
   ],

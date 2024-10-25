@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "0d57267b1386f8"
+      "value": "0fe57aff9bbb9a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238761397",
-    "display": "Juan Fritsch"
+    "display": "Jules Wolf"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(590) 602-2969",
+      "value": "969.191.8904 x31533",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(320) 673-2796 x483",
+      "value": "(280) 391-4730",
       "use": "work"
     }
   ],

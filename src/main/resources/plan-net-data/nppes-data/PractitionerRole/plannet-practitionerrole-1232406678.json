@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "a6c0e5bbd31de2"
+      "value": "5ff97adbe68c0f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232406678",
-    "display": "Lynell Dicki"
+    "display": "Breana Brakus"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "398-170-8903 x138",
+      "value": "603-589-3874 x74081",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(636) 530-3838 x2449",
+      "value": "1-504-981-2311 x673",
       "use": "work"
     }
   ],

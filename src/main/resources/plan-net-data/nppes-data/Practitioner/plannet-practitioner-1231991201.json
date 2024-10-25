@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Witting",
+      "family": "Predovic",
       "given": [
-        "Ned"
+        "Mervin",
+        "Weldon"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "652.343.8476",
+      "value": "1-933-364-5773",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "910-910-2146 x141",
+      "value": "1-868-490-7871 x0771",
       "use": "work"
     }
   ],
@@ -132,11 +133,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Thiel",
+      "family": "Marquardt",
       "given": [
-        "Devora",
-        "Tammi"
+        "Qiana"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "825-092-6122 x3105",
+      "value": "444.383.8836",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-867-405-3955 x252",
+      "value": "(873) 527-2898 x75337",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-03-29",
-        "end": "2025-03-29"
+        "start": "2023-03-01",
+        "end": "2026-03-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

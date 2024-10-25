@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Macejkovic",
+      "family": "Emard",
       "given": [
-        "Jeff",
-        "Frankie"
+        "Ernie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(217) 968-3420 x59499",
+      "value": "(595) 413-6662 x455",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(728) 533-3460",
+      "value": "654.089.6514 x10135",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080N0001X",
-            "display": "Neonatal-Perinatal Medicine"
+            "display": "Neonatal-Perinatal Medicine Physician"
           }
         ],
-        "text": "Neonatal-Perinatal Medicine"
+        "text": "Neonatal-Perinatal Medicine Physician"
       },
       "period": {
-        "start": "2021-10-13",
-        "end": "2024-10-13"
+        "start": "2023-08-25",
+        "end": "2026-08-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

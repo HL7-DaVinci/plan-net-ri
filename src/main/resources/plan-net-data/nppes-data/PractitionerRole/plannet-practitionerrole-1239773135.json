@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "e78502593abb26"
+      "value": "04390f5e0067f8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239773135",
-    "display": "Terence Mraz"
+    "display": "Edmund Bailey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2086S0122X",
-          "display": "Plastic and Reconstructive Surgery"
+          "display": "Plastic and Reconstructive Surgery Physician"
         }
       ],
-      "text": "Plastic and Reconstructive Surgery"
+      "text": "Plastic and Reconstructive Surgery Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "283.238.0931 x60126",
+      "value": "(402) 821-6038 x00534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(880) 119-9406 x3751",
+      "value": "383.766.5659 x4322",
       "use": "work"
     }
   ],

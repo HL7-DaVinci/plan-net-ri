@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "425c67ba71c75c"
+      "value": "3e9cb20ce839af"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238460418",
-    "display": "Stanley Wintheiser"
+    "display": "Trinidad Hayes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207L00000X",
-          "display": "Anesthesiology"
+          "display": "Anesthesiology Physician"
         }
       ],
-      "text": "Anesthesiology"
+      "text": "Anesthesiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "680-380-6420 x242",
+      "value": "1-395-623-3423",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "417.339.6986 x0125",
+      "value": "1-664-965-6938 x8410",
       "use": "work"
     }
   ],

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "d6bb09699c8550"
+      "value": "089757d6593ec8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230881091",
-    "display": "Sherwood Walker"
+    "display": "Arlie Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-273-101-7183 x79790",
+      "value": "1-161-438-2360 x7071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(735) 706-1616",
+      "value": "(415) 986-8089 x092",
       "use": "work"
     }
   ],

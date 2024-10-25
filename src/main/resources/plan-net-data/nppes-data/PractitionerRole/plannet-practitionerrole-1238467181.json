@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "0ad8e1f19fcbe6"
+      "value": "f412417e26c335"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238467181",
-    "display": "Margie Oberbrunner"
+    "display": "Letitia Harris"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "676.289.5119 x44879",
+      "value": "1-656-426-1817",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-873-976-9700 x449",
+      "value": "559.295.3266 x62170",
       "use": "work"
     }
   ],

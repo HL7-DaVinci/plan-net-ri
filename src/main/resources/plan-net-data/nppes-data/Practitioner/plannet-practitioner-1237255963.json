@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Krajcik",
+      "family": "Cummerata",
       "given": [
-        "Marco",
-        "Fredric"
+        "Carmen"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "917-593-9471",
+      "value": "(869) 423-7713",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "284.345.8873 x35347",
+      "value": "835-143-4207 x06921",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-09-14",
-        "end": "2024-09-14"
+        "start": "2024-04-05",
+        "end": "2027-04-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-01-24",
-        "end": "2026-01-24"
+        "start": "2023-11-13",
+        "end": "2026-11-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,31 +241,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

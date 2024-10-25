@@ -10,27 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-lawrence-family-health-center-inc.com",
-      "value": "81ca4f4b87aa0e"
+      "value": "1158459682f563"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238667539",
-    "display": "Rosendo Hilpert"
+    "display": "Tommy Funk"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239774646",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(831) 362-7263",
+      "value": "404-922-0801 x072",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(382) 770-5033 x8311",
+      "value": "(705) 512-5934 x64279",
       "use": "work"
     }
   ],

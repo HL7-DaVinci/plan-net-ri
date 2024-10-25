@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "cb0bcb832ee353"
+      "value": "52ef2a0e688ad3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231195585",
-    "display": "Alvaro Jaskolski"
+    "display": "Lloyd Metz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213EP1101X",
-          "display": "Primary Podiatric Medicine"
+          "display": "Primary Podiatric Medicine Podiatrist"
         }
       ],
-      "text": "Primary Podiatric Medicine"
+      "text": "Primary Podiatric Medicine Podiatrist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(965) 972-9440 x209",
+      "value": "(673) 614-1555 x6094",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "800.704.5765",
+      "value": "(738) 272-4314",
       "use": "work"
     }
   ],

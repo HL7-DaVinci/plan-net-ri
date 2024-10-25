@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Green",
+      "family": "Ondricka",
       "given": [
-        "Donnie",
-        "Enoch"
+        "Arlen",
+        "Drew"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(640) 061-5488 x7128",
+      "value": "538.388.7351 x301",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-639-192-7838 x43173",
+      "value": "247.091.6412",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-10-01",
-        "end": "2025-10-01"
+        "start": "2022-12-14",
+        "end": "2025-12-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

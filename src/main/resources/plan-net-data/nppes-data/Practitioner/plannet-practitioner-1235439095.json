@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "White",
+      "family": "Wisoky",
       "given": [
-        "Amee",
-        "Lore"
+        "Avis",
+        "Marva"
       ],
       "suffix": [
         "PA-C"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "788-686-4962 x574",
+      "value": "(110) 360-4043 x58771",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "812.328.6316 x21129",
+      "value": "340-142-5198 x55646",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2023-12-08",
-        "end": "2026-12-08"
+        "start": "2023-07-30",
+        "end": "2026-07-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

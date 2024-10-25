@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Russel",
+      "family": "Grant",
       "given": [
-        "Julian",
-        "Mose"
+        "Jude"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "743.102.0812 x602",
+      "value": "(249) 473-3883 x4086",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "981-811-8081 x7898",
+      "value": "521-927-9237 x2558",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-12-05",
-        "end": "2026-12-05"
+        "start": "2023-04-26",
+        "end": "2026-04-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

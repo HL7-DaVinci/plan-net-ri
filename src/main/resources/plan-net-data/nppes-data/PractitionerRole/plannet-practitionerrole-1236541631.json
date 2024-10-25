@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "144a3a884d917a"
+      "value": "5478de60c34b89"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236541631",
-    "display": "Betsy Wiegand"
+    "display": "Emilee Rutherford"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-165-788-7177 x14576",
+      "value": "404-894-2198",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "417-448-3218 x127",
+      "value": "(713) 542-2186 x3773",
       "use": "work"
     }
   ],

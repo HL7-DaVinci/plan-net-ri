@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "d252485d520221"
+      "value": "d04d489d0293b2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235339917",
-    "display": "Augustine Greenfelder"
+    "display": "Armand Rogahn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0011X",
-          "display": "Interventional Cardiology"
+          "display": "Interventional Cardiology Physician"
         }
       ],
-      "text": "Interventional Cardiology"
+      "text": "Interventional Cardiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "702-079-2513",
+      "value": "899.599.9233 x79056",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(162) 348-0531 x2678",
+      "value": "(687) 365-8625 x66798",
       "use": "work"
     }
   ],

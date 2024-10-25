@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gibson",
+      "family": "Upton",
       "given": [
-        "Micki",
-        "Shavonne"
+        "Mable"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-796-273-0299 x56500",
+      "value": "1-261-603-6231 x20420",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-719-739-1647 x347",
+      "value": "(541) 372-4389 x7336",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-09-27",
-        "end": "2026-09-27"
+        "start": "2023-07-25",
+        "end": "2026-07-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

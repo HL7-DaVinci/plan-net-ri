@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "e176be3789b3ea"
+      "value": "fca255ebb97750"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237752547",
-    "display": "Paola Kreiger"
+    "display": "Jacqualine Metz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(794) 217-5001 x635",
+      "value": "474.565.2037 x3691",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "395.989.0054 x1998",
+      "value": "(475) 801-0751 x916",
       "use": "work"
     }
   ],

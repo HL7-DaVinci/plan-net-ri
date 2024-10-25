@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "73caf4efec44a7"
+      "value": "dc1aeb4b93f4f3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234627184",
-    "display": "America Hudson"
+    "display": "Nola Kessler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "732-532-3200 x494",
+      "value": "(862) 422-2142",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(369) 826-3273 x8454",
+      "value": "(369) 868-4607 x467",
       "use": "work"
     }
   ],

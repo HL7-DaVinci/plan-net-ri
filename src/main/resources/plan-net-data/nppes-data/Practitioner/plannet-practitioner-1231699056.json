@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Aufderhar",
+      "family": "Prosacco",
       "given": [
-        "Mark",
-        "Wilmer"
+        "Bo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-416-024-2587 x406",
+      "value": "226-797-0664 x677",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "974-827-1596 x7683",
+      "value": "970.047.6478",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-10-19",
-        "end": "2024-10-19"
+        "start": "2022-05-24",
+        "end": "2025-05-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2022-12-03",
-        "end": "2025-12-03"
+        "start": "2023-12-14",
+        "end": "2026-12-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -268,14 +267,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WP0200X",
-            "display": "Pediatrics"
+            "display": "Pediatric Optometrist"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatric Optometrist"
       },
       "period": {
-        "start": "2023-11-17",
-        "end": "2026-11-17"
+        "start": "2024-10-23",
+        "end": "2027-10-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -332,14 +331,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WX0102X",
-            "display": "Occupational Vision"
+            "display": "Occupational Vision Optometrist"
           }
         ],
-        "text": "Occupational Vision"
+        "text": "Occupational Vision Optometrist"
       },
       "period": {
-        "start": "2021-10-08",
-        "end": "2024-10-08"
+        "start": "2024-09-04",
+        "end": "2027-09-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -391,11 +390,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

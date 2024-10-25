@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Heaney",
+      "family": "Vandervort",
       "given": [
-        "Landon"
+        "Booker"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "835.440.5419 x0993",
+      "value": "(295) 376-7452",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(987) 732-4537 x323",
+      "value": "967.738.4960",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-17",
-        "end": "2025-07-17"
+        "start": "2022-11-27",
+        "end": "2025-11-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2022-08-19",
-        "end": "2025-08-19"
+        "start": "2024-01-18",
+        "end": "2027-01-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -238,31 +238,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

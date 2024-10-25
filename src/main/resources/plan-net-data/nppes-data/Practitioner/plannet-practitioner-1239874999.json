@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gutmann",
+      "family": "Spinka",
       "given": [
-        "Mohammed"
+        "Cory",
+        "Fritz"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-709-297-2163",
+      "value": "176.838.7498 x02583",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(774) 402-9339 x86076",
+      "value": "1-121-444-3228 x714",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207YX0602X",
-            "display": "Otolaryngic Allergy"
+            "display": "Otolaryngic Allergy Physician"
           }
         ],
-        "text": "Otolaryngic Allergy"
+        "text": "Otolaryngic Allergy Physician"
       },
       "period": {
-        "start": "2022-05-31",
-        "end": "2025-05-31"
+        "start": "2023-11-19",
+        "end": "2026-11-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

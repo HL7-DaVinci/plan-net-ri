@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Windler",
+      "family": "Stokes",
       "given": [
-        "Patricia"
+        "Pedro"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-770-544-8005",
+      "value": "(248) 825-7749",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(941) 324-7604 x7061",
+      "value": "453.968.2558 x509",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-07-02",
-        "end": "2024-07-02"
+        "start": "2024-04-12",
+        "end": "2027-04-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207UN0901X",
-            "display": "Nuclear Cardiology"
+            "display": "Nuclear Cardiology Physician"
           }
         ],
-        "text": "Nuclear Cardiology"
+        "text": "Nuclear Cardiology Physician"
       },
       "period": {
-        "start": "2024-03-29",
-        "end": "2027-03-29"
+        "start": "2022-09-18",
+        "end": "2025-09-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -263,14 +263,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0005X",
-            "display": "Hypertension Specialist"
+            "display": "Hypertension Specialist Physician"
           }
         ],
-        "text": "Hypertension Specialist"
+        "text": "Hypertension Specialist Physician"
       },
       "period": {
-        "start": "2022-01-26",
-        "end": "2025-01-26"
+        "start": "2023-09-08",
+        "end": "2026-09-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -302,6 +302,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

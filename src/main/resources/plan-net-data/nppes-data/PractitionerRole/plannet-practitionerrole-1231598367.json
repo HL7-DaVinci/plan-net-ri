@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "eed9affe342f9f"
+      "value": "084cc4cf0c7813"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231598367",
-    "display": "Bennett Hane"
+    "display": "Osvaldo Lang"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207P00000X",
-          "display": "Emergency Medicine"
+          "display": "Emergency Medicine Physician"
         }
       ],
-      "text": "Emergency Medicine"
+      "text": "Emergency Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-819-060-8144",
+      "value": "448.019.7204",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "402-266-4294 x0198",
+      "value": "(477) 159-2389 x242",
       "use": "work"
     }
   ],

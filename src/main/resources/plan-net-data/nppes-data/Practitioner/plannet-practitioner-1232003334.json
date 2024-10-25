@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Brakus",
+      "family": "Hills",
       "given": [
-        "Bethany"
+        "Cordia"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-401-438-2658 x298",
+      "value": "1-398-351-5562 x36072",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "933.769.3857",
+      "value": "126-632-3534",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-09-07",
-        "end": "2025-09-07"
+        "start": "2024-09-28",
+        "end": "2027-09-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gutkowski",
+      "family": "Donnelly",
       "given": [
-        "Alexis",
-        "Ambrose"
+        "Ivan",
+        "Thanh"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(630) 594-1855",
+      "value": "948.187.3103 x729",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-397-684-1904 x444",
+      "value": "241.808.6407 x892",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-01-28",
-        "end": "2027-01-28"
+        "start": "2024-07-07",
+        "end": "2027-07-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

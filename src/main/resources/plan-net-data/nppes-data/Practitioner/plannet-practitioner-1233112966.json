@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Sanford",
+      "family": "Bartell",
       "given": [
-        "Margorie",
-        "Keitha"
+        "Karren",
+        "Denyse"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "711-165-0106",
+      "value": "1-772-907-1047 x1098",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(595) 577-7761 x550",
+      "value": "977.199.9773 x6065",
       "use": "work"
     }
   ],
@@ -112,6 +112,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

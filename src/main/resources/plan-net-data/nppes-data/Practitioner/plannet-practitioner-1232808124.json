@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sporer",
+      "family": "Aufderhar",
       "given": [
-        "Genaro",
-        "Elliott"
+        "Derek"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "756.146.0180 x789",
+      "value": "441.440.9967 x073",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(543) 143-5840 x86955",
+      "value": "(506) 332-0606 x9810",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-09-14",
-        "end": "2025-09-14"
+        "start": "2022-10-16",
+        "end": "2025-10-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

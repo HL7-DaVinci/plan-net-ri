@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "63ad4ae76fbfcc"
+      "value": "f9a2f67c93eed6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231696938",
-    "display": "Orville Hamill"
+    "display": "Eric Runolfsson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(686) 588-3862 x6675",
+      "value": "441.251.3190 x60676",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "251-228-8789 x075",
+      "value": "598-481-5596 x456",
       "use": "work"
     }
   ],

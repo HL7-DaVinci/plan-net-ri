@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bosco",
+      "family": "Boyer",
       "given": [
-        "Long"
+        "Noble"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(741) 728-4283",
+      "value": "755-810-7024 x26397",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "226-049-1274",
+      "value": "508.092.4452",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-02-27",
-        "end": "2025-02-27"
+        "start": "2023-07-01",
+        "end": "2026-07-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

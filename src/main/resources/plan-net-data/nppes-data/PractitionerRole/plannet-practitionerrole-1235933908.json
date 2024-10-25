@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "ab096b28464373"
+      "value": "dd1e47446d7834"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235933908",
-    "display": "Shela Feest"
+    "display": "Wenona Bailey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZH0000X",
-          "display": "Hematology"
+          "display": "Hematology (Pathology) Physician"
         }
       ],
-      "text": "Hematology"
+      "text": "Hematology (Pathology) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-516-747-8096 x34705",
+      "value": "(473) 720-9273 x0636",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(190) 143-8336 x74316",
+      "value": "1-360-890-9192 x150",
       "use": "work"
     }
   ],

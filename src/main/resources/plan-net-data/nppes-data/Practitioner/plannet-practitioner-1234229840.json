@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Renner",
+      "family": "Flatley",
       "given": [
-        "Drew"
+        "Rico"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "222-409-0004 x759",
+      "value": "1-166-981-4181 x51780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-842-798-5895 x02178",
+      "value": "(554) 004-2872 x075",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-11-14",
-        "end": "2025-11-14"
+        "start": "2022-07-24",
+        "end": "2025-07-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0117X",
-            "display": "Orthopaedic Surgery of the Spine"
+            "display": "Orthopaedic Surgery of the Spine Physician"
           }
         ],
-        "text": "Orthopaedic Surgery of the Spine"
+        "text": "Orthopaedic Surgery of the Spine Physician"
       },
       "period": {
-        "start": "2022-12-28",
-        "end": "2025-12-28"
+        "start": "2024-02-04",
+        "end": "2027-02-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -264,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-12-27",
-        "end": "2026-12-27"
+        "start": "2024-01-07",
+        "end": "2027-01-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -323,11 +323,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

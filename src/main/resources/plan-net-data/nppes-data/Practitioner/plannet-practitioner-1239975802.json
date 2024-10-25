@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bechtelar",
+      "family": "Sawayn",
       "given": [
-        "Daine"
+        "Tierra",
+        "Mathilda"
       ],
       "suffix": [
         "DO"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(726) 421-3096 x051",
+      "value": "(282) 644-0234 x08842",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "497.312.0132",
+      "value": "471-914-8821 x34189",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2024-01-26",
-        "end": "2027-01-26"
+        "start": "2023-11-20",
+        "end": "2026-11-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

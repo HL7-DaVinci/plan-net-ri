@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Langosh",
+      "family": "Boyer",
       "given": [
-        "Wilber",
-        "Cory"
+        "Geraldo",
+        "Alvaro"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "287.703.5635 x3683",
+      "value": "1-950-184-9129",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "195.897.5911",
+      "value": "210-888-6204 x327",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2024-02-17",
-        "end": "2027-02-17"
+        "start": "2022-10-07",
+        "end": "2025-10-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

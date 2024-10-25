@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "9f9877b0aa53af"
+      "value": "4b3c89f781c1c0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230187212",
-    "display": "Alvin Upton"
+    "display": "Manuel Klocko"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(736) 877-2450 x9609",
+      "value": "(443) 643-6304 x05782",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "945.948.7756 x46885",
+      "value": "(798) 020-9819 x72348",
       "use": "work"
     }
   ],

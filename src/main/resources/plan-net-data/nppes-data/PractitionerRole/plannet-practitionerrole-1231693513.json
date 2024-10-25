@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "27b2769e975c9e"
+      "value": "a942315ce1d0f6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231693513",
-    "display": "Sandy Feil"
+    "display": "Landon Braun"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "842.503.6069 x99321",
+      "value": "1-437-177-5317 x0863",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-568-484-8280 x285",
+      "value": "620.373.7007 x190",
       "use": "work"
     }
   ],

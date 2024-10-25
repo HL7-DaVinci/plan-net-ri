@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuvalis",
+      "family": "Hills",
       "given": [
-        "Edmundo",
-        "Dan"
+        "Sam",
+        "Minh"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "111-488-9565 x40014",
+      "value": "189.776.8994 x6542",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(928) 199-8255 x44856",
+      "value": "947.315.3322 x08874",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2023-04-26",
-        "end": "2026-04-26"
+        "start": "2022-09-08",
+        "end": "2025-09-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

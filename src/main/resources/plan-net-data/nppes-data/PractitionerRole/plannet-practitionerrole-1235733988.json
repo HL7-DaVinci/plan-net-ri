@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "aeeb118cdfa5dd"
+      "value": "ef2044541d6e9e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235733988",
-    "display": "Corey Kuphal"
+    "display": "Cedric Champlin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "415-349-9343",
+      "value": "242-681-9835 x83825",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "621.541.6539",
+      "value": "(483) 154-5666 x261",
       "use": "work"
     }
   ],

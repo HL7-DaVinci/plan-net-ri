@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Treutel",
+      "family": "Champlin",
       "given": [
-        "Jarred",
-        "Sid"
+        "Marvin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "346.189.7017",
+      "value": "1-973-846-1975",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "906.107.8527 x003",
+      "value": "(920) 884-3627",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-09-09",
-        "end": "2025-09-09"
+        "start": "2024-05-09",
+        "end": "2027-05-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

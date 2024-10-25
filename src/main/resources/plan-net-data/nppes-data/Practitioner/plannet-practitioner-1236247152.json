@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mante",
+      "family": "Ortiz",
       "given": [
-        "Maggie",
-        "Lucia"
+        "Neda",
+        "Randa"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-130-010-0721 x470",
+      "value": "968-251-6445 x49642",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(273) 205-4584 x02900",
+      "value": "1-249-736-2107 x94905",
       "use": "work"
     }
   ],
@@ -113,31 +113,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

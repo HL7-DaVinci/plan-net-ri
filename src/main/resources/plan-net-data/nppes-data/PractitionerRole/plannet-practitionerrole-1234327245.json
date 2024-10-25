@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "f41b028003f745"
+      "value": "897aa87c266884"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234327245",
-    "display": "Dee Daugherty"
+    "display": "Rico Dickens"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0011X",
-          "display": "Interventional Cardiology"
+          "display": "Interventional Cardiology Physician"
         }
       ],
-      "text": "Interventional Cardiology"
+      "text": "Interventional Cardiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "578-372-1451",
+      "value": "1-538-577-1629 x841",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "256.346.6541 x4672",
+      "value": "247-611-8188",
       "use": "work"
     }
   ],

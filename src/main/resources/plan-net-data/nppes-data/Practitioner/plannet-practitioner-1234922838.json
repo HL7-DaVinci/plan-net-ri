@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Conn",
       "given": [
-        "Silas",
-        "Gail"
+        "Devon",
+        "Dusty"
       ],
       "suffix": [
         "Iii"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(869) 696-3443 x658",
+      "value": "1-728-282-1081 x0684",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(195) 367-0100",
+      "value": "222-494-6183",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2021-12-13",
-        "end": "2024-12-13"
+        "start": "2022-06-16",
+        "end": "2025-06-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

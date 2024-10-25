@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kshlerin",
+      "family": "Satterfield",
       "given": [
-        "Douglass",
-        "Armando"
+        "Moises",
+        "Clint"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "550-368-5996 x78927",
+      "value": "(473) 415-9753 x79377",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "981-308-7919 x91175",
+      "value": "(271) 429-4525 x399",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-01-03",
-        "end": "2027-01-03"
+        "start": "2022-07-03",
+        "end": "2025-07-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-08-05",
-        "end": "2024-08-05"
+        "start": "2024-10-18",
+        "end": "2027-10-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -265,14 +265,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207UN0901X",
-            "display": "Nuclear Cardiology"
+            "display": "Nuclear Cardiology Physician"
           }
         ],
-        "text": "Nuclear Cardiology"
+        "text": "Nuclear Cardiology Physician"
       },
       "period": {
-        "start": "2022-03-30",
-        "end": "2025-03-30"
+        "start": "2022-10-10",
+        "end": "2025-10-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

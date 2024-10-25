@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Satterfield",
+      "family": "Dickinson",
       "given": [
-        "Zachary",
-        "Danny"
+        "Jewell"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "472-454-1791 x730",
+      "value": "(174) 665-8265 x1470",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-912-450-0046",
+      "value": "162.932.9046 x9330",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-03-14",
-        "end": "2026-03-14"
+        "start": "2024-05-23",
+        "end": "2027-05-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

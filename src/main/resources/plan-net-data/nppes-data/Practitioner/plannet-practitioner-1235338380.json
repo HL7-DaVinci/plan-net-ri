@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhlman",
+      "family": "Armstrong",
       "given": [
-        "Taneka",
-        "Donita"
+        "Johnie"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(125) 720-6553 x620",
+      "value": "1-260-670-0936 x8899",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "981.926.2575 x545",
+      "value": "847.791.7452 x69610",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2022-05-18",
-        "end": "2025-05-18"
+        "start": "2022-04-14",
+        "end": "2025-04-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

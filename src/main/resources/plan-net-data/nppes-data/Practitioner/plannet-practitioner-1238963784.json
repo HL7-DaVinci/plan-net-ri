@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Connelly",
+      "family": "Klocko",
       "given": [
-        "Erick"
+        "Ezequiel",
+        "Jewel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "758-604-3740",
+      "value": "(925) 131-2609 x242",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-129-546-0991 x04419",
+      "value": "(432) 001-5116 x693",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2023-09-06",
-        "end": "2026-09-06"
+        "start": "2023-03-09",
+        "end": "2026-03-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

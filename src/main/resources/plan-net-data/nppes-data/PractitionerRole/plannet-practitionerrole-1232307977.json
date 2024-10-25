@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "85ef199a0babbb"
+      "value": "e30bca49e45123"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232307977",
-    "display": "Berry Hintz"
+    "display": "Rico Nienow"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2086S0129X",
-          "display": "Vascular Surgery"
+          "display": "Vascular Surgery Physician"
         }
       ],
-      "text": "Vascular Surgery"
+      "text": "Vascular Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(615) 956-8142",
+      "value": "375.087.4425 x971",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(909) 627-9492 x294",
+      "value": "(632) 210-8548 x02853",
       "use": "work"
     }
   ],

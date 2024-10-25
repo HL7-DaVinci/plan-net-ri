@@ -32,22 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Bailey",
+      "family": "Schroeder",
       "given": [
-        "Josef",
-        "Charlie"
+        "Marquis",
+        "Moses"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "(503) 832-7375",
+      "value": "929-955-7732",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-507-775-5351 x22605",
+      "value": "1-750-849-3630 x666",
       "use": "work"
     }
   ],
@@ -134,14 +134,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2024-03-27",
-        "end": "2027-03-27"
+        "start": "2023-07-23",
+        "end": "2026-07-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -173,31 +173,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

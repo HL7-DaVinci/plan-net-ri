@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "0865b94701dbdb"
+      "value": "5e39b4c2a47a37"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234820604",
-    "display": "Sang Hartmann"
+    "display": "Prince Bahringer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "430-921-8225 x25242",
+      "value": "690.318.6090 x219",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "225-330-3901 x50309",
+      "value": "(685) 936-4670 x0028",
       "use": "work"
     }
   ],

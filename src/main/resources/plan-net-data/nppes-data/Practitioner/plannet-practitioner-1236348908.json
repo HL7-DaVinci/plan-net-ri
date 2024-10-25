@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jaskolski",
+      "family": "Langosh",
       "given": [
-        "Hiram",
-        "Chi"
+        "Luke"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-806-047-0483",
+      "value": "(984) 547-5596",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(837) 420-8328 x20287",
+      "value": "1-350-600-9366 x155",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-07-04",
-        "end": "2024-07-04"
+        "start": "2022-09-30",
+        "end": "2025-09-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

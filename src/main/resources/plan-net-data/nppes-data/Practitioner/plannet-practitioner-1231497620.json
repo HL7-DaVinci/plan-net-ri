@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Kon",
+      "family": "Yundt",
       "given": [
-        "Terri"
+        "Natashia",
+        "Loris"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(670) 529-8625 x6431",
+      "value": "276.011.7667 x706",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-346-917-6226 x24142",
+      "value": "505.799.4323",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-03-02",
-        "end": "2025-03-02"
+        "start": "2022-06-10",
+        "end": "2025-06-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

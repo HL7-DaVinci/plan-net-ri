@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cartwright",
+      "family": "Gibson",
       "given": [
-        "Carolin"
+        "Lindsay"
       ],
       "suffix": [
         "MSN, CNM"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(741) 291-3444 x8592",
+      "value": "648-311-6361",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "396-449-5415 x513",
+      "value": "(220) 531-9639 x50852",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-01-31",
-        "end": "2025-01-31"
+        "start": "2024-01-30",
+        "end": "2027-01-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "c3abe479c5193d"
+      "value": "a56bbda86588a8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231893359",
-    "display": "Chad Goldner"
+    "display": "Lyle Daniel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AS0400X",
-          "display": "Surgical"
+          "display": "Surgical Physician Assistant"
         }
       ],
-      "text": "Surgical"
+      "text": "Surgical Physician Assistant"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "176.340.6104",
+      "value": "273-656-5246 x0574",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(470) 200-0135",
+      "value": "1-930-265-0534",
       "use": "work"
     }
   ],

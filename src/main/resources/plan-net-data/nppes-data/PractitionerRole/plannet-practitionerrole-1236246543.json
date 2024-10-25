@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "874a65490a1554"
+      "value": "16b1d2ea50bdf4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236246543",
-    "display": "Dee Orn"
+    "display": "Donita Rolfson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-930-747-5095",
+      "value": "253-854-3625 x137",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "137.776.1495 x23038",
+      "value": "739.707.3952 x20444",
       "use": "work"
     }
   ],

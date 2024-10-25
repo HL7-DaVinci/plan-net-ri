@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "cac7cb71aec945"
+      "value": "e0ed45afaf6a21"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232904988",
-    "display": "Velia Morissette"
+    "display": "Timothy Konopelski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "993-547-5535 x802",
+      "value": "(237) 126-9938 x5900",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "653-047-2230 x8553",
+      "value": "1-304-515-6783",
       "use": "work"
     }
   ],

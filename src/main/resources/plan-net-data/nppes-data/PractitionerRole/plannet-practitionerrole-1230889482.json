@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-health-care-of-mass-inc.com",
-      "value": "3da0fe71b3b5bc"
+      "value": "7d1fc13344f146"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230889482",
-    "display": "Teisha Walter"
+    "display": "Tawana Orn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237552602",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "635-716-4599",
+      "value": "496.785.3027 x142",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-857-207-9861 x96366",
+      "value": "803.883.9692 x482",
       "use": "work"
     }
   ],

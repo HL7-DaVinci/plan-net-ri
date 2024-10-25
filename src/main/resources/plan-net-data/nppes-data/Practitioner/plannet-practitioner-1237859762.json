@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Auer",
+      "family": "Koelpin",
       "given": [
-        "Nancie"
+        "Arlette",
+        "Yun"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-848-769-3932 x196",
+      "value": "(828) 853-1124 x3048",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "958.338.2952 x35408",
+      "value": "260-736-6800",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-09-03",
-        "end": "2024-09-03"
+        "start": "2022-02-11",
+        "end": "2025-02-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

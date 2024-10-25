@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "3ae2f7f5c239a3"
+      "value": "38652799c368ea"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236942741",
-    "display": "Gregg Bednar"
+    "display": "Harris Thompson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-879-523-2801 x7690",
+      "value": "528-054-9555 x699",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "693-276-8059 x9770",
+      "value": "1-242-601-8902 x7282",
       "use": "work"
     }
   ],

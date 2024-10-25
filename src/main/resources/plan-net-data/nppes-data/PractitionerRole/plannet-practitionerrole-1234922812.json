@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "8baefa1b9f17f6"
+      "value": "b95f473c4a198e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234922812",
-    "display": "Brady Hilpert"
+    "display": "Earnest Kshlerin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-356-427-1526 x9709",
+      "value": "(173) 130-2777 x536",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "915-638-3604 x857",
+      "value": "563.804.4970 x1243",
       "use": "work"
     }
   ],

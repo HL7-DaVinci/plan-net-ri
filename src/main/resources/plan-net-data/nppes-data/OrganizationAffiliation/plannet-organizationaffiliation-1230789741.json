@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "83e4e4cd4b4bd8",
+      "value": "aeaad683863c78",
       "assigner": {
         "display": "Western Massachusetts HIE"
       }
@@ -37,12 +37,12 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID010000",
-      "display": "Acme of Massachusetts Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID100000",
+      "display": "State of Massachusetts Preferred Provider Network"
     },
     {
-      "reference": "Organization/plannet-network-HPID020000",
-      "display": "Green Circle of Massachusetts HMO"
+      "reference": "Organization/plannet-network-HPID030000",
+      "display": "Massachusetts Persona Preferred Provider Network"
     }
   ],
   "healthcareService": [

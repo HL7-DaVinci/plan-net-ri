@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Jakubowski",
       "given": [
-        "Quinton",
-        "Kareem"
+        "Rey"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(595) 037-8743 x984",
+      "value": "362.880.1779 x432",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "310.097.9237 x6969",
+      "value": "1-901-306-7039",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-12-22",
-        "end": "2026-12-22"
+        "start": "2023-11-03",
+        "end": "2026-11-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

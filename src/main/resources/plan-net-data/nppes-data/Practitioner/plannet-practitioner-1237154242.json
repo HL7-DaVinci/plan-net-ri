@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Erdman",
+      "family": "Tillman",
       "given": [
-        "Dusty"
+        "Markus"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "336.217.7521 x1788",
+      "value": "(463) 571-1122 x03778",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-989-598-4961",
+      "value": "114-545-2188 x41998",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-06-30",
-        "end": "2027-06-30"
+        "start": "2024-07-07",
+        "end": "2027-07-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

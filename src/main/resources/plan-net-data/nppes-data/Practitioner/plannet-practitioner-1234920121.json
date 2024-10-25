@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Thompson",
+      "family": "Botsford",
       "given": [
-        "Normand",
-        "Andrea"
+        "Clarence"
       ],
       "suffix": [
         "Jr.",
@@ -46,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "574-688-7510 x9026",
+      "value": "1-324-179-7252 x131",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "738.687.7543 x2190",
+      "value": "1-561-235-5898 x638",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2024-02-17",
-        "end": "2027-02-17"
+        "start": "2023-06-03",
+        "end": "2026-06-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2023-12-21",
-        "end": "2026-12-21"
+        "start": "2024-04-24",
+        "end": "2027-04-24"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

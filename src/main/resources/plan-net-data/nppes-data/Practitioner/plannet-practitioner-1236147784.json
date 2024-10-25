@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Denesik",
+      "family": "Hayes",
       "given": [
-        "Michel"
+        "Edmond"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-156-406-7687 x92578",
+      "value": "479.061.7594",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(651) 419-6471 x25509",
+      "value": "441-379-9908",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-08-31",
-        "end": "2025-08-31"
+        "start": "2023-04-29",
+        "end": "2026-04-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0009X",
-            "display": "Glaucoma Specialist"
+            "display": "Glaucoma Specialist (Ophthalmology) Physician"
           }
         ],
-        "text": "Glaucoma Specialist"
+        "text": "Glaucoma Specialist (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2023-01-03",
-        "end": "2026-01-03"
+        "start": "2024-01-08",
+        "end": "2027-01-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

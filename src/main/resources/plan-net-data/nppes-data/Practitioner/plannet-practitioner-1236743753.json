@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reinger",
+      "family": "Gulgowski",
       "given": [
-        "Roger"
+        "Marlin",
+        "Brad"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "466-687-3628 x87070",
+      "value": "238.093.0291 x027",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "907.165.9344 x47829",
+      "value": "1-459-498-4373 x1133",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2022-04-16",
-        "end": "2025-04-16"
+        "start": "2021-12-14",
+        "end": "2024-12-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

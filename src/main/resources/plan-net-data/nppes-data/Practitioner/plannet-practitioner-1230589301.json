@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfeffer",
+      "family": "O'Reilly",
       "given": [
-        "Winfred"
+        "Bud"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "295.184.7617 x421",
+      "value": "1-790-418-4647 x2904",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(135) 348-1888 x27604",
+      "value": "978-771-2992 x8351",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-06-06",
-        "end": "2027-06-06"
+        "start": "2021-11-03",
+        "end": "2024-11-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

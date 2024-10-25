@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "b01c13f598d048"
+      "value": "0f51758eaa6ebb"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237255880",
-    "display": "Randal Huel"
+    "display": "Garth McGlynn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-629-169-0684 x4658",
+      "value": "315-879-7419",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-227-768-7325",
+      "value": "298.570.8616 x6954",
       "use": "work"
     }
   ],

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hickle",
+      "family": "Gleason",
       "given": [
-        "Drucilla"
+        "Joette"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(282) 559-0896 x018",
+      "value": "410.203.0262 x8835",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(137) 608-6692 x1408",
+      "value": "226-734-0291 x328",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-10-03",
-        "end": "2026-10-03"
+        "start": "2024-03-31",
+        "end": "2027-03-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

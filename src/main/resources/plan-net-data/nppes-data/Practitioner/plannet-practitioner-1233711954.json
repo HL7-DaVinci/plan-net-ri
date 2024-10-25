@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Powlowski",
+      "family": "Welch",
       "given": [
-        "Amelia",
-        "Maira"
+        "Madelene"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "188.799.3814 x45298",
+      "value": "635.501.5796",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(280) 097-8560 x251",
+      "value": "(583) 944-0935 x161",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VX0201X",
-            "display": "Gynecologic Oncology"
+            "display": "Gynecologic Oncology Physician"
           }
         ],
-        "text": "Gynecologic Oncology"
+        "text": "Gynecologic Oncology Physician"
       },
       "period": {
-        "start": "2024-06-19",
-        "end": "2027-06-19"
+        "start": "2023-07-28",
+        "end": "2026-07-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

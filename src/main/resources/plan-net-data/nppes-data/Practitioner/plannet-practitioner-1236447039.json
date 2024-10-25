@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Smitham",
+      "family": "Klocko",
       "given": [
-        "Marcos"
+        "Dominick",
+        "Granville"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "879.471.3429 x292",
+      "value": "127-259-9360",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "666.228.5581 x7596",
+      "value": "(231) 109-9526",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-06-12",
-        "end": "2025-06-12"
+        "start": "2021-11-15",
+        "end": "2024-11-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

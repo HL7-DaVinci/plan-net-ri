@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bruen",
+      "family": "Stanton",
       "given": [
-        "Orville"
+        "Richard",
+        "Merlin"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "484.500.1424 x921",
+      "value": "240.506.6944 x70322",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "780.983.6320 x4575",
+      "value": "1-257-056-4954",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-08",
-        "end": "2025-01-08"
+        "start": "2023-06-28",
+        "end": "2026-06-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

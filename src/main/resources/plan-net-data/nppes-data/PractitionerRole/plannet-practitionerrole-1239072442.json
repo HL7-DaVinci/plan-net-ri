@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "3abca82ddfda29"
+      "value": "f38519e9665bc3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239072442",
-    "display": "Milan Runolfsdottir"
+    "display": "Dino Stroman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AM0700X",
-          "display": "Medical"
+          "display": "Medical Physician Assistant"
         }
       ],
-      "text": "Medical"
+      "text": "Medical Physician Assistant"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "147-623-6120 x05737",
+      "value": "1-808-904-6781 x06580",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-853-879-4183 x74345",
+      "value": "560.806.7663",
       "use": "work"
     }
   ],

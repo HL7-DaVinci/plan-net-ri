@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "108630f1a2bb95"
+      "value": "679f86484a352b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235439095",
-    "display": "Amee White"
+    "display": "Avis Wisoky"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AM0700X",
-          "display": "Medical"
+          "display": "Medical Physician Assistant"
         }
       ],
-      "text": "Medical"
+      "text": "Medical Physician Assistant"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "788-686-4962 x574",
+      "value": "(110) 360-4043 x58771",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "812.328.6316 x21129",
+      "value": "340-142-5198 x55646",
       "use": "work"
     }
   ],

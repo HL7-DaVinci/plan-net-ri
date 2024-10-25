@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Collier",
+      "family": "Considine",
       "given": [
-        "Wesley"
+        "Jerrod",
+        "Quinn"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "851.583.5417 x2192",
+      "value": "1-291-195-6087 x805",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-751-356-5795 x3192",
+      "value": "930-616-6685",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2023-07-01",
-        "end": "2026-07-01"
+        "start": "2024-02-01",
+        "end": "2027-02-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

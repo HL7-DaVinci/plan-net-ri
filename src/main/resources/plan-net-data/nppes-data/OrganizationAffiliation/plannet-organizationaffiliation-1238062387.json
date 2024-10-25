@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "22a83fd19e0950",
+      "value": "098b1789585a42",
       "assigner": {
         "display": "King Hospital System"
       }
@@ -37,8 +37,8 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID010000",
-      "display": "Acme of Massachusetts Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID100000",
+      "display": "State of Massachusetts Preferred Provider Network"
     }
   ],
   "healthcareService": [

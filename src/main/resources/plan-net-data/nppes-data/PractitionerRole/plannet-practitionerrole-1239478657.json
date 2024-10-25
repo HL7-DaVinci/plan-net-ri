@@ -10,27 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-lawrence-family-health-center-inc.com",
-      "value": "06e9f5584396ff"
+      "value": "a089e88fab657c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239478657",
-    "display": "Tawnya Russel"
+    "display": "Jina Gorczany"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239774646",
@@ -79,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208C00000X",
-          "display": "Colon and Rectal Surgery"
+          "display": "Colon & Rectal Surgery Physician"
         }
       ],
-      "text": "Colon and Rectal Surgery"
+      "text": "Colon & Rectal Surgery Physician"
     }
   ],
   "location": [
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "228.891.5163 x43280",
+      "value": "767-024-0296 x46907",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-278-292-1630 x588",
+      "value": "213-293-5355",
       "use": "work"
     }
   ],

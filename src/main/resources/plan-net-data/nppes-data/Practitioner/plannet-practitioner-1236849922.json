@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Carroll",
+      "family": "Goodwin",
       "given": [
-        "Wilson",
-        "Jonah"
+        "Erik",
+        "Martin"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(228) 062-7798 x69859",
+      "value": "1-928-460-0116 x871",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "989-313-8187 x739",
+      "value": "1-618-574-5475 x35014",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2021-08-11",
-        "end": "2024-08-11"
+        "start": "2024-01-07",
+        "end": "2027-01-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

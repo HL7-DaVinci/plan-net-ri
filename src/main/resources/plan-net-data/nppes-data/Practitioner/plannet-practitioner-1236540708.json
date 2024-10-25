@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Monahan",
+      "family": "Carroll",
       "given": [
-        "Florentina"
+        "Isabella",
+        "Maryrose"
       ],
       "suffix": [
         "SP"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "166.109.2279 x4905",
+      "value": "(687) 491-2342",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "183-202-4355 x24144",
+      "value": "1-766-635-0016 x3543",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2022-06-27",
-        "end": "2025-06-27"
+        "start": "2022-02-27",
+        "end": "2025-02-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

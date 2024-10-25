@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "5f828f10db3685"
+      "value": "8711e2d7e244b1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231590190",
-    "display": "Gale Gislason"
+    "display": "Eric Doyle"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(483) 041-7702 x389",
+      "value": "(821) 583-8245",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(499) 976-9058 x0762",
+      "value": "1-444-380-2675 x17872",
       "use": "work"
     }
   ],

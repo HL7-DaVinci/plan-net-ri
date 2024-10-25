@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "DuBuque",
+      "family": "Turner",
       "given": [
-        "Merle",
-        "Oliver"
+        "Jeramy"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(259) 012-4330 x965",
+      "value": "999.683.1243 x6028",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-562-634-1172 x49468",
+      "value": "(742) 085-4649 x05727",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-01-09",
-        "end": "2027-01-09"
+        "start": "2023-05-04",
+        "end": "2026-05-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

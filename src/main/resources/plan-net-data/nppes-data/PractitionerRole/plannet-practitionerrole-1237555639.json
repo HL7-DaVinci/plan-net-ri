@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "7e785466638527"
+      "value": "33e27421a0588b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237555639",
-    "display": "Colin Labadie"
+    "display": "Dannie Kling"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "992-997-5130",
+      "value": "(662) 010-7891",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(827) 951-4560",
+      "value": "785.596.3391 x64179",
       "use": "work"
     }
   ],

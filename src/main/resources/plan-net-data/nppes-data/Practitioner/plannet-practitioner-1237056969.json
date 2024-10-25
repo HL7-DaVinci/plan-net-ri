@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Romaguera",
+      "family": "Brown",
       "given": [
-        "Ardell",
-        "Anjanette"
+        "Alla",
+        "Bernie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(399) 602-8169",
+      "value": "1-316-679-2403 x485",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(523) 816-6159 x19816",
+      "value": "1-392-951-4359 x82322",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-09-28",
-        "end": "2024-09-28"
+        "start": "2024-07-20",
+        "end": "2027-07-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

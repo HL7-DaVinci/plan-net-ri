@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "3bdc536e99b564"
+      "value": "d2397458fc3353"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235530701",
-    "display": "Jamison Langosh"
+    "display": "Edward Gorczany"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "481-581-9716",
+      "value": "(947) 206-6809 x795",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "330.970.7602 x5959",
+      "value": "442-170-7375 x437",
       "use": "work"
     }
   ],

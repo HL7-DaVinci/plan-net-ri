@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lesch",
+      "family": "Davis",
       "given": [
-        "Beverly"
+        "Lovella",
+        "Vada"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-362-098-2599 x3853",
+      "value": "(264) 907-0089 x93751",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(419) 736-4047 x64507",
+      "value": "814.775.1283 x7157",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2021-08-02",
-        "end": "2024-08-02"
+        "start": "2023-02-25",
+        "end": "2026-02-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

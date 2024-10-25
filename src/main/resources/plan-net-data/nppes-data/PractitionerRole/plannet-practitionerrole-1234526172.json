@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "f7dae56a654f20"
+      "value": "151af5811414a6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234526172",
-    "display": "Natashia Trantow"
+    "display": "Jinny Zboncak"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "750-593-8058",
+      "value": "(184) 672-2579 x464",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(547) 474-5115 x42976",
+      "value": "(344) 572-0453",
       "use": "work"
     }
   ],

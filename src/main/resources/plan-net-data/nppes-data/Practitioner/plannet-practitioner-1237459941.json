@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Herman",
+      "family": "Wisozk",
       "given": [
-        "Kelly"
+        "Ray",
+        "Lavona"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-702-672-0998 x8055",
+      "value": "1-394-992-9392 x4517",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(385) 273-1687 x874",
+      "value": "(456) 910-3493 x47591",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-05-24",
-        "end": "2026-05-24"
+        "start": "2021-12-13",
+        "end": "2024-12-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

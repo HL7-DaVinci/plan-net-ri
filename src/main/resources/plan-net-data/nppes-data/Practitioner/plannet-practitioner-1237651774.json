@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gulgowski",
+      "family": "Daugherty",
       "given": [
-        "Brent",
-        "Norris"
+        "Wilfred"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(983) 936-6303",
+      "value": "488.657.5101 x90847",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "776.411.6486 x78347",
+      "value": "(432) 130-1979",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2023-01-03",
-        "end": "2026-01-03"
+        "start": "2024-06-05",
+        "end": "2027-06-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

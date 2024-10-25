@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "2d53de7be62f22"
+      "value": "35923c407329a6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231591578",
-    "display": "Carlo Fay"
+    "display": "Andres McGlynn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-774-140-2476 x2921",
+      "value": "(180) 706-2800 x9362",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-974-923-7500 x2063",
+      "value": "354-674-1385 x14096",
       "use": "work"
     }
   ],

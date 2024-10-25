@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "1e934377a70589"
+      "value": "90a58c2f26e1e1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238162821",
-    "display": "Julius Windler"
+    "display": "Owen Lindgren"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-212-055-6547",
+      "value": "979-930-1943 x728",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "712.175.9427 x865",
+      "value": "666-619-1516 x4871",
       "use": "work"
     }
   ],

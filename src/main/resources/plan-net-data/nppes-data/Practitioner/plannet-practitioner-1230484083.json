@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walsh",
+      "family": "Howell",
       "given": [
-        "Marlon"
+        "Jorge",
+        "Edmund"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "811-564-0802 x837",
+      "value": "889-911-3567",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "702-486-5127 x23647",
+      "value": "167.286.9322 x0194",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-01-11",
-        "end": "2027-01-11"
+        "start": "2022-01-19",
+        "end": "2025-01-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

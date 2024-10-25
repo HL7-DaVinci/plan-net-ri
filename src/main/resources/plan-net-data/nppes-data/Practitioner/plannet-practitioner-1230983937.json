@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolf",
+      "family": "Nicolas",
       "given": [
-        "Lorenzo",
-        "Coy"
+        "Nathan"
       ],
       "suffix": [
         "MD, MED"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(619) 132-9178 x093",
+      "value": "266.976.7148 x750",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-622-627-3251 x8641",
+      "value": "607-917-5739 x468",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-06-27",
-        "end": "2025-06-27"
+        "start": "2022-12-15",
+        "end": "2025-12-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gutmann",
+      "family": "Towne",
       "given": [
-        "Loraine",
-        "Lera"
+        "Carola"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "616-748-5758 x86013",
+      "value": "278-422-1116 x66953",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "497.872.8546 x904",
+      "value": "514-079-8632 x510",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2024-01-07",
-        "end": "2027-01-07"
+        "start": "2023-10-24",
+        "end": "2026-10-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

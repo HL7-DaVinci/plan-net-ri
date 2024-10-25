@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stoltenberg",
+      "family": "Kuhlman",
       "given": [
-        "Graig",
-        "Vern"
+        "Gregorio",
+        "Cole"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(685) 561-6256 x221",
+      "value": "(667) 335-7209 x3799",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.002.8908",
+      "value": "1-239-770-8305 x527",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-11-16",
-        "end": "2026-11-16"
+        "start": "2022-04-23",
+        "end": "2025-04-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2023-10-01",
-        "end": "2026-10-01"
+        "start": "2022-02-12",
+        "end": "2025-02-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

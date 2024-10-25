@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mertz",
+      "family": "Wintheiser",
       "given": [
-        "Leone"
+        "Aline",
+        "Hong"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-937-019-7291",
+      "value": "255.669.7272 x91993",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-839-320-7107",
+      "value": "466-455-5990 x2088",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC1900X",
-            "display": "Counseling"
+            "display": "Counseling Psychologist"
           }
         ],
-        "text": "Counseling"
+        "text": "Counseling Psychologist"
       },
       "period": {
-        "start": "2022-09-06",
-        "end": "2025-09-06"
+        "start": "2022-12-05",
+        "end": "2025-12-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

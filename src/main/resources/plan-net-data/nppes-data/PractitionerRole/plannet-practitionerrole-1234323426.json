@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "dc192345e37261"
+      "value": "8bf3bb4e4293b8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234323426",
-    "display": "Yadira Donnelly"
+    "display": "Janina Russel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207QG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Family Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Family Medicine) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(150) 481-4203 x858",
+      "value": "745-414-5505 x99144",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "461.261.6023 x22710",
+      "value": "316.393.9287",
       "use": "work"
     }
   ],

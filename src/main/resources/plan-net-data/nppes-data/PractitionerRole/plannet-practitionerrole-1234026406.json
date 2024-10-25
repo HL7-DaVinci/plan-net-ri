@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "d89cd5f3f78034"
+      "value": "f54ec6118ff0fb"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234026406",
-    "display": "Cody Feil"
+    "display": "Randall O'Connell"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(412) 377-6860",
+      "value": "1-102-828-1331",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "627-638-3161",
+      "value": "(299) 930-7620 x126",
       "use": "work"
     }
   ],

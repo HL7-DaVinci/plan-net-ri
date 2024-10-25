@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gorczany",
+      "family": "Kunze",
       "given": [
-        "Florentino"
+        "Elden"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "250-311-0124 x406",
+      "value": "570.469.1250 x1057",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-877-108-2038 x1662",
+      "value": "(794) 352-1424 x92673",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2022-05-26",
-        "end": "2025-05-26"
+        "start": "2023-09-18",
+        "end": "2026-09-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

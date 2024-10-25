@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-health-care-of-mass-inc.com",
-      "value": "958910c3e6739e"
+      "value": "5dbf3120c1b9e4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234325090",
-    "display": "Mahalia Marks"
+    "display": "Mitchell Leannon"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237552602",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-584-142-5569 x411",
+      "value": "(895) 882-2524",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "105.535.9938 x715",
+      "value": "1-708-336-8557",
       "use": "work"
     }
   ],

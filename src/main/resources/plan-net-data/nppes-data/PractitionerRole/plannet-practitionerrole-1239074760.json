@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "95cf25c2de5b32"
+      "value": "c195e6569b4306"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239074760",
-    "display": "Ollie Jerde"
+    "display": "Carrol Padberg"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207L00000X",
-          "display": "Anesthesiology"
+          "display": "Anesthesiology Physician"
         }
       ],
-      "text": "Anesthesiology"
+      "text": "Anesthesiology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(805) 803-6040 x75630",
+      "value": "836.609.9196",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(368) 724-2067 x265",
+      "value": "426.543.4667 x71674",
       "use": "work"
     }
   ],

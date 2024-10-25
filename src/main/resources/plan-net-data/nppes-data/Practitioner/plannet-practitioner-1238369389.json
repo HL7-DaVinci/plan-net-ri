@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Walker",
+      "family": "Hilpert",
       "given": [
-        "Josephine",
-        "Christel"
+        "Yolanda"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-551-341-6192",
+      "value": "897.685.0774 x3712",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-399-649-4670 x8183",
+      "value": "755.684.5565 x2232",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-02",
-        "end": "2027-02-02"
+        "start": "2022-10-18",
+        "end": "2025-10-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Towne",
+      "family": "Ferry",
       "given": [
-        "Monique",
-        "Bernardine"
+        "Honey",
+        "Mammie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "966-588-7723 x72097",
+      "value": "(643) 581-0011 x790",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "947.577.2823 x129",
+      "value": "654.382.5593 x80725",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-06-14",
-        "end": "2026-06-14"
+        "start": "2024-08-24",
+        "end": "2027-08-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

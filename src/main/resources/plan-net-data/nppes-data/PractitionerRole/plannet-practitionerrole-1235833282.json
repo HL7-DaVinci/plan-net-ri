@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "c4316a3ce32cfa"
+      "value": "237f2c38d61f33"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235833282",
-    "display": "Rosario Mante"
+    "display": "Doyle Casper"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RR0500X",
-          "display": "Rheumatology"
+          "display": "Rheumatology Physician"
         }
       ],
-      "text": "Rheumatology"
+      "text": "Rheumatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "667-166-6887 x418",
+      "value": "976-120-1286 x3008",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "972.985.6026 x69440",
+      "value": "1-139-035-1976 x00317",
       "use": "work"
     }
   ],

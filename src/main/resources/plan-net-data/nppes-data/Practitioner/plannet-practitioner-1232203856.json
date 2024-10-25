@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lakin",
+      "family": "Emard",
       "given": [
-        "Jeffry"
+        "Tyson"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(389) 250-0754 x6588",
+      "value": "(892) 582-8504 x06048",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "220-971-7978 x08799",
+      "value": "828-573-9168",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-11-16",
-        "end": "2025-11-16"
+        "start": "2022-04-23",
+        "end": "2025-04-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

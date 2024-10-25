@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mohr",
+      "family": "Davis",
       "given": [
-        "Guadalupe",
-        "Paulette"
+        "Hyun",
+        "Kristie"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "745.123.5181",
+      "value": "497.264.9973 x985",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(652) 027-2573 x0873",
+      "value": "101-098-6427 x28741",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2024-05-08",
-        "end": "2027-05-08"
+        "start": "2023-05-17",
+        "end": "2026-05-17"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

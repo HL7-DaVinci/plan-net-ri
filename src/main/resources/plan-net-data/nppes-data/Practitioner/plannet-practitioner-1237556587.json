@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stehr",
+      "family": "Towne",
       "given": [
-        "Shaun"
+        "Rudolf",
+        "Olin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(989) 203-5614",
+      "value": "1-727-816-6251 x95092",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-376-081-6310",
+      "value": "256-971-2951",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2021-07-25",
-        "end": "2024-07-25"
+        "start": "2024-06-07",
+        "end": "2027-06-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RX0202X",
-            "display": "Medical Oncology"
+            "display": "Medical Oncology Physician"
           }
         ],
-        "text": "Medical Oncology"
+        "text": "Medical Oncology Physician"
       },
       "period": {
-        "start": "2023-01-12",
-        "end": "2026-01-12"
+        "start": "2024-02-02",
+        "end": "2027-02-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

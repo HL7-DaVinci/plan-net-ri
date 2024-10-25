@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "c540acc77ed076"
+      "value": "6cab039c898e51"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232805773",
-    "display": "Santos Hermann"
+    "display": "Jeromy Boyer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RN0300X",
-          "display": "Nephrology"
+          "display": "Nephrology Physician"
         }
       ],
-      "text": "Nephrology"
+      "text": "Nephrology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "648-122-1992 x4642",
+      "value": "(287) 078-5932 x6980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-651-830-1766 x6449",
+      "value": "1-284-813-3869 x2147",
       "use": "work"
     }
   ],

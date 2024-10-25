@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Thompson",
+      "family": "Klocko",
       "given": [
-        "Kathrin",
-        "Jenice"
+        "Velva"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(937) 533-7493 x0868",
+      "value": "698.479.1745",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-446-079-1261 x413",
+      "value": "234.474.9561 x0827",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-12-21",
-        "end": "2026-12-21"
+        "start": "2023-07-20",
+        "end": "2026-07-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

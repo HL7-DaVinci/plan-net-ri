@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "0d6acdcf3c329c"
+      "value": "fd86641d32681d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230388419",
-    "display": "Jannette Bartoletti"
+    "display": "Ladawn Kiehn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "739.401.9958",
+      "value": "484-696-5321 x786",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "982.592.2636 x19809",
+      "value": "(508) 618-1982",
       "use": "work"
     }
   ],

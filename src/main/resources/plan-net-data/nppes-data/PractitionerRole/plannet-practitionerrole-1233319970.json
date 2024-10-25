@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "893d5f3981c1ae"
+      "value": "2b18d998b15715"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233319970",
-    "display": "Seth Nitzsche"
+    "display": "Brenton Prosacco"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(460) 929-9187",
+      "value": "1-121-733-1592 x7173",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(100) 847-3961 x70828",
+      "value": "1-854-818-5691 x2320",
       "use": "work"
     }
   ],

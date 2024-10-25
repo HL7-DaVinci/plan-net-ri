@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Walsh",
+      "family": "Pagac",
       "given": [
-        "Rashad"
+        "Curtis"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "387-518-5439 x335",
+      "value": "216.770.3129 x650",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(614) 663-3532 x60315",
+      "value": "(975) 572-0144 x000",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-09-01",
-        "end": "2025-09-01"
+        "start": "2024-09-27",
+        "end": "2027-09-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

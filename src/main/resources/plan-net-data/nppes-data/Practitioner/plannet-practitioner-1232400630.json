@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Johns",
+      "family": "Kutch",
       "given": [
-        "Beau"
+        "Chad"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-134-947-1722 x8869",
+      "value": "1-957-340-1630",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-929-009-5898 x3645",
+      "value": "1-965-151-4078 x81093",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2021-08-09",
-        "end": "2024-08-09"
+        "start": "2023-08-12",
+        "end": "2026-08-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "fcabb8252d5403"
+      "value": "b3ac4b26a20d9e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237752802",
-    "display": "Saul Hirthe"
+    "display": "Jame Kozey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RN0300X",
-          "display": "Nephrology"
+          "display": "Nephrology Physician"
         }
       ],
-      "text": "Nephrology"
+      "text": "Nephrology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(360) 192-8297 x007",
+      "value": "(660) 187-9663 x8668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-682-278-5073 x31647",
+      "value": "1-575-563-5961",
       "use": "work"
     }
   ],

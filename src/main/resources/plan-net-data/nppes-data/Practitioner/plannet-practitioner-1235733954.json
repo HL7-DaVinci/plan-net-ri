@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hyatt",
+      "family": "Streich",
       "given": [
-        "Sharika",
-        "Tiana"
+        "Mariah",
+        "Era"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "750.952.0539 x70431",
+      "value": "875-304-4433",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-572-878-4894",
+      "value": "1-718-477-3592",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251H1200X",
-            "display": "Hand"
+            "display": "Hand Physical Therapist"
           }
         ],
-        "text": "Hand"
+        "text": "Hand Physical Therapist"
       },
       "period": {
-        "start": "2022-05-17",
-        "end": "2025-05-17"
+        "start": "2022-11-27",
+        "end": "2025-11-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://codac-inc.com",
-      "value": "9d47bbf64b8c67"
+      "value": "f86aa2e459381e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233114640",
-    "display": "Leo Gibson"
+    "display": "Alton O'Hara"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235731321",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(983) 043-1353 x32484",
+      "value": "1-882-920-7736 x360",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-599-027-8781",
+      "value": "529.018.8934 x317",
       "use": "work"
     }
   ],

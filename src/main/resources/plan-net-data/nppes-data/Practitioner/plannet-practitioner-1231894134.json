@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rempel",
+      "family": "Dibbert",
       "given": [
-        "Irene"
+        "Retha"
       ],
       "suffix": [
         "CNM"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-807-477-4787 x7606",
+      "value": "408.385.2244 x3435",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-612-508-8928",
+      "value": "780-180-7479",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-02-28",
-        "end": "2025-02-28"
+        "start": "2023-02-13",
+        "end": "2026-02-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

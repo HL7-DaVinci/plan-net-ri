@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "6f01bc7d551736"
+      "value": "cca0ea8a61d742"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232208921",
-    "display": "Jody Ankunding"
+    "display": "Jack King"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "932-185-3508",
+      "value": "320-555-4122",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(675) 948-2784",
+      "value": "1-538-877-7464",
       "use": "work"
     }
   ],

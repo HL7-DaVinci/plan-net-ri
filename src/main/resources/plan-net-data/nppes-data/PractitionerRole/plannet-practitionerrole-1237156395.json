@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "118348bb01b485"
+      "value": "4f0491dfde2b2c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237156395",
-    "display": "Garrett Schinner"
+    "display": "Floyd Bode"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208G00000X",
-          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
         }
       ],
-      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-756-384-7347 x62040",
+      "value": "1-237-786-7990 x03693",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(241) 112-2538",
+      "value": "842.233.8048 x5812",
       "use": "work"
     }
   ],

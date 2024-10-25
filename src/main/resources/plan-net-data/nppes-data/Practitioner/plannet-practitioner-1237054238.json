@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brekke",
+      "family": "Kutch",
       "given": [
-        "Romeo",
-        "Rudy"
+        "Marquis",
+        "Jermaine"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-577-046-4558 x37258",
+      "value": "504-826-5794 x655",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(195) 361-6345 x04215",
+      "value": "1-907-915-3421",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2024-05-27",
-        "end": "2027-05-27"
+        "start": "2023-04-18",
+        "end": "2026-04-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

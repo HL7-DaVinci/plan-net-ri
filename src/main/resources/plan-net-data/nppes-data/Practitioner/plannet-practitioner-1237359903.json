@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Langworth",
+      "family": "Balistreri",
       "given": [
-        "Lane"
+        "Ted",
+        "Eloy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(275) 278-5405",
+      "value": "1-444-485-8091 x971",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "960.341.5515 x59727",
+      "value": "369-891-5145",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-05-17",
-        "end": "2025-05-17"
+        "start": "2024-09-22",
+        "end": "2027-09-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

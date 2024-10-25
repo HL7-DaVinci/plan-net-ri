@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Krajcik",
+      "family": "Ankunding",
       "given": [
-        "Britt"
+        "Jeanelle",
+        "Carin"
       ],
       "suffix": [
         "DO"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-651-540-3966 x8025",
+      "value": "633.318.6287 x08912",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-413-557-3493 x302",
+      "value": "208-007-3209",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2024-03-17",
-        "end": "2027-03-17"
+        "start": "2024-05-26",
+        "end": "2027-05-26"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

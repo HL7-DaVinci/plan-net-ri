@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Roob",
+      "family": "Hodkiewicz",
       "given": [
-        "Kristopher"
+        "William"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(581) 688-3563",
+      "value": "799-224-7405 x8225",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "767.557.2055 x4187",
+      "value": "(436) 825-5643 x35424",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1835P1200X",
-            "display": "Pharmacotherapy"
+            "display": "Pharmacotherapy Pharmacist"
           }
         ],
-        "text": "Pharmacotherapy"
+        "text": "Pharmacotherapy Pharmacist"
       },
       "period": {
-        "start": "2021-11-07",
-        "end": "2024-11-07"
+        "start": "2024-08-07",
+        "end": "2027-08-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

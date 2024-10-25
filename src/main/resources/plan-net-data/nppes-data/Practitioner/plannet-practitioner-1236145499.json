@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reichert",
+      "family": "Kilback",
       "given": [
-        "Delfina"
+        "Krystle",
+        "Hsiu"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-981-421-1739 x54123",
+      "value": "395-012-8898",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-150-641-1406",
+      "value": "156-805-4406 x2570",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2024-03-31",
-        "end": "2027-03-31"
+        "start": "2024-05-06",
+        "end": "2027-05-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "edc3481a8aeea8"
+      "value": "25c7f98d1df838"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235338380",
-    "display": "Taneka Kuhlman"
+    "display": "Johnie Armstrong"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(125) 720-6553 x620",
+      "value": "1-260-670-0936 x8899",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "981.926.2575 x545",
+      "value": "847.791.7452 x69610",
       "use": "work"
     }
   ],

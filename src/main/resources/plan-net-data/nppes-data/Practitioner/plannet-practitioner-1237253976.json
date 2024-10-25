@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Greenfelder",
+      "family": "Champlin",
       "given": [
-        "Cristobal",
-        "Luciano"
+        "Clint"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450.293.9139 x575",
+      "value": "687.606.2362 x16096",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(273) 454-2923 x273",
+      "value": "(686) 264-4472 x592",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2024-06-11",
-        "end": "2027-06-11"
+        "start": "2022-09-04",
+        "end": "2025-09-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

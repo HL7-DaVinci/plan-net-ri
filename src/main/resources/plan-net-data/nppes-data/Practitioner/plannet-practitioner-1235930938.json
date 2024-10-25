@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Aufderhar",
+      "family": "Jacobson",
       "given": [
-        "Toney",
-        "Claude"
+        "Jonas",
+        "Fausto"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "933.983.3482",
+      "value": "(643) 345-6319",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-753-512-4433 x02538",
+      "value": "426.453.6467 x17885",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-01-30",
-        "end": "2026-01-30"
+        "start": "2021-12-28",
+        "end": "2024-12-28"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085U0001X",
-            "display": "Diagnostic Ultrasound"
+            "display": "Diagnostic Ultrasound Physician"
           }
         ],
-        "text": "Diagnostic Ultrasound"
+        "text": "Diagnostic Ultrasound Physician"
       },
       "period": {
-        "start": "2023-08-08",
-        "end": "2026-08-08"
+        "start": "2022-02-23",
+        "end": "2025-02-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

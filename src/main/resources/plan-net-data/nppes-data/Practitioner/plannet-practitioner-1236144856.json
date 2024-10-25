@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Corkery",
+      "family": "Weber",
       "given": [
-        "Leslie",
-        "Andres"
+        "Willy",
+        "Thanh"
       ],
       "suffix": [
         "P.A.C."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "277.602.4971",
+      "value": "(740) 572-1711",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(554) 160-8219 x039",
+      "value": "(793) 410-0103 x6184",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2024-02-01",
-        "end": "2027-02-01"
+        "start": "2023-07-18",
+        "end": "2026-07-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

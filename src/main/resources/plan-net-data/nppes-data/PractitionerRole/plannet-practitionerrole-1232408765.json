@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "2865294210a118"
+      "value": "9fa0ebf8ccb59a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232408765",
-    "display": "Fidelia Harvey"
+    "display": "Jocelyn Hamill"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208200000X",
-          "display": "Plastic Surgery"
+          "display": "Plastic Surgery Physician"
         }
       ],
-      "text": "Plastic Surgery"
+      "text": "Plastic Surgery Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(721) 395-3749 x2767",
+      "value": "644-777-0347 x96156",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "128.932.1284",
+      "value": "268.820.0465 x23579",
       "use": "work"
     }
   ],

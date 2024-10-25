@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rice",
+      "family": "Kiehn",
       "given": [
-        "Arlen"
+        "Federico"
       ],
       "suffix": [
         "DDS"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "540-143-8897 x2384",
+      "value": "228-419-2975 x16770",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(235) 200-4119 x7497",
+      "value": "(283) 616-9059",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2023-02-12",
-        "end": "2026-02-12"
+        "start": "2023-12-09",
+        "end": "2026-12-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-10-10",
-        "end": "2026-10-10"
+        "start": "2023-10-24",
+        "end": "2026-10-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -239,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

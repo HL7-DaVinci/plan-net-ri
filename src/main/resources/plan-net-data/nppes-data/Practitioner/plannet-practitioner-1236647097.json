@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dibbert",
+      "family": "Nikolaus",
       "given": [
-        "Timothy"
+        "Cortez",
+        "Alva"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(738) 012-5101 x88195",
+      "value": "(644) 792-3156 x0495",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "874-156-3143 x41163",
+      "value": "978.115.2777 x09219",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-10-01",
-        "end": "2025-10-01"
+        "start": "2023-08-05",
+        "end": "2026-08-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

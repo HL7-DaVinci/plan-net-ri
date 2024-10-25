@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Armstrong",
+      "family": "Frami",
       "given": [
-        "Cristina"
+        "Kia"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(167) 011-8845 x716",
+      "value": "1-124-558-0147 x15699",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "408-337-7381",
+      "value": "1-437-328-7378 x942",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-10-24",
-        "end": "2026-10-24"
+        "start": "2022-05-17",
+        "end": "2025-05-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

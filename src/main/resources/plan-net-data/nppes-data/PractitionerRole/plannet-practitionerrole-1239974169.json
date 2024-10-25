@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "13fdc960e09b33"
+      "value": "457639d592044d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239974169",
-    "display": "Ty Koepp"
+    "display": "Wm Beer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(608) 251-0200 x0346",
+      "value": "517.649.3178 x28955",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "710-802-2542 x3145",
+      "value": "375.930.5084 x53354",
       "use": "work"
     }
   ],

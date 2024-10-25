@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wehner",
+      "family": "Schmeler",
       "given": [
-        "Neville"
+        "Zack"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-542-728-3267 x872",
+      "value": "376.835.4031 x067",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "258-313-5637",
+      "value": "133-945-3608 x993",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2023-08-16",
-        "end": "2026-08-16"
+        "start": "2023-06-26",
+        "end": "2026-06-26"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -208,8 +208,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2022-06-15",
-        "end": "2025-06-15"
+        "start": "2022-11-20",
+        "end": "2025-11-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -266,14 +266,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1835P1200X",
-            "display": "Pharmacotherapy"
+            "display": "Pharmacotherapy Pharmacist"
           }
         ],
-        "text": "Pharmacotherapy"
+        "text": "Pharmacotherapy Pharmacist"
       },
       "period": {
-        "start": "2022-03-21",
-        "end": "2025-03-21"
+        "start": "2023-01-26",
+        "end": "2026-01-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -325,11 +325,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "8f910ca41dc829"
+      "value": "934b189d5aff0f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239278680",
-    "display": "Alonso Kozey"
+    "display": "Harold Grimes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080N0001X",
-          "display": "Neonatal-Perinatal Medicine"
+          "display": "Neonatal-Perinatal Medicine Physician"
         }
       ],
-      "text": "Neonatal-Perinatal Medicine"
+      "text": "Neonatal-Perinatal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-407-210-7875 x087",
+      "value": "917-653-7003 x1222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "268.859.5527 x45609",
+      "value": "1-508-342-6355 x84233",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schowalter",
+      "family": "Schinner",
       "given": [
-        "Mark",
-        "Phillip"
+        "Bret"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-513-216-2679 x899",
+      "value": "(613) 883-3772 x581",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(687) 955-6899 x5533",
+      "value": "(477) 978-3390 x25344",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-05-14",
-        "end": "2025-05-14"
+        "start": "2023-05-15",
+        "end": "2026-05-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

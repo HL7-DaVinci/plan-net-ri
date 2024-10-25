@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "35c7d776096d3d"
+      "value": "5b99d045cc99f4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237651618",
-    "display": "Candice Reinger"
+    "display": "Pia Sawayn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "831-106-1905",
+      "value": "616-221-1297 x5282",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(628) 213-1514 x444",
+      "value": "867-945-7971 x570",
       "use": "work"
     }
   ],

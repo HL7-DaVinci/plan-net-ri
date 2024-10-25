@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Connell",
+      "family": "Kuphal",
       "given": [
-        "Nadia"
+        "Quinn"
       ],
       "suffix": [
         "PHD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "898-151-8169 x45675",
+      "value": "895-904-2763 x50787",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "667-391-8210",
+      "value": "(723) 770-4010 x15335",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2021-08-19",
-        "end": "2024-08-19"
+        "start": "2022-12-15",
+        "end": "2025-12-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

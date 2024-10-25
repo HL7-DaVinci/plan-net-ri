@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "98bd4aec9ab8ce"
+      "value": "d27d3cb302904d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230682245",
-    "display": "Clement Streich"
+    "display": "Gale Mitchell"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2200X",
-          "display": "Adult Health"
+          "display": "Adult Health Nurse Practitioner"
         }
       ],
-      "text": "Adult Health"
+      "text": "Adult Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(317) 165-0786 x78878",
+      "value": "846.667.2955 x9598",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "389-590-4698",
+      "value": "954-708-4118 x95175",
       "use": "work"
     }
   ],

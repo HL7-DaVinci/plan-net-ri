@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gulgowski",
+      "family": "Konopelski",
       "given": [
-        "Felicitas"
+        "Lyda"
       ],
       "suffix": [
         "OD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(662) 097-9692 x28934",
+      "value": "(272) 249-1543 x1371",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "317-934-2086 x5279",
+      "value": "1-206-398-0565 x583",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-05-05",
-        "end": "2025-05-05"
+        "start": "2022-10-15",
+        "end": "2025-10-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

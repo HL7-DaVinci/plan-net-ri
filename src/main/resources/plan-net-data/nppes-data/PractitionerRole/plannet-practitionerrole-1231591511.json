@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "7ae8678b426768"
+      "value": "5cea637b91c28c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231591511",
-    "display": "Omer Koch"
+    "display": "Ty Purdy"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "988-465-4646 x25883",
+      "value": "935.065.2219 x05412",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "847.769.7868",
+      "value": "936.640.7421 x330",
       "use": "work"
     }
   ],

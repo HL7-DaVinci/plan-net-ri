@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stroman",
+      "family": "Langosh",
       "given": [
-        "Damaris"
+        "Lilli"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "240-927-2149",
+      "value": "345-098-5934 x4521",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(577) 653-1893 x976",
+      "value": "663-519-4235 x97542",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-06-24",
-        "end": "2025-06-24"
+        "start": "2021-12-11",
+        "end": "2024-12-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

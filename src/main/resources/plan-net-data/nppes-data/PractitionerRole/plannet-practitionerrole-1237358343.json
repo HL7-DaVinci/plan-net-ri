@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "9ee3fdc09141d8"
+      "value": "6ab6e1c279fb26"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237358343",
-    "display": "Deane Gutkowski"
+    "display": "Teena Wolf"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208100000X",
-          "display": "Physical Medicine and Rehabilitation"
+          "display": "Physical Medicine & Rehabilitation Physician"
         }
       ],
-      "text": "Physical Medicine and Rehabilitation"
+      "text": "Physical Medicine & Rehabilitation Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "124.181.4464 x03951",
+      "value": "455.808.6536 x8311",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "913-003-3647 x812",
+      "value": "1-672-947-6564 x020",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Prohaska",
+      "family": "Stark",
       "given": [
-        "Doyle",
-        "Jerome"
+        "Lindsey",
+        "Ferdinand"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "240.889.1653 x150",
+      "value": "648.350.8004",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-863-532-2151 x22578",
+      "value": "1-107-806-8976 x836",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-01-09",
-        "end": "2026-01-09"
+        "start": "2023-09-03",
+        "end": "2026-09-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

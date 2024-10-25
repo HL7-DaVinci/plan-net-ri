@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "45b114c6857a57"
+      "value": "2c155a2f50c406"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233814245",
-    "display": "Bryce Oberbrunner"
+    "display": "Everette Swift"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "208.439.6438",
+      "value": "156-667-7910 x0780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "624.590.6858",
+      "value": "(905) 922-6638",
       "use": "work"
     }
   ],

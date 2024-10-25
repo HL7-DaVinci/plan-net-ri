@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "b87fe85c3605df"
+      "value": "d03df13ddd7969"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231790879",
-    "display": "Darwin Zieme"
+    "display": "Shawn Runolfsson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "152WC0802X",
-          "display": "Corneal and Contact Management"
+          "display": "Corneal and Contact Management Optometrist"
         }
       ],
-      "text": "Corneal and Contact Management"
+      "text": "Corneal and Contact Management Optometrist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "600.478.3036 x877",
+      "value": "331.141.6009",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "473-591-3191 x0069",
+      "value": "947-498-2330 x51672",
       "use": "work"
     }
   ],

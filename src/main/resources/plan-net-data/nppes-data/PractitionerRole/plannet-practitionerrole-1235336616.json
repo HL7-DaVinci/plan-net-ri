@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "33d06b78718844"
+      "value": "263e7f8fc15e16"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235336616",
-    "display": "Jordan Witting"
+    "display": "Jamar Wisoky"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "314-158-2395 x517",
+      "value": "735.502.9234 x0483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-483-482-1226 x6217",
+      "value": "1-375-597-6263 x70584",
       "use": "work"
     }
   ],

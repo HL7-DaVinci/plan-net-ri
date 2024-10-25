@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiegand",
+      "family": "Abbott",
       "given": [
-        "Kieth"
+        "Kenton"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "842-927-0885 x59291",
+      "value": "(613) 464-1568 x49137",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "378-846-0713",
+      "value": "363-024-2179 x803",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-09-14",
-        "end": "2024-09-14"
+        "start": "2021-12-21",
+        "end": "2024-12-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

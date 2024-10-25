@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Streich",
+      "family": "Schuster",
       "given": [
-        "Valentine",
-        "Judson"
+        "Thanh"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-421-819-4014 x13018",
+      "value": "230.378.7082",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "863.707.7076 x9700",
+      "value": "(475) 973-7008 x59533",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-11-07",
-        "end": "2026-11-07"
+        "start": "2023-05-25",
+        "end": "2026-05-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

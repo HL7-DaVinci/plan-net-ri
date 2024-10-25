@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "1c38cdee9816bf"
+      "value": "04a19da1d6aced"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232607305",
-    "display": "Rubin Stark"
+    "display": "Cristopher Heaney"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223P0300X",
-          "display": "Periodontics"
+          "display": "Periodontist"
         }
       ],
-      "text": "Periodontics"
+      "text": "Periodontist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "634.493.1828 x266",
+      "value": "205.252.6063 x18230",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-190-388-2961 x66521",
+      "value": "1-482-923-6273 x398",
       "use": "work"
     }
   ],

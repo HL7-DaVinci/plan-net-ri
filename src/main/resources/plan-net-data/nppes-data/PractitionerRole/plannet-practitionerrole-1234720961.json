@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "52f0cd47bd822d"
+      "value": "6cb2ac8e5d250e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234720961",
-    "display": "Reggie Corwin"
+    "display": "Harold Satterfield"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "101YM0800X",
-          "display": "Mental Health"
+          "display": "Mental Health Counselor"
         }
       ],
-      "text": "Mental Health"
+      "text": "Mental Health Counselor"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(229) 591-7067 x7718",
+      "value": "(277) 121-3788 x0315",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(774) 134-8256 x837",
+      "value": "(443) 952-5911",
       "use": "work"
     }
   ],

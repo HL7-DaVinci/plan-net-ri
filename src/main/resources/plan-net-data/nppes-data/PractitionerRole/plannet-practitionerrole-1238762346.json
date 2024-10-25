@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "11a73f94486a5a"
+      "value": "892d659a051e8c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238762346",
-    "display": "Reyes Reichel"
+    "display": "Brandon Satterfield"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234521488",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "207.749.5762 x4827",
+      "value": "(222) 645-8395 x8645",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "786.045.5813 x785",
+      "value": "1-777-116-9248",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Reichert",
+      "family": "Pouros",
       "given": [
-        "Krista",
-        "Marylynn"
+        "Kristie"
       ],
       "suffix": [
         "C.N.M."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-498-623-5950 x031",
+      "value": "(317) 509-9636",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "779.467.2528 x7218",
+      "value": "(571) 035-0875 x0719",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-03-23",
-        "end": "2025-03-23"
+        "start": "2023-11-19",
+        "end": "2026-11-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

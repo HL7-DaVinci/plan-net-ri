@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "f102cb21f68ac1"
+      "value": "3f0252dcfca2bd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234620064",
-    "display": "Earl Rosenbaum"
+    "display": "Benny Krajcik"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "313-611-9057 x723",
+      "value": "644.188.3243",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "615.280.0677 x01788",
+      "value": "833-795-2428 x87885",
       "use": "work"
     }
   ],

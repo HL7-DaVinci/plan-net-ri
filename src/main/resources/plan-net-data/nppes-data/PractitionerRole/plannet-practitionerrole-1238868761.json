@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "14582fc2bdf710"
+      "value": "12dba667c311f9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238868761",
-    "display": "Nolan Parker"
+    "display": "Bruno Pollich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0200X",
-          "display": "Critical Care Medicine"
+          "display": "Critical Care Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Critical Care Medicine"
+      "text": "Critical Care Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "415.109.6418",
+      "value": "(495) 775-2752",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "464.882.7273 x55411",
+      "value": "1-697-819-9872",
       "use": "work"
     }
   ],

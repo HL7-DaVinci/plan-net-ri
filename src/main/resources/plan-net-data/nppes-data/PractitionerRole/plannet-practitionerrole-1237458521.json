@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "7a98aafeccc529"
+      "value": "635a60a8575891"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237458521",
-    "display": "Lawrence Hoppe"
+    "display": "Jeanna Mraz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-384-519-7076 x612",
+      "value": "703-496-1986 x34293",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-923-331-9724 x6714",
+      "value": "176-972-4126 x9124",
       "use": "work"
     }
   ],

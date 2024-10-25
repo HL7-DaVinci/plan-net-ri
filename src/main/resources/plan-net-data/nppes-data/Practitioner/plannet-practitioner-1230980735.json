@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hegmann",
+      "family": "Kub",
       "given": [
-        "Rodrigo",
-        "Vicente"
+        "Bradley"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "288.596.7924 x311",
+      "value": "258-082-3896 x42924",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-702-006-6548 x90536",
+      "value": "(921) 544-7731 x211",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0000X",
-            "display": "Hematology"
+            "display": "Hematology (Internal Medicine) Physician"
           }
         ],
-        "text": "Hematology"
+        "text": "Hematology (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-08-19",
-        "end": "2026-08-19"
+        "start": "2023-08-05",
+        "end": "2026-08-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-10-23",
-        "end": "2025-10-23"
+        "start": "2023-02-23",
+        "end": "2026-02-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

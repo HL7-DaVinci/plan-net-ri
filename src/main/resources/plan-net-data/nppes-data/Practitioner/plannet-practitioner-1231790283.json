@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Harvey",
+      "family": "Howell",
       "given": [
-        "Anne"
+        "Tommy",
+        "Lashaun"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "396-308-8399",
+      "value": "1-563-962-6156",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(491) 398-4226 x105",
+      "value": "(270) 841-6626 x470",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-02-17",
-        "end": "2026-02-17"
+        "start": "2023-03-23",
+        "end": "2026-03-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

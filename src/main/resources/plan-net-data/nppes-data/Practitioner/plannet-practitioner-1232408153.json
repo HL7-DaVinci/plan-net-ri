@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Abbott",
+      "family": "Wehner",
       "given": [
-        "Dane"
+        "Preston",
+        "Alan"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-172-813-7232",
+      "value": "1-971-011-0744 x093",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-177-600-3189 x0426",
+      "value": "327-651-1322 x6097",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2022-12-06",
-        "end": "2025-12-06"
+        "start": "2024-01-16",
+        "end": "2027-01-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

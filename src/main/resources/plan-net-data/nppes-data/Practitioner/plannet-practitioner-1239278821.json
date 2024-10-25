@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Howell",
+      "family": "Tillman",
       "given": [
-        "Loan",
-        "Donna"
+        "Williemae"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-533-284-8225 x359",
+      "value": "1-170-190-7138",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "856-645-8134 x392",
+      "value": "855.423.2495",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-12-08",
-        "end": "2024-12-08"
+        "start": "2023-08-12",
+        "end": "2026-08-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

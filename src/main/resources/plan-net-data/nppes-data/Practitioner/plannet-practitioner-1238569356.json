@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Luettgen",
+      "family": "Wolff",
       "given": [
-        "Barton",
-        "Alden"
+        "Rob"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "719-884-2476 x957",
+      "value": "(200) 881-0784 x04130",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "407-526-3740 x127",
+      "value": "417.957.7378 x84233",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-11-21",
-        "end": "2025-11-21"
+        "start": "2024-06-12",
+        "end": "2027-06-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

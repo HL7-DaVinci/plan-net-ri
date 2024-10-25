@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "57632b0357df7f"
+      "value": "2c62621f75a999"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235732287",
-    "display": "Harris Weimann"
+    "display": "Buddy Bosco"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(431) 795-1824 x55910",
+      "value": "425.844.3495 x53300",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-726-423-2682 x9419",
+      "value": "629.867.8511 x7089",
       "use": "work"
     }
   ],

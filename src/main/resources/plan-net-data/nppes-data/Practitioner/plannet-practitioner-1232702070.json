@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lemke",
+      "family": "Block",
       "given": [
-        "Renea",
-        "Dorcas"
+        "Charlyn",
+        "Kendall"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "979.518.5484",
+      "value": "701-949-0130 x9923",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "239.482.9012 x2521",
+      "value": "273.685.2457 x393",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-04-07",
-        "end": "2026-04-07"
+        "start": "2022-05-06",
+        "end": "2025-05-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

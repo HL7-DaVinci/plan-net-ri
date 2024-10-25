@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Welch",
+      "family": "Hills",
       "given": [
-        "Betsy"
+        "Coral"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "974-173-9027 x28926",
+      "value": "967-548-3410",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-875-436-2458 x74223",
+      "value": "(754) 191-8652 x92079",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-03-06",
-        "end": "2025-03-06"
+        "start": "2023-06-15",
+        "end": "2026-06-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kulas",
+      "family": "Thompson",
       "given": [
-        "Chelsie"
+        "Margarette",
+        "Carrol"
       ],
       "suffix": [
         "PA-C"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "643-070-3844 x45817",
+      "value": "(751) 866-6126 x778",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "289.024.5769 x71270",
+      "value": "1-685-288-4580 x0035",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2023-12-29",
-        "end": "2026-12-29"
+        "start": "2022-08-04",
+        "end": "2025-08-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2022-01-31",
-        "end": "2025-01-31"
+        "start": "2024-05-07",
+        "end": "2027-05-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -239,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

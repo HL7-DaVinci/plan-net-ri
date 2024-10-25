@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Marquardt",
+      "family": "Wunsch",
       "given": [
-        "Malorie",
-        "Desiree"
+        "Russell",
+        "Lorriane"
       ],
       "suffix": [
         "NP"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "783.072.1091 x055",
+      "value": "(683) 941-3715",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "617-472-8158 x97855",
+      "value": "1-506-387-7935",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-11-30",
-        "end": "2024-11-30"
+        "start": "2022-10-31",
+        "end": "2025-10-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

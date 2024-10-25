@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "78cea3ebe4ee67"
+      "value": "686350b7b91da6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232909110",
-    "display": "Salley Wolff"
+    "display": "Kristeen Kuhic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(682) 257-0180 x6758",
+      "value": "(529) 151-4273",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(307) 786-1252 x911",
+      "value": "389.815.3673",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Harber",
+      "family": "Pouros",
       "given": [
-        "Elvis",
-        "Timmy"
+        "Robby",
+        "Adan"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-445-967-1956 x195",
+      "value": "(347) 704-0705 x1257",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "435-905-9063",
+      "value": "(682) 387-8632",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2022-11-03",
-        "end": "2025-11-03"
+        "start": "2024-10-02",
+        "end": "2027-10-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

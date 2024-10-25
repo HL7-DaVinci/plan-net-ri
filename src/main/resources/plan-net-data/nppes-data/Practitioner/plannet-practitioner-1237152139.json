@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gibson",
+      "family": "Swift",
       "given": [
-        "Prudence"
+        "Francie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-935-157-9241 x565",
+      "value": "1-118-543-6698 x9088",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(400) 363-7805",
+      "value": "(963) 871-7114",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-06-21",
-        "end": "2027-06-21"
+        "start": "2024-04-19",
+        "end": "2027-04-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Reichel",
+      "family": "Ortiz",
       "given": [
-        "Donita",
-        "Tawana"
+        "Nannette"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "879-785-1184 x1637",
+      "value": "656.522.2941 x30540",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-931-521-2708 x75105",
+      "value": "(556) 427-7430 x4878",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-11-11",
-        "end": "2025-11-11"
+        "start": "2022-06-06",
+        "end": "2025-06-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nicolas",
+      "family": "Schowalter",
       "given": [
-        "Byron"
+        "Emmitt",
+        "Kasey"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-692-278-5646 x7024",
+      "value": "(200) 242-8515 x6518",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(830) 897-2857 x87691",
+      "value": "1-535-912-4098 x31669",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204C00000X",
-            "display": "Neuromusculoskeletal Medicine, Sports Medicine"
+            "display": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
           }
         ],
-        "text": "Neuromusculoskeletal Medicine, Sports Medicine"
+        "text": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
       },
       "period": {
-        "start": "2022-07-13",
-        "end": "2025-07-13"
+        "start": "2023-04-14",
+        "end": "2026-04-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mante",
+      "family": "Kiehn",
       "given": [
-        "Reggie",
-        "Robin"
+        "Jason"
       ],
       "suffix": [
         "PA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-742-628-2434 x241",
+      "value": "160-951-6450 x436",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "947.059.4461 x2120",
+      "value": "(645) 494-9425",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-03-19",
-        "end": "2025-03-19"
+        "start": "2022-09-17",
+        "end": "2025-09-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

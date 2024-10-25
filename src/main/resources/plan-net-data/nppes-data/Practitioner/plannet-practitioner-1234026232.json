@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McKenzie",
+      "family": "O'Hara",
       "given": [
-        "Lino"
+        "Jacinto",
+        "Buck"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "879-309-5348",
+      "value": "839.592.3015",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-117-021-3983 x015",
+      "value": "1-166-634-5939 x0675",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-03-25",
-        "end": "2026-03-25"
+        "start": "2024-08-09",
+        "end": "2027-08-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mante",
+      "family": "Kozey",
       "given": [
-        "Humberto",
-        "Houston"
+        "Walton"
       ],
       "suffix": [
         "O.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "696-885-1793",
+      "value": "238.761.8626 x83693",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-679-004-0124",
+      "value": "(405) 007-8109",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-11-24",
-        "end": "2024-11-24"
+        "start": "2024-02-07",
+        "end": "2027-02-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

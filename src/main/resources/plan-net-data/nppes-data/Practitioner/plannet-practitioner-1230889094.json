@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McCullough",
+      "family": "Cummerata",
       "given": [
-        "Jamar",
-        "Ali"
+        "Marshall",
+        "Josue"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-465-129-1672 x6611",
+      "value": "717-095-4233 x624",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-233-404-8642",
+      "value": "1-705-110-7423",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2021-10-23",
-        "end": "2024-10-23"
+        "start": "2023-10-29",
+        "end": "2026-10-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Glover",
+      "family": "Lemke",
       "given": [
-        "Devon",
-        "Lucien"
+        "Ernie",
+        "Chuck"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(429) 291-0398 x231",
+      "value": "465.000.1495 x2547",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(448) 255-3595 x1121",
+      "value": "362.498.8312 x104",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-04-01",
-        "end": "2025-04-01"
+        "start": "2024-02-18",
+        "end": "2027-02-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

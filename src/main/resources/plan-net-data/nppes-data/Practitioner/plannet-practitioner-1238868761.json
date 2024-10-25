@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Pollich",
       "given": [
-        "Nolan"
+        "Bruno"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "415.109.6418",
+      "value": "(495) 775-2752",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "464.882.7273 x55411",
+      "value": "1-697-819-9872",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2024-04-01",
-        "end": "2027-04-01"
+        "start": "2023-09-14",
+        "end": "2026-09-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-07-15",
-        "end": "2026-07-15"
+        "start": "2022-08-26",
+        "end": "2025-08-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

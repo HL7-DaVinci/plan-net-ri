@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McClure",
+      "family": "Beer",
       "given": [
-        "Neely"
+        "Tula"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-876-547-8807 x4076",
+      "value": "498-958-5275 x89601",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "307.106.5496 x554",
+      "value": "949.521.3375",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-09-04",
-        "end": "2024-09-04"
+        "start": "2022-11-28",
+        "end": "2025-11-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

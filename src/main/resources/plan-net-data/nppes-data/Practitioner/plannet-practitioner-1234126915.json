@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Friesen",
+      "family": "Kshlerin",
       "given": [
-        "Mickey"
+        "Edmond"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "333.468.6173 x080",
+      "value": "(835) 436-8348 x3182",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "454-947-4986 x39879",
+      "value": "542.274.7918",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-03-05",
-        "end": "2026-03-05"
+        "start": "2023-03-24",
+        "end": "2026-03-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

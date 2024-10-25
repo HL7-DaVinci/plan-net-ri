@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "8484dcca8f8da6"
+      "value": "ea9e21dc91f4a0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236146554",
-    "display": "Kelly Bayer"
+    "display": "Damion Shanahan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Physician"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "469-032-2789 x09975",
+      "value": "560.326.3513 x9952",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "525-782-3573 x514",
+      "value": "840.844.2956 x78426",
       "use": "work"
     }
   ],

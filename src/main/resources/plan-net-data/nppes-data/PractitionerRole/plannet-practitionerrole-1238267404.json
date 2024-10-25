@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "154d1009b464a0"
+      "value": "3bdd6b638b1be2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238267404",
-    "display": "Caleb Kunze"
+    "display": "Sherwood Toy"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208G00000X",
-          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+          "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
         }
       ],
-      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+      "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "935.942.3165",
+      "value": "747-627-0090",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-279-321-5680",
+      "value": "1-678-921-5888",
       "use": "work"
     }
   ],

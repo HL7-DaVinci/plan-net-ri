@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "7dcf44f2590759"
+      "value": "e80af07fc4fa9c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235237569",
-    "display": "Noe Lueilwitz"
+    "display": "Kerry Runolfsdottir"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "205-067-2358",
+      "value": "1-982-392-0036",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "810.813.5015",
+      "value": "(267) 827-0534 x2110",
       "use": "work"
     }
   ],

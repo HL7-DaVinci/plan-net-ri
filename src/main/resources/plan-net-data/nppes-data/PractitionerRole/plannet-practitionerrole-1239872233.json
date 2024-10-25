@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "68c765cfe813a2"
+      "value": "dffb66df36d955"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239872233",
-    "display": "Cletus Bradtke"
+    "display": "Vito Skiles"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223X0400X",
-          "display": "Orthodontics and Dentofacial Orthopedics"
+          "display": "Orthodontics and Dentofacial Orthopedic Dentist"
         }
       ],
-      "text": "Orthodontics and Dentofacial Orthopedics"
+      "text": "Orthodontics and Dentofacial Orthopedic Dentist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(218) 432-9510",
+      "value": "(120) 104-5987 x65273",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "573.548.5408 x099",
+      "value": "684.289.6445",
       "use": "work"
     }
   ],

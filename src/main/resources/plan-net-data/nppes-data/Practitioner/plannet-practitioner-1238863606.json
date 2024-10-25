@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dare",
+      "family": "Hickle",
       "given": [
-        "Lynn"
+        "Dallas",
+        "Brenton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "760-858-5005",
+      "value": "610-791-2089 x29770",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(750) 683-4766",
+      "value": "275-268-3195 x1841",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2024-05-15",
-        "end": "2027-05-15"
+        "start": "2023-10-15",
+        "end": "2026-10-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2024-03-04",
-        "end": "2027-03-04"
+        "start": "2022-05-24",
+        "end": "2025-05-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -241,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

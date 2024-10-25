@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nader",
+      "family": "Crist",
       "given": [
-        "Preston"
+        "Percy",
+        "Gerald"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "828.370.1713",
+      "value": "939.901.3929",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(267) 367-4207 x256",
+      "value": "561-466-3647 x7249",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-02-16",
-        "end": "2026-02-16"
+        "start": "2023-08-08",
+        "end": "2026-08-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

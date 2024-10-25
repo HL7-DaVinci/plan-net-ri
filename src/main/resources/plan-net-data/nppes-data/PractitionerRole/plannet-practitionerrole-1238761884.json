@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "0d85c72b342639"
+      "value": "2a0c7c893678d6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238761884",
-    "display": "Brendon Sporer"
+    "display": "Major Stanton"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223X0400X",
-          "display": "Orthodontics and Dentofacial Orthopedics"
+          "display": "Orthodontics and Dentofacial Orthopedic Dentist"
         }
       ],
-      "text": "Orthodontics and Dentofacial Orthopedics"
+      "text": "Orthodontics and Dentofacial Orthopedic Dentist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "606-950-3627 x50954",
+      "value": "(250) 477-0418",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(965) 286-5872 x45396",
+      "value": "814-572-2133 x74842",
       "use": "work"
     }
   ],

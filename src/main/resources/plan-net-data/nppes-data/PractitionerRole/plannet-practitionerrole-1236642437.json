@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "6257ae2cfcb7fb"
+      "value": "dd05665dded9d8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236642437",
-    "display": "Judi Waters"
+    "display": "Lennie Brekke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2200X",
-          "display": "Adult Health"
+          "display": "Adult Health Nurse Practitioner"
         }
       ],
-      "text": "Adult Health"
+      "text": "Adult Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "734.403.7444 x6426",
+      "value": "(983) 710-2767 x92699",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "102-828-3367 x95785",
+      "value": "(160) 737-1744 x09120",
       "use": "work"
     }
   ],

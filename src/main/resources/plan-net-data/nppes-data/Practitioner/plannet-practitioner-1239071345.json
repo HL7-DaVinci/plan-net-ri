@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Armstrong",
+      "family": "Fahey",
       "given": [
-        "Lon"
+        "Charley"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "355.084.9726 x18258",
+      "value": "942-428-7688",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-204-103-7906 x98216",
+      "value": "608-007-5004 x259",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-04-28",
-        "end": "2026-04-28"
+        "start": "2023-01-02",
+        "end": "2026-01-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085U0001X",
-            "display": "Diagnostic Ultrasound"
+            "display": "Diagnostic Ultrasound Physician"
           }
         ],
-        "text": "Diagnostic Ultrasound"
+        "text": "Diagnostic Ultrasound Physician"
       },
       "period": {
-        "start": "2022-07-21",
-        "end": "2025-07-21"
+        "start": "2022-10-19",
+        "end": "2025-10-19"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

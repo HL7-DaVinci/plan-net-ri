@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schaden",
+      "family": "Stanton",
       "given": [
-        "Darcy",
-        "Florance"
+        "Willene"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-535-361-7343",
+      "value": "202-836-8585 x7103",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "312-086-4149",
+      "value": "(488) 068-8499 x08269",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-03",
-        "end": "2025-07-03"
+        "start": "2022-07-25",
+        "end": "2025-07-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-22",
-        "end": "2025-07-22"
+        "start": "2024-03-04",
+        "end": "2027-03-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

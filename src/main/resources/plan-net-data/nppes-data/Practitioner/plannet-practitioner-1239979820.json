@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Satterfield",
+      "family": "Morissette",
       "given": [
-        "Suanne",
-        "Taisha"
+        "Daphine",
+        "Saundra"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(345) 451-8708 x97616",
+      "value": "420.267.6105",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-987-560-2190 x313",
+      "value": "(659) 885-6495",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-04-06",
-        "end": "2027-04-06"
+        "start": "2023-05-31",
+        "end": "2026-05-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

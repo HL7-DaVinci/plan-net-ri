@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "4aa49a93202c5d"
+      "value": "4f410a63ed383e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233610323",
-    "display": "Donny Hegmann"
+    "display": "German Jast"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-917-435-2801 x5029",
+      "value": "1-502-232-8554",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(603) 280-2069",
+      "value": "(664) 101-3087 x1662",
       "use": "work"
     }
   ],

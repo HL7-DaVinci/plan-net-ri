@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Leffler",
+      "family": "Quitzon",
       "given": [
-        "Monte",
-        "Keneth"
+        "Jan"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "741-155-2935 x87871",
+      "value": "(330) 324-1992",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-665-254-9832",
+      "value": "385-040-7814 x69192",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2021-07-03",
-        "end": "2024-07-03"
+        "start": "2022-11-01",
+        "end": "2025-11-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

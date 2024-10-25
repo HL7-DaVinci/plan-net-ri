@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "d30b49d098fffa"
+      "value": "2420635ebee9ba"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231499949",
-    "display": "Lynn Stoltenberg"
+    "display": "Gil Russel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "517.124.8307 x999",
+      "value": "1-808-313-6783 x41893",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "174-098-2764 x6966",
+      "value": "498.592.9020 x2542",
       "use": "work"
     }
   ],

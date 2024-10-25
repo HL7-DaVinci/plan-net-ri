@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jacobs",
+      "family": "Haley",
       "given": [
-        "Florentino"
+        "Hong",
+        "Freddy"
       ],
       "suffix": [
         "M-D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(870) 059-5561 x078",
+      "value": "1-103-992-6665 x489",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-865-803-2613 x3965",
+      "value": "746-655-8187 x0519",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2022-08-28",
-        "end": "2025-08-28"
+        "start": "2023-08-30",
+        "end": "2026-08-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

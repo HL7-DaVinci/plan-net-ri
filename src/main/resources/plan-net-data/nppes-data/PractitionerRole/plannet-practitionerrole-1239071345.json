@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "65cb57a56ea987"
+      "value": "6486492c2736e5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239071345",
-    "display": "Lon Armstrong"
+    "display": "Charley Fahey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "355.084.9726 x18258",
+      "value": "942-428-7688",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-204-103-7906 x98216",
+      "value": "608-007-5004 x259",
       "use": "work"
     }
   ],

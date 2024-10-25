@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Conroy",
+      "family": "Mayer",
       "given": [
-        "Greg",
-        "Moshe"
+        "Les"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-797-946-5237 x85370",
+      "value": "295.318.6204 x127",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(733) 964-5306 x826",
+      "value": "(726) 793-8620 x8866",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2024-04-26",
-        "end": "2027-04-26"
+        "start": "2023-03-01",
+        "end": "2026-03-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

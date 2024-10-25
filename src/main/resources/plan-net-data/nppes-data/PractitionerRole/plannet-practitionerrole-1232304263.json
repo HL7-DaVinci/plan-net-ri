@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "a19d15cd77fa86"
+      "value": "e2be8eb4ad279c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232304263",
-    "display": "Forrest Braun"
+    "display": "Micheal Schuppe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(584) 993-0954 x72960",
+      "value": "150-136-1758 x0731",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-201-736-3886 x675",
+      "value": "970.981.5187 x17465",
       "use": "work"
     }
   ],

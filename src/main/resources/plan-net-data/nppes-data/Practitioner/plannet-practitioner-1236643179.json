@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hane",
+      "family": "Kertzmann",
       "given": [
-        "Hugo",
-        "Demarcus"
+        "Mickey"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "870.806.5129",
+      "value": "1-337-591-5232",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(902) 541-5755 x22403",
+      "value": "(863) 892-4066 x4151",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2024-03-20",
-        "end": "2027-03-20"
+        "start": "2022-09-26",
+        "end": "2025-09-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "a6ed70a62140d0"
+      "value": "583ea6786842ba"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239575906",
-    "display": "Eve Borer"
+    "display": "Yoko Lang"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(594) 382-8413",
+      "value": "704.401.8001 x701",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "632-141-3102 x944",
+      "value": "(935) 758-3117 x8728",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hammes",
+      "family": "Wiegand",
       "given": [
-        "Chung"
+        "Corey",
+        "Kirk"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "721.432.1267 x995",
+      "value": "723.610.7268 x4759",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-667-154-5367 x2059",
+      "value": "(222) 706-8911 x0190",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-11-23",
-        "end": "2024-11-23"
+        "start": "2022-01-14",
+        "end": "2025-01-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

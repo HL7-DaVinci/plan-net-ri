@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Kon",
+      "family": "Greenfelder",
       "given": [
-        "Deon",
-        "Cornelius"
+        "Mason",
+        "Israel"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "348.419.5802 x41246",
+      "value": "(965) 193-5125 x229",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(142) 648-1582 x5323",
+      "value": "165-307-1693 x97989",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2023-06-12",
-        "end": "2026-06-12"
+        "start": "2023-08-08",
+        "end": "2026-08-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

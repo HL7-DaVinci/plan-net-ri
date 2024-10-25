@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Senger",
+      "family": "Schmidt",
       "given": [
-        "Maximo"
+        "Andres",
+        "Andre"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "156.908.1902 x17316",
+      "value": "391.230.9625",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-117-955-7570",
+      "value": "(995) 860-5598 x958",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-05-31",
-        "end": "2025-05-31"
+        "start": "2023-04-10",
+        "end": "2026-04-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

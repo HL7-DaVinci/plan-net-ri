@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ernser",
+      "family": "Lemke",
       "given": [
-        "Les",
-        "Doyle"
+        "Emilio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "385-330-4096 x10943",
+      "value": "890-701-2580 x67647",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-669-103-7497 x75354",
+      "value": "781-105-9745 x001",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-07-17",
-        "end": "2024-07-17"
+        "start": "2023-04-19",
+        "end": "2026-04-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

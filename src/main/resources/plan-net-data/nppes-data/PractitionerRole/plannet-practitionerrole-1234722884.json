@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "ff465ebe11ee31"
+      "value": "4a6768c5518a88"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234722884",
-    "display": "Giovanni Gusikowski"
+    "display": "Bruno Orn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0001X",
-          "display": "Radiation Oncology"
+          "display": "Radiation Oncology Physician"
         }
       ],
-      "text": "Radiation Oncology"
+      "text": "Radiation Oncology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "719.258.7506",
+      "value": "1-552-562-2522",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "679-486-0285 x5647",
+      "value": "191-301-8791",
       "use": "work"
     }
   ],

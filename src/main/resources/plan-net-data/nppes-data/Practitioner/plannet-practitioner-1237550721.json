@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rodriguez",
+      "family": "McKenzie",
       "given": [
-        "Carissa",
-        "Maximina"
+        "Shirley"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "735-206-6522",
+      "value": "(459) 509-7958 x5800",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "786-515-3355 x0263",
+      "value": "743.271.5441 x2349",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2022-08-01",
-        "end": "2025-08-01"
+        "start": "2021-11-15",
+        "end": "2024-11-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

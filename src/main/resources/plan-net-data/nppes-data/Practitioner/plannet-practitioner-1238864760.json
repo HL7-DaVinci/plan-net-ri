@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Reilly",
+      "family": "Bins",
       "given": [
-        "Rhona"
+        "Ermelinda"
       ],
       "suffix": [
         "F.N.P."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(361) 695-1250 x510",
+      "value": "523-996-0367 x980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-671-325-1144 x8702",
+      "value": "358-281-7957 x1744",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2024-03-30",
-        "end": "2027-03-30"
+        "start": "2023-03-03",
+        "end": "2026-03-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

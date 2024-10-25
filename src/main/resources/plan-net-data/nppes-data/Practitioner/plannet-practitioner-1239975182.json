@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beer",
+      "family": "Heidenreich",
       "given": [
-        "Vincent",
-        "Mitchel"
+        "Lenard",
+        "Lucio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "227.936.7344 x71101",
+      "value": "961.807.7210",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "373-867-0389 x10118",
+      "value": "254-334-5186 x95669",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-06-29",
-        "end": "2026-06-29"
+        "start": "2022-04-25",
+        "end": "2025-04-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

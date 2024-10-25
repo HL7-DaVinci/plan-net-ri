@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b8cb01a03e22e4"
+      "value": "bd05f970a300e7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237950411",
-    "display": "Derek Swaniawski"
+    "display": "Caleb Kilback"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "728-277-1881",
+      "value": "620.704.3214 x71610",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "221.768.8118 x7630",
+      "value": "415-838-4270",
       "use": "work"
     }
   ],

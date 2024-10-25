@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiza",
+      "family": "Windler",
       "given": [
-        "Duncan",
-        "Abdul"
+        "Darnell"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "127-426-4962 x1519",
+      "value": "146.354.6377 x8621",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "585-684-5000 x86185",
+      "value": "1-371-161-7133 x3189",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-12-20",
-        "end": "2026-12-20"
+        "start": "2022-02-19",
+        "end": "2025-02-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

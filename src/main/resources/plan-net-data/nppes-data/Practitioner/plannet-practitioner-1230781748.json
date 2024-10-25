@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cummings",
+      "family": "Littel",
       "given": [
-        "Sheldon"
+        "Jess"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-928-213-7603 x629",
+      "value": "(334) 056-6089 x2598",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-904-124-7603",
+      "value": "359.150.6747 x301",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-10-24",
-        "end": "2025-10-24"
+        "start": "2021-12-10",
+        "end": "2024-12-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

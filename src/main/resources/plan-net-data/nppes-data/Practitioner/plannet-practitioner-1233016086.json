@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bradtke",
+      "family": "Christiansen",
       "given": [
-        "Bernie"
+        "Beau"
       ],
       "suffix": [
         "MD, MBA"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-901-776-4269",
+      "value": "917-738-3726 x98708",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "749-189-4478",
+      "value": "1-349-591-4933 x84525",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2024-06-10",
-        "end": "2027-06-10"
+        "start": "2023-01-23",
+        "end": "2026-01-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

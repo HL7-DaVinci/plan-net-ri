@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McClure",
+      "family": "Cremin",
       "given": [
-        "Darius",
-        "Sherman"
+        "Louie",
+        "Buddy"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-979-187-6796",
+      "value": "369-713-0145 x39168",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "807.094.6749 x35090",
+      "value": "526-788-5748 x2111",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2023-02-12",
-        "end": "2026-02-12"
+        "start": "2022-02-16",
+        "end": "2025-02-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

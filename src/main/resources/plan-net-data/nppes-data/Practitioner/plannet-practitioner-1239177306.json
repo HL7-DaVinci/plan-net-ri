@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Abernathy",
+      "family": "Walter",
       "given": [
-        "Greg",
-        "Jean"
+        "Lee",
+        "Dirk"
       ],
       "suffix": [
         "Iii",
@@ -46,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-460-897-9819",
+      "value": "1-286-658-7608 x8123",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-634-119-4128",
+      "value": "1-871-864-0808 x6979",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-01-02",
-        "end": "2025-01-02"
+        "start": "2023-01-12",
+        "end": "2026-01-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

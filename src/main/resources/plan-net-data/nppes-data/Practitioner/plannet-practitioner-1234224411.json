@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reynolds",
+      "family": "Little",
       "given": [
-        "Phil",
-        "Jonathon"
+        "Shane",
+        "Filiberto"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(894) 521-4106",
+      "value": "891.423.5662 x10072",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-524-150-3867 x27262",
+      "value": "799.073.9643 x3507",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2024-01-03",
-        "end": "2027-01-03"
+        "start": "2023-05-11",
+        "end": "2026-05-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-05-13",
-        "end": "2027-05-13"
+        "start": "2024-06-19",
+        "end": "2027-06-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

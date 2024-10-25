@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Jaskolski",
       "given": [
-        "Osvaldo",
-        "Manuel"
+        "Lincoln"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "287.810.6781 x756",
+      "value": "637.470.6071 x2994",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "651.341.5102 x326",
+      "value": "792-193-4053 x0572",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-07-29",
-        "end": "2025-07-29"
+        "start": "2023-06-20",
+        "end": "2026-06-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

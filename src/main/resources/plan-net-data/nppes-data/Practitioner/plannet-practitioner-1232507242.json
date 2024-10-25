@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Corwin",
+      "family": "Grady",
       "given": [
-        "Russ"
+        "Alexis"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "475.986.8529",
+      "value": "(135) 317-3335 x791",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "141.465.5631 x8115",
+      "value": "1-863-356-4141 x39370",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-23",
-        "end": "2025-12-23"
+        "start": "2022-04-08",
+        "end": "2025-04-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

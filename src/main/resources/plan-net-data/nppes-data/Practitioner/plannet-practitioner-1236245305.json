@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Moen",
+      "family": "Ankunding",
       "given": [
-        "Gino"
+        "Lamar",
+        "Carlton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "974-139-7858",
+      "value": "1-308-718-9608 x2783",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(181) 357-8756 x70418",
+      "value": "1-275-650-4419 x1835",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-12-09",
-        "end": "2026-12-09"
+        "start": "2023-03-20",
+        "end": "2026-03-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-08-10",
-        "end": "2026-08-10"
+        "start": "2022-10-25",
+        "end": "2025-10-25"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -242,6 +243,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

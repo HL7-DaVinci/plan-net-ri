@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "e6bad999ab8b83"
+      "value": "cdb0d0e5fa791c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236540906",
-    "display": "Winston Veum"
+    "display": "Lawrence Grimes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VX0201X",
-          "display": "Gynecologic Oncology"
+          "display": "Gynecologic Oncology Physician"
         }
       ],
-      "text": "Gynecologic Oncology"
+      "text": "Gynecologic Oncology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-317-913-7864",
+      "value": "454-989-6117",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(224) 128-5030",
+      "value": "1-517-421-5582 x00791",
       "use": "work"
     }
   ],

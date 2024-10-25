@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hirthe",
+      "family": "Kozey",
       "given": [
-        "Saul",
-        "Genaro"
+        "Jame"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(360) 192-8297 x007",
+      "value": "(660) 187-9663 x8668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-682-278-5073 x31647",
+      "value": "1-575-563-5961",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2023-05-23",
-        "end": "2026-05-23"
+        "start": "2022-11-20",
+        "end": "2025-11-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

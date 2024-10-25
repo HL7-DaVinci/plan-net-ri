@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Conn",
+      "family": "Miller",
       "given": [
-        "Catrina"
+        "Shanel",
+        "Sana"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(358) 276-7582",
+      "value": "1-928-856-5427 x490",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "516-845-7542 x935",
+      "value": "930.650.7200 x393",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-03-21",
-        "end": "2025-03-21"
+        "start": "2024-02-06",
+        "end": "2027-02-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "11f8ca481d384c"
+      "value": "26860d71801137"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232307159",
-    "display": "Jae Rempel"
+    "display": "Delorse McKenzie"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-941-040-6429 x4490",
+      "value": "665.496.8735 x250",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(449) 069-7349 x3613",
+      "value": "(130) 823-8498",
       "use": "work"
     }
   ],

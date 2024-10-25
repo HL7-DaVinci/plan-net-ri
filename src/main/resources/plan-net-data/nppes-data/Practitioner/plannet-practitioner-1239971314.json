@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Robel",
+      "family": "McCullough",
       "given": [
-        "Damien",
-        "Nathan"
+        "Chet"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-473-521-4835 x1440",
+      "value": "863.206.0557",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "646.142.6837 x0382",
+      "value": "(930) 796-5161",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-02-19",
-        "end": "2026-02-19"
+        "start": "2023-06-23",
+        "end": "2026-06-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-11-06",
-        "end": "2025-11-06"
+        "start": "2023-10-03",
+        "end": "2026-10-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -263,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

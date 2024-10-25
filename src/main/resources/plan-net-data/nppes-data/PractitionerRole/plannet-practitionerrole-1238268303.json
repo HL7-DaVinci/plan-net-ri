@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "faa7107156d5fd"
+      "value": "1773703e0327df"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238268303",
-    "display": "Allen Beatty"
+    "display": "Bud Baumbach"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084P0800X",
-          "display": "Psychiatry"
+          "display": "Psychiatry Physician"
         }
       ],
-      "text": "Psychiatry"
+      "text": "Psychiatry Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(280) 404-3418 x849",
+      "value": "1-591-038-7881 x08824",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "157.438.5177",
+      "value": "489.721.0696",
       "use": "work"
     }
   ],

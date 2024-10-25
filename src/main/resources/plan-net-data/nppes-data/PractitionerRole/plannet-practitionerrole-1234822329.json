@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "a15cdb028fb33c"
+      "value": "3f431db9a76249"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234822329",
-    "display": "Danna Koss"
+    "display": "Felice Barton"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LX0001X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Nurse Practitioner"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-709-702-7632 x39225",
+      "value": "1-312-017-3686",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "795.904.2335 x11764",
+      "value": "913-563-8714 x4987",
       "use": "work"
     }
   ],

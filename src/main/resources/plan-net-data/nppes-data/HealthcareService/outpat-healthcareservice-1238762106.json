@@ -52,7 +52,7 @@
         {
           "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
           "code": "outpat",
-          "display": "Outpat"
+          "display": "Clinic or Outpatient Facility"
         }
       ],
       "text": "outpat"
@@ -68,12 +68,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "922.984.8356 x127",
+      "value": "1-957-983-9114 x6975",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-141-144-2506 x2231",
+      "value": "1-957-085-1945 x92822",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feeney",
+      "family": "Robel",
       "given": [
-        "Melaine",
-        "Philomena"
+        "Leigha",
+        "Terri"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(721) 149-0887 x58138",
+      "value": "(779) 254-4779 x103",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-897-357-5721 x55172",
+      "value": "1-317-032-2139 x293",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2021-11-20",
-        "end": "2024-11-20"
+        "start": "2022-06-06",
+        "end": "2025-06-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

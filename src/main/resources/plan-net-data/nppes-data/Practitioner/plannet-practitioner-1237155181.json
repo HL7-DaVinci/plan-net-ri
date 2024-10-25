@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wisoky",
+      "family": "Bogan",
       "given": [
-        "Delsie"
+        "Jeanene",
+        "Sook"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(291) 400-4448 x430",
+      "value": "592-805-7400",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-966-173-1675 x547",
+      "value": "1-450-183-0826 x92596",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-11-14",
-        "end": "2024-11-14"
+        "start": "2023-09-11",
+        "end": "2026-09-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-07-22",
-        "end": "2026-07-22"
+        "start": "2024-10-03",
+        "end": "2027-10-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

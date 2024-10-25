@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gleichner",
+      "family": "Trantow",
       "given": [
-        "Desirae",
-        "Shera"
+        "Phillis"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-572-246-1272 x8169",
+      "value": "(687) 427-9863 x923",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-152-757-0473 x644",
+      "value": "862.222.1709 x94185",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-11-05",
-        "end": "2024-11-05"
+        "start": "2022-08-18",
+        "end": "2025-08-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

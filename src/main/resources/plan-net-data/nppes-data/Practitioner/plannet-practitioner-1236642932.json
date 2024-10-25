@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schultz",
+      "family": "Braun",
       "given": [
-        "Zenobia",
-        "Jaleesa"
+        "Shan"
       ],
       "suffix": [
         "M.D., FAAP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-282-616-6500",
+      "value": "936.604.4595 x2350",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-828-142-5415",
+      "value": "934.717.7893 x726",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-10-02",
-        "end": "2026-10-02"
+        "start": "2022-03-27",
+        "end": "2025-03-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

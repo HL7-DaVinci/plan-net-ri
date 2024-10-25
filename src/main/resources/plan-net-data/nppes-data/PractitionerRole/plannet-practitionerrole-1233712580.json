@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://codac-inc.com",
-      "value": "d7b066c0b22536"
+      "value": "40ea82698c1393"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233712580",
-    "display": "Eusebio Mohr"
+    "display": "Matt Rutherford"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235731321",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "302.945.8285",
+      "value": "365-982-1539 x0216",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "831-751-6664 x93887",
+      "value": "1-695-611-6233 x636",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cassin",
+      "family": "Spinka",
       "given": [
-        "Chance",
-        "Timmy"
+        "Valentine",
+        "Spencer"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(282) 240-3014 x948",
+      "value": "(706) 987-6037 x052",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-465-611-3572 x9816",
+      "value": "(274) 455-2609 x8328",
       "use": "work"
     }
   ],
@@ -112,31 +112,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Murazik",
+      "family": "Simonis",
       "given": [
-        "Nicolette"
+        "Gaynelle"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-441-511-4421 x0318",
+      "value": "372.631.4846 x59693",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "866.712.3484 x62329",
+      "value": "(340) 775-0327",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-10-11",
-        "end": "2026-10-11"
+        "start": "2023-10-03",
+        "end": "2026-10-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "6abfd43988970f"
+      "value": "0d3b9782f115bb"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239772962",
-    "display": "Shirley Turner"
+    "display": "Jody Feeney"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207SC0300X",
-          "display": "Clinical Cytogenetics"
+          "display": "Clinical Cytogenetics Physician"
         }
       ],
-      "text": "Clinical Cytogenetics"
+      "text": "Clinical Cytogenetics Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-579-619-3048 x98583",
+      "value": "816.958.0607 x79300",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "992.754.0496 x7914",
+      "value": "(986) 857-8296 x66989",
       "use": "work"
     }
   ],

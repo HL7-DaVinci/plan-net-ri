@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "139c796c8db3ee"
+      "value": "7a862243692d7a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238569356",
-    "display": "Barton Luettgen"
+    "display": "Rob Wolff"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084P0800X",
-          "display": "Psychiatry"
+          "display": "Psychiatry Physician"
         }
       ],
-      "text": "Psychiatry"
+      "text": "Psychiatry Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "719-884-2476 x957",
+      "value": "(200) 881-0784 x04130",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "407-526-3740 x127",
+      "value": "417.957.7378 x84233",
       "use": "work"
     }
   ],

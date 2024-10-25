@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Smitham",
+      "family": "Dach",
       "given": [
-        "Sharice",
-        "Linnie"
+        "Frankie",
+        "Beata"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "345.880.0114",
+      "value": "(525) 248-8521",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "408-995-0541 x87891",
+      "value": "1-177-903-6881 x4276",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Nutritionist"
       },
       "period": {
-        "start": "2022-05-18",
-        "end": "2025-05-18"
+        "start": "2021-12-07",
+        "end": "2024-12-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

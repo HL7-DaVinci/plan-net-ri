@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-healthcare--ayer-inc.com",
-      "value": "8fd56a8f29f877"
+      "value": "530a005be5c124"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232108552",
-    "display": "Idalia Christiansen"
+    "display": "Lawrence Bahringer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234427431",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "963-952-3420 x43556",
+      "value": "635-450-1271 x349",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "691-260-1600 x8505",
+      "value": "1-263-381-2362 x63311",
       "use": "work"
     }
   ],

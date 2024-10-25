@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnston",
+      "family": "Schaden",
       "given": [
-        "Heide",
-        "Isabella"
+        "Manda",
+        "Yael"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(476) 576-4648 x890",
+      "value": "147-234-8232",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(513) 538-0925 x28289",
+      "value": "1-703-908-7849 x937",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-04-19",
-        "end": "2025-04-19"
+        "start": "2022-12-17",
+        "end": "2025-12-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

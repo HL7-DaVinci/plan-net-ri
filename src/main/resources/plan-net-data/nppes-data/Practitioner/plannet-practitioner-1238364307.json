@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stehr",
+      "family": "Abernathy",
       "given": [
-        "Lane",
-        "Leo"
+        "Titus",
+        "Michel"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "778-730-7254 x504",
+      "value": "1-390-641-2358 x51398",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-138-176-2780",
+      "value": "1-397-745-7829",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-10-22",
-        "end": "2026-10-22"
+        "start": "2023-02-24",
+        "end": "2026-02-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

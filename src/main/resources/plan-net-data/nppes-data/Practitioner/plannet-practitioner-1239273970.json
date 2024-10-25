@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Baumbach",
       "given": [
-        "Freeman"
+        "Terry"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "597-342-2474",
+      "value": "1-109-674-8663 x652",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "962.066.9171",
+      "value": "(436) 688-4070",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-09-12",
-        "end": "2025-09-12"
+        "start": "2024-07-23",
+        "end": "2027-07-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

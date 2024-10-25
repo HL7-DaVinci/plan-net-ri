@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mills",
+      "family": "Murray",
       "given": [
-        "Gonzalo",
-        "Mitchel"
+        "Guadalupe"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(588) 156-0889 x932",
+      "value": "312-432-0509 x1081",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "778-592-7249 x8309",
+      "value": "161.733.1451",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-10-06",
-        "end": "2025-10-06"
+        "start": "2023-02-26",
+        "end": "2026-02-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

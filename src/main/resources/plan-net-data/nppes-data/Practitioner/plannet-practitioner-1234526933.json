@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runolfsdottir",
+      "family": "Prohaska",
       "given": [
-        "Timmy"
+        "Val",
+        "Claude"
       ],
       "suffix": [
         "CRNA"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "117.849.8393 x905",
+      "value": "1-671-785-5230",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "397-031-4513 x154",
+      "value": "630-828-4770",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-03-11",
-        "end": "2026-03-11"
+        "start": "2024-05-03",
+        "end": "2027-05-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

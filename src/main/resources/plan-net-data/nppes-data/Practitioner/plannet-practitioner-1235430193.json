@@ -32,21 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Pouros",
+      "family": "Lowe",
       "given": [
-        "Jordon"
+        "Terrance"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "247-025-0110 x10064",
+      "value": "998-486-7388 x9170",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "215-983-6970 x5185",
+      "value": "874.577.4301 x6416",
       "use": "work"
     }
   ],
@@ -132,14 +132,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2024-03-13",
-        "end": "2027-03-13"
+        "start": "2023-07-22",
+        "end": "2026-07-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

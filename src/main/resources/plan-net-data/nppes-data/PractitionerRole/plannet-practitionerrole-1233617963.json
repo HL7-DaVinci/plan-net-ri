@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "c0ef0f30e6d5c2"
+      "value": "2aa7c7e87bb650"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233617963",
-    "display": "Donte Flatley"
+    "display": "Branden Reichert"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207L00000X",
-          "display": "Anesthesiology"
+          "display": "Anesthesiology Physician"
         }
       ],
-      "text": "Anesthesiology"
+      "text": "Anesthesiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-213-551-0912 x898",
+      "value": "(260) 334-1837 x2403",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "952-840-2726 x9328",
+      "value": "1-828-197-2009 x479",
       "use": "work"
     }
   ],

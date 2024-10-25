@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Smitham",
+      "family": "Heathcote",
       "given": [
-        "Jerrica"
+        "Pura"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-562-844-5918",
+      "value": "179.854.9043 x90285",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-284-986-3464 x460",
+      "value": "(293) 313-0024",
       "use": "work"
     }
   ],
@@ -129,11 +129,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

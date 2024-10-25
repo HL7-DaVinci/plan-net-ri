@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stoltenberg",
+      "family": "MacGyver",
       "given": [
-        "Roland",
-        "Florencio"
+        "Aubrey",
+        "Sydney"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-414-037-7772 x7486",
+      "value": "584-478-7281 x49981",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "590-908-8975 x68850",
+      "value": "(199) 131-2638 x56340",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-09-15",
-        "end": "2025-09-15"
+        "start": "2022-01-19",
+        "end": "2025-01-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

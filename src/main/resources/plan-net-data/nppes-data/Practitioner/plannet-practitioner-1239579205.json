@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Yost",
+      "family": "Reinger",
       "given": [
-        "Porsha",
-        "Kristian"
+        "Lise"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "809.300.1383 x54762",
+      "value": "(784) 093-1391 x435",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(681) 202-6407",
+      "value": "1-262-596-6805 x1844",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-06-14",
-        "end": "2025-06-14"
+        "start": "2024-05-18",
+        "end": "2027-05-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

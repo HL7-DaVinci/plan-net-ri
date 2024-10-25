@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Heller",
+      "family": "Pfeffer",
       "given": [
-        "Dario",
-        "Chauncey"
+        "Markus"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-796-984-9294 x81797",
+      "value": "419-185-0749 x513",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(662) 917-2816 x9751",
+      "value": "758-141-9423 x218",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-11-01",
-        "end": "2025-11-01"
+        "start": "2024-09-22",
+        "end": "2027-09-22"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-07-10",
-        "end": "2025-07-10"
+        "start": "2023-06-14",
+        "end": "2026-06-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

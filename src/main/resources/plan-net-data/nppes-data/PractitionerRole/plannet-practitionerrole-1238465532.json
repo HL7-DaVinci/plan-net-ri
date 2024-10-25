@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "323e94df5b05da"
+      "value": "5786f957d22c5b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238465532",
-    "display": "Jake Haley"
+    "display": "Eugene Kovacek"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-907-801-0943 x536",
+      "value": "368-471-8721 x39664",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "826-514-2407 x2215",
+      "value": "112-132-2496",
       "use": "work"
     }
   ],

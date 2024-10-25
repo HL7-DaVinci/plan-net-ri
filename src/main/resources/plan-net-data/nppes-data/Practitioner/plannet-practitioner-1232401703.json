@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogisich",
+      "family": "Roberts",
       "given": [
-        "Daryl"
+        "Coy"
       ],
       "suffix": [
         "O.D"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "758.739.3139 x0733",
+      "value": "489-696-3693 x63168",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "862.676.0320",
+      "value": "748-126-8063",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2023-08-06",
-        "end": "2026-08-06"
+        "start": "2022-04-04",
+        "end": "2025-04-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

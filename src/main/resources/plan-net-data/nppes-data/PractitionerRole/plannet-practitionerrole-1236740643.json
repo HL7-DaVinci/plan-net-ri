@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "88396b0e940e4e"
+      "value": "cb4de3e0ae8e4f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236740643",
-    "display": "Donovan Wintheiser"
+    "display": "Boris Mueller"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "218.822.4055",
+      "value": "168-315-8694",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "232.940.3545 x6024",
+      "value": "(796) 375-4493 x93587",
       "use": "work"
     }
   ],

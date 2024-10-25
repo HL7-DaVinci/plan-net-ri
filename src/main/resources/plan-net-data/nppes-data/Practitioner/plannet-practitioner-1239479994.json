@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hackett",
+      "family": "Keeling",
       "given": [
-        "Wilford"
+        "Keenan"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-413-312-8186 x987",
+      "value": "1-809-375-0634 x8156",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "840.723.0431 x7756",
+      "value": "(114) 650-4381",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-09-08",
-        "end": "2024-09-08"
+        "start": "2022-02-19",
+        "end": "2025-02-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

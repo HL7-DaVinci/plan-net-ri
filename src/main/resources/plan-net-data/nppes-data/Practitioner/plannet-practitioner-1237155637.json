@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Skiles",
+      "family": "Stark",
       "given": [
-        "Max",
-        "Carol"
+        "Fredric"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "273-902-8527 x4676",
+      "value": "1-487-127-5287 x5560",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(339) 973-8912 x4798",
+      "value": "528.431.5407",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-09-12",
-        "end": "2025-09-12"
+        "start": "2022-02-17",
+        "end": "2025-02-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

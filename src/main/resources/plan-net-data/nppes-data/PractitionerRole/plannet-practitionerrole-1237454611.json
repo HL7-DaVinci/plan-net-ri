@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "02973d820ed626"
+      "value": "3cd404d39b94d9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237454611",
-    "display": "Tamar Schmidt"
+    "display": "Jamila Schmidt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(117) 307-6661 x7763",
+      "value": "(988) 921-1487 x01979",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "865-817-1545",
+      "value": "(790) 625-8868 x2188",
       "use": "work"
     }
   ],

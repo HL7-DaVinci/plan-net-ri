@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "6d9e825a5da46c"
+      "value": "5007a322d7e839"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238569901",
-    "display": "Audria O'Kon"
+    "display": "Delena Huels"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "737-219-6330 x1094",
+      "value": "1-307-673-8292 x8249",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "477.689.5393 x17262",
+      "value": "944-136-1626 x535",
       "use": "work"
     }
   ],

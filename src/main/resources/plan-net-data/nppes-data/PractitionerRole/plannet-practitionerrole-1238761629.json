@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "efe50d1a33d62b"
+      "value": "cc8861117066e5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238761629",
-    "display": "Teresa Runte"
+    "display": "Melodee Hauck"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-804-717-2033",
+      "value": "(652) 363-3063 x162",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "195-539-9781 x6594",
+      "value": "(257) 965-7994 x303",
       "use": "work"
     }
   ],

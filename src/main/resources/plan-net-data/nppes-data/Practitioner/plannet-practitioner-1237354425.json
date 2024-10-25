@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Nikolaus",
       "given": [
-        "Casandra"
+        "Janine",
+        "Chasity"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-202-702-8619 x61706",
+      "value": "1-360-408-8634 x547",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "686-375-5280",
+      "value": "144-995-9273 x0629",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0300X",
-            "display": "Periodontics"
+            "display": "Periodontist"
           }
         ],
-        "text": "Periodontics"
+        "text": "Periodontist"
       },
       "period": {
-        "start": "2021-12-20",
-        "end": "2024-12-20"
+        "start": "2023-10-26",
+        "end": "2026-10-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

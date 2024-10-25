@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kshlerin",
+      "family": "Kohler",
       "given": [
-        "Evelia",
-        "Courtney"
+        "Ina"
       ],
       "prefix": [
         "Dr."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(610) 959-3632 x26827",
+      "value": "456.885.4412 x578",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "226.297.1369 x591",
+      "value": "1-111-469-7016 x43896",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2024-06-18",
-        "end": "2027-06-18"
+        "start": "2024-08-15",
+        "end": "2027-08-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

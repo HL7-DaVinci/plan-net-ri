@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Vandervort",
+      "family": "Wolf",
       "given": [
-        "Michael",
-        "Odilia"
+        "Sueann"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "363-510-5661 x30722",
+      "value": "(928) 064-3973 x68936",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "991-786-3575 x8587",
+      "value": "(827) 764-5360 x83895",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-09-12",
-        "end": "2024-09-12"
+        "start": "2022-11-29",
+        "end": "2025-11-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ortiz",
+      "family": "Satterfield",
       "given": [
-        "Juan",
-        "Jack"
+        "Haywood",
+        "Marlin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(810) 602-1718 x1786",
+      "value": "627-884-1169 x40110",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "315.348.7581 x12178",
+      "value": "656.458.2919 x7512",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-07-04",
-        "end": "2025-07-04"
+        "start": "2023-10-24",
+        "end": "2026-10-24"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johns",
+      "family": "Robel",
       "given": [
-        "Pat",
-        "Natosha"
+        "Tamatha",
+        "Janita"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "724.965.0506 x522",
+      "value": "1-637-036-3185 x08867",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-221-607-7797 x2678",
+      "value": "448-322-5994",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2024-01-28",
-        "end": "2027-01-28"
+        "start": "2024-07-29",
+        "end": "2027-07-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

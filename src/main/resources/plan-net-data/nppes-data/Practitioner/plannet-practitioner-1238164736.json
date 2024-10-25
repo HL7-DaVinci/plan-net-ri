@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Russel",
+      "family": "Schumm",
       "given": [
-        "Preston",
-        "Jamel"
+        "Scott",
+        "Kendrick"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "266-282-6616 x41504",
+      "value": "875-734-1142 x55087",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "715-914-8820 x6691",
+      "value": "(782) 593-7285",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2022-07-26",
-        "end": "2025-07-26"
+        "start": "2023-10-12",
+        "end": "2026-10-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

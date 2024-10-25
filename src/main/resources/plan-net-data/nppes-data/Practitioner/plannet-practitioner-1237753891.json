@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lindgren",
+      "family": "Bergnaum",
       "given": [
-        "Jesse",
-        "Ellsworth"
+        "Bill",
+        "Ken"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "865-305-3074 x41290",
+      "value": "639-143-3741 x023",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "899-707-3326 x736",
+      "value": "526-019-8318",
       "use": "work"
     }
   ],
@@ -147,8 +147,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-07-27",
-        "end": "2026-07-27"
+        "start": "2023-10-14",
+        "end": "2026-10-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,11 +200,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

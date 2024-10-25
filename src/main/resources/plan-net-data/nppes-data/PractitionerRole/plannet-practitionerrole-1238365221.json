@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "aaad149a7bc47a"
+      "value": "dc4eb2231e7f01"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238365221",
-    "display": "Thurman Kub"
+    "display": "Sammie Rempel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "152WC0802X",
-          "display": "Corneal and Contact Management"
+          "display": "Corneal and Contact Management Optometrist"
         }
       ],
-      "text": "Corneal and Contact Management"
+      "text": "Corneal and Contact Management Optometrist"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-167-441-7581 x74167",
+      "value": "(886) 708-8525 x5171",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "459-457-3164 x1903",
+      "value": "1-432-222-5608 x38242",
       "use": "work"
     }
   ],

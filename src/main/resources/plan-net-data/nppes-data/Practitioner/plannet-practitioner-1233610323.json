@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hegmann",
+      "family": "Jast",
       "given": [
-        "Donny"
+        "German"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-917-435-2801 x5029",
+      "value": "1-502-232-8554",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(603) 280-2069",
+      "value": "(664) 101-3087 x1662",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-08-14",
-        "end": "2026-08-14"
+        "start": "2024-05-05",
+        "end": "2027-05-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

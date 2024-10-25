@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fay",
+      "family": "Bauch",
       "given": [
-        "Lisbeth",
-        "Elba"
+        "Octavia",
+        "Toya"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "539.238.6045 x12904",
+      "value": "(341) 940-9640",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(983) 791-2743",
+      "value": "121.103.9406 x9323",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2021-08-04",
-        "end": "2024-08-04"
+        "start": "2023-05-28",
+        "end": "2026-05-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hansen",
+      "family": "Gerlach",
       "given": [
-        "Genaro"
+        "Levi"
       ],
       "suffix": [
         "DMD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "943-587-4799",
+      "value": "(727) 989-6739 x341",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "173.114.6808",
+      "value": "(481) 856-7573 x229",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-09-01",
-        "end": "2025-09-01"
+        "start": "2022-09-24",
+        "end": "2025-09-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rolfson",
+      "family": "Treutel",
       "given": [
-        "Boris",
-        "Sol"
+        "Elvin",
+        "Asa"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-447-224-6488 x0309",
+      "value": "371.187.8148 x10579",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(216) 917-5183 x37905",
+      "value": "(659) 603-6706 x47953",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-12-21",
-        "end": "2026-12-21"
+        "start": "2024-02-19",
+        "end": "2027-02-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mueller",
+      "family": "Herman",
       "given": [
-        "Janie",
-        "Lynna"
+        "Darcie"
       ],
       "suffix": [
         "N.P."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-316-490-8690 x75005",
+      "value": "526-394-5698 x4123",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(111) 106-0990",
+      "value": "161.097.0601 x245",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-11-19",
-        "end": "2024-11-19"
+        "start": "2023-06-24",
+        "end": "2026-06-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "910ff1fbc672bc"
+      "value": "d4780bc57933a3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239575799",
-    "display": "Van Wiegand"
+    "display": "Guadalupe Shanahan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "619.487.0358 x539",
+      "value": "807.293.4880 x72498",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "148.017.4438",
+      "value": "1-410-704-5973 x86677",
       "use": "work"
     }
   ],

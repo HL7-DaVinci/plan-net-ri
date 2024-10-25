@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Legros",
+      "family": "West",
       "given": [
-        "Trish"
+        "Danyelle",
+        "Lakendra"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(316) 151-1298 x88585",
+      "value": "1-330-888-4809 x12637",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.976.9627 x250",
+      "value": "1-272-585-5455",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC1900X",
-            "display": "Counseling"
+            "display": "Counseling Psychologist"
           }
         ],
-        "text": "Counseling"
+        "text": "Counseling Psychologist"
       },
       "period": {
-        "start": "2023-11-09",
-        "end": "2026-11-09"
+        "start": "2023-11-06",
+        "end": "2026-11-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

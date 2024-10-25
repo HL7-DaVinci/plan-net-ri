@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Zemlak",
+      "family": "Harvey",
       "given": [
-        "Carroll",
-        "Ryan"
+        "Jeffry"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-645-031-2017 x11077",
+      "value": "387-139-6386 x5689",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(802) 780-3379 x500",
+      "value": "494.328.7400 x2106",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-10-28",
-        "end": "2026-10-28"
+        "start": "2024-05-03",
+        "end": "2027-05-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

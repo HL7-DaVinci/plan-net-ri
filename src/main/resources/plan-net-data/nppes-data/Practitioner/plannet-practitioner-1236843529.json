@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Labadie",
+      "family": "Rempel",
       "given": [
-        "Moses"
+        "Benjamin"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-636-997-0938 x41068",
+      "value": "261-958-7600 x06219",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(555) 387-2132 x58242",
+      "value": "713.336.4801",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-08-13",
-        "end": "2025-08-13"
+        "start": "2023-06-30",
+        "end": "2026-06-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wilderman",
+      "family": "Goodwin",
       "given": [
-        "Deandrea",
-        "Halley"
+        "Sharee"
       ],
       "suffix": [
         "NP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-153-485-4956 x966",
+      "value": "602.158.3111 x4565",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(354) 567-2640 x406",
+      "value": "327.135.0596 x34931",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-10-17",
-        "end": "2024-10-17"
+        "start": "2023-08-08",
+        "end": "2026-08-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

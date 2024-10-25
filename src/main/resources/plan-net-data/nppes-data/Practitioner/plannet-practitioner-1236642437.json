@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Waters",
+      "family": "Brekke",
       "given": [
-        "Judi"
+        "Lennie",
+        "Delinda"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "734.403.7444 x6426",
+      "value": "(983) 710-2767 x92699",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "102-828-3367 x95785",
+      "value": "(160) 737-1744 x09120",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-12-24",
-        "end": "2025-12-24"
+        "start": "2022-04-28",
+        "end": "2025-04-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

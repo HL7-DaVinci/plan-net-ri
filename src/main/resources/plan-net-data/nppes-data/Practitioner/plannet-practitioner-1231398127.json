@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Volkman",
+      "family": "Romaguera",
       "given": [
-        "Emmett"
+        "Titus",
+        "Cletus"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "839-784-1525 x9336",
+      "value": "1-211-774-2063",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "896.693.2169 x3103",
+      "value": "494-236-7359 x6296",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2023-06-06",
-        "end": "2026-06-06"
+        "start": "2022-02-13",
+        "end": "2025-02-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

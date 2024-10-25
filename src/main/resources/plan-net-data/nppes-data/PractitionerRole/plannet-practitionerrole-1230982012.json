@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "53b4e3917044b9"
+      "value": "de0cd705e36488"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230982012",
-    "display": "Isaac Lueilwitz"
+    "display": "Efren Tremblay"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-333-973-4441 x7461",
+      "value": "375-758-2023 x008",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "485.599.7047 x96738",
+      "value": "386-575-3137 x9475",
       "use": "work"
     }
   ],

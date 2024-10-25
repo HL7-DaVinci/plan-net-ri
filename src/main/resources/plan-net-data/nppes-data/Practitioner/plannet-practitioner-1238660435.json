@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Smith",
+      "family": "Marks",
       "given": [
-        "Pat"
+        "Felipe",
+        "Luigi"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "604.163.0042",
+      "value": "239-491-5739",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "806-495-8062 x28791",
+      "value": "201.878.4778 x5236",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2024-01-17",
-        "end": "2027-01-17"
+        "start": "2023-06-28",
+        "end": "2026-06-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

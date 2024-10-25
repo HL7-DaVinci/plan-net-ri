@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoeger",
+      "family": "Sipes",
       "given": [
-        "Mervin"
+        "Refugio",
+        "Leandro"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-903-493-5388 x025",
+      "value": "(728) 700-2821 x4761",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "616-937-8349 x919",
+      "value": "(306) 537-4383 x906",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2022-08-19",
-        "end": "2025-08-19"
+        "start": "2022-10-05",
+        "end": "2025-10-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2023-07-23",
-        "end": "2026-07-23"
+        "start": "2022-02-10",
+        "end": "2025-02-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -266,14 +267,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TH0100X",
-            "display": "Health Service"
+            "display": "Health Service Psychologist"
           }
         ],
-        "text": "Health Service"
+        "text": "Health Service Psychologist"
       },
       "period": {
-        "start": "2022-10-17",
-        "end": "2025-10-17"
+        "start": "2022-03-06",
+        "end": "2025-03-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

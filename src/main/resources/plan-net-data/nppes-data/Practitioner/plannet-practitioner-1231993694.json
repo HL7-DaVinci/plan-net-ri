@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brown",
+      "family": "Hickle",
       "given": [
-        "Daryl"
+        "Larry",
+        "Hal"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "566-655-8124",
+      "value": "1-509-059-9165 x2024",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(109) 599-3897 x8434",
+      "value": "(287) 789-8137 x37373",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-04-06",
-        "end": "2025-04-06"
+        "start": "2024-07-24",
+        "end": "2027-07-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

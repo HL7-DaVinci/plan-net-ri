@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hirthe",
+      "family": "Jacobi",
       "given": [
-        "Renaldo",
-        "Jimmy"
+        "Julio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "192.870.5248 x475",
+      "value": "227.922.6232 x6910",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "637-949-9735 x866",
+      "value": "1-842-778-8682 x311",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204E00000X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral & Maxillofacial Surgery (D.M.D.)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral & Maxillofacial Surgery (D.M.D.)"
       },
       "period": {
-        "start": "2023-05-30",
-        "end": "2026-05-30"
+        "start": "2024-07-05",
+        "end": "2027-07-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

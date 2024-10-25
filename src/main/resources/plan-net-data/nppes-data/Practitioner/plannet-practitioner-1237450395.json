@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nicolas",
+      "family": "Lowe",
       "given": [
-        "Michale"
+        "Dan"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "472.357.2657 x211",
+      "value": "(108) 036-8424",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(330) 819-0326",
+      "value": "(490) 848-8748 x656",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2022-10-23",
-        "end": "2025-10-23"
+        "start": "2023-04-26",
+        "end": "2026-04-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

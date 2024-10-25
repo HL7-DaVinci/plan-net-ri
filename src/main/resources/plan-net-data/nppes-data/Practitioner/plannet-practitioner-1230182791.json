@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Morissette",
+      "family": "Rath",
       "given": [
-        "Debora",
-        "Kenia"
+        "Mayme"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "834.281.1527 x77032",
+      "value": "387.815.2205 x4238",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(247) 596-6906",
+      "value": "976-554-4173 x600",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2024-06-06",
-        "end": "2027-06-06"
+        "start": "2024-08-24",
+        "end": "2027-08-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

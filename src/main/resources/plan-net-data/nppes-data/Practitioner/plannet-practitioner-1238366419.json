@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Donnelly",
       "given": [
-        "Jarvis"
+        "Devon"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-245-914-6870 x570",
+      "value": "(871) 074-1028 x121",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-406-424-8882 x27307",
+      "value": "1-993-929-7420 x2791",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-10-20",
-        "end": "2024-10-20"
+        "start": "2023-12-06",
+        "end": "2026-12-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

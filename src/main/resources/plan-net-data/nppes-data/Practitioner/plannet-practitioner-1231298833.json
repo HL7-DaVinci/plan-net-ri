@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Wilkinson",
       "given": [
-        "Elvin",
-        "Garret"
+        "Quentin",
+        "Jeromy"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "273.416.2839",
+      "value": "157.627.6984 x352",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "656-114-3416 x561",
+      "value": "(166) 714-1234 x157",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0204X",
-            "display": "Vascular and Interventional Radiology"
+            "display": "Vascular & Interventional Radiology Physician"
           }
         ],
-        "text": "Vascular and Interventional Radiology"
+        "text": "Vascular & Interventional Radiology Physician"
       },
       "period": {
-        "start": "2024-02-06",
-        "end": "2027-02-06"
+        "start": "2024-08-09",
+        "end": "2027-08-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kreiger",
+      "family": "Anderson",
       "given": [
-        "Richie"
+        "Ricardo"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-436-457-0796 x357",
+      "value": "620-018-9440 x0760",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-945-830-3035 x8311",
+      "value": "1-948-445-3441 x732",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-08-02",
-        "end": "2025-08-02"
+        "start": "2024-10-11",
+        "end": "2027-10-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

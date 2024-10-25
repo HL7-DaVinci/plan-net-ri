@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stehr",
+      "family": "Metz",
       "given": [
-        "Maxie",
-        "Juana"
+        "Alfreda",
+        "Angelika"
       ],
       "suffix": [
         "PT"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-286-303-9992",
+      "value": "1-139-591-7529 x2351",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-338-135-2369",
+      "value": "(966) 386-0357 x07100",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-10-03",
-        "end": "2025-10-03"
+        "start": "2023-04-09",
+        "end": "2026-04-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

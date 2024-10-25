@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "King",
+      "family": "Heidenreich",
       "given": [
-        "Edyth"
+        "Tyler",
+        "Shila"
       ],
       "suffix": [
         "RN, PCNS"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "692-119-7471 x0741",
+      "value": "1-342-516-4381 x64227",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-552-612-4028",
+      "value": "901.320.1780",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "101YM0800X",
-            "display": "Mental Health"
+            "display": "Mental Health Counselor"
           }
         ],
-        "text": "Mental Health"
+        "text": "Mental Health Counselor"
       },
       "period": {
-        "start": "2022-01-30",
-        "end": "2025-01-30"
+        "start": "2023-04-20",
+        "end": "2026-04-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

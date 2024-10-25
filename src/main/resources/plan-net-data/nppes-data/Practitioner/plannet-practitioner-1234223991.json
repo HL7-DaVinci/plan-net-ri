@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Little",
+      "family": "Heaney",
       "given": [
-        "Ramonita",
-        "Xenia"
+        "Raven"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(681) 952-8637 x0803",
+      "value": "(616) 988-5587 x3469",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-159-070-1201 x44003",
+      "value": "(893) 750-0030 x3699",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-11-11",
-        "end": "2026-11-11"
+        "start": "2021-12-27",
+        "end": "2024-12-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

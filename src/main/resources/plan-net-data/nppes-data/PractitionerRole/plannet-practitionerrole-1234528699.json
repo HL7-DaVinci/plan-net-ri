@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "9ec175b41a5fa2"
+      "value": "0880acd932124a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234528699",
-    "display": "Chance Farrell"
+    "display": "Sidney Block"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "763.964.7168",
+      "value": "1-793-083-2676 x0903",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "554-436-6226 x681",
+      "value": "601.057.4558 x87234",
       "use": "work"
     }
   ],

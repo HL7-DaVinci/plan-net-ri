@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "9cac9f64e381a2"
+      "value": "c758a768b5b17e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237950254",
-    "display": "Josiah Goyette"
+    "display": "Erin Armstrong"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-414-660-2862 x76776",
+      "value": "699-102-2415 x04550",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "853.706.9985",
+      "value": "1-190-916-9826 x27543",
       "use": "work"
     }
   ],

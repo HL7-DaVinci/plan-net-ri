@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-healthcare--ayer-inc.com",
-      "value": "01924c136a856a"
+      "value": "52c56530779397"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239973310",
-    "display": "Doug Rogahn"
+    "display": "Hal Feeney"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234427431",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(336) 702-6379",
+      "value": "(347) 280-4080 x038",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-553-278-9445",
+      "value": "1-686-274-5606 x4650",
       "use": "work"
     }
   ],

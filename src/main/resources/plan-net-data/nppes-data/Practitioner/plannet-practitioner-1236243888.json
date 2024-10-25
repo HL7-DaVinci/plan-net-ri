@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Heaney",
+      "family": "Cummerata",
       "given": [
-        "Tequila"
+        "Hyo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "517-411-6520 x27163",
+      "value": "141.294.3534 x71974",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-149-159-3561",
+      "value": "(640) 219-1553 x835",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2021-08-06",
-        "end": "2024-08-06"
+        "start": "2023-10-26",
+        "end": "2026-10-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

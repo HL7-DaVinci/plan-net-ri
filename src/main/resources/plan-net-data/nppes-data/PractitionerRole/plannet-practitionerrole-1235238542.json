@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "b02c5132783d44"
+      "value": "2783a4991e899b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235238542",
-    "display": "Emil Waelchi"
+    "display": "Lee Macejkovic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "878-819-3077 x823",
+      "value": "346.381.4194 x871",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(304) 060-7952 x600",
+      "value": "(432) 543-2097 x16952",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "a2dea8fa9357dd"
+      "value": "55e67a7d78120d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239176068",
-    "display": "Andera Goodwin"
+    "display": "Cherie Marks"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080N0001X",
-          "display": "Neonatal-Perinatal Medicine"
+          "display": "Neonatal-Perinatal Medicine Physician"
         }
       ],
-      "text": "Neonatal-Perinatal Medicine"
+      "text": "Neonatal-Perinatal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "280-221-1372 x6884",
+      "value": "796-781-8539 x4665",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "895.035.6440 x683",
+      "value": "(122) 249-6395",
       "use": "work"
     }
   ],

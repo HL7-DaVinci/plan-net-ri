@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Hara",
+      "family": "Kilback",
       "given": [
-        "Josephina"
+        "Dolores",
+        "Roselee"
       ],
       "suffix": [
         "LICSW"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-363-924-5849 x86120",
+      "value": "(302) 320-3499 x35029",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "741-520-0678 x012",
+      "value": "934-326-4056",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2022-01-09",
-        "end": "2025-01-09"
+        "start": "2024-07-01",
+        "end": "2027-07-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

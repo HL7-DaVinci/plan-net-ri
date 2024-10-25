@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McCullough",
+      "family": "Koss",
       "given": [
-        "Glayds"
+        "Hae",
+        "Un"
       ],
       "suffix": [
         "C.R.N.A."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(226) 314-7177 x50006",
+      "value": "373-793-2526 x873",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(278) 975-1228 x1444",
+      "value": "589-380-1676 x6477",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2022-12-11",
-        "end": "2025-12-11"
+        "start": "2023-04-13",
+        "end": "2026-04-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Williamson",
+      "family": "Kshlerin",
       "given": [
-        "Candie"
+        "Delicia",
+        "Carlene"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "488-271-6237",
+      "value": "(369) 903-7434 x49663",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-426-680-5295",
+      "value": "1-937-042-2012 x7607",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-04-10",
-        "end": "2026-04-10"
+        "start": "2022-04-21",
+        "end": "2025-04-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "31fad1206b48e9"
+      "value": "838fcc9109e993"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237751549",
-    "display": "Ferdinand Johns"
+    "display": "Lynn Maggio"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "103TC0700X",
-          "display": "Clinical"
+          "display": "Clinical Psychologist"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Psychologist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-107-545-7776 x1926",
+      "value": "397.718.0722 x910",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "284.659.5196 x1519",
+      "value": "382-072-8987 x06557",
       "use": "work"
     }
   ],

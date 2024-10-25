@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Armstrong",
+      "family": "Schimmel",
       "given": [
-        "Jonah"
+        "Dwain"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-535-920-0243",
+      "value": "179.462.8088",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "831-447-5980 x87128",
+      "value": "1-429-055-6268 x679",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2022-10-03",
-        "end": "2025-10-03"
+        "start": "2023-02-25",
+        "end": "2026-02-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

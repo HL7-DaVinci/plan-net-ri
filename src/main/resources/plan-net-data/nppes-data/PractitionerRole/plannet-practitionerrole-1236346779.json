@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "0444900c6f1ab6"
+      "value": "9e5ab4968c2ffd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236346779",
-    "display": "Vance Olson"
+    "display": "Jermaine Cremin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2081P0010X",
-          "display": "Pediatric Rehabilitation Medicine"
+          "display": "Pediatric Rehabilitation Medicine Physician"
         }
       ],
-      "text": "Pediatric Rehabilitation Medicine"
+      "text": "Pediatric Rehabilitation Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "478.109.7761 x73291",
+      "value": "(311) 928-7960 x242",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(957) 447-8788 x890",
+      "value": "(234) 645-4309 x8102",
       "use": "work"
     }
   ],

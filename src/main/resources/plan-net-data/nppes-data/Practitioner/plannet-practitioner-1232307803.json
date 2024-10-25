@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stark",
+      "family": "Wiza",
       "given": [
-        "Carol"
+        "Cordell",
+        "Vern"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "756-295-9122 x8478",
+      "value": "968-055-5925 x20499",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-933-697-3498 x6695",
+      "value": "1-972-815-6460 x6474",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-04-14",
-        "end": "2027-04-14"
+        "start": "2024-02-13",
+        "end": "2027-02-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

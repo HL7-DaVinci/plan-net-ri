@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Deckow",
+      "family": "Wunsch",
       "given": [
-        "Tad",
-        "Dillon"
+        "Harland",
+        "Jewell"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(243) 309-6500 x87337",
+      "value": "660.301.1109 x290",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-785-764-8717 x80265",
+      "value": "300-016-4974 x7816",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-09-29",
-        "end": "2024-09-29"
+        "start": "2022-05-26",
+        "end": "2025-05-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2022-05-25",
-        "end": "2025-05-25"
+        "start": "2023-04-30",
+        "end": "2026-04-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -242,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gorczany",
+      "family": "Wehner",
       "given": [
-        "Rodrigo",
-        "Thomas"
+        "Armand"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-601-426-0058 x7854",
+      "value": "(456) 131-0442 x6697",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(184) 394-5443 x055",
+      "value": "(618) 837-9185 x35873",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-11-15",
-        "end": "2024-11-15"
+        "start": "2023-03-14",
+        "end": "2026-03-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2024-06-05",
-        "end": "2027-06-05"
+        "start": "2022-12-05",
+        "end": "2025-12-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -243,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

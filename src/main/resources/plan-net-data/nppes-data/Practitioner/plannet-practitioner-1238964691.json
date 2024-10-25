@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mills",
+      "family": "Gulgowski",
       "given": [
-        "Jessie"
+        "Jeremy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-528-906-3785",
+      "value": "476-641-1819 x615",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(344) 828-6291",
+      "value": "542.746.6038 x360",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-08-05",
-        "end": "2025-08-05"
+        "start": "2023-01-14",
+        "end": "2026-01-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

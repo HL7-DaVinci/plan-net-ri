@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gibson",
+      "family": "O'Hara",
       "given": [
-        "Leo"
+        "Alton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(983) 043-1353 x32484",
+      "value": "1-882-920-7736 x360",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-599-027-8781",
+      "value": "529.018.8934 x317",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-01-14",
-        "end": "2026-01-14"
+        "start": "2022-05-31",
+        "end": "2025-05-31"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

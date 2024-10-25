@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Treutel",
+      "family": "Mills",
       "given": [
-        "Zachary"
+        "Warren",
+        "Kareem"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(313) 334-2453 x9726",
+      "value": "1-367-196-1010 x4638",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-910-874-9429",
+      "value": "115.616.9827",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-02-07",
-        "end": "2026-02-07"
+        "start": "2022-08-29",
+        "end": "2025-08-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

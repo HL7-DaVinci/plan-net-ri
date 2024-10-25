@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "6dfcbe0ad9febd"
+      "value": "37d13cea8e332d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237557106",
-    "display": "Gilbert Daniel"
+    "display": "Graig Beer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Physician"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "236-738-9272 x4351",
+      "value": "296-317-1206",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "841.040.3075",
+      "value": "997.251.0857 x449",
       "use": "work"
     }
   ],

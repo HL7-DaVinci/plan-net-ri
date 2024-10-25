@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Raynor",
+      "family": "Lowe",
       "given": [
-        "Darren",
-        "John"
+        "Billy",
+        "Dwayne"
       ],
       "suffix": [
         "M.D.1208"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "374-699-2338 x27234",
+      "value": "601-918-4123 x98855",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "286.214.7076 x028",
+      "value": "(835) 587-0272 x765",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-09-06",
-        "end": "2024-09-06"
+        "start": "2022-04-16",
+        "end": "2025-04-16"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

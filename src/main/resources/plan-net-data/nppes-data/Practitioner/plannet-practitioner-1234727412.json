@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kerluke",
+      "family": "Cronin",
       "given": [
-        "Adan"
+        "Loyd",
+        "Bobby"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-895-494-9592",
+      "value": "1-582-899-9043 x991",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "393.788.8453 x3568",
+      "value": "1-918-682-5654 x062",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2023-06-08",
-        "end": "2026-06-08"
+        "start": "2023-08-24",
+        "end": "2026-08-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

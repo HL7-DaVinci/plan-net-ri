@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harrington-memorial-hospital-inc.com",
-      "value": "518a74b5186ca4"
+      "value": "860a94a06287ae"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237056043",
-    "display": "Esta Glover"
+    "display": "Suzy Miller"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230780047",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0001X",
-          "display": "Radiation Oncology"
+          "display": "Radiation Oncology Physician"
         }
       ],
-      "text": "Radiation Oncology"
+      "text": "Radiation Oncology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "934-496-3324 x66241",
+      "value": "485-972-6635 x5036",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "647-295-4910",
+      "value": "1-449-367-2355 x173",
       "use": "work"
     }
   ],

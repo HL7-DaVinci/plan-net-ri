@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "dcec8750f66003"
+      "value": "7d0b087f9b9adf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238366351",
-    "display": "Leeanna Kilback"
+    "display": "Lashonda Grimes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(412) 070-9512 x640",
+      "value": "308.289.5707",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "804.614.7572 x6474",
+      "value": "643-593-9349 x2419",
       "use": "work"
     }
   ],

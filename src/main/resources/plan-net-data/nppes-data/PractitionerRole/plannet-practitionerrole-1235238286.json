@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "0e11ce0dac3892"
+      "value": "59e36abf5f1825"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235238286",
-    "display": "Contessa Kozey"
+    "display": "Lizzette O'Connell"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(253) 954-4186 x31667",
+      "value": "908-457-3986 x92578",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "606.774.3219 x7029",
+      "value": "(857) 240-4345 x198",
       "use": "work"
     }
   ],

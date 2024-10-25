@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Torphy",
+      "family": "Ryan",
       "given": [
-        "Claudette"
+        "Lester",
+        "Trinh"
       ],
       "suffix": [
         "N.P."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "862-489-7889 x0969",
+      "value": "433.407.4494",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "113.683.8575 x95128",
+      "value": "529-545-2727 x28158",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-04-16",
-        "end": "2026-04-16"
+        "start": "2023-11-12",
+        "end": "2026-11-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

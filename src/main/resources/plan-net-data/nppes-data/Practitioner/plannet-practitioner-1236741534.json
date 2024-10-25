@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiza",
+      "family": "Heller",
       "given": [
-        "Delisa"
+        "Timothy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "141.173.8573",
+      "value": "343-043-5004 x292",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(362) 136-8703 x2362",
+      "value": "383.094.9352 x3325",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-07-13",
-        "end": "2025-07-13"
+        "start": "2024-10-08",
+        "end": "2027-10-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

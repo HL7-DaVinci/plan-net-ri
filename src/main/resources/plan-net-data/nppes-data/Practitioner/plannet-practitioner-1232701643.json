@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Grady",
+      "family": "Carroll",
       "given": [
-        "Scotty"
+        "Trenton"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "942-714-2848",
+      "value": "(724) 312-7390 x043",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-220-423-1201 x8711",
+      "value": "548.204.2709 x9660",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-02-24",
-        "end": "2027-02-24"
+        "start": "2023-01-02",
+        "end": "2026-01-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

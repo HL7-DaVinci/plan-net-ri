@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feest",
+      "family": "Gerlach",
       "given": [
-        "Wenona",
-        "Love"
+        "Juliane",
+        "Katrice"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "282-625-3553 x861",
+      "value": "1-321-963-2805 x79802",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(335) 041-3034 x387",
+      "value": "591-875-5202",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-12-23",
-        "end": "2025-12-23"
+        "start": "2023-04-10",
+        "end": "2026-04-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

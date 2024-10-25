@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "e9c9d0e22a9d14"
+      "value": "a79cc938319d7f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237852445",
-    "display": "Karren Klein"
+    "display": "Leeanna Roberts"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "494-007-0612",
+      "value": "809.018.4723 x25628",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-834-381-3547 x75987",
+      "value": "1-777-961-0424 x6896",
       "use": "work"
     }
   ],

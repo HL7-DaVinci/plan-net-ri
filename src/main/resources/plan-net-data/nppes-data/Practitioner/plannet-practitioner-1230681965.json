@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Olson",
+      "family": "Stark",
       "given": [
-        "Cruz",
-        "Mohamed"
+        "Jeffrey",
+        "Hosea"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "873.837.9230 x523",
+      "value": "(347) 021-0252",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-349-948-7597",
+      "value": "991-846-3524 x499",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-04-20",
-        "end": "2026-04-20"
+        "start": "2022-05-15",
+        "end": "2025-05-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

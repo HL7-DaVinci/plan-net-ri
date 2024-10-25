@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schroeder",
+      "family": "West",
       "given": [
-        "Franklyn",
-        "Terrell"
+        "Weston",
+        "Morton"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(493) 297-2427 x2382",
+      "value": "1-487-765-1163 x5302",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(366) 567-4433 x169",
+      "value": "1-617-445-1251",
       "use": "work"
     }
   ],
@@ -141,14 +141,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2024-02-28",
-        "end": "2027-02-28"
+        "start": "2024-04-23",
+        "end": "2027-04-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -180,6 +180,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

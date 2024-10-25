@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "d2e2af240ac191"
+      "value": "5d8e3d00f7a4f2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234024013",
-    "display": "Trinidad Turcotte"
+    "display": "Felix Wintheiser"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-186-844-8921",
+      "value": "127-146-2218 x84571",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(854) 515-3141",
+      "value": "717-578-2289 x103",
       "use": "work"
     }
   ],

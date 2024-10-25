@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Effertz",
+      "family": "Reichert",
       "given": [
-        "Gilbert",
-        "Horace"
+        "Florentino",
+        "Joaquin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-311-428-8874",
+      "value": "178.756.2086 x716",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "142.635.3818 x532",
+      "value": "124-985-2443",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-02-16",
-        "end": "2025-02-16"
+        "start": "2024-01-28",
+        "end": "2027-01-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0700X",
-            "display": "Prosthodontics"
+            "display": "Prosthodontist"
           }
         ],
-        "text": "Prosthodontics"
+        "text": "Prosthodontist"
       },
       "period": {
-        "start": "2023-09-21",
-        "end": "2026-09-21"
+        "start": "2022-03-27",
+        "end": "2025-03-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

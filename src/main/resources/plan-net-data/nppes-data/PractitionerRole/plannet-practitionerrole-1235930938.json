@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "fc316bfd0ba030"
+      "value": "cea12212f11561"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235930938",
-    "display": "Toney Aufderhar"
+    "display": "Jonas Jacobson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "933.983.3482",
+      "value": "(643) 345-6319",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-753-512-4433 x02538",
+      "value": "426.453.6467 x17885",
       "use": "work"
     }
   ],

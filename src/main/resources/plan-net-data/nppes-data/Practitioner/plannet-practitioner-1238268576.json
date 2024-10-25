@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hyatt",
+      "family": "Emmerich",
       "given": [
-        "Jeremy",
-        "Ira"
+        "Charles",
+        "Jarod"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(733) 897-9587 x701",
+      "value": "1-520-251-8069 x69135",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-456-586-3559 x928",
+      "value": "(367) 770-1306 x8088",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2023-02-05",
-        "end": "2026-02-05"
+        "start": "2024-01-21",
+        "end": "2027-01-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hodkiewicz",
+      "family": "Grant",
       "given": [
-        "Ellie"
+        "Rosalva",
+        "Lawanda"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "230.775.0972 x0229",
+      "value": "(974) 845-7433 x5612",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "576.834.9865 x99192",
+      "value": "(245) 060-5578 x131",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-07-31",
-        "end": "2024-07-31"
+        "start": "2023-07-19",
+        "end": "2026-07-19"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

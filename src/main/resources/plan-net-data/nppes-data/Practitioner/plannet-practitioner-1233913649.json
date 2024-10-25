@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Marvin",
+      "family": "Cole",
       "given": [
-        "Melody",
-        "Jerri"
+        "Velma"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-830-198-2331 x71717",
+      "value": "(636) 765-3737 x426",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-332-524-4510 x618",
+      "value": "293.426.3039 x704",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Social Worker"
       },
       "period": {
-        "start": "2021-11-26",
-        "end": "2024-11-26"
+        "start": "2022-06-26",
+        "end": "2025-06-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

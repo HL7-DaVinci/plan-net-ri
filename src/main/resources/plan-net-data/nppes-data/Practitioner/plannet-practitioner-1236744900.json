@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Shields",
+      "family": "White",
       "given": [
-        "Ruthie",
-        "Jaymie"
+        "Kirby",
+        "Chu"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-211-810-3566 x56009",
+      "value": "853.976.8628 x456",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(968) 021-8992",
+      "value": "777.426.5802 x506",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-02-24",
-        "end": "2026-02-24"
+        "start": "2022-04-06",
+        "end": "2025-04-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

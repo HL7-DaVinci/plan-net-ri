@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Krajcik",
+      "family": "Corkery",
       "given": [
-        "Marion",
-        "Delicia"
+        "Hyo",
+        "Robin"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "945.419.1205 x979",
+      "value": "1-703-638-4464",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(501) 248-1775",
+      "value": "(241) 199-3711 x4507",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-12-27",
-        "end": "2024-12-27"
+        "start": "2024-10-20",
+        "end": "2027-10-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

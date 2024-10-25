@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "00d114b4651243"
+      "value": "b5a2d04c2db243"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231499824",
-    "display": "Thanh Schultz"
+    "display": "Harold Kessler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "764.774.5121 x8835",
+      "value": "486-800-0429 x65047",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-307-663-9311",
+      "value": "(243) 866-7888",
       "use": "work"
     }
   ],

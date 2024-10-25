@@ -72,10 +72,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Dianne Rutherford",
-        "family": "Rutherford",
+        "text": "Quincy Gibson",
+        "family": "Gibson",
         "given": [
-          "Dianne"
+          "Quincy"
         ]
       },
       "telecom": [
@@ -116,7 +116,7 @@
             }
           ],
           "system": "phone",
-          "value": "998.464.4741 x3393",
+          "value": "(710) 926-3147 x65662",
           "use": "work"
         }
       ],

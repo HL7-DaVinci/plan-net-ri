@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schamberger",
+      "family": "Sanford",
       "given": [
-        "Dominique"
+        "Gabriel"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-900-575-1582 x229",
+      "value": "879-530-3272 x700",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "549.353.8148",
+      "value": "230.690.2672 x5432",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-10-22",
-        "end": "2026-10-22"
+        "start": "2023-10-23",
+        "end": "2026-10-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0107X",
-            "display": "Retina Specialist"
+            "display": "Retina Specialist (Ophthalmology) Physician"
           }
         ],
-        "text": "Retina Specialist"
+        "text": "Retina Specialist (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2024-03-15",
-        "end": "2027-03-15"
+        "start": "2024-05-15",
+        "end": "2027-05-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

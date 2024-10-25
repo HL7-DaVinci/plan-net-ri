@@ -34,8 +34,8 @@
       "use": "official",
       "family": "Jones",
       "given": [
-        "Arturo",
-        "Isreal"
+        "Mathew",
+        "Lindsey"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "145.847.5218 x29554",
+      "value": "116-577-2649 x04347",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-834-853-6901 x2493",
+      "value": "1-989-171-2377 x4367",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2022-07-09",
-        "end": "2025-07-09"
+        "start": "2021-11-09",
+        "end": "2024-11-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

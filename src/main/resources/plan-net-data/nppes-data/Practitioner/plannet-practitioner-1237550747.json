@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schultz",
+      "family": "Volkman",
       "given": [
-        "Victor",
-        "Delmer"
+        "Granville",
+        "Jonas"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(533) 788-8328 x0563",
+      "value": "743.519.3209",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(746) 128-2869 x10222",
+      "value": "(636) 588-6574 x2430",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080N0001X",
-            "display": "Neonatal-Perinatal Medicine"
+            "display": "Neonatal-Perinatal Medicine Physician"
           }
         ],
-        "text": "Neonatal-Perinatal Medicine"
+        "text": "Neonatal-Perinatal Medicine Physician"
       },
       "period": {
-        "start": "2023-07-04",
-        "end": "2026-07-04"
+        "start": "2022-06-12",
+        "end": "2025-06-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

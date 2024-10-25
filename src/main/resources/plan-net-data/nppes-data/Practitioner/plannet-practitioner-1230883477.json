@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Reilly",
+      "family": "Ledner",
       "given": [
-        "Oren"
+        "Mervin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "306.218.6026 x48609",
+      "value": "(620) 957-9943 x149",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "874-008-7570",
+      "value": "1-679-666-3156 x2863",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-02-16",
-        "end": "2026-02-16"
+        "start": "2023-05-06",
+        "end": "2026-05-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-12-17",
-        "end": "2026-12-17"
+        "start": "2024-09-07",
+        "end": "2027-09-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

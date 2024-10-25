@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "299181c4aa3175"
+      "value": "3aa8edc3999f81"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236145499",
-    "display": "Delfina Reichert"
+    "display": "Krystle Kilback"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-981-421-1739 x54123",
+      "value": "395-012-8898",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-150-641-1406",
+      "value": "156-805-4406 x2570",
       "use": "work"
     }
   ],

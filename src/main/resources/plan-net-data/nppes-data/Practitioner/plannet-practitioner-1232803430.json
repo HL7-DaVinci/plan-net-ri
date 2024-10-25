@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cassin",
+      "family": "Kulas",
       "given": [
-        "Jonas"
+        "Numbers",
+        "Robert"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-194-830-9386 x49682",
+      "value": "1-947-292-1072",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "146.471.9951 x7930",
+      "value": "516-505-2307 x9863",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2024-01-28",
-        "end": "2027-01-28"
+        "start": "2022-01-30",
+        "end": "2025-01-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

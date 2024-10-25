@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Boyer",
+      "family": "O'Hara",
       "given": [
-        "Vincenzo",
-        "Jacinto"
+        "Duncan",
+        "Aurelio"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "405-267-4259 x4219",
+      "value": "(583) 592-2608 x9246",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(554) 171-6253 x04116",
+      "value": "897.889.1766 x835",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-06-10",
-        "end": "2025-06-10"
+        "start": "2022-03-04",
+        "end": "2025-03-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

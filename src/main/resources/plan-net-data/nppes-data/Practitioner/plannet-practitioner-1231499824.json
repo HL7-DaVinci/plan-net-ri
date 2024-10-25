@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schultz",
+      "family": "Kessler",
       "given": [
-        "Thanh",
-        "Alfonso"
+        "Harold",
+        "Luke"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "764.774.5121 x8835",
+      "value": "486-800-0429 x65047",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-307-663-9311",
+      "value": "(243) 866-7888",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-11-10",
-        "end": "2026-11-10"
+        "start": "2023-06-24",
+        "end": "2026-06-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

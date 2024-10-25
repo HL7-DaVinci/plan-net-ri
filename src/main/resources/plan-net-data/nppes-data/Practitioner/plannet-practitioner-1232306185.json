@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rippin",
+      "family": "Will",
       "given": [
-        "Damon",
-        "Domenic"
+        "Burton"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(259) 304-4913 x10132",
+      "value": "1-910-550-8747 x14727",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "784.753.8976 x414",
+      "value": "894.587.3108",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-05-31",
-        "end": "2026-05-31"
+        "start": "2023-12-25",
+        "end": "2026-12-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-12-13",
-        "end": "2025-12-13"
+        "start": "2022-06-22",
+        "end": "2025-06-22"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -268,14 +267,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2023-12-21",
-        "end": "2026-12-21"
+        "start": "2022-08-08",
+        "end": "2025-08-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -332,14 +331,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2021-12-28",
-        "end": "2024-12-28"
+        "start": "2023-04-11",
+        "end": "2026-04-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -391,11 +390,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

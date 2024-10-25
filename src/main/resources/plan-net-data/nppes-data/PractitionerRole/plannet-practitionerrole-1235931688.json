@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "30e696e08d8342"
+      "value": "2c91afbeb82e0e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235931688",
-    "display": "Ivory McGlynn"
+    "display": "Wilbur Kris"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "646-485-9222 x9859",
+      "value": "(430) 461-9809 x93538",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "685.688.9684 x6582",
+      "value": "641.243.7875 x85796",
       "use": "work"
     }
   ],

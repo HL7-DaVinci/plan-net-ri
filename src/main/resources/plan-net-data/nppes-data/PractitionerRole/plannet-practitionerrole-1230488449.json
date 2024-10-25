@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://kent-county-memorial-hospital.com",
-      "value": "ab96c1af2fd985"
+      "value": "8b19ae854939a7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230488449",
-    "display": "Major Heller"
+    "display": "Thanh Witting"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236643294",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RR0500X",
-          "display": "Rheumatology"
+          "display": "Rheumatology Physician"
         }
       ],
-      "text": "Rheumatology"
+      "text": "Rheumatology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(103) 895-7423 x9584",
+      "value": "(623) 893-3901 x40763",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-737-318-8240 x43555",
+      "value": "890.827.0319 x46086",
       "use": "work"
     }
   ],

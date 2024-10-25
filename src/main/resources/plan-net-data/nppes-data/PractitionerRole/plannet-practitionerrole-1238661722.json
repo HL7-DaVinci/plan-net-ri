@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "93bafa6166c3e9"
+      "value": "b70720d5beb824"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238661722",
-    "display": "Yu Howell"
+    "display": "Mirian Stamm"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-198-230-8085 x90839",
+      "value": "161.975.8854 x63377",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "803.060.6919 x1727",
+      "value": "594-585-2160 x3819",
       "use": "work"
     }
   ],

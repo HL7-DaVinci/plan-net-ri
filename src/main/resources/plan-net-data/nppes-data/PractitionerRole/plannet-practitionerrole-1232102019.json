@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "d1ad3bb88f8be2"
+      "value": "85dde94f6602f3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232102019",
-    "display": "Francesca Schaefer"
+    "display": "Agustina Bosco"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LG0600X",
-          "display": "Gerontology"
+          "display": "Gerontology Nurse Practitioner"
         }
       ],
-      "text": "Gerontology"
+      "text": "Gerontology Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-179-232-5607 x377",
+      "value": "1-589-801-3057 x95161",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "481.164.7415 x642",
+      "value": "(665) 838-9175 x4789",
       "use": "work"
     }
   ],

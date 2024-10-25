@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Ortiz",
+      "family": "Schiller",
       "given": [
-        "Ara"
+        "Agnus",
+        "Victor"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-743-717-0270",
+      "value": "1-650-166-9333",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(843) 670-2127 x78231",
+      "value": "364.797.1037 x5231",
       "use": "work"
     }
   ],
@@ -132,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-23",
-        "end": "2025-01-23"
+        "start": "2021-12-01",
+        "end": "2024-12-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -171,6 +172,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Shanahan",
+      "family": "Osinski",
       "given": [
-        "Patrick"
+        "Douglas",
+        "Sebastian"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "788-058-0101",
+      "value": "766-559-9302 x0230",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-701-224-4964",
+      "value": "109.291.2614 x587",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0700X",
-            "display": "Prosthodontics"
+            "display": "Prosthodontist"
           }
         ],
-        "text": "Prosthodontics"
+        "text": "Prosthodontist"
       },
       "period": {
-        "start": "2021-09-09",
-        "end": "2024-09-09"
+        "start": "2022-05-16",
+        "end": "2025-05-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

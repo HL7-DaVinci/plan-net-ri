@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "96b7de3f898862"
+      "value": "a21aaae5df855b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231495608",
-    "display": "Matilde Hettinger"
+    "display": "Rana Macejkovic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "367500000X",
-          "display": "Nurse Anesthetist, Certified Registered"
+          "display": "Certified Registered Nurse Anesthetist"
         }
       ],
-      "text": "Nurse Anesthetist, Certified Registered"
+      "text": "Certified Registered Nurse Anesthetist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "115.606.9422 x5174",
+      "value": "334-323-1320 x224",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-632-887-3293 x40089",
+      "value": "595.070.9836 x62106",
       "use": "work"
     }
   ],

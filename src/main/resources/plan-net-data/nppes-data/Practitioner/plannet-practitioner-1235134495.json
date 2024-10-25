@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jakubowski",
+      "family": "Welch",
       "given": [
-        "Gregg"
+        "Otis",
+        "Derek"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "716-795-8705 x752",
+      "value": "(841) 034-7298 x06453",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "485.246.2102",
+      "value": "1-176-699-6966",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-08-02",
-        "end": "2024-08-02"
+        "start": "2022-01-17",
+        "end": "2025-01-17"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

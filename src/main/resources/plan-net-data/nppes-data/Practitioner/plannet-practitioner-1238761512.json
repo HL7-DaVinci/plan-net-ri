@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Farrell",
+      "family": "Lynch",
       "given": [
-        "Benton"
+        "Porfirio"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(846) 052-2364",
+      "value": "192.815.3950 x40799",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(394) 693-1774 x77310",
+      "value": "968.170.6418 x10763",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-11-20",
-        "end": "2025-11-20"
+        "start": "2022-02-09",
+        "end": "2025-02-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

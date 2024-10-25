@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "8f337cd488cab5"
+      "value": "7f1dba70b3424c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235539066",
-    "display": "Librada Leannon"
+    "display": "Corliss VonRueden"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "877.745.8995 x03809",
+      "value": "347.454.0406",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-337-751-6697",
+      "value": "274.954.8529 x374",
       "use": "work"
     }
   ],

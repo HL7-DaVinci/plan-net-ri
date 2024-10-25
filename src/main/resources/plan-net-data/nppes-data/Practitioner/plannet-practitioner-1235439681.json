@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rath",
+      "family": "Bradtke",
       "given": [
-        "Sharlene"
+        "Guillermina",
+        "Lucille"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "982.356.3945 x89839",
+      "value": "266.312.2463 x42386",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "958-017-2069 x0094",
+      "value": "573-521-5993 x151",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2023-01-06",
-        "end": "2026-01-06"
+        "start": "2023-03-16",
+        "end": "2026-03-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Okuneva",
+      "family": "Osinski",
       "given": [
-        "Gabriel",
-        "Coleman"
+        "Leonard",
+        "Christopher"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-778-283-8980 x553",
+      "value": "429.705.2257 x21150",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "405.989.0496 x1869",
+      "value": "295-392-6974 x430",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-02-03",
-        "end": "2025-02-03"
+        "start": "2022-05-25",
+        "end": "2025-05-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

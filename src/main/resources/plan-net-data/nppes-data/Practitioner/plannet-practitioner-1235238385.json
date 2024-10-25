@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Boyle",
+      "family": "Rippin",
       "given": [
-        "Hipolito",
-        "Rick"
+        "Jake",
+        "Ross"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-379-450-5611 x40369",
+      "value": "309.026.0103",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-519-537-2548 x5063",
+      "value": "(324) 420-4869",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-06-18",
-        "end": "2025-06-18"
+        "start": "2023-02-11",
+        "end": "2026-02-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2023-01-07",
-        "end": "2026-01-07"
+        "start": "2022-03-24",
+        "end": "2025-03-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

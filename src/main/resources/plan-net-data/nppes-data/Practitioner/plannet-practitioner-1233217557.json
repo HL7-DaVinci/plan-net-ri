@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ullrich",
+      "family": "Schaefer",
       "given": [
-        "Bennett",
-        "Brain"
+        "Nathaniel",
+        "Keneth"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450-157-3631 x39259",
+      "value": "(101) 297-5611 x8807",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "391-712-1584 x7897",
+      "value": "788-598-5038",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2023-09-04",
-        "end": "2026-09-04"
+        "start": "2022-07-11",
+        "end": "2025-07-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

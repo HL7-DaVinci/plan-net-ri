@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dietrich",
+      "family": "Kohler",
       "given": [
-        "Bradley",
-        "Renaldo"
+        "Bobby",
+        "Royal"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(451) 996-5663 x4209",
+      "value": "(214) 459-5282 x088",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "112-878-5912 x872",
+      "value": "445-208-2477 x1054",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2081P2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
       },
       "period": {
-        "start": "2023-10-20",
-        "end": "2026-10-20"
+        "start": "2021-12-14",
+        "end": "2024-12-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2081P2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
       },
       "period": {
-        "start": "2022-01-17",
-        "end": "2025-01-17"
+        "start": "2024-06-05",
+        "end": "2027-06-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -239,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

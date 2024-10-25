@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kemmer",
+      "family": "Dooley",
       "given": [
-        "Chi",
-        "Kevin"
+        "Alonzo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "229.840.0415 x462",
+      "value": "204.287.0284 x7865",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-294-665-0537 x546",
+      "value": "(946) 802-5874 x649",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2023-01-29",
-        "end": "2026-01-29"
+        "start": "2024-08-17",
+        "end": "2027-08-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

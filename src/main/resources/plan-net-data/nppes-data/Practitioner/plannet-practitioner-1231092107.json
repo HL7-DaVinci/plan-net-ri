@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dooley",
+      "family": "Kub",
       "given": [
-        "Melvin"
+        "Marcelino",
+        "Raleigh"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "838-128-0814 x23402",
+      "value": "226-041-5912 x721",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "838-686-9774 x576",
+      "value": "396.562.6012 x9706",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085N0904X",
-            "display": "Nuclear Radiology"
+            "display": "Nuclear Radiology Physician"
           }
         ],
-        "text": "Nuclear Radiology"
+        "text": "Nuclear Radiology Physician"
       },
       "period": {
-        "start": "2021-10-12",
-        "end": "2024-10-12"
+        "start": "2022-01-05",
+        "end": "2025-01-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

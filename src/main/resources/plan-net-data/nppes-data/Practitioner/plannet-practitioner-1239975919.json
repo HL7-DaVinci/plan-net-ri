@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hansen",
+      "family": "Gleichner",
       "given": [
-        "Vertie",
-        "Bambi"
+        "Cecile",
+        "Jen"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "225.236.4911 x9053",
+      "value": "630.303.8752 x18282",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "342.616.7117",
+      "value": "(978) 591-2420",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-10-01",
-        "end": "2025-10-01"
+        "start": "2023-12-25",
+        "end": "2026-12-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

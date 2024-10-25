@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kulas",
+      "family": "Windler",
       "given": [
-        "Luther"
+        "Trent",
+        "Aaron"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "279-638-4599 x83697",
+      "value": "481.542.1070 x7795",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(246) 967-7161",
+      "value": "1-972-850-8618",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-11-22",
-        "end": "2026-11-22"
+        "start": "2023-05-29",
+        "end": "2026-05-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

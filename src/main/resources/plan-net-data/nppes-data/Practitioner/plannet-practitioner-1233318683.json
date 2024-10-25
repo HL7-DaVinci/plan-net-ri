@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Will",
+      "family": "Walsh",
       "given": [
-        "Kelley"
+        "Evie"
       ],
       "suffix": [
         "PA"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "171.240.1419 x511",
+      "value": "719-106-1690",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(761) 361-6113 x99377",
+      "value": "1-535-247-2930",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-11-07",
-        "end": "2025-11-07"
+        "start": "2024-02-02",
+        "end": "2027-02-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

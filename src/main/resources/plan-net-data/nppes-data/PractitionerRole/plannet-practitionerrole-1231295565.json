@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "f7b75bd9bdb41a"
+      "value": "0c2233e7827200"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231295565",
-    "display": "Monty Thompson"
+    "display": "Eric Reichel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-979-092-1656 x822",
+      "value": "788.072.2408",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "161.976.2099 x249",
+      "value": "669.801.0270 x6091",
       "use": "work"
     }
   ],

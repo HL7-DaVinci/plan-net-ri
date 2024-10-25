@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gerhold",
+      "family": "McKenzie",
       "given": [
-        "Paul",
-        "Jewell"
+        "Tyrell"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-993-130-9984",
+      "value": "538.780.0988 x16804",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "801.222.9869 x5423",
+      "value": "862-602-9022",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-08-26",
-        "end": "2025-08-26"
+        "start": "2022-07-09",
+        "end": "2025-07-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

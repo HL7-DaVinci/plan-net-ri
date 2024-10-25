@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "e8914f9f3831a7"
+      "value": "7815323376356a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230788859",
-    "display": "Elliott Collier"
+    "display": "Micheal Williamson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AM0700X",
-          "display": "Medical"
+          "display": "Medical Physician Assistant"
         }
       ],
-      "text": "Medical"
+      "text": "Medical Physician Assistant"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "363-385-9393 x0491",
+      "value": "625.766.4706 x949",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-846-290-5586 x149",
+      "value": "310-774-4875 x97552",
       "use": "work"
     }
   ],

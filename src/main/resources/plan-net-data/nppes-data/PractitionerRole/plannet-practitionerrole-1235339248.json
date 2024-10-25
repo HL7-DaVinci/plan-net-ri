@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "0bc9a23de5ca74"
+      "value": "fd2ba6fc44f147"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235339248",
-    "display": "Loan Ward"
+    "display": "Heike Weber"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "591.134.7706",
+      "value": "328.951.8034 x43412",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(267) 295-1521 x330",
+      "value": "802-537-8855",
       "use": "work"
     }
   ],

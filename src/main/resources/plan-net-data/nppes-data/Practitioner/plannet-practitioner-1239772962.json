@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turner",
+      "family": "Feeney",
       "given": [
-        "Shirley",
-        "Cortez"
+        "Jody",
+        "Mariano"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-579-619-3048 x98583",
+      "value": "816.958.0607 x79300",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "992.754.0496 x7914",
+      "value": "(986) 857-8296 x66989",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207SC0300X",
-            "display": "Clinical Cytogenetics"
+            "display": "Clinical Cytogenetics Physician"
           }
         ],
-        "text": "Clinical Cytogenetics"
+        "text": "Clinical Cytogenetics Physician"
       },
       "period": {
-        "start": "2022-01-31",
-        "end": "2025-01-31"
+        "start": "2022-12-22",
+        "end": "2025-12-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

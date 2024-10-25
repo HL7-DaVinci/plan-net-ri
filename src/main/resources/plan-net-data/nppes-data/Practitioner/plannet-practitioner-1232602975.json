@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Volkman",
+      "family": "Haley",
       "given": [
-        "Buford"
+        "Ignacio"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(172) 810-4205",
+      "value": "620.163.4702 x38310",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-511-080-2939",
+      "value": "503.573.2013",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2022-02-03",
-        "end": "2025-02-03"
+        "start": "2022-08-23",
+        "end": "2025-08-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

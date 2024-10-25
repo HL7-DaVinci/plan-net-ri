@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nitzsche",
+      "family": "Hyatt",
       "given": [
-        "Galina"
+        "Kami"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "802-537-6811 x3835",
+      "value": "759-053-6114 x22299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(769) 908-3702",
+      "value": "(505) 102-4170 x25368",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-07-12",
-        "end": "2025-07-12"
+        "start": "2022-05-16",
+        "end": "2025-05-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

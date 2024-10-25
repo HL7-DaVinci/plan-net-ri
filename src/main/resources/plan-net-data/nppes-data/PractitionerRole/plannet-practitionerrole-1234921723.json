@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "d8057c90a08108"
+      "value": "33e6e7da9d6a51"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234921723",
-    "display": "Barney Botsford"
+    "display": "Marcelo Harber"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(518) 807-9893",
+      "value": "568-575-1869 x7115",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-798-293-5406 x6944",
+      "value": "1-914-018-0425 x229",
       "use": "work"
     }
   ],

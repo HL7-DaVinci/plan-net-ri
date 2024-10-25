@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "9581f674efbf64"
+      "value": "62d69901df6c5e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234025663",
-    "display": "Tobi Klein"
+    "display": "Brandee Bogan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "222.965.6562",
+      "value": "(677) 995-8117",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "939.362.6934 x470",
+      "value": "372-833-3635",
       "use": "work"
     }
   ],

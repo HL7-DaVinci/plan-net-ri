@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schimmel",
+      "family": "Buckridge",
       "given": [
-        "Joey",
-        "Tory"
+        "Frankie",
+        "Loyd"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "115.386.8113",
+      "value": "1-168-407-5562 x379",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "572-989-7296 x70125",
+      "value": "253-084-6013 x686",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-03-19",
-        "end": "2026-03-19"
+        "start": "2023-11-06",
+        "end": "2026-11-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Greenholt",
+      "family": "Blanda",
       "given": [
-        "Drew"
+        "Charlie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "278.401.9086",
+      "value": "956-000-2378 x3708",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "664.254.5434 x831",
+      "value": "325.657.6992 x1217",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-08-10",
-        "end": "2026-08-10"
+        "start": "2023-12-24",
+        "end": "2026-12-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

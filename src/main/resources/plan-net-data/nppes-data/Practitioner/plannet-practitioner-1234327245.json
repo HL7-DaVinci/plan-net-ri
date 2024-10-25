@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Daugherty",
+      "family": "Dickens",
       "given": [
-        "Dee"
+        "Rico"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "578-372-1451",
+      "value": "1-538-577-1629 x841",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "256.346.6541 x4672",
+      "value": "247-611-8188",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2022-12-12",
-        "end": "2025-12-12"
+        "start": "2024-07-01",
+        "end": "2027-07-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

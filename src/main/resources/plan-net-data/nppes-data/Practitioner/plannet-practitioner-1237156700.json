@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Becker",
+      "family": "Schuppe",
       "given": [
-        "Phil"
+        "Wes",
+        "Melvin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "944.143.2655 x93724",
+      "value": "454.857.4943 x31164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "327.652.9602",
+      "value": "946-636-6431 x5724",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-03-08",
-        "end": "2025-03-08"
+        "start": "2023-06-26",
+        "end": "2026-06-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Watsica",
+      "family": "Schmidt",
       "given": [
-        "Doyle"
+        "Nicolas"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-150-518-2240 x813",
+      "value": "289-494-8010 x541",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "585-840-2289",
+      "value": "783.177.3133 x580",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-06-16",
-        "end": "2026-06-16"
+        "start": "2021-11-06",
+        "end": "2024-11-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2022-01-12",
-        "end": "2025-01-12"
+        "start": "2022-09-24",
+        "end": "2025-09-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

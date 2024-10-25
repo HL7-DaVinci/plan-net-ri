@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "4381a917e4adaa"
+      "value": "cbd1652fcb5175"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238267107",
-    "display": "Milo Feil"
+    "display": "Guadalupe Tromp"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084P0800X",
-          "display": "Psychiatry"
+          "display": "Psychiatry Physician"
         }
       ],
-      "text": "Psychiatry"
+      "text": "Psychiatry Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-848-081-2872 x96738",
+      "value": "1-898-226-7934",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-155-598-5079",
+      "value": "441-157-1585 x84192",
       "use": "work"
     }
   ],

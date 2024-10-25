@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "a2fa9fd202734b"
+      "value": "097c24d4a595ba"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237155850",
-    "display": "Rudolph Welch"
+    "display": "Dwain Sauer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "509.824.7753 x2874",
+      "value": "(876) 024-5023 x0510",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "295-514-7100 x5130",
+      "value": "325-196-5302 x649",
       "use": "work"
     }
   ],

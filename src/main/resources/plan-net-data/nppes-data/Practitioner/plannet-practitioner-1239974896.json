@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mann",
+      "family": "Mueller",
       "given": [
-        "Brandon"
+        "Willie",
+        "Jeremy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "918-695-9016 x8563",
+      "value": "1-110-691-4982 x295",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-871-478-6702 x77562",
+      "value": "1-911-235-6697 x085",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207K00000X",
-            "display": "Allergy and Immunology"
+            "display": "Allergy & Immunology Physician"
           }
         ],
-        "text": "Allergy and Immunology"
+        "text": "Allergy & Immunology Physician"
       },
       "period": {
-        "start": "2022-10-21",
-        "end": "2025-10-21"
+        "start": "2024-03-02",
+        "end": "2027-03-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-07-26",
-        "end": "2024-07-26"
+        "start": "2024-01-18",
+        "end": "2027-01-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -267,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-10-30",
-        "end": "2026-10-30"
+        "start": "2024-05-13",
+        "end": "2027-05-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -326,11 +327,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

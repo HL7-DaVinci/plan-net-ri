@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schimmel",
+      "family": "Hudson",
       "given": [
-        "Dixie",
-        "Jesica"
+        "Joelle"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-162-572-5364 x399",
+      "value": "243-686-1485 x6327",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(994) 892-8871 x30244",
+      "value": "1-570-956-1144 x43350",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2022-12-25",
-        "end": "2025-12-25"
+        "start": "2024-06-01",
+        "end": "2027-06-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

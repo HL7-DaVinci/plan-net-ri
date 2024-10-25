@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Murazik",
+      "family": "Abbott",
       "given": [
-        "Reid",
-        "Calvin"
+        "Minh"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-608-736-8693 x0929",
+      "value": "(553) 713-1896 x418",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-397-667-0221 x79780",
+      "value": "(312) 080-9824 x900",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-09-22",
-        "end": "2025-09-22"
+        "start": "2021-11-03",
+        "end": "2024-11-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2021-07-24",
-        "end": "2024-07-24"
+        "start": "2023-09-08",
+        "end": "2026-09-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

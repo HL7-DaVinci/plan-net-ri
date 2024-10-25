@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beahan",
+      "family": "Sipes",
       "given": [
-        "Joey"
+        "Jordon",
+        "Forrest"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "538-045-7202 x026",
+      "value": "1-394-350-7909 x162",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-157-428-1077 x485",
+      "value": "(300) 533-6857",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-12-10",
-        "end": "2024-12-10"
+        "start": "2022-09-30",
+        "end": "2025-09-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

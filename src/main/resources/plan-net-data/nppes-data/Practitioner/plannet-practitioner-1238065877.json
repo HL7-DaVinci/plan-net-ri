@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Predovic",
+      "family": "Gibson",
       "given": [
-        "Leland"
+        "Teddy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-514-659-1539",
+      "value": "253.500.8815",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "526.782.7498 x47590",
+      "value": "1-432-584-8718 x0636",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-09-08",
-        "end": "2025-09-08"
+        "start": "2022-09-15",
+        "end": "2025-09-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

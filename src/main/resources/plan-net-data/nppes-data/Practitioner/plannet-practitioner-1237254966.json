@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Keebler",
+      "family": "Ward",
       "given": [
-        "Yon"
+        "Frieda",
+        "Amie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "165-519-1861",
+      "value": "536-728-8695 x9419",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-535-493-6651 x570",
+      "value": "(605) 839-7350 x04795",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-06-29",
-        "end": "2027-06-29"
+        "start": "2024-06-08",
+        "end": "2027-06-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

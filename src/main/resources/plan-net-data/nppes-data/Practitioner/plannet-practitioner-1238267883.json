@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogisich",
+      "family": "Metz",
       "given": [
-        "Ezekiel"
+        "Art"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-894-929-8142 x51502",
+      "value": "782.303.6767 x232",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(632) 761-5228",
+      "value": "602-932-3221",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2024-03-01",
-        "end": "2027-03-01"
+        "start": "2022-01-22",
+        "end": "2025-01-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

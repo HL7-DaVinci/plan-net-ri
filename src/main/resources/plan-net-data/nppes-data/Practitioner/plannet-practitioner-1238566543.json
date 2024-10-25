@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stokes",
+      "family": "Mante",
       "given": [
-        "Brendan"
+        "Millard"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "878.971.3725 x079",
+      "value": "775.653.2768 x8586",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "219.061.7468 x44138",
+      "value": "(224) 396-4610",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-12-15",
-        "end": "2026-12-15"
+        "start": "2024-01-13",
+        "end": "2027-01-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

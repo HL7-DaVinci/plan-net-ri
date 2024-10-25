@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bruen",
+      "family": "Schmitt",
       "given": [
-        "Alease",
-        "Daisey"
+        "Cathey",
+        "Nathalie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "619-841-3485 x4523",
+      "value": "906.835.7582 x519",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "926.836.4904 x6841",
+      "value": "(720) 281-4675",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-11-12",
-        "end": "2026-11-12"
+        "start": "2023-03-21",
+        "end": "2026-03-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

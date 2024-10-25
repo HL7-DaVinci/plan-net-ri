@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dach",
+      "family": "Will",
       "given": [
-        "Corinna"
+        "Latoyia"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(486) 004-0237 x2711",
+      "value": "429.405.3995 x5035",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-583-081-9818 x963",
+      "value": "243-370-4248 x5904",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2021-12-17",
-        "end": "2024-12-17"
+        "start": "2022-04-16",
+        "end": "2025-04-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

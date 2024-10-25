@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "2a0781fb16ddfc"
+      "value": "9855e820121986"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239972775",
-    "display": "Caridad Boyer"
+    "display": "Dannette Flatley"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(323) 981-4349",
+      "value": "1-892-608-9172 x76631",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "760.244.8846 x360",
+      "value": "164.157.1399",
       "use": "work"
     }
   ],

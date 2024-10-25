@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Abernathy",
+      "family": "Schoen",
       "given": [
-        "Kimberely",
-        "Young"
+        "Doretta"
       ],
       "suffix": [
         "AUD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-627-105-8274 x4146",
+      "value": "1-966-600-4227 x85838",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-231-117-4303 x9337",
+      "value": "1-168-382-9238 x472",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2023-06-05",
-        "end": "2026-06-05"
+        "start": "2024-03-13",
+        "end": "2027-03-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

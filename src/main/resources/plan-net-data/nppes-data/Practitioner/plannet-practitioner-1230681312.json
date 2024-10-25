@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Barrows",
+      "family": "Jacobs",
       "given": [
-        "Lino",
-        "Keith"
+        "Carlton"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-221-137-6484 x938",
+      "value": "618-687-8776",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "842-048-6197 x17437",
+      "value": "1-237-056-5847 x65322",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-01-29",
-        "end": "2027-01-29"
+        "start": "2022-06-15",
+        "end": "2025-06-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

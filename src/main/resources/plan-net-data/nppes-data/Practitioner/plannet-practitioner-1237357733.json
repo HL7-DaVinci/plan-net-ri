@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Emard",
+      "family": "Lang",
       "given": [
-        "Fidel"
+        "Barry",
+        "Ivan"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(527) 880-9029",
+      "value": "(612) 209-9283 x9151",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "497-038-2855 x403",
+      "value": "1-936-382-3338 x490",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-08-21",
-        "end": "2024-08-21"
+        "start": "2023-02-23",
+        "end": "2026-02-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "771720d113998a"
+      "value": "651da95986f4de"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232206156",
-    "display": "Morris Kiehn"
+    "display": "Israel Keeling"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Physician"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "704-400-0042",
+      "value": "861-804-8001 x8656",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(310) 658-3327",
+      "value": "1-938-384-0644",
       "use": "work"
     }
   ],

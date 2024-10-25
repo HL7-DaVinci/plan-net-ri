@@ -32,22 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Leannon",
+      "family": "Carroll",
       "given": [
-        "Marissa",
-        "Alease"
+        "Rita",
+        "Danna"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "120-952-8168 x222",
+      "value": "1-590-449-9713 x6618",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "566.517.3076 x1271",
+      "value": "1-527-927-1437 x581",
       "use": "work"
     }
   ],
@@ -140,8 +140,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-09-26",
-        "end": "2025-09-26"
+        "start": "2022-07-31",
+        "end": "2025-07-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -193,11 +193,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

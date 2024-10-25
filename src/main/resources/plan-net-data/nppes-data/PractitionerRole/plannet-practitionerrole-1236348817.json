@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "942d592d34d2a6"
+      "value": "e7b3fe3c952a4e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236348817",
-    "display": "Markus Turner"
+    "display": "Lemuel Parisian"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0204X",
-          "display": "Vascular and Interventional Radiology"
+          "display": "Vascular & Interventional Radiology Physician"
         }
       ],
-      "text": "Vascular and Interventional Radiology"
+      "text": "Vascular & Interventional Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-217-602-2721 x41622",
+      "value": "816-569-6869 x93601",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "919-879-3770",
+      "value": "(595) 690-6002",
       "use": "work"
     }
   ],

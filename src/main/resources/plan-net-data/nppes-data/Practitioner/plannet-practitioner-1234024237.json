@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McLaughlin",
+      "family": "Rice",
       "given": [
-        "Ewa"
+        "Misti"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(695) 649-2057",
+      "value": "(307) 959-3081 x76988",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-355-146-1211 x424",
+      "value": "585.355.9854",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-04-27",
-        "end": "2026-04-27"
+        "start": "2023-11-04",
+        "end": "2026-11-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

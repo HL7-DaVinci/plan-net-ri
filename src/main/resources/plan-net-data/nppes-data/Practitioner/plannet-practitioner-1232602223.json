@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kutch",
+      "family": "Green",
       "given": [
-        "Sarina",
-        "Laveta"
+        "Caryn",
+        "Delois"
       ],
       "suffix": [
         "CNM"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(465) 096-5512 x898",
+      "value": "(323) 488-8234 x30359",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "827-119-8941",
+      "value": "(413) 525-8633",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2023-03-31",
-        "end": "2026-03-31"
+        "start": "2023-07-22",
+        "end": "2026-07-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

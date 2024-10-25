@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gusikowski",
+      "family": "Hahn",
       "given": [
-        "August",
-        "Joel"
+        "Anthony",
+        "Antione"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "151.002.7108",
+      "value": "121.839.4186",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "749-717-3094 x28176",
+      "value": "1-972-943-0238",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-12-24",
-        "end": "2026-12-24"
+        "start": "2023-03-23",
+        "end": "2026-03-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-10-04",
-        "end": "2026-10-04"
+        "start": "2024-09-05",
+        "end": "2027-09-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

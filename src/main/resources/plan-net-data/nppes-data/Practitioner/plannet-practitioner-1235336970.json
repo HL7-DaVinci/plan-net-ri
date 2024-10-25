@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hintz",
+      "family": "Lesch",
       "given": [
-        "Terese"
+        "Arthur"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "344-819-1000 x58161",
+      "value": "443.495.5311 x6443",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "790.892.4001 x806",
+      "value": "774.429.9060 x56533",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2024-04-03",
-        "end": "2027-04-03"
+        "start": "2023-04-08",
+        "end": "2026-04-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

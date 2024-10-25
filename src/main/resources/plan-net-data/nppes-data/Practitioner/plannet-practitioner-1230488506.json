@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hammes",
+      "family": "Frami",
       "given": [
-        "Philip",
-        "Stacy"
+        "Dewey",
+        "Devon"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(391) 915-7185 x9873",
+      "value": "1-164-057-4786 x4033",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(904) 887-4319",
+      "value": "677.405.5431",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2022-09-11",
-        "end": "2025-09-11"
+        "start": "2024-03-30",
+        "end": "2027-03-30"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

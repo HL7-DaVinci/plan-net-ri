@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogisich",
+      "family": "Kreiger",
       "given": [
-        "Juan",
-        "Omer"
+        "Stan"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "956-573-3293",
+      "value": "1-873-676-7054 x01826",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-524-951-4813 x719",
+      "value": "654-268-9116 x3784",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-06-10",
-        "end": "2027-06-10"
+        "start": "2023-01-12",
+        "end": "2026-01-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0004X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Orthopaedic Foot and Ankle Surgery Physician"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Orthopaedic Foot and Ankle Surgery Physician"
       },
       "period": {
-        "start": "2021-09-19",
-        "end": "2024-09-19"
+        "start": "2022-06-11",
+        "end": "2025-06-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -265,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-07-11",
-        "end": "2026-07-11"
+        "start": "2024-07-01",
+        "end": "2027-07-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -324,11 +323,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

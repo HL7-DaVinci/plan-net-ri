@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cartwright",
+      "family": "Ziemann",
       "given": [
-        "Jonathon",
-        "Tyron"
+        "Gino",
+        "Marvin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "440.035.8753",
+      "value": "633-618-7924 x49698",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "576-699-8529",
+      "value": "771.605.9789 x9746",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-09-17",
-        "end": "2024-09-17"
+        "start": "2023-02-07",
+        "end": "2026-02-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

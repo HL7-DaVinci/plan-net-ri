@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "6774ce42cea549"
+      "value": "530c7cbe677a76"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231692762",
-    "display": "Kelsie Towne"
+    "display": "Ranee Auer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080A0000X",
-          "display": "Adolescent Medicine"
+          "display": "Pediatric Adolescent Medicine Physician"
         }
       ],
-      "text": "Adolescent Medicine"
+      "text": "Pediatric Adolescent Medicine Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(491) 932-6182 x60456",
+      "value": "364-998-0445 x9176",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "823.248.4770 x302",
+      "value": "602-187-0217 x769",
       "use": "work"
     }
   ],

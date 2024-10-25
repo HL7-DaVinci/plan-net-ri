@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kohler",
+      "family": "Kuhlman",
       "given": [
-        "Rick",
-        "Carmine"
+        "Brenton",
+        "Garfield"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "281.788.6504 x4679",
+      "value": "892.213.1913 x7791",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "631.379.4825 x4874",
+      "value": "1-186-835-3539",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-11-16",
-        "end": "2026-11-16"
+        "start": "2023-08-24",
+        "end": "2026-08-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

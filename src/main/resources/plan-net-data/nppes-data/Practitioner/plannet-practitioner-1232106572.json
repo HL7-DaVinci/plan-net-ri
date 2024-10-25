@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kiehn",
+      "family": "Gleason",
       "given": [
-        "Ed"
+        "Kasey",
+        "Elliott"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "391-414-0953 x23979",
+      "value": "1-251-439-0357 x331",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(651) 947-8060 x797",
+      "value": "1-282-970-7666 x572",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2023-03-15",
-        "end": "2026-03-15"
+        "start": "2024-05-17",
+        "end": "2027-05-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

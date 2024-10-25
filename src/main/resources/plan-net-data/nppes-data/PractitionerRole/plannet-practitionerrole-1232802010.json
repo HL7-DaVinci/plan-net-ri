@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "9f09e9d8aaee6b"
+      "value": "79d0b4e00ef2b1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232802010",
-    "display": "Elda Treutel"
+    "display": "Kristian Hyatt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-800-461-0833 x486",
+      "value": "(507) 082-2828 x16706",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "260.720.8804",
+      "value": "757-391-2524 x4861",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Toy",
+      "family": "Kessler",
       "given": [
-        "Cliff",
-        "Mario"
+        "Kasey",
+        "Jewel"
       ],
       "suffix": [
         "PHD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "288.019.4910",
+      "value": "182-145-7779 x647",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "254-587-9557 x28187",
+      "value": "516.044.1041",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Clinical Neuropsychologist"
       },
       "period": {
-        "start": "2021-11-10",
-        "end": "2024-11-10"
+        "start": "2022-06-27",
+        "end": "2025-06-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -207,8 +207,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2023-01-05",
-        "end": "2026-01-05"
+        "start": "2022-09-18",
+        "end": "2025-09-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,6 +240,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

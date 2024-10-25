@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "8be98a97fd69d1"
+      "value": "a67aa8222624a8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235337465",
-    "display": "Jim Von"
+    "display": "Chas Bernier"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-142-898-4409 x4367",
+      "value": "(282) 027-0240 x285",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(548) 417-9897 x97310",
+      "value": "985.084.9197 x8677",
       "use": "work"
     }
   ],

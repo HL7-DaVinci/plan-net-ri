@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Lueilwitz",
       "given": [
-        "Arnette",
-        "Lera"
+        "Eliz"
       ],
       "suffix": [
         "RD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-762-350-7577 x3318",
+      "value": "1-148-256-9350 x00901",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-462-185-1221",
+      "value": "235-232-5825 x259",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "133V00000X",
-            "display": "Dietitian, Registered"
+            "display": "Registered Dietitian"
           }
         ],
-        "text": "Dietitian, Registered"
+        "text": "Registered Dietitian"
       },
       "period": {
-        "start": "2023-12-28",
-        "end": "2026-12-28"
+        "start": "2022-06-22",
+        "end": "2025-06-22"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "133V00000X",
-            "display": "Dietitian, Registered"
+            "display": "Registered Dietitian"
           }
         ],
-        "text": "Dietitian, Registered"
+        "text": "Registered Dietitian"
       },
       "period": {
-        "start": "2023-05-12",
-        "end": "2026-05-12"
+        "start": "2024-08-17",
+        "end": "2027-08-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

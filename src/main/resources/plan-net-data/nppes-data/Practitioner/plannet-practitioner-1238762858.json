@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "MacGyver",
+      "family": "Schinner",
       "given": [
-        "Porter",
-        "Porter"
+        "Mark",
+        "Theron"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(248) 728-0794 x533",
+      "value": "955.577.3660 x47171",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "977-775-7391 x4891",
+      "value": "136-978-0515 x90926",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-12",
-        "end": "2027-02-12"
+        "start": "2024-01-20",
+        "end": "2027-01-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

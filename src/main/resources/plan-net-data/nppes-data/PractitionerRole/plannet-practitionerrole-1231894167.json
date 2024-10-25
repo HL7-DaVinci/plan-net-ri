@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "06782f4ad94582"
+      "value": "d135a981c9f9ac"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231894167",
-    "display": "Jeffrey Homenick"
+    "display": "Manual Jast"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "123-093-8812 x728",
+      "value": "1-871-785-7478 x84067",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "184.254.6364",
+      "value": "1-751-413-8378 x688",
       "use": "work"
     }
   ],

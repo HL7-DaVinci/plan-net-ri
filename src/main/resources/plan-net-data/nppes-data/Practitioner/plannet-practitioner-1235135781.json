@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Balistreri",
+      "family": "Bruen",
       "given": [
-        "Rigoberto"
+        "Lemuel",
+        "Earle"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-752-667-8577 x9483",
+      "value": "(260) 236-1150 x61247",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-761-310-7573 x50712",
+      "value": "248-853-2429 x51026",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-05-12",
-        "end": "2025-05-12"
+        "start": "2022-07-10",
+        "end": "2025-07-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WL0500X",
-            "display": "Low Vision Rehabilitation"
+            "display": "Low Vision Rehabilitation Optometrist"
           }
         ],
-        "text": "Low Vision Rehabilitation"
+        "text": "Low Vision Rehabilitation Optometrist"
       },
       "period": {
-        "start": "2022-02-09",
-        "end": "2025-02-09"
+        "start": "2022-06-09",
+        "end": "2025-06-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -242,6 +243,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

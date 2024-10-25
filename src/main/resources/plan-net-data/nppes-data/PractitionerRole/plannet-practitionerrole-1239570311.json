@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://tollgate-sleep-disorders-center-inc.com",
-      "value": "507bbf53a1b7ef"
+      "value": "7cf2255fc87b8d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239570311",
-    "display": "Alonso Ernser"
+    "display": "Lindsey Yost"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238762106",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "103TB0200X",
-          "display": "Cognitive and Behavioral"
+          "display": "Cognitive & Behavioral Psychologist"
         }
       ],
-      "text": "Cognitive and Behavioral"
+      "text": "Cognitive & Behavioral Psychologist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-239-745-4241 x5231",
+      "value": "249.392.7121 x9495",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "931.646.3559 x583",
+      "value": "613.783.9285 x41903",
       "use": "work"
     }
   ],

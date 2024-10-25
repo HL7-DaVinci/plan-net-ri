@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolff",
+      "family": "Kuhic",
       "given": [
-        "Salley"
+        "Kristeen"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(682) 257-0180 x6758",
+      "value": "(529) 151-4273",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(307) 786-1252 x911",
+      "value": "389.815.3673",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2022-09-10",
-        "end": "2025-09-10"
+        "start": "2024-05-02",
+        "end": "2027-05-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

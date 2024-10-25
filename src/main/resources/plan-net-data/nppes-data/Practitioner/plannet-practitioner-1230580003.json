@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Krajcik",
+      "family": "Grimes",
       "given": [
-        "Stanton",
-        "Dante"
+        "Everette",
+        "Ernesto"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "305.793.4806 x74181",
+      "value": "1-624-929-4938 x856",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "858-481-1372 x19444",
+      "value": "(484) 745-4660",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-06-09",
-        "end": "2027-06-09"
+        "start": "2022-05-27",
+        "end": "2025-05-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jenkins",
+      "family": "Stamm",
       "given": [
-        "Irma"
+        "Ossie",
+        "Hien"
       ],
       "suffix": [
         "O. D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-285-238-4241 x3712",
+      "value": "403.671.6041 x3425",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-502-460-6730",
+      "value": "504.675.9494 x82678",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-01-13",
-        "end": "2025-01-13"
+        "start": "2022-06-30",
+        "end": "2025-06-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2022-02-06",
-        "end": "2025-02-06"
+        "start": "2023-01-27",
+        "end": "2026-01-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WL0500X",
-            "display": "Low Vision Rehabilitation"
+            "display": "Low Vision Rehabilitation Optometrist"
           }
         ],
-        "text": "Low Vision Rehabilitation"
+        "text": "Low Vision Rehabilitation Optometrist"
       },
       "period": {
-        "start": "2024-04-06",
-        "end": "2027-04-06"
+        "start": "2024-10-02",
+        "end": "2027-10-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -322,11 +323,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

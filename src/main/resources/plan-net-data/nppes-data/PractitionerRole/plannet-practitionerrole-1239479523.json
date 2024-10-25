@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "21fadbe7bb423c"
+      "value": "8958fbc524a352"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239479523",
-    "display": "Glayds McCullough"
+    "display": "Hae Koss"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "367500000X",
-          "display": "Nurse Anesthetist, Certified Registered"
+          "display": "Certified Registered Nurse Anesthetist"
         }
       ],
-      "text": "Nurse Anesthetist, Certified Registered"
+      "text": "Certified Registered Nurse Anesthetist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(226) 314-7177 x50006",
+      "value": "373-793-2526 x873",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(278) 975-1228 x1444",
+      "value": "589-380-1676 x6477",
       "use": "work"
     }
   ],

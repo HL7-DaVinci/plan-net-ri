@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bode",
+      "family": "Schinner",
       "given": [
-        "Merlin",
-        "Odell"
+        "Jonathan",
+        "Cornelius"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(392) 521-8361 x884",
+      "value": "592.632.5689 x656",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-298-430-8539",
+      "value": "1-229-663-9725 x73106",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-12-03",
-        "end": "2026-12-03"
+        "start": "2022-05-13",
+        "end": "2025-05-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

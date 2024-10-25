@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kohler",
+      "family": "Reynolds",
       "given": [
-        "Marcene"
+        "Bronwyn"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "764-176-3404",
+      "value": "(273) 083-2516 x0257",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "239-358-9901 x6270",
+      "value": "542-489-6258",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2022-03-30",
-        "end": "2025-03-30"
+        "start": "2021-12-06",
+        "end": "2024-12-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

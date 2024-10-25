@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Davis",
+      "family": "Reichert",
       "given": [
-        "Mariela",
-        "Emerald"
+        "Jackie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(596) 631-7766 x18859",
+      "value": "(438) 030-0082 x6731",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "458-974-4662",
+      "value": "111-368-7318 x130",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-09-20",
-        "end": "2026-09-20"
+        "start": "2023-01-25",
+        "end": "2026-01-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

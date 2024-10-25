@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Marquardt",
+      "family": "Howell",
       "given": [
-        "Felipe"
+        "Vince"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "340.059.7751 x61243",
+      "value": "782-051-8554",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(192) 600-5918 x34852",
+      "value": "1-878-594-4932 x6212",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-01-31",
-        "end": "2025-01-31"
+        "start": "2022-03-05",
+        "end": "2025-03-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

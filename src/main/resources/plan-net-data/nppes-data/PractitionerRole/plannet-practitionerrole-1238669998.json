@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "7cfd36a61a0964"
+      "value": "8d669618e1f89f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238669998",
-    "display": "Kam Brown"
+    "display": "Lashunda Reynolds"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-672-643-1698 x09285",
+      "value": "354-395-0720 x4408",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "122.902.2509 x150",
+      "value": "362.966.1218",
       "use": "work"
     }
   ],

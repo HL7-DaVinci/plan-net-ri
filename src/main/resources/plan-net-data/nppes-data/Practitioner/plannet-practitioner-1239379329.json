@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Beahan",
+      "family": "Mosciski",
       "given": [
-        "Tim"
+        "Odell"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "642-455-0070 x32057",
+      "value": "159.971.7905 x364",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(462) 374-5468 x218",
+      "value": "467-522-9615 x5792",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2022-09-13",
-        "end": "2025-09-13"
+        "start": "2022-11-28",
+        "end": "2025-11-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

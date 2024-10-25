@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "d28872838459aa"
+      "value": "c3a782118d8f9a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230184375",
-    "display": "Kelsie Botsford"
+    "display": "Denita Sawayn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "430-705-6539 x100",
+      "value": "238-843-5069 x429",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "256-148-7679 x964",
+      "value": "1-575-128-9499 x72621",
       "use": "work"
     }
   ],

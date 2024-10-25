@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Collins",
+      "family": "Maggio",
       "given": [
-        "Herb",
-        "Irving"
+        "Theron"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "812.030.5532",
+      "value": "(243) 589-7081 x411",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "775.865.0920",
+      "value": "1-986-587-1945 x8274",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2023-01-18",
-        "end": "2026-01-18"
+        "start": "2022-03-25",
+        "end": "2025-03-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

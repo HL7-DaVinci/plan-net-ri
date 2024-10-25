@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harrington-memorial-hospital-inc.com",
-      "value": "cd7a6291693061"
+      "value": "7947192de8f75a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235439681",
-    "display": "Sharlene Rath"
+    "display": "Guillermina Bradtke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230780047",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "982.356.3945 x89839",
+      "value": "266.312.2463 x42386",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "958-017-2069 x0094",
+      "value": "573-521-5993 x151",
       "use": "work"
     }
   ],

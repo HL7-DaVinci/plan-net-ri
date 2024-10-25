@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bartoletti",
+      "family": "Williamson",
       "given": [
-        "Erasmo"
+        "Kirk",
+        "Gabriel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-745-694-3824",
+      "value": "1-310-934-9914",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "461.167.9817",
+      "value": "1-497-836-0906",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207NS0135X",
-            "display": "Procedural Dermatology"
+            "display": "Procedural Dermatology Physician"
           }
         ],
-        "text": "Procedural Dermatology"
+        "text": "Procedural Dermatology Physician"
       },
       "period": {
-        "start": "2023-06-07",
-        "end": "2026-06-07"
+        "start": "2024-08-19",
+        "end": "2027-08-19"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

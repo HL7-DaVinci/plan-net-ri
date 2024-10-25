@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "3c7ef568e62c82"
+      "value": "e2126a9fed45a0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232207410",
-    "display": "Jarred Treutel"
+    "display": "Marvin Champlin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "103TC0700X",
-          "display": "Clinical"
+          "display": "Clinical Psychologist"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Psychologist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "346.189.7017",
+      "value": "1-973-846-1975",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "906.107.8527 x003",
+      "value": "(920) 884-3627",
       "use": "work"
     }
   ],

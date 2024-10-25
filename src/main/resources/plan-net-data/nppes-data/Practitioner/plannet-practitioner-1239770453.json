@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ebert",
+      "family": "Keebler",
       "given": [
-        "Wilbur"
+        "Willard"
       ],
       "suffix": [
         "D.O."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(531) 772-9657 x946",
+      "value": "574-703-0417 x974",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "692-130-7312 x7122",
+      "value": "614.474.7590",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-07-28",
-        "end": "2024-07-28"
+        "start": "2022-02-22",
+        "end": "2025-02-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-07-14",
-        "end": "2025-07-14"
+        "start": "2023-08-29",
+        "end": "2026-08-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

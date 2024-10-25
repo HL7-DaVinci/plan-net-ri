@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "9afba9b55fe0e9"
+      "value": "2c51fc1df81acd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236743209",
-    "display": "Emmanuel Rutherford"
+    "display": "Ward Pagac"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "536.279.7736 x88272",
+      "value": "185-796-6070",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "442-684-7392 x1782",
+      "value": "(746) 545-2681",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Homenick",
+      "family": "Lang",
       "given": [
-        "Rolando",
-        "Tyron"
+        "Craig"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "744-072-1886",
+      "value": "172.670.9921 x8938",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-898-091-5766 x1167",
+      "value": "173-565-7025 x4333",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-08-23",
-        "end": "2024-08-23"
+        "start": "2022-11-13",
+        "end": "2025-11-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

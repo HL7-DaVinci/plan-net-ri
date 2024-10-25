@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "e9ce70361aa7f1"
+      "value": "f763a914fd4b37"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234124175",
-    "display": "Merri Carroll"
+    "display": "Dori Schowalter"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(932) 323-1748 x566",
+      "value": "(843) 717-7193 x39147",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(687) 929-1477 x7596",
+      "value": "(701) 526-3682 x52455",
       "use": "work"
     }
   ],

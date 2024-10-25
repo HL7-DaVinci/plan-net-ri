@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beatty",
+      "family": "Orn",
       "given": [
-        "Gonzalo",
-        "Clay"
+        "Chris",
+        "Lawrence"
       ],
       "suffix": [
         "D.D.S."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "254.900.9311",
+      "value": "1-999-676-9265 x8982",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "495.290.5265 x73748",
+      "value": "(212) 101-8606 x924",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223S0112X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral and Maxillofacial Surgery (Dentist)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral and Maxillofacial Surgery (Dentist)"
       },
       "period": {
-        "start": "2021-09-18",
-        "end": "2024-09-18"
+        "start": "2024-08-22",
+        "end": "2027-08-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204E00000X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral & Maxillofacial Surgery (D.M.D.)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral & Maxillofacial Surgery (D.M.D.)"
       },
       "period": {
-        "start": "2023-06-07",
-        "end": "2026-06-07"
+        "start": "2022-08-02",
+        "end": "2025-08-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

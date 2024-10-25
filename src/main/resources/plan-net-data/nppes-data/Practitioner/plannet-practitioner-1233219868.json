@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kshlerin",
+      "family": "Mante",
       "given": [
-        "Tessie"
+        "Flavia",
+        "Toby"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "910-948-4732",
+      "value": "403-785-4522",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "681.122.4003 x0958",
+      "value": "1-109-548-9441 x89582",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC1900X",
-            "display": "Counseling"
+            "display": "Counseling Psychologist"
           }
         ],
-        "text": "Counseling"
+        "text": "Counseling Psychologist"
       },
       "period": {
-        "start": "2022-08-03",
-        "end": "2025-08-03"
+        "start": "2024-08-26",
+        "end": "2027-08-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

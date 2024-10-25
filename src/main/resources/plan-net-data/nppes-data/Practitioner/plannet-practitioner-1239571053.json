@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Langworth",
+      "family": "Turner",
       "given": [
-        "Cedric",
-        "Josef"
+        "Cletus"
       ],
       "suffix": [
         "D.C."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-853-160-9744 x2429",
+      "value": "1-619-606-7325 x99996",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(110) 475-3223 x616",
+      "value": "(186) 395-2523 x3063",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2024-01-13",
-        "end": "2027-01-13"
+        "start": "2022-07-16",
+        "end": "2025-07-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

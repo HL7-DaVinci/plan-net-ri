@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Considine",
+      "family": "Stroman",
       "given": [
-        "Antonia"
+        "Ignacio",
+        "Virgilio"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-974-942-2375 x7795",
+      "value": "1-601-721-3150 x256",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "417.791.9545 x7825",
+      "value": "962-965-7786 x065",
       "use": "work"
     }
   ],
@@ -112,6 +113,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

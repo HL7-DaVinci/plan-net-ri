@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://codac-inc.com",
-      "value": "cb47e8e1bdd20b"
+      "value": "8f13861a42470b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236944010",
-    "display": "Werner Murphy"
+    "display": "Deandre Emmerich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235731321",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1744P3200X",
-          "display": "Prosthetics Case Management"
+          "display": " Prosthetics Case Management"
         }
       ],
-      "text": "Prosthetics Case Management"
+      "text": " Prosthetics Case Management"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "723-294-3422",
+      "value": "384.287.7918 x457",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "457-679-3142 x906",
+      "value": "(892) 854-7222 x259",
       "use": "work"
     }
   ],

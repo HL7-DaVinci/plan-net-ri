@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Fadel",
+      "family": "Swaniawski",
       "given": [
-        "Sharda",
-        "Synthia"
+        "Tamika"
       ],
       "suffix": [
         "PA-C"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "405-006-7105 x361",
+      "value": "(978) 975-8260",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-923-768-4761 x16800",
+      "value": "(270) 140-0630 x2824",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2022-11-20",
-        "end": "2025-11-20"
+        "start": "2022-06-24",
+        "end": "2025-06-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

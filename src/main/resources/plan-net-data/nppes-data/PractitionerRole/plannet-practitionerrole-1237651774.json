@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "42969ce14a4c46"
+      "value": "9284d7090e2380"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237651774",
-    "display": "Brent Gulgowski"
+    "display": "Wilfred Daugherty"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZP0101X",
-          "display": "Anatomic Pathology"
+          "display": "Anatomic Pathology Physician"
         }
       ],
-      "text": "Anatomic Pathology"
+      "text": "Anatomic Pathology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(983) 936-6303",
+      "value": "488.657.5101 x90847",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "776.411.6486 x78347",
+      "value": "(432) 130-1979",
       "use": "work"
     }
   ],

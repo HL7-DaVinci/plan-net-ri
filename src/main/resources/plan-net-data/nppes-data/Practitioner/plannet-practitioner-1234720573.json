@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jerde",
+      "family": "Bins",
       "given": [
-        "Dwight"
+        "Ezra"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-369-443-0956 x83734",
+      "value": "586.046.5305 x267",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-435-290-0755 x77318",
+      "value": "853-152-3669 x93250",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2024-03-08",
-        "end": "2027-03-08"
+        "start": "2024-08-29",
+        "end": "2027-08-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

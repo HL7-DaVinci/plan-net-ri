@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Abernathy",
+      "family": "Ledner",
       "given": [
-        "January"
+        "Zana"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "636.076.2029",
+      "value": "(877) 678-2006 x06534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(422) 583-0699 x619",
+      "value": "770-058-4742 x04550",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2021-11-03",
-        "end": "2024-11-03"
+        "start": "2023-09-14",
+        "end": "2026-09-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

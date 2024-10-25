@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Marvin",
+      "family": "Bartoletti",
       "given": [
-        "Carie",
-        "Joane"
+        "Zita"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(377) 852-6881",
+      "value": "1-381-851-8292 x420",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-240-416-4072 x5683",
+      "value": "598-613-7070",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2021-09-24",
-        "end": "2024-09-24"
+        "start": "2023-08-28",
+        "end": "2026-08-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

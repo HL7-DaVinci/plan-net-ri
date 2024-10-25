@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "87e9f2c91f8341"
+      "value": "13e678b36e5820"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235136094",
-    "display": "Tilda Pacocha"
+    "display": "Dale Batz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-573-426-3418 x9701",
+      "value": "1-982-184-6579 x01205",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(704) 139-8390 x2500",
+      "value": "1-487-647-6128",
       "use": "work"
     }
   ],

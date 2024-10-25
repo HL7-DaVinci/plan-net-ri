@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Waters",
+      "family": "Pfeffer",
       "given": [
-        "Tona"
+        "Emogene"
       ],
       "suffix": [
         "D.C."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-750-251-1451 x97092",
+      "value": "818.503.7258 x825",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-490-706-2064 x917",
+      "value": "1-396-946-8213 x71864",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2023-05-11",
-        "end": "2026-05-11"
+        "start": "2022-07-20",
+        "end": "2025-07-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

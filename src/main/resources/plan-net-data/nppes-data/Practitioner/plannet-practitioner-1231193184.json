@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Treutel",
+      "family": "Kutch",
       "given": [
-        "Tamica"
+        "Leatrice",
+        "Margene"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "353.633.7894",
+      "value": "904-762-2730 x9516",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-947-523-7996 x41611",
+      "value": "(113) 287-6179 x6854",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-06-10",
-        "end": "2026-06-10"
+        "start": "2024-05-19",
+        "end": "2027-05-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

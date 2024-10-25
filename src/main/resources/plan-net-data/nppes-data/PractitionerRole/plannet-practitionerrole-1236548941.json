@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "94e6d800f64180"
+      "value": "35573954b63a2a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236548941",
-    "display": "Eleanore Stokes"
+    "display": "Myriam Daniel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LC1500X",
-          "display": "Community Health"
+          "display": "Community Health Nurse Practitioner"
         }
       ],
-      "text": "Community Health"
+      "text": "Community Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-983-259-2925 x67379",
+      "value": "567.024.0237 x131",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-831-538-3038 x22047",
+      "value": "811-105-6134",
       "use": "work"
     }
   ],

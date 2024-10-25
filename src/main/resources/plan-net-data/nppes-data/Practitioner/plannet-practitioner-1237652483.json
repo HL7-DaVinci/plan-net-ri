@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Little",
+      "family": "Aufderhar",
       "given": [
-        "Wilmer",
-        "Arron"
+        "Ezra"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(769) 727-0935 x30406",
+      "value": "742-101-4723 x806",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-952-007-6284 x2361",
+      "value": "1-185-881-7054 x60702",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Clinical Neuropsychologist"
       },
       "period": {
-        "start": "2024-02-24",
-        "end": "2027-02-24"
+        "start": "2022-04-21",
+        "end": "2025-04-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -209,8 +208,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2022-09-26",
-        "end": "2025-09-26"
+        "start": "2023-10-11",
+        "end": "2026-10-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -267,14 +266,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-06-28",
-        "end": "2025-06-28"
+        "start": "2024-09-13",
+        "end": "2027-09-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -326,11 +325,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

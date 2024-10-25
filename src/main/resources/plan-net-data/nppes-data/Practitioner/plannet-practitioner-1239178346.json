@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stokes",
+      "family": "Rosenbaum",
       "given": [
-        "Olen",
-        "Jackson"
+        "Ezekiel",
+        "Antony"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-806-147-6503",
+      "value": "(614) 041-7797 x9859",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(893) 747-3835 x889",
+      "value": "784.605.8829",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-05-23",
-        "end": "2025-05-23"
+        "start": "2023-04-15",
+        "end": "2026-04-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-01-21",
-        "end": "2026-01-21"
+        "start": "2022-07-29",
+        "end": "2025-07-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

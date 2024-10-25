@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lebsack",
+      "family": "Huels",
       "given": [
-        "Loyd",
-        "Quinton"
+        "Benedict"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "417.265.4009 x08265",
+      "value": "820-474-1911 x632",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(508) 469-5546 x5887",
+      "value": "(391) 631-1780 x9268",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-07-30",
-        "end": "2025-07-30"
+        "start": "2024-04-04",
+        "end": "2027-04-04"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

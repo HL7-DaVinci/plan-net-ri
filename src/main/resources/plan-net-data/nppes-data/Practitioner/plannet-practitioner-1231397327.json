@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Wiza",
       "given": [
-        "Coleman",
-        "Joaquin"
+        "Ben"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "190-997-3610 x1515",
+      "value": "(642) 083-6149 x754",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "743-971-6473 x8472",
+      "value": "(592) 020-1869 x2509",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-03-01",
-        "end": "2027-03-01"
+        "start": "2024-09-01",
+        "end": "2027-09-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Botsford",
+      "family": "Harber",
       "given": [
-        "Barney"
+        "Marcelo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(518) 807-9893",
+      "value": "568-575-1869 x7115",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-798-293-5406 x6944",
+      "value": "1-914-018-0425 x229",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-11-29",
-        "end": "2026-11-29"
+        "start": "2022-10-07",
+        "end": "2025-10-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

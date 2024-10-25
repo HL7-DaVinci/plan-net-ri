@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walsh",
+      "family": "Wehner",
       "given": [
-        "Jamar"
+        "Hong",
+        "Jorge"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-792-417-4785 x5060",
+      "value": "689.580.2151 x56240",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "404.353.0852 x00571",
+      "value": "1-135-029-9712 x05170",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-09-22",
-        "end": "2025-09-22"
+        "start": "2024-08-10",
+        "end": "2027-08-10"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

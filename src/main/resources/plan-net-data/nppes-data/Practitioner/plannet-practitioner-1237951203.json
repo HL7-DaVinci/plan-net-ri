@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hayes",
+      "family": "Sauer",
       "given": [
-        "Zachariah",
-        "Reyes"
+        "Mohammad"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "965.088.1202 x39909",
+      "value": "(897) 244-1809 x27985",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(249) 344-4622 x14589",
+      "value": "543-442-4994 x29093",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-01-05",
-        "end": "2027-01-05"
+        "start": "2022-05-13",
+        "end": "2025-05-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

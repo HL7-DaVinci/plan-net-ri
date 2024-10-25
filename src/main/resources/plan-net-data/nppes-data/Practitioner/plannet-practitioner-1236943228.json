@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Conner",
+      "family": "Hoeger",
       "given": [
-        "Francine"
+        "Ute",
+        "Eusebia"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "457-960-1242 x986",
+      "value": "533-333-8892",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(625) 823-9722",
+      "value": "373.502.0659 x83466",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2022-10-12",
-        "end": "2025-10-12"
+        "start": "2024-05-02",
+        "end": "2027-05-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

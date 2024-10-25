@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Conner",
+      "family": "Erdman",
       "given": [
-        "Zachary",
-        "Brendan"
+        "Lucas",
+        "Nathanial"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "549.891.5467 x31540",
+      "value": "312.247.5567 x413",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-657-762-3955 x55819",
+      "value": "1-390-809-0478 x384",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WV0400X",
-            "display": "Vision Therapy"
+            "display": "Vision Therapy Optometrist"
           }
         ],
-        "text": "Vision Therapy"
+        "text": "Vision Therapy Optometrist"
       },
       "period": {
-        "start": "2022-09-23",
-        "end": "2025-09-23"
+        "start": "2023-10-08",
+        "end": "2026-10-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

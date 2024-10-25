@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ef9934990ffdaf"
+      "value": "90310c602d9b4b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238567806",
-    "display": "Starla Adams"
+    "display": "Camilla Wuckert"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "367500000X",
-          "display": "Nurse Anesthetist, Certified Registered"
+          "display": "Certified Registered Nurse Anesthetist"
         }
       ],
-      "text": "Nurse Anesthetist, Certified Registered"
+      "text": "Certified Registered Nurse Anesthetist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(613) 865-4591",
+      "value": "495.708.3125 x52793",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "196-499-9720 x178",
+      "value": "1-620-176-2063 x37310",
       "use": "work"
     }
   ],

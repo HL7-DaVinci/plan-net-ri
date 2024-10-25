@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "4a761de25e11bb"
+      "value": "69cf5dac87d365"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231993694",
-    "display": "Daryl Brown"
+    "display": "Larry Hickle"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "566-655-8124",
+      "value": "1-509-059-9165 x2024",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(109) 599-3897 x8434",
+      "value": "(287) 789-8137 x37373",
       "use": "work"
     }
   ],

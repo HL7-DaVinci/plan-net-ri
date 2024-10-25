@@ -32,21 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Bergstrom",
+      "family": "Kreiger",
       "given": [
-        "Pedro"
+        "Rolf"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "779.867.3267",
+      "value": "(110) 807-8828 x2087",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "512-244-0147 x47705",
+      "value": "686.686.2131 x144",
       "use": "work"
     }
   ],
@@ -133,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-07-09",
-        "end": "2024-07-09"
+        "start": "2023-08-15",
+        "end": "2026-08-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -192,11 +192,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

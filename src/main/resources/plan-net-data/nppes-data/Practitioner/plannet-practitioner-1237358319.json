@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Maggio",
+      "family": "Russel",
       "given": [
-        "Bernardina",
-        "Eve"
+        "Yon"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-472-231-0763 x15526",
+      "value": "1-324-541-7132 x568",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(291) 228-2502",
+      "value": "451.871.7707 x0150",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-02-19",
-        "end": "2026-02-19"
+        "start": "2023-02-04",
+        "end": "2026-02-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

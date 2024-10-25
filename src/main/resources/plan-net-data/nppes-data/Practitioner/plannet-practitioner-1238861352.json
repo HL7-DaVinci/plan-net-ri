@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiegand",
+      "family": "Mertz",
       "given": [
-        "Fernande",
-        "Assunta"
+        "Emilee",
+        "Nada"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-764-502-7358 x9225",
+      "value": "168.902.6784",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "603-793-8043",
+      "value": "(832) 308-4534 x61753",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-06-07",
-        "end": "2026-06-07"
+        "start": "2021-12-21",
+        "end": "2024-12-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

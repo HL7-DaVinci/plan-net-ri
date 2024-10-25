@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bechtelar",
+      "family": "Cummerata",
       "given": [
-        "Lucius",
-        "Napoleon"
+        "Giuseppe"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "974.198.2176 x6448",
+      "value": "155.583.4649 x17704",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "256-815-5884 x9252",
+      "value": "1-335-974-3008",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ND0900X",
-            "display": "Dermatopathology"
+            "display": "Dermatopathology Physician"
           }
         ],
-        "text": "Dermatopathology"
+        "text": "Dermatopathology Physician"
       },
       "period": {
-        "start": "2024-02-23",
-        "end": "2027-02-23"
+        "start": "2024-08-20",
+        "end": "2027-08-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2021-09-11",
-        "end": "2024-09-11"
+        "start": "2022-01-19",
+        "end": "2025-01-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

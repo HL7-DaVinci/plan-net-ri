@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schaden",
+      "family": "Walsh",
       "given": [
-        "Seymour"
+        "Edmond"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(550) 180-4353 x805",
+      "value": "316-916-1692 x4409",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "768-951-4492 x0786",
+      "value": "(795) 975-8080 x646",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2024-05-18",
-        "end": "2027-05-18"
+        "start": "2022-05-20",
+        "end": "2025-05-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-08-07",
-        "end": "2024-08-07"
+        "start": "2023-02-05",
+        "end": "2026-02-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "187475edc47c69"
+      "value": "be78a23030d1e0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233911957",
-    "display": "Luther Bashirian"
+    "display": "Monty Goodwin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(155) 337-0324",
+      "value": "633-806-9600 x04162",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "378.753.8715",
+      "value": "1-558-630-9028 x446",
       "use": "work"
     }
   ],

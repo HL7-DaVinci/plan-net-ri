@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gleason",
+      "family": "Okuneva",
       "given": [
-        "Cher"
+        "Shanna"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "966-089-1709 x35796",
+      "value": "(975) 088-3101 x58067",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(457) 562-5539 x7243",
+      "value": "1-990-586-3621 x2000",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-12-12",
-        "end": "2024-12-12"
+        "start": "2024-05-22",
+        "end": "2027-05-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

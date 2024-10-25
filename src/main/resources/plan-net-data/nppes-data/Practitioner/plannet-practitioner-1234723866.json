@@ -34,7 +34,8 @@
       "use": "official",
       "family": "Kemmer",
       "given": [
-        "Jeri"
+        "Marianna",
+        "Ilona"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(127) 438-2100 x071",
+      "value": "608.303.4061 x3571",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "429.251.6729 x27124",
+      "value": "(742) 132-3116 x518",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-07-04",
-        "end": "2024-07-04"
+        "start": "2023-04-18",
+        "end": "2026-04-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

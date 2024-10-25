@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Leffler",
+      "family": "Reynolds",
       "given": [
-        "Gilbert",
-        "Ariel"
+        "Antione",
+        "Melvin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "970.021.0665",
+      "value": "1-736-486-3059 x3580",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "639-789-8160",
+      "value": "258-978-2521 x0316",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-07-31",
-        "end": "2026-07-31"
+        "start": "2022-08-25",
+        "end": "2025-08-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

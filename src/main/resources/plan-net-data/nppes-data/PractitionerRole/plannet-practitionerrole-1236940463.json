@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "b451c2b6ab1d53"
+      "value": "52f9fd4af73f6d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236940463",
-    "display": "Shayne Pacocha"
+    "display": "Colin Swaniawski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "496-781-4817 x908",
+      "value": "(917) 357-8458 x880",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-434-426-2292 x628",
+      "value": "(656) 457-1285 x384",
       "use": "work"
     }
   ],

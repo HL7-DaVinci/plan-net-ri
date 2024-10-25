@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Batz",
+      "family": "Lesch",
       "given": [
-        "Ernesto",
-        "Haywood"
+        "Stanley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "204-103-0045 x7145",
+      "value": "(837) 565-8448 x3896",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-440-916-2256 x1599",
+      "value": "1-213-420-1027 x41136",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-05-07",
-        "end": "2027-05-07"
+        "start": "2022-01-08",
+        "end": "2025-01-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

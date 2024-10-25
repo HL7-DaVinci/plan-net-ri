@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dicki",
+      "family": "Bruen",
       "given": [
-        "Brittany"
+        "Dusty"
       ],
       "suffix": [
         "PT"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "360-948-8018 x373",
+      "value": "354-301-4250 x1084",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-376-664-1861 x91331",
+      "value": "357.701.6487 x581",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-10-31",
-        "end": "2026-10-31"
+        "start": "2021-11-23",
+        "end": "2024-11-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

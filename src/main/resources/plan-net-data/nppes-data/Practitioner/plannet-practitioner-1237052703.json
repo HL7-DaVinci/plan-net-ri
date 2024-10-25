@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bechtelar",
+      "family": "Schiller",
       "given": [
-        "Douglass",
-        "Tanner"
+        "Joan",
+        "Marcus"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "515-215-4869 x2901",
+      "value": "(920) 409-8581 x244",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(560) 653-2413 x7898",
+      "value": "(138) 155-2147 x076",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2081P2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
       },
       "period": {
-        "start": "2023-07-02",
-        "end": "2026-07-02"
+        "start": "2024-08-12",
+        "end": "2027-08-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Sauer",
+      "family": "Flatley",
       "given": [
-        "Willie",
-        "Bernard"
+        "Lucas",
+        "Curt"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "633-069-1880 x01361",
+      "value": "(657) 311-9296 x67538",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "998.005.6812 x3406",
+      "value": "1-843-321-2440",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2023-11-12",
-        "end": "2026-11-12"
+        "start": "2022-04-09",
+        "end": "2025-04-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

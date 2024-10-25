@@ -13,27 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -50,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://john-c-breen-pc.com",
-      "value": "7ebb473bad6510"
+      "value": "59e75aa66e617a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239770594",
-    "display": "Sharice Smitham"
+    "display": "Frankie Dach"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235935572",
@@ -100,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "345.880.0114",
+      "value": "(525) 248-8521",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "408-995-0541 x87891",
+      "value": "1-177-903-6881 x4276",
       "use": "work"
     }
   ],

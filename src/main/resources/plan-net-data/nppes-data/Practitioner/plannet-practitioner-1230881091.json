@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walker",
+      "family": "Stark",
       "given": [
-        "Sherwood",
-        "Kurt"
+        "Arlie",
+        "Christoper"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-273-101-7183 x79790",
+      "value": "1-161-438-2360 x7071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(735) 706-1616",
+      "value": "(415) 986-8089 x092",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-09-19",
-        "end": "2026-09-19"
+        "start": "2022-07-02",
+        "end": "2025-07-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

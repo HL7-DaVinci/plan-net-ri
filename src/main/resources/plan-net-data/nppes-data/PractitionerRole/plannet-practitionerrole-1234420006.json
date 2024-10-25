@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "d07af2ecf76f52"
+      "value": "8a981733d6ba6a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234420006",
-    "display": "Mel Schmidt"
+    "display": "Perry Upton"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207P00000X",
-          "display": "Emergency Medicine"
+          "display": "Emergency Medicine Physician"
         }
       ],
-      "text": "Emergency Medicine"
+      "text": "Emergency Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-727-660-1268 x616",
+      "value": "(373) 325-1914 x668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-646-317-0274 x92297",
+      "value": "820-220-2103 x17440",
       "use": "work"
     }
   ],

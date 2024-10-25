@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Adams",
+      "family": "White",
       "given": [
-        "Tyrell"
+        "Thanh",
+        "Alejandro"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "624.660.6162",
+      "value": "388.046.1777 x16406",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "554.155.0183",
+      "value": "492.906.9264 x1895",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2023-04-26",
-        "end": "2026-04-26"
+        "start": "2024-09-23",
+        "end": "2027-09-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

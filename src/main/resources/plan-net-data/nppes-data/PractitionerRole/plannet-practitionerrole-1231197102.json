@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "f2fab5190a08d7"
+      "value": "a284b224edbc47"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231197102",
-    "display": "Del Bashirian"
+    "display": "Collin Torp"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(485) 832-1011 x378",
+      "value": "873.907.7524 x710",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-904-902-0454 x28590",
+      "value": "(336) 257-7697 x6513",
       "use": "work"
     }
   ],

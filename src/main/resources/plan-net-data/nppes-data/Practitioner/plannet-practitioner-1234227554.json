@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turcotte",
+      "family": "Vandervort",
       "given": [
-        "Danyelle"
+        "Traci",
+        "Andre"
       ],
       "suffix": [
         "N.P."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "519-082-9265",
+      "value": "1-651-724-6551 x08872",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "273.761.5675",
+      "value": "(785) 542-3734 x5480",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0200X",
-            "display": "Pediatrics"
+            "display": "Pediatric Nurse Practitioner"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatric Nurse Practitioner"
       },
       "period": {
-        "start": "2024-01-31",
-        "end": "2027-01-31"
+        "start": "2022-07-28",
+        "end": "2025-07-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

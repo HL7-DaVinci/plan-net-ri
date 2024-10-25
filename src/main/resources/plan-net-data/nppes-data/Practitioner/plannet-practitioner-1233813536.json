@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Armstrong",
+      "family": "Leffler",
       "given": [
-        "Hollie"
+        "Ona"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "846.314.7937 x097",
+      "value": "1-721-161-2529",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "810-608-1231 x5899",
+      "value": "650.976.5898 x287",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-29",
-        "end": "2025-12-29"
+        "start": "2023-06-13",
+        "end": "2026-06-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

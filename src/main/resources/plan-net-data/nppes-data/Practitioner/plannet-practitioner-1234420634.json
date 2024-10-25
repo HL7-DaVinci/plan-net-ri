@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Feil",
+      "family": "Dach",
       "given": [
-        "Freddy",
-        "Hal"
+        "Jean"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "360-275-7408 x207",
+      "value": "1-796-977-7951 x98663",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "262.810.3421 x8618",
+      "value": "(496) 908-7414 x086",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0102X",
-            "display": "Surgical Critical Care"
+            "display": "Surgical Critical Care Physician"
           }
         ],
-        "text": "Surgical Critical Care"
+        "text": "Surgical Critical Care Physician"
       },
       "period": {
-        "start": "2021-08-06",
-        "end": "2024-08-06"
+        "start": "2022-02-23",
+        "end": "2025-02-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "986e107199d89d"
+      "value": "b3a64428aa95b7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237255963",
-    "display": "Marco Krajcik"
+    "display": "Carmen Cummerata"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "917-593-9471",
+      "value": "(869) 423-7713",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "284.345.8873 x35347",
+      "value": "835-143-4207 x06921",
       "use": "work"
     }
   ],

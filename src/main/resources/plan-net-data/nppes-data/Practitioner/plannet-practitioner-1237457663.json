@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Waelchi",
+      "family": "Kunze",
       "given": [
-        "Efren"
+        "Renato"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-699-408-6583",
+      "value": "(908) 643-2652 x21937",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(731) 795-2074 x0774",
+      "value": "(793) 980-8932 x243",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-01-01",
-        "end": "2025-01-01"
+        "start": "2024-01-19",
+        "end": "2027-01-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

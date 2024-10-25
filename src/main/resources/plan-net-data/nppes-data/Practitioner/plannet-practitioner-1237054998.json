@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schmeler",
+      "family": "Kovacek",
       "given": [
-        "Millard"
+        "Cleo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(331) 518-3433",
+      "value": "(839) 877-3237 x01483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(716) 878-8213",
+      "value": "(391) 306-9858 x82254",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-09-15",
-        "end": "2024-09-15"
+        "start": "2021-11-01",
+        "end": "2024-11-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hansen",
+      "family": "Oberbrunner",
       "given": [
-        "Julee"
+        "Shonna",
+        "Alise"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "999.892.5031 x0612",
+      "value": "1-434-260-8414 x073",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(208) 806-3441 x30867",
+      "value": "(496) 475-5914 x4464",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2022-06-15",
-        "end": "2025-06-15"
+        "start": "2022-05-25",
+        "end": "2025-05-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

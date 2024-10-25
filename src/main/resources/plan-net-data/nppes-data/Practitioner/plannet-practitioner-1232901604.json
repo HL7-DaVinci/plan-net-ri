@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Herzog",
+      "family": "Zieme",
       "given": [
-        "Alec"
+        "Emmitt",
+        "Andreas"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(287) 647-4551 x627",
+      "value": "144.345.8423 x01503",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "707-362-2297 x044",
+      "value": "439-881-4032 x0767",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-09-15",
-        "end": "2024-09-15"
+        "start": "2024-06-08",
+        "end": "2027-06-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-02-08",
-        "end": "2025-02-08"
+        "start": "2022-09-08",
+        "end": "2025-09-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -258,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

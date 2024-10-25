@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Barton",
+      "family": "Abbott",
       "given": [
-        "Lynn"
+        "Edwin"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-732-664-6680 x721",
+      "value": "425-908-8172",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(777) 496-4334",
+      "value": "1-981-358-9477 x46223",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-07-06",
-        "end": "2026-07-06"
+        "start": "2022-05-30",
+        "end": "2025-05-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "dc5b2e66589638"
+      "value": "b06dd1e4873bee"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238863432",
-    "display": "Emelia Connelly"
+    "display": "Danille Miller"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207QG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Family Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Family Medicine) Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "444.541.6448 x83442",
+      "value": "1-886-673-0212",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "119-709-7277 x528",
+      "value": "288-840-3664",
       "use": "work"
     }
   ],

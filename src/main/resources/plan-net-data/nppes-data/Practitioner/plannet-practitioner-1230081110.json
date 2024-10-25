@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Quigley",
+      "family": "Cormier",
       "given": [
-        "Millard",
-        "Leif"
+        "Mauro"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "341-729-0611 x426",
+      "value": "(557) 427-7991 x5367",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(448) 071-6081",
+      "value": "1-645-738-2193",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-08-21",
-        "end": "2026-08-21"
+        "start": "2024-06-05",
+        "end": "2027-06-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "209ad586a6c26c"
+      "value": "1ea3c6a4a9adaf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231296597",
-    "display": "Sulema Nikolaus"
+    "display": "Cara Beier"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "628.669.0616 x6617",
+      "value": "(252) 678-5529 x967",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "776-695-8887 x8326",
+      "value": "1-495-749-9549",
       "use": "work"
     }
   ],

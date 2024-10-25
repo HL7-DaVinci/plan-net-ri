@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Christiansen",
+      "family": "Kihn",
       "given": [
-        "Bo",
-        "Bobbie"
+        "Isiah"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(250) 693-4491 x6814",
+      "value": "(935) 894-9465 x8328",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "146.639.3633",
+      "value": "384-284-6887 x3520",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-11-10",
-        "end": "2026-11-10"
+        "start": "2023-02-15",
+        "end": "2026-02-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

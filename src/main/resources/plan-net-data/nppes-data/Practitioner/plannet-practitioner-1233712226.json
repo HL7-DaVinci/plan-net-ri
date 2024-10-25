@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mraz",
+      "family": "Macejkovic",
       "given": [
-        "Jamison"
+        "Ned",
+        "Otis"
       ],
       "suffix": [
         "DO"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "711-719-0730 x9895",
+      "value": "236-448-2085 x98709",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "210.463.7098 x1847",
+      "value": "(420) 355-3012 x9394",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-03-05",
-        "end": "2025-03-05"
+        "start": "2024-08-27",
+        "end": "2027-08-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-04-03",
-        "end": "2025-04-03"
+        "start": "2024-10-05",
+        "end": "2027-10-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

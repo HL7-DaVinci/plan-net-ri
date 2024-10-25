@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stehr",
+      "family": "Larson",
       "given": [
-        "Edmond",
-        "Loren"
+        "Clemente"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "808.876.9474 x08216",
+      "value": "760.073.3734",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-422-772-7353 x8746",
+      "value": "1-157-109-5796 x075",
       "use": "work"
     }
   ],
@@ -141,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-12-29",
-        "end": "2026-12-29"
+        "start": "2022-09-05",
+        "end": "2025-09-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Durgan",
+      "family": "Raynor",
       "given": [
-        "Chance"
+        "Antione",
+        "Augustus"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(612) 063-5873 x09301",
+      "value": "(482) 762-0145 x90334",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "563.598.8212",
+      "value": "762.111.2547 x2014",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-11-19",
-        "end": "2025-11-19"
+        "start": "2023-01-29",
+        "end": "2026-01-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

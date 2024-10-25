@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Weissnat",
+      "family": "O'Reilly",
       "given": [
-        "Casimira",
-        "Tamar"
+        "Miguelina",
+        "Dimple"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(617) 099-3656 x00623",
+      "value": "676.223.3478 x75937",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "917.949.1555 x942",
+      "value": "1-834-714-6240",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2022-02-09",
-        "end": "2025-02-09"
+        "start": "2022-05-09",
+        "end": "2025-05-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

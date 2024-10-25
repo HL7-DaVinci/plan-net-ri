@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "d908cbe0cc6a1c"
+      "value": "4e7a7a67959e9b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235434229",
-    "display": "Pierre Hodkiewicz"
+    "display": "Burl Schmidt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207XX0004X",
-          "display": "Foot and Ankle Surgery"
+          "display": "Orthopaedic Foot and Ankle Surgery Physician"
         }
       ],
-      "text": "Foot and Ankle Surgery"
+      "text": "Orthopaedic Foot and Ankle Surgery Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-250-470-8276 x8346",
+      "value": "777-064-2929",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(437) 386-8060 x0290",
+      "value": "516.658.0915 x8414",
       "use": "work"
     }
   ],

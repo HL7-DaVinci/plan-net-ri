@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "a935ed72cdc0a9",
+      "value": "2d7d9547a52adb",
       "assigner": {
         "display": "Blue Hope"
       }
@@ -37,16 +37,16 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID070000",
-      "display": "Acme of Rhode Island Preferred Provider Network"
-    },
-    {
       "reference": "Organization/plannet-network-HPID080000",
       "display": "Green Circle of Rhode Island HMO"
     },
     {
       "reference": "Organization/plannet-network-HPID090000",
       "display": "Rhode Island Persona Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID070000",
+      "display": "Acme of Rhode Island Preferred Provider Network"
     }
   ],
   "healthcareService": [

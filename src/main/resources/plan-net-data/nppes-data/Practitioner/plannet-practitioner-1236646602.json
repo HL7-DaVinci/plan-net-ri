@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brakus",
+      "family": "Friesen",
       "given": [
-        "Alphonse"
+        "Lane",
+        "Stan"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(851) 653-5838 x300",
+      "value": "205.116.9847 x94602",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-955-367-5596 x536",
+      "value": "216.698.0898 x7373",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2023-02-01",
-        "end": "2026-02-01"
+        "start": "2024-03-15",
+        "end": "2027-03-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

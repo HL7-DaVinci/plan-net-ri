@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "0d8d64377c11c2"
+      "value": "dc0ebc3d868cb5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236147784",
-    "display": "Michel Denesik"
+    "display": "Edmond Hayes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-156-406-7687 x92578",
+      "value": "479.061.7594",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(651) 419-6471 x25509",
+      "value": "441-379-9908",
       "use": "work"
     }
   ],

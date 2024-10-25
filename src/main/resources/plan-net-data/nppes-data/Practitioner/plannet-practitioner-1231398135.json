@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lakin",
+      "family": "Olson",
       "given": [
-        "Delois",
-        "Kitty"
+        "Daisey",
+        "Arie"
       ],
       "suffix": [
         "PA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "279.245.6360 x6792",
+      "value": "1-988-123-9683",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "312-088-6963 x09249",
+      "value": "1-398-099-4315 x316",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-12-08",
-        "end": "2024-12-08"
+        "start": "2023-05-08",
+        "end": "2026-05-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

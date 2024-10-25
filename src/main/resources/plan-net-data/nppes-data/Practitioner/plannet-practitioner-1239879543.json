@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Beatty",
+      "family": "Spencer",
       "given": [
-        "Haywood",
-        "Mathew"
+        "Milton"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-804-470-1569",
+      "value": "(685) 209-8709",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "708.619.8997 x6799",
+      "value": "1-725-678-2452 x872",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2024-03-06",
-        "end": "2027-03-06"
+        "start": "2023-04-19",
+        "end": "2026-04-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

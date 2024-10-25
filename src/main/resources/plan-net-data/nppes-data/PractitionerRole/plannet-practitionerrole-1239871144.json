@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "6f914f167b41b9"
+      "value": "8d57984ab4d392"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239871144",
-    "display": "Shayne Bogisich"
+    "display": "Adam Ritchie"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "356-003-2811 x5341",
+      "value": "172.588.2093",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-167-139-1773",
+      "value": "689.179.3082",
       "use": "work"
     }
   ],

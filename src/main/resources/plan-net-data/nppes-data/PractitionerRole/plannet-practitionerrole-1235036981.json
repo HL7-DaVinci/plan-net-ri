@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "94b9b788548964"
+      "value": "830f32428cc988"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235036981",
-    "display": "Claud Kilback"
+    "display": "Earnest Fisher"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RP1001X",
-          "display": "Pulmonary Disease"
+          "display": "Pulmonary Disease Physician"
         }
       ],
-      "text": "Pulmonary Disease"
+      "text": "Pulmonary Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-991-066-2841 x95705",
+      "value": "1-394-369-7378",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "390-147-9389 x778",
+      "value": "1-868-061-9805 x217",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hartmann",
+      "family": "Bahringer",
       "given": [
-        "Sang",
-        "Rolando"
+        "Prince",
+        "Omer"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "430-921-8225 x25242",
+      "value": "690.318.6090 x219",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "225-330-3901 x50309",
+      "value": "(685) 936-4670 x0028",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-05-26",
-        "end": "2025-05-26"
+        "start": "2024-01-29",
+        "end": "2027-01-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

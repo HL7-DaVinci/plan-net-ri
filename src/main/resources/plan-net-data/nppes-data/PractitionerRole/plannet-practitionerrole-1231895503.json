@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "3918fe20dc3d5f"
+      "value": "2a7246eba1e082"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231895503",
-    "display": "Anne Leuschke"
+    "display": "Launa Murphy"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(715) 505-7079",
+      "value": "645-932-1777 x140",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "115.893.4922 x74989",
+      "value": "1-415-002-4208",
       "use": "work"
     }
   ],

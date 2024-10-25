@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "905d76795285a8"
+      "value": "516217d4e0d7b4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233011145",
-    "display": "Caleb Franecki"
+    "display": "Franklyn Friesen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-194-973-0488 x20460",
+      "value": "1-301-366-3970",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-941-003-5683 x510",
+      "value": "769-549-5482",
       "use": "work"
     }
   ],

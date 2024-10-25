@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "fd30612db151b5"
+      "value": "2632e05ed7fb51"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238369512",
-    "display": "Sherly Blick"
+    "display": "Eldora Lowe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AM0700X",
-          "display": "Medical"
+          "display": "Medical Physician Assistant"
         }
       ],
-      "text": "Medical"
+      "text": "Medical Physician Assistant"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(522) 324-0533 x411",
+      "value": "832.793.4746 x5730",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "791.064.5155 x59136",
+      "value": "564.226.6042 x20699",
       "use": "work"
     }
   ],

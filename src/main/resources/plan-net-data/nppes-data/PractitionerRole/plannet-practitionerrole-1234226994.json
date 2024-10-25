@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "0123aa6df4d49d"
+      "value": "c6b833f5cdfead"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234226994",
-    "display": "Tracie Buckridge"
+    "display": "Julieann Kling"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "163WG0100X",
-          "display": "Gastroenterology"
+          "display": "Gastroenterology Registered Nurse"
         }
       ],
-      "text": "Gastroenterology"
+      "text": "Gastroenterology Registered Nurse"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-681-811-8512",
+      "value": "544-435-6653 x49657",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(463) 791-9438 x24148",
+      "value": "1-314-783-0822 x03825",
       "use": "work"
     }
   ],

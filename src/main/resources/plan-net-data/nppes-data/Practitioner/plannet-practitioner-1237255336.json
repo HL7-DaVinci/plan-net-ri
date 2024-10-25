@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuster",
+      "family": "Effertz",
       "given": [
-        "Ellsworth"
+        "Jim"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "674.902.0135 x37110",
+      "value": "802.793.4594 x84886",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "136-810-7167 x44602",
+      "value": "125-215-6242 x903",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-11-01",
-        "end": "2024-11-01"
+        "start": "2022-02-05",
+        "end": "2025-02-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0001X",
-            "display": "Clinical Cardiac Electrophysiology"
+            "display": "Clinical Cardiac Electrophysiology Physician"
           }
         ],
-        "text": "Clinical Cardiac Electrophysiology"
+        "text": "Clinical Cardiac Electrophysiology Physician"
       },
       "period": {
-        "start": "2023-07-31",
-        "end": "2026-07-31"
+        "start": "2021-11-22",
+        "end": "2024-11-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -241,6 +241,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

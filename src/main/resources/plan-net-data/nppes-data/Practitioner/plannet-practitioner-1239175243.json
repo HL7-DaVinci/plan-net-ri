@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hudson",
+      "family": "Runte",
       "given": [
-        "Bennett"
+        "Alex"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(478) 379-1168 x7438",
+      "value": "917.329.3842",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "729-636-4054 x046",
+      "value": "(158) 391-4698 x49998",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2021-09-06",
-        "end": "2024-09-06"
+        "start": "2024-10-19",
+        "end": "2027-10-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

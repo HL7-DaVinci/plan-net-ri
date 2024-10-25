@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiza",
+      "family": "Kuhlman",
       "given": [
-        "Barbara",
-        "Millicent"
+        "Saturnina"
       ],
       "suffix": [
         "MSN, APRN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-528-986-2688 x6169",
+      "value": "1-980-066-0653 x804",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-725-353-7384 x528",
+      "value": "(845) 563-7720 x46886",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-04-01",
-        "end": "2026-04-01"
+        "start": "2023-08-09",
+        "end": "2026-08-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

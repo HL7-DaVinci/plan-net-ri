@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "0be74b14e78bd6"
+      "value": "0f02f147039da7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235630418",
-    "display": "Wendell Sanford"
+    "display": "Esteban Lemke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-592-787-9527 x61834",
+      "value": "338-481-6623 x5083",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "347.963.8547",
+      "value": "(823) 686-1182 x94716",
       "use": "work"
     }
   ],

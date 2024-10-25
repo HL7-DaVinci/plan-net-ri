@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Grady",
+      "family": "Russel",
       "given": [
-        "Everett"
+        "Vance",
+        "Elias"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "523.343.2456",
+      "value": "639-142-6482",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "117.777.4788",
+      "value": "(567) 266-8409 x1562",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-11-14",
-        "end": "2024-11-14"
+        "start": "2022-09-28",
+        "end": "2025-09-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

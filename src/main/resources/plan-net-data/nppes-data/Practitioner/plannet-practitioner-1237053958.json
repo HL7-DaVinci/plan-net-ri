@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfannerstill",
+      "family": "Orn",
       "given": [
-        "Jesus",
-        "Mervin"
+        "Wyatt",
+        "Theo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "646.992.7988 x39880",
+      "value": "859-389-0780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(874) 098-8055 x892",
+      "value": "286.948.6665 x355",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2021-11-20",
-        "end": "2024-11-20"
+        "start": "2022-04-19",
+        "end": "2025-04-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

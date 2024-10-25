@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "4b63d92f92df00"
+      "value": "8abe2f4963a9e2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234425070",
-    "display": "Morris Keeling"
+    "display": "Claude Brakus"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-181-244-2855 x8040",
+      "value": "1-267-330-7068 x8886",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "828-891-6081 x663",
+      "value": "1-759-598-2410 x35891",
       "use": "work"
     }
   ],

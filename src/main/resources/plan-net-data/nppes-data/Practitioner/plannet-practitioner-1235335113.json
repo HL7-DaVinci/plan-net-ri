@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Conroy",
+      "family": "Hoeger",
       "given": [
-        "Hershel",
-        "Derek"
+        "Claudio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-867-861-8998 x72981",
+      "value": "(536) 698-8335 x6592",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "404.943.6194 x36554",
+      "value": "104-496-7726 x49081",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-05-24",
-        "end": "2025-05-24"
+        "start": "2024-02-10",
+        "end": "2027-02-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

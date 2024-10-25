@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Trantow",
+      "family": "Corwin",
       "given": [
-        "Concetta",
-        "Nathalie"
+        "Hoa",
+        "Bari"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(933) 689-9627 x6929",
+      "value": "796-143-4336 x029",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-563-754-2766 x834",
+      "value": "237.006.6656 x387",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-05",
-        "end": "2025-12-05"
+        "start": "2022-12-10",
+        "end": "2025-12-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

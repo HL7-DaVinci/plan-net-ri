@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b96c09bb7084ab"
+      "value": "c5716b950c168b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239379329",
-    "display": "Tim Beahan"
+    "display": "Odell Mosciski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2251X0800X",
-          "display": "Orthopedic"
+          "display": "Orthopedic Physical Therapist"
         }
       ],
-      "text": "Orthopedic"
+      "text": "Orthopedic Physical Therapist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "642-455-0070 x32057",
+      "value": "159.971.7905 x364",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(462) 374-5468 x218",
+      "value": "467-522-9615 x5792",
       "use": "work"
     }
   ],

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "34860140d8c13c"
+      "value": "c0fcb16f222ca6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238062858",
-    "display": "Boyce Stoltenberg"
+    "display": "Ignacio O'Conner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084S0012X",
-          "display": "Sleep Medicine"
+          "display": "Sleep Medicine (Psychiatry & Neurology) Physician"
         }
       ],
-      "text": "Sleep Medicine"
+      "text": "Sleep Medicine (Psychiatry & Neurology) Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "996-243-4975 x3464",
+      "value": "(885) 531-1326 x0251",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "718.478.9196 x71249",
+      "value": "756-178-7690 x49989",
       "use": "work"
     }
   ],

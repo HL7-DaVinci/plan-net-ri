@@ -32,22 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiza",
+      "family": "Rippin",
       "given": [
-        "Sherry",
-        "Elissa"
+        "Joye",
+        "Lorenza"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-428-711-0830 x58780",
+      "value": "238-058-6126 x06710",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "696-161-6367 x36458",
+      "value": "1-274-586-0703 x662",
       "use": "work"
     }
   ],
@@ -134,14 +134,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2024-02-19",
-        "end": "2027-02-19"
+        "start": "2023-02-25",
+        "end": "2026-02-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

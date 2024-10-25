@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Marquardt",
+      "family": "Miller",
       "given": [
-        "Von",
-        "Frederick"
+        "Jared",
+        "Eloy"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(481) 082-4227",
+      "value": "(327) 986-4063 x4689",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "414-960-8066 x059",
+      "value": "1-626-290-5316 x92588",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-12-20",
-        "end": "2024-12-20"
+        "start": "2023-11-01",
+        "end": "2026-11-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-06-27",
-        "end": "2026-06-27"
+        "start": "2022-02-09",
+        "end": "2025-02-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

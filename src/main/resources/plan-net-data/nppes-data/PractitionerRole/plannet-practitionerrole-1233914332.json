@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "2cdddec86ca15c"
+      "value": "cb6d995cb5cf6a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233914332",
-    "display": "Roscoe Haag"
+    "display": "Damion Hintz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "331-763-2866 x16621",
+      "value": "(307) 464-4659 x8024",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(115) 220-5991 x55379",
+      "value": "908-003-2538 x0866",
       "use": "work"
     }
   ],

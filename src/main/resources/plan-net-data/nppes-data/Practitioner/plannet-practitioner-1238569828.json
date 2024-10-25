@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wuckert",
+      "family": "Macejkovic",
       "given": [
-        "Gemma",
-        "Margarette"
+        "Bonny",
+        "Ronna"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-702-657-7038 x4802",
+      "value": "1-844-046-8403 x829",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(139) 014-9275 x98077",
+      "value": "(530) 318-0031",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0002X",
-            "display": "Hospice and Palliative Medicine"
+            "display": "Hospice and Palliative Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Hospice and Palliative Medicine"
+        "text": "Hospice and Palliative Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-01-13",
-        "end": "2026-01-13"
+        "start": "2023-09-02",
+        "end": "2026-09-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

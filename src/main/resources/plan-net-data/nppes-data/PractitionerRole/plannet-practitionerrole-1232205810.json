@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "f7dcebf6b1b713"
+      "value": "eb3541dcaea6f4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232205810",
-    "display": "Glen Witting"
+    "display": "Cory Bruen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208200000X",
-          "display": "Plastic Surgery"
+          "display": "Plastic Surgery Physician"
         }
       ],
-      "text": "Plastic Surgery"
+      "text": "Plastic Surgery Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "696-105-1683 x977",
+      "value": "1-949-602-6083 x611",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-605-972-8269",
+      "value": "(927) 511-5238 x08825",
       "use": "work"
     }
   ],

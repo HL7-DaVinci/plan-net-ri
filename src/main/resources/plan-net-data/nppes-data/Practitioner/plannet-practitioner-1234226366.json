@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mohr",
+      "family": "Raynor",
       "given": [
-        "Claudio",
-        "Roosevelt"
+        "Fredrick"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "191-492-2526 x103",
+      "value": "645.315.4759",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "204.206.0130 x4109",
+      "value": "358-693-2480 x11212",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208C00000X",
-            "display": "Colon and Rectal Surgery"
+            "display": "Colon & Rectal Surgery Physician"
           }
         ],
-        "text": "Colon and Rectal Surgery"
+        "text": "Colon & Rectal Surgery Physician"
       },
       "period": {
-        "start": "2023-06-23",
-        "end": "2026-06-23"
+        "start": "2023-05-06",
+        "end": "2026-05-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Veum",
+      "family": "Bogan",
       "given": [
-        "Booker"
+        "Jarred",
+        "Art"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "882-441-6904",
+      "value": "700-287-7791 x41768",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-239-437-8913",
+      "value": "155.409.5555",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-05-24",
-        "end": "2026-05-24"
+        "start": "2024-10-13",
+        "end": "2027-10-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

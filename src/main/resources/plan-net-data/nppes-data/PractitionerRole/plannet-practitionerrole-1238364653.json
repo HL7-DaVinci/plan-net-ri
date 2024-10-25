@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "d7a541552079b9"
+      "value": "63a41c3cd65634"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238364653",
-    "display": "Dahlia Hilpert"
+    "display": "Madlyn Renner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2100X",
-          "display": "Acute Care"
+          "display": "Acute Care Nurse Practitioner"
         }
       ],
-      "text": "Acute Care"
+      "text": "Acute Care Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "756-501-6982 x987",
+      "value": "517-583-2879 x5949",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(122) 728-3521 x0875",
+      "value": "314.446.7395",
       "use": "work"
     }
   ],

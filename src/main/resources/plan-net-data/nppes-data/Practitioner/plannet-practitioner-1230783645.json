@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Connelly",
+      "family": "Walter",
       "given": [
-        "Providencia"
+        "Belkis"
       ],
       "suffix": [
         "CNM"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "796.527.8269",
+      "value": "229.386.7023 x42293",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(354) 777-8748 x51559",
+      "value": "261.709.2265 x6506",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-01-19",
-        "end": "2025-01-19"
+        "start": "2024-01-12",
+        "end": "2027-01-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

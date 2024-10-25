@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "7f28c8120e60d1"
+      "value": "33cb45243c3e0e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235334116",
-    "display": "Merlin Bode"
+    "display": "Jonathan Schinner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(392) 521-8361 x884",
+      "value": "592.632.5689 x656",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-298-430-8539",
+      "value": "1-229-663-9725 x73106",
       "use": "work"
     }
   ],

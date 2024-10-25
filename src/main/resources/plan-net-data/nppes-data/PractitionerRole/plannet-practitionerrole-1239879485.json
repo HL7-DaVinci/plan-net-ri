@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "39b3135b6d6193"
+      "value": "d711cf610a5f1c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239879485",
-    "display": "Edward Reinger"
+    "display": "Leola Hand"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-107-330-4735 x07631",
+      "value": "228.503.6417 x6378",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-884-096-4814 x288",
+      "value": "(699) 729-8800",
       "use": "work"
     }
   ],

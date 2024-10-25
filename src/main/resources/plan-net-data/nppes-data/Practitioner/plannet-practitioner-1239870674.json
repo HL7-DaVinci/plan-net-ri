@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jenkins",
+      "family": "Blick",
       "given": [
-        "Alisa",
-        "Hedy"
+        "Winnie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "782.665.7989 x5634",
+      "value": "1-800-986-1240 x9322",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "590.933.4963 x86547",
+      "value": "1-468-012-7849 x1305",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-03-06",
-        "end": "2026-03-06"
+        "start": "2022-03-13",
+        "end": "2025-03-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Morissette",
+      "family": "Konopelski",
       "given": [
-        "Velia"
+        "Timothy",
+        "Marylou"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "993-547-5535 x802",
+      "value": "(237) 126-9938 x5900",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "653-047-2230 x8553",
+      "value": "1-304-515-6783",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2024-05-06",
-        "end": "2027-05-06"
+        "start": "2023-04-11",
+        "end": "2026-04-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

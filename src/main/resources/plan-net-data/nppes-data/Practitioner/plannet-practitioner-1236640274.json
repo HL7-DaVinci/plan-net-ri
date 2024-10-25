@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stehr",
+      "family": "Barton",
       "given": [
-        "Nick",
-        "Cordell"
+        "Earle"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(489) 071-7817",
+      "value": "370.710.5806 x24839",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-131-376-5638 x60654",
+      "value": "239-143-0902",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-11-10",
-        "end": "2024-11-10"
+        "start": "2023-12-21",
+        "end": "2026-12-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207K00000X",
-            "display": "Allergy and Immunology"
+            "display": "Allergy & Immunology Physician"
           }
         ],
-        "text": "Allergy and Immunology"
+        "text": "Allergy & Immunology Physician"
       },
       "period": {
-        "start": "2023-01-18",
-        "end": "2026-01-18"
+        "start": "2024-08-03",
+        "end": "2027-08-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -243,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rippin",
+      "family": "Kerluke",
       "given": [
-        "Jimmie",
-        "Randell"
+        "Royal"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "840.018.6728",
+      "value": "(244) 176-6350 x0077",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-895-501-1430",
+      "value": "119-106-2308",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2022-03-28",
-        "end": "2025-03-28"
+        "start": "2021-12-27",
+        "end": "2024-12-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

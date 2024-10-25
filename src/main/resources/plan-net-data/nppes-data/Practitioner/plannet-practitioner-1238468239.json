@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Lynch",
       "given": [
-        "Freddy",
-        "Jackie"
+        "Damien",
+        "Wes"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(291) 803-7184 x4616",
+      "value": "1-819-541-0065 x097",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "410.627.7836 x572",
+      "value": "1-886-700-2265 x9943",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-01-31",
-        "end": "2026-01-31"
+        "start": "2023-11-02",
+        "end": "2026-11-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

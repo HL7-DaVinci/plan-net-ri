@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Braun",
+      "family": "Schuppe",
       "given": [
-        "Forrest",
-        "Miles"
+        "Micheal"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(584) 993-0954 x72960",
+      "value": "150-136-1758 x0731",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-201-736-3886 x675",
+      "value": "970.981.5187 x17465",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-04-12",
-        "end": "2025-04-12"
+        "start": "2023-03-18",
+        "end": "2026-03-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-05-20",
-        "end": "2027-05-20"
+        "start": "2022-11-05",
+        "end": "2025-11-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

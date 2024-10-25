@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bahringer",
+      "family": "Rohan",
       "given": [
-        "Rigoberto"
+        "Wayne"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-771-647-7964 x59574",
+      "value": "701.195.3102 x68098",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-257-453-3858 x363",
+      "value": "(190) 193-7853 x35325",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2027-05-05"
+        "start": "2023-11-13",
+        "end": "2026-11-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Homenick",
+      "family": "Rogahn",
       "given": [
-        "Shauna"
+        "Iola",
+        "Karry"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "622-282-1800",
+      "value": "706.102.1823 x845",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "771-446-5498 x8652",
+      "value": "(662) 393-5138",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2024-03-15",
-        "end": "2027-03-15"
+        "start": "2023-02-01",
+        "end": "2026-02-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

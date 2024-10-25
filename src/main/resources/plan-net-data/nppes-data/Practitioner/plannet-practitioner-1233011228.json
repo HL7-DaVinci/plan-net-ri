@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pollich",
+      "family": "Baumbach",
       "given": [
-        "Jonna",
-        "Denae"
+        "Esta",
+        "Neomi"
       ],
       "suffix": [
         "O. D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "457.906.0148 x323",
+      "value": "(687) 117-9324 x165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-486-281-8253 x832",
+      "value": "1-149-536-2045",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-06-02",
-        "end": "2025-06-02"
+        "start": "2021-11-02",
+        "end": "2024-11-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2022-05-16",
-        "end": "2025-05-16"
+        "start": "2024-03-20",
+        "end": "2027-03-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "98452457bcc709"
+      "value": "fcb0c701b061e7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232805740",
-    "display": "Ivonne Casper"
+    "display": "Kyung Swaniawski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-494-418-8594 x78236",
+      "value": "(604) 660-6435 x6333",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "138-031-6091",
+      "value": "803.244.1584 x8658",
       "use": "work"
     }
   ],

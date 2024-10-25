@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "0c9adebc2c1005"
+      "value": "11ba46602b9c3f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237358798",
-    "display": "Katina Lueilwitz"
+    "display": "Lou Hackett"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(701) 817-5209 x7387",
+      "value": "1-922-021-3976 x16294",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(971) 068-2565 x221",
+      "value": "484.760.7011 x285",
       "use": "work"
     }
   ],

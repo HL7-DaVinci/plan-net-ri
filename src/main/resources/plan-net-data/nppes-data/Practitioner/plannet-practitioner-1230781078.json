@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Beahan",
+      "family": "Torphy",
       "given": [
-        "Gertha"
+        "Shawanda"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "703-511-5893 x8425",
+      "value": "518-531-8222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "350-106-3785 x21079",
+      "value": "1-775-640-2673 x955",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2023-12-31",
-        "end": "2026-12-31"
+        "start": "2022-03-07",
+        "end": "2025-03-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kirlin",
+      "family": "Halvorson",
       "given": [
-        "Horacio",
-        "Francesco"
+        "Fritz",
+        "Miles"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "987.367.9763 x898",
+      "value": "589-483-9657 x827",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "670.551.8106 x55537",
+      "value": "(353) 087-3874 x872",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2021-11-04",
-        "end": "2024-11-04"
+        "start": "2022-08-07",
+        "end": "2025-08-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

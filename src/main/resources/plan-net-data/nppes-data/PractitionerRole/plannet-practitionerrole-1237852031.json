@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "385a492ca79a07"
+      "value": "e254d3a83054f9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237852031",
-    "display": "Leif Ortiz"
+    "display": "Justin Reinger"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-165-232-7031 x27615",
+      "value": "838.294.0062 x80078",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(440) 967-2585 x46480",
+      "value": "(606) 740-5325 x891",
       "use": "work"
     }
   ],

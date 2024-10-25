@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kreiger",
+      "family": "Towne",
       "given": [
-        "Kelley"
+        "Minh",
+        "Mason"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(934) 424-1630",
+      "value": "282.529.4214 x6503",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(815) 467-2097",
+      "value": "178.291.8321 x430",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0005X",
-            "display": "Hypertension Specialist"
+            "display": "Hypertension Specialist Physician"
           }
         ],
-        "text": "Hypertension Specialist"
+        "text": "Hypertension Specialist Physician"
       },
       "period": {
-        "start": "2023-04-10",
-        "end": "2026-04-10"
+        "start": "2022-07-01",
+        "end": "2025-07-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

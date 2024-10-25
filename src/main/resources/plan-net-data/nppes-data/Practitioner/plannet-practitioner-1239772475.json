@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sanford",
+      "family": "Watsica",
       "given": [
-        "Chadwick"
+        "Dewitt"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "337-797-6430",
+      "value": "1-198-006-1894 x9991",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(268) 714-5213",
+      "value": "1-216-977-2501 x656",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-08-13",
-        "end": "2026-08-13"
+        "start": "2023-12-04",
+        "end": "2026-12-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

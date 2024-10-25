@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lebsack",
+      "family": "Crona",
       "given": [
-        "Jaime",
-        "Alfredo"
+        "Abdul"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(779) 095-5320",
+      "value": "(423) 346-6640 x0942",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "102-920-5632 x626",
+      "value": "151-012-4690 x32890",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-10-11",
-        "end": "2026-10-11"
+        "start": "2023-05-24",
+        "end": "2026-05-24"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

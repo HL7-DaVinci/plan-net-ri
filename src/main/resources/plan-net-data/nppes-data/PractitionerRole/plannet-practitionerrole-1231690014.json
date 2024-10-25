@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "694f7bc0be637d"
+      "value": "ec17338a7c1855"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231690014",
-    "display": "Wilber Von"
+    "display": "Harry Champlin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(689) 487-5358",
+      "value": "178-348-4230 x07562",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "422-305-2092 x4582",
+      "value": "751-596-3590",
       "use": "work"
     }
   ],

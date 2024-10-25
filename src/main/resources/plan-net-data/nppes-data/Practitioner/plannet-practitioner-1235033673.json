@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parisian",
+      "family": "Robel",
       "given": [
-        "Ivory"
+        "Isiah"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(242) 045-0794 x033",
+      "value": "1-184-271-2305",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "998.912.7486 x72630",
+      "value": "703.844.0797",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-10-29",
-        "end": "2024-10-29"
+        "start": "2023-11-06",
+        "end": "2026-11-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

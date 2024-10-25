@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "c6c28aabf4e5b6"
+      "value": "551f85af813f7d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234823152",
-    "display": "Brittany Dicki"
+    "display": "Dusty Bruen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "360-948-8018 x373",
+      "value": "354-301-4250 x1084",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-376-664-1861 x91331",
+      "value": "357.701.6487 x581",
       "use": "work"
     }
   ],

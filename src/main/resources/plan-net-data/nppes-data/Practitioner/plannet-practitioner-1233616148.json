@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koepp",
+      "family": "D'Amore",
       "given": [
-        "Brice",
-        "Giuseppe"
+        "Wilbert"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "721.562.2429 x9612",
+      "value": "1-294-110-2940 x42496",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(687) 376-0779 x231",
+      "value": "966.444.6455 x79556",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2023-09-18",
-        "end": "2026-09-18"
+        "start": "2024-06-12",
+        "end": "2027-06-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Prosacco",
+      "family": "Kessler",
       "given": [
-        "Caitlyn"
+        "Marshall"
       ],
       "suffix": [
         "DDS"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "186-358-2380",
+      "value": "884.415.1902 x3504",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-241-150-7913 x3972",
+      "value": "(419) 179-7579 x729",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-07-06",
-        "end": "2025-07-06"
+        "start": "2023-08-11",
+        "end": "2026-08-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

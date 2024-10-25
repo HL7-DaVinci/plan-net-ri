@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pagac",
+      "family": "Heller",
       "given": [
-        "Robby"
+        "Scotty"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "172.691.3842 x0601",
+      "value": "911-933-4906 x924",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(471) 746-2644",
+      "value": "829-286-7497 x26977",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2021-12-12",
-        "end": "2024-12-12"
+        "start": "2023-06-22",
+        "end": "2026-06-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

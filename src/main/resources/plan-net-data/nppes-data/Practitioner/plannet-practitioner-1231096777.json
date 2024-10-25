@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brakus",
+      "family": "Huels",
       "given": [
-        "Jonathon"
+        "Cristobal",
+        "Rudy"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(141) 205-0778 x974",
+      "value": "613.439.3453 x5835",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-134-492-0054 x6093",
+      "value": "1-725-623-1453",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2022-05-23",
-        "end": "2025-05-23"
+        "start": "2022-05-11",
+        "end": "2025-05-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

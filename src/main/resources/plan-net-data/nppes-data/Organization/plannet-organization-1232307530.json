@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "743.497.6088 x1189",
+      "value": "497-978-3009 x2084",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-365-286-1981 x169",
+      "value": "984-581-1283 x140",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Maximina Batz",
-        "family": "Batz",
+        "text": "Gloria Predovic",
+        "family": "Predovic",
         "given": [
-          "Maximina"
+          "Gloria"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "743.497.6088 x1189",
+          "value": "497-978-3009 x2084",
           "use": "work"
         }
       ],

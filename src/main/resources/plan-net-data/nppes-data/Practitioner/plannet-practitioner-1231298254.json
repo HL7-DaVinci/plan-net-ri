@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Flatley",
+      "family": "Littel",
       "given": [
-        "Chere",
-        "Hanna"
+        "Shanae",
+        "Beverlee"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "885.147.3362 x56488",
+      "value": "662.183.8060",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "705.930.2618 x3367",
+      "value": "210.749.1744 x299",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2022-07-18",
-        "end": "2025-07-18"
+        "start": "2024-06-14",
+        "end": "2027-06-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

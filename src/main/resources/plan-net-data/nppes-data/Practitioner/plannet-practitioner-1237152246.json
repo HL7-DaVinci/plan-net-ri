@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stehr",
+      "family": "Deckow",
       "given": [
-        "Allan"
+        "Lenard",
+        "Ricky"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "135.227.5725 x30259",
+      "value": "1-548-137-1686 x472",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-127-126-8745",
+      "value": "541.050.3871 x92942",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2023-11-28",
-        "end": "2026-11-28"
+        "start": "2024-01-21",
+        "end": "2027-01-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

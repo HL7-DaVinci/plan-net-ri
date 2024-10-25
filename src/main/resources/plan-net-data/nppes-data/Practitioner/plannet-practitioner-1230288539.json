@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nienow",
+      "family": "Ullrich",
       "given": [
-        "Cecile",
-        "Sandee"
+        "Connie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(380) 069-1322 x15311",
+      "value": "1-263-037-7550 x70926",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-691-557-3416 x5042",
+      "value": "(478) 051-9319",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-09-08",
-        "end": "2025-09-08"
+        "start": "2022-03-04",
+        "end": "2025-03-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

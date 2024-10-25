@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Von",
+      "family": "Mayer",
       "given": [
-        "Ray"
+        "Virgilio"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-481-902-1557 x224",
+      "value": "1-524-753-6255 x66208",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "990.523.8333 x1150",
+      "value": "754-818-1917 x27983",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-08-03",
-        "end": "2024-08-03"
+        "start": "2023-06-17",
+        "end": "2026-06-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

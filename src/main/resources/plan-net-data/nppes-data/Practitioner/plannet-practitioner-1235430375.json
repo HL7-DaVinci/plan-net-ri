@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turner",
+      "family": "Metz",
       "given": [
-        "Reed"
+        "Trevor",
+        "Marcelo"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(942) 801-6703 x51431",
+      "value": "(793) 741-2264 x1489",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "885-932-2748 x1809",
+      "value": "(295) 841-7211",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-03-20",
-        "end": "2025-03-20"
+        "start": "2024-05-14",
+        "end": "2027-05-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

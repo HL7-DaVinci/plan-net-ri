@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rogahn",
+      "family": "Collins",
       "given": [
-        "Lessie"
+        "Chanel"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-906-641-1848 x9423",
+      "value": "113-228-8714 x0323",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-531-984-1067 x707",
+      "value": "276-342-0420",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-08-31",
-        "end": "2024-08-31"
+        "start": "2022-01-25",
+        "end": "2025-01-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

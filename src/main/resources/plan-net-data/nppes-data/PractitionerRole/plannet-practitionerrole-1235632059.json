@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "71a684878e0296"
+      "value": "2ff2314fc69351"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235632059",
-    "display": "Lavern Halvorson"
+    "display": "Elmo Keebler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207L00000X",
-          "display": "Anesthesiology"
+          "display": "Anesthesiology Physician"
         }
       ],
-      "text": "Anesthesiology"
+      "text": "Anesthesiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "528.949.3422 x395",
+      "value": "343-223-2467",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-198-402-1382 x296",
+      "value": "207-594-2724",
       "use": "work"
     }
   ],

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Moore",
+      "family": "Runolfsdottir",
       "given": [
-        "Bradley"
+        "Wilmer"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(678) 048-2729 x4653",
+      "value": "225-501-8707 x5178",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "120.083.4515 x6781",
+      "value": "(612) 379-8400 x5685",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2021-12-11",
-        "end": "2024-12-11"
+        "start": "2023-07-17",
+        "end": "2026-07-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

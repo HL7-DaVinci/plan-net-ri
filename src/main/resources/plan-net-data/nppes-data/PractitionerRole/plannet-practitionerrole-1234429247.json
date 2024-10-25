@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "e60de4efc4ec41"
+      "value": "d2fe0a694f65a3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234429247",
-    "display": "Randolph Abshire"
+    "display": "Fabian Kunde"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZD0900X",
-          "display": "Dermatopathology"
+          "display": "Dermatopathology (Pathology) Physician"
         }
       ],
-      "text": "Dermatopathology"
+      "text": "Dermatopathology (Pathology) Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "362-398-8443 x493",
+      "value": "(460) 698-2548 x737",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "586-632-9224",
+      "value": "271.112.8953 x56075",
       "use": "work"
     }
   ],

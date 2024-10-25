@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Russel",
+      "family": "Labadie",
       "given": [
-        "Angie"
+        "Belen",
+        "Ressie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-365-283-0246 x581",
+      "value": "773.503.3725 x00429",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-383-143-3399 x6004",
+      "value": "852.438.0091 x0600",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2024-02-13",
-        "end": "2027-02-13"
+        "start": "2024-06-08",
+        "end": "2027-06-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

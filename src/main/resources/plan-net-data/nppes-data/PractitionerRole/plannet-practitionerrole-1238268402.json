@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "931e502c75c572"
+      "value": "20901a27f08a3d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238268402",
-    "display": "Tenisha Pfannerstill"
+    "display": "Melida Braun"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "101YP2500X",
-          "display": "Professional"
+          "display": "Professional Counselor"
         }
       ],
-      "text": "Professional"
+      "text": "Professional Counselor"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "462-959-8868 x26345",
+      "value": "1-192-020-9274 x1892",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(296) 299-6915 x32770",
+      "value": "1-414-270-7561 x98161",
       "use": "work"
     }
   ],

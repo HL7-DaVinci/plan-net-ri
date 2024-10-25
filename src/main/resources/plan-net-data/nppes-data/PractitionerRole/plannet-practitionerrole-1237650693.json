@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "9ec74ae112f8dd"
+      "value": "fdd93701e827cb"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237650693",
-    "display": "Maurita Lemke"
+    "display": "Hue Kessler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084N0400X",
-          "display": "Neurology"
+          "display": "Neurology Physician"
         }
       ],
-      "text": "Neurology"
+      "text": "Neurology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-123-753-5982",
+      "value": "339.910.2323 x934",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(380) 682-0577",
+      "value": "274.298.0763 x796",
       "use": "work"
     }
   ],

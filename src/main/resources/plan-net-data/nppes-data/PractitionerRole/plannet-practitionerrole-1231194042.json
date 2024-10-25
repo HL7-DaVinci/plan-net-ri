@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "e863b233bf9bf5"
+      "value": "1d7ffe150b8e7d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231194042",
-    "display": "Gabriella Kertzmann"
+    "display": "Zoila Nicolas"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213EP1101X",
-          "display": "Primary Podiatric Medicine"
+          "display": "Primary Podiatric Medicine Podiatrist"
         }
       ],
-      "text": "Primary Podiatric Medicine"
+      "text": "Primary Podiatric Medicine Podiatrist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "247.657.1904 x478",
+      "value": "1-470-329-6140 x48903",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "545-422-1949",
+      "value": "948.791.6824 x514",
       "use": "work"
     }
   ],

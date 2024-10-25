@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kohler",
+      "family": "Cole",
       "given": [
-        "Hong",
-        "Edwin"
+        "Toney"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(114) 904-3350 x0886",
+      "value": "(726) 526-1948",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(614) 457-0606 x35742",
+      "value": "(862) 018-4211 x786",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-07-19",
-        "end": "2024-07-19"
+        "start": "2022-10-30",
+        "end": "2025-10-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-10-23",
-        "end": "2026-10-23"
+        "start": "2023-12-08",
+        "end": "2026-12-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,31 +241,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

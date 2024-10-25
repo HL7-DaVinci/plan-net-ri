@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bosco",
+      "family": "Zulauf",
       "given": [
-        "Basil"
+        "Claud"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "191.079.2048 x4774",
+      "value": "682-949-4068 x7714",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(348) 058-2382 x407",
+      "value": "735.391.9054 x277",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-03-06",
-        "end": "2026-03-06"
+        "start": "2023-02-27",
+        "end": "2026-02-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-04-14",
-        "end": "2026-04-14"
+        "start": "2024-03-28",
+        "end": "2027-03-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -266,14 +266,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2023-07-17",
-        "end": "2026-07-17"
+        "start": "2023-07-29",
+        "end": "2026-07-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -330,14 +330,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2022-05-27",
-        "end": "2025-05-27"
+        "start": "2023-09-15",
+        "end": "2026-09-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -389,11 +389,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Daugherty",
+      "family": "Koelpin",
       "given": [
-        "Kasey",
-        "Humberto"
+        "Levi"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-617-183-0546 x1124",
+      "value": "786.447.3367 x6038",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "849.561.0526",
+      "value": "1-407-750-7466",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-08-30",
-        "end": "2026-08-30"
+        "start": "2023-05-30",
+        "end": "2026-05-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

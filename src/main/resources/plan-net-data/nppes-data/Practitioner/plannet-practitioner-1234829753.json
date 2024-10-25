@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bauch",
+      "family": "Balistreri",
       "given": [
-        "Ike"
+        "Walton"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-821-403-6448 x974",
+      "value": "249.008.8631",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(713) 424-5502 x7623",
+      "value": "683-989-3564 x931",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0000X",
-            "display": "Hematology"
+            "display": "Hematology (Internal Medicine) Physician"
           }
         ],
-        "text": "Hematology"
+        "text": "Hematology (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-12-20",
-        "end": "2024-12-20"
+        "start": "2022-04-22",
+        "end": "2025-04-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RX0202X",
-            "display": "Medical Oncology"
+            "display": "Medical Oncology Physician"
           }
         ],
-        "text": "Medical Oncology"
+        "text": "Medical Oncology Physician"
       },
       "period": {
-        "start": "2023-10-30",
-        "end": "2026-10-30"
+        "start": "2024-10-04",
+        "end": "2027-10-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

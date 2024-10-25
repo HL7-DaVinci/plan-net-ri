@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "DuBuque",
+      "family": "Hartmann",
       "given": [
-        "Ellsworth"
+        "Lawrence"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "293-463-6545",
+      "value": "367-230-3929 x63011",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-133-239-9977 x1325",
+      "value": "(653) 874-9596 x9510",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-07-11",
-        "end": "2024-07-11"
+        "start": "2023-08-24",
+        "end": "2026-08-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

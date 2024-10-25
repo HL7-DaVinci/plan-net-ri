@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hodkiewicz",
+      "family": "Johnson",
       "given": [
-        "Wilton"
+        "Jared"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "114-418-4479 x808",
+      "value": "739.433.9211 x3164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(320) 159-1946 x138",
+      "value": "(149) 976-6410 x43314",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-06-28",
-        "end": "2026-06-28"
+        "start": "2021-12-29",
+        "end": "2024-12-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

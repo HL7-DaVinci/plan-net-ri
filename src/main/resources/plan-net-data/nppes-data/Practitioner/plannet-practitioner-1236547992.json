@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Huel",
+      "family": "Kreiger",
       "given": [
-        "Ghislaine",
-        "Emely"
+        "Annalee"
       ],
       "suffix": [
         "DPM"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(226) 493-2490",
+      "value": "1-851-261-0069 x35618",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "708-706-9212 x84652",
+      "value": "273.477.6096",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-02-18",
-        "end": "2025-02-18"
+        "start": "2022-05-28",
+        "end": "2025-05-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2023-01-09",
-        "end": "2026-01-09"
+        "start": "2023-11-25",
+        "end": "2026-11-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

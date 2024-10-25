@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schaden",
+      "family": "Rowe",
       "given": [
-        "Anderson"
+        "Alfredo",
+        "Wilber"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "965.058.9102 x0184",
+      "value": "419.590.8852",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "733.944.5518 x30122",
+      "value": "770.193.4502 x25108",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-07-12",
-        "end": "2024-07-12"
+        "start": "2024-09-04",
+        "end": "2027-09-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

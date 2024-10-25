@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "bed5155d485d32"
+      "value": "5e46a0bc5b7729"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230283779",
-    "display": "Jimmie Rippin"
+    "display": "Royal Kerluke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "840.018.6728",
+      "value": "(244) 176-6350 x0077",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-895-501-1430",
+      "value": "119-106-2308",
       "use": "work"
     }
   ],

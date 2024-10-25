@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "3c6cebdba8e91e"
+      "value": "7d9cf9f11cea34"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237854128",
-    "display": "Jamar Walsh"
+    "display": "Hong Wehner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-792-417-4785 x5060",
+      "value": "689.580.2151 x56240",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "404.353.0852 x00571",
+      "value": "1-135-029-9712 x05170",
       "use": "work"
     }
   ],

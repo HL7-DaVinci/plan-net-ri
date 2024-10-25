@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kirlin",
+      "family": "Medhurst",
       "given": [
-        "Berry"
+        "Roland"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(855) 373-0655 x0760",
+      "value": "(764) 060-8912 x7941",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "192.073.5863 x53539",
+      "value": "354-483-0755 x65702",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-27",
-        "end": "2025-01-27"
+        "start": "2023-01-28",
+        "end": "2026-01-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -72,10 +72,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Earl Hills",
-        "family": "Hills",
+        "text": "David Steuber",
+        "family": "Steuber",
         "given": [
-          "Earl"
+          "David"
         ]
       },
       "telecom": [
@@ -116,7 +116,7 @@
             }
           ],
           "system": "phone",
-          "value": "865-867-6636 x5151",
+          "value": "(330) 176-3225 x2980",
           "use": "work"
         }
       ],

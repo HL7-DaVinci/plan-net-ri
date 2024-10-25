@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Blick",
+      "family": "Boehm",
       "given": [
-        "Lucile"
+        "Zofia"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(995) 018-4217 x102",
+      "value": "262-333-3834 x86792",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "516-952-1503 x685",
+      "value": "(736) 024-9717 x205",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-11-20",
-        "end": "2026-11-20"
+        "start": "2022-05-19",
+        "end": "2025-05-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

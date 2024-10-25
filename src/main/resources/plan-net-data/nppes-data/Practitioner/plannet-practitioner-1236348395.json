@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Murray",
+      "family": "Pfeffer",
       "given": [
-        "Wilhelmina"
+        "Dorinda"
       ],
       "suffix": [
         "N.P."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-819-525-2100 x65307",
+      "value": "1-943-699-8165 x9319",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(359) 144-2385",
+      "value": "378.243.4006",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-09-21",
-        "end": "2026-09-21"
+        "start": "2023-06-18",
+        "end": "2026-06-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

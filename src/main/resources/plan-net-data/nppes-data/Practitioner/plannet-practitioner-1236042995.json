@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lang",
+      "family": "Dooley",
       "given": [
-        "Jesse",
-        "Blaine"
+        "Aurelio"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(322) 813-4626 x55663",
+      "value": "946-691-5397",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(377) 291-2027 x457",
+      "value": "930.401.7054 x311",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-10-11",
-        "end": "2024-10-11"
+        "start": "2023-08-18",
+        "end": "2026-08-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -210,8 +209,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-09-08",
-        "end": "2026-09-08"
+        "start": "2023-10-10",
+        "end": "2026-10-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -243,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

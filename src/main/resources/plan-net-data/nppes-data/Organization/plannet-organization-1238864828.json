@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(818) 135-6285",
+      "value": "910-023-6486 x347",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-344-274-1258 x8110",
+      "value": "573-925-3532",
       "use": "work"
     }
   ],
@@ -85,10 +85,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Tracy Gleichner",
-        "family": "Gleichner",
+        "text": "Donovan Lind",
+        "family": "Lind",
         "given": [
-          "Tracy"
+          "Donovan"
         ]
       },
       "telecom": [
@@ -129,7 +129,7 @@
             }
           ],
           "system": "phone",
-          "value": "(818) 135-6285",
+          "value": "910-023-6486 x347",
           "use": "work"
         }
       ],

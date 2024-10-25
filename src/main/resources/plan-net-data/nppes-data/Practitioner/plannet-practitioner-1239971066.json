@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Goldner",
+      "family": "Simonis",
       "given": [
-        "Terrence"
+        "Donny",
+        "Gale"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-170-343-8469 x5037",
+      "value": "(709) 539-4260",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "963.210.2640 x560",
+      "value": "958-503-7181 x9325",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223S0112X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral and Maxillofacial Surgery (Dentist)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral and Maxillofacial Surgery (Dentist)"
       },
       "period": {
-        "start": "2023-11-12",
-        "end": "2026-11-12"
+        "start": "2024-08-17",
+        "end": "2027-08-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

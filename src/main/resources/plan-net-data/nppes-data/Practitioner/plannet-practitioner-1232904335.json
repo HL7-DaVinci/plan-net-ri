@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jones",
+      "family": "Rath",
       "given": [
-        "Leighann"
+        "Christia",
+        "Charmaine"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(192) 377-5010 x745",
+      "value": "902-117-4191 x402",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "440.496.0258",
+      "value": "949-078-8543 x7052",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207SG0201X",
-            "display": "Clinical Genetics (M.D.)"
+            "display": "Clinical Genetics (M.D.) Physician"
           }
         ],
-        "text": "Clinical Genetics (M.D.)"
+        "text": "Clinical Genetics (M.D.) Physician"
       },
       "period": {
-        "start": "2022-09-28",
-        "end": "2025-09-28"
+        "start": "2024-03-15",
+        "end": "2027-03-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-07-07",
-        "end": "2025-07-07"
+        "start": "2023-03-12",
+        "end": "2026-03-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

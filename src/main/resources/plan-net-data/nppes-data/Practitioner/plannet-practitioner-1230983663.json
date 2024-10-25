@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Huel",
+      "family": "Koelpin",
       "given": [
-        "Cristopher",
-        "Arden"
+        "Conrad"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "411.572.1596 x97043",
+      "value": "234-731-4401 x87987",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-201-090-5568 x765",
+      "value": "(267) 470-3910 x157",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-03-02",
-        "end": "2027-03-02"
+        "start": "2022-01-27",
+        "end": "2025-01-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

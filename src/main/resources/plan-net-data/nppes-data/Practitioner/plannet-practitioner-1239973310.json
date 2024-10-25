@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rogahn",
+      "family": "Feeney",
       "given": [
-        "Doug"
+        "Hal",
+        "Elroy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(336) 702-6379",
+      "value": "(347) 280-4080 x038",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-553-278-9445",
+      "value": "1-686-274-5606 x4650",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-12-06",
-        "end": "2025-12-06"
+        "start": "2023-10-04",
+        "end": "2026-10-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

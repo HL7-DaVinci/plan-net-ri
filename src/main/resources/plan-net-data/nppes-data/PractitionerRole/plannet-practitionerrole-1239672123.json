@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "44040cf362ad23"
+      "value": "0843572e18dafa"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239672123",
-    "display": "Chu Moore"
+    "display": "Nichole Terry"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-760-301-2888 x405",
+      "value": "1-278-979-9122 x78489",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(233) 234-8568 x5426",
+      "value": "228-118-3559 x7922",
       "use": "work"
     }
   ],

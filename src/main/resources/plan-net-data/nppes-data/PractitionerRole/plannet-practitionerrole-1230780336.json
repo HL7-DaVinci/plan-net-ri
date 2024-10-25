@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "c600e987ef57e2"
+      "value": "717f02b92f67f8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230780336",
-    "display": "Erasmo Bartoletti"
+    "display": "Kirk Williamson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234521488",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207NS0135X",
-          "display": "Procedural Dermatology"
+          "display": "Procedural Dermatology Physician"
         }
       ],
-      "text": "Procedural Dermatology"
+      "text": "Procedural Dermatology Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-745-694-3824",
+      "value": "1-310-934-9914",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "461.167.9817",
+      "value": "1-497-836-0906",
       "use": "work"
     }
   ],

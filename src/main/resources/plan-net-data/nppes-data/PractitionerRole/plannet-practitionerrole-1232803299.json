@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "66c4be271c9f3b"
+      "value": "8361e58198292a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232803299",
-    "display": "Adelaide Howe"
+    "display": "Juliane Murazik"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-422-681-0395 x75010",
+      "value": "837-497-8641 x69728",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(795) 442-0719",
+      "value": "998.616.7542 x7489",
       "use": "work"
     }
   ],

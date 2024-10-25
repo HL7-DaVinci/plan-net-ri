@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wunsch",
+      "family": "Herzog",
       "given": [
-        "Bradley"
+        "Rayford",
+        "Randal"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(770) 576-6040",
+      "value": "(439) 597-7291 x7694",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "195-555-3519 x25528",
+      "value": "1-191-173-0351",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2021-07-23",
-        "end": "2024-07-23"
+        "start": "2023-11-28",
+        "end": "2026-11-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bednar",
+      "family": "Block",
       "given": [
-        "Faye",
-        "Kayleigh"
+        "Quinn"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-441-598-3772 x0197",
+      "value": "118-454-9260",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "884-498-7239 x40444",
+      "value": "467.137.2606 x52205",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2024-03-02",
-        "end": "2027-03-02"
+        "start": "2024-07-22",
+        "end": "2027-07-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

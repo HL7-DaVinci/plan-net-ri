@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kulas",
+      "family": "Bosco",
       "given": [
-        "Shirley",
-        "Federico"
+        "Faustino"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(714) 736-4337 x161",
+      "value": "480.713.3396 x347",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-351-185-4817",
+      "value": "581.779.1557 x957",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2024-03-16",
-        "end": "2027-03-16"
+        "start": "2023-03-11",
+        "end": "2026-03-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

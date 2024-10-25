@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nienow",
+      "family": "Wiza",
       "given": [
-        "Jean",
-        "Mathilda"
+        "Candy",
+        "Loren"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-147-171-4534 x2592",
+      "value": "(710) 849-8863",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "305.465.4328 x09672",
+      "value": "1-262-782-3630 x4847",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2023-07-14",
-        "end": "2026-07-14"
+        "start": "2023-05-12",
+        "end": "2026-05-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

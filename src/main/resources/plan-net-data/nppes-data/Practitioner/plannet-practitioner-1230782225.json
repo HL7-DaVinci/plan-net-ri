@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnson",
+      "family": "Abshire",
       "given": [
-        "Elmo",
-        "Nathaniel"
+        "Emery"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-317-978-9741 x03358",
+      "value": "606-046-0934",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-460-532-1399",
+      "value": "859.127.2875",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2021-12-27",
-        "end": "2024-12-27"
+        "start": "2023-02-13",
+        "end": "2026-02-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

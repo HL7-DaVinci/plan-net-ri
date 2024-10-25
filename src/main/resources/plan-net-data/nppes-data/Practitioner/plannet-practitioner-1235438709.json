@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wuckert",
+      "family": "Sanford",
       "given": [
-        "Johnie"
+        "Dylan",
+        "Cornelius"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "682.959.5975 x47430",
+      "value": "(288) 260-7841 x112",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(371) 860-5058 x49572",
+      "value": "533.393.5090 x5966",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2022-04-19",
-        "end": "2025-04-19"
+        "start": "2023-03-20",
+        "end": "2026-03-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2024-03-23",
-        "end": "2027-03-23"
+        "start": "2022-12-03",
+        "end": "2025-12-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -264,14 +265,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2021-11-10",
-        "end": "2024-11-10"
+        "start": "2022-09-03",
+        "end": "2025-09-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -323,11 +324,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "955aeed19e5b9e"
+      "value": "9f56ecde0820f7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232105095",
-    "display": "Junior Wyman"
+    "display": "Henry Willms"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "667.376.3856 x117",
+      "value": "499.375.9984 x499",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "602-267-3764",
+      "value": "(944) 050-4065 x23449",
       "use": "work"
     }
   ],

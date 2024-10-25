@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walter",
+      "family": "Gusikowski",
       "given": [
-        "Jamar",
-        "Warner"
+        "Monroe",
+        "Darrick"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "931-412-7388",
+      "value": "243-589-8613 x34384",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "840.553.1822",
+      "value": "1-377-348-6610 x045",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080N0001X",
-            "display": "Neonatal-Perinatal Medicine"
+            "display": "Neonatal-Perinatal Medicine Physician"
           }
         ],
-        "text": "Neonatal-Perinatal Medicine"
+        "text": "Neonatal-Perinatal Medicine Physician"
       },
       "period": {
-        "start": "2022-11-05",
-        "end": "2025-11-05"
+        "start": "2023-12-09",
+        "end": "2026-12-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

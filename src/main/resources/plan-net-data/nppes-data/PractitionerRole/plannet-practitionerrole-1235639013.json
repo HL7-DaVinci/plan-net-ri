@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "31dccdb377f0d6"
+      "value": "9a9ea94331e8a3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235639013",
-    "display": "Lacy Dietrich"
+    "display": "Alene Raynor"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "303-001-8649 x495",
+      "value": "332.190.1235",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(403) 246-7623 x600",
+      "value": "928.449.2977 x2119",
       "use": "work"
     }
   ],

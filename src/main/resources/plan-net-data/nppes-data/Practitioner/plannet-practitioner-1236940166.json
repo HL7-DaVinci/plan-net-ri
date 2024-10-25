@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walter",
+      "family": "Feeney",
       "given": [
-        "Kaley",
-        "Leilani"
+        "Luetta",
+        "Maryalice"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-771-614-0634 x8190",
+      "value": "421.689.4199 x2420",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-909-444-8948 x22578",
+      "value": "774.205.4340 x920",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2024-02-25",
-        "end": "2027-02-25"
+        "start": "2023-12-27",
+        "end": "2026-12-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

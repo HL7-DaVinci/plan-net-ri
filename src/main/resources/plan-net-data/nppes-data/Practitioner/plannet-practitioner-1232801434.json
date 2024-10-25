@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Keeling",
+      "family": "Ullrich",
       "given": [
-        "Margarito",
-        "Mauricio"
+        "Hans"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(931) 289-2760 x61158",
+      "value": "315.146.5829 x9599",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-396-152-2487",
+      "value": "941-249-2179 x99810",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-12-04",
-        "end": "2025-12-04"
+        "start": "2022-05-02",
+        "end": "2025-05-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

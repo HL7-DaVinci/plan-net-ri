@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Shanahan",
+      "family": "Bailey",
       "given": [
-        "Rolf"
+        "Jacques",
+        "Bryce"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "320-262-2356 x64928",
+      "value": "1-260-084-4093 x58729",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-621-255-3975 x231",
+      "value": "938-768-0705 x854",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-02-18",
-        "end": "2026-02-18"
+        "start": "2024-06-19",
+        "end": "2027-06-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

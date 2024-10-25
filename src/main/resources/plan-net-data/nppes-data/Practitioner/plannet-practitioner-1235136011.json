@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Homenick",
+      "family": "Watsica",
       "given": [
-        "Edmundo"
+        "Vern"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(862) 433-4376 x5910",
+      "value": "908-099-0562 x37642",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "946.380.2773",
+      "value": "1-719-032-2387",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-10-09",
-        "end": "2024-10-09"
+        "start": "2023-01-21",
+        "end": "2026-01-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

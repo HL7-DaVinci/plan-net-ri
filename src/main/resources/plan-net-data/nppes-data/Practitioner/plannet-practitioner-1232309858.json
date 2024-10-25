@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hammes",
+      "family": "Runolfsdottir",
       "given": [
-        "Kera"
+        "Dorian",
+        "Birdie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "414.230.5812 x836",
+      "value": "812.489.7328 x93793",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "937-290-4130 x4453",
+      "value": "862-529-7657",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2023-12-30",
-        "end": "2026-12-30"
+        "start": "2022-05-04",
+        "end": "2025-05-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

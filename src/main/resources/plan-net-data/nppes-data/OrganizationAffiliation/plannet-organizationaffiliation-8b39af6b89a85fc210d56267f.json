@@ -17,15 +17,15 @@
       "display": "State of Massachusetts Preferred Provider Network"
     },
     {
-      "reference": "Organization/plannet-network-HPID030000",
-      "display": "Massachusetts Persona Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID020000",
+      "display": "Green Circle of Massachusetts HMO"
     }
   ],
   "code": [
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/organization-role",
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrganizationAffiliationRoleCS",
           "code": "pharmacy",
           "display": "Pharmacy"
         }

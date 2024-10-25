@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beatty",
+      "family": "Lindgren",
       "given": [
-        "Royal"
+        "Jeff",
+        "Randell"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "273-761-5530 x5265",
+      "value": "898-145-6213 x44880",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(657) 930-0158 x32209",
+      "value": "(491) 827-5566 x669",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2023-11-06",
-        "end": "2026-11-06"
+        "start": "2024-03-25",
+        "end": "2027-03-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Paucek",
+      "family": "Mertz",
       "given": [
-        "Brian"
+        "Olin",
+        "Broderick"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "259-863-7795",
+      "value": "285-171-1403 x935",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-593-150-0883 x50694",
+      "value": "(359) 153-5145 x722",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208200000X",
-            "display": "Plastic Surgery"
+            "display": "Plastic Surgery Physician"
           }
         ],
-        "text": "Plastic Surgery"
+        "text": "Plastic Surgery Physician"
       },
       "period": {
-        "start": "2022-04-21",
-        "end": "2025-04-21"
+        "start": "2023-07-19",
+        "end": "2026-07-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

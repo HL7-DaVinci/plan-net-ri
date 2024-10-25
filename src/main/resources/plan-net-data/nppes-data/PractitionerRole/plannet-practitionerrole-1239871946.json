@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "a91fe18add46f1"
+      "value": "443690f6bfecf6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239871946",
-    "display": "Eugene Glover"
+    "display": "Gilberto Swaniawski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-448-507-7420 x6659",
+      "value": "434.720.9071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "125-005-9064 x4698",
+      "value": "616.997.7070 x68596",
       "use": "work"
     }
   ],

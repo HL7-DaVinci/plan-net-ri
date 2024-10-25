@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Homenick",
+      "family": "Sporer",
       "given": [
-        "Xiomara"
+        "Pat"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(998) 293-9179 x2888",
+      "value": "255.153.0354",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(359) 354-5723 x0145",
+      "value": "(636) 889-3868 x5396",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2021-12-13",
-        "end": "2024-12-13"
+        "start": "2023-01-15",
+        "end": "2026-01-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

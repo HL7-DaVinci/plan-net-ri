@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mante",
+      "family": "Zulauf",
       "given": [
-        "Harvey",
-        "Marcellus"
+        "Daron"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "320.315.5553 x821",
+      "value": "727-508-1621 x058",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "889-710-7400 x73999",
+      "value": "935-810-7852 x318",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-05-04",
-        "end": "2026-05-04"
+        "start": "2023-02-11",
+        "end": "2026-02-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Shields",
+      "family": "Mraz",
       "given": [
-        "Douglas",
-        "Ezra"
+        "Horace",
+        "Wilmer"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "563-294-3207",
+      "value": "(665) 360-2152",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "824-167-1294 x0297",
+      "value": "1-853-543-0317 x7084",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-12-11",
-        "end": "2026-12-11"
+        "start": "2024-07-13",
+        "end": "2027-07-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

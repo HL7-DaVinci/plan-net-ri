@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "7357cd5e3fa5ef"
+      "value": "38cfd6908c62a9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235236918",
-    "display": "Jeromy Haag"
+    "display": "Darrell Carroll"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RP1001X",
-          "display": "Pulmonary Disease"
+          "display": "Pulmonary Disease Physician"
         }
       ],
-      "text": "Pulmonary Disease"
+      "text": "Pulmonary Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "514.568.1357 x60059",
+      "value": "(738) 390-1283",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(251) 182-7025 x15990",
+      "value": "(987) 895-2437 x921",
       "use": "work"
     }
   ],

@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "608-576-7613 x97442",
+      "value": "367.483.5556",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(413) 099-4509 x7172",
+      "value": "322.839.5376 x50210",
       "use": "work"
     }
   ],
@@ -85,10 +85,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Shannon Marks",
-        "family": "Marks",
+        "text": "Garret Haley",
+        "family": "Haley",
         "given": [
-          "Shannon"
+          "Garret"
         ]
       },
       "telecom": [
@@ -129,7 +129,7 @@
             }
           ],
           "system": "phone",
-          "value": "608-576-7613 x97442",
+          "value": "367.483.5556",
           "use": "work"
         }
       ],

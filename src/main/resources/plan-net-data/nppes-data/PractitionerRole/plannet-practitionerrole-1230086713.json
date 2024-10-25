@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "cad8b070799cd2"
+      "value": "9e7485ae5594d5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230086713",
-    "display": "Andreas Kub"
+    "display": "Allen Padberg"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(896) 894-2846",
+      "value": "1-527-464-6168 x3803",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-224-842-1835",
+      "value": "280.103.1162 x25617",
       "use": "work"
     }
   ],

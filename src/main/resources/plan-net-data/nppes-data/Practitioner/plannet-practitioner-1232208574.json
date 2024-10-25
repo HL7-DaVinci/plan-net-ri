@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Daugherty",
+      "family": "Kunze",
       "given": [
-        "Lee"
+        "Marc",
+        "Virgilio"
       ],
       "suffix": [
         "V.M.D., M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "524-483-4032 x1845",
+      "value": "(409) 682-3412 x3073",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-529-153-4857 x0742",
+      "value": "666-634-7537",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-04-15",
-        "end": "2025-04-15"
+        "start": "2022-03-19",
+        "end": "2025-03-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207UN0901X",
-            "display": "Nuclear Cardiology"
+            "display": "Nuclear Cardiology Physician"
           }
         ],
-        "text": "Nuclear Cardiology"
+        "text": "Nuclear Cardiology Physician"
       },
       "period": {
-        "start": "2024-01-01",
-        "end": "2027-01-01"
+        "start": "2023-08-16",
+        "end": "2026-08-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -239,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

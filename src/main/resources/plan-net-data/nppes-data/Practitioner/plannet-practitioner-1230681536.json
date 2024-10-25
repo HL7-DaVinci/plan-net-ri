@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wintheiser",
+      "family": "Wiegand",
       "given": [
-        "Emory",
-        "Zackary"
+        "Vince"
       ],
       "suffix": [
         "PA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-709-988-1220",
+      "value": "738-090-8854",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "234.394.9839 x1312",
+      "value": "(112) 751-2332 x88730",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-08-11",
-        "end": "2024-08-11"
+        "start": "2023-12-02",
+        "end": "2026-12-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

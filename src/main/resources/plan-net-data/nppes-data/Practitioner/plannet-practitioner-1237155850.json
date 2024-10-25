@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Welch",
+      "family": "Sauer",
       "given": [
-        "Rudolph",
-        "Emory"
+        "Dwain"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "509.824.7753 x2874",
+      "value": "(876) 024-5023 x0510",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "295-514-7100 x5130",
+      "value": "325-196-5302 x649",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-07-27",
-        "end": "2025-07-27"
+        "start": "2024-03-31",
+        "end": "2027-03-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

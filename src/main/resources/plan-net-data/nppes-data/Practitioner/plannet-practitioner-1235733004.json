@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lowe",
+      "family": "Erdman",
       "given": [
-        "Jarred",
-        "Anthony"
+        "Conrad"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(233) 590-6243",
+      "value": "128-430-4383 x5175",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(972) 229-3199 x57428",
+      "value": "318.659.3114 x7927",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2021-07-08",
-        "end": "2024-07-08"
+        "start": "2023-05-11",
+        "end": "2026-05-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

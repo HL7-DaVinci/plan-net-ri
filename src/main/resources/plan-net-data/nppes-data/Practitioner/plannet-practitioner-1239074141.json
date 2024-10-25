@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Metz",
+      "family": "Zulauf",
       "given": [
-        "Rogelio"
+        "Hugh"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-857-186-0498 x7206",
+      "value": "(769) 677-0521 x648",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-961-996-7809 x636",
+      "value": "(982) 724-8485 x124",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-10-16",
-        "end": "2025-10-16"
+        "start": "2024-02-14",
+        "end": "2027-02-14"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

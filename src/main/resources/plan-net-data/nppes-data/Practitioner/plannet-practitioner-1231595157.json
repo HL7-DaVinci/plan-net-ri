@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Labadie",
+      "family": "Beatty",
       "given": [
-        "Arden"
+        "Burl",
+        "Burton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-643-626-4193 x34154",
+      "value": "551-143-4430 x8680",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(336) 495-5307",
+      "value": "487.847.0907 x6186",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2023-07-08",
-        "end": "2026-07-08"
+        "start": "2024-02-23",
+        "end": "2027-02-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

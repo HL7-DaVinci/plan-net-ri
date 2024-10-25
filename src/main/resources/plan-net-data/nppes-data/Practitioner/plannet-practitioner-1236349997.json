@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhn",
+      "family": "Schneider",
       "given": [
-        "Xiao"
+        "Hermila",
+        "Jesusita"
       ],
       "suffix": [
         "CNM; MSN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "291-439-3634 x93260",
+      "value": "623-753-2285 x16509",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "534.381.5565 x363",
+      "value": "1-897-520-8246",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2023-02-19",
-        "end": "2026-02-19"
+        "start": "2023-10-02",
+        "end": "2026-10-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

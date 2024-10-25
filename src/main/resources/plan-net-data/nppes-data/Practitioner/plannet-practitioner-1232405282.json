@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Raynor",
+      "family": "Zemlak",
       "given": [
-        "Jerold"
+        "Mikel",
+        "Barton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-968-742-7792",
+      "value": "(908) 829-1891",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-904-541-9110 x332",
+      "value": "1-776-935-0401 x07464",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "111NX0100X",
-            "display": "Occupational Health"
+            "display": "Occupational Health Chiropractor"
           }
         ],
-        "text": "Occupational Health"
+        "text": "Occupational Health Chiropractor"
       },
       "period": {
-        "start": "2024-02-15",
-        "end": "2027-02-15"
+        "start": "2022-01-09",
+        "end": "2025-01-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

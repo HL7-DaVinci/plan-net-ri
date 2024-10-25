@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beahan",
+      "family": "Mraz",
       "given": [
-        "Christia",
-        "Gala"
+        "Rosaura",
+        "Kaley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "189-215-6650",
+      "value": "103.239.5660 x1418",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(239) 658-3958 x41117",
+      "value": "(757) 240-8956 x3232",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-05-20",
-        "end": "2025-05-20"
+        "start": "2024-09-17",
+        "end": "2027-09-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208M00000X",
-            "display": "Hospitalist"
+            "display": "Hospitalist Physician"
           }
         ],
-        "text": "Hospitalist"
+        "text": "Hospitalist Physician"
       },
       "period": {
-        "start": "2022-01-06",
-        "end": "2025-01-06"
+        "start": "2022-01-14",
+        "end": "2025-01-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

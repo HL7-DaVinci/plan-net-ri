@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Will",
+      "family": "Lockman",
       "given": [
-        "Lashawnda"
+        "Tiera",
+        "Erica"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "498.313.7983 x115",
+      "value": "282.135.2520",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "109-664-5221 x05353",
+      "value": "127.011.1283 x507",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-08-21",
-        "end": "2025-08-21"
+        "start": "2022-06-06",
+        "end": "2025-06-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "378a0afcd0d8e4"
+      "value": "ca3fa0ed424b6c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239578686",
-    "display": "Hal Bauch"
+    "display": "Barry Kessler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "103TC0700X",
-          "display": "Clinical"
+          "display": "Clinical Psychologist"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Psychologist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "906-366-4352",
+      "value": "731.102.1348 x4164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "260-470-9703",
+      "value": "1-483-784-3025",
       "use": "work"
     }
   ],

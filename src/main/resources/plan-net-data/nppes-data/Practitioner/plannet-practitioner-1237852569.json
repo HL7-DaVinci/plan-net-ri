@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernhard",
+      "family": "D'Amore",
       "given": [
-        "Waneta",
-        "Harriette"
+        "Kelley",
+        "Kerstin"
       ],
       "suffix": [
         "LCSW"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-860-259-4551 x906",
+      "value": "963-193-7180",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "920-093-7259 x121",
+      "value": "1-431-743-9971 x498",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-05-18",
-        "end": "2026-05-18"
+        "start": "2023-02-15",
+        "end": "2026-02-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

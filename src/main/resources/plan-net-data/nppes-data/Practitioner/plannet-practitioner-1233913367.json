@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Torphy",
+      "family": "Robel",
       "given": [
-        "Emma",
-        "Lara"
+        "Muoi",
+        "Vernon"
       ],
       "suffix": [
         "DMD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(558) 755-4074 x5395",
+      "value": "1-965-397-3478 x755",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "718-057-1878",
+      "value": "516-662-6098 x399",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-02-27",
-        "end": "2025-02-27"
+        "start": "2022-10-02",
+        "end": "2025-10-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0106X",
-            "display": "Oral and Maxillofacial Pathology"
+            "display": "Oral and Maxillofacial Pathology Dentist"
           }
         ],
-        "text": "Oral and Maxillofacial Pathology"
+        "text": "Oral and Maxillofacial Pathology Dentist"
       },
       "period": {
-        "start": "2024-03-12",
-        "end": "2027-03-12"
+        "start": "2023-03-28",
+        "end": "2026-03-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

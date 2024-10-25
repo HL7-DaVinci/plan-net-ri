@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sipes",
+      "family": "Kerluke",
       "given": [
-        "Jerrod",
-        "Randolph"
+        "Orlando"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "117.483.6660 x950",
+      "value": "1-655-577-6999",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "115.687.8286 x95369",
+      "value": "560-836-3902 x890",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2023-07-10",
-        "end": "2026-07-10"
+        "start": "2023-06-27",
+        "end": "2026-06-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

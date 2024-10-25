@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "126ff8114e740a"
+      "value": "7aedcb508c5e1a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233319848",
-    "display": "Latrina Smith"
+    "display": "Glynda Gleichner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2251X0800X",
-          "display": "Orthopedic"
+          "display": "Orthopedic Physical Therapist"
         }
       ],
-      "text": "Orthopedic"
+      "text": "Orthopedic Physical Therapist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "280.226.9033 x4158",
+      "value": "(939) 197-5183",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(711) 422-6569 x30882",
+      "value": "1-589-820-8533",
       "use": "work"
     }
   ],

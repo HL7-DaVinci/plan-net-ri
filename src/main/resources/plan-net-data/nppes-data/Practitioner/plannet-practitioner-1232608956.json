@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ledner",
+      "family": "Cruickshank",
       "given": [
-        "Garth",
-        "Silas"
+        "Miguel"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "598-261-5797 x34719",
+      "value": "509-819-6064 x640",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "575-130-0820 x29188",
+      "value": "1-674-938-2295",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-03-06",
-        "end": "2027-03-06"
+        "start": "2022-05-12",
+        "end": "2025-05-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2024-01-15",
-        "end": "2027-01-15"
+        "start": "2022-07-20",
+        "end": "2025-07-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -243,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

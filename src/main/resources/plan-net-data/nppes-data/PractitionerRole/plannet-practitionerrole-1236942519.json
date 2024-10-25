@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "81e89b940e4f4d"
+      "value": "838e35cfebe2ed"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236942519",
-    "display": "Luis Lebsack"
+    "display": "Rodrigo Schumm"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(413) 273-5533 x1520",
+      "value": "(288) 508-8486",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "362-188-0076 x12225",
+      "value": "1-890-315-0149 x301",
       "use": "work"
     }
   ],

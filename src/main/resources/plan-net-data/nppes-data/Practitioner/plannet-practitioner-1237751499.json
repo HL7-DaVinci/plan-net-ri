@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "MacGyver",
+      "family": "Daugherty",
       "given": [
-        "Columbus"
+        "Omer",
+        "Timothy"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-771-245-4798 x0685",
+      "value": "215.403.4843",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-150-178-3534 x48877",
+      "value": "1-214-799-7350",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-03-13",
-        "end": "2025-03-13"
+        "start": "2024-10-11",
+        "end": "2027-10-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Treutel",
+      "family": "White",
       "given": [
-        "Gregg",
-        "King"
+        "Ismael"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-113-056-7821 x989",
+      "value": "(629) 697-1200 x176",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-334-115-7185 x72027",
+      "value": "1-408-734-2923",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-12-05",
-        "end": "2026-12-05"
+        "start": "2024-05-22",
+        "end": "2027-05-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

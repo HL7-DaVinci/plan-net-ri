@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "b04e9d02976636"
+      "value": "0b6eb54c32456b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232700934",
-    "display": "Deirdre Bosco"
+    "display": "Melonie Carter"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "148.645.3522 x47527",
+      "value": "1-880-381-5891 x42859",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "841-923-5384 x641",
+      "value": "464-054-4200 x25472",
       "use": "work"
     }
   ],

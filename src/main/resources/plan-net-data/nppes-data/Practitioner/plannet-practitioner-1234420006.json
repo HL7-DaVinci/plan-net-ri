@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schmidt",
+      "family": "Upton",
       "given": [
-        "Mel",
-        "Monte"
+        "Perry",
+        "King"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-727-660-1268 x616",
+      "value": "(373) 325-1914 x668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-646-317-0274 x92297",
+      "value": "820-220-2103 x17440",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2022-07-15",
-        "end": "2025-07-15"
+        "start": "2022-03-27",
+        "end": "2025-03-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

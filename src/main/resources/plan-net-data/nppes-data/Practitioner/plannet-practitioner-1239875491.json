@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hermann",
+      "family": "Hoeger",
       "given": [
-        "Lon",
-        "Bobbie"
+        "Phillip",
+        "Angelo"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-317-205-7532 x3525",
+      "value": "474.079.1818 x6159",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-181-152-6599",
+      "value": "1-174-096-4729 x4194",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2021-08-07",
-        "end": "2024-08-07"
+        "start": "2023-04-24",
+        "end": "2026-04-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

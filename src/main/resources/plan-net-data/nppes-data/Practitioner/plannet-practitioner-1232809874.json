@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Vandervort",
+      "family": "Howell",
       "given": [
-        "Bernita"
+        "Sadye",
+        "Maryln"
       ],
       "suffix": [
         "PHARM.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "538-570-0141 x2670",
+      "value": "746-022-9048",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(741) 018-0994 x39719",
+      "value": "434-148-6777 x29326",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1835P1200X",
-            "display": "Pharmacotherapy"
+            "display": "Pharmacotherapy Pharmacist"
           }
         ],
-        "text": "Pharmacotherapy"
+        "text": "Pharmacotherapy Pharmacist"
       },
       "period": {
-        "start": "2024-03-24",
-        "end": "2027-03-24"
+        "start": "2023-02-11",
+        "end": "2026-02-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

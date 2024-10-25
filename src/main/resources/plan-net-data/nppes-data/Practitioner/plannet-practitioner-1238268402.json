@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfannerstill",
+      "family": "Braun",
       "given": [
-        "Tenisha"
+        "Melida",
+        "Dahlia"
       ],
       "suffix": [
         "LPC"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "462-959-8868 x26345",
+      "value": "1-192-020-9274 x1892",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(296) 299-6915 x32770",
+      "value": "1-414-270-7561 x98161",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "101YP2500X",
-            "display": "Professional"
+            "display": "Professional Counselor"
           }
         ],
-        "text": "Professional"
+        "text": "Professional Counselor"
       },
       "period": {
-        "start": "2021-10-09",
-        "end": "2024-10-09"
+        "start": "2023-08-29",
+        "end": "2026-08-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

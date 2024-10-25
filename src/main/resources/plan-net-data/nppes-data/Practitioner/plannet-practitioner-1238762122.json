@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kris",
+      "family": "Sawayn",
       "given": [
-        "Fiona",
-        "Stacey"
+        "Gisela",
+        "Tommy"
       ],
       "suffix": [
         "OD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-296-789-8850",
+      "value": "655-288-4762 x43405",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "367.722.6457",
+      "value": "(479) 568-8497 x652",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2024-01-27",
-        "end": "2027-01-27"
+        "start": "2023-09-06",
+        "end": "2026-09-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "f33b4f69e13120"
+      "value": "2010ff6ab57d8c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238064011",
-    "display": "Terrence West"
+    "display": "Bryce Ratke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RN0300X",
-          "display": "Nephrology"
+          "display": "Nephrology Physician"
         }
       ],
-      "text": "Nephrology"
+      "text": "Nephrology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-656-287-7165 x2127",
+      "value": "493.312.3386 x208",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(508) 921-8358",
+      "value": "412.227.7101 x1856",
       "use": "work"
     }
   ],

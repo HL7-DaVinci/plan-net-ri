@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Thompson",
+      "family": "Reichel",
       "given": [
-        "Monty",
-        "Leslie"
+        "Eric"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-979-092-1656 x822",
+      "value": "788.072.2408",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "161.976.2099 x249",
+      "value": "669.801.0270 x6091",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-11-05",
-        "end": "2024-11-05"
+        "start": "2024-01-12",
+        "end": "2027-01-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

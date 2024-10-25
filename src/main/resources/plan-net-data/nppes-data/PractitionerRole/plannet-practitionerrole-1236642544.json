@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "cd9ac36b89ca47"
+      "value": "b925118e895f10"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236642544",
-    "display": "Olivia Moen"
+    "display": "Sharie Gusikowski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(271) 642-5516 x066",
+      "value": "1-665-130-1279 x34777",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(463) 203-4437 x661",
+      "value": "216.419.2757 x30939",
       "use": "work"
     }
   ],

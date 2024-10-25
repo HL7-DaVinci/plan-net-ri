@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Haley",
+      "family": "Lowe",
       "given": [
-        "Dexter"
+        "Antione"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "576.271.9049",
+      "value": "554.335.3357",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "166-263-0874 x21831",
+      "value": "1-721-502-5996",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-06-23",
-        "end": "2025-06-23"
+        "start": "2023-06-01",
+        "end": "2026-06-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

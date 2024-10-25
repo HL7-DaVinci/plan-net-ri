@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Becker",
+      "family": "Dare",
       "given": [
-        "Judson",
-        "Bryan"
+        "Boyce"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "742.838.9727 x74216",
+      "value": "454-946-6730",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-481-387-5630 x616",
+      "value": "1-482-532-8752 x0174",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-10-15",
-        "end": "2024-10-15"
+        "start": "2021-12-14",
+        "end": "2024-12-14"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

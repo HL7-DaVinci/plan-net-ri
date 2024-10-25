@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walsh",
+      "family": "O'Hara",
       "given": [
-        "Deana",
-        "Freeda"
+        "Katlyn",
+        "Selena"
       ],
       "suffix": [
         "NP"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "214-723-0120 x41204",
+      "value": "309.342.7070 x157",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-557-332-1353 x417",
+      "value": "1-895-349-8572",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-01-23",
-        "end": "2025-01-23"
+        "start": "2022-01-16",
+        "end": "2025-01-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-06-13",
-        "end": "2025-06-13"
+        "start": "2024-05-07",
+        "end": "2027-05-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

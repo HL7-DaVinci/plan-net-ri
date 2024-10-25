@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "1449d7d5d3553f"
+      "value": "c45918fad796b1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232003649",
-    "display": "Josef Bailey"
+    "display": "Marquis Schroeder"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(503) 832-7375",
+      "value": "929-955-7732",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-507-775-5351 x22605",
+      "value": "1-750-849-3630 x666",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "fb1fcc8936886b"
+      "value": "5ebcb2daf2e6a4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231597641",
-    "display": "Douglas Wilkinson"
+    "display": "Foster Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "603-816-2165 x171",
+      "value": "1-297-108-4131",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "663.716.1743 x1113",
+      "value": "113.991.2186 x5453",
       "use": "work"
     }
   ],

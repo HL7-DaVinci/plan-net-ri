@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "a2f9f468836d8e"
+      "value": "0f860c0a0ec274"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234821941",
-    "display": "Minda Prosacco"
+    "display": "Meghan Schaefer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "206.776.2084",
+      "value": "490-381-0021",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "216-387-2925 x880",
+      "value": "120-449-8881 x66474",
       "use": "work"
     }
   ],

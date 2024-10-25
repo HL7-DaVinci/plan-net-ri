@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Windler",
+      "family": "Brekke",
       "given": [
-        "Lou",
-        "Leighann"
+        "Minh",
+        "Angelo"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "988-452-9888",
+      "value": "970-262-1931 x5537",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "616-750-7109 x30338",
+      "value": "(887) 260-4356 x8477",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2024-06-02",
-        "end": "2027-06-02"
+        "start": "2023-06-09",
+        "end": "2026-06-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

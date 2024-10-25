@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Goyette",
+      "family": "Dietrich",
       "given": [
-        "Tequila",
-        "Kristyn"
+        "Alfreda"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-766-875-0638 x0329",
+      "value": "(742) 653-2978 x382",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(235) 706-0147 x960",
+      "value": "1-122-371-6856 x180",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-03-04",
-        "end": "2025-03-04"
+        "start": "2022-01-05",
+        "end": "2025-01-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

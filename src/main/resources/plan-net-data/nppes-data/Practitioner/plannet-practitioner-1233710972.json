@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Fadel",
+      "family": "Gorczany",
       "given": [
-        "Odilia"
+        "Billie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "628.772.7731",
+      "value": "554-054-9197 x72468",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "681-449-6182 x869",
+      "value": "497.421.5560",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2024-05-27",
-        "end": "2027-05-27"
+        "start": "2022-01-04",
+        "end": "2025-01-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "20ff87b06ec63a"
+      "value": "62219c86ff44fb"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231596445",
-    "display": "Tatiana Kuhlman"
+    "display": "Cherly Zboncak"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "422.727.6426",
+      "value": "778.219.7652 x7508",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(778) 558-5129 x839",
+      "value": "1-438-275-4093",
       "use": "work"
     }
   ],

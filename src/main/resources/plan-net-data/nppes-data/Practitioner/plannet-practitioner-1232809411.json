@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Purdy",
+      "family": "Beatty",
       "given": [
-        "Wesley",
-        "Jude"
+        "Peter"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(561) 942-1767 x852",
+      "value": "1-330-874-1813 x2299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "121-442-4546 x4897",
+      "value": "429-965-1241",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2024-01-03",
-        "end": "2027-01-03"
+        "start": "2021-12-11",
+        "end": "2024-12-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

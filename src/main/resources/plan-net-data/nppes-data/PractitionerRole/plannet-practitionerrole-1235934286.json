@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "52b36a0c1b8c12"
+      "value": "59fafc6966ed1d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235934286",
-    "display": "Basil Bosco"
+    "display": "Claud Zulauf"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "191.079.2048 x4774",
+      "value": "682-949-4068 x7714",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(348) 058-2382 x407",
+      "value": "735.391.9054 x277",
       "use": "work"
     }
   ],

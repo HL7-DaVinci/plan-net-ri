@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "cea98aa88ff8ab"
+      "value": "a3d92afb4227cf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237357246",
-    "display": "Nicky Fritsch"
+    "display": "Carey Lind"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "865-953-4217 x973",
+      "value": "(608) 699-3764",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "405-680-2477 x2022",
+      "value": "564.374.5968",
       "use": "work"
     }
   ],

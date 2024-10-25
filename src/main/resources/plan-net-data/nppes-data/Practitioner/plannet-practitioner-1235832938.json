@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Purdy",
+      "family": "Mraz",
       "given": [
-        "Ulysses"
+        "Brandon",
+        "Walker"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(794) 791-5801 x130",
+      "value": "719.129.4383 x4772",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "990.605.7362 x9488",
+      "value": "653.862.4349 x50312",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-09-29",
-        "end": "2025-09-29"
+        "start": "2022-09-12",
+        "end": "2025-09-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

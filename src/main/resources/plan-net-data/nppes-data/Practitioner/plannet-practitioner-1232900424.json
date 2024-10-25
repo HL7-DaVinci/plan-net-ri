@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Maggio",
+      "family": "Walter",
       "given": [
-        "Lucien"
+        "Arron",
+        "Gerard"
       ],
       "suffix": [
         "MSW"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "596.942.4379 x2292",
+      "value": "(737) 549-1003 x9614",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "494.491.3714",
+      "value": "(510) 350-0116 x281",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2024-05-29",
-        "end": "2027-05-29"
+        "start": "2021-12-25",
+        "end": "2024-12-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nolan",
+      "family": "Gislason",
       "given": [
-        "Vanita"
+        "Porsche",
+        "Victor"
       ],
       "suffix": [
         "NP"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(941) 075-0816 x830",
+      "value": "(840) 982-4922",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "856-213-7808",
+      "value": "393-123-7418 x479",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-02-07",
-        "end": "2025-02-07"
+        "start": "2021-12-12",
+        "end": "2024-12-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

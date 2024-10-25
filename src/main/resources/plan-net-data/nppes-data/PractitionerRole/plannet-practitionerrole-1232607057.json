@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "518e76cd52bb16"
+      "value": "d8b6fa6a6d8ae2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232607057",
-    "display": "Rob DuBuque"
+    "display": "Roberto Bayer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(818) 016-6463",
+      "value": "1-561-678-0698 x0269",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-125-735-3125",
+      "value": "(357) 049-2507 x463",
       "use": "work"
     }
   ],

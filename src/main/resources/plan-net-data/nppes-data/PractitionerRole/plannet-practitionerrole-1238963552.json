@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "0a59a49cd68745"
+      "value": "001479daefbd42"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238963552",
-    "display": "Lu Wiegand"
+    "display": "Cecily Ferry"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "740.965.7737 x9935",
+      "value": "675-946-6747 x02341",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "120-240-2746 x536",
+      "value": "205-086-3679 x242",
       "use": "work"
     }
   ],

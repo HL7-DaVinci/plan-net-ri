@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bauch",
+      "family": "Bergnaum",
       "given": [
-        "Karolyn",
-        "Rosann"
+        "Obdulia",
+        "Phillis"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-101-614-0144 x6557",
+      "value": "1-912-586-2733 x861",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "967.618.7986 x7679",
+      "value": "530-544-7135",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-05-15",
-        "end": "2025-05-15"
+        "start": "2023-09-23",
+        "end": "2026-09-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

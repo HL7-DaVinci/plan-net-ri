@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Vandervort",
+      "family": "Pfannerstill",
       "given": [
-        "Louie",
-        "Alphonse"
+        "Casey",
+        "Johnson"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "358-031-4317 x757",
+      "value": "1-889-566-0808 x9032",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-794-670-4626 x74004",
+      "value": "(775) 427-0422 x88212",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-05-03",
-        "end": "2027-05-03"
+        "start": "2022-09-06",
+        "end": "2025-09-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "29eff3bb1c20d6",
+      "value": "6e16b6954d96c2",
       "assigner": {
         "display": "Acme Healthcare"
       }
@@ -37,16 +37,16 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID110000",
-      "display": "State of Connecticut HMO"
-    },
-    {
-      "reference": "Organization/plannet-network-HPID130000",
-      "display": "United Technologies Preferred Provider Network"
-    },
-    {
       "reference": "Organization/plannet-network-HPID050000",
       "display": "Green Circle of Connecticut HMO"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID060000",
+      "display": "Connecticut Persona Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID040000",
+      "display": "Acme of Connecticut Preferred Provider Network"
     }
   ],
   "healthcareService": [

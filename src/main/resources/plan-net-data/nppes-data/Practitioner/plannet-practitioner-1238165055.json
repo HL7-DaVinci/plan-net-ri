@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Koepp",
+      "family": "Walker",
       "given": [
-        "Phil",
-        "Noah"
+        "Britt",
+        "Teddy"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "797.076.3284 x3161",
+      "value": "212.602.0207 x8217",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "346-249-1377 x1725",
+      "value": "234-149-6988",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2023-02-06",
-        "end": "2026-02-06"
+        "start": "2023-12-15",
+        "end": "2026-12-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

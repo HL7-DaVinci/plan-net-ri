@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pacocha",
+      "family": "Turcotte",
       "given": [
-        "Trevor",
-        "Florentino"
+        "Darell"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "930-391-3287 x2644",
+      "value": "1-427-260-3668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "965-563-9386 x5695",
+      "value": "1-433-915-8163 x597",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2022-06-11",
-        "end": "2025-06-11"
+        "start": "2024-08-02",
+        "end": "2027-08-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -209,8 +208,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2024-06-22",
-        "end": "2027-06-22"
+        "start": "2023-05-05",
+        "end": "2026-05-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -273,8 +272,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2023-09-01",
-        "end": "2026-09-01"
+        "start": "2022-12-21",
+        "end": "2025-12-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -326,11 +325,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

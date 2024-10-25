@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "d833b4800d77d1"
+      "value": "49943938687f38"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232207386",
-    "display": "Gale Blick"
+    "display": "Renato Shanahan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(638) 995-8157 x34457",
+      "value": "948.776.6913 x644",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-400-613-9566",
+      "value": "843-848-8027 x45506",
       "use": "work"
     }
   ],

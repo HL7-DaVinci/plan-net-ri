@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kirlin",
+      "family": "Durgan",
       "given": [
-        "Justin"
+        "Augustine",
+        "Lee"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-480-700-9653",
+      "value": "226-731-9361",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(146) 250-4883 x785",
+      "value": "1-384-418-2868 x401",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2023-07-02",
-        "end": "2026-07-02"
+        "start": "2022-01-25",
+        "end": "2025-01-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

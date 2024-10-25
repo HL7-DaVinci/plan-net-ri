@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Waelchi",
+      "family": "Gerlach",
       "given": [
-        "Leo",
-        "Rick"
+        "Eduardo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "441.271.0549",
+      "value": "820-259-5072 x68457",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "536-577-3258 x21542",
+      "value": "906.026.5272",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-07-22",
-        "end": "2024-07-22"
+        "start": "2024-07-08",
+        "end": "2027-07-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "e6f0a2d61251ea"
+      "value": "24f2e5467e4099"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236349518",
-    "display": "Arthur Boyle"
+    "display": "Edwin O'Keefe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "483-240-4970",
+      "value": "(583) 570-7066 x42940",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(182) 181-8552 x33491",
+      "value": "723-672-4798",
       "use": "work"
     }
   ],

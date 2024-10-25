@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bahringer",
+      "family": "Mosciski",
       "given": [
-        "Alonzo",
-        "Darrin"
+        "Wm"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "928.658.8523 x2671",
+      "value": "438.209.4744 x447",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-303-129-3209 x878",
+      "value": "995.223.6463 x623",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-10-02",
-        "end": "2025-10-02"
+        "start": "2023-08-27",
+        "end": "2026-08-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2022-10-08",
-        "end": "2025-10-08"
+        "start": "2024-06-06",
+        "end": "2027-06-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -239,6 +238,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "e010d724a6a3ad"
+      "value": "149852afd24ef5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231399794",
-    "display": "Jorge Corwin"
+    "display": "Val VonRueden"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208100000X",
-          "display": "Physical Medicine and Rehabilitation"
+          "display": "Physical Medicine & Rehabilitation Physician"
         }
       ],
-      "text": "Physical Medicine and Rehabilitation"
+      "text": "Physical Medicine & Rehabilitation Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-905-130-2742 x2512",
+      "value": "1-837-803-0267 x299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-512-907-4864 x565",
+      "value": "135-396-8328",
       "use": "work"
     }
   ],

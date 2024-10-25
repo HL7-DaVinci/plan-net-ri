@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "0c8515c05df493"
+      "value": "c679d1caf5e581"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234622177",
-    "display": "Harry Schuppe"
+    "display": "Basil Towne"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208200000X",
-          "display": "Plastic Surgery"
+          "display": "Plastic Surgery Physician"
         }
       ],
-      "text": "Plastic Surgery"
+      "text": "Plastic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(469) 079-8743 x0074",
+      "value": "(527) 618-7001",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "123.277.6526 x0333",
+      "value": "(415) 872-0580 x691",
       "use": "work"
     }
   ],

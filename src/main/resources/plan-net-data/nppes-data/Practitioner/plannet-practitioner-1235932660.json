@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rosenbaum",
+      "family": "Zemlak",
       "given": [
-        "Julius",
-        "Virgil"
+        "Alphonso"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-862-821-1294 x917",
+      "value": "1-729-225-7197 x472",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "943-909-5538 x9912",
+      "value": "(941) 162-3354 x7550",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-11-11",
-        "end": "2026-11-11"
+        "start": "2024-08-30",
+        "end": "2027-08-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2023-03-22",
-        "end": "2026-03-22"
+        "start": "2022-07-07",
+        "end": "2025-07-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -243,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

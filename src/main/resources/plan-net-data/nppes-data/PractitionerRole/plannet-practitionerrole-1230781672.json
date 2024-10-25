@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "2539e2dac38515"
+      "value": "fae41b1872ae6b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230781672",
-    "display": "Hunter Williamson"
+    "display": "Armando Langworth"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-565-535-9395 x0049",
+      "value": "376-304-5596 x22064",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "107-141-8276 x3893",
+      "value": "900-546-0757 x90817",
       "use": "work"
     }
   ],

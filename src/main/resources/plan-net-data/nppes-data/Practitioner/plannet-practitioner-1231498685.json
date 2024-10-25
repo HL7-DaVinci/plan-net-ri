@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bode",
+      "family": "Paucek",
       "given": [
-        "Emmett"
+        "Vito",
+        "Jacinto"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-720-062-9271 x962",
+      "value": "(947) 269-5109 x89601",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-953-680-9523 x34305",
+      "value": "1-762-399-3497",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-06-08",
-        "end": "2027-06-08"
+        "start": "2023-02-11",
+        "end": "2026-02-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

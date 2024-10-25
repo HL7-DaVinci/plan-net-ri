@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hickle",
+      "family": "MacGyver",
       "given": [
-        "Romeo",
-        "Alec"
+        "Kris",
+        "Dion"
       ],
       "suffix": [
         "DO"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(561) 111-0006 x0980",
+      "value": "760-037-3058 x90890",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(633) 384-6938 x85381",
+      "value": "(928) 041-3693 x4731",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-06-04",
-        "end": "2026-06-04"
+        "start": "2024-07-29",
+        "end": "2027-07-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

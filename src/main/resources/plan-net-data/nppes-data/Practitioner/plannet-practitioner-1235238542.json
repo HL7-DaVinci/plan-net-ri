@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Waelchi",
+      "family": "Macejkovic",
       "given": [
-        "Emil"
+        "Lee"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "878-819-3077 x823",
+      "value": "346.381.4194 x871",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(304) 060-7952 x600",
+      "value": "(432) 543-2097 x16952",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-01-08",
-        "end": "2025-01-08"
+        "start": "2023-12-18",
+        "end": "2026-12-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-09-09",
-        "end": "2026-09-09"
+        "start": "2024-02-19",
+        "end": "2027-02-19"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

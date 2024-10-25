@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nienow",
+      "family": "Rowe",
       "given": [
-        "Melvin"
+        "Brent",
+        "Kendall"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-169-875-3563 x4931",
+      "value": "1-289-716-2468 x4315",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-708-610-2709 x494",
+      "value": "359-330-3840 x54009",
       "use": "work"
     }
   ],
@@ -111,31 +112,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

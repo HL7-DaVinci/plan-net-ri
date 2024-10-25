@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "a21f164ba54357"
+      "value": "da26602f929151"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232501922",
-    "display": "Barbara Wiza"
+    "display": "Saturnina Kuhlman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LP0808X",
-          "display": "Psychiatric/Mental Health"
+          "display": "Psychiatric/Mental Health Nurse Practitioner"
         }
       ],
-      "text": "Psychiatric/Mental Health"
+      "text": "Psychiatric/Mental Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-528-986-2688 x6169",
+      "value": "1-980-066-0653 x804",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-725-353-7384 x528",
+      "value": "(845) 563-7720 x46886",
       "use": "work"
     }
   ],

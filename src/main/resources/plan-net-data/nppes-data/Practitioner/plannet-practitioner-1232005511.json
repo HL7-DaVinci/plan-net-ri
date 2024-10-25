@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Connell",
+      "family": "Ernser",
       "given": [
-        "German"
+        "Philip",
+        "Pedro"
       ],
       "suffix": [
         "DPM"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "300-895-6727 x1206",
+      "value": "803.198.1271 x37453",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "851.651.6972 x8359",
+      "value": "(582) 399-7426",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-12-01",
-        "end": "2026-12-01"
+        "start": "2024-02-15",
+        "end": "2027-02-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

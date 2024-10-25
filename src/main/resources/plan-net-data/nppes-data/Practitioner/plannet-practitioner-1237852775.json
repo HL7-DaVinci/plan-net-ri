@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Roberts",
+      "family": "Nienow",
       "given": [
-        "Steven"
+        "Louis"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(577) 340-0799 x15412",
+      "value": "739-148-9891 x5290",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "473.835.6768 x3836",
+      "value": "1-285-452-1208 x5302",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2024-01-09",
-        "end": "2027-01-09"
+        "start": "2022-01-30",
+        "end": "2025-01-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

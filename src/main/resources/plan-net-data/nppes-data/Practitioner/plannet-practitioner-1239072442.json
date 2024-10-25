@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runolfsdottir",
+      "family": "Stroman",
       "given": [
-        "Milan",
-        "Shawn"
+        "Dino"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "147-623-6120 x05737",
+      "value": "1-808-904-6781 x06580",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-853-879-4183 x74345",
+      "value": "560.806.7663",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2021-07-23",
-        "end": "2024-07-23"
+        "start": "2021-12-06",
+        "end": "2024-12-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

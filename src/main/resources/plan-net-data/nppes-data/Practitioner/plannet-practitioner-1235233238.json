@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wyman",
+      "family": "Lubowitz",
       "given": [
-        "Eli",
-        "Jermaine"
+        "Randell"
       ],
       "suffix": [
         "D.M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(438) 923-6388",
+      "value": "113-562-2267 x8587",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(757) 851-8442 x46704",
+      "value": "1-964-627-9072 x042",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2023-10-25",
-        "end": "2026-10-25"
+        "start": "2024-07-05",
+        "end": "2027-07-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-10-20",
-        "end": "2026-10-20"
+        "start": "2023-01-13",
+        "end": "2026-01-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

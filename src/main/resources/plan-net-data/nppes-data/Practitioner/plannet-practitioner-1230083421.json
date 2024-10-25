@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Leannon",
+      "family": "Langworth",
       "given": [
-        "Kieth",
-        "Marco"
+        "Kent"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "178-668-6230 x1037",
+      "value": "(823) 549-7407 x281",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "275.736.1106 x274",
+      "value": "629-089-6836 x31395",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2024-04-22",
-        "end": "2027-04-22"
+        "start": "2024-01-13",
+        "end": "2027-01-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

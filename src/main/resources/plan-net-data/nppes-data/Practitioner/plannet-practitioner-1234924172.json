@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnston",
+      "family": "Hand",
       "given": [
-        "Sherrill"
+        "Ka",
+        "Roxie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "489.105.8610 x810",
+      "value": "(189) 542-6174 x6967",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-887-015-1851 x171",
+      "value": "(830) 630-5830 x408",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-07-09",
-        "end": "2025-07-09"
+        "start": "2024-02-04",
+        "end": "2027-02-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-07-06",
-        "end": "2026-07-06"
+        "start": "2022-03-24",
+        "end": "2025-03-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

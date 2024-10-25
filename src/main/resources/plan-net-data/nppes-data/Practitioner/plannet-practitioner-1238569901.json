@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Kon",
+      "family": "Huels",
       "given": [
-        "Audria",
-        "Dulce"
+        "Delena",
+        "Oretha"
       ],
       "suffix": [
         "SLP"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "737-219-6330 x1094",
+      "value": "1-307-673-8292 x8249",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "477.689.5393 x17262",
+      "value": "944-136-1626 x535",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2022-04-04",
-        "end": "2025-04-04"
+        "start": "2022-10-28",
+        "end": "2025-10-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

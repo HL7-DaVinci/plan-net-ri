@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "ae63aff8b17a48"
+      "value": "1636c4d09dd223"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238763872",
-    "display": "Ethan Koch"
+    "display": "Richard Bartell"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "188.559.3094 x11582",
+      "value": "1-174-784-8758 x6067",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(619) 206-1238 x80054",
+      "value": "945-309-7249 x0190",
       "use": "work"
     }
   ],

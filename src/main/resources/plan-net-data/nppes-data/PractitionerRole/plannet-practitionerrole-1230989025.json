@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "31a7384b9f72ee"
+      "value": "121b16268b9b69"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230989025",
-    "display": "Errol Parker"
+    "display": "Gil Rohan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(688) 463-8112 x32025",
+      "value": "1-430-378-8002 x282",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "107.079.5482 x6167",
+      "value": "565-287-3194",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kihn",
+      "family": "McDermott",
       "given": [
-        "Erasmo"
+        "Billie",
+        "Dana"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(924) 865-5970 x808",
+      "value": "(445) 574-8157",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "243.336.4475 x402",
+      "value": "1-604-479-9441 x8051",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2022-12-08",
-        "end": "2025-12-08"
+        "start": "2022-11-06",
+        "end": "2025-11-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

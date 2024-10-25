@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "3fb62b4314435a"
+      "value": "7fbafa156bee69"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232408153",
-    "display": "Dane Abbott"
+    "display": "Preston Wehner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-172-813-7232",
+      "value": "1-971-011-0744 x093",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-177-600-3189 x0426",
+      "value": "327-651-1322 x6097",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Braun",
+      "family": "Hegmann",
       "given": [
-        "Dudley"
+        "Sanford",
+        "Emil"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "115.614.7547",
+      "value": "643.301.8343 x468",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "251-844-0108 x9941",
+      "value": "898.431.4119 x243",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-08-23",
-        "end": "2025-08-23"
+        "start": "2024-07-10",
+        "end": "2027-07-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

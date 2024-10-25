@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Langworth",
+      "family": "Ryan",
       "given": [
-        "Isaias"
+        "Burton"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "328.955.2169",
+      "value": "949-126-9958",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "144.933.2903 x039",
+      "value": "343.362.3761 x791",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-11-25",
-        "end": "2024-11-25"
+        "start": "2023-05-11",
+        "end": "2026-05-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VM0101X",
-            "display": "Maternal and Fetal Medicine"
+            "display": "Maternal & Fetal Medicine Physician"
           }
         ],
-        "text": "Maternal and Fetal Medicine"
+        "text": "Maternal & Fetal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-24",
-        "end": "2025-01-24"
+        "start": "2024-01-31",
+        "end": "2027-01-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -264,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-11-02",
-        "end": "2026-11-02"
+        "start": "2023-10-18",
+        "end": "2026-10-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -303,6 +303,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Reilly",
+      "family": "Armstrong",
       "given": [
-        "Herbert"
+        "Colby"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "470-095-3041",
+      "value": "(158) 894-2539 x17788",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "837-493-8199 x5391",
+      "value": "(531) 060-4549 x19531",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-09-04",
-        "end": "2026-09-04"
+        "start": "2024-09-12",
+        "end": "2027-09-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kozey",
+      "family": "O'Connell",
       "given": [
-        "Contessa"
+        "Lizzette",
+        "Patrice"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(253) 954-4186 x31667",
+      "value": "908-457-3986 x92578",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "606.774.3219 x7029",
+      "value": "(857) 240-4345 x198",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2021-10-21",
-        "end": "2024-10-21"
+        "start": "2022-12-30",
+        "end": "2025-12-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

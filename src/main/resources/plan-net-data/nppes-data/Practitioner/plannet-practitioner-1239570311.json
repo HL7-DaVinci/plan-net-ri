@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ernser",
+      "family": "Yost",
       "given": [
-        "Alonso",
-        "Dirk"
+        "Lindsey"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-239-745-4241 x5231",
+      "value": "249.392.7121 x9495",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "931.646.3559 x583",
+      "value": "613.783.9285 x41903",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TB0200X",
-            "display": "Cognitive and Behavioral"
+            "display": "Cognitive & Behavioral Psychologist"
           }
         ],
-        "text": "Cognitive and Behavioral"
+        "text": "Cognitive & Behavioral Psychologist"
       },
       "period": {
-        "start": "2023-02-27",
-        "end": "2026-02-27"
+        "start": "2021-12-18",
+        "end": "2024-12-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084B0040X",
-            "display": "Behavioral Neurology and Neuropsychiatry"
+            "display": "Behavioral Neurology & Neuropsychiatry Physician"
           }
         ],
-        "text": "Behavioral Neurology and Neuropsychiatry"
+        "text": "Behavioral Neurology & Neuropsychiatry Physician"
       },
       "period": {
-        "start": "2023-08-14",
-        "end": "2026-08-14"
+        "start": "2023-11-09",
+        "end": "2026-11-09"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

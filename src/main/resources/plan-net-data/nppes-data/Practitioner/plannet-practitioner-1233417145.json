@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stark",
+      "family": "Walsh",
       "given": [
-        "Jayson"
+        "Diego",
+        "Richie"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-296-246-9454 x79721",
+      "value": "103.987.6786 x56322",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-172-653-1157 x24338",
+      "value": "712-162-6087",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2021-09-08",
-        "end": "2024-09-08"
+        "start": "2023-06-07",
+        "end": "2026-06-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

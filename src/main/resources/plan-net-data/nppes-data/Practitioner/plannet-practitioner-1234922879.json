@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Harvey",
+      "family": "Mraz",
       "given": [
-        "Chrystal"
+        "Corinne",
+        "Corrin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-776-828-5930 x043",
+      "value": "(765) 843-9265 x680",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-613-525-0438 x024",
+      "value": "211-255-0063 x96693",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ND0900X",
-            "display": "Dermatopathology"
+            "display": "Dermatopathology Physician"
           }
         ],
-        "text": "Dermatopathology"
+        "text": "Dermatopathology Physician"
       },
       "period": {
-        "start": "2023-08-27",
-        "end": "2026-08-27"
+        "start": "2023-06-07",
+        "end": "2026-06-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

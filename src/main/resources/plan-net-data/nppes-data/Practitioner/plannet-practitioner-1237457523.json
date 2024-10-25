@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dickens",
+      "family": "Flatley",
       "given": [
-        "Jena"
+        "Patrick",
+        "Alexa"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "621.767.9014",
+      "value": "489.318.4303 x84951",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "166.392.1332 x376",
+      "value": "183.294.0390 x998",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2022-11-02",
-        "end": "2025-11-02"
+        "start": "2024-06-30",
+        "end": "2027-06-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

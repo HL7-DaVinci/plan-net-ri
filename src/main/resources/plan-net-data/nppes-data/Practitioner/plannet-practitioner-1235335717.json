@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bartoletti",
+      "family": "Zemlak",
       "given": [
-        "Kirby",
-        "Rocky"
+        "Eldridge"
       ],
       "suffix": [
         "M.D"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-291-312-3420 x97966",
+      "value": "382-622-2898 x0504",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(971) 895-2631 x10196",
+      "value": "1-795-920-5835 x6584",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0208X",
-            "display": "Pediatric Infectious Diseases"
+            "display": "Pediatric Infectious Diseases Physician"
           }
         ],
-        "text": "Pediatric Infectious Diseases"
+        "text": "Pediatric Infectious Diseases Physician"
       },
       "period": {
-        "start": "2023-04-02",
-        "end": "2026-04-02"
+        "start": "2024-08-23",
+        "end": "2027-08-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

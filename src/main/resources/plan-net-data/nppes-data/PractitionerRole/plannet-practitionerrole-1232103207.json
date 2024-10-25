@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "91f6369768fdc6"
+      "value": "6e2dbe13ff5f5a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232103207",
-    "display": "Tona Waters"
+    "display": "Emogene Pfeffer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-750-251-1451 x97092",
+      "value": "818.503.7258 x825",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-490-706-2064 x917",
+      "value": "1-396-946-8213 x71864",
       "use": "work"
     }
   ],

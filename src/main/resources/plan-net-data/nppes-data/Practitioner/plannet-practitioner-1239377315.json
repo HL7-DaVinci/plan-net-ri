@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nienow",
+      "family": "Leuschke",
       "given": [
-        "Warner",
-        "Erik"
+        "Kareem"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "409.986.5562 x604",
+      "value": "1-972-995-5072 x75071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "707.620.5850 x1257",
+      "value": "292.485.7707 x718",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-23",
-        "end": "2025-01-23"
+        "start": "2024-02-27",
+        "end": "2027-02-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

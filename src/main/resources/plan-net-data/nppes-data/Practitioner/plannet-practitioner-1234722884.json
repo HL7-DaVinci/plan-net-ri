@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gusikowski",
+      "family": "Orn",
       "given": [
-        "Giovanni",
-        "Ramon"
+        "Bruno"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "719.258.7506",
+      "value": "1-552-562-2522",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "679-486-0285 x5647",
+      "value": "191-301-8791",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2023-12-18",
-        "end": "2026-12-18"
+        "start": "2022-07-17",
+        "end": "2025-07-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

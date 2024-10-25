@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "9cd3f356dbd3e6"
+      "value": "f99f795d68ce34"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235834199",
-    "display": "Jean Nienow"
+    "display": "Candy Wiza"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080A0000X",
-          "display": "Adolescent Medicine"
+          "display": "Pediatric Adolescent Medicine Physician"
         }
       ],
-      "text": "Adolescent Medicine"
+      "text": "Pediatric Adolescent Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-147-171-4534 x2592",
+      "value": "(710) 849-8863",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "305.465.4328 x09672",
+      "value": "1-262-782-3630 x4847",
       "use": "work"
     }
   ],

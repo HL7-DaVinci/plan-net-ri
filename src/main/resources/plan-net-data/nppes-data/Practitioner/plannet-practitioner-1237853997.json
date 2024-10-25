@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Carter",
+      "family": "Wiegand",
       "given": [
-        "Daria"
+        "Despina"
       ],
       "suffix": [
         "O.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-304-220-8918",
+      "value": "731-017-8895",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-360-051-4441 x118",
+      "value": "220.158.8914",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-10-27",
-        "end": "2024-10-27"
+        "start": "2024-02-12",
+        "end": "2027-02-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

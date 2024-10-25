@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Predovic",
+      "family": "Hermann",
       "given": [
-        "Dalton",
-        "Major"
+        "Rickie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450-034-3071 x1980",
+      "value": "(213) 377-4538",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "150.199.8540 x75555",
+      "value": "(398) 681-3169 x24057",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-11-27",
-        "end": "2025-11-27"
+        "start": "2023-10-18",
+        "end": "2026-10-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VF0040X",
-            "display": "Female Pelvic Medicine and Reconstructive Surgery"
+            "display": "Urogynecology and Reconstructive Pelvic Surgery (Obstetrics & Gynecology) Physician"
           }
         ],
-        "text": "Female Pelvic Medicine and Reconstructive Surgery"
+        "text": "Urogynecology and Reconstructive Pelvic Surgery (Obstetrics & Gynecology) Physician"
       },
       "period": {
-        "start": "2021-10-08",
-        "end": "2024-10-08"
+        "start": "2022-03-12",
+        "end": "2025-03-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

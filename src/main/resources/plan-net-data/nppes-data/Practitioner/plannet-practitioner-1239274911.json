@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ortiz",
+      "family": "Johnson",
       "given": [
-        "Mayme"
+        "Karry",
+        "Elnora"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-923-833-7029",
+      "value": "482-374-7293 x16815",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "355-279-6326 x0727",
+      "value": "542.672.7694 x9588",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-11",
-        "end": "2025-12-11"
+        "start": "2022-02-14",
+        "end": "2025-02-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Erdman",
+      "family": "Jast",
       "given": [
-        "Oswaldo"
+        "Linwood"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-727-560-1039 x52334",
+      "value": "(706) 746-9034 x2516",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(217) 077-7142 x8754",
+      "value": "342.506.4726 x77685",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-08-15",
-        "end": "2025-08-15"
+        "start": "2022-11-16",
+        "end": "2025-11-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

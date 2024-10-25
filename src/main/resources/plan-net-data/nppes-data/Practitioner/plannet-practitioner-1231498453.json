@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hintz",
+      "family": "Shields",
       "given": [
-        "Billy"
+        "Zachery",
+        "Freeman"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-614-191-6122 x10851",
+      "value": "1-186-625-9466 x21416",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "721.468.0821",
+      "value": "139.272.6718",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-11-02",
-        "end": "2024-11-02"
+        "start": "2022-11-21",
+        "end": "2025-11-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0117X",
-            "display": "Orthopaedic Surgery of the Spine"
+            "display": "Orthopaedic Surgery of the Spine Physician"
           }
         ],
-        "text": "Orthopaedic Surgery of the Spine"
+        "text": "Orthopaedic Surgery of the Spine Physician"
       },
       "period": {
-        "start": "2023-12-01",
-        "end": "2026-12-01"
+        "start": "2021-11-28",
+        "end": "2024-11-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -261,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

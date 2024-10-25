@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Okuneva",
+      "family": "Terry",
       "given": [
-        "Gisela",
-        "Brigitte"
+        "Kittie",
+        "Perla"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(957) 102-5332 x458",
+      "value": "981-097-8505",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "365-941-4213 x121",
+      "value": "154.099.4691 x71458",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2024-03-16",
-        "end": "2027-03-16"
+        "start": "2022-06-06",
+        "end": "2025-06-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

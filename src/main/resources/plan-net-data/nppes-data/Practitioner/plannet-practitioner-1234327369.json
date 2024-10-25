@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Thiel",
+      "family": "Cormier",
       "given": [
-        "Hugo"
+        "Ralph",
+        "Dillon"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(389) 638-8635 x76468",
+      "value": "895-914-1412",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(442) 300-4668 x6162",
+      "value": "578-789-4246 x422",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-08-05",
-        "end": "2024-08-05"
+        "start": "2023-01-02",
+        "end": "2026-01-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

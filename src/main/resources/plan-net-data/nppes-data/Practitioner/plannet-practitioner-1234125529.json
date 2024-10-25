@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Murazik",
+      "family": "Kihn",
       "given": [
-        "Harris"
+        "Claudio"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "780-689-0883 x56317",
+      "value": "(945) 870-0043 x6231",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "234.656.8886",
+      "value": "(784) 933-5384",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2083P0500X",
-            "display": "Preventive Medicine/Occupational Environmental Medicine"
+            "display": "Preventive Medicine/Occupational Environmental Medicine Physician"
           }
         ],
-        "text": "Preventive Medicine/Occupational Environmental Medicine"
+        "text": "Preventive Medicine/Occupational Environmental Medicine Physician"
       },
       "period": {
-        "start": "2022-06-06",
-        "end": "2025-06-06"
+        "start": "2023-07-06",
+        "end": "2026-07-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

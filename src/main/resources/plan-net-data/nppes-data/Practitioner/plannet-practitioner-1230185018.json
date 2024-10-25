@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Will",
+      "family": "Rogahn",
       "given": [
-        "Barb",
-        "Debora"
+        "Sarina",
+        "Roxy"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-409-696-3318",
+      "value": "339.228.3561 x768",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "987-468-7274 x444",
+      "value": "866-564-0683 x051",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080N0001X",
-            "display": "Neonatal-Perinatal Medicine"
+            "display": "Neonatal-Perinatal Medicine Physician"
           }
         ],
-        "text": "Neonatal-Perinatal Medicine"
+        "text": "Neonatal-Perinatal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-21",
-        "end": "2025-01-21"
+        "start": "2024-01-27",
+        "end": "2027-01-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

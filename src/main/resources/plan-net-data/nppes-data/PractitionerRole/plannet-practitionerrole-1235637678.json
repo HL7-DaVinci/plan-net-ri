@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "7664a43d8a0fb1"
+      "value": "2ffc5d8d2347c2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235637678",
-    "display": "Enid King"
+    "display": "Christin West"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "793-056-5200",
+      "value": "351-056-9109 x4503",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "407-236-3657 x476",
+      "value": "385-545-6466 x1904",
       "use": "work"
     }
   ],

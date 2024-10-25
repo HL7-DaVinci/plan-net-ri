@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "d9ae7fb1df7d95"
+      "value": "1b3918b90e713f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237156312",
-    "display": "Jefferson Monahan"
+    "display": "Reuben Stoltenberg"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(978) 149-6013 x763",
+      "value": "852.006.2478 x9731",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-835-295-3187",
+      "value": "847-068-7583 x463",
       "use": "work"
     }
   ],

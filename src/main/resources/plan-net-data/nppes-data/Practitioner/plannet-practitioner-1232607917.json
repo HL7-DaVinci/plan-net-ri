@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rolfson",
+      "family": "Paucek",
       "given": [
-        "Tanner"
+        "Romeo",
+        "Josef"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(618) 511-4193",
+      "value": "690-738-3898",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(634) 714-2032 x274",
+      "value": "556.105.0241",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2022-10-12",
-        "end": "2025-10-12"
+        "start": "2022-08-20",
+        "end": "2025-08-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

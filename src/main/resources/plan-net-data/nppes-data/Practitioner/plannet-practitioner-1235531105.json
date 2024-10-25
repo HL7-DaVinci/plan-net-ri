@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lynch",
+      "family": "Bogan",
       "given": [
-        "Jolie",
-        "Annita"
+        "Klara",
+        "Alverta"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-594-701-0326 x2254",
+      "value": "1-787-785-4663 x6798",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(561) 303-1368 x7015",
+      "value": "291.827.1635 x8626",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2023-08-30",
-        "end": "2026-08-30"
+        "start": "2022-09-29",
+        "end": "2025-09-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

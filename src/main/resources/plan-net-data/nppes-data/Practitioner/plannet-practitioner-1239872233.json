@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bradtke",
+      "family": "Skiles",
       "given": [
-        "Cletus",
-        "Edgar"
+        "Vito",
+        "Isidro"
       ],
       "suffix": [
         "D.D.S."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(218) 432-9510",
+      "value": "(120) 104-5987 x65273",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "573.548.5408 x099",
+      "value": "684.289.6445",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223X0400X",
-            "display": "Orthodontics and Dentofacial Orthopedics"
+            "display": "Orthodontics and Dentofacial Orthopedic Dentist"
           }
         ],
-        "text": "Orthodontics and Dentofacial Orthopedics"
+        "text": "Orthodontics and Dentofacial Orthopedic Dentist"
       },
       "period": {
-        "start": "2023-02-20",
-        "end": "2026-02-20"
+        "start": "2022-02-23",
+        "end": "2025-02-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

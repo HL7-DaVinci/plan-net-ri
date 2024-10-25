@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Keebler",
+      "family": "Balistreri",
       "given": [
-        "Palmer",
-        "Keven"
+        "Erik"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-301-517-1281 x64248",
+      "value": "1-595-813-0161",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "225-487-0079 x912",
+      "value": "1-946-872-1209 x886",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2022-06-06",
-        "end": "2025-06-06"
+        "start": "2022-11-13",
+        "end": "2025-11-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

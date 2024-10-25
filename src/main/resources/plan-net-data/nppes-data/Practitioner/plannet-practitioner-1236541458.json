@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Krajcik",
+      "family": "Leuschke",
       "given": [
-        "Spring",
-        "Arla"
+        "Delilah"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-908-732-2470 x8468",
+      "value": "636.791.4351 x906",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "199.289.1186 x0925",
+      "value": "265-139-7252",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VM0101X",
-            "display": "Maternal and Fetal Medicine"
+            "display": "Maternal & Fetal Medicine Physician"
           }
         ],
-        "text": "Maternal and Fetal Medicine"
+        "text": "Maternal & Fetal Medicine Physician"
       },
       "period": {
-        "start": "2023-11-27",
-        "end": "2026-11-27"
+        "start": "2023-04-29",
+        "end": "2026-04-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

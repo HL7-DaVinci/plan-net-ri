@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "DuBuque",
+      "family": "Lakin",
       "given": [
-        "Ivan"
+        "Nigel",
+        "Warren"
       ],
       "suffix": [
         "DO"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-707-698-3030 x4815",
+      "value": "(562) 154-4971 x396",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(704) 809-5494 x3860",
+      "value": "408.777.8676",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-11-26",
-        "end": "2026-11-26"
+        "start": "2022-07-18",
+        "end": "2025-07-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-12-04",
-        "end": "2026-12-04"
+        "start": "2024-06-10",
+        "end": "2027-06-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -258,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

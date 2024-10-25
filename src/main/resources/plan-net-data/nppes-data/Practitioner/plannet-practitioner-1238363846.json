@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hessel",
+      "family": "Kiehn",
       "given": [
-        "Stephani",
-        "Yasmin"
+        "Maura",
+        "Shawnee"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "571.966.8764",
+      "value": "1-289-704-4028 x75653",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "862.980.3971",
+      "value": "299-380-2078 x17718",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RX0202X",
-            "display": "Medical Oncology"
+            "display": "Medical Oncology Physician"
           }
         ],
-        "text": "Medical Oncology"
+        "text": "Medical Oncology Physician"
       },
       "period": {
-        "start": "2022-12-14",
-        "end": "2025-12-14"
+        "start": "2023-09-16",
+        "end": "2026-09-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

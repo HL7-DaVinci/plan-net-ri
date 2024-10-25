@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Daugherty",
+      "family": "Cruickshank",
       "given": [
-        "Chet"
+        "Lance"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "268.343.2124 x25218",
+      "value": "241-320-9514",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(571) 545-6481 x83490",
+      "value": "953.198.7480",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2023-03-11",
-        "end": "2026-03-11"
+        "start": "2023-02-23",
+        "end": "2026-02-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207NS0135X",
-            "display": "Procedural Dermatology"
+            "display": "Procedural Dermatology Physician"
           }
         ],
-        "text": "Procedural Dermatology"
+        "text": "Procedural Dermatology Physician"
       },
       "period": {
-        "start": "2023-09-01",
-        "end": "2026-09-01"
+        "start": "2024-02-12",
+        "end": "2027-02-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -242,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

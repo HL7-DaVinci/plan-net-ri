@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cronin",
+      "family": "Beer",
       "given": [
-        "Carmen"
+        "Carmine"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(288) 730-9541",
+      "value": "113.202.5618",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "512-430-7770 x8368",
+      "value": "(903) 314-7256",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RA0000X",
-            "display": "Adolescent Medicine"
+            "display": "Adolescent Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Adolescent Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-10-12",
-        "end": "2024-10-12"
+        "start": "2022-10-03",
+        "end": "2025-10-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-05-30",
-        "end": "2025-05-30"
+        "start": "2022-07-13",
+        "end": "2025-07-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

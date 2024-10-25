@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "3b387c771ceecc"
+      "value": "6a2ccb6c52d0fc"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239176423",
-    "display": "Jesusita Shanahan"
+    "display": "Christie Wyman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "729.146.1124 x6664",
+      "value": "(387) 600-4448 x08839",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "998.799.8385 x1367",
+      "value": "(395) 311-9320 x894",
       "use": "work"
     }
   ],

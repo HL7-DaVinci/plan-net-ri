@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Robel",
+      "family": "Lind",
       "given": [
-        "Alphonse"
+        "Norris"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(716) 130-8050 x3160",
+      "value": "116-184-9838",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(805) 611-1634 x78377",
+      "value": "405.601.8907 x22614",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "111NS0005X",
-            "display": "Sports Physician"
+            "display": "Sports Physician Chiropractor"
           }
         ],
-        "text": "Sports Physician"
+        "text": "Sports Physician Chiropractor"
       },
       "period": {
-        "start": "2022-07-21",
-        "end": "2025-07-21"
+        "start": "2024-09-14",
+        "end": "2027-09-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

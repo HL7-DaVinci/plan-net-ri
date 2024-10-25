@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Haley",
+      "family": "Adams",
       "given": [
-        "Jamal",
-        "Kim"
+        "Fredric",
+        "Hong"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "175-537-0210 x985",
+      "value": "1-755-937-4080 x517",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(806) 176-2273 x18388",
+      "value": "(346) 094-4522 x9646",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2022-11-15",
-        "end": "2025-11-15"
+        "start": "2023-05-04",
+        "end": "2026-05-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

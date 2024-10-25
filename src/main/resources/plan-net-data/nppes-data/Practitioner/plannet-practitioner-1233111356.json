@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Reichel",
+      "family": "Maggio",
       "given": [
-        "Darron",
-        "Lamar"
+        "Zachary"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-221-339-2952 x62167",
+      "value": "998.913.8003 x17688",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-931-522-0088 x918",
+      "value": "782-377-3913 x34637",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-02-25",
-        "end": "2026-02-25"
+        "start": "2022-06-24",
+        "end": "2025-06-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

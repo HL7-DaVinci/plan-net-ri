@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuppe",
+      "family": "Glover",
       "given": [
-        "Dwain"
+        "Roberto"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "522.949.7513 x5366",
+      "value": "475.829.0785 x353",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-112-084-6809",
+      "value": "1-335-053-4595 x771",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2022-11-05",
-        "end": "2025-11-05"
+        "start": "2021-12-10",
+        "end": "2024-12-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

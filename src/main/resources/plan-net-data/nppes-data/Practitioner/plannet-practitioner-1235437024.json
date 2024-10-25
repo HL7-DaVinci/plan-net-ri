@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nicolas",
+      "family": "Konopelski",
       "given": [
-        "Clyde"
+        "Manuel",
+        "Andre"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "519.733.7628 x94052",
+      "value": "(473) 262-6443 x133",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "510.827.9037 x50420",
+      "value": "1-913-140-3606 x0613",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-03-19",
-        "end": "2025-03-19"
+        "start": "2022-07-06",
+        "end": "2025-07-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

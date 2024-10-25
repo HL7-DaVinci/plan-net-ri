@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Borer",
+      "family": "Predovic",
       "given": [
-        "Irving",
-        "Kent"
+        "Hubert",
+        "Kristofer"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "971.214.4808 x86346",
+      "value": "682.923.9728 x0393",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "956-688-0515 x055",
+      "value": "(320) 945-8499 x9539",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2024-02-14",
-        "end": "2027-02-14"
+        "start": "2022-07-06",
+        "end": "2025-07-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

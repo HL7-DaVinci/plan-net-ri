@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "91c8d6928d857c"
+      "value": "8f036c91f919a2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236943103",
-    "display": "Maximo Shields"
+    "display": "Forest Schmeler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223P0221X",
-          "display": "Pediatric Dentistry"
+          "display": "Pediatric Dentist"
         }
       ],
-      "text": "Pediatric Dentistry"
+      "text": "Pediatric Dentist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(109) 119-4710",
+      "value": "988-373-0501 x39892",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-136-569-9358 x9063",
+      "value": "555.068.7476 x18698",
       "use": "work"
     }
   ],

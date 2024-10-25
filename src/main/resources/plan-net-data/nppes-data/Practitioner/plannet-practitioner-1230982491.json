@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Moen",
       "given": [
-        "Oleta",
-        "Carisa"
+        "Jaymie",
+        "Vernita"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "996.959.4678 x02660",
+      "value": "1-151-849-3620 x294",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "766.290.0610 x681",
+      "value": "864-195-7335 x75799",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-07-06",
-        "end": "2026-07-06"
+        "start": "2021-12-03",
+        "end": "2024-12-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086X0206X",
-            "display": "Surgical Oncology"
+            "display": "Surgical Oncology Physician"
           }
         ],
-        "text": "Surgical Oncology"
+        "text": "Surgical Oncology Physician"
       },
       "period": {
-        "start": "2023-10-05",
-        "end": "2026-10-05"
+        "start": "2023-08-17",
+        "end": "2026-08-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

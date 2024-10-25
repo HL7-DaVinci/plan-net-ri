@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "d57e4fad8c1ace"
+      "value": "ded200fad6a62b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231090119",
-    "display": "Bradley Dietrich"
+    "display": "Bobby Kohler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2081P2900X",
-          "display": "Pain Medicine"
+          "display": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
         }
       ],
-      "text": "Pain Medicine"
+      "text": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(451) 996-5663 x4209",
+      "value": "(214) 459-5282 x088",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "112-878-5912 x872",
+      "value": "445-208-2477 x1054",
       "use": "work"
     }
   ],

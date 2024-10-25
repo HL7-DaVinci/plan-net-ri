@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bednar",
+      "family": "Thompson",
       "given": [
-        "Gregg"
+        "Harris",
+        "Kirk"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-879-523-2801 x7690",
+      "value": "528-054-9555 x699",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "693-276-8059 x9770",
+      "value": "1-242-601-8902 x7282",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-06-21",
-        "end": "2025-06-21"
+        "start": "2022-12-25",
+        "end": "2025-12-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

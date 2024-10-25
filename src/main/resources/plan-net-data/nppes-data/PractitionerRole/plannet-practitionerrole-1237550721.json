@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "ec8f3269984e42"
+      "value": "43b8a20168c7b6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237550721",
-    "display": "Carissa Rodriguez"
+    "display": "Shirley McKenzie"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "735-206-6522",
+      "value": "(459) 509-7958 x5800",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "786-515-3355 x0263",
+      "value": "743.271.5441 x2349",
       "use": "work"
     }
   ],

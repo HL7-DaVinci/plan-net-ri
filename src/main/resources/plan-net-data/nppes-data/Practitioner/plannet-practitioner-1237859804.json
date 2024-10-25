@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rempel",
+      "family": "Gutmann",
       "given": [
-        "Lyndon"
+        "David",
+        "Napoleon"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-946-803-1946",
+      "value": "1-549-993-1600 x750",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "934-641-5180 x59566",
+      "value": "885-031-9519",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-07-05",
-        "end": "2025-07-05"
+        "start": "2024-01-30",
+        "end": "2027-01-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

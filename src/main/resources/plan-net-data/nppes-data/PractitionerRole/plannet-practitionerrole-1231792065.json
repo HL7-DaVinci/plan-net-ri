@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "5a31742063ca92"
+      "value": "2510fc40a579e6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231792065",
-    "display": "Michael Lynch"
+    "display": "Russ Moen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080A0000X",
-          "display": "Adolescent Medicine"
+          "display": "Pediatric Adolescent Medicine Physician"
         }
       ],
-      "text": "Adolescent Medicine"
+      "text": "Pediatric Adolescent Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "985-037-1296 x4422",
+      "value": "(951) 163-8261 x5572",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "884-844-4662 x15160",
+      "value": "856-683-7478 x7804",
       "use": "work"
     }
   ],

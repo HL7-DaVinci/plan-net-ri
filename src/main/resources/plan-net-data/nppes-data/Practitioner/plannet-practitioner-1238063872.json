@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Howe",
+      "family": "Reinger",
       "given": [
-        "Jordon"
+        "Will"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-312-569-4045 x875",
+      "value": "(855) 041-3887",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-970-875-2651",
+      "value": "1-924-135-5358 x69285",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2021-08-12",
-        "end": "2024-08-12"
+        "start": "2023-06-28",
+        "end": "2026-06-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

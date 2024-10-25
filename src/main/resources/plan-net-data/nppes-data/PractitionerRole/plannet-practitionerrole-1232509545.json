@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harrington-memorial-hospital-inc.com",
-      "value": "52b484b2da1af4"
+      "value": "3e84e68b8a3c57"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232509545",
-    "display": "Tawna Feil"
+    "display": "Martin Casper"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230780047",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "979-333-0280 x40955",
+      "value": "(415) 028-0982 x3323",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(686) 101-6994 x2749",
+      "value": "(687) 535-4105",
       "use": "work"
     }
   ],

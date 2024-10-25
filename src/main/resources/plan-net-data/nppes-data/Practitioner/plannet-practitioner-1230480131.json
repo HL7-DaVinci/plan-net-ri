@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Connelly",
+      "family": "Jacobson",
       "given": [
-        "Dylan",
-        "Hershel"
+        "Colton"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-811-712-5540 x1377",
+      "value": "342-897-6859 x978",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "612-414-2174",
+      "value": "217.946.4315 x9533",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2021-11-05",
-        "end": "2024-11-05"
+        "start": "2024-07-14",
+        "end": "2027-07-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -209,8 +208,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-04-11",
-        "end": "2026-04-11"
+        "start": "2023-01-30",
+        "end": "2026-01-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

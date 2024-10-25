@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bauch",
+      "family": "Schmitt",
       "given": [
-        "Henry",
-        "Harlan"
+        "Gavin"
       ],
       "suffix": [
         "MD, PHD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "395.911.7994 x2529",
+      "value": "1-513-292-1119 x58045",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "679.338.4960 x8610",
+      "value": "1-996-417-9496 x649",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2022-03-15",
-        "end": "2025-03-15"
+        "start": "2023-03-28",
+        "end": "2026-03-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

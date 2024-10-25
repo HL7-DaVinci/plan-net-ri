@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Strosin",
+      "family": "Mertz",
       "given": [
-        "Reynaldo"
+        "Delbert"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-862-815-0605 x5551",
+      "value": "1-171-753-5697 x4726",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "730-468-9936",
+      "value": "101.432.4890",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-01-08",
-        "end": "2026-01-08"
+        "start": "2023-01-04",
+        "end": "2026-01-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

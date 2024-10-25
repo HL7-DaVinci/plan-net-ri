@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Witting",
+      "family": "Bruen",
       "given": [
-        "Glen",
-        "Roy"
+        "Cory"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "696-105-1683 x977",
+      "value": "1-949-602-6083 x611",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-605-972-8269",
+      "value": "(927) 511-5238 x08825",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208200000X",
-            "display": "Plastic Surgery"
+            "display": "Plastic Surgery Physician"
           }
         ],
-        "text": "Plastic Surgery"
+        "text": "Plastic Surgery Physician"
       },
       "period": {
-        "start": "2021-08-31",
-        "end": "2024-08-31"
+        "start": "2023-03-05",
+        "end": "2026-03-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cronin",
+      "family": "Waelchi",
       "given": [
-        "Bradly"
+        "Percy",
+        "Vern"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "151.771.0461 x3373",
+      "value": "(562) 856-9692",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-831-799-7239 x130",
+      "value": "822-794-3624 x8120",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-03-15",
-        "end": "2026-03-15"
+        "start": "2022-01-03",
+        "end": "2025-01-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

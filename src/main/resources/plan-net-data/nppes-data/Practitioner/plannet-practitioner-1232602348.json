@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wisoky",
+      "family": "Ankunding",
       "given": [
-        "Raymond",
-        "Rodney"
+        "Wyatt",
+        "Guillermo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(494) 459-8914 x2384",
+      "value": "(538) 725-8647 x57917",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-572-265-7111 x79107",
+      "value": "(749) 638-3991 x6015",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-05-13",
-        "end": "2026-05-13"
+        "start": "2022-10-17",
+        "end": "2025-10-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

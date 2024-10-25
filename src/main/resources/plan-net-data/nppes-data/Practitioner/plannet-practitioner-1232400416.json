@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Welch",
+      "family": "Tillman",
       "given": [
-        "Arline"
+        "Fredricka",
+        "Cris"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(830) 030-7157 x41375",
+      "value": "844.434.1307 x32688",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-416-488-2974 x35629",
+      "value": "1-759-095-1030 x236",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-01-22",
-        "end": "2025-01-22"
+        "start": "2024-09-17",
+        "end": "2027-09-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Sauer",
+      "family": "Gutkowski",
       "given": [
-        "Prince"
+        "Edmond",
+        "Seymour"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(654) 326-4982 x7589",
+      "value": "303.209.7653 x150",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-648-595-0579 x021",
+      "value": "335.920.4634 x393",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2024-06-09",
-        "end": "2027-06-09"
+        "start": "2022-04-27",
+        "end": "2025-04-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

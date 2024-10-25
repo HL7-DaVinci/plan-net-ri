@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lueilwitz",
+      "family": "Predovic",
       "given": [
-        "Flavia"
+        "Blanca"
       ],
       "suffix": [
         "PA-C"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-692-319-0030 x14544",
+      "value": "1-892-663-8039 x283",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "871-484-5327 x876",
+      "value": "616.277.1518 x703",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-09-16",
-        "end": "2024-09-16"
+        "start": "2022-11-25",
+        "end": "2025-11-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

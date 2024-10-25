@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "76cf42ae1bc892"
+      "value": "2fcb936626a17a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236541557",
-    "display": "Estelle Metz"
+    "display": "Rosaura Schuster"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-173-847-3046 x5320",
+      "value": "(626) 521-7519 x6914",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(787) 910-9026",
+      "value": "506-546-5068",
       "use": "work"
     }
   ],

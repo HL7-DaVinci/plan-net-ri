@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "c841da8580b8e6"
+      "value": "c68c5e44908768"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235833936",
-    "display": "Jan Connelly"
+    "display": "Buck Ferry"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1835P1300X",
-          "display": "Psychiatric"
+          "display": "Psychiatric Pharmacist"
         }
       ],
-      "text": "Psychiatric"
+      "text": "Psychiatric Pharmacist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-219-875-1722 x80236",
+      "value": "(498) 697-0821 x85758",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(916) 864-6492 x936",
+      "value": "924.191.7958 x0091",
       "use": "work"
     }
   ],

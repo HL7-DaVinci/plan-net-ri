@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kris",
+      "family": "Kovacek",
       "given": [
-        "Harriette",
-        "John"
+        "Rosita",
+        "Pei"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-781-737-2847",
+      "value": "1-488-902-9702 x73412",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "916-354-6302 x5718",
+      "value": "1-292-015-9023",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-03-27",
-        "end": "2026-03-27"
+        "start": "2024-08-05",
+        "end": "2027-08-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

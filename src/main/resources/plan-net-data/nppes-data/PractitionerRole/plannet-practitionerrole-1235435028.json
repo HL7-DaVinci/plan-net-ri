@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "4fa55e8aed0410"
+      "value": "e34278ccc67ff7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235435028",
-    "display": "Joey Hane"
+    "display": "Art Powlowski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223S0112X",
-          "display": "Oral and Maxillofacial Surgery"
+          "display": "Oral and Maxillofacial Surgery (Dentist)"
         }
       ],
-      "text": "Oral and Maxillofacial Surgery"
+      "text": "Oral and Maxillofacial Surgery (Dentist)"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "815-644-4040 x6043",
+      "value": "(133) 799-4452 x549",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "737-284-1878 x19754",
+      "value": "1-817-163-5614",
       "use": "work"
     }
   ],

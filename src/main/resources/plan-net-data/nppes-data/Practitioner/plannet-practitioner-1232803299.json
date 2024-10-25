@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Howe",
+      "family": "Murazik",
       "given": [
-        "Adelaide"
+        "Juliane",
+        "Amal"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-422-681-0395 x75010",
+      "value": "837-497-8641 x69728",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(795) 442-0719",
+      "value": "998.616.7542 x7489",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-03-29",
-        "end": "2025-03-29"
+        "start": "2022-09-11",
+        "end": "2025-09-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

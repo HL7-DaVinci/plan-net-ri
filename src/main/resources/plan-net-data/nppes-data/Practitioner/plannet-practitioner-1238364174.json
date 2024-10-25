@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Prohaska",
+      "family": "Quitzon",
       "given": [
-        "Lauri",
-        "Magnolia"
+        "Clara"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "347.430.2752 x0235",
+      "value": "(964) 284-7061 x36776",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "962.009.7298 x9089",
+      "value": "428.837.7054 x98116",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-03-10",
-        "end": "2025-03-10"
+        "start": "2024-03-21",
+        "end": "2027-03-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

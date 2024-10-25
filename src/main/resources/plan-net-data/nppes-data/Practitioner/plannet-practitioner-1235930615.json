@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Block",
+      "family": "Mueller",
       "given": [
-        "Dustin",
-        "Bret"
+        "Deandre"
       ],
       "suffix": [
         "RN, MS, C-FNP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "188.624.3375 x39568",
+      "value": "1-216-966-3192 x45785",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "131-502-9862",
+      "value": "796-555-7525 x59651",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2024-06-06",
-        "end": "2027-06-06"
+        "start": "2022-07-26",
+        "end": "2025-07-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

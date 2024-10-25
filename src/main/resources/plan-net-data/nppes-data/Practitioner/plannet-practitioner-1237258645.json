@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reynolds",
+      "family": "Pfeffer",
       "given": [
-        "Katelynn"
+        "Linette",
+        "Kalyn"
       ],
       "suffix": [
         "MA"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(729) 934-1363",
+      "value": "177.697.5907 x679",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "699.593.0839",
+      "value": "734.238.1462",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2023-01-19",
-        "end": "2026-01-19"
+        "start": "2022-01-14",
+        "end": "2025-01-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

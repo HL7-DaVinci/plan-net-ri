@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "abba7e663d52ad"
+      "value": "b574e2619f17b6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235535387",
-    "display": "Leroy Gibson"
+    "display": "Lane Tremblay"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-273-199-7948 x01963",
+      "value": "(707) 370-1489",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "450.902.3534 x4648",
+      "value": "(137) 880-2502 x3526",
       "use": "work"
     }
   ],

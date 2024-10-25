@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hamill",
+      "family": "Daniel",
       "given": [
-        "Hollis"
+        "Damion"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "535-639-8843",
+      "value": "375-896-5367 x90271",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(548) 609-2595 x82276",
+      "value": "267.308.0160 x9189",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-10-13",
-        "end": "2024-10-13"
+        "start": "2023-01-23",
+        "end": "2026-01-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-01-27",
-        "end": "2026-01-27"
+        "start": "2023-03-26",
+        "end": "2026-03-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Haley",
+      "family": "O'Reilly",
       "given": [
-        "Kaley"
+        "Raisa"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-575-120-4474 x77043",
+      "value": "934-800-6581 x13960",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(755) 794-1488 x115",
+      "value": "(750) 593-9723 x571",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-04-05",
-        "end": "2025-04-05"
+        "start": "2024-04-14",
+        "end": "2027-04-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

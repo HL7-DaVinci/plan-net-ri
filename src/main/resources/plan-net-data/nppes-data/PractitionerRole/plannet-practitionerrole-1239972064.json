@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "ed82c268a835a2"
+      "value": "f77d2aa387cd82"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239972064",
-    "display": "Dana Rice"
+    "display": "Derick Cormier"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(818) 751-9955",
+      "value": "1-370-144-1652",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "672-683-8059 x771",
+      "value": "1-983-240-9797 x50884",
       "use": "work"
     }
   ],

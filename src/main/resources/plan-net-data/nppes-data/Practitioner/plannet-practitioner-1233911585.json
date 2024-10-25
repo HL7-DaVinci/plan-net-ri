@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Grant",
+      "family": "Quigley",
       "given": [
-        "Wilbert",
-        "Eloy"
+        "Thomas",
+        "Brady"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "365.690.6821",
+      "value": "461.962.2366 x529",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "485.168.1548 x32572",
+      "value": "1-790-491-2515",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2024-06-25",
-        "end": "2027-06-25"
+        "start": "2022-12-14",
+        "end": "2025-12-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2022-04-21",
-        "end": "2025-04-21"
+        "start": "2023-10-10",
+        "end": "2026-10-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

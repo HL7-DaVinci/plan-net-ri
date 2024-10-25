@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Zulauf",
+      "family": "Daugherty",
       "given": [
-        "Felipe"
+        "Lucius"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "967.165.7925 x766",
+      "value": "656.733.1655 x61980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(992) 172-1006 x36902",
+      "value": "1-158-007-9445",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-07-05",
-        "end": "2025-07-05"
+        "start": "2023-03-20",
+        "end": "2026-03-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2021-09-13",
-        "end": "2024-09-13"
+        "start": "2024-07-05",
+        "end": "2027-07-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -239,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

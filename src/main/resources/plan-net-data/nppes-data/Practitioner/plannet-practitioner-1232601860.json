@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Glover",
+      "family": "Flatley",
       "given": [
-        "Hilton",
-        "Augustine"
+        "Josue"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "896.455.3825 x4260",
+      "value": "1-597-053-7735",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "420-850-5349 x31201",
+      "value": "1-102-792-0493",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2024-04-27",
-        "end": "2027-04-27"
+        "start": "2022-09-10",
+        "end": "2025-09-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

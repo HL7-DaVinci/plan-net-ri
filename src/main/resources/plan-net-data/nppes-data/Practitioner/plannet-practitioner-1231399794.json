@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Corwin",
+      "family": "VonRueden",
       "given": [
-        "Jorge"
+        "Val",
+        "Abel"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-905-130-2742 x2512",
+      "value": "1-837-803-0267 x299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-512-907-4864 x565",
+      "value": "135-396-8328",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2023-01-13",
-        "end": "2026-01-13"
+        "start": "2024-04-20",
+        "end": "2027-04-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

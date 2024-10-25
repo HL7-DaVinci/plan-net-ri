@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Carroll",
+      "family": "Hirthe",
       "given": [
-        "Zula"
+        "Maia"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "408-960-4545 x29421",
+      "value": "911.553.2561",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "281.325.7396 x2873",
+      "value": "457-316-8821 x056",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-05-31",
-        "end": "2026-05-31"
+        "start": "2024-03-04",
+        "end": "2027-03-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dibbert",
+      "family": "Rempel",
       "given": [
-        "Jared",
-        "Dudley"
+        "Emile",
+        "Arron"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "798-953-8030 x13166",
+      "value": "1-479-807-1323 x83847",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-342-600-0506 x0487",
+      "value": "757-714-7259 x566",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-07",
-        "end": "2025-12-07"
+        "start": "2022-05-05",
+        "end": "2025-05-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

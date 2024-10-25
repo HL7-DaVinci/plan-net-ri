@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lubowitz",
+      "family": "Kunde",
       "given": [
-        "Kip"
+        "Rodrigo"
       ],
       "suffix": [
         "PH.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(624) 023-2906 x2559",
+      "value": "1-496-136-6894 x9869",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-959-525-0004 x6534",
+      "value": "(818) 595-2196 x0986",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2024-04-01",
-        "end": "2027-04-01"
+        "start": "2022-10-21",
+        "end": "2025-10-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -205,8 +205,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2021-08-27",
-        "end": "2024-08-27"
+        "start": "2022-02-11",
+        "end": "2025-02-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,14 +263,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TA0400X",
-            "display": "Addiction (Substance Use Disorder)"
+            "display": "Addiction (Substance Use Disorder) Psychologist"
           }
         ],
-        "text": "Addiction (Substance Use Disorder)"
+        "text": "Addiction (Substance Use Disorder) Psychologist"
       },
       "period": {
-        "start": "2023-05-10",
-        "end": "2026-05-10"
+        "start": "2023-04-26",
+        "end": "2026-04-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -327,14 +327,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TA0700X",
-            "display": "Adult Development and Aging"
+            "display": "Adult Development & Aging Psychologist"
           }
         ],
-        "text": "Adult Development and Aging"
+        "text": "Adult Development & Aging Psychologist"
       },
       "period": {
-        "start": "2023-06-24",
-        "end": "2026-06-24"
+        "start": "2021-11-13",
+        "end": "2024-11-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -391,14 +391,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TB0200X",
-            "display": "Cognitive and Behavioral"
+            "display": "Cognitive & Behavioral Psychologist"
           }
         ],
-        "text": "Cognitive and Behavioral"
+        "text": "Cognitive & Behavioral Psychologist"
       },
       "period": {
-        "start": "2024-04-13",
-        "end": "2027-04-13"
+        "start": "2022-04-08",
+        "end": "2025-04-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -455,14 +455,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-12-08",
-        "end": "2025-12-08"
+        "start": "2022-07-25",
+        "end": "2025-07-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -519,14 +519,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC1900X",
-            "display": "Counseling"
+            "display": "Counseling Psychologist"
           }
         ],
-        "text": "Counseling"
+        "text": "Counseling Psychologist"
       },
       "period": {
-        "start": "2021-11-03",
-        "end": "2024-11-03"
+        "start": "2022-10-28",
+        "end": "2025-10-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -583,14 +583,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC2200X",
-            "display": "Clinical Child and Adolescent"
+            "display": "Clinical Child & Adolescent Psychologist"
           }
         ],
-        "text": "Clinical Child and Adolescent"
+        "text": "Clinical Child & Adolescent Psychologist"
       },
       "period": {
-        "start": "2022-11-20",
-        "end": "2025-11-20"
+        "start": "2023-08-03",
+        "end": "2026-08-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -647,14 +647,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TF0000X",
-            "display": "Family"
+            "display": "Family Psychologist"
           }
         ],
-        "text": "Family"
+        "text": "Family Psychologist"
       },
       "period": {
-        "start": "2024-01-28",
-        "end": "2027-01-28"
+        "start": "2023-11-19",
+        "end": "2026-11-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -711,14 +711,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TH0100X",
-            "display": "Health Service"
+            "display": "Health Service Psychologist"
           }
         ],
-        "text": "Health Service"
+        "text": "Health Service Psychologist"
       },
       "period": {
-        "start": "2022-05-29",
-        "end": "2025-05-29"
+        "start": "2022-10-14",
+        "end": "2025-10-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -775,14 +775,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TM1800X",
-            "display": "Mental Retardation and Developmental Disabilities"
+            "display": "Intellectual & Developmental Disabilities Psychologist"
           }
         ],
-        "text": "Mental Retardation and Developmental Disabilities"
+        "text": "Intellectual & Developmental Disabilities Psychologist"
       },
       "period": {
-        "start": "2023-11-01",
-        "end": "2026-11-01"
+        "start": "2022-05-11",
+        "end": "2025-05-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -834,11 +834,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

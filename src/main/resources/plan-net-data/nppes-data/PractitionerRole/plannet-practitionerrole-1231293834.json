@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "93758fc88bb470"
+      "value": "5132ef504ff6e6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231293834",
-    "display": "Barry Weissnat"
+    "display": "Henry Langworth"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(563) 591-3299 x6007",
+      "value": "(385) 583-4679 x927",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(175) 009-8961 x40854",
+      "value": "1-590-387-6752 x964",
       "use": "work"
     }
   ],

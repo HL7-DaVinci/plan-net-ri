@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feil",
+      "family": "Braun",
       "given": [
-        "Sandy",
-        "Randall"
+        "Landon",
+        "Palmer"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "842.503.6069 x99321",
+      "value": "1-437-177-5317 x0863",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-568-484-8280 x285",
+      "value": "620.373.7007 x190",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-11-22",
-        "end": "2025-11-22"
+        "start": "2022-02-19",
+        "end": "2025-02-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

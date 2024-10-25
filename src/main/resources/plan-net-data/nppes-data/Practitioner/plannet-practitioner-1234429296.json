@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dibbert",
+      "family": "Nolan",
       "given": [
-        "Beau"
+        "Ethan"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "326-144-7847 x62746",
+      "value": "306-799-0500 x71709",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-298-229-3720",
+      "value": "1-568-245-7760",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2023-05-12",
-        "end": "2026-05-12"
+        "start": "2023-09-24",
+        "end": "2026-09-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,21 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Armstrong",
+      "family": "Schiller",
       "given": [
-        "Nadia"
+        "Shaina"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "765.637.0513 x703",
+      "value": "(123) 611-2966",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-888-382-7812 x6808",
+      "value": "1-851-842-4534",
       "use": "work"
     }
   ],
@@ -133,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-12-20",
-        "end": "2025-12-20"
+        "start": "2024-04-20",
+        "end": "2027-04-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

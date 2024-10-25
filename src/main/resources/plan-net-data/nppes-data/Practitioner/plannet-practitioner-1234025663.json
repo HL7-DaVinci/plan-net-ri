@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Klein",
+      "family": "Bogan",
       "given": [
-        "Tobi",
-        "Julissa"
+        "Brandee",
+        "Madison"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "222.965.6562",
+      "value": "(677) 995-8117",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "939.362.6934 x470",
+      "value": "372-833-3635",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-07-10",
-        "end": "2025-07-10"
+        "start": "2023-01-01",
+        "end": "2026-01-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

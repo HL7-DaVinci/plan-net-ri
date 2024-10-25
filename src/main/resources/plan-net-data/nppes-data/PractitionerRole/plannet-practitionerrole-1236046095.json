@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "8ab58c919dc86a"
+      "value": "59c8e56854d323"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236046095",
-    "display": "Phyliss Jaskolski"
+    "display": "Jaqueline Boyer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2251X0800X",
-          "display": "Orthopedic"
+          "display": "Orthopedic Physical Therapist"
         }
       ],
-      "text": "Orthopedic"
+      "text": "Orthopedic Physical Therapist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "732-804-0364",
+      "value": "(481) 412-9494 x497",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "650-035-9252",
+      "value": "277-478-0393 x7316",
       "use": "work"
     }
   ],

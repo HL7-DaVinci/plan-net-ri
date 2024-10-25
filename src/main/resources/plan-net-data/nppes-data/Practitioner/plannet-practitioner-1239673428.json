@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Medhurst",
+      "family": "Boehm",
       "given": [
-        "Ned"
+        "Kelvin"
       ],
       "suffix": [
         "O.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(826) 009-8375 x4981",
+      "value": "(498) 190-8809 x215",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "118.463.9703",
+      "value": "1-445-756-1386 x09669",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2022-04-12",
-        "end": "2025-04-12"
+        "start": "2024-01-20",
+        "end": "2027-01-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

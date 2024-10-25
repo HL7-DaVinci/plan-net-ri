@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Olson",
+      "family": "Rempel",
       "given": [
-        "Eileen"
+        "Lachelle"
       ],
       "suffix": [
         "O.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-145-265-2019 x99716",
+      "value": "1-406-340-0802 x6344",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(124) 183-4167 x7787",
+      "value": "(190) 458-2940",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-08-06",
-        "end": "2024-08-06"
+        "start": "2023-09-27",
+        "end": "2026-09-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

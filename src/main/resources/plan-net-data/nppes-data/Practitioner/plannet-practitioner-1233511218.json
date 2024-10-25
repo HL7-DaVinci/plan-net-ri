@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Padberg",
+      "family": "Ferry",
       "given": [
-        "Will"
+        "Ethan"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "322.211.5366",
+      "value": "(103) 332-6189 x738",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-537-543-7132 x150",
+      "value": "1-622-984-9388 x094",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2022-10-04",
-        "end": "2025-10-04"
+        "start": "2022-04-11",
+        "end": "2025-04-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

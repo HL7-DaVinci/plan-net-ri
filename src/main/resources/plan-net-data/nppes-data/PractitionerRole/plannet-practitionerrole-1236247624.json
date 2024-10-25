@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "2b08ff303bb236"
+      "value": "504810b95674bd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236247624",
-    "display": "Gabriel Mosciski"
+    "display": "Monte Douglas"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(572) 845-2633",
+      "value": "(923) 510-7902 x551",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "953.508.9321",
+      "value": "(831) 626-5323",
       "use": "work"
     }
   ],

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Maggio",
+      "family": "Huels",
       "given": [
-        "Cristen"
+        "Xenia"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-534-342-8824 x386",
+      "value": "361-495-1121 x02445",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "856-184-4017 x27920",
+      "value": "1-242-696-4026",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-05-29",
-        "end": "2027-05-29"
+        "start": "2024-06-17",
+        "end": "2027-06-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

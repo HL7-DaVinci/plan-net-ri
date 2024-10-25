@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mante",
+      "family": "Casper",
       "given": [
-        "Rosario",
-        "Blaine"
+        "Doyle"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "667-166-6887 x418",
+      "value": "976-120-1286 x3008",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "972.985.6026 x69440",
+      "value": "1-139-035-1976 x00317",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2022-02-11",
-        "end": "2025-02-11"
+        "start": "2021-11-27",
+        "end": "2024-11-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

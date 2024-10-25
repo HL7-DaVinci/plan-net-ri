@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Buckridge",
+      "family": "West",
       "given": [
-        "Troy"
+        "Jonathan",
+        "Herb"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "866.041.7576 x665",
+      "value": "846-345-8665 x78884",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "523.979.2365 x43993",
+      "value": "216.984.1079 x51516",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-12-22",
-        "end": "2024-12-22"
+        "start": "2023-04-05",
+        "end": "2026-04-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

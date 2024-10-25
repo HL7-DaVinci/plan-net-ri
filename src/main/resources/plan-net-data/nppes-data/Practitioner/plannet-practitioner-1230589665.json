@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hudson",
+      "family": "Ryan",
       "given": [
-        "Giovanni",
-        "Sanford"
+        "Jonathon"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(548) 344-1955 x723",
+      "value": "1-131-532-2469 x4545",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "857.811.7642 x8274",
+      "value": "389-950-0999 x5495",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-10-24",
-        "end": "2025-10-24"
+        "start": "2021-11-21",
+        "end": "2024-11-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207K00000X",
-            "display": "Allergy and Immunology"
+            "display": "Allergy & Immunology Physician"
           }
         ],
-        "text": "Allergy and Immunology"
+        "text": "Allergy & Immunology Physician"
       },
       "period": {
-        "start": "2023-05-14",
-        "end": "2026-05-14"
+        "start": "2023-04-18",
+        "end": "2026-04-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

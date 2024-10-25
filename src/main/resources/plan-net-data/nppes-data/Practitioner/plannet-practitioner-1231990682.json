@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Blick",
+      "family": "Roberts",
       "given": [
-        "Colin",
-        "Isiah"
+        "Alfonzo",
+        "Rafael"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(856) 609-5042 x154",
+      "value": "932-152-9086 x08435",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "916-685-5689 x492",
+      "value": "(897) 812-3509 x1973",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-12-27",
-        "end": "2025-12-27"
+        "start": "2023-09-24",
+        "end": "2026-09-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

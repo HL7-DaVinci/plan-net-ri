@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mitchell",
+      "family": "Boehm",
       "given": [
-        "Lenny",
-        "Charlie"
+        "Jasper"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-441-676-1058",
+      "value": "866.147.1126",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "434-653-7076",
+      "value": "1-578-471-2318 x1150",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-06-18",
-        "end": "2026-06-18"
+        "start": "2023-03-27",
+        "end": "2026-03-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-08-18",
-        "end": "2024-08-18"
+        "start": "2023-04-10",
+        "end": "2026-04-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -265,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2021-07-23",
-        "end": "2024-07-23"
+        "start": "2024-07-09",
+        "end": "2027-07-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -324,11 +323,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

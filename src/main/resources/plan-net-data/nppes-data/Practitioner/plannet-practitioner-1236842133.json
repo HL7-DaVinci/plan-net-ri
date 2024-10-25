@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hermann",
+      "family": "Koelpin",
       "given": [
-        "Lane",
-        "Glady"
+        "Anette"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(573) 446-6196",
+      "value": "1-496-706-5459 x8909",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(894) 587-2767",
+      "value": "168.841.2848",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-05-03",
-        "end": "2025-05-03"
+        "start": "2024-01-12",
+        "end": "2027-01-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

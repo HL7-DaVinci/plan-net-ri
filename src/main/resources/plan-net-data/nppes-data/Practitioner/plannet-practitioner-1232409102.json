@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ward",
+      "family": "Considine",
       "given": [
-        "Hannah"
+        "Sue",
+        "Jacalyn"
       ],
       "suffix": [
         "RNP"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "690.660.4667 x6469",
+      "value": "503.685.0872",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "259-911-4359 x599",
+      "value": "(806) 680-4114 x31974",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-01-28",
-        "end": "2026-01-28"
+        "start": "2024-01-13",
+        "end": "2027-01-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

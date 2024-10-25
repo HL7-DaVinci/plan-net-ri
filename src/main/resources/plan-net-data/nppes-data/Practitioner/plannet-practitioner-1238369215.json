@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Weber",
+      "family": "Dibbert",
       "given": [
-        "Ena",
-        "Verna"
+        "Shanice"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(765) 574-4924",
+      "value": "1-213-398-3505",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(524) 046-1007 x462",
+      "value": "1-623-497-7812",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-01-01",
-        "end": "2025-01-01"
+        "start": "2023-08-26",
+        "end": "2026-08-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207NS0135X",
-            "display": "Procedural Dermatology"
+            "display": "Procedural Dermatology Physician"
           }
         ],
-        "text": "Procedural Dermatology"
+        "text": "Procedural Dermatology Physician"
       },
       "period": {
-        "start": "2021-09-03",
-        "end": "2024-09-03"
+        "start": "2022-08-25",
+        "end": "2025-08-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,6 +241,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

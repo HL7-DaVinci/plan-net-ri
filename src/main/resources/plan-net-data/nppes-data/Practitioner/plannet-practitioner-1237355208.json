@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stokes",
+      "family": "Collins",
       "given": [
-        "Rudolf"
+        "Kenny"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "403.356.9795 x5771",
+      "value": "752.977.7472",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(564) 505-7998 x146",
+      "value": "(475) 489-6284 x136",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-06-29",
-        "end": "2027-06-29"
+        "start": "2024-08-29",
+        "end": "2027-08-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2024-02-20",
-        "end": "2027-02-20"
+        "start": "2024-06-22",
+        "end": "2027-06-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

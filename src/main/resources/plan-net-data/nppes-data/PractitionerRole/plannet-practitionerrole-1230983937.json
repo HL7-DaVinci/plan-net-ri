@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "ceb5b5df48c132"
+      "value": "f7bf6e4aaf1313"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230983937",
-    "display": "Lorenzo Wolf"
+    "display": "Nathan Nicolas"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(619) 132-9178 x093",
+      "value": "266.976.7148 x750",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-622-627-3251 x8641",
+      "value": "607-917-5739 x468",
       "use": "work"
     }
   ],

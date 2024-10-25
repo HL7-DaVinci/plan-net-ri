@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "63ef83411bc173"
+      "value": "88261ea2899564"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236640589",
-    "display": "Shauna Homenick"
+    "display": "Iola Rogahn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZP0101X",
-          "display": "Anatomic Pathology"
+          "display": "Anatomic Pathology Physician"
         }
       ],
-      "text": "Anatomic Pathology"
+      "text": "Anatomic Pathology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "622-282-1800",
+      "value": "706.102.1823 x845",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "771-446-5498 x8652",
+      "value": "(662) 393-5138",
       "use": "work"
     }
   ],

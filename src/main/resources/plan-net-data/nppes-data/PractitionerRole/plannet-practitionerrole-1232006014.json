@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "1435c52d97fff4"
+      "value": "7c256bd8114285"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232006014",
-    "display": "Wilburn Schuppe"
+    "display": "Forest Larkin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AS0400X",
-          "display": "Surgical"
+          "display": "Surgical Physician Assistant"
         }
       ],
-      "text": "Surgical"
+      "text": "Surgical Physician Assistant"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "915.204.1756 x754",
+      "value": "676-480-1028",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "853-055-6264 x12515",
+      "value": "(254) 335-7033 x4771",
       "use": "work"
     }
   ],

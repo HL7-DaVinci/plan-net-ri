@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhic",
+      "family": "Hyatt",
       "given": [
-        "Anibal",
-        "Hiram"
+        "Domingo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "374.753.1448 x29580",
+      "value": "208.153.6541 x938",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(459) 038-7537",
+      "value": "(847) 006-6616",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2021-11-25",
-        "end": "2024-11-25"
+        "start": "2022-12-15",
+        "end": "2025-12-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

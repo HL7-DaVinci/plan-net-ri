@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Williamson",
+      "family": "Corkery",
       "given": [
-        "Gilda"
+        "Merle"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(745) 534-4476",
+      "value": "(769) 719-0981 x56164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "911-898-0398",
+      "value": "(124) 738-0254 x3320",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2023-02-22",
-        "end": "2026-02-22"
+        "start": "2024-03-03",
+        "end": "2027-03-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2024-02-17",
-        "end": "2027-02-17"
+        "start": "2022-06-18",
+        "end": "2025-06-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -242,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

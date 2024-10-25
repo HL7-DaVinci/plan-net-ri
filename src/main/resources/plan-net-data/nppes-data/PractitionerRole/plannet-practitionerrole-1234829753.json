@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "15c43412d3c17d"
+      "value": "537ca8f3da5c56"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234829753",
-    "display": "Ike Bauch"
+    "display": "Walton Balistreri"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0000X",
-          "display": "Hematology"
+          "display": "Hematology (Internal Medicine) Physician"
         }
       ],
-      "text": "Hematology"
+      "text": "Hematology (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-821-403-6448 x974",
+      "value": "249.008.8631",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(713) 424-5502 x7623",
+      "value": "683-989-3564 x931",
       "use": "work"
     }
   ],

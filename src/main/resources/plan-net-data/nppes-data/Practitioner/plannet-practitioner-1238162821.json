@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Windler",
+      "family": "Lindgren",
       "given": [
-        "Julius",
-        "Sang"
+        "Owen",
+        "Tyson"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-212-055-6547",
+      "value": "979-930-1943 x728",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "712.175.9427 x865",
+      "value": "666-619-1516 x4871",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-01-10",
-        "end": "2026-01-10"
+        "start": "2023-10-08",
+        "end": "2026-10-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-09-04",
-        "end": "2026-09-04"
+        "start": "2021-11-02",
+        "end": "2024-11-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

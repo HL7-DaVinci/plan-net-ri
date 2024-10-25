@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kunde",
+      "family": "Auer",
       "given": [
-        "Jared"
+        "Felton"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "812-671-5255 x661",
+      "value": "1-575-734-3041 x4763",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-348-079-4561 x3859",
+      "value": "1-229-554-1625 x2960",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-08-08",
-        "end": "2025-08-08"
+        "start": "2024-07-05",
+        "end": "2027-07-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

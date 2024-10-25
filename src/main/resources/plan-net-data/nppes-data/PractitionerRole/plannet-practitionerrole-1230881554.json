@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "13d53c03846807"
+      "value": "b0c5c9a6ac34c7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230881554",
-    "display": "Adalberto Schmidt"
+    "display": "Elijah Paucek"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "255.255.8627",
+      "value": "1-285-198-7817 x43274",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(907) 067-5007",
+      "value": "980-411-8465 x571",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Crooks",
+      "family": "Franecki",
       "given": [
-        "Sherryl",
-        "Nannette"
+        "Kerstin",
+        "Ngan"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(216) 197-5952 x69529",
+      "value": "1-506-196-4561 x39520",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "197-972-5013 x472",
+      "value": "672.608.9219",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-11-10",
-        "end": "2025-11-10"
+        "start": "2021-11-02",
+        "end": "2024-11-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

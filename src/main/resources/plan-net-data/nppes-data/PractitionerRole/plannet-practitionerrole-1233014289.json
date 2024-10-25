@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "5fd108d286761d"
+      "value": "8cd7cb02484cef"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233014289",
-    "display": "Alonzo Romaguera"
+    "display": "Huey Kassulke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "880.925.4043 x949",
+      "value": "774-458-5444 x555",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "683-120-7161 x9371",
+      "value": "(743) 207-1375 x81820",
       "use": "work"
     }
   ],

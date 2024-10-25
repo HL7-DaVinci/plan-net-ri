@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Williamson",
+      "family": "Emard",
       "given": [
-        "Tyler"
+        "Hank",
+        "Cletus"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "861.971.8665 x319",
+      "value": "187-835-9929 x1495",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "247-117-7042 x719",
+      "value": "212.177.7805 x2835",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-05-25",
-        "end": "2025-05-25"
+        "start": "2021-11-09",
+        "end": "2024-11-09"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

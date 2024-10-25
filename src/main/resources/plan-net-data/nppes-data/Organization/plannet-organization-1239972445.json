@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "324.365.0231",
+      "value": "591.751.5887 x232",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(580) 723-9280 x3688",
+      "value": "152.236.4855 x374",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Zachary Kuhic",
-        "family": "Kuhic",
+        "text": "Duncan Considine",
+        "family": "Considine",
         "given": [
-          "Zachary"
+          "Duncan"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "324.365.0231",
+          "value": "591.751.5887 x232",
           "use": "work"
         }
       ],

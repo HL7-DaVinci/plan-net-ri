@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "1fcc3c560f0d28"
+      "value": "f771f0721e267a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230085376",
-    "display": "Jonah Armstrong"
+    "display": "Dwain Schimmel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-535-920-0243",
+      "value": "179.462.8088",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "831-447-5980 x87128",
+      "value": "1-429-055-6268 x679",
       "use": "work"
     }
   ],

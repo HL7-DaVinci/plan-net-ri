@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "6f4154d34dfcb0"
+      "value": "f21bdad01e28ef"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236247160",
-    "display": "Oswaldo Erdman"
+    "display": "Linwood Jast"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-727-560-1039 x52334",
+      "value": "(706) 746-9034 x2516",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(217) 077-7142 x8754",
+      "value": "342.506.4726 x77685",
       "use": "work"
     }
   ],

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "8c4ae64a945921"
+      "value": "48e66a8d15d50b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237550747",
-    "display": "Victor Schultz"
+    "display": "Granville Volkman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080N0001X",
-          "display": "Neonatal-Perinatal Medicine"
+          "display": "Neonatal-Perinatal Medicine Physician"
         }
       ],
-      "text": "Neonatal-Perinatal Medicine"
+      "text": "Neonatal-Perinatal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(533) 788-8328 x0563",
+      "value": "743.519.3209",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(746) 128-2869 x10222",
+      "value": "(636) 588-6574 x2430",
       "use": "work"
     }
   ],

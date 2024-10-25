@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "0b4b0a1dd79eb0"
+      "value": "427121f1e2080f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235337036",
-    "display": "Dario Cummings"
+    "display": "Elliot Fritsch"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(121) 678-9770 x73816",
+      "value": "1-979-408-6685",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(555) 200-4753 x94368",
+      "value": "741-742-3521",
       "use": "work"
     }
   ],

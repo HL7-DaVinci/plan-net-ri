@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lesch",
+      "family": "Hilpert",
       "given": [
-        "Eugene"
+        "Laverne",
+        "David"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "816.300.5152 x54024",
+      "value": "668-068-7321",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "513-290-3274 x8994",
+      "value": "1-229-596-4310",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2024-05-28",
-        "end": "2027-05-28"
+        "start": "2023-01-12",
+        "end": "2026-01-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

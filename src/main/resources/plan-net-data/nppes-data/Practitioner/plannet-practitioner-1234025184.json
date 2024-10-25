@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schmitt",
+      "family": "Daugherty",
       "given": [
-        "Jere",
-        "Reginald"
+        "Garret"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-576-031-2863 x4104",
+      "value": "(210) 403-1683 x40239",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "935.480.9171 x483",
+      "value": "(452) 886-6895 x3860",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2023-05-23",
-        "end": "2026-05-23"
+        "start": "2023-11-18",
+        "end": "2026-11-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

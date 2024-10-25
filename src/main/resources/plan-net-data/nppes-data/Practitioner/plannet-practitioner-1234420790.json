@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Morissette",
+      "family": "Corwin",
       "given": [
-        "Carl"
+        "Marya"
       ],
       "suffix": [
         "O.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(647) 052-9624 x225",
+      "value": "290-887-0895 x9513",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "276.730.6841 x6670",
+      "value": "1-664-974-0818 x9442",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-07-21",
-        "end": "2025-07-21"
+        "start": "2022-09-09",
+        "end": "2025-09-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

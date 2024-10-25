@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "b7de23964ba760"
+      "value": "8bffc5be2ba9c8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232005511",
-    "display": "German O'Connell"
+    "display": "Philip Ernser"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "300-895-6727 x1206",
+      "value": "803.198.1271 x37453",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "851.651.6972 x8359",
+      "value": "(582) 399-7426",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuphal",
+      "family": "Beatty",
       "given": [
-        "Tyisha",
-        "Georgette"
+        "Tiny"
       ],
       "suffix": [
         "PA-C"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-106-257-6436 x54335",
+      "value": "867-317-3488 x769",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-890-403-7468",
+      "value": "1-775-013-3381 x044",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2024-01-14",
-        "end": "2027-01-14"
+        "start": "2023-02-02",
+        "end": "2026-02-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

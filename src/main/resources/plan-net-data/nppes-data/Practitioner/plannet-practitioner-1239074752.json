@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dicki",
+      "family": "Koelpin",
       "given": [
-        "Lennie"
+        "Glinda"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(578) 236-0374",
+      "value": "(875) 975-8216 x4840",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-284-786-4504 x48867",
+      "value": "943.840.6875",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-08-13",
-        "end": "2026-08-13"
+        "start": "2023-01-04",
+        "end": "2026-01-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-07-19",
-        "end": "2025-07-19"
+        "start": "2024-04-29",
+        "end": "2027-04-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

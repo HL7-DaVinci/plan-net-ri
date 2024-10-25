@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "3decd5defae5ed"
+      "value": "07ad765d956f0a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230883568",
-    "display": "Deana Walsh"
+    "display": "Katlyn O'Hara"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "214-723-0120 x41204",
+      "value": "309.342.7070 x157",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-557-332-1353 x417",
+      "value": "1-895-349-8572",
       "use": "work"
     }
   ],

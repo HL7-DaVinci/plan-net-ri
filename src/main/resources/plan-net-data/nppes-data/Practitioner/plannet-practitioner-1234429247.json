@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Abshire",
+      "family": "Kunde",
       "given": [
-        "Randolph"
+        "Fabian"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "362-398-8443 x493",
+      "value": "(460) 698-2548 x737",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "586-632-9224",
+      "value": "271.112.8953 x56075",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZD0900X",
-            "display": "Dermatopathology"
+            "display": "Dermatopathology (Pathology) Physician"
           }
         ],
-        "text": "Dermatopathology"
+        "text": "Dermatopathology (Pathology) Physician"
       },
       "period": {
-        "start": "2024-05-07",
-        "end": "2027-05-07"
+        "start": "2023-04-19",
+        "end": "2026-04-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

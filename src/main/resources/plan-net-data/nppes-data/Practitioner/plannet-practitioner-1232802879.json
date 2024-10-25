@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mraz",
+      "family": "Marks",
       "given": [
-        "Courtney",
-        "Boris"
+        "Stephen",
+        "Rolf"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(259) 494-4182 x9287",
+      "value": "261-362-7883 x9890",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "771.410.2630 x5172",
+      "value": "372-258-9440 x8389",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-08-06",
-        "end": "2024-08-06"
+        "start": "2023-07-29",
+        "end": "2026-07-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

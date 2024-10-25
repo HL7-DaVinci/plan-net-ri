@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "1585c574d9b4f9"
+      "value": "f1f522d9f061e1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231398135",
-    "display": "Delois Lakin"
+    "display": "Daisey Olson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "279.245.6360 x6792",
+      "value": "1-988-123-9683",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "312-088-6963 x09249",
+      "value": "1-398-099-4315 x316",
       "use": "work"
     }
   ],

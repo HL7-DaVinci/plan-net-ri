@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schaden",
+      "family": "Stokes",
       "given": [
-        "Heriberto"
+        "Sal",
+        "Nelson"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "196.630.1299",
+      "value": "(531) 521-8297 x002",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "240.029.2805",
+      "value": "440-877-9921 x5727",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-03-02",
-        "end": "2027-03-02"
+        "start": "2023-12-24",
+        "end": "2026-12-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0106X",
-            "display": "Hand Surgery"
+            "display": "Orthopaedic Hand Surgery Physician"
           }
         ],
-        "text": "Hand Surgery"
+        "text": "Orthopaedic Hand Surgery Physician"
       },
       "period": {
-        "start": "2024-02-08",
-        "end": "2027-02-08"
+        "start": "2024-06-06",
+        "end": "2027-06-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

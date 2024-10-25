@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Hauck",
       "given": [
-        "Teresa"
+        "Melodee",
+        "Theresa"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-804-717-2033",
+      "value": "(652) 363-3063 x162",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "195-539-9781 x6594",
+      "value": "(257) 965-7994 x303",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2023-04-12",
-        "end": "2026-04-12"
+        "start": "2024-02-11",
+        "end": "2027-02-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207YX0901X",
-            "display": "Otology and Neurotology"
+            "display": "Otology & Neurotology Physician"
           }
         ],
-        "text": "Otology and Neurotology"
+        "text": "Otology & Neurotology Physician"
       },
       "period": {
-        "start": "2021-10-05",
-        "end": "2024-10-05"
+        "start": "2024-05-04",
+        "end": "2027-05-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -261,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

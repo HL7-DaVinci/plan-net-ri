@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Osinski",
+      "family": "Wunsch",
       "given": [
-        "Lucien",
-        "Bob"
+        "Alphonse"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-252-170-3249",
+      "value": "1-758-254-3574 x49835",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "794-837-7015 x3950",
+      "value": "(367) 839-9597 x7067",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-28",
-        "end": "2027-02-28"
+        "start": "2022-05-21",
+        "end": "2025-05-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

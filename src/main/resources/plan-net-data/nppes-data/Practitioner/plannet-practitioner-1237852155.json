@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Smitham",
+      "family": "Crist",
       "given": [
-        "Shannon",
-        "Marlon"
+        "Wesley",
+        "Fredrick"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-142-388-5913",
+      "value": "450-118-9561 x164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "896-312-4808 x94680",
+      "value": "(503) 358-4299 x40183",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-12-22",
-        "end": "2026-12-22"
+        "start": "2024-02-12",
+        "end": "2027-02-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

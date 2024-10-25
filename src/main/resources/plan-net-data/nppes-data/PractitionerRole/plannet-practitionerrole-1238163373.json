@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "fbe844c492775c"
+      "value": "d557f12f6fcfb9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238163373",
-    "display": "Lawrence Metz"
+    "display": "Chas Berge"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213ES0000X",
-          "display": "Sports Medicine"
+          "display": "Sports Medicine Podiatrist"
         }
       ],
-      "text": "Sports Medicine"
+      "text": "Sports Medicine Podiatrist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-505-329-2916 x18121",
+      "value": "976.915.4357 x343",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "170-463-3842 x7455",
+      "value": "101.684.3359 x94523",
       "use": "work"
     }
   ],

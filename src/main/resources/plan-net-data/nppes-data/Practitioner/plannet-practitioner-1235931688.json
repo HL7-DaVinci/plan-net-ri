@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McGlynn",
+      "family": "Kris",
       "given": [
-        "Ivory",
-        "Ethan"
+        "Wilbur",
+        "Deangelo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "646-485-9222 x9859",
+      "value": "(430) 461-9809 x93538",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "685.688.9684 x6582",
+      "value": "641.243.7875 x85796",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-09-01",
-        "end": "2024-09-01"
+        "start": "2023-09-05",
+        "end": "2026-09-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

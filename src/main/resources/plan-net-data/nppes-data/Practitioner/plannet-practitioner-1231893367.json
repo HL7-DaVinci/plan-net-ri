@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kiehn",
+      "family": "Ernser",
       "given": [
-        "Loree"
+        "Kathrin",
+        "Suzanna"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "156.219.5460 x00884",
+      "value": "1-675-117-8119",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-464-721-3210 x495",
+      "value": "119.694.7633",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204C00000X",
-            "display": "Neuromusculoskeletal Medicine, Sports Medicine"
+            "display": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
           }
         ],
-        "text": "Neuromusculoskeletal Medicine, Sports Medicine"
+        "text": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
       },
       "period": {
-        "start": "2021-08-02",
-        "end": "2024-08-02"
+        "start": "2023-05-08",
+        "end": "2026-05-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204D00000X",
-            "display": "Neuromusculoskeletal Medicine and OMM"
+            "display": "Neuromusculoskeletal Medicine & OMM Physician"
           }
         ],
-        "text": "Neuromusculoskeletal Medicine and OMM"
+        "text": "Neuromusculoskeletal Medicine & OMM Physician"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2027-05-05"
+        "start": "2024-08-04",
+        "end": "2027-08-04"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -267,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-05-12",
-        "end": "2026-05-12"
+        "start": "2023-02-17",
+        "end": "2026-02-17"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -326,11 +327,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

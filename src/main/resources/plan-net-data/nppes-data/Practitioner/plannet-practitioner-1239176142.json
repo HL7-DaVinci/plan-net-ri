@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Weber",
+      "family": "Daugherty",
       "given": [
-        "Myrtis"
+        "Leontine"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-712-396-1196 x893",
+      "value": "(458) 770-2583",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(820) 729-2012 x0308",
+      "value": "1-565-512-4936 x50306",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2023-02-14",
-        "end": "2026-02-14"
+        "start": "2024-09-29",
+        "end": "2027-09-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

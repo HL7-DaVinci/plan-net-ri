@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "3c18433dbca9a4"
+      "value": "c40bc50f5f2d03"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239678948",
-    "display": "Quintin Krajcik"
+    "display": "Vaughn Marvin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223X0400X",
-          "display": "Orthodontics and Dentofacial Orthopedics"
+          "display": "Orthodontics and Dentofacial Orthopedic Dentist"
         }
       ],
-      "text": "Orthodontics and Dentofacial Orthopedics"
+      "text": "Orthodontics and Dentofacial Orthopedic Dentist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(805) 573-6232 x61557",
+      "value": "605-973-5167",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-352-119-6306",
+      "value": "778.703.1173",
       "use": "work"
     }
   ],

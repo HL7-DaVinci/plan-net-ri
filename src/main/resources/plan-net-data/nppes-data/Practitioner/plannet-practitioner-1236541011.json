@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bahringer",
+      "family": "Russel",
       "given": [
-        "Bryce"
+        "Maynard",
+        "Deshawn"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "125-139-9647 x735",
+      "value": "258.408.8211 x46509",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "205-192-6678 x95889",
+      "value": "388.190.2640 x8293",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-08-22",
-        "end": "2026-08-22"
+        "start": "2022-09-28",
+        "end": "2025-09-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

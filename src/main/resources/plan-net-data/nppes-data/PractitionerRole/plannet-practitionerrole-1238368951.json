@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "2c1e9078a4d08b"
+      "value": "9366d51dbd6765"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238368951",
-    "display": "Tracey Reynolds"
+    "display": "Antwan Romaguera"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(763) 107-1595 x4900",
+      "value": "885.107.8732",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(700) 281-7252 x441",
+      "value": "(121) 859-0712 x22120",
       "use": "work"
     }
   ],

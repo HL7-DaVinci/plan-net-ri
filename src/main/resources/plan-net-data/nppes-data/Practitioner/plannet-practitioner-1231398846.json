@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernier",
+      "family": "Hilpert",
       "given": [
-        "Leonor"
+        "Susanna",
+        "Jeanelle"
       ],
       "suffix": [
         "PHYSICIAN ASSISTANT"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-809-073-0943 x825",
+      "value": "(736) 402-4579 x43851",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-547-998-1503",
+      "value": "1-876-198-3639 x16218",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2023-11-19",
-        "end": "2026-11-19"
+        "start": "2024-07-19",
+        "end": "2027-07-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2023-01-08",
-        "end": "2026-01-08"
+        "start": "2022-09-26",
+        "end": "2025-09-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

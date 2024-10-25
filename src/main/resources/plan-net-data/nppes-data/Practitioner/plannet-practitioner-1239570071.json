@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Harvey",
+      "family": "Crona",
       "given": [
-        "Demarcus"
+        "Carmelo"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "875.451.0479",
+      "value": "1-874-805-1816 x96852",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "246.135.3866 x8152",
+      "value": "1-709-678-4318 x30640",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2023-08-23",
-        "end": "2026-08-23"
+        "start": "2022-02-16",
+        "end": "2025-02-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

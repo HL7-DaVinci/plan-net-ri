@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zemlak",
+      "family": "Harber",
       "given": [
-        "Daren"
+        "Dorsey",
+        "Milan"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-589-996-2657",
+      "value": "(199) 211-6879 x9186",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(206) 869-1106 x2663",
+      "value": "456.965.4891 x1857",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2027-05-05"
+        "start": "2024-06-28",
+        "end": "2027-06-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ND0101X",
-            "display": "MOHS-Micrographic Surgery"
+            "display": "MOHS-Micrographic Surgery Physician"
           }
         ],
-        "text": "MOHS-Micrographic Surgery"
+        "text": "MOHS-Micrographic Surgery Physician"
       },
       "period": {
-        "start": "2024-06-24",
-        "end": "2027-06-24"
+        "start": "2023-04-08",
+        "end": "2026-04-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

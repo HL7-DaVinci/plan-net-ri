@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rohan",
+      "family": "Heidenreich",
       "given": [
-        "Delois",
-        "Hannah"
+        "Ai"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "566-124-7494 x637",
+      "value": "1-335-889-2626",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-671-596-4721 x1790",
+      "value": "(913) 114-9952 x98493",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-03-09",
-        "end": "2025-03-09"
+        "start": "2023-11-07",
+        "end": "2026-11-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

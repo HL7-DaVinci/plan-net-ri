@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Satterfield",
+      "family": "Hickle",
       "given": [
-        "Preston",
-        "Sheldon"
+        "Joan"
       ],
       "suffix": [
         "DO"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-351-229-5812 x19138",
+      "value": "1-123-136-9612 x24905",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "282-061-9917 x999",
+      "value": "(629) 784-9239 x30831",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-08-27",
-        "end": "2024-08-27"
+        "start": "2023-07-24",
+        "end": "2026-07-24"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

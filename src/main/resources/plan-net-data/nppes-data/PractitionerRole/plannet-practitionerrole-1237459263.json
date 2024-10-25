@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "76fb2520ffc64b"
+      "value": "73d2c12a88a94e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237459263",
-    "display": "Ervin Heathcote"
+    "display": "Conrad Leuschke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-462-880-7820 x9789",
+      "value": "1-503-665-6329",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(530) 939-7418",
+      "value": "(146) 654-6080 x0646",
       "use": "work"
     }
   ],

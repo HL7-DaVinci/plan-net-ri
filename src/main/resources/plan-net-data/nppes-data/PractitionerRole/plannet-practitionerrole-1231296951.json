@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "80aab32e786cc8"
+      "value": "4ede75cefb6ca4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231296951",
-    "display": "Shay Stamm"
+    "display": "Estelle Ledner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084N0400X",
-          "display": "Neurology"
+          "display": "Neurology Physician"
         }
       ],
-      "text": "Neurology"
+      "text": "Neurology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(718) 462-0054 x5077",
+      "value": "951-319-2774 x0257",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(758) 473-2226 x80227",
+      "value": "965-926-3304 x0490",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "ae91f14ef5e71f"
+      "value": "162e643d8c9fb1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234123797",
-    "display": "Adalberto Boyer"
+    "display": "Elias Nicolas"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(255) 534-3436 x05597",
+      "value": "658-345-9903 x25151",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "555-810-0133 x7347",
+      "value": "(108) 805-9830",
       "use": "work"
     }
   ],

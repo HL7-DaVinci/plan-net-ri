@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "38aa42072a4412",
+      "value": "2d8e9000e6c558",
       "assigner": {
         "display": "King Hospital System"
       }
@@ -41,8 +41,8 @@
       "display": "Green Circle of Massachusetts HMO"
     },
     {
-      "reference": "Organization/plannet-network-HPID010000",
-      "display": "Acme of Massachusetts Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID100000",
+      "display": "State of Massachusetts Preferred Provider Network"
     },
     {
       "reference": "Organization/plannet-network-HPID030000",

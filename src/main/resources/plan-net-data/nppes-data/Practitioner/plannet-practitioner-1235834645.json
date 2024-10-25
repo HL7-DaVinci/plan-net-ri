@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dicki",
+      "family": "Lowe",
       "given": [
-        "Numbers"
+        "Jefferey"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "616.499.1866",
+      "value": "803-892-0096 x12483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-267-245-9234 x39148",
+      "value": "361.172.4022 x8321",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-03-31",
-        "end": "2025-03-31"
+        "start": "2023-07-24",
+        "end": "2026-07-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

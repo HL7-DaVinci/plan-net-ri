@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "f407cc0c54aef8"
+      "value": "2783bcac94df19"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237556843",
-    "display": "Sanford Wintheiser"
+    "display": "Warren Waelchi"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "587.845.8960 x030",
+      "value": "(595) 079-4298 x5147",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "911.045.2388",
+      "value": "1-908-943-2764",
       "use": "work"
     }
   ],

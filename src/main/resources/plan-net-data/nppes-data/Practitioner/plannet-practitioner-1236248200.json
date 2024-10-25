@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kerluke",
+      "family": "Hintz",
       "given": [
-        "Thomas"
+        "Jame"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "147-761-7009",
+      "value": "914-353-2092 x9179",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "236-618-1634 x3116",
+      "value": "(979) 146-3970 x399",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Clinical Neuropsychologist"
       },
       "period": {
-        "start": "2021-10-07",
-        "end": "2024-10-07"
+        "start": "2023-09-25",
+        "end": "2026-09-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TR0400X",
-            "display": "Rehabilitation"
+            "display": "Rehabilitation Psychologist"
           }
         ],
-        "text": "Rehabilitation"
+        "text": "Rehabilitation Psychologist"
       },
       "period": {
-        "start": "2024-06-29",
-        "end": "2027-06-29"
+        "start": "2022-12-17",
+        "end": "2025-12-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

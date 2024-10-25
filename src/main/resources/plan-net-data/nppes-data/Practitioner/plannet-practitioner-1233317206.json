@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Zemlak",
+      "family": "Waters",
       "given": [
-        "Avis",
-        "Dedra"
+        "Keith"
       ],
       "suffix": [
         "PA-C"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "378-322-4713 x25838",
+      "value": "836-136-5607 x86506",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "784.556.9424 x501",
+      "value": "(291) 959-4275 x9825",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-10-05",
-        "end": "2024-10-05"
+        "start": "2023-10-15",
+        "end": "2026-10-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2023-04-10",
-        "end": "2026-04-10"
+        "start": "2022-08-19",
+        "end": "2025-08-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -265,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2024-05-24",
-        "end": "2027-05-24"
+        "start": "2022-07-10",
+        "end": "2025-07-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -324,11 +323,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

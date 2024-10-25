@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://arc-worcester-center-lp.com",
-      "value": "e6424b5b684a58"
+      "value": "05ae818e1010aa"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230982087",
-    "display": "Ivey Adams"
+    "display": "Emelia Dickens"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231396014",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "679.932.8318",
+      "value": "(296) 345-8671 x6229",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "558.471.7886 x046",
+      "value": "728.789.6223 x244",
       "use": "work"
     }
   ],

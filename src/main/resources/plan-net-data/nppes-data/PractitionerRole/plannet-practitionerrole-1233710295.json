@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "085f2da3eeb2e1"
+      "value": "4875dc3479bf78"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233710295",
-    "display": "Marc Bruen"
+    "display": "Mauricio Rogahn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223P0700X",
-          "display": "Prosthodontics"
+          "display": "Prosthodontist"
         }
       ],
-      "text": "Prosthodontics"
+      "text": "Prosthodontist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(778) 552-7370 x954",
+      "value": "799-215-5872 x6801",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(823) 737-1806 x72432",
+      "value": "560.102.4473 x99662",
       "use": "work"
     }
   ],

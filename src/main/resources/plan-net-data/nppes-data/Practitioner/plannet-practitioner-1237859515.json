@@ -34,8 +34,8 @@
       "use": "official",
       "family": "Bashirian",
       "given": [
-        "Andres",
-        "Marshall"
+        "Hipolito",
+        "Miles"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "620-577-6076 x793",
+      "value": "1-506-628-4135 x7312",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "869-106-7382 x919",
+      "value": "1-903-798-4382 x89374",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-06-21",
-        "end": "2026-06-21"
+        "start": "2022-04-24",
+        "end": "2025-04-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -210,8 +210,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-08-15",
-        "end": "2026-08-15"
+        "start": "2024-02-04",
+        "end": "2027-02-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -274,8 +274,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2024-01-02",
-        "end": "2027-01-02"
+        "start": "2022-11-08",
+        "end": "2025-11-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

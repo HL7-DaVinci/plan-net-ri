@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Beier",
+      "family": "Steuber",
       "given": [
-        "Nelly"
+        "Rene"
       ],
       "suffix": [
         "PHYSICAN ASSISTANT"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "997-551-3922 x6217",
+      "value": "1-486-906-1469 x674",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "134.215.6082 x4597",
+      "value": "1-318-828-0056 x350",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-09-22",
-        "end": "2025-09-22"
+        "start": "2023-05-04",
+        "end": "2026-05-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2022-08-13",
-        "end": "2025-08-13"
+        "start": "2024-06-05",
+        "end": "2027-06-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

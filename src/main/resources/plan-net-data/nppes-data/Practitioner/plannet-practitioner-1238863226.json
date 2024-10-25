@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mraz",
+      "family": "Nolan",
       "given": [
-        "Britt"
+        "Woodrow"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(815) 303-6305 x509",
+      "value": "1-758-855-7014 x68241",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-313-211-2944",
+      "value": "1-108-331-2020 x060",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-01-20",
-        "end": "2025-01-20"
+        "start": "2024-04-29",
+        "end": "2027-04-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

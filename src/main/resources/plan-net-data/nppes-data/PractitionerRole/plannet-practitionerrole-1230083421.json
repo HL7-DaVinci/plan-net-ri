@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "ea8e8dfed94a8b"
+      "value": "0ca18bd531e244"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230083421",
-    "display": "Kieth Leannon"
+    "display": "Kent Langworth"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "178-668-6230 x1037",
+      "value": "(823) 549-7407 x281",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "275.736.1106 x274",
+      "value": "629-089-6836 x31395",
       "use": "work"
     }
   ],

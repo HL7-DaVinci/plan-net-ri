@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reinger",
+      "family": "Hand",
       "given": [
-        "Edward",
-        "Pearly"
+        "Leola",
+        "Hyun"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-107-330-4735 x07631",
+      "value": "228.503.6417 x6378",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-884-096-4814 x288",
+      "value": "(699) 729-8800",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-02-05",
-        "end": "2026-02-05"
+        "start": "2022-05-13",
+        "end": "2025-05-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

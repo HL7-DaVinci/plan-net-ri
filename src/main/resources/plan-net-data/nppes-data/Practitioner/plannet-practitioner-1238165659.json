@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Halvorson",
+      "family": "VonRueden",
       "given": [
-        "Guy"
+        "Dee",
+        "Terrell"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "548-741-0074 x0774",
+      "value": "795.872.6979 x26538",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(785) 152-1813 x4923",
+      "value": "548.153.5947",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-12-25",
-        "end": "2025-12-25"
+        "start": "2023-08-06",
+        "end": "2026-08-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-03-28",
-        "end": "2027-03-28"
+        "start": "2023-10-03",
+        "end": "2026-10-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

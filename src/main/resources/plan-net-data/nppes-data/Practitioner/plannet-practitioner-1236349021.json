@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Monahan",
+      "family": "Ziemann",
       "given": [
-        "Troy",
-        "Humberto"
+        "Terrence"
       ],
       "prefix": [
         "Mr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-466-287-9498 x901",
+      "value": "404-730-7438 x7865",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(986) 651-1266",
+      "value": "212-568-5901 x28043",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2023-09-10",
-        "end": "2026-09-10"
+        "start": "2024-07-06",
+        "end": "2027-07-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

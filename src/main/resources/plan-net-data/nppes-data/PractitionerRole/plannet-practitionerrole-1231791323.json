@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "f0d1e1eab9c7b1"
+      "value": "0257eab9de2c47"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231791323",
-    "display": "Marty Sauer"
+    "display": "Tobias Romaguera"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(240) 732-7554",
+      "value": "(502) 696-0791 x16709",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "345.131.6527 x10815",
+      "value": "1-648-481-4246 x1811",
       "use": "work"
     }
   ],

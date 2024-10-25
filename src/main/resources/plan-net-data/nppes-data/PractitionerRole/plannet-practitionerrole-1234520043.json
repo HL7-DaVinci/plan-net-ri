@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b5248915f422ad"
+      "value": "19cec8d5a0ed42"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234520043",
-    "display": "Lazaro Dickinson"
+    "display": "Michel Keebler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(285) 074-7679",
+      "value": "(976) 036-3486 x45847",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "549.253.1864 x341",
+      "value": "(108) 566-1197",
       "use": "work"
     }
   ],

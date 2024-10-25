@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kling",
+      "family": "Gottlieb",
       "given": [
-        "Eliseo",
-        "Tracey"
+        "Lynn",
+        "Foster"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "549-192-7859 x7736",
+      "value": "680.911.6185 x18028",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-484-794-9231 x83136",
+      "value": "(367) 558-6173 x023",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-09-14",
-        "end": "2025-09-14"
+        "start": "2022-04-16",
+        "end": "2025-04-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

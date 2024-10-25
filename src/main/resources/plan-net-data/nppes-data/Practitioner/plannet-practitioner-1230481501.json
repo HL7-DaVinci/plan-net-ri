@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stracke",
+      "family": "Rippin",
       "given": [
-        "Jerald"
+        "Robbie",
+        "Nolan"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-968-111-5879 x34757",
+      "value": "1-786-758-8138 x2124",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-995-353-3193 x42747",
+      "value": "1-227-490-4255",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2022-11-17",
-        "end": "2025-11-17"
+        "start": "2023-02-15",
+        "end": "2026-02-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

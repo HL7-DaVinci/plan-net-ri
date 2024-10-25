@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Hara",
+      "family": "Schulist",
       "given": [
-        "Thanh"
+        "Walter"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "940-367-3136 x3274",
+      "value": "782.018.1710 x78351",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-831-995-5325 x2182",
+      "value": "576.928.9488 x2014",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-11-06",
-        "end": "2024-11-06"
+        "start": "2022-11-25",
+        "end": "2025-11-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

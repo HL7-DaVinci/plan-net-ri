@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Larkin",
+      "family": "Vandervort",
       "given": [
-        "Bok"
+        "Obdulia",
+        "Naida"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "939.976.0804 x2999",
+      "value": "206.397.0244 x234",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-606-356-0723",
+      "value": "1-829-555-5427",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-08-17",
-        "end": "2024-08-17"
+        "start": "2024-06-22",
+        "end": "2027-06-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

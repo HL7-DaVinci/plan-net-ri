@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schulist",
+      "family": "Denesik",
       "given": [
-        "Burton"
+        "Jerrod"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-402-882-3731 x7373",
+      "value": "948.738.4983 x20647",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "363.189.5097 x6244",
+      "value": "312-663-8276 x254",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2022-10-03",
-        "end": "2025-10-03"
+        "start": "2022-09-15",
+        "end": "2025-09-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

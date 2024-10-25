@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuvalis",
+      "family": "Herzog",
       "given": [
-        "Oliva",
-        "Maegan"
+        "Kandi"
       ],
       "suffix": [
         "PH. D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "508.767.6289 x791",
+      "value": "851-535-7869",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "479.515.7221",
+      "value": "(192) 615-9302 x1290",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2024-06-10",
-        "end": "2027-06-10"
+        "start": "2023-11-12",
+        "end": "2026-11-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

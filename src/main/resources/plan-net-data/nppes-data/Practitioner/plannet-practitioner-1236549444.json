@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernier",
+      "family": "Schuster",
       "given": [
-        "Keven",
-        "Leo"
+        "Collin"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-851-761-9092 x3215",
+      "value": "382-377-0951 x3675",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "402.110.2569 x8704",
+      "value": "(734) 159-9766 x95275",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-02-23",
-        "end": "2025-02-23"
+        "start": "2023-06-23",
+        "end": "2026-06-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

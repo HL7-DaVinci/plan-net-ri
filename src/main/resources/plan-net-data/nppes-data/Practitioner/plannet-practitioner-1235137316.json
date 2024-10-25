@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Predovic",
+      "family": "Blanda",
       "given": [
-        "Shaneka",
-        "Jeanmarie"
+        "Lorie",
+        "Lynell"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-856-461-3228 x1854",
+      "value": "1-269-545-9178 x98695",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "866-832-3327",
+      "value": "1-244-304-0747 x75122",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080N0001X",
-            "display": "Neonatal-Perinatal Medicine"
+            "display": "Neonatal-Perinatal Medicine Physician"
           }
         ],
-        "text": "Neonatal-Perinatal Medicine"
+        "text": "Neonatal-Perinatal Medicine Physician"
       },
       "period": {
-        "start": "2022-02-09",
-        "end": "2025-02-09"
+        "start": "2024-06-23",
+        "end": "2027-06-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

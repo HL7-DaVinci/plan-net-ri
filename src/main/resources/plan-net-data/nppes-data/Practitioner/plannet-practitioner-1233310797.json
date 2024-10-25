@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nikolaus",
+      "family": "Kemmer",
       "given": [
-        "Donny"
+        "Taylor",
+        "Ivory"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-988-652-7601 x82774",
+      "value": "108-402-4139",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(550) 559-0530",
+      "value": "1-571-846-6240",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-09-03",
-        "end": "2026-09-03"
+        "start": "2024-05-31",
+        "end": "2027-05-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

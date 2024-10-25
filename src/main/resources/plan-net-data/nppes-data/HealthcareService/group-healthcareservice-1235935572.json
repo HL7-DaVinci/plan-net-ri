@@ -52,7 +52,7 @@
         {
           "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
           "code": "group",
-          "display": "Group"
+          "display": "Medical Group"
         }
       ],
       "text": "group"
@@ -68,12 +68,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "441.287.1812 x114",
+      "value": "(238) 502-7767 x9637",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "627-032-8315 x73661",
+      "value": "876-628-0206 x04401",
       "use": "work"
     }
   ],

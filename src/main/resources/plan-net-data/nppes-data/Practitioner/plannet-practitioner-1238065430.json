@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Von",
+      "family": "Vandervort",
       "given": [
-        "Chang"
+        "Madelene",
+        "Myung"
       ],
       "suffix": [
         "PA"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "429.734.4613 x372",
+      "value": "1-492-504-3084 x18828",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-230-229-2136",
+      "value": "1-916-649-9073 x34250",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2022-01-16",
-        "end": "2025-01-16"
+        "start": "2022-06-02",
+        "end": "2025-06-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ullrich",
+      "family": "Cole",
       "given": [
-        "Milo",
-        "Kelvin"
+        "Fausto",
+        "Jonathon"
       ],
       "prefix": [
         "Dr."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "787-076-8796 x0807",
+      "value": "474-710-5478",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-290-241-4127 x6102",
+      "value": "169-635-8216 x2325",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-02-12",
-        "end": "2026-02-12"
+        "start": "2022-08-10",
+        "end": "2025-08-10"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

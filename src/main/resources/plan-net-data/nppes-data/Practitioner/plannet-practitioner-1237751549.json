@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johns",
+      "family": "Maggio",
       "given": [
-        "Ferdinand"
+        "Lynn",
+        "Theo"
       ],
       "suffix": [
         "PHD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-107-545-7776 x1926",
+      "value": "397.718.0722 x910",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "284.659.5196 x1519",
+      "value": "382-072-8987 x06557",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-05-05",
-        "end": "2025-05-05"
+        "start": "2024-02-24",
+        "end": "2027-02-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

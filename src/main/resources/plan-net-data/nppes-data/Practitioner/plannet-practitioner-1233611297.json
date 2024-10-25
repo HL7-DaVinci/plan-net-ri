@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hackett",
+      "family": "Ratke",
       "given": [
-        "Dominique",
-        "Nanci"
+        "Dung",
+        "Shanti"
       ],
       "suffix": [
         "A.P.R.N."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "275.762.5430 x8135",
+      "value": "1-740-764-7756 x48367",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "899-070-4969 x873",
+      "value": "(380) 044-4410 x3245",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-08",
-        "end": "2027-02-08"
+        "start": "2024-07-02",
+        "end": "2027-07-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

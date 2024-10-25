@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Predovic",
+      "family": "Heaney",
       "given": [
-        "Miyoko"
+        "Manuela"
       ],
       "suffix": [
         "MD, PH. D"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "207.016.8665 x17510",
+      "value": "195-312-7513 x34522",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-766-193-9524 x93347",
+      "value": "(737) 351-2367",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-02-28",
-        "end": "2026-02-28"
+        "start": "2023-01-07",
+        "end": "2026-01-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

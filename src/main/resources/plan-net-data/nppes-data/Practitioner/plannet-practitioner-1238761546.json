@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Braun",
+      "family": "Parisian",
       "given": [
-        "Adolfo"
+        "Elton",
+        "Oliver"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(582) 116-9926 x1370",
+      "value": "224.638.6654 x711",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-394-349-0809 x032",
+      "value": "1-794-947-9983 x40711",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-04-19",
-        "end": "2026-04-19"
+        "start": "2022-07-08",
+        "end": "2025-07-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-09-11",
-        "end": "2025-09-11"
+        "start": "2024-04-03",
+        "end": "2027-04-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -264,14 +265,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208M00000X",
-            "display": "Hospitalist"
+            "display": "Hospitalist Physician"
           }
         ],
-        "text": "Hospitalist"
+        "text": "Hospitalist Physician"
       },
       "period": {
-        "start": "2021-11-22",
-        "end": "2024-11-22"
+        "start": "2022-12-02",
+        "end": "2025-12-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -323,11 +324,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

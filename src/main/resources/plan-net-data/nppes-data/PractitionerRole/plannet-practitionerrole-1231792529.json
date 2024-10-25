@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "edfc7519f2bd07"
+      "value": "c6a7f9924dd71f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231792529",
-    "display": "Quincy Gottlieb"
+    "display": "Luigi Fadel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RA0201X",
-          "display": "Allergy and Immunology"
+          "display": "Allergy & Immunology (Internal Medicine) Physician"
         }
       ],
-      "text": "Allergy and Immunology"
+      "text": "Allergy & Immunology (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "104.725.1298 x3254",
+      "value": "166.993.3698 x06070",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(361) 992-0371 x0811",
+      "value": "1-349-670-6899 x07571",
       "use": "work"
     }
   ],

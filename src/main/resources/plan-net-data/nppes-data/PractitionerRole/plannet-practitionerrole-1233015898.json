@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "90c1560a8a8bc0"
+      "value": "0bd03d860b78a8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233015898",
-    "display": "Sharika Armstrong"
+    "display": "Lucienne Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RE0101X",
-          "display": "Endocrinology, Diabetes and Metabolism"
+          "display": "Endocrinology, Diabetes & Metabolism Physician"
         }
       ],
-      "text": "Endocrinology, Diabetes and Metabolism"
+      "text": "Endocrinology, Diabetes & Metabolism Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "999-024-3738 x43208",
+      "value": "596.205.9980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "430.947.6447 x275",
+      "value": "134.032.8135 x144",
       "use": "work"
     }
   ],

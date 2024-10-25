@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "e9a0c32ad584b3"
+      "value": "6ace27ef00810b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234922069",
-    "display": "Lucile Blick"
+    "display": "Zofia Boehm"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2200X",
-          "display": "Adult Health"
+          "display": "Adult Health Nurse Practitioner"
         }
       ],
-      "text": "Adult Health"
+      "text": "Adult Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(995) 018-4217 x102",
+      "value": "262-333-3834 x86792",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "516-952-1503 x685",
+      "value": "(736) 024-9717 x205",
       "use": "work"
     }
   ],

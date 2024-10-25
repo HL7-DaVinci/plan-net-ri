@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bayer",
+      "family": "Tillman",
       "given": [
-        "Janeen",
-        "Kylie"
+        "Etsuko",
+        "Melvina"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "848.600.6904",
+      "value": "(382) 689-5930 x2599",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-177-486-0384 x233",
+      "value": "260.313.2408 x618",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2024-02-07",
-        "end": "2027-02-07"
+        "start": "2024-06-13",
+        "end": "2027-06-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

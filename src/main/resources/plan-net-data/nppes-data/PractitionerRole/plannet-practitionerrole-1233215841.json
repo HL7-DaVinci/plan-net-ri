@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "4059dfc62cec47"
+      "value": "4da3b48e8f5d60"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233215841",
-    "display": "Rupert Kautzer"
+    "display": "Gene Christiansen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208100000X",
-          "display": "Physical Medicine and Rehabilitation"
+          "display": "Physical Medicine & Rehabilitation Physician"
         }
       ],
-      "text": "Physical Medicine and Rehabilitation"
+      "text": "Physical Medicine & Rehabilitation Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "373-400-2744 x190",
+      "value": "(686) 317-3806 x164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-497-549-2005",
+      "value": "820-801-8042",
       "use": "work"
     }
   ],

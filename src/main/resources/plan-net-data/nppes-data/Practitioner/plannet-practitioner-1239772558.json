@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brown",
+      "family": "Daugherty",
       "given": [
-        "Stacia",
-        "Jeanetta"
+        "Angeline",
+        "Troy"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "614-276-7015 x5011",
+      "value": "1-210-846-0921 x193",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(674) 881-4140 x8828",
+      "value": "759-516-6984 x67087",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2021-07-10",
-        "end": "2024-07-10"
+        "start": "2024-04-12",
+        "end": "2027-04-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

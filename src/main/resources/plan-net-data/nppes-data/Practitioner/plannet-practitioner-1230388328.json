@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Treutel",
+      "family": "Schulist",
       "given": [
-        "Juan"
+        "Marcelene"
       ],
       "suffix": [
         "CNM, MSN"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(406) 349-0035",
+      "value": "(716) 675-6346",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-187-494-5498 x1907",
+      "value": "996.250.1519",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2023-10-02",
-        "end": "2026-10-02"
+        "start": "2024-08-21",
+        "end": "2027-08-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

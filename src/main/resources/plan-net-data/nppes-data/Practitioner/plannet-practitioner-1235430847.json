@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runolfsdottir",
+      "family": "Tillman",
       "given": [
-        "Charita",
-        "Sumiko"
+        "Bula"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(301) 123-9227 x733",
+      "value": "272.307.8964",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "628-016-6517",
+      "value": "400-904-4916 x811",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-07-03",
-        "end": "2025-07-03"
+        "start": "2024-07-17",
+        "end": "2027-07-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

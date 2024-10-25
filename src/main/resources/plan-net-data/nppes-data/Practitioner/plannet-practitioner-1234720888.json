@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mills",
+      "family": "Hansen",
       "given": [
-        "Boyce",
-        "Blake"
+        "Tyrone",
+        "Adam"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-961-633-7102 x190",
+      "value": "433-120-2773 x341",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "299.166.5113 x58546",
+      "value": "(963) 517-1998",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2022-12-11",
-        "end": "2025-12-11"
+        "start": "2023-11-21",
+        "end": "2026-11-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

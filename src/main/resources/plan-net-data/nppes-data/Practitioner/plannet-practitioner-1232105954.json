@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kautzer",
+      "family": "Abbott",
       "given": [
-        "Nelson",
-        "Lesley"
+        "Stanton"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "426-832-0791 x7931",
+      "value": "1-721-005-4450",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(925) 605-1258 x193",
+      "value": "(434) 257-7902",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2022-03-11",
-        "end": "2025-03-11"
+        "start": "2024-08-20",
+        "end": "2027-08-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

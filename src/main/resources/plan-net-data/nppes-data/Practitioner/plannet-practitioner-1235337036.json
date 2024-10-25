@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cummings",
+      "family": "Fritsch",
       "given": [
-        "Dario"
+        "Elliot"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(121) 678-9770 x73816",
+      "value": "1-979-408-6685",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(555) 200-4753 x94368",
+      "value": "741-742-3521",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2023-05-15",
-        "end": "2026-05-15"
+        "start": "2022-02-01",
+        "end": "2025-02-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1835P1200X",
-            "display": "Pharmacotherapy"
+            "display": "Pharmacotherapy Pharmacist"
           }
         ],
-        "text": "Pharmacotherapy"
+        "text": "Pharmacotherapy Pharmacist"
       },
       "period": {
-        "start": "2021-09-19",
-        "end": "2024-09-19"
+        "start": "2022-02-01",
+        "end": "2025-02-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

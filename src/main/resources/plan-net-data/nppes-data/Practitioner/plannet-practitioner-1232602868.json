@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Keeling",
+      "family": "Hoppe",
       "given": [
-        "Les",
-        "Shane"
+        "Tyler",
+        "Bradley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "157-596-5453 x577",
+      "value": "1-287-224-1922 x0054",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-938-561-2527 x734",
+      "value": "1-384-621-7890",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2024-02-23",
-        "end": "2027-02-23"
+        "start": "2023-01-18",
+        "end": "2026-01-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

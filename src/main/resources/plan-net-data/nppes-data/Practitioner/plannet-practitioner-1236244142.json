@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dietrich",
+      "family": "Wunsch",
       "given": [
-        "Devona",
-        "Jenelle"
+        "Mercedez"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "445.469.5374 x30001",
+      "value": "615.261.3520 x697",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "192-610-3383 x08339",
+      "value": "(926) 699-3969 x997",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Clinical Neuropsychologist"
       },
       "period": {
-        "start": "2023-09-02",
-        "end": "2026-09-02"
+        "start": "2021-11-13",
+        "end": "2024-11-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -210,8 +209,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2024-02-28",
-        "end": "2027-02-28"
+        "start": "2022-08-25",
+        "end": "2025-08-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

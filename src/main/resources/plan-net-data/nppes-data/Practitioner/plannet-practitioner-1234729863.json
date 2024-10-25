@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nolan",
+      "family": "Heidenreich",
       "given": [
-        "Jacinto"
+        "Tommy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "597.513.2202",
+      "value": "1-135-980-6354 x660",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "245-134-8325 x190",
+      "value": "236.396.3401 x950",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-09-18",
-        "end": "2026-09-18"
+        "start": "2024-07-11",
+        "end": "2027-07-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bahringer",
+      "family": "Lindgren",
       "given": [
-        "Danika",
-        "Lupita"
+        "Tess"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-335-102-8158 x89458",
+      "value": "(501) 083-5131",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-587-583-3535",
+      "value": "864.803.4994 x897",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2024-05-21",
-        "end": "2027-05-21"
+        "start": "2024-01-16",
+        "end": "2027-01-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

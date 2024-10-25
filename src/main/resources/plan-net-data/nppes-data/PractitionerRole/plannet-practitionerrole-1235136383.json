@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "4db4f952fb1aaa"
+      "value": "9b45acdf3843a6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235136383",
-    "display": "Bernadette Davis"
+    "display": "Bethann Turner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LP0200X",
-          "display": "Pediatrics"
+          "display": "Pediatric Nurse Practitioner"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatric Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "492.773.4659 x8538",
+      "value": "232-121-4526 x35526",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "352-521-1447 x854",
+      "value": "(840) 122-4297 x782",
       "use": "work"
     }
   ],

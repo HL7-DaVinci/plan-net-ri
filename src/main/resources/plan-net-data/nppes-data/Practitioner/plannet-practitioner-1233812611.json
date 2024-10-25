@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Daniel",
+      "family": "Pagac",
       "given": [
-        "Rosario"
+        "Lavern",
+        "Bill"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "124-254-4619",
+      "value": "957-542-9952",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "258.156.5386 x3390",
+      "value": "(682) 523-3981 x86348",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0131X",
-            "display": "Foot Surgery"
+            "display": "Foot Surgery Podiatrist"
           }
         ],
-        "text": "Foot Surgery"
+        "text": "Foot Surgery Podiatrist"
       },
       "period": {
-        "start": "2024-05-24",
-        "end": "2027-05-24"
+        "start": "2023-01-03",
+        "end": "2026-01-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

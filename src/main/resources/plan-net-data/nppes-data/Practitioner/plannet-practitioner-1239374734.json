@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kertzmann",
+      "family": "Harvey",
       "given": [
-        "Tyree",
-        "Zachary"
+        "Justin"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "975-933-1762",
+      "value": "778-330-3960 x36024",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "476.058.6720",
+      "value": "486-869-4968",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-07-16",
-        "end": "2025-07-16"
+        "start": "2023-10-02",
+        "end": "2026-10-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

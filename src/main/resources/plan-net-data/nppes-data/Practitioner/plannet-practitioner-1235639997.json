@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schultz",
+      "family": "Dach",
       "given": [
-        "Cruz",
-        "Mohammad"
+        "Lamont",
+        "Gerald"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "109.667.5298 x82360",
+      "value": "381.662.9998",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-737-896-4055 x296",
+      "value": "1-559-273-4745 x701",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2023-01-14",
-        "end": "2026-01-14"
+        "start": "2024-10-07",
+        "end": "2027-10-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

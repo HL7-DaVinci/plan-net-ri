@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "9f7728eee02b61"
+      "value": "16049bfef75f5a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239176357",
-    "display": "Benjamin Streich"
+    "display": "Wm Blick"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207QG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Family Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Family Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(428) 383-5261 x88804",
+      "value": "(311) 758-0934 x74733",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "317-331-5597",
+      "value": "1-174-741-0049 x176",
       "use": "work"
     }
   ],

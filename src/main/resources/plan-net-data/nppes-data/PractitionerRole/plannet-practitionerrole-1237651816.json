@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ce922e24f5efc1"
+      "value": "93ae5aa6e3f96d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237651816",
-    "display": "Robbie Pfeffer"
+    "display": "Brooks O'Keefe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0200X",
-          "display": "Critical Care Medicine"
+          "display": "Critical Care Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Critical Care Medicine"
+      "text": "Critical Care Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "778.779.7901 x856",
+      "value": "(765) 150-6211 x9633",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "418-908-7122 x69561",
+      "value": "216-394-3303 x5663",
       "use": "work"
     }
   ],

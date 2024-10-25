@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Watsica",
+      "family": "Reilly",
       "given": [
-        "Ruben"
+        "Sergio"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "895-077-2378 x9219",
+      "value": "903-087-0711 x055",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(803) 166-1911 x6645",
+      "value": "(692) 912-8393 x96125",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204C00000X",
-            "display": "Neuromusculoskeletal Medicine, Sports Medicine"
+            "display": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
           }
         ],
-        "text": "Neuromusculoskeletal Medicine, Sports Medicine"
+        "text": "Sports Medicine (Neuromusculoskeletal Medicine) Physician"
       },
       "period": {
-        "start": "2023-03-10",
-        "end": "2026-03-10"
+        "start": "2023-02-11",
+        "end": "2026-02-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

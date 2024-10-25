@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bahringer",
+      "family": "Borer",
       "given": [
-        "Martin"
+        "Rob"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "596-701-0554 x12422",
+      "value": "655.914.7046 x9293",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "622.228.7601 x1120",
+      "value": "371.050.5140 x73903",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-11-22",
-        "end": "2025-11-22"
+        "start": "2024-02-13",
+        "end": "2027-02-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

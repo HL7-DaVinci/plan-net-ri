@@ -32,22 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Stracke",
+      "family": "Runte",
       "given": [
-        "Hank",
-        "Stewart"
+        "Timmy",
+        "Antwan"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "(561) 365-5040",
+      "value": "629-798-5508 x9488",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-438-195-1222 x75561",
+      "value": "739.616.0959 x9078",
       "use": "work"
     }
   ],
@@ -133,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2021-07-26",
-        "end": "2024-07-26"
+        "start": "2023-09-01",
+        "end": "2026-09-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -192,11 +192,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

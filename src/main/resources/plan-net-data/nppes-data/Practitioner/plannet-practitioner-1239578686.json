@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bauch",
+      "family": "Kessler",
       "given": [
-        "Hal",
-        "Ryan"
+        "Barry",
+        "Harley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "906-366-4352",
+      "value": "731.102.1348 x4164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "260-470-9703",
+      "value": "1-483-784-3025",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-03-28",
-        "end": "2025-03-28"
+        "start": "2024-08-16",
+        "end": "2027-08-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

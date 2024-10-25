@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "54028ef5b8a183"
+      "value": "4e02443116fd07"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236440026",
-    "display": "Garth Blick"
+    "display": "Avery Kovacek"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-815-499-4727 x8231",
+      "value": "1-102-131-4489 x543",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-148-571-8157 x3418",
+      "value": "(486) 503-0495 x4593",
       "use": "work"
     }
   ],

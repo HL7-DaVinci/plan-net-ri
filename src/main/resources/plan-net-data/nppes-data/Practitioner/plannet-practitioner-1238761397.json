@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Fritsch",
+      "family": "Wolf",
       "given": [
-        "Juan",
-        "Samual"
+        "Jules"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(590) 602-2969",
+      "value": "969.191.8904 x31533",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(320) 673-2796 x483",
+      "value": "(280) 391-4730",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-04-06",
-        "end": "2026-04-06"
+        "start": "2022-04-18",
+        "end": "2025-04-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

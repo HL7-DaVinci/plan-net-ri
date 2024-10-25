@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Fay",
+      "family": "Balistreri",
       "given": [
-        "Vernon",
-        "Abbey"
+        "Shondra"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "394.343.0297 x1115",
+      "value": "893.354.6251 x42647",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "835-902-0054 x754",
+      "value": "(974) 821-3253 x333",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-10-08",
-        "end": "2026-10-08"
+        "start": "2024-10-11",
+        "end": "2027-10-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VX0000X",
-            "display": "Obstetrics"
+            "display": "Obstetrics Physician"
           }
         ],
-        "text": "Obstetrics"
+        "text": "Obstetrics Physician"
       },
       "period": {
-        "start": "2023-07-31",
-        "end": "2026-07-31"
+        "start": "2024-03-28",
+        "end": "2027-03-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Leuschke",
+      "family": "Murray",
       "given": [
-        "Tracey",
-        "Cruz"
+        "Bobby",
+        "Jaime"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "946-139-7582",
+      "value": "(719) 311-7014 x943",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "403-763-4487 x6382",
+      "value": "993.782.5565 x3986",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-12-22",
-        "end": "2026-12-22"
+        "start": "2023-01-16",
+        "end": "2026-01-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-10-07",
-        "end": "2026-10-07"
+        "start": "2024-06-03",
+        "end": "2027-06-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -263,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

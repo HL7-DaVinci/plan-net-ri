@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cole",
+      "family": "Brakus",
       "given": [
-        "Micah",
-        "Deon"
+        "Harry",
+        "Clifton"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "703-273-3565 x2480",
+      "value": "(865) 176-3980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-485-008-1059 x36554",
+      "value": "431.160.0953 x848",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0300X",
-            "display": "Periodontics"
+            "display": "Periodontist"
           }
         ],
-        "text": "Periodontics"
+        "text": "Periodontist"
       },
       "period": {
-        "start": "2023-09-17",
-        "end": "2026-09-17"
+        "start": "2022-10-12",
+        "end": "2025-10-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

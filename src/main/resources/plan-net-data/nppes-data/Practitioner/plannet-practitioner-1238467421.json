@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Witting",
+      "family": "Spinka",
       "given": [
-        "Carl",
-        "Dean"
+        "Giovanni"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "328-123-6726 x2277",
+      "value": "423.246.4903 x202",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "541-132-2277",
+      "value": "1-211-187-9231",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2024-03-25",
-        "end": "2027-03-25"
+        "start": "2022-07-30",
+        "end": "2025-07-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

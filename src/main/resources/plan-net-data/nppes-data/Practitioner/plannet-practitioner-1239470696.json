@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Oberbrunner",
+      "family": "Gusikowski",
       "given": [
-        "German"
+        "Rolland"
       ],
       "suffix": [
         "PTA"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "188-960-2768 x88590",
+      "value": "(521) 167-8573 x47789",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-861-654-2185 x297",
+      "value": "891-894-6416",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Physical Therapy Assistant"
       },
       "period": {
-        "start": "2023-03-19",
-        "end": "2026-03-19"
+        "start": "2024-05-08",
+        "end": "2027-05-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

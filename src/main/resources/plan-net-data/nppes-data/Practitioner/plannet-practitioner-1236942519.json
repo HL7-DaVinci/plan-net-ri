@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lebsack",
+      "family": "Schumm",
       "given": [
-        "Luis",
-        "Theron"
+        "Rodrigo",
+        "Enrique"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(413) 273-5533 x1520",
+      "value": "(288) 508-8486",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "362-188-0076 x12225",
+      "value": "1-890-315-0149 x301",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2021-08-05",
-        "end": "2024-08-05"
+        "start": "2022-08-23",
+        "end": "2025-08-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "a7c934ecdc9987"
+      "value": "2d651482286477"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236247582",
-    "display": "Ching Hahn"
+    "display": "Hyon Price"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "133V00000X",
-          "display": "Dietitian, Registered"
+          "display": "Registered Dietitian"
         }
       ],
-      "text": "Dietitian, Registered"
+      "text": "Registered Dietitian"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "737.525.4551",
+      "value": "412.228.1174",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-580-020-4004",
+      "value": "955-948-6149 x7830",
       "use": "work"
     }
   ],

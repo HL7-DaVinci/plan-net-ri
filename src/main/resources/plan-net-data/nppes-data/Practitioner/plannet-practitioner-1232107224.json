@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Herman",
+      "family": "Lueilwitz",
       "given": [
-        "Donny",
-        "Eugene"
+        "Randy"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(313) 046-5712 x501",
+      "value": "1-416-599-8124 x607",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(423) 584-0892 x005",
+      "value": "1-160-592-5123 x999",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-06-28",
-        "end": "2025-06-28"
+        "start": "2021-11-01",
+        "end": "2024-11-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

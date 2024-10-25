@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Carter",
+      "family": "Becker",
       "given": [
-        "Bobbie",
-        "Enoch"
+        "Arnulfo",
+        "Marlon"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "485.197.5755 x209",
+      "value": "880.253.2233",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "922-938-7817 x232",
+      "value": "1-217-194-1580 x5605",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-07-22",
-        "end": "2025-07-22"
+        "start": "2023-06-14",
+        "end": "2026-06-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

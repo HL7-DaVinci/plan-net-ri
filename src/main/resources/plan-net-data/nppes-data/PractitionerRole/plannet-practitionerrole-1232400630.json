@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "19db1dcb3aaeec"
+      "value": "ab4c2d53c0c727"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232400630",
-    "display": "Beau Johns"
+    "display": "Chad Kutch"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RP1001X",
-          "display": "Pulmonary Disease"
+          "display": "Pulmonary Disease Physician"
         }
       ],
-      "text": "Pulmonary Disease"
+      "text": "Pulmonary Disease Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-134-947-1722 x8869",
+      "value": "1-957-340-1630",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-929-009-5898 x3645",
+      "value": "1-965-151-4078 x81093",
       "use": "work"
     }
   ],

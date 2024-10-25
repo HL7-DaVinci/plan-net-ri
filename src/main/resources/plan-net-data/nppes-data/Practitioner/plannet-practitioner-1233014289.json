@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Romaguera",
+      "family": "Kassulke",
       "given": [
-        "Alonzo"
+        "Huey",
+        "Ernesto"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "880.925.4043 x949",
+      "value": "774-458-5444 x555",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "683-120-7161 x9371",
+      "value": "(743) 207-1375 x81820",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2021-10-01",
-        "end": "2024-10-01"
+        "start": "2022-12-08",
+        "end": "2025-12-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

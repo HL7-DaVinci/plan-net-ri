@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "McDermott",
       "given": [
-        "Richard"
+        "Ling",
+        "Verdell"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "983.095.1156",
+      "value": "838-116-3768 x73529",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(243) 203-1385 x7423",
+      "value": "375.732.7671 x21790",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-02-09",
-        "end": "2025-02-09"
+        "start": "2024-03-12",
+        "end": "2027-03-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

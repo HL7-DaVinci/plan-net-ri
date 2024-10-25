@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Buckridge",
+      "family": "Thompson",
       "given": [
-        "Sibyl",
-        "Lee"
+        "Sadye"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "852-902-5407 x1231",
+      "value": "932-292-1901 x0816",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "229.525.9468 x525",
+      "value": "583-028-8739 x8796",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-06-13",
-        "end": "2025-06-13"
+        "start": "2024-09-02",
+        "end": "2027-09-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

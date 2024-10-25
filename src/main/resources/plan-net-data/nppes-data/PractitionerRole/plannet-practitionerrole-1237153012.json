@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "7588298cf90ddb"
+      "value": "ba08d337ed2338"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237153012",
-    "display": "Gene Bechtelar"
+    "display": "Mike Cole"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VX0201X",
-          "display": "Gynecologic Oncology"
+          "display": "Gynecologic Oncology Physician"
         }
       ],
-      "text": "Gynecologic Oncology"
+      "text": "Gynecologic Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "260-773-2405 x9536",
+      "value": "252-063-1036 x4762",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "181-292-8881",
+      "value": "557.598.0103 x057",
       "use": "work"
     }
   ],

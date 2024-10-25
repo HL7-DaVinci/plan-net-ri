@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sawayn",
+      "family": "Russel",
       "given": [
-        "Ramon",
-        "Sylvester"
+        "Lindsay"
       ],
       "suffix": [
         "OD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(771) 183-0450",
+      "value": "943.702.3738",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(664) 357-4839",
+      "value": "717.159.4985",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-04-03",
-        "end": "2025-04-03"
+        "start": "2024-07-13",
+        "end": "2027-07-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

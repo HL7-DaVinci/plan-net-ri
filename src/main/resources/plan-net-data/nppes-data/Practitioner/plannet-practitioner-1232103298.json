@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brakus",
+      "family": "Dibbert",
       "given": [
-        "Lonny",
-        "Jerrod"
+        "Thurman",
+        "Sergio"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "265-472-6467 x019",
+      "value": "(993) 784-7605 x7179",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-932-406-6989 x102",
+      "value": "139-056-0610 x911",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207K00000X",
-            "display": "Allergy and Immunology"
+            "display": "Allergy & Immunology Physician"
           }
         ],
-        "text": "Allergy and Immunology"
+        "text": "Allergy & Immunology Physician"
       },
       "period": {
-        "start": "2024-03-29",
-        "end": "2027-03-29"
+        "start": "2024-10-05",
+        "end": "2027-10-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

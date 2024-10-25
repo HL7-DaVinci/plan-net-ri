@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "a1d61e9855f49d"
+      "value": "4340cfbcd24520"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239579338",
-    "display": "Hans Lebsack"
+    "display": "Delmar Boyer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "651-921-7972",
+      "value": "640.721.4290",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-810-004-4386",
+      "value": "798.813.7865",
       "use": "work"
     }
   ],

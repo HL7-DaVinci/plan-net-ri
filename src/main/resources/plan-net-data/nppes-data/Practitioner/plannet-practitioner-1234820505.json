@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fisher",
+      "family": "Bode",
       "given": [
-        "Thanh",
-        "Timmy"
+        "Randal",
+        "Clemente"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-525-144-5658",
+      "value": "106.692.6883 x965",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(585) 004-1848 x5866",
+      "value": "1-121-471-0507 x19122",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-10-13",
-        "end": "2025-10-13"
+        "start": "2024-02-01",
+        "end": "2027-02-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

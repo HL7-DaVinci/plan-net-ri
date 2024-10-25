@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cremin",
+      "family": "Waelchi",
       "given": [
-        "Neal",
-        "Hershel"
+        "Jules",
+        "Allen"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-796-944-5985 x35132",
+      "value": "795.848.2771 x5171",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(937) 147-4703 x440",
+      "value": "698.431.0222",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-06",
-        "end": "2027-02-06"
+        "start": "2024-03-16",
+        "end": "2027-03-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

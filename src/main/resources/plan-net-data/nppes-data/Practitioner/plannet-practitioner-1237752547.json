@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kreiger",
+      "family": "Metz",
       "given": [
-        "Paola",
-        "Ute"
+        "Jacqualine",
+        "Mendy"
       ],
       "suffix": [
         "LCSW"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(794) 217-5001 x635",
+      "value": "474.565.2037 x3691",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "395.989.0054 x1998",
+      "value": "(475) 801-0751 x916",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2022-06-06",
-        "end": "2025-06-06"
+        "start": "2022-06-29",
+        "end": "2025-06-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

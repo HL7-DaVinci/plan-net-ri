@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gutmann",
+      "family": "Johnson",
       "given": [
-        "Hipolito",
-        "Bryce"
+        "Seth",
+        "Porter"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "940.099.0310 x06625",
+      "value": "(648) 993-1421 x55685",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "935-770-3302 x57861",
+      "value": "873.303.4661 x13383",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-08-23",
-        "end": "2025-08-23"
+        "start": "2022-09-18",
+        "end": "2025-09-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

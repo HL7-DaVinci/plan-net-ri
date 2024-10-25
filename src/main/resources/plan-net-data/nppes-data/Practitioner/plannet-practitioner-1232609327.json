@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Waters",
+      "family": "Yost",
       "given": [
-        "Elden"
+        "Garry"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-103-189-7303",
+      "value": "695.233.4787 x78165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "153.558.8079 x5002",
+      "value": "192.250.5351",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-12-14",
-        "end": "2025-12-14"
+        "start": "2024-06-22",
+        "end": "2027-06-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuppe",
+      "family": "Senger",
       "given": [
-        "Malcom"
+        "Efrain"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "120-557-6915 x3701",
+      "value": "615-014-5911 x680",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-845-541-7018 x75351",
+      "value": "386-132-2829 x54828",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2021-11-06",
-        "end": "2024-11-06"
+        "start": "2022-01-15",
+        "end": "2025-01-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0108X",
-            "display": "Uveitis and Ocular Inflammatory Disease"
+            "display": "Uveitis and Ocular Inflammatory Disease (Ophthalmology) Physician"
           }
         ],
-        "text": "Uveitis and Ocular Inflammatory Disease"
+        "text": "Uveitis and Ocular Inflammatory Disease (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2022-06-22",
-        "end": "2025-06-22"
+        "start": "2023-12-28",
+        "end": "2026-12-28"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -268,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0108X",
-            "display": "Uveitis and Ocular Inflammatory Disease"
+            "display": "Uveitis and Ocular Inflammatory Disease (Ophthalmology) Physician"
           }
         ],
-        "text": "Uveitis and Ocular Inflammatory Disease"
+        "text": "Uveitis and Ocular Inflammatory Disease (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2021-07-10",
-        "end": "2024-07-10"
+        "start": "2022-06-24",
+        "end": "2025-06-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -332,14 +332,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0107X",
-            "display": "Retina Specialist"
+            "display": "Retina Specialist (Ophthalmology) Physician"
           }
         ],
-        "text": "Retina Specialist"
+        "text": "Retina Specialist (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2023-02-12",
-        "end": "2026-02-12"
+        "start": "2023-12-17",
+        "end": "2026-12-17"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -396,14 +396,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207WX0107X",
-            "display": "Retina Specialist"
+            "display": "Retina Specialist (Ophthalmology) Physician"
           }
         ],
-        "text": "Retina Specialist"
+        "text": "Retina Specialist (Ophthalmology) Physician"
       },
       "period": {
-        "start": "2024-01-05",
-        "end": "2027-01-05"
+        "start": "2022-05-03",
+        "end": "2025-05-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -455,11 +455,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Padberg",
+      "family": "Fritsch",
       "given": [
-        "Vito"
+        "Rodger"
       ],
       "suffix": [
         "D.C."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(491) 753-9406 x990",
+      "value": "1-315-715-0154 x931",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-732-579-0067 x95504",
+      "value": "171.503.1865",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2024-05-22",
-        "end": "2027-05-22"
+        "start": "2023-02-21",
+        "end": "2026-02-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

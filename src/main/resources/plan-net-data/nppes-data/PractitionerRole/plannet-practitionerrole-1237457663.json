@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "db06fbaf6b6451"
+      "value": "c130b60c49d0e5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237457663",
-    "display": "Efren Waelchi"
+    "display": "Renato Kunze"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-699-408-6583",
+      "value": "(908) 643-2652 x21937",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(731) 795-2074 x0774",
+      "value": "(793) 980-8932 x243",
       "use": "work"
     }
   ],

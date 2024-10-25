@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Powlowski",
+      "family": "Bartoletti",
       "given": [
-        "Karyn",
-        "Velma"
+        "Maria",
+        "Leslee"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-308-211-0002 x260",
+      "value": "261.481.1689",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-458-283-4167 x739",
+      "value": "(524) 312-6425 x02498",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2083X0100X",
-            "display": "Occupational Medicine"
+            "display": "Occupational Medicine Physician"
           }
         ],
-        "text": "Occupational Medicine"
+        "text": "Occupational Medicine Physician"
       },
       "period": {
-        "start": "2023-08-21",
-        "end": "2026-08-21"
+        "start": "2023-04-18",
+        "end": "2026-04-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

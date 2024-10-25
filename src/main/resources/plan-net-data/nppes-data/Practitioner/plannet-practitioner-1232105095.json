@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wyman",
+      "family": "Willms",
       "given": [
-        "Junior"
+        "Henry",
+        "Cyril"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "667.376.3856 x117",
+      "value": "499.375.9984 x499",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "602-267-3764",
+      "value": "(944) 050-4065 x23449",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-07-29",
-        "end": "2026-07-29"
+        "start": "2024-08-24",
+        "end": "2027-08-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

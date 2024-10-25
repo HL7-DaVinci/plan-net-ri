@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "c1414a207ca2c6"
+      "value": "d466d05ed20abf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236541383",
-    "display": "Numbers Wintheiser"
+    "display": "Myung Johnson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080P0006X",
-          "display": "Developmental - Behavioral Pediatrics"
+          "display": "Developmental - Behavioral Pediatrics Physician"
         }
       ],
-      "text": "Developmental - Behavioral Pediatrics"
+      "text": "Developmental - Behavioral Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "158-203-7022 x9472",
+      "value": "791.726.5577 x461",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "985.896.1891",
+      "value": "1-513-499-6364 x44030",
       "use": "work"
     }
   ],

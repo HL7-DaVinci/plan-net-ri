@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Osinski",
+      "family": "Torp",
       "given": [
-        "Merrilee"
+        "Yuki",
+        "Beverly"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "293.104.0423 x938",
+      "value": "1-390-101-5340 x4783",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-751-450-5737 x377",
+      "value": "(903) 524-9587 x10072",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208200000X",
-            "display": "Plastic Surgery"
+            "display": "Plastic Surgery Physician"
           }
         ],
-        "text": "Plastic Surgery"
+        "text": "Plastic Surgery Physician"
       },
       "period": {
-        "start": "2023-11-18",
-        "end": "2026-11-18"
+        "start": "2023-12-02",
+        "end": "2026-12-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2082S0099X",
-            "display": "Plastic Surgery Within the Head and Neck"
+            "display": "Plastic Surgery Within the Head and Neck (Plastic Surgery) Physician"
           }
         ],
-        "text": "Plastic Surgery Within the Head and Neck"
+        "text": "Plastic Surgery Within the Head and Neck (Plastic Surgery) Physician"
       },
       "period": {
-        "start": "2024-05-28",
-        "end": "2027-05-28"
+        "start": "2024-07-08",
+        "end": "2027-07-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -264,14 +265,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2082S0105X",
-            "display": "Surgery of the Hand"
+            "display": "Surgery of the Hand (Plastic Surgery) Physician"
           }
         ],
-        "text": "Surgery of the Hand"
+        "text": "Surgery of the Hand (Plastic Surgery) Physician"
       },
       "period": {
-        "start": "2022-01-30",
-        "end": "2025-01-30"
+        "start": "2024-05-27",
+        "end": "2027-05-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -328,14 +329,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0122X",
-            "display": "Plastic and Reconstructive Surgery"
+            "display": "Plastic and Reconstructive Surgery Physician"
           }
         ],
-        "text": "Plastic and Reconstructive Surgery"
+        "text": "Plastic and Reconstructive Surgery Physician"
       },
       "period": {
-        "start": "2023-11-28",
-        "end": "2026-11-28"
+        "start": "2023-01-15",
+        "end": "2026-01-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Bednar",
       "given": [
-        "Dallas",
-        "Ernest"
+        "Dale",
+        "Casey"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "571.209.7327 x0263",
+      "value": "1-746-800-2360 x30912",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "561.067.1820 x891",
+      "value": "336.385.9968 x73413",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2021-10-31",
-        "end": "2024-10-31"
+        "start": "2024-05-14",
+        "end": "2027-05-14"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0102X",
-            "display": "Surgical Critical Care"
+            "display": "Surgical Critical Care Physician"
           }
         ],
-        "text": "Surgical Critical Care"
+        "text": "Surgical Critical Care Physician"
       },
       "period": {
-        "start": "2023-02-08",
-        "end": "2026-02-08"
+        "start": "2023-05-07",
+        "end": "2026-05-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

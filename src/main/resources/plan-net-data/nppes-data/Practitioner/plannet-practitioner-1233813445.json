@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "VonRueden",
+      "family": "Mann",
       "given": [
-        "Miles",
-        "Floyd"
+        "Clinton",
+        "Rolando"
       ],
       "suffix": [
         "DMD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "886.935.4285 x096",
+      "value": "1-402-947-0905 x0362",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-255-864-7474 x35715",
+      "value": "312-541-7140 x33634",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2024-05-27",
-        "end": "2027-05-27"
+        "start": "2024-09-22",
+        "end": "2027-09-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-03-02",
-        "end": "2027-03-02"
+        "start": "2022-05-13",
+        "end": "2025-05-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

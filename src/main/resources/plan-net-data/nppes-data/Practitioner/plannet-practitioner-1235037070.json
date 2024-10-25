@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hills",
+      "family": "Hoppe",
       "given": [
-        "Pearlie"
+        "Fanny"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(648) 565-4223 x02648",
+      "value": "330.189.3896 x4515",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(890) 911-7126 x378",
+      "value": "(854) 704-0887 x851",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-04-04",
-        "end": "2026-04-04"
+        "start": "2022-08-17",
+        "end": "2025-08-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "f81810041bc90c"
+      "value": "30b073bf998a84"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236840640",
-    "display": "Jarvis Leuschke"
+    "display": "Norman Monahan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(996) 121-5412",
+      "value": "(964) 055-8334",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "657-013-6900 x3122",
+      "value": "(444) 377-2737 x58624",
       "use": "work"
     }
   ],

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "b10e7e189f544a"
+      "value": "f2fa56b7759ac3"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234922879",
-    "display": "Chrystal Harvey"
+    "display": "Corinne Mraz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ND0900X",
-          "display": "Dermatopathology"
+          "display": "Dermatopathology Physician"
         }
       ],
-      "text": "Dermatopathology"
+      "text": "Dermatopathology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-776-828-5930 x043",
+      "value": "(765) 843-9265 x680",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-613-525-0438 x024",
+      "value": "211-255-0063 x96693",
       "use": "work"
     }
   ],

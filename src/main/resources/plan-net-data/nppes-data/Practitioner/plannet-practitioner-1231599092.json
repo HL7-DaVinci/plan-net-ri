@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "MacGyver",
+      "family": "Johns",
       "given": [
-        "Colby",
-        "Issac"
+        "Moses",
+        "Prince"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-196-383-6772 x29584",
+      "value": "1-304-133-3197 x5718",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-493-916-8695 x699",
+      "value": "1-417-142-5756 x911",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-02-15",
-        "end": "2025-02-15"
+        "start": "2022-09-18",
+        "end": "2025-09-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,10 +200,10 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
         "start": "2023-01-29",
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

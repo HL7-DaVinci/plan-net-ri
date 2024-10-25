@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dibbert",
+      "family": "Crooks",
       "given": [
-        "Allyn",
-        "Nelly"
+        "Fawn"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(586) 309-5055",
+      "value": "(769) 783-4020 x57503",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-843-809-6564 x2673",
+      "value": "1-431-456-5776 x3955",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-08-17",
-        "end": "2026-08-17"
+        "start": "2022-06-03",
+        "end": "2025-06-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

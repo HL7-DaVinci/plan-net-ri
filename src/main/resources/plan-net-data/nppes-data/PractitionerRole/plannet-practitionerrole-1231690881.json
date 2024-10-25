@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "cbc52b06d13b07"
+      "value": "ff57b02c6b1c4c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231690881",
-    "display": "Edythe Walker"
+    "display": "Ayesha Bailey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207QG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Family Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Family Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "348-668-9581 x905",
+      "value": "(151) 362-2144 x125",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "998-298-8214 x816",
+      "value": "568.003.3834 x1405",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "e15a5ed21d5efd"
+      "value": "d867622e74eb2a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236741757",
-    "display": "Loren Hane"
+    "display": "Rudy Grimes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208600000X",
-          "display": "Surgery"
+          "display": "Surgery Physician"
         }
       ],
-      "text": "Surgery"
+      "text": "Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(268) 906-3444",
+      "value": "940-231-6294 x23302",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(870) 865-3434 x08268",
+      "value": "823-675-6402 x842",
       "use": "work"
     }
   ],

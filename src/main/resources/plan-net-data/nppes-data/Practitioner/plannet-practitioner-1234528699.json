@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Farrell",
+      "family": "Block",
       "given": [
-        "Chance",
-        "Edison"
+        "Sidney"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "763.964.7168",
+      "value": "1-793-083-2676 x0903",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "554-436-6226 x681",
+      "value": "601.057.4558 x87234",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-07-27",
-        "end": "2025-07-27"
+        "start": "2023-05-09",
+        "end": "2026-05-09"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-08-26",
-        "end": "2026-08-26"
+        "start": "2024-02-28",
+        "end": "2027-02-28"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -263,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

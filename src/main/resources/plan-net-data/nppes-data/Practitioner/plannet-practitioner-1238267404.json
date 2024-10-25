@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kunze",
+      "family": "Toy",
       "given": [
-        "Caleb",
-        "Ozzie"
+        "Sherwood",
+        "Sammy"
       ],
       "suffix": [
         "Jr.",
@@ -46,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "935.942.3165",
+      "value": "747-627-0090",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-279-321-5680",
+      "value": "1-678-921-5888",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2024-02-15",
-        "end": "2027-02-15"
+        "start": "2023-10-11",
+        "end": "2026-10-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

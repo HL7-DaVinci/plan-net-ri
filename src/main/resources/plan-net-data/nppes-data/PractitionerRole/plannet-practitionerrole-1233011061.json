@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "2016bbe5f21fc3"
+      "value": "6be64d2faccda0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233011061",
-    "display": "Jessie Roob"
+    "display": "Grady Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "577-847-6283 x60772",
+      "value": "975.002.1201",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-160-014-0767 x13500",
+      "value": "107-532-7944 x3171",
       "use": "work"
     }
   ],

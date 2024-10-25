@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Boehm",
+      "family": "Cummings",
       "given": [
-        "Glenn"
+        "Randolph",
+        "Ruben"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-428-890-5613",
+      "value": "525.166.6814 x5645",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-951-635-9301 x29015",
+      "value": "269.681.7853 x600",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2024-06-03",
-        "end": "2027-06-03"
+        "start": "2022-06-07",
+        "end": "2025-06-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

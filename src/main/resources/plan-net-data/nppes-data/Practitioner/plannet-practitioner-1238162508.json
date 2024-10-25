@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ratke",
+      "family": "Hammes",
       "given": [
-        "Darin"
+        "Alton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "751-390-9605 x05111",
+      "value": "(408) 930-9364 x5753",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "722.234.8666",
+      "value": "707.223.3597",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2022-01-07",
-        "end": "2025-01-07"
+        "start": "2024-10-08",
+        "end": "2027-10-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

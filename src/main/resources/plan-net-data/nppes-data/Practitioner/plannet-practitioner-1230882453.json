@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Boehm",
+      "family": "Koch",
       "given": [
-        "Armanda",
-        "Bette"
+        "Ashleigh"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-435-683-6667",
+      "value": "(330) 822-8878 x284",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(295) 904-0118 x20270",
+      "value": "1-852-096-0023 x84873",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2024-04-27",
-        "end": "2027-04-27"
+        "start": "2023-08-14",
+        "end": "2026-08-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

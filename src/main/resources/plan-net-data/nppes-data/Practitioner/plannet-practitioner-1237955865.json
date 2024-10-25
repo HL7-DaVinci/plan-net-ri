@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Brakus",
+      "family": "Torp",
       "given": [
-        "Todd"
+        "Jack",
+        "Mike"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(920) 806-0461 x72776",
+      "value": "1-882-885-4375 x0649",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "665.041.4362 x576",
+      "value": "484-585-6287 x2922",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-06-02",
-        "end": "2026-06-02"
+        "start": "2023-04-16",
+        "end": "2026-04-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

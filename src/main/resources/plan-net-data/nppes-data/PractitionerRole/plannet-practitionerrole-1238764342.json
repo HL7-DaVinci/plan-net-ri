@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "536ff5efbd0e0b"
+      "value": "c75d8a4994c636"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238764342",
-    "display": "Latonya Nolan"
+    "display": "Shari Zboncak"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "152WC0802X",
-          "display": "Corneal and Contact Management"
+          "display": "Corneal and Contact Management Optometrist"
         }
       ],
-      "text": "Corneal and Contact Management"
+      "text": "Corneal and Contact Management Optometrist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(131) 606-2932",
+      "value": "(236) 787-0682 x81113",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "231.603.1912 x694",
+      "value": "1-619-291-3141 x02655",
       "use": "work"
     }
   ],

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "67fd71d2b4ffc7"
+      "value": "9ac90d2e3a5d9d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237752265",
-    "display": "Burton Schulist"
+    "display": "Jerrod Denesik"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080A0000X",
-          "display": "Adolescent Medicine"
+          "display": "Pediatric Adolescent Medicine Physician"
         }
       ],
-      "text": "Adolescent Medicine"
+      "text": "Pediatric Adolescent Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-402-882-3731 x7373",
+      "value": "948.738.4983 x20647",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "363.189.5097 x6244",
+      "value": "312-663-8276 x254",
       "use": "work"
     }
   ],

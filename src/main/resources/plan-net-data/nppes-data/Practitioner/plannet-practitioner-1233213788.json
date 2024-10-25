@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bauch",
+      "family": "Greenfelder",
       "given": [
-        "Julio",
-        "Marshall"
+        "Santos",
+        "Bertram"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "671-977-1491",
+      "value": "313-070-0207",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-674-564-1186 x663",
+      "value": "(777) 003-1388 x488",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-03-31",
-        "end": "2025-03-31"
+        "start": "2023-12-01",
+        "end": "2026-12-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

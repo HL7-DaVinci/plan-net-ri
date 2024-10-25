@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "f48e60171f0134"
+      "value": "0fce04620f8675"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239378537",
-    "display": "Newton Predovic"
+    "display": "Irvin Mosciski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-971-333-1848 x5834",
+      "value": "142-548-5859 x2059",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(564) 038-9074",
+      "value": "1-115-507-8883 x8931",
       "use": "work"
     }
   ],

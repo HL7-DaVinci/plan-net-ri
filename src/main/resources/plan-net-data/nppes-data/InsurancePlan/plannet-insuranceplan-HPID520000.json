@@ -10,6 +10,13 @@
     {
       "use": "official",
       "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NIIP",
+            "display": "National Insurance Payor Identifier (Payor)"
+          }
+        ],
         "text": "HIOS product ID"
       },
       "system": "http://www.cms.gov/CCIIO",
@@ -25,7 +32,7 @@
       "coding": [
         {
           "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/InsuranceProductTypeCS",
-          "code": "CommercialPPO",
+          "code": "commppo",
           "display": "Commercial PPO"
         }
       ],

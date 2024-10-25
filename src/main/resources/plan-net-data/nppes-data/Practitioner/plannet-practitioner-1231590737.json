@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hegmann",
+      "family": "Ebert",
       "given": [
-        "Joseph",
-        "Delena"
+        "Theresia"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-553-666-1458 x219",
+      "value": "299.408.5912 x82606",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-156-964-7205 x283",
+      "value": "301-234-3539 x637",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2024-03-18",
-        "end": "2027-03-18"
+        "start": "2023-05-31",
+        "end": "2026-05-31"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

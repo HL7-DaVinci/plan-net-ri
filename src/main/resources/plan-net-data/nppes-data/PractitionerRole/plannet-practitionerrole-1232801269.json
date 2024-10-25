@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "a5f67419732304"
+      "value": "a1a6ad33b5d02d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232801269",
-    "display": "Justin Kirlin"
+    "display": "Augustine Durgan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208100000X",
-          "display": "Physical Medicine and Rehabilitation"
+          "display": "Physical Medicine & Rehabilitation Physician"
         }
       ],
-      "text": "Physical Medicine and Rehabilitation"
+      "text": "Physical Medicine & Rehabilitation Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-480-700-9653",
+      "value": "226-731-9361",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(146) 250-4883 x785",
+      "value": "1-384-418-2868 x401",
       "use": "work"
     }
   ],

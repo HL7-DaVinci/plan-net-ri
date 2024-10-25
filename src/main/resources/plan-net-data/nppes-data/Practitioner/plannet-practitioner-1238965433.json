@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Considine",
+      "family": "Marvin",
       "given": [
-        "Mason"
+        "Devin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-503-721-6876 x17622",
+      "value": "200-240-1445 x5893",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-596-836-2465 x7605",
+      "value": "(539) 690-2875 x188",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-08-10",
-        "end": "2026-08-10"
+        "start": "2022-08-13",
+        "end": "2025-08-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

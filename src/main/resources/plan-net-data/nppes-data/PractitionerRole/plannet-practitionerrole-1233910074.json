@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "bd1c1428ed16b2"
+      "value": "a03321290df450"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233910074",
-    "display": "Bo Christiansen"
+    "display": "Isiah Kihn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(250) 693-4491 x6814",
+      "value": "(935) 894-9465 x8328",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "146.639.3633",
+      "value": "384-284-6887 x3520",
       "use": "work"
     }
   ],

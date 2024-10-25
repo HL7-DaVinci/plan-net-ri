@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Prosacco",
+      "family": "Swift",
       "given": [
-        "Kristin",
-        "Jackie"
+        "Louie",
+        "Mozell"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "638.506.4937 x3303",
+      "value": "324-156-0319",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(395) 380-7236",
+      "value": "284-082-0852 x90230",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-10-03",
-        "end": "2024-10-03"
+        "start": "2024-02-13",
+        "end": "2027-02-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

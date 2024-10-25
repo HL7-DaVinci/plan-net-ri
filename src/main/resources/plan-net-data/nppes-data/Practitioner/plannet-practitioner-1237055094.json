@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Paucek",
+      "family": "Skiles",
       "given": [
-        "Bula"
+        "Kathleen",
+        "Jenni"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-120-352-4860",
+      "value": "524.972.0001 x8957",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-429-481-3968",
+      "value": "973-872-3319",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-04-19",
-        "end": "2025-04-19"
+        "start": "2021-10-26",
+        "end": "2024-10-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

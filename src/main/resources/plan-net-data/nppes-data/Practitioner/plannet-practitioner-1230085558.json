@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Funk",
+      "family": "Roberts",
       "given": [
-        "Jaimie"
+        "Reyna",
+        "Latashia"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450-519-9010 x692",
+      "value": "1-685-063-6746",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "368-128-8979 x90885",
+      "value": "(427) 829-1980 x86981",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2024-04-08",
-        "end": "2027-04-08"
+        "start": "2022-01-02",
+        "end": "2025-01-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

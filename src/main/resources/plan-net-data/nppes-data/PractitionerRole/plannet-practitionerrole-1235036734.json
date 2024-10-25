@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://springfield-rehabilitation-center-inc.com",
-      "value": "cac820ff2194f1"
+      "value": "93f396684157c5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235036734",
-    "display": "Richard Runte"
+    "display": "Ling McDermott"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237659264",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "983.095.1156",
+      "value": "838-116-3768 x73529",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(243) 203-1385 x7423",
+      "value": "375.732.7671 x21790",
       "use": "work"
     }
   ],

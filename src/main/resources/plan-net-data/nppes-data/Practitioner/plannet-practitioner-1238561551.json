@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bauch",
+      "family": "Turner",
       "given": [
-        "Ariana",
-        "Gertrude"
+        "Leatha"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-724-671-8678 x265",
+      "value": "310-957-7322 x026",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(163) 911-4298 x2593",
+      "value": "332.196.5291",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-03-27",
-        "end": "2026-03-27"
+        "start": "2024-08-20",
+        "end": "2027-08-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

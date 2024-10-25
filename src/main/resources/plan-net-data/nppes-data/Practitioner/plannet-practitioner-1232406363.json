@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kihn",
+      "family": "Jenkins",
       "given": [
-        "Duane"
+        "Ariel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "781.895.5726 x39555",
+      "value": "1-444-855-0817 x8324",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "813.433.6218",
+      "value": "684-385-1558 x723",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223S0112X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral and Maxillofacial Surgery (Dentist)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral and Maxillofacial Surgery (Dentist)"
       },
       "period": {
-        "start": "2021-09-10",
-        "end": "2024-09-10"
+        "start": "2023-05-25",
+        "end": "2026-05-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

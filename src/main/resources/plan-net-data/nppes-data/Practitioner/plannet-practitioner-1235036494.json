@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Haag",
+      "family": "Tromp",
       "given": [
-        "Scottie",
-        "Katelyn"
+        "Pearline",
+        "Mariana"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-179-907-8907",
+      "value": "(943) 481-4395",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "957-685-9030 x04771",
+      "value": "484.649.5568 x1890",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-03-14",
-        "end": "2027-03-14"
+        "start": "2022-01-29",
+        "end": "2025-01-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2022-03-11",
-        "end": "2025-03-11"
+        "start": "2023-10-22",
+        "end": "2026-10-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

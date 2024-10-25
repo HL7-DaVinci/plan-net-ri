@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rempel",
+      "family": "Gleichner",
       "given": [
-        "Jama"
+        "Jay",
+        "Toya"
       ],
       "suffix": [
         "CNM, NP"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "913.781.2588 x605",
+      "value": "830-346-4218 x9986",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "945-270-6373",
+      "value": "262-572-7759 x56770",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Midwife"
       },
       "period": {
-        "start": "2024-04-26",
-        "end": "2027-04-26"
+        "start": "2023-09-01",
+        "end": "2026-09-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -205,8 +206,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-04-26",
-        "end": "2026-04-26"
+        "start": "2024-04-02",
+        "end": "2027-04-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -258,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

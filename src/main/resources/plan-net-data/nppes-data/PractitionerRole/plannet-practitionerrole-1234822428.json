@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-healthcare--ayer-inc.com",
-      "value": "5172ba3073143b"
+      "value": "f83c69ecb7f5a7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234822428",
-    "display": "Alan Kunde"
+    "display": "Jospeh Feest"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234427431",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "843-710-2858 x7577",
+      "value": "672-945-6588",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(385) 043-0071 x486",
+      "value": "502-590-5903",
       "use": "work"
     }
   ],

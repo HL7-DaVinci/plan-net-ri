@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cruickshank",
+      "family": "Schulist",
       "given": [
-        "Rob",
-        "Lonnie"
+        "Bernard",
+        "Guadalupe"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-580-243-1142 x88764",
+      "value": "279-061-0826 x81873",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "591-403-5039",
+      "value": "259-640-4381 x19110",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-01-18",
-        "end": "2025-01-18"
+        "start": "2021-12-03",
+        "end": "2024-12-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

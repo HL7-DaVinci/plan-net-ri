@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Larkin",
+      "family": "Ryan",
       "given": [
-        "Trudi"
+        "Cassy"
       ],
       "suffix": [
         "PHD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-825-535-6450 x2519",
+      "value": "838-124-0681 x20074",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "505-870-4559 x1649",
+      "value": "1-216-489-2549 x081",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2024-05-05",
-        "end": "2027-05-05"
+        "start": "2022-10-09",
+        "end": "2025-10-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

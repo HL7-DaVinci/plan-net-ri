@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Predovic",
+      "family": "Mosciski",
       "given": [
-        "Newton",
-        "Aron"
+        "Irvin",
+        "Eddie"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-971-333-1848 x5834",
+      "value": "142-548-5859 x2059",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(564) 038-9074",
+      "value": "1-115-507-8883 x8931",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-06-04",
-        "end": "2026-06-04"
+        "start": "2024-06-24",
+        "end": "2027-06-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

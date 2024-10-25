@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "879a7f8595937e"
+      "value": "a3dffe5f42e0bf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237056225",
-    "display": "Molly Kling"
+    "display": "Quinn Willms"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(267) 800-8679 x9648",
+      "value": "(280) 416-3128 x10536",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "143-774-5088 x258",
+      "value": "(730) 916-2535 x101",
       "use": "work"
     }
   ],

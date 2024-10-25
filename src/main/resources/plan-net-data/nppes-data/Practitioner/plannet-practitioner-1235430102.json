@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Champlin",
+      "family": "Dooley",
       "given": [
-        "Dalene",
-        "Kristeen"
+        "Barbara"
       ],
       "suffix": [
         "NP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(183) 213-3656 x2297",
+      "value": "427.877.1105 x127",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-400-805-0556",
+      "value": "608-980-3658",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-04-21",
-        "end": "2026-04-21"
+        "start": "2023-12-10",
+        "end": "2026-12-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hamill",
+      "family": "Brekke",
       "given": [
-        "August",
-        "Charley"
+        "Jackie",
+        "Davis"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(542) 384-6241",
+      "value": "(898) 602-8193 x19222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-459-965-2356 x36724",
+      "value": "1-275-235-4739 x56554",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-01-14",
-        "end": "2027-01-14"
+        "start": "2024-04-03",
+        "end": "2027-04-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

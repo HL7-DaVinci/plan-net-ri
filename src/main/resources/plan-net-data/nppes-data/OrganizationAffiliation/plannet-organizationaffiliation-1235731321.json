@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "919bee610c6296",
+      "value": "dddbac59442370",
       "assigner": {
         "display": "Rhode Island HIE"
       }
@@ -37,8 +37,8 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID120000",
-      "display": "State of Rhode Island Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID080000",
+      "display": "Green Circle of Rhode Island HMO"
     },
     {
       "reference": "Organization/plannet-network-HPID090000",

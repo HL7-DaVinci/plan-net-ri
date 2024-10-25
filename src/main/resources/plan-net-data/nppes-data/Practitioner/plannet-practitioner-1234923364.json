@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Monahan",
+      "family": "Upton",
       "given": [
-        "Jan"
+        "Carmelo",
+        "Granville"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(862) 236-4157 x8056",
+      "value": "880.482.7197",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "494-797-8949 x8616",
+      "value": "809.434.9080 x535",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-06-03",
-        "end": "2027-06-03"
+        "start": "2022-05-27",
+        "end": "2025-05-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "4134a583808bed"
+      "value": "3fd7d22f41d5b9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236146992",
-    "display": "Andre Collins"
+    "display": "Ali Lubowitz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207T00000X",
-          "display": "Neurological Surgery"
+          "display": "Neurological Surgery Physician"
         }
       ],
-      "text": "Neurological Surgery"
+      "text": "Neurological Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "261.766.1536 x928",
+      "value": "1-414-857-4761 x1214",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-559-486-2391 x5938",
+      "value": "(118) 203-0895 x043",
       "use": "work"
     }
   ],

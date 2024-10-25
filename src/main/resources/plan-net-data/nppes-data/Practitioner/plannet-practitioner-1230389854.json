@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Kassulke",
+      "family": "Feil",
       "given": [
-        "Len"
+        "Lyndon",
+        "Robby"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-996-340-4201",
+      "value": "1-144-697-0270 x59449",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "560-843-4019 x082",
+      "value": "301.902.9979 x20605",
       "use": "work"
     }
   ],
@@ -133,14 +134,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-03-22",
-        "end": "2027-03-22"
+        "start": "2024-05-11",
+        "end": "2027-05-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -192,11 +193,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stoltenberg",
+      "family": "Russel",
       "given": [
-        "Lynn"
+        "Gil",
+        "Lane"
       ],
       "suffix": [
         "DDS"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "517.124.8307 x999",
+      "value": "1-808-313-6783 x41893",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "174-098-2764 x6966",
+      "value": "498.592.9020 x2542",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-09-09",
-        "end": "2024-09-09"
+        "start": "2024-07-14",
+        "end": "2027-07-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

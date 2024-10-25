@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Vandervort",
       "given": [
-        "Reynaldo"
+        "Orville"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "513-302-6060 x02939",
+      "value": "308.883.8101 x386",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(712) 826-1627 x46759",
+      "value": "116-576-8313 x833",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-08-23",
-        "end": "2026-08-23"
+        "start": "2022-12-19",
+        "end": "2025-12-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

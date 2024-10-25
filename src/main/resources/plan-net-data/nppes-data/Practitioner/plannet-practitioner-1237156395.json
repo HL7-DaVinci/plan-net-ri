@@ -32,22 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Schinner",
+      "family": "Bode",
       "given": [
-        "Garrett",
-        "Donn"
+        "Floyd",
+        "Leif"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-756-384-7347 x62040",
+      "value": "1-237-786-7990 x03693",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(241) 112-2538",
+      "value": "842.233.8048 x5812",
       "use": "work"
     }
   ],
@@ -134,14 +134,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2023-05-11",
-        "end": "2026-05-11"
+        "start": "2023-01-24",
+        "end": "2026-01-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

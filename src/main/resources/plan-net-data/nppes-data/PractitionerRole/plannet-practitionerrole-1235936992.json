@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "306c3ec4f222f5"
+      "value": "93f299b73d8803"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235936992",
-    "display": "Roosevelt Block"
+    "display": "Van Predovic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "520-478-1034 x468",
+      "value": "(351) 032-1679",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "869.115.7074 x153",
+      "value": "602-964-8756 x422",
       "use": "work"
     }
   ],

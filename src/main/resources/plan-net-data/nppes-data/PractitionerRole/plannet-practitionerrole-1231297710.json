@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "e32766368cb87b"
+      "value": "9b71d172e4cc95"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231297710",
-    "display": "Deshawn Treutel"
+    "display": "Filiberto Blanda"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "624-420-2298 x009",
+      "value": "265-806-5473 x05040",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "592.231.2866",
+      "value": "1-868-943-5042 x111",
       "use": "work"
     }
   ],

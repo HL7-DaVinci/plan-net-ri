@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Daniel",
+      "family": "Dickinson",
       "given": [
-        "Raymond",
-        "Monroe"
+        "Emil"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-122-714-2075",
+      "value": "927-796-1426 x796",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "808.840.9937 x285",
+      "value": "188.077.5407 x216",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-01-15",
-        "end": "2025-01-15"
+        "start": "2022-04-22",
+        "end": "2025-04-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

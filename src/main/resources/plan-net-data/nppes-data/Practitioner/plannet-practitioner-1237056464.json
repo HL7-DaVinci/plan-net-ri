@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fay",
+      "family": "Predovic",
       "given": [
-        "Ferdinand"
+        "Hugo",
+        "Harry"
       ],
       "suffix": [
         "PHYSICIAN ASSISTANT"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "792.324.7095 x84435",
+      "value": "375.678.1073 x48083",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(674) 448-2788",
+      "value": "(501) 053-0926 x6764",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-10-16",
-        "end": "2024-10-16"
+        "start": "2022-10-12",
+        "end": "2025-10-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2024-04-21",
-        "end": "2027-04-21"
+        "start": "2023-09-07",
+        "end": "2026-09-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

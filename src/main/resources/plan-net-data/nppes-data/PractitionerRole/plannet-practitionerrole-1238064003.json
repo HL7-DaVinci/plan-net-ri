@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "4d0acd8d129a1f"
+      "value": "a6ef7dd4f0a6b5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238064003",
-    "display": "Abraham McLaughlin"
+    "display": "Emery Volkman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(250) 644-0805",
+      "value": "942.803.7192 x0710",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(353) 203-5976 x49987",
+      "value": "1-630-959-6722 x021",
       "use": "work"
     }
   ],

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Botsford",
+      "family": "Sawayn",
       "given": [
-        "Kelsie"
+        "Denita"
       ],
       "suffix": [
         "PA-C"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "430-705-6539 x100",
+      "value": "238-843-5069 x429",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "256-148-7679 x964",
+      "value": "1-575-128-9499 x72621",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-02-25",
-        "end": "2025-02-25"
+        "start": "2023-02-10",
+        "end": "2026-02-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turcotte",
+      "family": "Wintheiser",
       "given": [
-        "Trinidad",
-        "Carrol"
+        "Felix",
+        "Lorenzo"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-186-844-8921",
+      "value": "127-146-2218 x84571",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(854) 515-3141",
+      "value": "717-578-2289 x103",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-08-26",
-        "end": "2025-08-26"
+        "start": "2022-01-21",
+        "end": "2025-01-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-06-22",
-        "end": "2025-06-22"
+        "start": "2024-10-03",
+        "end": "2027-10-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

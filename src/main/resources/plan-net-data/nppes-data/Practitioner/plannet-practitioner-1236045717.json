@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Gerlach",
+      "family": "Wolff",
       "given": [
-        "Marilynn"
+        "Tamiko",
+        "Jayme"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-935-491-7234 x2993",
+      "value": "907.196.5877 x12580",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "465.456.5414 x258",
+      "value": "1-614-551-0203",
       "use": "work"
     }
   ],
@@ -139,8 +140,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-12-31",
-        "end": "2026-12-31"
+        "start": "2023-03-19",
+        "end": "2026-03-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,14 +198,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LG0600X",
-            "display": "Gerontology"
+            "display": "Gerontology Nurse Practitioner"
           }
         ],
-        "text": "Gerontology"
+        "text": "Gerontology Nurse Practitioner"
       },
       "period": {
-        "start": "2023-05-17",
-        "end": "2026-05-17"
+        "start": "2024-04-21",
+        "end": "2027-04-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -236,6 +237,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

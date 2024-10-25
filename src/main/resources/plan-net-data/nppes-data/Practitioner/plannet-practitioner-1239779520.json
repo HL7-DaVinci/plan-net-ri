@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Mayer",
       "given": [
-        "Ronnie",
-        "Ashley"
+        "Heath",
+        "Myles"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "685-295-7202 x91841",
+      "value": "(976) 109-5713 x1895",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "447-085-3794 x55118",
+      "value": "279.435.6514 x7835",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-04-22",
-        "end": "2026-04-22"
+        "start": "2023-04-03",
+        "end": "2026-04-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

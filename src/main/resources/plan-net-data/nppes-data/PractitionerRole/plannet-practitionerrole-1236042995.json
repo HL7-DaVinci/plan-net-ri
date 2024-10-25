@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "efc0a7cda09500"
+      "value": "300e01303c7c3b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236042995",
-    "display": "Jesse Lang"
+    "display": "Aurelio Dooley"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(322) 813-4626 x55663",
+      "value": "946-691-5397",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(377) 291-2027 x457",
+      "value": "930.401.7054 x311",
       "use": "work"
     }
   ],

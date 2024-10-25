@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuppe",
+      "family": "Larkin",
       "given": [
-        "Wilburn",
-        "Josh"
+        "Forest"
       ],
       "suffix": [
         "PA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "915.204.1756 x754",
+      "value": "676-480-1028",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "853-055-6264 x12515",
+      "value": "(254) 335-7033 x4771",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2022-12-09",
-        "end": "2025-12-09"
+        "start": "2024-02-15",
+        "end": "2027-02-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

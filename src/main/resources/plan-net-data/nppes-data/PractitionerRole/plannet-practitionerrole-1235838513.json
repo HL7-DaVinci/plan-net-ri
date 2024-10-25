@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "59af50f0dfd044"
+      "value": "1c0bfe7f6e51c2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235838513",
-    "display": "Henry Jerde"
+    "display": "Angel Kilback"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "197-118-8520 x7794",
+      "value": "471-525-8820 x509",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-315-792-8403 x685",
+      "value": "831.644.4826 x9041",
       "use": "work"
     }
   ],

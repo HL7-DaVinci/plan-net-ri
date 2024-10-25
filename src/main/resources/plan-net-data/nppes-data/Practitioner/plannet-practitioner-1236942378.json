@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Smitham",
+      "family": "Wuckert",
       "given": [
-        "Anthony"
+        "Eldridge"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "572.451.2035 x36153",
+      "value": "1-272-740-3534 x12477",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(447) 868-7431 x7748",
+      "value": "449.971.6605 x44848",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2022-05-06",
-        "end": "2025-05-06"
+        "start": "2023-03-03",
+        "end": "2026-03-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

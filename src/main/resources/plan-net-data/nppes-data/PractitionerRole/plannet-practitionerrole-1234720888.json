@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "215e0c1ae1d05b"
+      "value": "c998d49d95c476"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234720888",
-    "display": "Boyce Mills"
+    "display": "Tyrone Hansen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-961-633-7102 x190",
+      "value": "433-120-2773 x341",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "299.166.5113 x58546",
+      "value": "(963) 517-1998",
       "use": "work"
     }
   ],

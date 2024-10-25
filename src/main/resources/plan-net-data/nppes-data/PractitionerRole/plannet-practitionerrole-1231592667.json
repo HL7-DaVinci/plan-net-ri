@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "8e999004cbbccc"
+      "value": "cf95b21e292c0a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231592667",
-    "display": "Harold Runte"
+    "display": "Ricardo Hoppe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "499-871-5684 x1312",
+      "value": "744-123-2280 x931",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "389.157.4646 x724",
+      "value": "203.781.9926",
       "use": "work"
     }
   ],

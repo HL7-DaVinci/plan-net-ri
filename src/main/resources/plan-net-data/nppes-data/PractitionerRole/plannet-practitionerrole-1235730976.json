@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "4162e7c89fd541"
+      "value": "e4f06757461505"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235730976",
-    "display": "Tyrone Fritsch"
+    "display": "Darrin Kuhic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(101) 208-6945",
+      "value": "918.764.4421",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "307-157-8194",
+      "value": "223-905-6264 x45246",
       "use": "work"
     }
   ],

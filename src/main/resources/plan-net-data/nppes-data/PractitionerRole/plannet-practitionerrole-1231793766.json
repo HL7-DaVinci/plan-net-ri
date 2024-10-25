@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "d9dbb37fd26f00"
+      "value": "ff9448798ce97e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231793766",
-    "display": "Mellie Stroman"
+    "display": "Mara Schaefer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "478-719-7709 x98426",
+      "value": "755-695-9438 x8899",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(203) 291-7642 x44778",
+      "value": "(784) 565-5998 x4661",
       "use": "work"
     }
   ],

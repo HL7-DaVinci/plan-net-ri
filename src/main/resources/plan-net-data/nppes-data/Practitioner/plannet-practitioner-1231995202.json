@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gottlieb",
+      "family": "Trantow",
       "given": [
-        "Roxane"
+        "Alisia"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "805.782.3393 x69532",
+      "value": "(823) 637-0143 x94050",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "392-552-0607 x89770",
+      "value": "1-462-882-8426 x15448",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-09-30",
-        "end": "2026-09-30"
+        "start": "2022-02-15",
+        "end": "2025-02-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

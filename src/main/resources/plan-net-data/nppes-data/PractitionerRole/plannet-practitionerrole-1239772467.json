@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "d34e10dfedb6e1"
+      "value": "33743fa46efe57"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239772467",
-    "display": "Johnathan McKenzie"
+    "display": "Benton Greenfelder"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "839-818-8306 x3075",
+      "value": "1-345-895-4324 x55056",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-647-172-4839 x357",
+      "value": "939-936-4236 x1409",
       "use": "work"
     }
   ],

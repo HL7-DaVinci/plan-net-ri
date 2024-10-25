@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schowalter",
+      "family": "MacGyver",
       "given": [
-        "Ellan",
-        "Latisha"
+        "Leena"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(135) 138-4503",
+      "value": "337.451.9454 x14877",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "619.649.2795",
+      "value": "1-263-201-3416",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2021-08-28",
-        "end": "2024-08-28"
+        "start": "2024-08-02",
+        "end": "2027-08-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

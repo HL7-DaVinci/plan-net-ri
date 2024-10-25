@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "31f4e118420ff5"
+      "value": "a534e39d568553"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236741435",
-    "display": "June Sanford"
+    "display": "Charissa White"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "938.540.4542",
+      "value": "381-521-0050 x1255",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(271) 709-7071 x606",
+      "value": "(648) 897-2065 x3987",
       "use": "work"
     }
   ],

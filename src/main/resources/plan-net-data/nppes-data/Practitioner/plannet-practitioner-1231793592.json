@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lakin",
+      "family": "Keebler",
       "given": [
-        "Napoleon"
+        "Lyman",
+        "Jerrold"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "247.646.4368 x6276",
+      "value": "1-483-585-9742 x527",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(258) 951-2809",
+      "value": "1-504-093-5788",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-06-23",
-        "end": "2027-06-23"
+        "start": "2022-08-18",
+        "end": "2025-08-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

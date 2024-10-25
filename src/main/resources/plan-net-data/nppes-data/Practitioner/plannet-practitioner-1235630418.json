@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sanford",
+      "family": "Lemke",
       "given": [
-        "Wendell"
+        "Esteban"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-592-787-9527 x61834",
+      "value": "338-481-6623 x5083",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "347.963.8547",
+      "value": "(823) 686-1182 x94716",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2022-08-10",
-        "end": "2025-08-10"
+        "start": "2022-03-16",
+        "end": "2025-03-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2023-12-05",
-        "end": "2026-12-05"
+        "start": "2022-11-18",
+        "end": "2025-11-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -266,14 +266,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC1900X",
-            "display": "Counseling"
+            "display": "Counseling Psychologist"
           }
         ],
-        "text": "Counseling"
+        "text": "Counseling Psychologist"
       },
       "period": {
-        "start": "2022-11-30",
-        "end": "2025-11-30"
+        "start": "2021-11-30",
+        "end": "2024-11-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -325,11 +325,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

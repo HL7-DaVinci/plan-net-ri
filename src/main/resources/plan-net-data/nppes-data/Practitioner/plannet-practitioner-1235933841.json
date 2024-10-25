@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kirlin",
+      "family": "Leffler",
       "given": [
-        "Johnny",
-        "Branden"
+        "Jonathon"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(534) 524-4521",
+      "value": "132.100.7897 x212",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "217-214-4862 x2678",
+      "value": "472.898.7170",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2024-02-07",
-        "end": "2027-02-07"
+        "start": "2024-02-17",
+        "end": "2027-02-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

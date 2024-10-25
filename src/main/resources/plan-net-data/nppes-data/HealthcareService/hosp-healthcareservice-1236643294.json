@@ -52,7 +52,7 @@
         {
           "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
           "code": "hosp",
-          "display": "Hosp"
+          "display": "Hospital"
         }
       ],
       "text": "hosp"
@@ -68,12 +68,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-666-679-6666",
+      "value": "(601) 010-3354 x2719",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(488) 865-0837 x080",
+      "value": "656.835.9680 x117",
       "use": "work"
     }
   ],

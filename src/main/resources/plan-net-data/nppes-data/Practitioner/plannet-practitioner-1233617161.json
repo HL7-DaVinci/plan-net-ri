@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Reilly",
+      "family": "Dickinson",
       "given": [
-        "Arvilla",
-        "Willene"
+        "Verdell"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-655-362-7933 x36824",
+      "value": "1-696-301-1242",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-834-059-9516 x2511",
+      "value": "860.613.8434",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-23",
-        "end": "2025-07-23"
+        "start": "2024-10-11",
+        "end": "2027-10-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

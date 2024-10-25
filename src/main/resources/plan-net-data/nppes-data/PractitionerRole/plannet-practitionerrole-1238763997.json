@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "0b119cae47d0bc"
+      "value": "bd25bd7ca99f8c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238763997",
-    "display": "Murray Ziemann"
+    "display": "Oren Hoeger"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VE0102X",
-          "display": "Reproductive Endocrinology"
+          "display": "Reproductive Endocrinology Physician"
         }
       ],
-      "text": "Reproductive Endocrinology"
+      "text": "Reproductive Endocrinology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(683) 391-3036 x454",
+      "value": "601-660-9466 x97919",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(486) 302-9427 x8464",
+      "value": "1-965-526-9133 x1871",
       "use": "work"
     }
   ],

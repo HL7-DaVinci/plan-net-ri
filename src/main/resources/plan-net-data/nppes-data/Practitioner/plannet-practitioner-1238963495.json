@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mann",
+      "family": "Harber",
       "given": [
-        "Santos",
-        "Manuel"
+        "Clay",
+        "Cleveland"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-825-374-2550",
+      "value": "1-761-912-5391",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "133.101.6183 x9145",
+      "value": "1-601-231-3532",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-02-26",
-        "end": "2026-02-26"
+        "start": "2022-08-03",
+        "end": "2025-08-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

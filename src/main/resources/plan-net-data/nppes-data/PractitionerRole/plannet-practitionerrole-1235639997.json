@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "d786f1467b1bea"
+      "value": "cd51e36e48566a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235639997",
-    "display": "Cruz Schultz"
+    "display": "Lamont Dach"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0001X",
-          "display": "Radiation Oncology"
+          "display": "Radiation Oncology Physician"
         }
       ],
-      "text": "Radiation Oncology"
+      "text": "Radiation Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "109.667.5298 x82360",
+      "value": "381.662.9998",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-737-896-4055 x296",
+      "value": "1-559-273-4745 x701",
       "use": "work"
     }
   ],

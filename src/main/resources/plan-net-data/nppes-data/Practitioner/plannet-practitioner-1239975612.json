@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rodriguez",
+      "family": "Treutel",
       "given": [
-        "Milo"
+        "Wendell",
+        "Van"
       ],
       "suffix": [
         "PA"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(173) 410-6777 x11237",
+      "value": "740-735-1497 x116",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-322-708-3278 x0271",
+      "value": "1-472-743-6469 x7055",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-04-21",
-        "end": "2025-04-21"
+        "start": "2022-03-11",
+        "end": "2025-03-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2023-01-30",
-        "end": "2026-01-30"
+        "start": "2022-10-01",
+        "end": "2025-10-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

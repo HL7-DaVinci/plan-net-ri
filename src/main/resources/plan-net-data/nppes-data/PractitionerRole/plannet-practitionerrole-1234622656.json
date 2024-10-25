@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "41b7c143fde2b2"
+      "value": "5cfe128369c80b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234622656",
-    "display": "Gabriel Okuneva"
+    "display": "Leonard Osinski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-778-283-8980 x553",
+      "value": "429.705.2257 x21150",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "405.989.0496 x1869",
+      "value": "295-392-6974 x430",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Klein",
+      "family": "Bogan",
       "given": [
-        "Bud",
-        "Pablo"
+        "Galen",
+        "Nicholas"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "779-145-4032",
+      "value": "213-437-4913",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "886-388-4181",
+      "value": "225-077-0457 x7830",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-06-27",
-        "end": "2025-06-27"
+        "start": "2024-03-10",
+        "end": "2027-03-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

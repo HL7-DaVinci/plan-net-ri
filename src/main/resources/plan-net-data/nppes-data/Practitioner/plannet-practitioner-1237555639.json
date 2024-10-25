@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Labadie",
+      "family": "Kling",
       "given": [
-        "Colin"
+        "Dannie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "992-997-5130",
+      "value": "(662) 010-7891",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(827) 951-4560",
+      "value": "785.596.3391 x64179",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-04-22",
-        "end": "2026-04-22"
+        "start": "2023-05-03",
+        "end": "2026-05-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

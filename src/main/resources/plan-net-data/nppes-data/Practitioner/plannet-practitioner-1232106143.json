@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jast",
+      "family": "D'Amore",
       "given": [
-        "Yoshie"
+        "Sheryl"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-219-748-1873",
+      "value": "142-031-9271",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "392.851.9252 x236",
+      "value": "797.258.7460",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-03-03",
-        "end": "2026-03-03"
+        "start": "2023-02-03",
+        "end": "2026-02-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "dd37156c6c90a7"
+      "value": "574f1293c56a66"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238469021",
-    "display": "Genevieve Torp"
+    "display": "Rose Dietrich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(967) 739-3590",
+      "value": "748-333-8396 x56961",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "823.094.7534 x1250",
+      "value": "1-638-219-2719 x68640",
       "use": "work"
     }
   ],

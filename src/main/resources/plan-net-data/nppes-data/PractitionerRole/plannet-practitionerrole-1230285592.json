@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ecee15e6760bbf"
+      "value": "3b5cc0bfe37fcd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230285592",
-    "display": "Ivan Medhurst"
+    "display": "Prince Pagac"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "757-394-0696 x960",
+      "value": "1-251-724-4031",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "710.915.1793 x5542",
+      "value": "1-451-282-9798 x76236",
       "use": "work"
     }
   ],

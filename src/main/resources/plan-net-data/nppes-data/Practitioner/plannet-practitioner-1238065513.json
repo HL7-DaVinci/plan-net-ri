@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feest",
+      "family": "Metz",
       "given": [
-        "Tula"
+        "Brittaney",
+        "Tesha"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "549.175.9855 x8777",
+      "value": "(251) 550-3017 x16221",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-576-265-5924 x48081",
+      "value": "523-705-7182 x15705",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-07-12",
-        "end": "2025-07-12"
+        "start": "2024-09-27",
+        "end": "2027-09-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "364SP0809X",
-            "display": "Psychiatric/Mental Health, Adult"
+            "display": "Adult Psychiatric/Mental Health Clinical Nurse Specialist"
           }
         ],
-        "text": "Psychiatric/Mental Health, Adult"
+        "text": "Adult Psychiatric/Mental Health Clinical Nurse Specialist"
       },
       "period": {
-        "start": "2023-07-23",
-        "end": "2026-07-23"
+        "start": "2022-02-27",
+        "end": "2025-02-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -241,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

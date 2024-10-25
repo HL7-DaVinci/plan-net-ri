@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Russel",
       "given": [
-        "Edmundo"
+        "Tim"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-684-871-6154 x9139",
+      "value": "1-200-288-4635",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "372-948-6531 x73042",
+      "value": "1-673-983-2440 x73328",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0000X",
-            "display": "Hematology"
+            "display": "Hematology (Internal Medicine) Physician"
           }
         ],
-        "text": "Hematology"
+        "text": "Hematology (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-05-06",
-        "end": "2026-05-06"
+        "start": "2024-02-12",
+        "end": "2027-02-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

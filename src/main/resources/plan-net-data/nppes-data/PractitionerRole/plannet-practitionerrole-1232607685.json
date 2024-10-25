@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "71bc51d2d95c18"
+      "value": "ca5c68e9078931"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232607685",
-    "display": "Felicitas Gulgowski"
+    "display": "Lyda Konopelski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(662) 097-9692 x28934",
+      "value": "(272) 249-1543 x1371",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "317-934-2086 x5279",
+      "value": "1-206-398-0565 x583",
       "use": "work"
     }
   ],

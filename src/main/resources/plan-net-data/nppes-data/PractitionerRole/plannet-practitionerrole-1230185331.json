@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "24676a4ba07436"
+      "value": "acfc9318a3cfc0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230185331",
-    "display": "Dudley Braun"
+    "display": "Sanford Hegmann"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "115.614.7547",
+      "value": "643.301.8343 x468",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "251-844-0108 x9941",
+      "value": "898.431.4119 x243",
       "use": "work"
     }
   ],

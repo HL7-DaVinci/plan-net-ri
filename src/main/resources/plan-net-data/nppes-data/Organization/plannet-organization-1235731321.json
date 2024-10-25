@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(789) 053-3028 x22304",
+      "value": "986-803-7848",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-674-675-3735",
+      "value": "(726) 412-7282 x3661",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Eddy Marvin",
-        "family": "Marvin",
+        "text": "Cordelia Thompson",
+        "family": "Thompson",
         "given": [
-          "Eddy"
+          "Cordelia"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "(789) 053-3028 x22304",
+          "value": "986-803-7848",
           "use": "work"
         }
       ],

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rempel",
+      "family": "Christiansen",
       "given": [
-        "Gregg"
+        "Johnathan"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(490) 260-7457 x0517",
+      "value": "(340) 188-0902 x96202",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(656) 793-8129 x619",
+      "value": "189-564-9487 x577",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-06-21",
-        "end": "2026-06-21"
+        "start": "2021-12-21",
+        "end": "2024-12-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2022-04-20",
-        "end": "2025-04-20"
+        "start": "2023-11-13",
+        "end": "2026-11-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

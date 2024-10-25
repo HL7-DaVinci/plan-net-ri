@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bartell",
+      "family": "Mitchell",
       "given": [
-        "Reggie",
-        "Francesco"
+        "Raymundo",
+        "Jc"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(221) 798-7043 x56802",
+      "value": "(502) 033-4400 x32213",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-747-207-7519 x1095",
+      "value": "390-275-8362",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2023-08-18",
-        "end": "2026-08-18"
+        "start": "2024-05-19",
+        "end": "2027-05-19"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0805X",
-            "display": "Geriatric Psychiatry"
+            "display": "Geriatric Psychiatry Physician"
           }
         ],
-        "text": "Geriatric Psychiatry"
+        "text": "Geriatric Psychiatry Physician"
       },
       "period": {
-        "start": "2022-11-05",
-        "end": "2025-11-05"
+        "start": "2021-12-17",
+        "end": "2024-12-17"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -239,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

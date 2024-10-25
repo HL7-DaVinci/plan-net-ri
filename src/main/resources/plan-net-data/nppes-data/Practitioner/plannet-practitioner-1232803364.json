@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "MacGyver",
+      "family": "Kutch",
       "given": [
-        "Aurelio",
-        "Markus"
+        "Jack",
+        "Patricia"
       ],
       "suffix": [
         "Jr.",
@@ -46,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "498-490-0692 x948",
+      "value": "1-818-676-8491",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(828) 947-9043 x974",
+      "value": "1-759-305-1206",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-02-11",
-        "end": "2026-02-11"
+        "start": "2021-11-21",
+        "end": "2024-11-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

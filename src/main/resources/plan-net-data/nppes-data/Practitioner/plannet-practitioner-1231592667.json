@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Hoppe",
       "given": [
-        "Harold"
+        "Ricardo",
+        "Jerrell"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "499-871-5684 x1312",
+      "value": "744-123-2280 x931",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "389.157.4646 x724",
+      "value": "203.781.9926",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-04-22",
-        "end": "2027-04-22"
+        "start": "2024-09-04",
+        "end": "2027-09-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

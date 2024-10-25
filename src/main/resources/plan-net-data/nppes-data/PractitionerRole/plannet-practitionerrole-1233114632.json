@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://deutsches-altenheim-inc.com",
-      "value": "33650982c258d7"
+      "value": "cd79125a2b33b2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233114632",
-    "display": "Krista Reichert"
+    "display": "Kristie Pouros"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238062387",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-498-623-5950 x031",
+      "value": "(317) 509-9636",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "779.467.2528 x7218",
+      "value": "(571) 035-0875 x0719",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Miller",
+      "family": "Ruecker",
       "given": [
-        "Travis",
-        "Rex"
+        "Jude",
+        "Tyler"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(534) 518-4987 x520",
+      "value": "1-307-031-3516 x9572",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(629) 210-3272 x3246",
+      "value": "118-927-7960",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085N0700X",
-            "display": "Neuroradiology"
+            "display": "Neuroradiology Physician"
           }
         ],
-        "text": "Neuroradiology"
+        "text": "Neuroradiology Physician"
       },
       "period": {
-        "start": "2023-07-08",
-        "end": "2026-07-08"
+        "start": "2024-01-29",
+        "end": "2027-01-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-03-20",
-        "end": "2025-03-20"
+        "start": "2022-08-17",
+        "end": "2025-08-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

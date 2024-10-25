@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zieme",
+      "family": "Little",
       "given": [
-        "Jeromy",
-        "Edgardo"
+        "Isreal",
+        "Charles"
       ],
       "suffix": [
         "DMD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-529-801-1478",
+      "value": "1-878-753-0392 x18117",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "811-035-1690",
+      "value": "(249) 000-2594 x652",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-07-20",
-        "end": "2024-07-20"
+        "start": "2023-02-25",
+        "end": "2026-02-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

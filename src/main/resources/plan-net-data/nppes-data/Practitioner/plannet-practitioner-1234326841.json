@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Osinski",
+      "family": "Bechtelar",
       "given": [
-        "Howard"
+        "Ernie",
+        "Lorenzo"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "(264) 826-4779",
+      "value": "775-627-5447",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "333-903-6180 x507",
+      "value": "1-546-609-0579 x7962",
       "use": "work"
     }
   ],
@@ -132,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086X0206X",
-            "display": "Surgical Oncology"
+            "display": "Surgical Oncology Physician"
           }
         ],
-        "text": "Surgical Oncology"
+        "text": "Surgical Oncology Physician"
       },
       "period": {
-        "start": "2024-04-03",
-        "end": "2027-04-03"
+        "start": "2022-03-19",
+        "end": "2025-03-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -191,11 +192,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

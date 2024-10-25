@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "0ee76a1357623f"
+      "value": "0300433c5b02d6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235935168",
-    "display": "Wiley Baumbach"
+    "display": "Kelvin West"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208100000X",
-          "display": "Physical Medicine and Rehabilitation"
+          "display": "Physical Medicine & Rehabilitation Physician"
         }
       ],
-      "text": "Physical Medicine and Rehabilitation"
+      "text": "Physical Medicine & Rehabilitation Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "781.139.8909 x062",
+      "value": "1-140-398-8456 x0241",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(148) 065-9547 x7637",
+      "value": "(999) 326-8050 x93145",
       "use": "work"
     }
   ],

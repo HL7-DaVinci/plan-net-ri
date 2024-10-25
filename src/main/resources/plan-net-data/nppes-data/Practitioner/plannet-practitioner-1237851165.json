@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bailey",
+      "family": "Swaniawski",
       "given": [
-        "Mack"
+        "Terrance",
+        "Bruno"
       ],
       "suffix": [
         "DPM"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "795-088-2522 x9566",
+      "value": "(271) 341-2335 x4436",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-479-235-3724 x8847",
+      "value": "748-752-4835 x99452",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-01-23",
-        "end": "2026-01-23"
+        "start": "2022-06-08",
+        "end": "2025-06-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

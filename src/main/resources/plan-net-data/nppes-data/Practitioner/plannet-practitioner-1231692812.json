@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolf",
+      "family": "Wiza",
       "given": [
-        "Concepcion"
+        "Velia"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-116-326-9194 x49394",
+      "value": "1-427-592-8448",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "274-821-6545 x2422",
+      "value": "139-946-5985 x118",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-11-01",
-        "end": "2026-11-01"
+        "start": "2022-06-08",
+        "end": "2025-06-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2024-05-27",
-        "end": "2027-05-27"
+        "start": "2023-10-25",
+        "end": "2026-10-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -239,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

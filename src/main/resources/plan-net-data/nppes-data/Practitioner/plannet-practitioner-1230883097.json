@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schaden",
+      "family": "Sipes",
       "given": [
-        "Alec",
-        "Nathanael"
+        "Terry",
+        "Gail"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "111-948-8155 x364",
+      "value": "1-641-199-0506",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "117-641-9094 x9087",
+      "value": "297-669-7063",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-09-30",
-        "end": "2025-09-30"
+        "start": "2023-01-05",
+        "end": "2026-01-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

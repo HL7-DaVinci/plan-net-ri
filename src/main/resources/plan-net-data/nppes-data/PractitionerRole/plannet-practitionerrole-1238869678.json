@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "58be725b706a30"
+      "value": "e02d151eac3c05"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238869678",
-    "display": "Romeo Hickle"
+    "display": "Kris MacGyver"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(561) 111-0006 x0980",
+      "value": "760-037-3058 x90890",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(633) 384-6938 x85381",
+      "value": "(928) 041-3693 x4731",
       "use": "work"
     }
   ],

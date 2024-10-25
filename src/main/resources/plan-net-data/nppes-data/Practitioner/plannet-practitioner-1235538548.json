@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rosenbaum",
+      "family": "Marvin",
       "given": [
-        "Romeo",
-        "Jeffrey"
+        "Eduardo",
+        "Theron"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "164-571-8829 x9164",
+      "value": "558.328.1434 x78876",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "460.991.9706 x8510",
+      "value": "1-171-222-5920 x0778",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2021-12-22",
-        "end": "2024-12-22"
+        "start": "2023-05-16",
+        "end": "2026-05-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

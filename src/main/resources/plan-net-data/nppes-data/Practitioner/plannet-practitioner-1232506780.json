@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Konopelski",
+      "family": "Emmerich",
       "given": [
-        "Tameka",
-        "Brittani"
+        "Dusti"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-944-303-0201 x65166",
+      "value": "1-769-122-3928",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-114-415-9620",
+      "value": "1-134-851-5002 x81963",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-04-01",
-        "end": "2027-04-01"
+        "start": "2021-11-06",
+        "end": "2024-11-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

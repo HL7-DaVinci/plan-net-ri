@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Swift",
+      "family": "Howell",
       "given": [
-        "Brendan"
+        "Hank"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-391-975-4293 x85887",
+      "value": "585-597-1910 x19180",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "978.049.7975 x8895",
+      "value": "546.028.5559 x93817",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-02",
-        "end": "2025-12-02"
+        "start": "2023-05-31",
+        "end": "2026-05-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

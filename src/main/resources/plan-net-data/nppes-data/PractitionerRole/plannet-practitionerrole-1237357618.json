@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "dfd66c020afee9"
+      "value": "597b037d389663"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237357618",
-    "display": "Susann Jakubowski"
+    "display": "Nadine Jacobi"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Internal Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(836) 700-2126 x0296",
+      "value": "1-224-686-4927 x262",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "861.487.5969",
+      "value": "1-902-622-6391 x190",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Conner",
+      "family": "Gibson",
       "given": [
-        "Joe",
-        "Vicente"
+        "Alec",
+        "Darnell"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(837) 014-0464 x5489",
+      "value": "(629) 941-6395",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-261-263-4397 x00663",
+      "value": "338.210.9178 x31163",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-01-14",
-        "end": "2026-01-14"
+        "start": "2023-08-17",
+        "end": "2026-08-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

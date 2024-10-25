@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Heller",
+      "family": "Champlin",
       "given": [
-        "Noel",
-        "Miguel"
+        "Dwight"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-330-729-1139 x98595",
+      "value": "939-531-4756 x40781",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-158-340-5985 x462",
+      "value": "660.803.8323 x196",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-06-02",
-        "end": "2025-06-02"
+        "start": "2022-09-19",
+        "end": "2025-09-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Flatley",
+      "family": "Roberts",
       "given": [
-        "Garret"
+        "Larry",
+        "Waylon"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(428) 930-8180 x43708",
+      "value": "1-515-585-8357 x2411",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(506) 610-2714 x3638",
+      "value": "1-180-824-6874",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-16",
-        "end": "2025-12-16"
+        "start": "2022-12-06",
+        "end": "2025-12-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

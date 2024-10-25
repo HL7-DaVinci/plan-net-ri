@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hartmann",
+      "family": "Jones",
       "given": [
-        "Wilburn"
+        "Blaine"
       ],
       "suffix": [
         "MD, MPH"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-927-748-2248 x072",
+      "value": "555-823-9757 x9369",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-517-131-7533",
+      "value": "305.755.2515 x67332",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2024-04-02",
-        "end": "2027-04-02"
+        "start": "2024-09-13",
+        "end": "2027-09-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084S0012X",
-            "display": "Sleep Medicine"
+            "display": "Sleep Medicine (Psychiatry & Neurology) Physician"
           }
         ],
-        "text": "Sleep Medicine"
+        "text": "Sleep Medicine (Psychiatry & Neurology) Physician"
       },
       "period": {
-        "start": "2022-08-20",
-        "end": "2025-08-20"
+        "start": "2022-06-30",
+        "end": "2025-06-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -238,6 +238,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

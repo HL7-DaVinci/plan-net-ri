@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "8edfa39a648c54"
+      "value": "e5089f809d101f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239074158",
-    "display": "Jerome Dickens"
+    "display": "Jame Walker"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "439-161-7705 x2194",
+      "value": "(871) 739-7339",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-908-180-6377 x09915",
+      "value": "806-373-3887 x3998",
       "use": "work"
     }
   ],

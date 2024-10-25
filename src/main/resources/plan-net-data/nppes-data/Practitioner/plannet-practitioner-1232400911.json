@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Thompson",
+      "family": "Spencer",
       "given": [
-        "Lucas",
-        "Rudy"
+        "Lazaro",
+        "Hoyt"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(836) 469-9500",
+      "value": "1-705-201-5337",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "846.119.0271 x525",
+      "value": "459-731-4257",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-06-19",
-        "end": "2026-06-19"
+        "start": "2023-02-17",
+        "end": "2026-02-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

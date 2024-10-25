@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Klocko",
+      "family": "Nolan",
       "given": [
-        "Lupe",
-        "Tess"
+        "Meg"
       ],
       "suffix": [
         "MS, RD, CDE, LDN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "828-738-6578 x51569",
+      "value": "1-512-396-9792",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-875-678-2576 x96370",
+      "value": "(688) 090-1954",
       "use": "work"
     }
   ],
@@ -125,7 +124,7 @@
             "text": "Medical License Number"
           },
           "system": "https://www.mass.gov/orgs",
-          "value": 365166,
+          "value": 895309,
           "assigner": {
             "display": "Board of Registration in Medicine (BORIM)"
           }
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-11-23",
-        "end": "2025-11-23"
+        "start": "2023-03-07",
+        "end": "2026-03-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

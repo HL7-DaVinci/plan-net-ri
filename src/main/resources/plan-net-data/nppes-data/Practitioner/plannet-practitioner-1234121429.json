@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stracke",
+      "family": "Marvin",
       "given": [
-        "Jewel",
-        "Bennie"
+        "Lanny",
+        "Theron"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "701-598-1166 x735",
+      "value": "331-448-3666 x31473",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-435-623-6505 x67448",
+      "value": "110-147-2352 x10848",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-03-08",
-        "end": "2025-03-08"
+        "start": "2023-02-25",
+        "end": "2026-02-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

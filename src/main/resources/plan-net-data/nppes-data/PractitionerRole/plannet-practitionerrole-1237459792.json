@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "8a8b5d1ee8d7c2"
+      "value": "0c92f98d4bbe61"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237459792",
-    "display": "Dewitt Beatty"
+    "display": "Williams Mosciski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "779-748-9542 x7925",
+      "value": "456.939.7355 x44844",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "660-384-2506 x6937",
+      "value": "(178) 434-9887",
       "use": "work"
     }
   ],

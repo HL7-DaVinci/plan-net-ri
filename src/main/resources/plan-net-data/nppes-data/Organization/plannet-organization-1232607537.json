@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "553-742-0648 x917",
+      "value": "944.365.4947 x482",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-146-460-6277 x2508",
+      "value": "788-199-9147",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Jammie D'Amore",
-        "family": "D'Amore",
+        "text": "Porter Kshlerin",
+        "family": "Kshlerin",
         "given": [
-          "Jammie"
+          "Porter"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "553-742-0648 x917",
+          "value": "944.365.4947 x482",
           "use": "work"
         }
       ],

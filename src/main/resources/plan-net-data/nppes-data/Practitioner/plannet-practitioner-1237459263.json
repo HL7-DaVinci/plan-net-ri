@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Heathcote",
+      "family": "Leuschke",
       "given": [
-        "Ervin",
-        "Stacy"
+        "Conrad"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-462-880-7820 x9789",
+      "value": "1-503-665-6329",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(530) 939-7418",
+      "value": "(146) 654-6080 x0646",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-06-02",
-        "end": "2025-06-02"
+        "start": "2023-09-20",
+        "end": "2026-09-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

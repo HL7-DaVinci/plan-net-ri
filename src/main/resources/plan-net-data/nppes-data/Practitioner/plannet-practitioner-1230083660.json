@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Howell",
+      "family": "Grimes",
       "given": [
-        "Steve"
+        "Monte",
+        "Jan"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "106-715-9339",
+      "value": "579.277.8391",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "769.126.2046 x6052",
+      "value": "(112) 565-0375 x2808",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-12-04",
-        "end": "2025-12-04"
+        "start": "2021-11-17",
+        "end": "2024-11-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoppe",
+      "family": "Mraz",
       "given": [
-        "Lawrence",
-        "Evie"
+        "Jeanna",
+        "Reynalda"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-384-519-7076 x612",
+      "value": "703-496-1986 x34293",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-923-331-9724 x6714",
+      "value": "176-972-4126 x9124",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-01-24",
-        "end": "2025-01-24"
+        "start": "2022-03-06",
+        "end": "2025-03-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

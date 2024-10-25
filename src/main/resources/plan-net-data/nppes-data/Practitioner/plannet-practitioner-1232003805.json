@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Klocko",
+      "family": "Kautzer",
       "given": [
-        "Theda"
+        "Genny",
+        "Keri"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "223-610-7837 x8200",
+      "value": "(846) 137-8435 x671",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(108) 989-0496 x709",
+      "value": "1-809-159-8359",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-11-02",
-        "end": "2026-11-02"
+        "start": "2023-12-18",
+        "end": "2026-12-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kirlin",
+      "family": "Schamberger",
       "given": [
-        "Wilfredo"
+        "Clifton",
+        "Normand"
       ],
       "suffix": [
         "M.D"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "407-080-5746 x379",
+      "value": "(318) 374-8902 x34276",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-533-690-2914",
+      "value": "131.087.3282 x944",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-05-26",
-        "end": "2026-05-26"
+        "start": "2023-07-31",
+        "end": "2026-07-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

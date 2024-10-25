@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rempel",
+      "family": "Metz",
       "given": [
-        "Timmy",
-        "Phil"
+        "Robert"
       ],
       "suffix": [
         "BDS"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "787.801.2655",
+      "value": "944-245-3391 x0113",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-324-106-7795",
+      "value": "1-252-651-7626 x41118",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2023-10-02",
-        "end": "2026-10-02"
+        "start": "2022-03-21",
+        "end": "2025-03-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "7ce2a186172dce"
+      "value": "4c48f2ec5c3c1c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236541011",
-    "display": "Bryce Bahringer"
+    "display": "Maynard Russel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "125-139-9647 x735",
+      "value": "258.408.8211 x46509",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "205-192-6678 x95889",
+      "value": "388.190.2640 x8293",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "40ff595f481830"
+      "value": "5372d181b18503"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231298841",
-    "display": "Sherryl Crooks"
+    "display": "Kerstin Franecki"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(216) 197-5952 x69529",
+      "value": "1-506-196-4561 x39520",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "197-972-5013 x472",
+      "value": "672.608.9219",
       "use": "work"
     }
   ],

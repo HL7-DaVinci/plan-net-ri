@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beatty",
+      "family": "Baumbach",
       "given": [
-        "Allen",
-        "Collin"
+        "Bud",
+        "Homer"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(280) 404-3418 x849",
+      "value": "1-591-038-7881 x08824",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "157.438.5177",
+      "value": "489.721.0696",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-03-13",
-        "end": "2025-03-13"
+        "start": "2023-12-05",
+        "end": "2026-12-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0804X",
-            "display": "Child and Adolescent Psychiatry"
+            "display": "Child & Adolescent Psychiatry Physician"
           }
         ],
-        "text": "Child and Adolescent Psychiatry"
+        "text": "Child & Adolescent Psychiatry Physician"
       },
       "period": {
-        "start": "2024-06-10",
-        "end": "2027-06-10"
+        "start": "2024-01-06",
+        "end": "2027-01-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

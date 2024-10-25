@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "2037dd6ef7335e"
+      "value": "fe72b2f17c4836"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237359275",
-    "display": "Corene Wolff"
+    "display": "Rachell Terry"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "770-082-7728 x9007",
+      "value": "1-851-392-3466 x501",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "688-854-0437 x69463",
+      "value": "673.155.1234 x6687",
       "use": "work"
     }
   ],

@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "7e45476b8b7130",
+      "value": "4a72c0c076bdad",
       "assigner": {
         "display": "Hartford Connecticut HIE"
       }
@@ -37,8 +37,8 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID060000",
-      "display": "Connecticut Persona Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID130000",
+      "display": "United Technologies Preferred Provider Network"
     }
   ],
   "healthcareService": [

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kutch",
+      "family": "Hilll",
       "given": [
-        "Derek",
-        "Bernard"
+        "Elvis",
+        "Wilbert"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "610.607.0021",
+      "value": "1-960-386-5583 x801",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(495) 084-4412 x1040",
+      "value": "688.403.2134",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-11-16",
-        "end": "2026-11-16"
+        "start": "2022-03-23",
+        "end": "2025-03-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

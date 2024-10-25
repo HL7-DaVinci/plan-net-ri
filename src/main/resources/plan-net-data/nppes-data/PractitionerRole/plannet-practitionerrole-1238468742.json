@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "82c93f2b28f02e"
+      "value": "404c6de60dffb9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238468742",
-    "display": "Kristopher Roob"
+    "display": "William Hodkiewicz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1835P1200X",
-          "display": "Pharmacotherapy"
+          "display": "Pharmacotherapy Pharmacist"
         }
       ],
-      "text": "Pharmacotherapy"
+      "text": "Pharmacotherapy Pharmacist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(581) 688-3563",
+      "value": "799-224-7405 x8225",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "767.557.2055 x4187",
+      "value": "(436) 825-5643 x35424",
       "use": "work"
     }
   ],

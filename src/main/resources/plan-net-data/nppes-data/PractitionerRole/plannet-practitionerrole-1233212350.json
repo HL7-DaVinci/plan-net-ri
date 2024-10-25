@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "574d49fe5c7920"
+      "value": "8ad805f66e3995"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233212350",
-    "display": "Ozzie Hauck"
+    "display": "Dana Hoppe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-671-186-2920 x9931",
+      "value": "884.778.7128 x50235",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "900-690-6656 x925",
+      "value": "204.050.0318 x0495",
       "use": "work"
     }
   ],

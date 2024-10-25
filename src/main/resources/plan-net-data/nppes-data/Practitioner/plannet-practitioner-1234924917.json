@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Waelchi",
+      "family": "Weber",
       "given": [
-        "Valentin"
+        "Cruz",
+        "Lou"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(353) 309-3329 x87684",
+      "value": "851.056.3382",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(953) 784-7279 x5912",
+      "value": "(833) 347-6740 x448",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-07-02",
-        "end": "2025-07-02"
+        "start": "2022-01-12",
+        "end": "2025-01-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -208,8 +209,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2023-01-29",
-        "end": "2026-01-29"
+        "start": "2022-06-15",
+        "end": "2025-06-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

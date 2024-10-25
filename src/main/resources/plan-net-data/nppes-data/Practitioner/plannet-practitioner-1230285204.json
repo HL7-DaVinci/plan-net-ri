@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Predovic",
+      "family": "McGlynn",
       "given": [
-        "Wesley",
-        "Fredric"
+        "Landon",
+        "Bert"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(130) 980-1410 x768",
+      "value": "561.294.5540",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "506-254-0536 x71914",
+      "value": "883.954.5358 x9806",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-09-18",
-        "end": "2026-09-18"
+        "start": "2024-02-14",
+        "end": "2027-02-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

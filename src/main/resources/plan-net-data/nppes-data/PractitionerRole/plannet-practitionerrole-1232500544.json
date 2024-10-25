@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "73ebade1acfe08"
+      "value": "1317f11b0c9663"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232500544",
-    "display": "Ira Corwin"
+    "display": "Pete Funk"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(839) 601-2557",
+      "value": "326-847-3066 x99824",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-276-073-2703",
+      "value": "245-459-9177 x86786",
       "use": "work"
     }
   ],

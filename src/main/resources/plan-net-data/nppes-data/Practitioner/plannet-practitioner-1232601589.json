@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lockman",
+      "family": "Mann",
       "given": [
-        "Dorian",
-        "Arturo"
+        "Pasquale"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(673) 279-3130 x94402",
+      "value": "624-804-4844 x326",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "139-521-3688 x29111",
+      "value": "155.049.8966 x00066",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-21",
-        "end": "2025-01-21"
+        "start": "2022-05-20",
+        "end": "2025-05-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

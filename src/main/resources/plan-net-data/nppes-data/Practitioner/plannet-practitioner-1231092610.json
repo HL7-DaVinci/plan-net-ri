@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jerde",
+      "family": "Walker",
       "given": [
-        "Elijah"
+        "Lowell"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "831-493-6552 x75946",
+      "value": "251.445.7726 x353",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(876) 488-0622 x191",
+      "value": "976.086.9409 x584",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-07-15",
-        "end": "2025-07-15"
+        "start": "2023-10-02",
+        "end": "2026-10-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

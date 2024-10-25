@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dare",
+      "family": "Russel",
       "given": [
-        "Mckinley",
-        "Leif"
+        "Hosea",
+        "Steven"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-765-735-9535 x11652",
+      "value": "188-538-5703",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "478.253.2686 x8177",
+      "value": "1-423-515-5682 x4023",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-09-13",
-        "end": "2026-09-13"
+        "start": "2022-04-17",
+        "end": "2025-04-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RA0001X",
-            "display": "Advanced Heart Failure and Transplant Cardiology"
+            "display": "Advanced Heart Failure and Transplant Cardiology Physician"
           }
         ],
-        "text": "Advanced Heart Failure and Transplant Cardiology"
+        "text": "Advanced Heart Failure and Transplant Cardiology Physician"
       },
       "period": {
-        "start": "2023-05-13",
-        "end": "2026-05-13"
+        "start": "2022-07-05",
+        "end": "2025-07-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

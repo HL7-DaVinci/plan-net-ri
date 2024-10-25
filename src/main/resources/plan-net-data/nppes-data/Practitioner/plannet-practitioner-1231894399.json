@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nicolas",
+      "family": "O'Keefe",
       "given": [
-        "Donnie",
-        "Elvin"
+        "Virgil"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "644-308-5034 x318",
+      "value": "(166) 013-1622 x5873",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(935) 502-2036 x997",
+      "value": "938-846-3182",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2023-07-25",
-        "end": "2026-07-25"
+        "start": "2022-10-13",
+        "end": "2025-10-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

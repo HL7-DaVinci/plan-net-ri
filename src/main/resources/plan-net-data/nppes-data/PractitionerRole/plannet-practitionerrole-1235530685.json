@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "8ae8e324949511"
+      "value": "bf9eca152761d0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235530685",
-    "display": "Irving Borer"
+    "display": "Hubert Predovic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RN0300X",
-          "display": "Nephrology"
+          "display": "Nephrology Physician"
         }
       ],
-      "text": "Nephrology"
+      "text": "Nephrology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "971.214.4808 x86346",
+      "value": "682.923.9728 x0393",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "956-688-0515 x055",
+      "value": "(320) 945-8499 x9539",
       "use": "work"
     }
   ],

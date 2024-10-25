@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "c891fc585b6d7e"
+      "value": "ead6587e9f25d5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234821958",
-    "display": "Scott Schuppe"
+    "display": "Dylan Brakus"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "814.975.9563 x976",
+      "value": "377.317.3753 x2510",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "635.215.7939",
+      "value": "572-217-0478 x36081",
       "use": "work"
     }
   ],

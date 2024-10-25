@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Borer",
+      "family": "Boehm",
       "given": [
-        "Darron",
-        "Bennett"
+        "Tommie",
+        "Ivan"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(926) 190-4648 x963",
+      "value": "443.689.1293",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(952) 722-9253 x398",
+      "value": "382.222.1686 x500",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-02-12",
-        "end": "2025-02-12"
+        "start": "2024-09-23",
+        "end": "2027-09-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

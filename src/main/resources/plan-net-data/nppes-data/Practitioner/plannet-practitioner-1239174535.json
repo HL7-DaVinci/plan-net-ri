@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lueilwitz",
+      "family": "Schinner",
       "given": [
-        "Lisa",
-        "Magaret"
+        "Pam"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "927.704.3208 x67253",
+      "value": "(496) 234-5802 x9338",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.934.2908",
+      "value": "765-528-8017 x4797",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LC1500X",
-            "display": "Community Health"
+            "display": "Community Health Nurse Practitioner"
           }
         ],
-        "text": "Community Health"
+        "text": "Community Health Nurse Practitioner"
       },
       "period": {
-        "start": "2021-11-12",
-        "end": "2024-11-12"
+        "start": "2024-07-09",
+        "end": "2027-07-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

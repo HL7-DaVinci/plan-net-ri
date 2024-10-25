@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Batz",
+      "family": "Wisoky",
       "given": [
-        "Dominique"
+        "Sammie"
       ],
       "suffix": [
         "D.O."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "747.988.3788",
+      "value": "738-763-2762",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "938.494.8998",
+      "value": "345-502-0611 x753",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-03-31",
-        "end": "2026-03-31"
+        "start": "2023-06-27",
+        "end": "2026-06-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0008X",
-            "display": "Neuromuscular Medicine"
+            "display": "Neuromuscular Medicine (Psychiatry & Neurology) Physician"
           }
         ],
-        "text": "Neuromuscular Medicine"
+        "text": "Neuromuscular Medicine (Psychiatry & Neurology) Physician"
       },
       "period": {
-        "start": "2024-02-12",
-        "end": "2027-02-12"
+        "start": "2022-05-12",
+        "end": "2025-05-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -258,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

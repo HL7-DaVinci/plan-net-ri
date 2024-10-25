@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Farrell",
+      "family": "Harris",
       "given": [
-        "Simon"
+        "Tyron"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(519) 734-9717 x49530",
+      "value": "707-368-1749",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-778-486-7919 x9602",
+      "value": "(228) 360-2800 x58493",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-11-04",
-        "end": "2026-11-04"
+        "start": "2023-10-14",
+        "end": "2026-10-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

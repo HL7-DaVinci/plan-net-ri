@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "cacafece98a392"
+      "value": "3a7b8c3460b76c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235934658",
-    "display": "Willard Collier"
+    "display": "Chance Rogahn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "617-757-0378 x217",
+      "value": "1-487-415-3095 x6370",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-801-520-8190 x27961",
+      "value": "117-682-5572 x537",
       "use": "work"
     }
   ],

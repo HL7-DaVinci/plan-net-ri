@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Thiel",
+      "family": "Hoppe",
       "given": [
-        "Walker"
+        "Michale"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "870-971-2892",
+      "value": "1-139-644-3023 x6838",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "293.613.4495 x50853",
+      "value": "916.974.7642 x4151",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-05-14",
-        "end": "2026-05-14"
+        "start": "2024-10-11",
+        "end": "2027-10-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

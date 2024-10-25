@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Powlowski",
+      "family": "Cartwright",
       "given": [
-        "Bradley",
-        "Gregg"
+        "Gayle"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "752-722-9085",
+      "value": "295.463.8988 x773",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-399-789-2433 x52082",
+      "value": "1-598-370-3585 x37536",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-08-09",
-        "end": "2024-08-09"
+        "start": "2023-04-18",
+        "end": "2026-04-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

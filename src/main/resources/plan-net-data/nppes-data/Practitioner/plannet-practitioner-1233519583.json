@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Harvey",
+      "family": "Harris",
       "given": [
-        "Blake",
-        "Dorsey"
+        "Ray",
+        "Scott"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "399-977-1872 x011",
+      "value": "578.310.9837 x9686",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-327-439-0222 x03368",
+      "value": "1-174-776-6767 x791",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-10-15",
-        "end": "2026-10-15"
+        "start": "2023-02-04",
+        "end": "2026-02-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0117X",
-            "display": "Orthopaedic Surgery of the Spine"
+            "display": "Orthopaedic Surgery of the Spine Physician"
           }
         ],
-        "text": "Orthopaedic Surgery of the Spine"
+        "text": "Orthopaedic Surgery of the Spine Physician"
       },
       "period": {
-        "start": "2022-03-07",
-        "end": "2025-03-07"
+        "start": "2024-05-30",
+        "end": "2027-05-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -242,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wilkinson",
+      "family": "Kris",
       "given": [
-        "Jody",
-        "Everette"
+        "Wallace"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "854.271.9979 x1568",
+      "value": "993-000-3945",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "185.964.6550 x14426",
+      "value": "(583) 289-4541",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2022-07-09",
-        "end": "2025-07-09"
+        "start": "2021-12-30",
+        "end": "2024-12-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

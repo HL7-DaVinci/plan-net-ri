@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Boehm",
+      "family": "Rowe",
       "given": [
-        "Celesta"
+        "Karina"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(961) 320-5765 x8541",
+      "value": "287-300-2018 x278",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(563) 840-6896",
+      "value": "614.063.0939 x6320",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-12-09",
-        "end": "2024-12-09"
+        "start": "2023-12-14",
+        "end": "2026-12-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

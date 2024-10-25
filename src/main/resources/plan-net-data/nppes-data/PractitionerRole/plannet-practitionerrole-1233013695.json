@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "7ba4af22dcf59a"
+      "value": "5f9636dca9ca02"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233013695",
-    "display": "Jules Will"
+    "display": "Joesph Legros"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2251X0800X",
-          "display": "Orthopedic"
+          "display": "Orthopedic Physical Therapist"
         }
       ],
-      "text": "Orthopedic"
+      "text": "Orthopedic Physical Therapist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-763-251-0314 x2235",
+      "value": "(648) 282-4674 x81265",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(552) 092-5132 x922",
+      "value": "572-201-0181 x856",
       "use": "work"
     }
   ],

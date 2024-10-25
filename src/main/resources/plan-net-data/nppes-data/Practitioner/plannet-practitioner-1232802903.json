@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Strosin",
+      "family": "Reilly",
       "given": [
-        "Wilson",
-        "Haywood"
+        "Lynwood",
+        "Otis"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "504.203.4453 x1612",
+      "value": "231.136.8679 x7357",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "242-910-2578 x98366",
+      "value": "390.020.5113 x784",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-02-06",
-        "end": "2026-02-06"
+        "start": "2023-02-12",
+        "end": "2026-02-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-06-26",
-        "end": "2026-06-26"
+        "start": "2022-09-18",
+        "end": "2025-09-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

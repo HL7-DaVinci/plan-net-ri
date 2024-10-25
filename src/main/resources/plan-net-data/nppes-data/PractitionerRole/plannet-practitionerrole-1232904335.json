@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "d0b2c4ebe74ebc"
+      "value": "e2789403c9e072"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232904335",
-    "display": "Leighann Jones"
+    "display": "Christia Rath"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207SG0201X",
-          "display": "Clinical Genetics (M.D.)"
+          "display": "Clinical Genetics (M.D.) Physician"
         }
       ],
-      "text": "Clinical Genetics (M.D.)"
+      "text": "Clinical Genetics (M.D.) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(192) 377-5010 x745",
+      "value": "902-117-4191 x402",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "440.496.0258",
+      "value": "949-078-8543 x7052",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Boyle",
       "given": [
-        "Kristal"
+        "Star",
+        "Alida"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "507-102-1933 x438",
+      "value": "154-601-7830 x70095",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-441-750-9564 x167",
+      "value": "579.873.5276",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2023-07-10",
-        "end": "2026-07-10"
+        "start": "2024-01-28",
+        "end": "2027-01-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

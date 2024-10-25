@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mohr",
+      "family": "Rutherford",
       "given": [
-        "Eusebio",
-        "Jerald"
+        "Matt"
       ],
       "suffix": [
         "O.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "302.945.8285",
+      "value": "365-982-1539 x0216",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "831-751-6664 x93887",
+      "value": "1-695-611-6233 x636",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-11-28",
-        "end": "2025-11-28"
+        "start": "2023-04-23",
+        "end": "2026-04-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -206,8 +205,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-05-09",
-        "end": "2025-05-09"
+        "start": "2024-09-25",
+        "end": "2027-09-25"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

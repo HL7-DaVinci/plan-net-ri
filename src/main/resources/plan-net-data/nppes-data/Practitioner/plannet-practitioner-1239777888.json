@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dibbert",
+      "family": "Maggio",
       "given": [
-        "William"
+        "Luis",
+        "Loyd"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-524-926-4835",
+      "value": "552-378-2457 x4909",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-503-216-5827 x2920",
+      "value": "(675) 895-4299 x915",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-03-30",
-        "end": "2025-03-30"
+        "start": "2021-12-15",
+        "end": "2024-12-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

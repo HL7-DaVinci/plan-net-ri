@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "8341213e2e8263"
+      "value": "754e6e8b5425aa"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235935317",
-    "display": "Jamar Walter"
+    "display": "Monroe Gusikowski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2080N0001X",
-          "display": "Neonatal-Perinatal Medicine"
+          "display": "Neonatal-Perinatal Medicine Physician"
         }
       ],
-      "text": "Neonatal-Perinatal Medicine"
+      "text": "Neonatal-Perinatal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "931-412-7388",
+      "value": "243-589-8613 x34384",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "840.553.1822",
+      "value": "1-377-348-6610 x045",
       "use": "work"
     }
   ],

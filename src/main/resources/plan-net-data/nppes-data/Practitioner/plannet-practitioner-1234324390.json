@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gulgowski",
+      "family": "Friesen",
       "given": [
-        "Adolfo",
-        "Felipe"
+        "Domingo",
+        "Chas"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(891) 627-8427 x2549",
+      "value": "936-145-1782 x296",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-413-936-9266 x116",
+      "value": "1-830-348-5259 x3399",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-03-31",
-        "end": "2026-03-31"
+        "start": "2022-04-24",
+        "end": "2025-04-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QA0505X",
-            "display": "Adult Medicine"
+            "display": "Adult Medicine Physician"
           }
         ],
-        "text": "Adult Medicine"
+        "text": "Adult Medicine Physician"
       },
       "period": {
-        "start": "2022-09-21",
-        "end": "2025-09-21"
+        "start": "2024-04-29",
+        "end": "2027-04-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -239,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

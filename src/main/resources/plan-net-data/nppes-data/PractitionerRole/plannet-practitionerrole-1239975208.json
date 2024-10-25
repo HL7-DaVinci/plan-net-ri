@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "86ad01287ff032"
+      "value": "4101f3ab84f355"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239975208",
-    "display": "Jama Rempel"
+    "display": "Jay Gleichner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "913.781.2588 x605",
+      "value": "830-346-4218 x9986",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "945-270-6373",
+      "value": "262-572-7759 x56770",
       "use": "work"
     }
   ],

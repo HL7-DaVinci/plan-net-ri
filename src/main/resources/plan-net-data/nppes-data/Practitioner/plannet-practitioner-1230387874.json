@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Swaniawski",
+      "family": "McLaughlin",
       "given": [
-        "Rhonda",
-        "Patty"
+        "Dora"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "308.843.3820 x0617",
+      "value": "761-012-2078 x75084",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-706-628-8681 x39086",
+      "value": "1-598-265-8397",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-08-06",
-        "end": "2025-08-06"
+        "start": "2021-11-05",
+        "end": "2024-11-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2021-09-23",
-        "end": "2024-09-23"
+        "start": "2024-08-01",
+        "end": "2027-08-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -240,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

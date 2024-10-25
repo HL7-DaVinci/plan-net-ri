@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Blick",
+      "family": "Kovacek",
       "given": [
-        "Garth"
+        "Avery"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-815-499-4727 x8231",
+      "value": "1-102-131-4489 x543",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-148-571-8157 x3418",
+      "value": "(486) 503-0495 x4593",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-12",
-        "end": "2025-07-12"
+        "start": "2024-04-16",
+        "end": "2027-04-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

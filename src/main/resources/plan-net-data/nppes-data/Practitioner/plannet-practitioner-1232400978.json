@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Okuneva",
+      "family": "Hackett",
       "given": [
-        "Gus"
+        "Pat"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "902-243-2578 x40305",
+      "value": "(374) 187-1811 x8923",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-996-413-7433 x104",
+      "value": "(379) 645-2728 x7147",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-10-27",
-        "end": "2025-10-27"
+        "start": "2022-08-29",
+        "end": "2025-08-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

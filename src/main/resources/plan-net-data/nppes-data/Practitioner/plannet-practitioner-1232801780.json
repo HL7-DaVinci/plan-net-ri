@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rodriguez",
+      "family": "Kuhn",
       "given": [
-        "Camille",
-        "Mistie"
+        "Nona"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-607-760-1244 x1564",
+      "value": "997.660.8498 x88976",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(435) 478-3107 x379",
+      "value": "752.049.7874",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-10-11",
-        "end": "2024-10-11"
+        "start": "2023-06-23",
+        "end": "2026-06-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Beahan",
+      "family": "Wehner",
       "given": [
-        "Danny"
+        "Kendrick"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "967-861-4239 x70762",
+      "value": "121-203-3392 x46344",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(677) 683-4998 x444",
+      "value": "(660) 340-6636 x046",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-01-24",
-        "end": "2027-01-24"
+        "start": "2022-03-16",
+        "end": "2025-03-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

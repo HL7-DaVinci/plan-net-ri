@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "a5ef66a0cd791c"
+      "value": "9aeb9985216cee"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236749313",
-    "display": "Micah Cole"
+    "display": "Harry Brakus"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223P0300X",
-          "display": "Periodontics"
+          "display": "Periodontist"
         }
       ],
-      "text": "Periodontics"
+      "text": "Periodontist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "703-273-3565 x2480",
+      "value": "(865) 176-3980",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-485-008-1059 x36554",
+      "value": "431.160.0953 x848",
       "use": "work"
     }
   ],

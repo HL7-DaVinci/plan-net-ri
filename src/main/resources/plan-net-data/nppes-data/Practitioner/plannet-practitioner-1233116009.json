@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Muller",
+      "family": "Gibson",
       "given": [
-        "Garry"
+        "Jarrett"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(785) 815-1302 x933",
+      "value": "566.627.3928 x596",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(785) 400-7898 x06624",
+      "value": "121.438.5598 x93491",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-02-27",
-        "end": "2025-02-27"
+        "start": "2022-01-19",
+        "end": "2025-01-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

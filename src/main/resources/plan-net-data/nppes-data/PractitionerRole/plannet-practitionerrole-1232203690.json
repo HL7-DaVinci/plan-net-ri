@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "83332763c9fa5d"
+      "value": "362cb6832fdeb7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232203690",
-    "display": "Augustus Grant"
+    "display": "Dave Friesen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084P0805X",
-          "display": "Geriatric Psychiatry"
+          "display": "Geriatric Psychiatry Physician"
         }
       ],
-      "text": "Geriatric Psychiatry"
+      "text": "Geriatric Psychiatry Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "787-315-1150 x481",
+      "value": "1-366-409-5418 x56149",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-208-136-6654 x80450",
+      "value": "1-452-426-6677 x8698",
       "use": "work"
     }
   ],

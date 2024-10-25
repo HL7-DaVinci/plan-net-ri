@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koch",
+      "family": "Purdy",
       "given": [
-        "Omer",
-        "Rob"
+        "Ty"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "988-465-4646 x25883",
+      "value": "935.065.2219 x05412",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "847.769.7868",
+      "value": "936.640.7421 x330",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-06-06",
-        "end": "2025-06-06"
+        "start": "2022-04-22",
+        "end": "2025-04-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

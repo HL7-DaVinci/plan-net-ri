@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parisian",
+      "family": "Blanda",
       "given": [
-        "Ruthanne",
-        "Jaquelyn"
+        "Doloris"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-418-681-9946 x932",
+      "value": "(428) 416-2039 x92112",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "361.865.4032 x1230",
+      "value": "853-049-6107",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-11-08",
-        "end": "2026-11-08"
+        "start": "2022-11-15",
+        "end": "2025-11-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208M00000X",
-            "display": "Hospitalist"
+            "display": "Hospitalist Physician"
           }
         ],
-        "text": "Hospitalist"
+        "text": "Hospitalist Physician"
       },
       "period": {
-        "start": "2022-03-06",
-        "end": "2025-03-06"
+        "start": "2022-05-04",
+        "end": "2025-05-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

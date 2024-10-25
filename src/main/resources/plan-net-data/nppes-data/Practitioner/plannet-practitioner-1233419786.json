@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kozey",
+      "family": "Considine",
       "given": [
-        "Jamison"
+        "Chris",
+        "Danny"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "682.717.4848",
+      "value": "496.985.5033 x74005",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-814-537-6659 x1619",
+      "value": "(837) 063-7646 x535",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-06-22",
-        "end": "2026-06-22"
+        "start": "2023-07-01",
+        "end": "2026-07-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-05-02",
-        "end": "2026-05-02"
+        "start": "2021-11-17",
+        "end": "2024-11-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

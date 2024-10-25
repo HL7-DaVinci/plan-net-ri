@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Wolff",
       "given": [
-        "Alycia",
-        "Rheba"
+        "Charmaine",
+        "Elsie"
       ],
       "suffix": [
         "RD, CDN, CPT"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-172-034-2746",
+      "value": "(273) 230-8530 x4447",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "484-742-4435 x34377",
+      "value": "650.440.6008",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "133V00000X",
-            "display": "Dietitian, Registered"
+            "display": "Registered Dietitian"
           }
         ],
-        "text": "Dietitian, Registered"
+        "text": "Registered Dietitian"
       },
       "period": {
-        "start": "2023-11-20",
-        "end": "2026-11-20"
+        "start": "2023-09-19",
+        "end": "2026-09-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

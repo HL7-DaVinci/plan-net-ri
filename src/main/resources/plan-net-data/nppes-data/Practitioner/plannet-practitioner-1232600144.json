@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhlman",
+      "family": "Casper",
       "given": [
-        "Irwin",
-        "Terrence"
+        "Amos"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(497) 564-1393",
+      "value": "464.107.0328 x487",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-853-926-1135 x157",
+      "value": "1-641-135-3940 x93026",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2023-05-25",
-        "end": "2026-05-25"
+        "start": "2024-06-15",
+        "end": "2027-06-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

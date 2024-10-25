@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pacocha",
+      "family": "Swaniawski",
       "given": [
-        "Shayne"
+        "Colin"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "496-781-4817 x908",
+      "value": "(917) 357-8458 x880",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-434-426-2292 x628",
+      "value": "(656) 457-1285 x384",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2023-06-10",
-        "end": "2026-06-10"
+        "start": "2023-05-25",
+        "end": "2026-05-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

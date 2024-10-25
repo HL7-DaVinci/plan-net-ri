@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parisian",
+      "family": "Mosciski",
       "given": [
-        "Calvin"
+        "Lewis"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "668.565.0938 x11249",
+      "value": "318.103.2574 x4304",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "989.353.6985 x201",
+      "value": "1-337-721-0226 x166",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-03-30",
-        "end": "2025-03-30"
+        "start": "2023-08-08",
+        "end": "2026-08-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

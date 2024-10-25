@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Herzog",
+      "family": "Luettgen",
       "given": [
-        "Billie"
+        "Stuart",
+        "Jerald"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "439-801-1606",
+      "value": "941.542.0481 x97872",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "117.294.5195",
+      "value": "870-543-3350",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2024-05-17",
-        "end": "2027-05-17"
+        "start": "2022-01-26",
+        "end": "2025-01-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2023-04-28",
-        "end": "2026-04-28"
+        "start": "2023-02-08",
+        "end": "2026-02-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

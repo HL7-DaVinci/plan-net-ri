@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "006769d446f0bb"
+      "value": "892dfd2b59a275"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239176092",
-    "display": "Felisha Morissette"
+    "display": "Nelly Schuster"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "709.349.7973 x0440",
+      "value": "(370) 041-6656 x841",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "730-311-3594 x9414",
+      "value": "1-609-586-7542 x14083",
       "use": "work"
     }
   ],

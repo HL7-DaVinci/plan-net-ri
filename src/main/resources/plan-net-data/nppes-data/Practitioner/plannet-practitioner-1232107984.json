@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gutkowski",
+      "family": "Kirlin",
       "given": [
-        "Harry"
+        "Winston",
+        "Renato"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(723) 866-7098 x1173",
+      "value": "(499) 169-7037 x124",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(881) 895-4682",
+      "value": "873.871.9857 x713",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-10-10",
-        "end": "2025-10-10"
+        "start": "2023-11-16",
+        "end": "2026-11-16"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

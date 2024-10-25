@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Terry",
+      "family": "Huel",
       "given": [
-        "Pedro"
+        "Darrel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-952-255-5628 x122",
+      "value": "(988) 324-6126",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "165.705.7451 x8220",
+      "value": "(346) 262-1372 x793",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-02-06",
-        "end": "2026-02-06"
+        "start": "2024-05-12",
+        "end": "2027-05-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

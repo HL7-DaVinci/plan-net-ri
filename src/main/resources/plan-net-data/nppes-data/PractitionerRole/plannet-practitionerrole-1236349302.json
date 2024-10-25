@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "325e63a67888ee"
+      "value": "6391996530724e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236349302",
-    "display": "Barrett Hills"
+    "display": "Spencer Anderson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "290.721.5108 x1371",
+      "value": "(293) 292-6579 x9668",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "390.380.8845 x29232",
+      "value": "1-815-184-9999",
       "use": "work"
     }
   ],

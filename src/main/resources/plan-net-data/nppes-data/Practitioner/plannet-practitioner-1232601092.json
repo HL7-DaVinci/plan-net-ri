@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hessel",
+      "family": "Dooley",
       "given": [
-        "Trenton"
+        "Rafael",
+        "Barney"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "483.670.8562 x02727",
+      "value": "422-059-4094 x88043",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "436-238-9087 x375",
+      "value": "(726) 436-7489 x38089",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-09-25",
-        "end": "2026-09-25"
+        "start": "2021-12-05",
+        "end": "2024-12-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://discovery-house-utah.com",
-      "value": "ac13a7b25de03b"
+      "value": "bb58a0e02e4f9d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238762734",
-    "display": "Ellie Hodkiewicz"
+    "display": "Rosalva Grant"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237955733",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "230.775.0972 x0229",
+      "value": "(974) 845-7433 x5612",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "576.834.9865 x99192",
+      "value": "(245) 060-5578 x131",
       "use": "work"
     }
   ],

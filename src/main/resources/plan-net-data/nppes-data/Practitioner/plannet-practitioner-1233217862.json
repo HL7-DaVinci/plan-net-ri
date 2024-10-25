@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Armstrong",
+      "family": "Wiegand",
       "given": [
-        "Saul"
+        "Glenn",
+        "Marcelo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "681-541-1599 x46013",
+      "value": "974-175-2980 x332",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "528-582-8764 x044",
+      "value": "(602) 356-9183 x7158",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-12-15",
-        "end": "2025-12-15"
+        "start": "2024-08-02",
+        "end": "2027-08-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0204X",
-            "display": "Vascular and Interventional Radiology"
+            "display": "Vascular & Interventional Radiology Physician"
           }
         ],
-        "text": "Vascular and Interventional Radiology"
+        "text": "Vascular & Interventional Radiology Physician"
       },
       "period": {
-        "start": "2022-06-15",
-        "end": "2025-06-15"
+        "start": "2023-07-13",
+        "end": "2026-07-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

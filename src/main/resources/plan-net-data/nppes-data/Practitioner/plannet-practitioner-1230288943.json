@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Yundt",
+      "family": "Ratke",
       "given": [
-        "Antonio",
-        "Marcel"
+        "Santos"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "958.209.1277 x563",
+      "value": "(840) 740-1761 x8356",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "689-325-2996 x012",
+      "value": "1-597-333-1374 x8741",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2021-10-06",
-        "end": "2024-10-06"
+        "start": "2024-01-30",
+        "end": "2027-01-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

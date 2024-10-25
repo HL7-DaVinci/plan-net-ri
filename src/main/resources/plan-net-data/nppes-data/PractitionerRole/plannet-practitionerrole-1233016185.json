@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "cc3f466373f386"
+      "value": "a1a798571ca338"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233016185",
-    "display": "Steve D'Amore"
+    "display": "Weston Welch"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-325-670-2830 x942",
+      "value": "(359) 087-8340 x59300",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "222.501.7475 x550",
+      "value": "840-936-5824",
       "use": "work"
     }
   ],

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "a220bb6a552775"
+      "value": "2e57c61f88a611"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230389375",
-    "display": "Tiffani Ziemann"
+    "display": "Wendie Treutel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "865.624.4049",
+      "value": "(729) 705-0974 x754",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(474) 954-3509 x8816",
+      "value": "328-355-6631 x71257",
       "use": "work"
     }
   ],

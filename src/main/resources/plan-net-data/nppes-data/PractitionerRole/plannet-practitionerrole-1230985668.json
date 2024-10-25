@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "481d6437bb2a79"
+      "value": "19e415737f6af4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230985668",
-    "display": "Simon Farrell"
+    "display": "Tyron Harris"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(519) 734-9717 x49530",
+      "value": "707-368-1749",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-778-486-7919 x9602",
+      "value": "(228) 360-2800 x58493",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Towne",
+      "family": "Auer",
       "given": [
-        "Kelsie"
+        "Ranee",
+        "Valeri"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(491) 932-6182 x60456",
+      "value": "364-998-0445 x9176",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "823.248.4770 x302",
+      "value": "602-187-0217 x769",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2022-10-13",
-        "end": "2025-10-13"
+        "start": "2023-08-16",
+        "end": "2026-08-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

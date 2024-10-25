@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Windler",
+      "family": "Okuneva",
       "given": [
-        "Kia",
-        "My"
+        "Marlene",
+        "Refugia"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "423.671.6613 x40914",
+      "value": "(466) 256-2803",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "737.211.6888 x32012",
+      "value": "573.628.4196 x1396",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-03-23",
-        "end": "2026-03-23"
+        "start": "2022-05-02",
+        "end": "2025-05-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

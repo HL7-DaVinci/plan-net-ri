@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mitchell",
+      "family": "Collins",
       "given": [
-        "Ezra"
+        "Bruce"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "331-351-7983 x0850",
+      "value": "1-673-826-9726 x5174",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-919-985-5024 x3310",
+      "value": "1-447-735-4294 x520",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-10-22",
-        "end": "2026-10-22"
+        "start": "2021-12-15",
+        "end": "2024-12-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-07-13",
-        "end": "2025-07-13"
+        "start": "2023-02-03",
+        "end": "2026-02-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stamm",
+      "family": "Hodkiewicz",
       "given": [
-        "Chong",
-        "Moises"
+        "Carol"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "987-312-1015",
+      "value": "1-469-317-6780 x1865",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-856-820-4431 x90465",
+      "value": "1-272-805-8155",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-12-05",
-        "end": "2024-12-05"
+        "start": "2024-09-12",
+        "end": "2027-09-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

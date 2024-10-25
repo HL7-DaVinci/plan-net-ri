@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "e416cf8e6d3a37"
+      "value": "19d72d553bbec8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232400945",
-    "display": "Flo Cruickshank"
+    "display": "Yuko Parisian"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "297.421.4086 x71015",
+      "value": "(695) 977-3994 x3052",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(238) 405-8380 x256",
+      "value": "(988) 648-2105 x5338",
       "use": "work"
     }
   ],

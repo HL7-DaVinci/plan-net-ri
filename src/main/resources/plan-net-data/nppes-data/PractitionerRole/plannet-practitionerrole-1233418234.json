@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "53bf8ccb6553d4"
+      "value": "6bcb2296e45611"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233418234",
-    "display": "Yon Bosco"
+    "display": "Alyssa DuBuque"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "364-711-9031 x8787",
+      "value": "648-094-6949 x52454",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(332) 183-3233 x67487",
+      "value": "844.066.5086 x41175",
       "use": "work"
     }
   ],

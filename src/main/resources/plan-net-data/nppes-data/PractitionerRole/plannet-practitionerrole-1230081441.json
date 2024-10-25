@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://tollgate-sleep-disorders-center-inc.com",
-      "value": "86bb2ff47b6123"
+      "value": "e1a4f3b84e23a1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230081441",
-    "display": "Shawanna Greenholt"
+    "display": "Zita Tremblay"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238762106",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085N0904X",
-          "display": "Nuclear Radiology"
+          "display": "Nuclear Radiology Physician"
         }
       ],
-      "text": "Nuclear Radiology"
+      "text": "Nuclear Radiology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "456-690-2835 x766",
+      "value": "833-488-6576",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "382-302-9488 x958",
+      "value": "(336) 739-8660",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schmeler",
+      "family": "Gerlach",
       "given": [
-        "Maye",
-        "Alaina"
+        "Jammie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "850-157-1115",
+      "value": "(834) 353-2885 x640",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "618-688-6410 x77135",
+      "value": "936.960.6126 x1013",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0006X",
-            "display": "Developmental - Behavioral Pediatrics"
+            "display": "Developmental - Behavioral Pediatrics Physician"
           }
         ],
-        "text": "Developmental - Behavioral Pediatrics"
+        "text": "Developmental - Behavioral Pediatrics Physician"
       },
       "period": {
-        "start": "2022-09-29",
-        "end": "2025-09-29"
+        "start": "2023-07-06",
+        "end": "2026-07-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

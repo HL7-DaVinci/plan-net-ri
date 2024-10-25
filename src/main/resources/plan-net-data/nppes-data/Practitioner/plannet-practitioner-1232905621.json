@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "DuBuque",
+      "family": "Weimann",
       "given": [
-        "Mitchel"
+        "Josef",
+        "Mikel"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "613.039.3072",
+      "value": "1-401-796-2204 x7234",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(607) 166-5842 x5553",
+      "value": "1-203-292-9320",
       "use": "work"
     }
   ],
@@ -137,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-08-04",
-        "end": "2024-08-04"
+        "start": "2021-11-05",
+        "end": "2024-11-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

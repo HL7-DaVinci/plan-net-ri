@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Spencer",
+      "family": "Zulauf",
       "given": [
-        "Benton"
+        "Marvin",
+        "Jamal"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-874-664-1332 x2764",
+      "value": "943-199-8484",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "413-693-6428 x5907",
+      "value": "1-114-105-4893 x39054",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-04-10",
-        "end": "2027-04-10"
+        "start": "2024-01-31",
+        "end": "2027-01-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

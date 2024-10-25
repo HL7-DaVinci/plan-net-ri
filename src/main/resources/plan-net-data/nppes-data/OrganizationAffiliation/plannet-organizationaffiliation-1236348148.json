@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "34fa05526eaee4",
+      "value": "099ecf8c5e2edc",
       "assigner": {
         "display": "Hartford Connecticut HIE"
       }
@@ -41,16 +41,16 @@
       "display": "Green Circle of Connecticut HMO"
     },
     {
-      "reference": "Organization/plannet-network-HPID110000",
-      "display": "State of Connecticut HMO"
-    },
-    {
       "reference": "Organization/plannet-network-HPID130000",
       "display": "United Technologies Preferred Provider Network"
     },
     {
       "reference": "Organization/plannet-network-HPID060000",
       "display": "Connecticut Persona Preferred Provider Network"
+    },
+    {
+      "reference": "Organization/plannet-network-HPID110000",
+      "display": "State of Connecticut HMO"
     },
     {
       "reference": "Organization/plannet-network-HPID040000",

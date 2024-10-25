@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bednar",
+      "family": "O'Connell",
       "given": [
-        "Anthony"
+        "Elke",
+        "Layne"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "771.705.0432",
+      "value": "203.217.3386 x22896",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "917-179-7196 x733",
+      "value": "143-648-5015",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-07-13",
-        "end": "2026-07-13"
+        "start": "2023-11-06",
+        "end": "2026-11-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

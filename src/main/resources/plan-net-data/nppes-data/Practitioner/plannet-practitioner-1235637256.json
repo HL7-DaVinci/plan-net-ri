@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walsh",
+      "family": "Moen",
       "given": [
-        "Fatimah",
-        "Ardis"
+        "Tonette",
+        "Argelia"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-376-440-2257",
+      "value": "(425) 605-4905 x5421",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "659-118-8648 x45439",
+      "value": "450-898-2803",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2023-01-18",
-        "end": "2026-01-18"
+        "start": "2024-08-20",
+        "end": "2027-08-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Champlin",
+      "family": "Dare",
       "given": [
-        "Kiara",
-        "Clarisa"
+        "Marti"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "421.171.8719 x28700",
+      "value": "(924) 813-0635 x1273",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "820.402.7600",
+      "value": "203.982.9278 x5285",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2022-06-15",
-        "end": "2025-06-15"
+        "start": "2022-02-15",
+        "end": "2025-02-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Shanahan",
+      "family": "Cummings",
       "given": [
-        "Roderick"
+        "Rafael"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "396.836.3860 x0769",
+      "value": "1-954-752-9106 x137",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "617-996-4324 x698",
+      "value": "875-203-6693 x61127",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-04-13",
-        "end": "2026-04-13"
+        "start": "2023-07-19",
+        "end": "2026-07-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

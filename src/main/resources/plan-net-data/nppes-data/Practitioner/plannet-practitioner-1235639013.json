@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dietrich",
+      "family": "Raynor",
       "given": [
-        "Lacy"
+        "Alene"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "303-001-8649 x495",
+      "value": "332.190.1235",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(403) 246-7623 x600",
+      "value": "928.449.2977 x2119",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-10-11",
-        "end": "2024-10-11"
+        "start": "2022-10-19",
+        "end": "2025-10-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

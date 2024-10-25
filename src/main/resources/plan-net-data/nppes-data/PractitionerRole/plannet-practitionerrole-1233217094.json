@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://community-health-connections-inc.com",
-      "value": "af6d0e9a8bfab3"
+      "value": "a5da0ea1bd8e27"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233217094",
-    "display": "Alexis Goyette"
+    "display": "Ty Smith"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235630533",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "438-674-0404 x0786",
+      "value": "554.113.9669 x85049",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(429) 524-3982 x4817",
+      "value": "(517) 461-3414 x05194",
       "use": "work"
     }
   ],

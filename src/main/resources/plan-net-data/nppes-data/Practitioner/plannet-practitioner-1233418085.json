@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hayes",
+      "family": "Oberbrunner",
       "given": [
-        "Magdalene"
+        "Rosalyn"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "698.661.4019 x908",
+      "value": "691-864-3651 x0309",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-450-543-8461",
+      "value": "486-235-6339 x88241",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2023-05-21",
-        "end": "2026-05-21"
+        "start": "2022-12-16",
+        "end": "2025-12-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0221X",
-            "display": "Pediatric Dentistry"
+            "display": "Pediatric Dentist"
           }
         ],
-        "text": "Pediatric Dentistry"
+        "text": "Pediatric Dentist"
       },
       "period": {
-        "start": "2023-01-17",
-        "end": "2026-01-17"
+        "start": "2022-11-30",
+        "end": "2025-11-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -241,31 +241,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

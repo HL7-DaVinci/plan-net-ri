@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lehner",
+      "family": "Breitenberg",
       "given": [
-        "Erwin"
+        "Diego",
+        "Johnnie"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "243.149.2251 x997",
+      "value": "589.649.9472",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "294.153.8838 x226",
+      "value": "(273) 588-6031 x8470",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085N0700X",
-            "display": "Neuroradiology"
+            "display": "Neuroradiology Physician"
           }
         ],
-        "text": "Neuroradiology"
+        "text": "Neuroradiology Physician"
       },
       "period": {
-        "start": "2022-04-01",
-        "end": "2025-04-01"
+        "start": "2024-04-07",
+        "end": "2027-04-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-02-11",
-        "end": "2026-02-11"
+        "start": "2023-04-14",
+        "end": "2026-04-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -238,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

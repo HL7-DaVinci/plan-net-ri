@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "88ca4e2b743ec3"
+      "value": "569c1133254113"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233713257",
-    "display": "Marisol Crist"
+    "display": "Mirella Metz"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(695) 585-5598 x167",
+      "value": "1-792-142-1136",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-801-697-0952 x2481",
+      "value": "1-572-545-2530 x2047",
       "use": "work"
     }
   ],

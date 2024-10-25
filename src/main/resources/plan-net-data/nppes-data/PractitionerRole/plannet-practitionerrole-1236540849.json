@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "ebeeac8a986723"
+      "value": "138c2dd1f445ff"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236540849",
-    "display": "Aurore Marvin"
+    "display": "Delora Wisoky"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(445) 430-5578 x1673",
+      "value": "1-981-019-9567 x72046",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(158) 030-2910 x6183",
+      "value": "906-594-7614",
       "use": "work"
     }
   ],

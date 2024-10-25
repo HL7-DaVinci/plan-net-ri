@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Quigley",
+      "family": "Dach",
       "given": [
-        "Brenton"
+        "Junior",
+        "Andrew"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(614) 767-7204",
+      "value": "546.879.0353 x08726",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-400-627-7685",
+      "value": "(790) 009-9326 x39079",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-06-16",
-        "end": "2026-06-16"
+        "start": "2023-04-03",
+        "end": "2026-04-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

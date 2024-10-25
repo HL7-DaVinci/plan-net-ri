@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Barton",
+      "family": "Smitham",
       "given": [
-        "Jackson"
+        "Hiram"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "141-511-4525 x560",
+      "value": "(684) 328-3241 x0479",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-848-081-0378 x2023",
+      "value": "1-199-126-4628",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-11-24",
-        "end": "2025-11-24"
+        "start": "2023-03-03",
+        "end": "2026-03-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

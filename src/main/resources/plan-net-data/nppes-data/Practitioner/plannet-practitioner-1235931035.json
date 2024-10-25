@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ondricka",
+      "family": "Gerhold",
       "given": [
-        "Virgil",
-        "Brett"
+        "Dwight",
+        "Reggie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(730) 638-9101",
+      "value": "724.248.0043",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-488-724-3250",
+      "value": "101.412.3210 x547",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-06-24",
-        "end": "2027-06-24"
+        "start": "2021-11-15",
+        "end": "2024-11-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "cbbce50d272a85"
+      "value": "3d42f76d4b241a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232506780",
-    "display": "Tameka Konopelski"
+    "display": "Dusti Emmerich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-944-303-0201 x65166",
+      "value": "1-769-122-3928",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-114-415-9620",
+      "value": "1-134-851-5002 x81963",
       "use": "work"
     }
   ],

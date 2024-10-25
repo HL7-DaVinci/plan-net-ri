@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "62325c68510790"
+      "value": "72fe3ffbd22066"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231596544",
-    "display": "Eugene Weimann"
+    "display": "Cecil Anderson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "376-407-4366",
+      "value": "(354) 868-7600 x15780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(868) 076-7703",
+      "value": "716.178.9824 x34764",
       "use": "work"
     }
   ],

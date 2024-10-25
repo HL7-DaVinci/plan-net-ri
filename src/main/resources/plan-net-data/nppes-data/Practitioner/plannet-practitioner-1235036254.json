@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kris",
+      "family": "Heaney",
       "given": [
-        "Harland",
-        "Riley"
+        "Omar"
       ],
       "suffix": [
         "PHD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-795-129-4371",
+      "value": "1-660-672-0628 x55472",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-864-879-5054 x33253",
+      "value": "(995) 706-4811",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2023-07-24",
-        "end": "2026-07-24"
+        "start": "2024-09-06",
+        "end": "2027-09-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

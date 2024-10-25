@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "81abe7e350d747"
+      "value": "e6e7f2efe51c70"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230182791",
-    "display": "Debora Morissette"
+    "display": "Mayme Rath"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "834.281.1527 x77032",
+      "value": "387.815.2205 x4238",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(247) 596-6906",
+      "value": "976-554-4173 x600",
       "use": "work"
     }
   ],

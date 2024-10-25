@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Deckow",
+      "family": "Gleason",
       "given": [
-        "Clayton",
-        "Mason"
+        "Geraldo"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-609-107-7943 x83839",
+      "value": "703-420-8673 x750",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(434) 118-1577",
+      "value": "(352) 031-3692",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2022-10-31",
-        "end": "2025-10-31"
+        "start": "2024-06-30",
+        "end": "2027-06-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

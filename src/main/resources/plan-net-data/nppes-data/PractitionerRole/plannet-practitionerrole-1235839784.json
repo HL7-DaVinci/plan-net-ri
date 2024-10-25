@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "2f29789cfd4970"
+      "value": "fb1c1e74ed8dfd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235839784",
-    "display": "Sharleen Bashirian"
+    "display": "Jeremy Deckow"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207QS0010X",
-          "display": "Sports Medicine"
+          "display": "Sports Medicine (Family Medicine) Physician"
         }
       ],
-      "text": "Sports Medicine"
+      "text": "Sports Medicine (Family Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "863-068-5059",
+      "value": "785-714-5906",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "134.377.3252 x4666",
+      "value": "(830) 218-3052 x02064",
       "use": "work"
     }
   ],

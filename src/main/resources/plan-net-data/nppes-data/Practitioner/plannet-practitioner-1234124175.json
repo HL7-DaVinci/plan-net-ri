@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Carroll",
+      "family": "Schowalter",
       "given": [
-        "Merri",
-        "Roxanne"
+        "Dori"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(932) 323-1748 x566",
+      "value": "(843) 717-7193 x39147",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(687) 929-1477 x7596",
+      "value": "(701) 526-3682 x52455",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2022-07-17",
-        "end": "2025-07-17"
+        "start": "2021-11-07",
+        "end": "2024-11-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

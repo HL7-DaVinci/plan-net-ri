@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "1f919a519227c3"
+      "value": "a66f0c6fdea6d6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230983663",
-    "display": "Cristopher Huel"
+    "display": "Conrad Koelpin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "411.572.1596 x97043",
+      "value": "234-731-4401 x87987",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-201-090-5568 x765",
+      "value": "(267) 470-3910 x157",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "0bebb1ddda394c"
+      "value": "24663874c590cf"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235633800",
-    "display": "Hong Kohler"
+    "display": "Toney Cole"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(114) 904-3350 x0886",
+      "value": "(726) 526-1948",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(614) 457-0606 x35742",
+      "value": "(862) 018-4211 x786",
       "use": "work"
     }
   ],

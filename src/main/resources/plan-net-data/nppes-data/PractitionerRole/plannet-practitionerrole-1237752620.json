@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "1c52965011fca6"
+      "value": "35bbec4a453b76"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237752620",
-    "display": "Edmond Stehr"
+    "display": "Clemente Larson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "808.876.9474 x08216",
+      "value": "760.073.3734",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-422-772-7353 x8746",
+      "value": "1-157-109-5796 x075",
       "use": "work"
     }
   ],

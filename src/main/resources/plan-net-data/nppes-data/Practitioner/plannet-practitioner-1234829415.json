@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Grady",
+      "family": "Conroy",
       "given": [
-        "Antonio"
+        "Garland"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "342-233-1394 x4725",
+      "value": "(544) 225-5568 x072",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "785-615-0860 x317",
+      "value": "377-205-9292 x86499",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2081P2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Physical Medicine & Rehabilitation) Physician"
       },
       "period": {
-        "start": "2021-12-12",
-        "end": "2024-12-12"
+        "start": "2022-07-02",
+        "end": "2025-07-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

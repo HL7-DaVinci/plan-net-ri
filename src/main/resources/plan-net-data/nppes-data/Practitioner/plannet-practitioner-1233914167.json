@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Casper",
+      "family": "Bradtke",
       "given": [
-        "Nigel"
+        "Javier",
+        "Nestor"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(910) 804-4488",
+      "value": "457.430.6660 x36865",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(115) 890-3479 x71146",
+      "value": "1-165-253-7244 x3312",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-02-07",
-        "end": "2026-02-07"
+        "start": "2022-10-16",
+        "end": "2025-10-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-08-18",
-        "end": "2024-08-18"
+        "start": "2024-09-14",
+        "end": "2027-09-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -261,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

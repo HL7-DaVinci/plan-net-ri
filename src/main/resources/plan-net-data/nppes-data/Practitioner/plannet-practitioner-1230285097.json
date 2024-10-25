@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Durgan",
+      "family": "Dooley",
       "given": [
-        "Almeda",
-        "Karleen"
+        "Carylon"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-250-162-4851",
+      "value": "841-800-4006 x2134",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "891.763.6791 x353",
+      "value": "(593) 981-3568 x728",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2021-11-01",
-        "end": "2024-11-01"
+        "start": "2024-03-16",
+        "end": "2027-03-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

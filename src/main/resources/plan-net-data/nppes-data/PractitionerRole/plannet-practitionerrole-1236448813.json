@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "c1412fe0e25817"
+      "value": "e61d3acbc52f21"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236448813",
-    "display": "Avery Torphy"
+    "display": "Terence Christiansen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZB0001X",
-          "display": "Blood Banking and Transfusion Medicine"
+          "display": "Blood Banking & Transfusion Medicine Physician"
         }
       ],
-      "text": "Blood Banking and Transfusion Medicine"
+      "text": "Blood Banking & Transfusion Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "312-343-8347 x85475",
+      "value": "487.602.1010 x019",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "545-150-2776 x34595",
+      "value": "1-891-328-8131 x18128",
       "use": "work"
     }
   ],

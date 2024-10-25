@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "af01f14933bd33"
+      "value": "dff3092589ced8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236549477",
-    "display": "Devora Thiel"
+    "display": "Qiana Marquardt"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "825-092-6122 x3105",
+      "value": "444.383.8836",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-867-405-3955 x252",
+      "value": "(873) 527-2898 x75337",
       "use": "work"
     }
   ],

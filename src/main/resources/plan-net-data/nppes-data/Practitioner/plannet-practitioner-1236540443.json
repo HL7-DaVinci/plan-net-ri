@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jones",
+      "family": "Smith",
       "given": [
-        "Alphonse",
-        "Lou"
+        "Moshe",
+        "Charlie"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-700-657-3297",
+      "value": "244.318.1543 x1944",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-930-261-7460 x57287",
+      "value": "390-305-5398",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2023-12-02",
-        "end": "2026-12-02"
+        "start": "2024-07-06",
+        "end": "2027-07-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

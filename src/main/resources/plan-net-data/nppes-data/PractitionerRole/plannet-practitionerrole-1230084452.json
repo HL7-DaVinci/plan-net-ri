@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "8d8ce35ffdd04a"
+      "value": "4399aa169b235b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230084452",
-    "display": "Necole O'Connell"
+    "display": "Eliza Turner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2200X",
-          "display": "Adult Health"
+          "display": "Adult Health Nurse Practitioner"
         }
       ],
-      "text": "Adult Health"
+      "text": "Adult Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "905-481-1575",
+      "value": "1-595-380-4957 x6956",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "626-324-1172",
+      "value": "247-512-2833 x6603",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Collins",
+      "family": "Lubowitz",
       "given": [
-        "Andre",
-        "Clinton"
+        "Ali"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "261.766.1536 x928",
+      "value": "1-414-857-4761 x1214",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-559-486-2391 x5938",
+      "value": "(118) 203-0895 x043",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207T00000X",
-            "display": "Neurological Surgery"
+            "display": "Neurological Surgery Physician"
           }
         ],
-        "text": "Neurological Surgery"
+        "text": "Neurological Surgery Physician"
       },
       "period": {
-        "start": "2021-08-31",
-        "end": "2024-08-31"
+        "start": "2022-06-13",
+        "end": "2025-06-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

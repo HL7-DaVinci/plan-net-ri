@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID080000",
+        "display": "Green Circle of Rhode Island HMO"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://codac-inc.com",
-      "value": "e30c1f8d1c580f"
+      "value": "b61b6a9f8402a9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234424230",
-    "display": "Marlon Quitzon"
+    "display": "Harry Abbott"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235731321",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-475-219-2158 x4520",
+      "value": "234-510-6475",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "617.426.7200 x41757",
+      "value": "1-370-871-7741",
       "use": "work"
     }
   ],

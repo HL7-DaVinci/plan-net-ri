@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turner",
+      "family": "Cummerata",
       "given": [
-        "Vonda"
+        "Sadye",
+        "Nichol"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "131-866-2476",
+      "value": "775.774.7133",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(357) 827-6296 x72288",
+      "value": "1-299-068-0388 x41445",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-01-12",
-        "end": "2027-01-12"
+        "start": "2024-05-01",
+        "end": "2027-05-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

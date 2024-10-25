@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "4c1fcd54ec860e"
+      "value": "cb3073a35f6517"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236741658",
-    "display": "Tommye Shanahan"
+    "display": "Frankie Rowe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "636-215-8411 x2912",
+      "value": "993-206-1820 x81998",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(870) 958-9641 x78119",
+      "value": "857.918.7742",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stamm",
+      "family": "Friesen",
       "given": [
-        "Billy"
+        "Antoine",
+        "Avery"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(587) 546-4635",
+      "value": "950-797-7929 x085",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "623-900-4127 x4615",
+      "value": "722.867.6073",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2022-06-13",
-        "end": "2025-06-13"
+        "start": "2023-06-03",
+        "end": "2026-06-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Farrell",
+      "family": "Reichel",
       "given": [
-        "Robin"
+        "Jody",
+        "Frankie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(734) 411-3761 x04121",
+      "value": "(177) 341-5023 x992",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(273) 576-5904",
+      "value": "370.466.6866",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VX0201X",
-            "display": "Gynecologic Oncology"
+            "display": "Gynecologic Oncology Physician"
           }
         ],
-        "text": "Gynecologic Oncology"
+        "text": "Gynecologic Oncology Physician"
       },
       "period": {
-        "start": "2024-03-08",
-        "end": "2027-03-08"
+        "start": "2023-02-16",
+        "end": "2026-02-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

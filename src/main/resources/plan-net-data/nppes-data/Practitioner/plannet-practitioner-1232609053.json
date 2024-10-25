@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnston",
+      "family": "Medhurst",
       "given": [
-        "Rolland"
+        "Glenn",
+        "Shelton"
       ],
       "suffix": [
         "MA, LMFT"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(215) 305-7201 x989",
+      "value": "1-701-778-8721 x08322",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(295) 009-9821 x483",
+      "value": "1-849-227-4863",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "106H00000X",
-            "display": "Marriage and Family Therapist"
+            "display": "Marriage & Family Therapist"
           }
         ],
-        "text": "Marriage and Family Therapist"
+        "text": "Marriage & Family Therapist"
       },
       "period": {
-        "start": "2021-09-14",
-        "end": "2024-09-14"
+        "start": "2024-03-09",
+        "end": "2027-03-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

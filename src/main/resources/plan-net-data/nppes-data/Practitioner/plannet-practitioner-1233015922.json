@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cremin",
+      "family": "Goodwin",
       "given": [
-        "Yuki"
+        "Adina"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-298-942-0858 x22261",
+      "value": "756-185-6821 x55346",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-717-057-1776 x8232",
+      "value": "(851) 433-5894 x92509",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2024-02-28",
-        "end": "2027-02-28"
+        "start": "2023-05-26",
+        "end": "2026-05-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

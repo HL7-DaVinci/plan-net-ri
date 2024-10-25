@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "540b37ce5e0e5c"
+      "value": "21fd47333d6c3d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237751499",
-    "display": "Columbus MacGyver"
+    "display": "Omer Daugherty"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-771-245-4798 x0685",
+      "value": "215.403.4843",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-150-178-3534 x48877",
+      "value": "1-214-799-7350",
       "use": "work"
     }
   ],

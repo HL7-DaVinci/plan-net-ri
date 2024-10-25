@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "69f6a4b10b18e6"
+      "value": "1f4aac1a703b82"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239172240",
-    "display": "Rona Cummings"
+    "display": "Katrice Kassulke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(489) 755-8680 x906",
+      "value": "817-083-7090 x486",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "643.816.5622",
+      "value": "217-482-1955 x895",
       "use": "work"
     }
   ],

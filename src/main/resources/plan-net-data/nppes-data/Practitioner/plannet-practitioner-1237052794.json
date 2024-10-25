@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Brown",
+      "family": "McKenzie",
       "given": [
-        "Suzy",
-        "Wava"
+        "Nerissa"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(214) 932-9570",
+      "value": "932-945-9439",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "423-415-8347 x082",
+      "value": "854.985.7795 x817",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-09-07",
-        "end": "2024-09-07"
+        "start": "2022-09-20",
+        "end": "2025-09-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

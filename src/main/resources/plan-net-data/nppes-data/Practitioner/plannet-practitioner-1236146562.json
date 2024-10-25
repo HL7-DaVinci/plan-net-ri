@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gusikowski",
+      "family": "Mayert",
       "given": [
-        "Brian"
+        "Hung",
+        "Gino"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-762-275-4286 x48584",
+      "value": "491-585-7049 x305",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "672.837.7196 x355",
+      "value": "1-615-119-3596 x6604",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-07-21",
-        "end": "2025-07-21"
+        "start": "2022-04-20",
+        "end": "2025-04-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

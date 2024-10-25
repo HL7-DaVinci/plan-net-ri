@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schinner",
+      "family": "Kohler",
       "given": [
-        "Linnie"
+        "Ryan",
+        "Cuc"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "563-091-8213 x41340",
+      "value": "933.680.3928 x26542",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(118) 740-1007 x0767",
+      "value": "(339) 903-1082 x97870",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2022-08-14",
-        "end": "2025-08-14"
+        "start": "2023-04-07",
+        "end": "2026-04-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

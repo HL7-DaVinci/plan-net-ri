@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Murphy",
+      "family": "Emmerich",
       "given": [
-        "Werner"
+        "Deandre",
+        "Lorenzo"
       ],
       "suffix": [
         "CPO"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "723-294-3422",
+      "value": "384.287.7918 x457",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "457-679-3142 x906",
+      "value": "(892) 854-7222 x259",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1744P3200X",
-            "display": "Prosthetics Case Management"
+            "display": " Prosthetics Case Management"
           }
         ],
-        "text": "Prosthetics Case Management"
+        "text": " Prosthetics Case Management"
       },
       "period": {
-        "start": "2024-02-05",
-        "end": "2027-02-05"
+        "start": "2022-03-20",
+        "end": "2025-03-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

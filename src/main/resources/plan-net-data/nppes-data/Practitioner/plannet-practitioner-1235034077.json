@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zboncak",
+      "family": "Schuster",
       "given": [
-        "Doloris"
+        "Leslee",
+        "Palmira"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "867.096.6539 x768",
+      "value": "528-215-7595",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-125-149-1197 x70983",
+      "value": "(411) 897-3689",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-02-15",
-        "end": "2025-02-15"
+        "start": "2023-10-12",
+        "end": "2026-10-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

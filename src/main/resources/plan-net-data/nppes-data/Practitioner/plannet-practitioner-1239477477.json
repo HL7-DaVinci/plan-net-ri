@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhn",
+      "family": "Rogahn",
       "given": [
-        "Henry",
-        "Osvaldo"
+        "Wesley"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "393-539-9230 x05625",
+      "value": "1-248-461-5263 x94053",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "840.919.6992",
+      "value": "(600) 233-7613 x4464",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-01-10",
-        "end": "2025-01-10"
+        "start": "2023-12-17",
+        "end": "2026-12-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

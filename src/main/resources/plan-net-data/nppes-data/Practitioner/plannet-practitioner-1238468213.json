@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Paucek",
+      "family": "Hahn",
       "given": [
-        "Jamal"
+        "Daryl",
+        "Vincent"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "950-807-7199 x46603",
+      "value": "(750) 696-5718",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "646-758-8124 x8305",
+      "value": "1-614-264-4730 x1210",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-05-14",
-        "end": "2027-05-14"
+        "start": "2024-10-22",
+        "end": "2027-10-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

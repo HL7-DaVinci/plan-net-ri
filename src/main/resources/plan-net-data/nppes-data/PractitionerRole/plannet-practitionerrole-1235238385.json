@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "cf3ca94fcec9bb"
+      "value": "300633d0166649"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235238385",
-    "display": "Hipolito Boyle"
+    "display": "Jake Rippin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-379-450-5611 x40369",
+      "value": "309.026.0103",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-519-537-2548 x5063",
+      "value": "(324) 420-4869",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "0b72ff3ad7f282"
+      "value": "976d092b9905e9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233811357",
-    "display": "Norbert Marks"
+    "display": "Ivan Renner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "740-320-0341",
+      "value": "324.980.0697",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(533) 365-7728 x8762",
+      "value": "1-167-681-1669 x92354",
       "use": "work"
     }
   ],

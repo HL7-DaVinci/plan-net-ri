@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beier",
+      "family": "Padberg",
       "given": [
-        "Timothy"
+        "Terry",
+        "Erin"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "942-842-6475 x24756",
+      "value": "589.001.3071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "502-910-6807 x0995",
+      "value": "158-587-1669 x323",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-04-26",
-        "end": "2026-04-26"
+        "start": "2024-05-22",
+        "end": "2027-05-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

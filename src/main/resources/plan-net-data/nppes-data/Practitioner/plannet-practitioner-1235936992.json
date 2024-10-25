@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Block",
+      "family": "Predovic",
       "given": [
-        "Roosevelt"
+        "Van",
+        "Jamison"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "520-478-1034 x468",
+      "value": "(351) 032-1679",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "869.115.7074 x153",
+      "value": "602-964-8756 x422",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-07-17",
-        "end": "2026-07-17"
+        "start": "2022-04-24",
+        "end": "2025-04-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0106X",
-            "display": "Hand Surgery"
+            "display": "Orthopaedic Hand Surgery Physician"
           }
         ],
-        "text": "Hand Surgery"
+        "text": "Orthopaedic Hand Surgery Physician"
       },
       "period": {
-        "start": "2022-07-11",
-        "end": "2025-07-11"
+        "start": "2024-08-07",
+        "end": "2027-08-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -264,14 +265,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-12-05",
-        "end": "2026-12-05"
+        "start": "2023-07-31",
+        "end": "2026-07-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -323,11 +324,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

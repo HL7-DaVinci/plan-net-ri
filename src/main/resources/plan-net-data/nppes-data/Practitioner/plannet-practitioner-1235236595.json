@@ -34,8 +34,7 @@
       "use": "official",
       "family": "Ledner",
       "given": [
-        "Peggie",
-        "Gaylene"
+        "Richard"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(764) 409-1166 x241",
+      "value": "(302) 522-7395",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(629) 941-5565 x788",
+      "value": "1-915-289-6742 x41063",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2021-08-07",
-        "end": "2024-08-07"
+        "start": "2024-03-04",
+        "end": "2027-03-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

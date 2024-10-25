@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Grant",
+      "family": "Friesen",
       "given": [
-        "Augustus"
+        "Dave"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "787-315-1150 x481",
+      "value": "1-366-409-5418 x56149",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-208-136-6654 x80450",
+      "value": "1-452-426-6677 x8698",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0805X",
-            "display": "Geriatric Psychiatry"
+            "display": "Geriatric Psychiatry Physician"
           }
         ],
-        "text": "Geriatric Psychiatry"
+        "text": "Geriatric Psychiatry Physician"
       },
       "period": {
-        "start": "2022-10-24",
-        "end": "2025-10-24"
+        "start": "2024-04-09",
+        "end": "2027-04-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0805X",
-            "display": "Geriatric Psychiatry"
+            "display": "Geriatric Psychiatry Physician"
           }
         ],
-        "text": "Geriatric Psychiatry"
+        "text": "Geriatric Psychiatry Physician"
       },
       "period": {
-        "start": "2023-10-09",
-        "end": "2026-10-09"
+        "start": "2022-06-29",
+        "end": "2025-06-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -266,14 +266,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0805X",
-            "display": "Geriatric Psychiatry"
+            "display": "Geriatric Psychiatry Physician"
           }
         ],
-        "text": "Geriatric Psychiatry"
+        "text": "Geriatric Psychiatry Physician"
       },
       "period": {
-        "start": "2023-03-05",
-        "end": "2026-03-05"
+        "start": "2024-05-07",
+        "end": "2027-05-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -325,11 +325,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "e48baa893ac7d7"
+      "value": "cfbee1300d5b9e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231192301",
-    "display": "Norberto Lockman"
+    "display": "Rudy Ebert"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0001X",
-          "display": "Radiation Oncology"
+          "display": "Radiation Oncology Physician"
         }
       ],
-      "text": "Radiation Oncology"
+      "text": "Radiation Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(318) 648-1371 x290",
+      "value": "791-204-4426 x53076",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-962-817-4731 x1562",
+      "value": "1-177-988-2716 x409",
       "use": "work"
     }
   ],

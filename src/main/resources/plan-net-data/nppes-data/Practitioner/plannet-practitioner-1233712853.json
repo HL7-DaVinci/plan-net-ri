@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Barrows",
+      "family": "Thompson",
       "given": [
-        "Sue",
-        "Lizeth"
+        "Sharlene"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-108-478-8017",
+      "value": "898.187.4038 x988",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "895.493.8014 x046",
+      "value": "(267) 487-9631 x7339",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-08-23",
-        "end": "2026-08-23"
+        "start": "2022-03-13",
+        "end": "2025-03-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-17",
-        "end": "2025-07-17"
+        "start": "2022-06-07",
+        "end": "2025-06-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -240,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

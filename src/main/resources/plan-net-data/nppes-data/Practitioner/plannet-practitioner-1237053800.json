@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "DuBuque",
+      "family": "Schaefer",
       "given": [
-        "Mona"
+        "Esta",
+        "Ola"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "845.053.3853 x9779",
+      "value": "1-295-081-8029 x37663",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "314.373.8602",
+      "value": "798-200-2369 x73046",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-03-18",
-        "end": "2027-03-18"
+        "start": "2022-09-26",
+        "end": "2025-09-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Paucek",
+      "family": "Schneider",
       "given": [
-        "Ophelia"
+        "Nona"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-927-051-3505",
+      "value": "1-407-300-4646",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(740) 847-5406",
+      "value": "361-217-8811",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-11-16",
-        "end": "2026-11-16"
+        "start": "2023-03-01",
+        "end": "2026-03-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

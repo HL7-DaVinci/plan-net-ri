@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Oberbrunner",
+      "family": "Swift",
       "given": [
-        "Bryce"
+        "Everette",
+        "Faustino"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "208.439.6438",
+      "value": "156-667-7910 x0780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "624.590.6858",
+      "value": "(905) 922-6638",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2021-08-01",
-        "end": "2024-08-01"
+        "start": "2023-10-29",
+        "end": "2026-10-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

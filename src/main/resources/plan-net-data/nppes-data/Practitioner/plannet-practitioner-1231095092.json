@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hessel",
+      "family": "Auer",
       "given": [
-        "Isiah",
-        "Wilber"
+        "Markus",
+        "Sal"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "624-639-7547 x24162",
+      "value": "1-868-425-6724",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-657-665-6193",
+      "value": "1-683-795-2959 x46879",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-11-11",
-        "end": "2025-11-11"
+        "start": "2022-05-21",
+        "end": "2025-05-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

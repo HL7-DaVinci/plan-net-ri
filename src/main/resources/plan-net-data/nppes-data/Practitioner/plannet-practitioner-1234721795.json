@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfeffer",
+      "family": "Glover",
       "given": [
-        "Pedro",
-        "Johnnie"
+        "Chet",
+        "Solomon"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(183) 854-0587 x0045",
+      "value": "1-469-483-1442 x273",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-622-556-3872",
+      "value": "(559) 080-8355",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223X0400X",
-            "display": "Orthodontics and Dentofacial Orthopedics"
+            "display": "Orthodontics and Dentofacial Orthopedic Dentist"
           }
         ],
-        "text": "Orthodontics and Dentofacial Orthopedics"
+        "text": "Orthodontics and Dentofacial Orthopedic Dentist"
       },
       "period": {
-        "start": "2024-02-15",
-        "end": "2027-02-15"
+        "start": "2023-11-05",
+        "end": "2026-11-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Towne",
+      "family": "Armstrong",
       "given": [
-        "Valentina",
-        "Angie"
+        "Floria"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "317.308.9301 x21800",
+      "value": "476-032-7050 x72365",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-602-625-7161",
+      "value": "896-203-8020 x717",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-04-12",
-        "end": "2026-04-12"
+        "start": "2023-01-11",
+        "end": "2026-01-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

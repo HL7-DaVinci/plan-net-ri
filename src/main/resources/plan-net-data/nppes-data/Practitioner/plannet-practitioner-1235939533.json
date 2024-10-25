@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dach",
+      "family": "Greenholt",
       "given": [
-        "Salvador",
-        "Carlos"
+        "Will"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "672.155.1374 x039",
+      "value": "(137) 405-8922 x883",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-957-731-4895 x929",
+      "value": "706-374-0481 x04873",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-05-26",
-        "end": "2026-05-26"
+        "start": "2022-06-09",
+        "end": "2025-06-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

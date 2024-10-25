@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b6b39c81de8b3a"
+      "value": "2835bfb36b8ef8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230888021",
-    "display": "Brandy Weber"
+    "display": "Carey Cronin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AM0700X",
-          "display": "Medical"
+          "display": "Medical Physician Assistant"
         }
       ],
-      "text": "Medical"
+      "text": "Medical Physician Assistant"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-704-476-0878",
+      "value": "414-801-8460",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(303) 538-8060",
+      "value": "943.791.2224 x5858",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bergnaum",
+      "family": "Thiel",
       "given": [
-        "Kip",
-        "Mikel"
+        "Willy",
+        "Frederic"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "222-605-9803 x65689",
+      "value": "724.018.8516 x0707",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(768) 417-1960",
+      "value": "901-084-5414 x8954",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-12-06",
-        "end": "2026-12-06"
+        "start": "2022-12-29",
+        "end": "2025-12-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

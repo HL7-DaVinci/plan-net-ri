@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kling",
+      "family": "Auer",
       "given": [
-        "Eldon"
+        "Brooks",
+        "Sebastian"
       ],
       "suffix": [
         "PH.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "289-933-3636 x08638",
+      "value": "(414) 806-4752 x40074",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "517-953-9947 x93957",
+      "value": "407-330-2821 x655",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2023-02-06",
-        "end": "2026-02-06"
+        "start": "2022-04-06",
+        "end": "2025-04-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

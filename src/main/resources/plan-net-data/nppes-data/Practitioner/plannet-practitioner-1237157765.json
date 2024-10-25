@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Klein",
+      "family": "Turcotte",
       "given": [
-        "Gerry",
-        "Martin"
+        "Perry"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "261.243.6041 x54655",
+      "value": "945.001.5418",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-992-827-2913 x545",
+      "value": "545.408.9385 x8320",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-05-10",
-        "end": "2027-05-10"
+        "start": "2022-09-14",
+        "end": "2025-09-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-10-13",
-        "end": "2026-10-13"
+        "start": "2023-03-23",
+        "end": "2026-03-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

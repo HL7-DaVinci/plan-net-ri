@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Casper",
+      "family": "Tillman",
       "given": [
-        "Delmar",
-        "Rafael"
+        "Eduardo"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "773-745-2230 x400",
+      "value": "(934) 644-8048 x989",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "399.288.3866",
+      "value": "757-326-4690 x41799",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2021-12-26",
-        "end": "2024-12-26"
+        "start": "2023-12-21",
+        "end": "2026-12-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

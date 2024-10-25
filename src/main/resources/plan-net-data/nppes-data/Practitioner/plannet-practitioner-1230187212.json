@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Klocko",
       "given": [
-        "Alvin",
-        "Lance"
+        "Manuel",
+        "Mickey"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(736) 877-2450 x9609",
+      "value": "(443) 643-6304 x05782",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "945.948.7756 x46885",
+      "value": "(798) 020-9819 x72348",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-10-05",
-        "end": "2026-10-05"
+        "start": "2021-12-20",
+        "end": "2024-12-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

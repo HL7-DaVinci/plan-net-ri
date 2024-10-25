@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Leuschke",
+      "family": "Murphy",
       "given": [
-        "Anne",
-        "Yasmin"
+        "Launa",
+        "Liliana"
       ],
       "suffix": [
         "MS CCC-SLP"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(715) 505-7079",
+      "value": "645-932-1777 x140",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "115.893.4922 x74989",
+      "value": "1-415-002-4208",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2022-10-05",
-        "end": "2025-10-05"
+        "start": "2022-12-07",
+        "end": "2025-12-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

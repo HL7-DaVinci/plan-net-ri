@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "09db613ecec3f7"
+      "value": "0cf53ed03bf674"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235135781",
-    "display": "Rigoberto Balistreri"
+    "display": "Lemuel Bruen"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-752-667-8577 x9483",
+      "value": "(260) 236-1150 x61247",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-761-310-7573 x50712",
+      "value": "248-853-2429 x51026",
       "use": "work"
     }
   ],

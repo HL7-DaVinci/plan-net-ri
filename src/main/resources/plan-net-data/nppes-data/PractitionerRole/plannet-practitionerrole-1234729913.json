@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "3e2cc0dcdd929f"
+      "value": "11fb0a624d27eb"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234729913",
-    "display": "Marion Krajcik"
+    "display": "Hyo Corkery"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "945.419.1205 x979",
+      "value": "1-703-638-4464",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(501) 248-1775",
+      "value": "(241) 199-3711 x4507",
       "use": "work"
     }
   ],

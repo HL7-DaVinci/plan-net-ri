@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ernser",
+      "family": "Franecki",
       "given": [
-        "Jeffrey"
+        "Stuart",
+        "Charles"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "970.475.6229",
+      "value": "(986) 434-6189 x9385",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "423.905.2165",
+      "value": "(192) 288-8766 x361",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-05-18",
-        "end": "2027-05-18"
+        "start": "2024-03-23",
+        "end": "2027-03-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "90730b1a3b0577"
+      "value": "3da771ba4ceee7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238364182",
-    "display": "Jonathon Cartwright"
+    "display": "Gino Ziemann"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "440.035.8753",
+      "value": "633-618-7924 x49698",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "576-699-8529",
+      "value": "771.605.9789 x9746",
       "use": "work"
     }
   ],

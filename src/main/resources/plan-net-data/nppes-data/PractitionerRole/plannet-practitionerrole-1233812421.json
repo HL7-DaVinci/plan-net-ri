@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "b8efaf2ec298e4"
+      "value": "79b420d2d33878"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233812421",
-    "display": "Kristal Upton"
+    "display": "Star Boyle"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "507-102-1933 x438",
+      "value": "154-601-7830 x70095",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-441-750-9564 x167",
+      "value": "579.873.5276",
       "use": "work"
     }
   ],

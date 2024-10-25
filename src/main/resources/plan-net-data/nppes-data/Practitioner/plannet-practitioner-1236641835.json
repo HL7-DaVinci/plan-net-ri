@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wuckert",
+      "family": "Bartoletti",
       "given": [
-        "Ardis",
-        "Roxanne"
+        "Creola"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(449) 932-4494",
+      "value": "861.811.4702",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "674.685.9132",
+      "value": "(986) 226-4411 x919",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-07-13",
-        "end": "2026-07-13"
+        "start": "2023-11-29",
+        "end": "2026-11-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "202K00000X",
-            "display": "Phlebology"
+            "display": "Phlebology Physician"
           }
         ],
-        "text": "Phlebology"
+        "text": "Phlebology Physician"
       },
       "period": {
-        "start": "2024-01-19",
-        "end": "2027-01-19"
+        "start": "2024-06-21",
+        "end": "2027-06-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -240,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

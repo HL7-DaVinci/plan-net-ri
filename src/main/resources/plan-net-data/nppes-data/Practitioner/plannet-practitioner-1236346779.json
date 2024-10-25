@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Olson",
+      "family": "Cremin",
       "given": [
-        "Vance",
-        "Gerry"
+        "Jermaine",
+        "Earnest"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "478.109.7761 x73291",
+      "value": "(311) 928-7960 x242",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(957) 447-8788 x890",
+      "value": "(234) 645-4309 x8102",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2081P0010X",
-            "display": "Pediatric Rehabilitation Medicine"
+            "display": "Pediatric Rehabilitation Medicine Physician"
           }
         ],
-        "text": "Pediatric Rehabilitation Medicine"
+        "text": "Pediatric Rehabilitation Medicine Physician"
       },
       "period": {
-        "start": "2023-11-20",
-        "end": "2026-11-20"
+        "start": "2024-09-05",
+        "end": "2027-09-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

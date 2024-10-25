@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "3c7bf72a9c016a"
+      "value": "f213fbd4a93675"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231395651",
-    "display": "Irving Feeney"
+    "display": "Dominic Zulauf"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "183-239-6781 x9469",
+      "value": "(409) 134-6670 x8074",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-137-359-7904 x34494",
+      "value": "1-338-458-3352",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Swaniawski",
+      "family": "Kilback",
       "given": [
-        "Derek"
+        "Caleb",
+        "Landon"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "728-277-1881",
+      "value": "620.704.3214 x71610",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "221.768.8118 x7630",
+      "value": "415-838-4270",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-08-19",
-        "end": "2026-08-19"
+        "start": "2024-09-28",
+        "end": "2027-09-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

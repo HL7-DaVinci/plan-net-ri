@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Oberbrunner",
+      "family": "Harris",
       "given": [
-        "Margie"
+        "Letitia"
       ],
       "suffix": [
         "D.C."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "676.289.5119 x44879",
+      "value": "1-656-426-1817",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-873-976-9700 x449",
+      "value": "559.295.3266 x62170",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2024-01-06",
-        "end": "2027-01-06"
+        "start": "2023-08-07",
+        "end": "2026-08-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiegand",
+      "family": "Ferry",
       "given": [
-        "Lu",
-        "Lorelei"
+        "Cecily",
+        "Sari"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "740.965.7737 x9935",
+      "value": "675-946-6747 x02341",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "120-240-2746 x536",
+      "value": "205-086-3679 x242",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-10-14",
-        "end": "2024-10-14"
+        "start": "2023-11-22",
+        "end": "2026-11-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dare",
+      "family": "Corwin",
       "given": [
-        "Nelda"
+        "Ulrike",
+        "Son"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-349-979-2414 x10306",
+      "value": "475.062.7862",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(360) 638-3284 x058",
+      "value": "1-678-122-4559 x44023",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-03-17",
-        "end": "2025-03-17"
+        "start": "2022-08-11",
+        "end": "2025-08-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McDermott",
+      "family": "Wehner",
       "given": [
-        "Nolan"
+        "Oren",
+        "Leopoldo"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "947.695.2136",
+      "value": "1-323-616-1195",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-515-358-5387",
+      "value": "(192) 448-8722 x7310",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-10-29",
-        "end": "2025-10-29"
+        "start": "2022-07-07",
+        "end": "2025-07-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QS0010X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2023-02-18",
-        "end": "2026-02-18"
+        "start": "2024-10-24",
+        "end": "2027-10-24"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

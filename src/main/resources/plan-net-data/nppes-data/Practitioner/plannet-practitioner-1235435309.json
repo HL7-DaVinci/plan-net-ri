@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runte",
+      "family": "Kozey",
       "given": [
-        "Ralph",
-        "Augustus"
+        "Trinidad"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-349-327-2692 x61192",
+      "value": "143.646.9446 x313",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(114) 227-5845",
+      "value": "1-625-765-9283 x273",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-02-05",
-        "end": "2026-02-05"
+        "start": "2023-11-30",
+        "end": "2026-11-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

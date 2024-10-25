@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "4c644424d92f0d"
+      "value": "c53385f2704770"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238162938",
-    "display": "Aja Frami"
+    "display": "Patti Leuschke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "133V00000X",
-          "display": "Dietitian, Registered"
+          "display": "Registered Dietitian"
         }
       ],
-      "text": "Dietitian, Registered"
+      "text": "Registered Dietitian"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "473.578.3399 x37513",
+      "value": "917-708-0610 x5134",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(968) 317-2144 x9153",
+      "value": "587-991-9690 x86394",
       "use": "work"
     }
   ],

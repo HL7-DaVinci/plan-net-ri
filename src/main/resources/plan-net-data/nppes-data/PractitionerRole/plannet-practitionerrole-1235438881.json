@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "5cc257692cd54c"
+      "value": "2e4ac2d046b156"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235438881",
-    "display": "Ellsworth DuBuque"
+    "display": "Lawrence Hartmann"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "293-463-6545",
+      "value": "367-230-3929 x63011",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-133-239-9977 x1325",
+      "value": "(653) 874-9596 x9510",
       "use": "work"
     }
   ],

@@ -13,20 +13,6 @@
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://essent-health-care-of-mass-inc.com",
-      "value": "7fea4a08447c00"
+      "value": "a2f23ec7700483"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233011228",
-    "display": "Jonna Pollich"
+    "display": "Esta Baumbach"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1237552602",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "457.906.0148 x323",
+      "value": "(687) 117-9324 x165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-486-281-8253 x832",
+      "value": "1-149-536-2045",
       "use": "work"
     }
   ],

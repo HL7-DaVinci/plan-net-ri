@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sauer",
+      "family": "Romaguera",
       "given": [
-        "Marty",
-        "Coleman"
+        "Tobias"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(240) 732-7554",
+      "value": "(502) 696-0791 x16709",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "345.131.6527 x10815",
+      "value": "1-648-481-4246 x1811",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-02-11",
-        "end": "2025-02-11"
+        "start": "2023-10-31",
+        "end": "2026-10-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

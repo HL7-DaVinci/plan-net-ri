@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "6faa5b79a2440b"
+      "value": "6ab9bc0155d8c4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232001940",
-    "display": "Edmundo Green"
+    "display": "Garrett Franecki"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RR0500X",
-          "display": "Rheumatology"
+          "display": "Rheumatology Physician"
         }
       ],
-      "text": "Rheumatology"
+      "text": "Rheumatology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(927) 632-1305 x8346",
+      "value": "1-880-316-7974 x89554",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "116-737-6690",
+      "value": "1-431-436-0826 x16092",
       "use": "work"
     }
   ],

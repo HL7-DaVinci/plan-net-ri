@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoeger",
+      "family": "Conroy",
       "given": [
-        "Quinton"
+        "Eduardo",
+        "Ken"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(411) 346-2984 x299",
+      "value": "1-545-314-2805 x5618",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "516-876-1032 x241",
+      "value": "(571) 441-1757",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-08-18",
-        "end": "2026-08-18"
+        "start": "2021-12-17",
+        "end": "2024-12-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-01-01",
-        "end": "2026-01-01"
+        "start": "2023-08-26",
+        "end": "2026-08-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

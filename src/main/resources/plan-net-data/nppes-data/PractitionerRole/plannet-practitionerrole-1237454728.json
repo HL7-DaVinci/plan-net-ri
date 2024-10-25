@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "9c8bcfb3cc72f4"
+      "value": "31f0316894826b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237454728",
-    "display": "Kris VonRueden"
+    "display": "Marcus Homenick"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-860-921-7920 x080",
+      "value": "(393) 794-2358 x6031",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "137.561.6213 x0297",
+      "value": "1-637-889-3502 x5044",
       "use": "work"
     }
   ],

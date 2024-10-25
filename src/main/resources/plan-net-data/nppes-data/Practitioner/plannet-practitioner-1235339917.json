@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Greenfelder",
+      "family": "Rogahn",
       "given": [
-        "Augustine",
-        "Ezequiel"
+        "Armand"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "702-079-2513",
+      "value": "899.599.9233 x79056",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(162) 348-0531 x2678",
+      "value": "(687) 365-8625 x66798",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2021-12-08",
-        "end": "2024-12-08"
+        "start": "2024-02-21",
+        "end": "2027-02-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

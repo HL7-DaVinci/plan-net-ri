@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "83c9bf798952ee"
+      "value": "87b549aaadab68"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230386835",
-    "display": "Humberto Mante"
+    "display": "Walton Kozey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "696-885-1793",
+      "value": "238.761.8626 x83693",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-679-004-0124",
+      "value": "(405) 007-8109",
       "use": "work"
     }
   ],

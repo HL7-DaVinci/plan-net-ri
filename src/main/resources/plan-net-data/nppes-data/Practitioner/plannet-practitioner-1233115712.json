@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bins",
+      "family": "Lueilwitz",
       "given": [
-        "Sean",
-        "Virgil"
+        "Martin",
+        "Elmo"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-761-687-4184 x844",
+      "value": "1-437-596-5376 x4769",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "626-590-4555 x619",
+      "value": "1-659-692-8281 x63533",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-04-24",
-        "end": "2027-04-24"
+        "start": "2023-09-08",
+        "end": "2026-09-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

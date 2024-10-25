@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "2b941331207be5"
+      "value": "b8a8a2ebcdd9ff"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237651998",
-    "display": "Rochell Sipes"
+    "display": "Amira Grant"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "937.743.3810 x68743",
+      "value": "1-173-204-1915 x03905",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-664-395-4057 x21705",
+      "value": "(273) 559-2823 x983",
       "use": "work"
     }
   ],

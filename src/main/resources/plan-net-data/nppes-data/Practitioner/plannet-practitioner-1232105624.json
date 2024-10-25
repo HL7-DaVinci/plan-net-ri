@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Torp",
+      "family": "Rodriguez",
       "given": [
-        "Elijah",
-        "Alden"
+        "Jarrett"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-571-873-3727",
+      "value": "989-281-4364 x9096",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(525) 867-6700 x6221",
+      "value": "1-789-254-1074 x29000",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-09-22",
-        "end": "2024-09-22"
+        "start": "2022-06-15",
+        "end": "2025-06-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

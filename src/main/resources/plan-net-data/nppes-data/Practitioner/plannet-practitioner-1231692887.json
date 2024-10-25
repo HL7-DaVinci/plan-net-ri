@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Abshire",
+      "family": "Berge",
       "given": [
-        "Homer",
-        "Randell"
+        "Hassan"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "760-362-6450 x2362",
+      "value": "502.927.0168 x47719",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "273.520.7337",
+      "value": "126-609-9557",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-03-16",
-        "end": "2027-03-16"
+        "start": "2022-09-15",
+        "end": "2025-09-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

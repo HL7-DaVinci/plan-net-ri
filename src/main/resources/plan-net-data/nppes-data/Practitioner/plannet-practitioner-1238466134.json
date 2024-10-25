@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuppe",
+      "family": "Boyer",
       "given": [
-        "Bill"
+        "Bryant",
+        "Rolando"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-365-053-2791 x29909",
+      "value": "(921) 394-6709 x73440",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(630) 169-3221",
+      "value": "874-463-4008 x714",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-12-22",
-        "end": "2025-12-22"
+        "start": "2022-06-05",
+        "end": "2025-06-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

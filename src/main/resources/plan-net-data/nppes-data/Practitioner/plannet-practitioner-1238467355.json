@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ward",
+      "family": "Armstrong",
       "given": [
-        "Giselle"
+        "Julia",
+        "Mimi"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "386.606.0292 x16618",
+      "value": "363-010-8177 x849",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-530-616-9234",
+      "value": "(402) 700-0690 x19212",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-29",
-        "end": "2025-01-29"
+        "start": "2024-09-24",
+        "end": "2027-09-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

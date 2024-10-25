@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Buckridge",
+      "family": "Kling",
       "given": [
-        "Tracie",
-        "Annamaria"
+        "Julieann",
+        "Janeen"
       ],
       "suffix": [
         "NPP"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-681-811-8512",
+      "value": "544-435-6653 x49657",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(463) 791-9438 x24148",
+      "value": "1-314-783-0822 x03825",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "163WG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Registered Nurse"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Registered Nurse"
       },
       "period": {
-        "start": "2023-04-25",
-        "end": "2026-04-25"
+        "start": "2024-03-23",
+        "end": "2027-03-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Zemlak",
+      "family": "Grimes",
       "given": [
-        "Devin"
+        "Clinton"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "978.060.6462 x6941",
+      "value": "(793) 635-5297",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-720-808-8181",
+      "value": "484.557.4115",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2023-05-19",
-        "end": "2026-05-19"
+        "start": "2024-07-15",
+        "end": "2027-07-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

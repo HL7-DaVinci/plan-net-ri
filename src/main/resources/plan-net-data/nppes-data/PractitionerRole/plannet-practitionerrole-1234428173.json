@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "ee85bc1a4faaed"
+      "value": "1bab45b657ace4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234428173",
-    "display": "Lacie Kulas"
+    "display": "Jessica O'Hara"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-527-266-1730 x3035",
+      "value": "824-535-6702 x4685",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(794) 888-8101 x988",
+      "value": "1-974-396-4020",
       "use": "work"
     }
   ],

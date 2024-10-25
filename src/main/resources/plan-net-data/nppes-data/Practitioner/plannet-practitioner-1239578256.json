@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Thiel",
+      "family": "Turner",
       "given": [
-        "Christopher"
+        "Art"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(270) 275-0913 x796",
+      "value": "638-665-9727 x3510",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-970-098-0296 x145",
+      "value": "1-726-080-3354 x5155",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2022-07-30",
-        "end": "2025-07-30"
+        "start": "2023-06-29",
+        "end": "2026-06-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RS0012X",
-            "display": "Sleep Medicine"
+            "display": "Sleep Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Sleep Medicine"
+        "text": "Sleep Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2021-10-25",
-        "end": "2024-10-25"
+        "start": "2021-11-29",
+        "end": "2024-11-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

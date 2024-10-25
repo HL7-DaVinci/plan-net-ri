@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "MacGyver",
+      "family": "Klein",
       "given": [
-        "Issac",
-        "Elvin"
+        "Eugenio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-562-888-8723 x268",
+      "value": "1-931-032-2642 x26153",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "156.309.6463",
+      "value": "(335) 382-0408 x8730",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2021-12-31",
-        "end": "2024-12-31"
+        "start": "2023-05-23",
+        "end": "2026-05-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

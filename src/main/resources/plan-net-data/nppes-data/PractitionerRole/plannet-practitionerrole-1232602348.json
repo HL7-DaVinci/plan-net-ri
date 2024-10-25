@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "cf26b0ab01e2c7"
+      "value": "21d30ec3a28dc9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232602348",
-    "display": "Raymond Wisoky"
+    "display": "Wyatt Ankunding"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(494) 459-8914 x2384",
+      "value": "(538) 725-8647 x57917",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-572-265-7111 x79107",
+      "value": "(749) 638-3991 x6015",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuphal",
+      "family": "Labadie",
       "given": [
-        "Lessie",
-        "Shenna"
+        "Kaleigh"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "897.640.7842 x2580",
+      "value": "(221) 665-3399 x56386",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "708.991.5511 x2336",
+      "value": "(417) 918-8146 x318",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-12-30",
-        "end": "2024-12-30"
+        "start": "2024-05-06",
+        "end": "2027-05-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

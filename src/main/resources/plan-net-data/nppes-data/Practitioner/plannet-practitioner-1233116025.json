@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McLaughlin",
+      "family": "Marquardt",
       "given": [
-        "Isiah",
-        "Delbert"
+        "Jere"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "604.570.7752",
+      "value": "(924) 926-1558",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "189.547.4064 x535",
+      "value": "(878) 236-3296 x573",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-11-29",
-        "end": "2025-11-29"
+        "start": "2023-02-05",
+        "end": "2026-02-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-02-14",
-        "end": "2026-02-14"
+        "start": "2024-04-18",
+        "end": "2027-04-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -240,6 +239,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

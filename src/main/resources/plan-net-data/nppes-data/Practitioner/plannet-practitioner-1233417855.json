@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fadel",
+      "family": "Treutel",
       "given": [
-        "Jenise",
-        "Hilaria"
+        "Meredith",
+        "Lavenia"
       ],
       "suffix": [
         "AP RN  CS"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "818-089-9910 x622",
+      "value": "1-836-467-8600 x308",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "121-715-6087",
+      "value": "352.249.2315 x807",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-11-20",
-        "end": "2026-11-20"
+        "start": "2024-07-09",
+        "end": "2027-07-09"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reynolds",
+      "family": "O'Reilly",
       "given": [
-        "Vanda",
-        "Rosie"
+        "Bibi",
+        "Veronika"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "499.277.1325 x44508",
+      "value": "570.898.5750 x5380",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "973-465-1802",
+      "value": "274-195-1599 x2677",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-12-29",
-        "end": "2026-12-29"
+        "start": "2024-07-27",
+        "end": "2027-07-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

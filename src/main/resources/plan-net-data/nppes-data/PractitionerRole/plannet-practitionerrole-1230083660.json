@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "c4eb369d1a7bde"
+      "value": "5fa80ffa43566d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230083660",
-    "display": "Steve Howell"
+    "display": "Monte Grimes"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "106-715-9339",
+      "value": "579.277.8391",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "769.126.2046 x6052",
+      "value": "(112) 565-0375 x2808",
       "use": "work"
     }
   ],

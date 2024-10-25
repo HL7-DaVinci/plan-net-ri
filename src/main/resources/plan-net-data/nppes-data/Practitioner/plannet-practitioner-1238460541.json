@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Shields",
+      "family": "Hickle",
       "given": [
-        "Chris"
+        "Edmundo",
+        "Gregg"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "796.914.3269 x989",
+      "value": "470-262-7463 x0945",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-499-546-8241 x046",
+      "value": "(654) 978-9108",
       "use": "work"
     }
   ],
@@ -137,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-03-15",
-        "end": "2026-03-15"
+        "start": "2022-12-11",
+        "end": "2025-12-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

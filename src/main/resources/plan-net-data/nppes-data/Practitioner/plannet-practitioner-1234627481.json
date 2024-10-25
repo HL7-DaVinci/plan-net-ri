@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schaden",
+      "family": "Mayert",
       "given": [
-        "Gina"
+        "Shayne",
+        "Carry"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-568-495-6737 x454",
+      "value": "790.718.0059 x94282",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "634.460.1696 x885",
+      "value": "866-785-0944 x5415",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-11-25",
-        "end": "2024-11-25"
+        "start": "2022-02-08",
+        "end": "2025-02-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2022-07-29",
-        "end": "2025-07-29"
+        "start": "2022-07-02",
+        "end": "2025-07-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -267,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-12-09",
-        "end": "2025-12-09"
+        "start": "2024-03-10",
+        "end": "2027-03-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -326,11 +327,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-137-426-3835 x5541",
+      "value": "302.666.7336 x6793",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(657) 198-7798 x8731",
+      "value": "1-258-272-1074 x187",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Madeleine Bernier",
-        "family": "Bernier",
+        "text": "Thanh Lemke",
+        "family": "Lemke",
         "given": [
-          "Madeleine"
+          "Thanh"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "1-137-426-3835 x5541",
+          "value": "302.666.7336 x6793",
           "use": "work"
         }
       ],

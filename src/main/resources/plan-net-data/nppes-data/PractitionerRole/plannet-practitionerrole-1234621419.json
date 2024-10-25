@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "fee99e3bd2d0f8"
+      "value": "51addb2c8456a0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234621419",
-    "display": "Louie Murazik"
+    "display": "Royce Williamson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(113) 426-1944 x94622",
+      "value": "309.492.2662 x70250",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "297-881-6397 x0986",
+      "value": "(522) 883-2444 x652",
       "use": "work"
     }
   ],

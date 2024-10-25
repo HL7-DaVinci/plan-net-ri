@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "71731f26e8e534"
+      "value": "7c03cb72b58c8e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237652483",
-    "display": "Wilmer Little"
+    "display": "Ezra Aufderhar"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(769) 727-0935 x30406",
+      "value": "742-101-4723 x806",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-952-007-6284 x2361",
+      "value": "1-185-881-7054 x60702",
       "use": "work"
     }
   ],

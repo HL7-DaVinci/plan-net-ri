@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rowe",
+      "family": "Emard",
       "given": [
-        "Jesse",
-        "Buford"
+        "Justin"
       ],
       "suffix": [
         "D.C."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(992) 575-0913 x07766",
+      "value": "(257) 588-4131 x07034",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-296-847-7085 x62847",
+      "value": "(112) 895-2536 x388",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-07-20",
-        "end": "2025-07-20"
+        "start": "2023-11-10",
+        "end": "2026-11-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

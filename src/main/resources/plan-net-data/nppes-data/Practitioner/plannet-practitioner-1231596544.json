@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Weimann",
+      "family": "Anderson",
       "given": [
-        "Eugene",
-        "Jacques"
+        "Cecil"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "376-407-4366",
+      "value": "(354) 868-7600 x15780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(868) 076-7703",
+      "value": "716.178.9824 x34764",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2024-03-19",
-        "end": "2027-03-19"
+        "start": "2021-12-31",
+        "end": "2024-12-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

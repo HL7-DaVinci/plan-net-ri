@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Green",
+      "family": "Mohr",
       "given": [
-        "Laquanda",
-        "Vivienne"
+        "Billye",
+        "Cara"
       ],
       "suffix": [
         "RD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-514-924-1779",
+      "value": "1-919-102-6990 x493",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "399.122.3234 x897",
+      "value": "(173) 611-0470 x083",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "133V00000X",
-            "display": "Dietitian, Registered"
+            "display": "Registered Dietitian"
           }
         ],
-        "text": "Dietitian, Registered"
+        "text": "Registered Dietitian"
       },
       "period": {
-        "start": "2023-06-07",
-        "end": "2026-06-07"
+        "start": "2022-08-15",
+        "end": "2025-08-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

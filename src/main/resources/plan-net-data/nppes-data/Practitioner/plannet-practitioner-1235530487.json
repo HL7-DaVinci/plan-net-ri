@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fay",
+      "family": "Blick",
       "given": [
-        "Jo"
+        "Nilsa",
+        "Niesha"
       ],
       "suffix": [
         "PH.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "821-436-6357",
+      "value": "359-506-1490 x7299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "893.891.4416",
+      "value": "1-134-971-2750 x6450",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2024-04-25",
-        "end": "2027-04-25"
+        "start": "2022-09-02",
+        "end": "2025-09-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TA0700X",
-            "display": "Adult Development and Aging"
+            "display": "Adult Development & Aging Psychologist"
           }
         ],
-        "text": "Adult Development and Aging"
+        "text": "Adult Development & Aging Psychologist"
       },
       "period": {
-        "start": "2023-04-09",
-        "end": "2026-04-09"
+        "start": "2022-04-21",
+        "end": "2025-04-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2023-09-01",
-        "end": "2026-09-01"
+        "start": "2022-11-19",
+        "end": "2025-11-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -327,14 +328,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC2200X",
-            "display": "Clinical Child and Adolescent"
+            "display": "Clinical Child & Adolescent Psychologist"
           }
         ],
-        "text": "Clinical Child and Adolescent"
+        "text": "Clinical Child & Adolescent Psychologist"
       },
       "period": {
-        "start": "2022-06-17",
-        "end": "2025-06-17"
+        "start": "2022-05-02",
+        "end": "2025-05-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -391,14 +392,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TF0000X",
-            "display": "Family"
+            "display": "Family Psychologist"
           }
         ],
-        "text": "Family"
+        "text": "Family Psychologist"
       },
       "period": {
-        "start": "2021-11-09",
-        "end": "2024-11-09"
+        "start": "2022-10-17",
+        "end": "2025-10-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -455,14 +456,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TH0100X",
-            "display": "Health Service"
+            "display": "Health Service Psychologist"
           }
         ],
-        "text": "Health Service"
+        "text": "Health Service Psychologist"
       },
       "period": {
-        "start": "2023-09-10",
-        "end": "2026-09-10"
+        "start": "2024-09-22",
+        "end": "2027-09-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -494,6 +495,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

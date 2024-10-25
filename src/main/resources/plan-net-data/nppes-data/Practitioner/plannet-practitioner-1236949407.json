@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McGlynn",
+      "family": "Nitzsche",
       "given": [
-        "Myrtle",
-        "Donnie"
+        "Ethelyn"
       ],
       "suffix": [
         "ANP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "389-039-5750 x11532",
+      "value": "(375) 594-9692",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "712-323-3751 x92623",
+      "value": "(373) 183-2966",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-12-07",
-        "end": "2025-12-07"
+        "start": "2024-10-22",
+        "end": "2027-10-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

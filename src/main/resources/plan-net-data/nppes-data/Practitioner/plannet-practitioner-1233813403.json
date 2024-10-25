@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Romaguera",
+      "family": "Dach",
       "given": [
-        "Ray"
+        "Karl",
+        "Duane"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(163) 196-7860 x2805",
+      "value": "582-316-7122",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "824.741.5141 x09540",
+      "value": "997.204.9562 x6470",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2024-06-15",
-        "end": "2027-06-15"
+        "start": "2021-11-04",
+        "end": "2024-11-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086X0206X",
-            "display": "Surgical Oncology"
+            "display": "Surgical Oncology Physician"
           }
         ],
-        "text": "Surgical Oncology"
+        "text": "Surgical Oncology Physician"
       },
       "period": {
-        "start": "2023-06-02",
-        "end": "2026-06-02"
+        "start": "2021-11-13",
+        "end": "2024-11-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -239,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

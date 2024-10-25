@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lubowitz",
+      "family": "Beer",
       "given": [
-        "Donn"
+        "Ed",
+        "Ezequiel"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "135-113-3786 x123",
+      "value": "(837) 620-5810 x2960",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "820.586.7749 x48853",
+      "value": "(132) 953-4527 x46450",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2024-01-21",
-        "end": "2027-01-21"
+        "start": "2022-12-13",
+        "end": "2025-12-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lakin",
+      "family": "Price",
       "given": [
-        "Carroll"
+        "Ulrike",
+        "Angla"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "674-628-8170 x863",
+      "value": "886-815-7100 x21844",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "981.505.1533 x94994",
+      "value": "1-919-911-8757 x156",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-07-02",
-        "end": "2025-07-02"
+        "start": "2023-05-04",
+        "end": "2026-05-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

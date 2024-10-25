@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schiller",
+      "family": "Kris",
       "given": [
-        "Chadwick",
-        "Gustavo"
+        "Jonas"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "921-589-4647 x740",
+      "value": "(864) 631-5225",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-628-782-3095 x0481",
+      "value": "1-992-893-4009 x21191",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0210X",
-            "display": "Pediatric Nephrology"
+            "display": "Pediatric Nephrology Physician"
           }
         ],
-        "text": "Pediatric Nephrology"
+        "text": "Pediatric Nephrology Physician"
       },
       "period": {
-        "start": "2023-04-20",
-        "end": "2026-04-20"
+        "start": "2022-05-26",
+        "end": "2025-05-26"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

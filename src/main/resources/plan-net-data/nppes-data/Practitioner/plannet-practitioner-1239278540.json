@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Altenwerth",
+      "family": "Gislason",
       "given": [
-        "Chung",
-        "Romeo"
+        "Deon"
       ],
       "suffix": [
         "PA-C"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "762.330.8389 x1117",
+      "value": "(483) 497-1638 x979",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(948) 893-1366",
+      "value": "925.720.3818 x70774",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2022-11-04",
-        "end": "2025-11-04"
+        "start": "2022-09-27",
+        "end": "2025-09-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

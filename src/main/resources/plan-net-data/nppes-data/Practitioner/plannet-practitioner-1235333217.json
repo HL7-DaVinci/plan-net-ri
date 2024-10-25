@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hammes",
+      "family": "Upton",
       "given": [
-        "Janett"
+        "Angeles",
+        "Luci"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(271) 141-5505 x612",
+      "value": "996-355-3949",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-539-474-4552",
+      "value": "179.681.8556 x332",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-12-21",
-        "end": "2025-12-21"
+        "start": "2023-04-03",
+        "end": "2026-04-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

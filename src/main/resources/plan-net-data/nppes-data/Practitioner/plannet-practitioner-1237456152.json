@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Hessel",
       "given": [
-        "German",
-        "Daron"
+        "Maynard",
+        "Kelly"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "279.944.9762 x108",
+      "value": "644-545-7044 x76165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-261-516-4244 x578",
+      "value": "1-470-806-5032 x3868",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213EP1101X",
-            "display": "Primary Podiatric Medicine"
+            "display": "Primary Podiatric Medicine Podiatrist"
           }
         ],
-        "text": "Primary Podiatric Medicine"
+        "text": "Primary Podiatric Medicine Podiatrist"
       },
       "period": {
-        "start": "2024-05-26",
-        "end": "2027-05-26"
+        "start": "2022-06-24",
+        "end": "2025-06-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0131X",
-            "display": "Foot Surgery"
+            "display": "Foot Surgery Podiatrist"
           }
         ],
-        "text": "Foot Surgery"
+        "text": "Foot Surgery Podiatrist"
       },
       "period": {
-        "start": "2023-12-01",
-        "end": "2026-12-01"
+        "start": "2024-06-20",
+        "end": "2027-06-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

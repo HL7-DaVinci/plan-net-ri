@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Glover",
+      "family": "Miller",
       "given": [
-        "Esta",
-        "Marquerite"
+        "Suzy",
+        "Almeda"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "934-496-3324 x66241",
+      "value": "485-972-6635 x5036",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "647-295-4910",
+      "value": "1-449-367-2355 x173",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2023-03-07",
-        "end": "2026-03-07"
+        "start": "2023-06-23",
+        "end": "2026-06-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

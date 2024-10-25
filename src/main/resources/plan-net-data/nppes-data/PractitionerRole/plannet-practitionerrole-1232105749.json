@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "6b050a7b9976a2"
+      "value": "cf46309782eac9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232105749",
-    "display": "Leon Daugherty"
+    "display": "Camellia Pfeffer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "465-565-0667 x42945",
+      "value": "575.878.1395",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-929-317-8706 x12345",
+      "value": "691-098-7719 x066",
       "use": "work"
     }
   ],

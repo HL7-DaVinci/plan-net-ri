@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Huels",
       "given": [
-        "Charisse",
-        "Camellia"
+        "Rachal"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(709) 944-5664 x952",
+      "value": "1-934-651-5985",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "461.353.6348 x22231",
+      "value": "299-492-6801 x06861",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2024-03-21",
-        "end": "2027-03-21"
+        "start": "2022-10-26",
+        "end": "2025-10-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Haag",
+      "family": "Carroll",
       "given": [
-        "Jeromy"
+        "Darrell"
       ],
       "prefix": [
         "Dr."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "514.568.1357 x60059",
+      "value": "(738) 390-1283",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(251) 182-7025 x15990",
+      "value": "(987) 895-2437 x921",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2022-09-23",
-        "end": "2025-09-23"
+        "start": "2023-10-21",
+        "end": "2026-10-21"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2021-10-31",
-        "end": "2024-10-31"
+        "start": "2023-08-11",
+        "end": "2026-08-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -258,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

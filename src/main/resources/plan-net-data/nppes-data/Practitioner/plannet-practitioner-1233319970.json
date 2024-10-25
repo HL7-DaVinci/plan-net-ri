@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Nitzsche",
+      "family": "Prosacco",
       "given": [
-        "Seth"
+        "Brenton"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(460) 929-9187",
+      "value": "1-121-733-1592 x7173",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(100) 847-3961 x70828",
+      "value": "1-854-818-5691 x2320",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-06-13",
-        "end": "2025-06-13"
+        "start": "2023-01-25",
+        "end": "2026-01-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

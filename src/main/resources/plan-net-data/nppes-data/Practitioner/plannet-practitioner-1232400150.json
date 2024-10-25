@@ -32,21 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Kertzmann",
+      "family": "Maggio",
       "given": [
-        "Alleen"
+        "Maryanna"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-781-076-8056 x1620",
+      "value": "(730) 348-9540 x0464",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-628-842-6473 x675",
+      "value": "(359) 198-6659 x205",
       "use": "work"
     }
   ],
@@ -138,8 +138,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-12-11",
-        "end": "2026-12-11"
+        "start": "2024-03-31",
+        "end": "2027-03-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,14 +196,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-12-01",
-        "end": "2026-12-01"
+        "start": "2024-02-09",
+        "end": "2027-02-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -235,6 +235,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

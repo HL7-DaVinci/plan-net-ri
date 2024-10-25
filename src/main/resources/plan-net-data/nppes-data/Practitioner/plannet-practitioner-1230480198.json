@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ernser",
+      "family": "Littel",
       "given": [
-        "Rosita",
-        "Reina"
+        "Misha"
       ],
       "suffix": [
         "PHARM.D"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "187-063-4050 x38898",
+      "value": "(727) 274-9960 x963",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "924.520.9483 x0729",
+      "value": "429-263-9481 x78545",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2024-04-08",
-        "end": "2027-04-08"
+        "start": "2022-06-12",
+        "end": "2025-06-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

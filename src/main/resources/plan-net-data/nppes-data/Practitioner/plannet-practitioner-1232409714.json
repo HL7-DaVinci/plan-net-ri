@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolf",
+      "family": "Stiedemann",
       "given": [
-        "Hong"
+        "Fabian",
+        "Joel"
       ],
       "suffix": [
         "PA"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "574.516.9440",
+      "value": "(863) 954-1340",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "211-341-7044 x2668",
+      "value": "1-815-006-7825 x74297",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2023-12-01",
-        "end": "2026-12-01"
+        "start": "2022-10-22",
+        "end": "2025-10-22"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "060313c0a2a3ee"
+      "value": "bf50753f71ba66"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237154242",
-    "display": "Dusty Erdman"
+    "display": "Markus Tillman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "336.217.7521 x1788",
+      "value": "(463) 571-1122 x03778",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-989-598-4961",
+      "value": "114-545-2188 x41998",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kunde",
+      "family": "Feest",
       "given": [
-        "Alan",
-        "Raul"
+        "Jospeh",
+        "Mckinley"
       ],
       "suffix": [
         "OD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "843-710-2858 x7577",
+      "value": "672-945-6588",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(385) 043-0071 x486",
+      "value": "502-590-5903",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-12-09",
-        "end": "2025-12-09"
+        "start": "2023-05-07",
+        "end": "2026-05-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

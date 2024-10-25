@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "2247072a66fa2c"
+      "value": "8c43697f6e69b5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232409128",
-    "display": "Hipolito Gutmann"
+    "display": "Seth Johnson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "940.099.0310 x06625",
+      "value": "(648) 993-1421 x55685",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "935-770-3302 x57861",
+      "value": "873.303.4661 x13383",
       "use": "work"
     }
   ],

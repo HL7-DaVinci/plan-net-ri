@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Champlin",
+      "family": "Grant",
       "given": [
-        "Johnathon"
+        "Van"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "966.698.1302 x14024",
+      "value": "985.903.3521 x368",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-618-326-1651",
+      "value": "(325) 560-9419",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2022-07-21",
-        "end": "2025-07-21"
+        "start": "2023-02-12",
+        "end": "2026-02-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

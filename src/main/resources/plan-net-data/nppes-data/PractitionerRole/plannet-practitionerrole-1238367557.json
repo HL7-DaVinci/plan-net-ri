@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "4c9ddff5e23845"
+      "value": "dae65ff52ba2c6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238367557",
-    "display": "Johnson Mayert"
+    "display": "Jared Wiza"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-737-800-0280 x8421",
+      "value": "(203) 163-9847 x4672",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "582.396.8807 x1563",
+      "value": "(228) 815-5988 x345",
       "use": "work"
     }
   ],

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "9a276952084246"
+      "value": "da6d9c5b2449b1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231399745",
-    "display": "Lucretia Kessler"
+    "display": "Stephanie Bashirian"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "841.228.8806 x3593",
+      "value": "684.403.1507 x4546",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-136-161-7339 x519",
+      "value": "(141) 167-7523",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Jaskolski",
+      "family": "Boyer",
       "given": [
-        "Phyliss",
-        "Dannette"
+        "Jaqueline"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "732-804-0364",
+      "value": "(481) 412-9494 x497",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "650-035-9252",
+      "value": "277-478-0393 x7316",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2022-10-11",
-        "end": "2025-10-11"
+        "start": "2023-10-14",
+        "end": "2026-10-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

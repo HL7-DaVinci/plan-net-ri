@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Roberts",
+      "family": "Greenfelder",
       "given": [
-        "Rima",
-        "Gillian"
+        "Marina"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "267-180-9894 x3808",
+      "value": "(911) 682-6868",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-257-818-2947 x28259",
+      "value": "103.199.5531",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-01-21",
-        "end": "2026-01-21"
+        "start": "2024-10-04",
+        "end": "2027-10-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LW0102X",
-            "display": "Women's Health"
+            "display": "Women's Health Nurse Practitioner"
           }
         ],
-        "text": "Women's Health"
+        "text": "Women's Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-12-09",
-        "end": "2025-12-09"
+        "start": "2022-11-18",
+        "end": "2025-11-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -243,31 +242,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

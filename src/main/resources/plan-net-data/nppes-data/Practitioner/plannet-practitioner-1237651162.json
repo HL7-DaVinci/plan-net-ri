@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pollich",
+      "family": "Hickle",
       "given": [
-        "Luz",
-        "Yee"
+        "Joette"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(316) 895-6056 x85919",
+      "value": "219-010-7416 x88433",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "342-281-3596 x435",
+      "value": "380.013.2173 x5050",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2021-11-11",
-        "end": "2024-11-11"
+        "start": "2023-05-04",
+        "end": "2026-05-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

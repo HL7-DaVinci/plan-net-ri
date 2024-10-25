@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Shanahan",
+      "family": "Rowe",
       "given": [
-        "Tommye"
+        "Frankie"
       ],
       "suffix": [
         "DDS"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "636-215-8411 x2912",
+      "value": "993-206-1820 x81998",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(870) 958-9641 x78119",
+      "value": "857.918.7742",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-07-28",
-        "end": "2026-07-28"
+        "start": "2024-07-08",
+        "end": "2027-07-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

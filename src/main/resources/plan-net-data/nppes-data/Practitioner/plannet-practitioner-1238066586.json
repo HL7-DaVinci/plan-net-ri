@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Swaniawski",
+      "family": "Johnston",
       "given": [
-        "Thurman",
-        "Laurence"
+        "Anibal",
+        "Julio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(422) 769-1066 x90273",
+      "value": "(935) 281-6100 x71652",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "340-877-1181 x8894",
+      "value": "(944) 956-2589",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-02-15",
-        "end": "2025-02-15"
+        "start": "2023-02-28",
+        "end": "2026-02-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

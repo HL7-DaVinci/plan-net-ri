@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bechtelar",
+      "family": "Douglas",
       "given": [
-        "Cody",
-        "Sammie"
+        "Emilio",
+        "Kenneth"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(749) 553-2046 x13067",
+      "value": "1-893-607-5893 x58820",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "614.827.4780",
+      "value": "866.308.3072 x5111",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2023-01-15",
-        "end": "2026-01-15"
+        "start": "2022-03-22",
+        "end": "2025-03-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

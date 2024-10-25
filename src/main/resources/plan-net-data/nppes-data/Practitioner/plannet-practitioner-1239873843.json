@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Kon",
+      "family": "Cruickshank",
       "given": [
-        "Kandis",
-        "Lee"
+        "Isabella",
+        "Ossie"
       ],
       "suffix": [
         "RNP"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "973-980-2077 x829",
+      "value": "(481) 376-8650 x05680",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(647) 513-4539",
+      "value": "974.774.0610",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-09-20",
-        "end": "2025-09-20"
+        "start": "2022-10-11",
+        "end": "2025-10-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

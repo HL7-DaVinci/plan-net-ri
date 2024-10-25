@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bode",
+      "family": "Schumm",
       "given": [
-        "Ninfa",
-        "Yulanda"
+        "Ileen",
+        "Malorie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-578-026-9696",
+      "value": "(124) 621-0828 x7880",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "521-752-0089 x37834",
+      "value": "1-580-352-4478 x07215",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2024-04-29",
-        "end": "2027-04-29"
+        "start": "2024-10-18",
+        "end": "2027-10-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

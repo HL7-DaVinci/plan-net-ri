@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kulas",
+      "family": "Luettgen",
       "given": [
-        "Waylon",
-        "Gino"
+        "Duncan"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(473) 023-3719 x1646",
+      "value": "958-485-8479 x45476",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "941.038.0130",
+      "value": "647.133.6787 x009",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-07-23",
-        "end": "2025-07-23"
+        "start": "2023-12-28",
+        "end": "2026-12-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

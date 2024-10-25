@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "D'Amore",
+      "family": "Welch",
       "given": [
-        "Steve",
-        "Boyce"
+        "Weston",
+        "Cornelius"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-325-670-2830 x942",
+      "value": "(359) 087-8340 x59300",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "222.501.7475 x550",
+      "value": "840-936-5824",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2024-01-12",
-        "end": "2027-01-12"
+        "start": "2024-01-28",
+        "end": "2027-01-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

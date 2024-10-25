@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Torp",
+      "family": "Jacobi",
       "given": [
-        "Eldora"
+        "Mallory",
+        "Enola"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "227.296.1307 x43523",
+      "value": "1-770-717-8910 x4613",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "485-336-7518 x412",
+      "value": "176-404-7784",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2022-11-22",
-        "end": "2025-11-22"
+        "start": "2022-09-14",
+        "end": "2025-09-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

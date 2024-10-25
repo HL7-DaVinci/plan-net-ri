@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "edd5011fb91ab3"
+      "value": "d462da01efd550"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239974938",
-    "display": "Trey Hoppe"
+    "display": "Rich Morissette"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "190.961.9072 x01185",
+      "value": "(822) 633-2311 x3455",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "313.516.8622 x0648",
+      "value": "(155) 139-5724 x532",
       "use": "work"
     }
   ],

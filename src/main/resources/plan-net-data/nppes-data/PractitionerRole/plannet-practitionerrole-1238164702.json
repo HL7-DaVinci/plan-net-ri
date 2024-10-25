@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "5691a4d70acf1b"
+      "value": "142c02ca6113fa"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238164702",
-    "display": "Felix Langworth"
+    "display": "Eduardo Macejkovic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363AM0700X",
-          "display": "Medical"
+          "display": "Medical Physician Assistant"
         }
       ],
-      "text": "Medical"
+      "text": "Medical Physician Assistant"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-604-618-8717 x14863",
+      "value": "1-685-624-0811 x2949",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "603.931.2518 x19033",
+      "value": "438-154-6971 x360",
       "use": "work"
     }
   ],

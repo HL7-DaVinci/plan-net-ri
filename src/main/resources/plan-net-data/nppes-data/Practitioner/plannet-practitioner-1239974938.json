@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoppe",
+      "family": "Morissette",
       "given": [
-        "Trey",
-        "Bernie"
+        "Rich"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "190.961.9072 x01185",
+      "value": "(822) 633-2311 x3455",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "313.516.8622 x0648",
+      "value": "(155) 139-5724 x532",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-05-24",
-        "end": "2025-05-24"
+        "start": "2022-04-25",
+        "end": "2025-04-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

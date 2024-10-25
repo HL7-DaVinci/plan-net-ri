@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "200f24c6b360b0"
+      "value": "3010804220e009"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230980735",
-    "display": "Rodrigo Hegmann"
+    "display": "Bradley Kub"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0000X",
-          "display": "Hematology"
+          "display": "Hematology (Internal Medicine) Physician"
         }
       ],
-      "text": "Hematology"
+      "text": "Hematology (Internal Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "288.596.7924 x311",
+      "value": "258-082-3896 x42924",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-702-006-6548 x90536",
+      "value": "(921) 544-7731 x211",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stoltenberg",
+      "family": "Schiller",
       "given": [
-        "Ina"
+        "Tommye",
+        "Carissa"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(346) 684-5040 x768",
+      "value": "997-865-5253 x619",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "871.636.5592 x058",
+      "value": "886-276-3981 x77927",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-20",
-        "end": "2025-01-20"
+        "start": "2023-11-01",
+        "end": "2026-11-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

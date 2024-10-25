@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schmitt",
+      "family": "Koelpin",
       "given": [
-        "Lecia"
+        "Tera"
       ],
       "suffix": [
         "PSY.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(793) 011-0867 x9913",
+      "value": "1-219-448-9202 x9477",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "714-374-3840 x09449",
+      "value": "(518) 337-1840 x1655",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-01-03",
-        "end": "2025-01-03"
+        "start": "2021-12-03",
+        "end": "2024-12-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

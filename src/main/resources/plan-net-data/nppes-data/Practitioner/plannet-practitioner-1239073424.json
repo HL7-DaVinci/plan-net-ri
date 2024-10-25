@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gottlieb",
+      "family": "Konopelski",
       "given": [
-        "Theo",
-        "Virgilio"
+        "Neil"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "838.497.4747 x86987",
+      "value": "103.343.7350 x74852",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "896.003.5449 x761",
+      "value": "1-741-321-1465 x46886",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-01-09",
-        "end": "2026-01-09"
+        "start": "2023-08-24",
+        "end": "2026-08-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

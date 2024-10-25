@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rice",
+      "family": "White",
       "given": [
-        "Nikole"
+        "Asuncion"
       ],
       "suffix": [
         "PA-C"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-126-927-6283 x649",
+      "value": "(722) 699-7778 x432",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(296) 788-4719 x52036",
+      "value": "1-538-911-3180 x9586",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2023-09-25",
-        "end": "2026-09-25"
+        "start": "2022-10-28",
+        "end": "2025-10-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2021-07-26",
-        "end": "2024-07-26"
+        "start": "2022-03-28",
+        "end": "2025-03-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

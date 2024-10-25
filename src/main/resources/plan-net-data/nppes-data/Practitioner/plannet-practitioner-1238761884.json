@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sporer",
+      "family": "Stanton",
       "given": [
-        "Brendon",
-        "Denny"
+        "Major"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "606-950-3627 x50954",
+      "value": "(250) 477-0418",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(965) 286-5872 x45396",
+      "value": "814-572-2133 x74842",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223X0400X",
-            "display": "Orthodontics and Dentofacial Orthopedics"
+            "display": "Orthodontics and Dentofacial Orthopedic Dentist"
           }
         ],
-        "text": "Orthodontics and Dentofacial Orthopedics"
+        "text": "Orthodontics and Dentofacial Orthopedic Dentist"
       },
       "period": {
-        "start": "2021-07-15",
-        "end": "2024-07-15"
+        "start": "2023-11-23",
+        "end": "2026-11-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

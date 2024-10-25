@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Windler",
+      "family": "Volkman",
       "given": [
-        "Leslie"
+        "Hilario"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-654-321-0802 x8145",
+      "value": "1-555-380-4685 x51445",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(230) 223-0122 x9940",
+      "value": "(440) 660-2283",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TA0400X",
-            "display": "Addiction (Substance Use Disorder)"
+            "display": "Addiction (Substance Use Disorder) Psychologist"
           }
         ],
-        "text": "Addiction (Substance Use Disorder)"
+        "text": "Addiction (Substance Use Disorder) Psychologist"
       },
       "period": {
-        "start": "2023-03-16",
-        "end": "2026-03-16"
+        "start": "2023-10-25",
+        "end": "2026-10-25"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-09-20",
-        "end": "2025-09-20"
+        "start": "2022-04-15",
+        "end": "2025-04-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -258,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

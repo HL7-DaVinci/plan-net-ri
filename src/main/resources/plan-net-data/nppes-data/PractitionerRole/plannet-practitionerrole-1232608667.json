@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "ecf8124368e34e"
+      "value": "349c0f2f3d4124"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232608667",
-    "display": "Osvaldo Gislason"
+    "display": "Lincoln Jaskolski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "287.810.6781 x756",
+      "value": "637.470.6071 x2994",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "651.341.5102 x326",
+      "value": "792-193-4053 x0572",
       "use": "work"
     }
   ],

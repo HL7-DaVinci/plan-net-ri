@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Littel",
+      "family": "Haag",
       "given": [
-        "Marlyn"
+        "Shiela",
+        "Eloisa"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "866.978.2866 x54684",
+      "value": "(366) 759-9015 x057",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(956) 714-8088",
+      "value": "(580) 540-5190 x995",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2022-08-28",
-        "end": "2025-08-28"
+        "start": "2023-12-20",
+        "end": "2026-12-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

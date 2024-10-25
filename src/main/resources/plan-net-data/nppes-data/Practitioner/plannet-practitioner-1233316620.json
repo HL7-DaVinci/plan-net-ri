@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Carter",
+      "family": "Daniel",
       "given": [
-        "Renaldo"
+        "Elton"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(244) 419-3866 x029",
+      "value": "527.046.3549 x779",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(972) 376-6329 x94180",
+      "value": "360-631-9330",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2022-04-28",
-        "end": "2025-04-28"
+        "start": "2023-04-23",
+        "end": "2026-04-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

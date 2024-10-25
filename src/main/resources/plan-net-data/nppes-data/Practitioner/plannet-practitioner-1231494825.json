@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Vandervort",
+      "family": "Lueilwitz",
       "given": [
-        "Tristan"
+        "Harvey",
+        "William"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "725.132.7400 x871",
+      "value": "389.120.8410 x32596",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(164) 529-7695 x2831",
+      "value": "(698) 590-1789 x053",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-11-18",
-        "end": "2026-11-18"
+        "start": "2024-06-08",
+        "end": "2027-06-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

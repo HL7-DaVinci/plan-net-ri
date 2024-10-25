@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiegand",
+      "family": "Shanahan",
       "given": [
-        "Van",
-        "Eli"
+        "Guadalupe",
+        "Lionel"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "619.487.0358 x539",
+      "value": "807.293.4880 x72498",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "148.017.4438",
+      "value": "1-410-704-5973 x86677",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2023-08-16",
-        "end": "2026-08-16"
+        "start": "2022-08-28",
+        "end": "2025-08-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

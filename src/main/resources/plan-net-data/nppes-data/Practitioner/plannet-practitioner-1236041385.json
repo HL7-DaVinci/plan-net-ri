@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Stracke",
+      "family": "Olson",
       "given": [
-        "Jame",
-        "Norris"
+        "Alden",
+        "Wm"
       ],
       "suffix": [
         "DMD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(917) 551-8021 x9892",
+      "value": "1-178-123-6485 x6534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "282-962-5237",
+      "value": "(662) 812-1004 x8742",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223S0112X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral and Maxillofacial Surgery (Dentist)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral and Maxillofacial Surgery (Dentist)"
       },
       "period": {
-        "start": "2023-10-08",
-        "end": "2026-10-08"
+        "start": "2023-07-18",
+        "end": "2026-07-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Stamm",
+      "family": "Ledner",
       "given": [
-        "Shay"
+        "Estelle",
+        "Vena"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "(718) 462-0054 x5077",
+      "value": "951-319-2774 x0257",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(758) 473-2226 x80227",
+      "value": "965-926-3304 x0490",
       "use": "work"
     }
   ],
@@ -132,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2022-01-22",
-        "end": "2025-01-22"
+        "start": "2023-03-29",
+        "end": "2026-03-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -171,6 +172,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

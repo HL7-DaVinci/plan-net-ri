@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mills",
+      "family": "Buckridge",
       "given": [
-        "Roberto"
+        "Wes"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(352) 746-9421 x48809",
+      "value": "1-356-045-3058 x271",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "674-981-2177 x25305",
+      "value": "1-127-405-9655",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2022-04-06",
-        "end": "2025-04-06"
+        "start": "2022-02-18",
+        "end": "2025-02-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

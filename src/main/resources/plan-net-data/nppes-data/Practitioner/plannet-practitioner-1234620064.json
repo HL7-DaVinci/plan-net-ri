@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rosenbaum",
+      "family": "Krajcik",
       "given": [
-        "Earl"
+        "Benny",
+        "Gaston"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "313-611-9057 x723",
+      "value": "644.188.3243",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "615.280.0677 x01788",
+      "value": "833-795-2428 x87885",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-11-24",
-        "end": "2026-11-24"
+        "start": "2022-08-17",
+        "end": "2025-08-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

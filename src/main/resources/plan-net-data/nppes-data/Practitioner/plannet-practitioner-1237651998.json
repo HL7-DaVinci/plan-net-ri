@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Sipes",
+      "family": "Grant",
       "given": [
-        "Rochell",
-        "Alla"
+        "Amira",
+        "Lora"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "937.743.3810 x68743",
+      "value": "1-173-204-1915 x03905",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-664-395-4057 x21705",
+      "value": "(273) 559-2823 x983",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-03-28",
-        "end": "2026-03-28"
+        "start": "2022-02-25",
+        "end": "2025-02-25"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

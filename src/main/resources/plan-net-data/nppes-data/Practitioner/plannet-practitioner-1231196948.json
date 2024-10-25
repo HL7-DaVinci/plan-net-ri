@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Conroy",
+      "family": "Lind",
       "given": [
-        "Trent"
+        "Ken"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(299) 221-4511 x2346",
+      "value": "755.223.3694 x491",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "630-402-0022 x8056",
+      "value": "(649) 782-2059 x7853",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-05-05",
-        "end": "2025-05-05"
+        "start": "2023-06-25",
+        "end": "2026-06-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

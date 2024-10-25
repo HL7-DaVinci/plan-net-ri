@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "5391d8dcf162d2"
+      "value": "5a09826f0e190a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239578355",
-    "display": "Deangelo Kreiger"
+    "display": "Cleveland Hamill"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VM0101X",
-          "display": "Maternal and Fetal Medicine"
+          "display": "Maternal & Fetal Medicine Physician"
         }
       ],
-      "text": "Maternal and Fetal Medicine"
+      "text": "Maternal & Fetal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-435-094-0580 x63564",
+      "value": "591.234.1812 x58511",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-219-613-1114 x019",
+      "value": "1-593-962-6938 x9012",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ullrich",
+      "family": "Bartell",
       "given": [
-        "Rosana"
+        "Veda",
+        "Karlene"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "572.331.8886 x2234",
+      "value": "777-494-8010 x4443",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "706.680.9159 x96533",
+      "value": "663.543.0540 x8220",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-07-11",
-        "end": "2026-07-11"
+        "start": "2024-03-29",
+        "end": "2027-03-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

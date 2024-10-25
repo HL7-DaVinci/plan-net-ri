@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Padberg",
+      "family": "Roob",
       "given": [
-        "Katrina"
+        "Ethelyn"
       ],
       "suffix": [
         "MA"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "886.020.1099",
+      "value": "181-990-5327 x117",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(316) 532-5574",
+      "value": "(120) 565-2829 x70497",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Speech-Language Pathologist"
       },
       "period": {
-        "start": "2023-05-21",
-        "end": "2026-05-21"
+        "start": "2023-06-30",
+        "end": "2026-06-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

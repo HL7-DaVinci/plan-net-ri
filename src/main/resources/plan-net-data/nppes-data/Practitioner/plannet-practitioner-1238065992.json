@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhn",
+      "family": "Balistreri",
       "given": [
-        "Kristofer",
-        "Dwain"
+        "Theo"
       ],
       "suffix": [
         "DMD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(108) 555-1460 x5717",
+      "value": "(876) 533-5812 x197",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(228) 039-3594 x960",
+      "value": "134-712-1431 x9086",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223S0112X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral and Maxillofacial Surgery (Dentist)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral and Maxillofacial Surgery (Dentist)"
       },
       "period": {
-        "start": "2024-04-06",
-        "end": "2027-04-06"
+        "start": "2024-06-11",
+        "end": "2027-06-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204E00000X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral & Maxillofacial Surgery (D.M.D.)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral & Maxillofacial Surgery (D.M.D.)"
       },
       "period": {
-        "start": "2023-12-28",
-        "end": "2026-12-28"
+        "start": "2024-09-28",
+        "end": "2027-09-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

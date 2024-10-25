@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Parisian",
+      "family": "Stanton",
       "given": [
-        "Kelvin"
+        "Delmer",
+        "Clark"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "648.147.4987 x059",
+      "value": "1-532-206-7956 x27220",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "659.998.5437 x70645",
+      "value": "644.880.8718 x2566",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-03-09",
-        "end": "2026-03-09"
+        "start": "2023-04-14",
+        "end": "2026-04-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

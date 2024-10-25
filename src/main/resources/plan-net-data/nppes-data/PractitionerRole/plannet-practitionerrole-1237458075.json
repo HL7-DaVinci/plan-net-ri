@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "bb1738f54aa070"
+      "value": "078f973164d17c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237458075",
-    "display": "Ina Stoltenberg"
+    "display": "Tommye Schiller"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(346) 684-5040 x768",
+      "value": "997-865-5253 x619",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "871.636.5592 x058",
+      "value": "886-276-3981 x77927",
       "use": "work"
     }
   ],

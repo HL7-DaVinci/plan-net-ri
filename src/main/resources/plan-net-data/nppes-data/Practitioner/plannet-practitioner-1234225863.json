@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Walter",
+      "family": "Lind",
       "given": [
-        "Delmar",
-        "Raymundo"
+        "Kristopher"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "263.703.3270 x6676",
+      "value": "(941) 333-7092 x3209",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "394-927-3714 x4312",
+      "value": "772-137-4178 x3873",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-12-11",
-        "end": "2025-12-11"
+        "start": "2023-12-24",
+        "end": "2026-12-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

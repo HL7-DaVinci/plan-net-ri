@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Skiles",
+      "family": "Marvin",
       "given": [
-        "Inge"
+        "Jacalyn"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "736.249.6896 x3698",
+      "value": "(399) 832-6751 x0669",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "268.523.1024 x698",
+      "value": "(545) 351-6573 x21673",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-11-30",
-        "end": "2024-11-30"
+        "start": "2023-10-25",
+        "end": "2026-10-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

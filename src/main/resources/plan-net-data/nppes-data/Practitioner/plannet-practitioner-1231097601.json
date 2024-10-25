@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Smith",
+      "family": "Larkin",
       "given": [
-        "Ernie",
-        "Pablo"
+        "Oswaldo",
+        "Young"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-765-128-1965 x86256",
+      "value": "578-542-7826 x9379",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "447.669.8203",
+      "value": "1-193-672-7032 x49816",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-08-25",
-        "end": "2025-08-25"
+        "start": "2023-08-29",
+        "end": "2026-08-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

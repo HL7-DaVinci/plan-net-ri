@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Connelly",
+      "family": "Miller",
       "given": [
-        "Emelia"
+        "Danille"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "444.541.6448 x83442",
+      "value": "1-886-673-0212",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "119-709-7277 x528",
+      "value": "288-840-3664",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2024-01-23",
-        "end": "2027-01-23"
+        "start": "2024-02-18",
+        "end": "2027-02-18"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

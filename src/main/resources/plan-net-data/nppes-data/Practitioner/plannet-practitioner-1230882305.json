@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Vandervort",
+      "family": "Maggio",
       "given": [
-        "Reynaldo",
-        "Wilbur"
+        "Danial",
+        "Emery"
       ],
       "suffix": [
         "DPM"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-292-637-3876",
+      "value": "(392) 166-7736 x877",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-343-112-7808",
+      "value": "(874) 829-5236 x097",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-03-23",
-        "end": "2026-03-23"
+        "start": "2024-09-09",
+        "end": "2027-09-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

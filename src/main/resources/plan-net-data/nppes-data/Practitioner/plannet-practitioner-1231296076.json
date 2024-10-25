@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bednar",
+      "family": "Schinner",
       "given": [
-        "Alonzo"
+        "Luigi",
+        "Paul"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-713-566-3455 x9844",
+      "value": "(353) 642-2866 x9233",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "411-862-0047",
+      "value": "1-243-040-1810 x2942",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2022-11-21",
-        "end": "2025-11-21"
+        "start": "2021-11-05",
+        "end": "2024-11-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

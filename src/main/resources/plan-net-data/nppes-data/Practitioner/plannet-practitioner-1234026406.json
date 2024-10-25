@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Feil",
+      "family": "O'Connell",
       "given": [
-        "Cody"
+        "Randall"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(412) 377-6860",
+      "value": "1-102-828-1331",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "627-638-3161",
+      "value": "(299) 930-7620 x126",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-08-29",
-        "end": "2026-08-29"
+        "start": "2022-09-27",
+        "end": "2025-09-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-10-19",
-        "end": "2025-10-19"
+        "start": "2022-06-18",
+        "end": "2025-06-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

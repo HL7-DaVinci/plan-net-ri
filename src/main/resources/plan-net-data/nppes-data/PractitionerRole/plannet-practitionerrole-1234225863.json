@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "442a22cca0966c"
+      "value": "271d9b4ae217bc"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234225863",
-    "display": "Delmar Walter"
+    "display": "Kristopher Lind"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "263.703.3270 x6676",
+      "value": "(941) 333-7092 x3209",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "394-927-3714 x4312",
+      "value": "772-137-4178 x3873",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ankunding",
+      "family": "Bartoletti",
       "given": [
-        "Raelene"
+        "Regan",
+        "Debora"
       ],
       "suffix": [
         "N.P."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "729-740-1599 x43689",
+      "value": "428.855.7773 x456",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(286) 354-2650 x0589",
+      "value": "1-232-623-9725 x714",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2023-08-13",
-        "end": "2026-08-13"
+        "start": "2024-04-01",
+        "end": "2027-04-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2024-04-26",
-        "end": "2027-04-26"
+        "start": "2023-11-09",
+        "end": "2026-11-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

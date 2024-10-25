@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rohan",
+      "family": "O'Reilly",
       "given": [
-        "Garth"
+        "Theo",
+        "Barton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-673-646-7258 x43363",
+      "value": "1-630-269-8903 x88112",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-693-757-3938 x804",
+      "value": "(947) 598-5621",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-03-16",
-        "end": "2025-03-16"
+        "start": "2023-01-22",
+        "end": "2026-01-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Boyle",
+      "family": "Pacocha",
       "given": [
-        "Jefferson"
+        "Ali"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-354-156-5040 x744",
+      "value": "1-340-741-1504 x6672",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(808) 437-5882",
+      "value": "(379) 184-0246 x105",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2023-10-20",
-        "end": "2026-10-20"
+        "start": "2022-03-27",
+        "end": "2025-03-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-02-19",
-        "end": "2027-02-19"
+        "start": "2023-03-21",
+        "end": "2026-03-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -267,14 +267,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-08-02",
-        "end": "2026-08-02"
+        "start": "2022-02-02",
+        "end": "2025-02-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -331,14 +331,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2024-04-19",
-        "end": "2027-04-19"
+        "start": "2022-10-29",
+        "end": "2025-10-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -390,11 +390,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

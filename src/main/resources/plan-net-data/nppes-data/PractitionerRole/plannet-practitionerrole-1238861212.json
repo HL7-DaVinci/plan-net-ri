@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "b2fa92e9ba2189"
+      "value": "be31419026bfcd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238861212",
-    "display": "Jennie Aufderhar"
+    "display": "Shoshana Mante"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(317) 378-5675",
+      "value": "527-531-2631 x76573",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "983-313-9643 x27914",
+      "value": "512-754-6606 x83855",
       "use": "work"
     }
   ],

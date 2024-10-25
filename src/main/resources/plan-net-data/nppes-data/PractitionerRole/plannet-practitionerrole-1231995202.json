@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "da8a283cca976e"
+      "value": "3464f47a8d85d9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231995202",
-    "display": "Roxane Gottlieb"
+    "display": "Alisia Trantow"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1041C0700X",
-          "display": "Clinical"
+          "display": "Clinical Social Worker"
         }
       ],
-      "text": "Clinical"
+      "text": "Clinical Social Worker"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "805.782.3393 x69532",
+      "value": "(823) 637-0143 x94050",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "392-552-0607 x89770",
+      "value": "1-462-882-8426 x15448",
       "use": "work"
     }
   ],

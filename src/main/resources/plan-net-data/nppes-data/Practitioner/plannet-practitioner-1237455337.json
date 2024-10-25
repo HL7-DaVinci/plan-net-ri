@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wiegand",
+      "family": "Murphy",
       "given": [
-        "Reyes"
+        "Benny"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(416) 598-0592",
+      "value": "244.136.2420 x86316",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "652.609.6059 x40210",
+      "value": "405.778.6985",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0700X",
-            "display": "Prosthodontics"
+            "display": "Prosthodontist"
           }
         ],
-        "text": "Prosthodontics"
+        "text": "Prosthodontist"
       },
       "period": {
-        "start": "2022-07-06",
-        "end": "2025-07-06"
+        "start": "2023-08-24",
+        "end": "2026-08-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

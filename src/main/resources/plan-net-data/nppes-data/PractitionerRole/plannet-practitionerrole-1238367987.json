@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "0fd436183c50aa"
+      "value": "b4260e1b77b371"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238367987",
-    "display": "Wm Harvey"
+    "display": "Olin Beatty"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208D00000X",
-          "display": "General Practice"
+          "display": "General Practice Physician"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(808) 952-2224 x929",
+      "value": "425-275-7115 x34882",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(840) 056-4734",
+      "value": "452-759-3872",
       "use": "work"
     }
   ],

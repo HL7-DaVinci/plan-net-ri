@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "cfc29ae68c1014"
+      "value": "7ac4b2c10888d0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233718876",
-    "display": "Angila Mueller"
+    "display": "Halina Williamson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2200X",
-          "display": "Adult Health"
+          "display": "Adult Health Nurse Practitioner"
         }
       ],
-      "text": "Adult Health"
+      "text": "Adult Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "279-732-4994 x03112",
+      "value": "(608) 048-6760 x3957",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "886-642-5308 x798",
+      "value": "338.509.6921",
       "use": "work"
     }
   ],

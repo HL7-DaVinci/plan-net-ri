@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogisich",
+      "family": "Ritchie",
       "given": [
-        "Shayne",
-        "Gregg"
+        "Adam"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "356-003-2811 x5341",
+      "value": "172.588.2093",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-167-139-1773",
+      "value": "689.179.3082",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-05-28",
-        "end": "2025-05-28"
+        "start": "2024-07-18",
+        "end": "2027-07-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

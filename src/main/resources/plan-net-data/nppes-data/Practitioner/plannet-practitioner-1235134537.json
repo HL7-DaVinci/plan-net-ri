@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernhard",
+      "family": "Gutmann",
       "given": [
-        "Reginald"
+        "Christopher"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "944.472.7958 x0047",
+      "value": "(318) 028-6641 x5391",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-469-820-8594 x417",
+      "value": "1-780-193-9585 x4829",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-10-03",
-        "end": "2025-10-03"
+        "start": "2022-06-02",
+        "end": "2025-06-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McKenzie",
+      "family": "Greenfelder",
       "given": [
-        "Johnathan",
-        "Garfield"
+        "Benton",
+        "Phil"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "839-818-8306 x3075",
+      "value": "1-345-895-4324 x55056",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-647-172-4839 x357",
+      "value": "939-936-4236 x1409",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-08-23",
-        "end": "2024-08-23"
+        "start": "2022-05-07",
+        "end": "2025-05-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2021-11-20",
-        "end": "2024-11-20"
+        "start": "2024-10-06",
+        "end": "2027-10-06"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -264,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QH0002X",
-            "display": "Hospice and Palliative Medicine"
+            "display": "Hospice and Palliative Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Hospice and Palliative Medicine"
+        "text": "Hospice and Palliative Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2024-01-04",
-        "end": "2027-01-04"
+        "start": "2024-02-27",
+        "end": "2027-02-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

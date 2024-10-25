@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cremin",
+      "family": "Stokes",
       "given": [
-        "Lyman",
-        "Guillermo"
+        "Renato",
+        "Zachery"
       ],
       "suffix": [
         "PHD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "336-815-0229 x318",
+      "value": "753.218.5496 x2377",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(530) 816-7326 x5685",
+      "value": "508.420.8927 x7485",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2022-09-22",
-        "end": "2025-09-22"
+        "start": "2024-10-10",
+        "end": "2027-10-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2024-02-25",
-        "end": "2027-02-25"
+        "start": "2024-09-08",
+        "end": "2027-09-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

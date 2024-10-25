@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Franecki",
+      "family": "Hilpert",
       "given": [
-        "Garth"
+        "Cornell",
+        "Anderson"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(652) 497-2715 x905",
+      "value": "(758) 947-1865 x371",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(322) 936-9005 x6606",
+      "value": "260-119-5568",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0001X",
-            "display": "Radiation Oncology"
+            "display": "Radiation Oncology Physician"
           }
         ],
-        "text": "Radiation Oncology"
+        "text": "Radiation Oncology Physician"
       },
       "period": {
-        "start": "2023-01-14",
-        "end": "2026-01-14"
+        "start": "2023-11-23",
+        "end": "2026-11-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

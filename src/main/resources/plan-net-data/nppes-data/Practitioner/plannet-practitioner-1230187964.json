@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ullrich",
+      "family": "Marvin",
       "given": [
-        "Maria",
-        "Thad"
+        "Ronny"
       ],
       "suffix": [
         "R.PH, BCOP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-727-531-0788",
+      "value": "731-051-7576 x243",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(777) 248-2916",
+      "value": "194.919.5373",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2022-01-08",
-        "end": "2025-01-08"
+        "start": "2022-06-27",
+        "end": "2025-06-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

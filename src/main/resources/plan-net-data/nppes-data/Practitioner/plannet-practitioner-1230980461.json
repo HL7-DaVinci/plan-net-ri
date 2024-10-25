@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pfeffer",
+      "family": "Rolfson",
       "given": [
-        "Hiram",
-        "Roland"
+        "Gregorio",
+        "Shane"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "253-751-2950",
+      "value": "(336) 015-2353 x31615",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(638) 165-3509 x4669",
+      "value": "1-713-814-3790 x084",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2021-08-15",
-        "end": "2024-08-15"
+        "start": "2024-10-23",
+        "end": "2027-10-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

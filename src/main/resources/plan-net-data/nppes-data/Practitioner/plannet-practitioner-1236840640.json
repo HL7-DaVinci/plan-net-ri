@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Leuschke",
+      "family": "Monahan",
       "given": [
-        "Jarvis"
+        "Norman",
+        "Mack"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(996) 121-5412",
+      "value": "(964) 055-8334",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "657-013-6900 x3122",
+      "value": "(444) 377-2737 x58624",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2022-01-04",
-        "end": "2025-01-04"
+        "start": "2023-03-13",
+        "end": "2026-03-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QS0010X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2022-07-28",
-        "end": "2025-07-28"
+        "start": "2024-04-17",
+        "end": "2027-04-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -261,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

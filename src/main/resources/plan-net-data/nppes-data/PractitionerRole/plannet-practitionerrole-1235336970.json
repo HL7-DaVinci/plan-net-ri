@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "8700a4353421de"
+      "value": "22d8d7414226d9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235336970",
-    "display": "Terese Hintz"
+    "display": "Arthur Lesch"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZP0101X",
-          "display": "Anatomic Pathology"
+          "display": "Anatomic Pathology Physician"
         }
       ],
-      "text": "Anatomic Pathology"
+      "text": "Anatomic Pathology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "344-819-1000 x58161",
+      "value": "443.495.5311 x6443",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "790.892.4001 x806",
+      "value": "774.429.9060 x56533",
       "use": "work"
     }
   ],

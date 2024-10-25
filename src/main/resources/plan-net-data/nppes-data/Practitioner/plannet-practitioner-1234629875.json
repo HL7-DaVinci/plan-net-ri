@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Russel",
+      "family": "Daniel",
       "given": [
-        "Kip"
+        "Keneth"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(837) 949-8387",
+      "value": "1-299-293-8928 x0150",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "294-949-1837 x11093",
+      "value": "1-931-398-7695 x6059",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2024-03-08",
-        "end": "2027-03-08"
+        "start": "2023-05-25",
+        "end": "2026-05-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

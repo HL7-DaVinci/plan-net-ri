@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Romaguera",
+      "family": "Osinski",
       "given": [
-        "Duane"
+        "Wesley",
+        "Mike"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(901) 615-7524 x537",
+      "value": "607.096.8104 x824",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "216-019-9817 x4512",
+      "value": "1-844-884-1550 x81137",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2023-09-11",
-        "end": "2026-09-11"
+        "start": "2021-11-01",
+        "end": "2024-11-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

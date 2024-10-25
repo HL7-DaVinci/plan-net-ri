@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kautzer",
+      "family": "Kunde",
       "given": [
-        "Dino",
-        "George"
+        "Issac"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "148-685-2197 x1796",
+      "value": "584-904-6755 x440",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "518-117-0451 x0419",
+      "value": "(995) 328-9114 x84593",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2023-05-08",
-        "end": "2026-05-08"
+        "start": "2023-02-05",
+        "end": "2026-02-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

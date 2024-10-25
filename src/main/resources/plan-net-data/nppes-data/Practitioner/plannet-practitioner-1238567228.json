@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ebert",
+      "family": "Hyatt",
       "given": [
-        "Willie",
-        "Parker"
+        "Gerardo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-617-510-7050 x2616",
+      "value": "139.375.6096 x425",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "490-155-8497",
+      "value": "(197) 108-8514 x041",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-04-20",
-        "end": "2025-04-20"
+        "start": "2023-10-26",
+        "end": "2026-10-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

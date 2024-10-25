@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schiller",
+      "family": "Collins",
       "given": [
-        "Patsy"
+        "Clora"
       ],
       "suffix": [
         "OD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "431.053.5342 x17519",
+      "value": "(236) 085-3170 x544",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(640) 266-8666 x739",
+      "value": "(607) 787-4099 x0051",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-04-14",
-        "end": "2025-04-14"
+        "start": "2022-12-11",
+        "end": "2025-12-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

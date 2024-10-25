@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jacobs",
+      "family": "Windler",
       "given": [
-        "Scott"
+        "Grover",
+        "Dewayne"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "308.258.4122 x62648",
+      "value": "823-728-6269 x26931",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-549-952-0644 x644",
+      "value": "1-266-113-7827",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-12-15",
-        "end": "2025-12-15"
+        "start": "2023-06-01",
+        "end": "2026-06-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

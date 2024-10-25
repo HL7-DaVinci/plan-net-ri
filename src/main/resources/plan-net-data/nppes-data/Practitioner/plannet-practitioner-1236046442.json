@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lowe",
+      "family": "Marks",
       "given": [
-        "Neville"
+        "Fredrick"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(135) 868-3725 x9317",
+      "value": "139-779-5691 x36096",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "943.994.5456 x251",
+      "value": "761.593.4636",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2022-01-06",
-        "end": "2025-01-06"
+        "start": "2022-06-21",
+        "end": "2025-06-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

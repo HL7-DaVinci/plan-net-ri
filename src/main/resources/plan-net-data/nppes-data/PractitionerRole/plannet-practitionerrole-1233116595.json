@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "f60434dc8ddeb3"
+      "value": "e81430587437ed"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233116595",
-    "display": "Joesph Hagenes"
+    "display": "Carter West"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1835P1300X",
-          "display": "Psychiatric"
+          "display": "Psychiatric Pharmacist"
         }
       ],
-      "text": "Psychiatric"
+      "text": "Psychiatric Pharmacist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "549-393-8922 x4391",
+      "value": "1-426-490-7471 x6197",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(600) 424-1589",
+      "value": "564-244-1511",
       "use": "work"
     }
   ],

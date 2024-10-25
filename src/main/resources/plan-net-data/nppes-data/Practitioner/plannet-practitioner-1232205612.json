@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Donnelly",
+      "family": "Marvin",
       "given": [
-        "Armand"
+        "Kermit"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "271-711-7094 x55707",
+      "value": "(668) 506-6097 x2862",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "204.100.7897",
+      "value": "1-775-921-8960",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-07-19",
-        "end": "2026-07-19"
+        "start": "2024-01-12",
+        "end": "2027-01-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "6724de343b42e7"
+      "value": "4a1dac9723a72a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233519658",
-    "display": "Adrienne Schuster"
+    "display": "Nell Barton"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "658-947-9908",
+      "value": "158.284.7630 x255",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "809-391-3279",
+      "value": "691.807.6433 x60413",
       "use": "work"
     }
   ],

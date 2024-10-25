@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoppe",
+      "family": "Waelchi",
       "given": [
-        "Sherrill"
+        "Earlean",
+        "Vennie"
       ],
       "suffix": [
         "PHARM. D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "969.912.4949 x367",
+      "value": "655-742-5711",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(200) 720-9298 x24036",
+      "value": "(901) 967-3732 x41428",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2024-02-11",
-        "end": "2027-02-11"
+        "start": "2023-06-22",
+        "end": "2026-06-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Smitham",
+      "family": "Franecki",
       "given": [
-        "Max"
+        "Markus"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-753-516-7283",
+      "value": "(670) 687-0377 x9115",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(754) 983-3352 x830",
+      "value": "332-381-5449",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2022-07-15",
-        "end": "2025-07-15"
+        "start": "2022-07-10",
+        "end": "2025-07-10"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2023-06-18",
-        "end": "2026-06-18"
+        "start": "2023-08-15",
+        "end": "2026-08-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -264,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0202X",
-            "display": "Pediatric Cardiology"
+            "display": "Pediatric Cardiology Physician"
           }
         ],
-        "text": "Pediatric Cardiology"
+        "text": "Pediatric Cardiology Physician"
       },
       "period": {
-        "start": "2024-01-02",
-        "end": "2027-01-02"
+        "start": "2022-03-08",
+        "end": "2025-03-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -328,14 +328,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0202X",
-            "display": "Pediatric Cardiology"
+            "display": "Pediatric Cardiology Physician"
           }
         ],
-        "text": "Pediatric Cardiology"
+        "text": "Pediatric Cardiology Physician"
       },
       "period": {
-        "start": "2022-08-17",
-        "end": "2025-08-17"
+        "start": "2024-02-28",
+        "end": "2027-02-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -387,11 +387,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

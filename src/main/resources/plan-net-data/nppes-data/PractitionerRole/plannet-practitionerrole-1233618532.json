@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "bcc9c7982bd3cc"
+      "value": "70484e49aab5d5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233618532",
-    "display": "Drew Greenholt"
+    "display": "Charlie Blanda"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "278.401.9086",
+      "value": "956-000-2378 x3708",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "664.254.5434 x831",
+      "value": "325.657.6992 x1217",
       "use": "work"
     }
   ],

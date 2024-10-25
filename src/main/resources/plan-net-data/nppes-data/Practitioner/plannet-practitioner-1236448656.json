@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Adams",
+      "family": "Schmitt",
       "given": [
-        "Benedict"
+        "Julian"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-513-030-4833 x30983",
+      "value": "1-234-226-1611 x302",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-865-330-3438 x870",
+      "value": "563-834-3838 x80174",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0101X",
-            "display": "Anatomic Pathology"
+            "display": "Anatomic Pathology Physician"
           }
         ],
-        "text": "Anatomic Pathology"
+        "text": "Anatomic Pathology Physician"
       },
       "period": {
-        "start": "2023-02-08",
-        "end": "2026-02-08"
+        "start": "2024-01-30",
+        "end": "2027-01-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

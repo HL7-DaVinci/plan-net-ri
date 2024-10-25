@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Douglas",
+      "family": "Klocko",
       "given": [
-        "Corey"
+        "Christian"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "107-714-5910 x28163",
+      "value": "1-119-014-4944 x270",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "590.703.7043 x8566",
+      "value": "1-178-391-9044 x33989",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0006X",
-            "display": "Developmental - Behavioral Pediatrics"
+            "display": "Developmental - Behavioral Pediatrics Physician"
           }
         ],
-        "text": "Developmental - Behavioral Pediatrics"
+        "text": "Developmental - Behavioral Pediatrics Physician"
       },
       "period": {
-        "start": "2023-01-10",
-        "end": "2026-01-10"
+        "start": "2022-01-31",
+        "end": "2025-01-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208VP0000X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine Physician"
       },
       "period": {
-        "start": "2022-10-13",
-        "end": "2025-10-13"
+        "start": "2024-08-06",
+        "end": "2027-08-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -238,31 +238,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

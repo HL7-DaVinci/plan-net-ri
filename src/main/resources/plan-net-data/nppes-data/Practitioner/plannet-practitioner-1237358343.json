@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gutkowski",
+      "family": "Wolf",
       "given": [
-        "Deane"
+        "Teena"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "124.181.4464 x03951",
+      "value": "455.808.6536 x8311",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "913-003-3647 x812",
+      "value": "1-672-947-6564 x020",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2022-06-19",
-        "end": "2025-06-19"
+        "start": "2022-04-05",
+        "end": "2025-04-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

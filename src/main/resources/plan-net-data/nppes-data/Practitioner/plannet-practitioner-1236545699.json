@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Zemlak",
+      "family": "Welch",
       "given": [
-        "Natalia",
-        "Emmie"
+        "Scarlet"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "619.095.9879 x8525",
+      "value": "638.599.5266 x55846",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(805) 452-3587",
+      "value": "217-734-3325 x3498",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2024-05-06",
-        "end": "2027-05-06"
+        "start": "2023-03-23",
+        "end": "2026-03-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

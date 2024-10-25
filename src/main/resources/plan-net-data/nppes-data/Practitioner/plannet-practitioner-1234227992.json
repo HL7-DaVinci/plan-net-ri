@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ernser",
+      "family": "Windler",
       "given": [
-        "Thomas",
-        "Terrell"
+        "Bobbie"
       ],
       "suffix": [
         "PA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "387.925.3945 x870",
+      "value": "(150) 996-0379 x8915",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "592.340.9432",
+      "value": "428-032-7719",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2021-10-09",
-        "end": "2024-10-09"
+        "start": "2022-03-04",
+        "end": "2025-03-04"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AS0400X",
-            "display": "Surgical"
+            "display": "Surgical Physician Assistant"
           }
         ],
-        "text": "Surgical"
+        "text": "Surgical Physician Assistant"
       },
       "period": {
-        "start": "2021-10-17",
-        "end": "2024-10-17"
+        "start": "2022-04-26",
+        "end": "2025-04-26"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

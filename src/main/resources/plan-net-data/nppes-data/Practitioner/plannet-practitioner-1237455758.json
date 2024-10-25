@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Reichert",
+      "family": "Howell",
       "given": [
-        "Don"
+        "Marvin",
+        "Jimmie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(815) 962-8641 x3896",
+      "value": "540-717-1627 x749",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "296.477.3717 x103",
+      "value": "(617) 767-9799",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0106X",
-            "display": "Hand Surgery"
+            "display": "Orthopaedic Hand Surgery Physician"
           }
         ],
-        "text": "Hand Surgery"
+        "text": "Orthopaedic Hand Surgery Physician"
       },
       "period": {
-        "start": "2023-09-18",
-        "end": "2026-09-18"
+        "start": "2022-01-26",
+        "end": "2025-01-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

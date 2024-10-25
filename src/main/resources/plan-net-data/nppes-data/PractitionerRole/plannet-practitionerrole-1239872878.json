@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "7707789d138ca2"
+      "value": "fbdcedec7a7459"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239872878",
-    "display": "Jorge Cremin"
+    "display": "Jarrod Feest"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "640.370.9982",
+      "value": "635.361.0628 x6800",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "766-382-0040 x64815",
+      "value": "297.573.6211 x7477",
       "use": "work"
     }
   ],

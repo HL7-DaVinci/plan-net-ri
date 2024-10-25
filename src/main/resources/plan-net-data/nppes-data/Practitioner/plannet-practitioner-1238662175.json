@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rice",
+      "family": "Macejkovic",
       "given": [
-        "Lupe"
+        "Nigel"
       ],
       "prefix": [
         "Mr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "633-424-6952 x25821",
+      "value": "725.159.3185 x58790",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "874.738.7490 x486",
+      "value": "364-342-8394 x799",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1835P1200X",
-            "display": "Pharmacotherapy"
+            "display": "Pharmacotherapy Pharmacist"
           }
         ],
-        "text": "Pharmacotherapy"
+        "text": "Pharmacotherapy Pharmacist"
       },
       "period": {
-        "start": "2023-09-11",
-        "end": "2026-09-11"
+        "start": "2024-07-12",
+        "end": "2027-07-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1835P1300X",
-            "display": "Psychiatric"
+            "display": "Psychiatric Pharmacist"
           }
         ],
-        "text": "Psychiatric"
+        "text": "Psychiatric Pharmacist"
       },
       "period": {
-        "start": "2023-03-09",
-        "end": "2026-03-09"
+        "start": "2023-07-28",
+        "end": "2026-07-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

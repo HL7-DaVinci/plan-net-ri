@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Doyle",
+      "family": "Reichel",
       "given": [
-        "Erik"
+        "Josiah"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "650-508-4930 x333",
+      "value": "841-166-5066 x71664",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(337) 875-1065",
+      "value": "1-101-695-6315 x1799",
       "use": "work"
     }
   ],
@@ -109,6 +109,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

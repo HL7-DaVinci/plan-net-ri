@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zboncak",
+      "family": "Stroman",
       "given": [
-        "Sal"
+        "Morton",
+        "Wiley"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-452-132-9834 x37875",
+      "value": "(137) 185-5355 x23015",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-431-083-7631",
+      "value": "(124) 771-9278",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-03-13",
-        "end": "2027-03-13"
+        "start": "2024-03-23",
+        "end": "2027-03-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

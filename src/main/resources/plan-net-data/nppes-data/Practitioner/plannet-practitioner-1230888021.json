@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Weber",
+      "family": "Cronin",
       "given": [
-        "Brandy"
+        "Carey"
       ],
       "suffix": [
         "PA-C"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-704-476-0878",
+      "value": "414-801-8460",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(303) 538-8060",
+      "value": "943.791.2224 x5858",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2024-03-25",
-        "end": "2027-03-25"
+        "start": "2024-10-14",
+        "end": "2027-10-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Orn",
+      "family": "Rolfson",
       "given": [
-        "Dee"
+        "Donita",
+        "Gayle"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-930-747-5095",
+      "value": "253-854-3625 x137",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "137.776.1495 x23038",
+      "value": "739.707.3952 x20444",
       "use": "work"
     }
   ],
@@ -132,14 +133,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2024-06-12",
-        "end": "2027-06-12"
+        "start": "2022-03-16",
+        "end": "2025-03-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -171,6 +172,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

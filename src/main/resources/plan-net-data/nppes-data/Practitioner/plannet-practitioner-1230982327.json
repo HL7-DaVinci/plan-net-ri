@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dooley",
+      "family": "Watsica",
       "given": [
-        "Bryan",
-        "Kevin"
+        "Augustus"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(956) 402-7537 x3842",
+      "value": "(395) 166-8513 x854",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "916.842.7133 x1576",
+      "value": "286-119-7505 x55012",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2024-01-26",
-        "end": "2027-01-26"
+        "start": "2023-05-20",
+        "end": "2026-05-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

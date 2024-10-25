@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Wolff",
+      "family": "Terry",
       "given": [
-        "Corene",
-        "Hwa"
+        "Rachell"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "770-082-7728 x9007",
+      "value": "1-851-392-3466 x501",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "688-854-0437 x69463",
+      "value": "673.155.1234 x6687",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-09-18",
-        "end": "2025-09-18"
+        "start": "2022-03-23",
+        "end": "2025-03-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

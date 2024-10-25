@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kunde",
+      "family": "Metz",
       "given": [
-        "Spencer"
+        "Weston"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(411) 883-2435",
+      "value": "(270) 766-1653",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "749-336-5186",
+      "value": "374-875-0806 x19232",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-04-30",
-        "end": "2027-04-30"
+        "start": "2024-02-21",
+        "end": "2027-02-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Osinski",
+      "family": "Daugherty",
       "given": [
-        "Freeman",
-        "Elmer"
+        "Anderson",
+        "Donn"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-488-068-5242 x09558",
+      "value": "843-497-1785 x7852",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-318-467-6410 x9846",
+      "value": "(761) 473-5629",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-05-13",
-        "end": "2025-05-13"
+        "start": "2022-09-23",
+        "end": "2025-09-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

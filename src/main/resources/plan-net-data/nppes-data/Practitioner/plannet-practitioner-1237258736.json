@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kreiger",
+      "family": "McGlynn",
       "given": [
-        "Jeanice"
+        "Muriel"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "609-051-3838 x221",
+      "value": "(673) 707-1408 x90517",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "467.211.0724 x38232",
+      "value": "1-640-102-1732 x40483",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-05-20",
-        "end": "2027-05-20"
+        "start": "2023-10-22",
+        "end": "2026-10-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

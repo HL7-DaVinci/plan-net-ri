@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hilll",
+      "family": "Breitenberg",
       "given": [
-        "Horace",
-        "Jerrold"
+        "Sterling"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(491) 264-0463 x7642",
+      "value": "1-543-685-7628 x043",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "229-642-4750 x8360",
+      "value": "865-813-0786 x716",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-07-22",
-        "end": "2025-07-22"
+        "start": "2024-05-24",
+        "end": "2027-05-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +177,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

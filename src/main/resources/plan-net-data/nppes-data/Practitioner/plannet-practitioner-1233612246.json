@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnston",
+      "family": "Hoppe",
       "given": [
-        "Alysha",
-        "Trula"
+        "Enid"
       ],
       "suffix": [
         "PH.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-587-132-0709 x3291",
+      "value": "(417) 731-7581",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "571.043.6053 x43956",
+      "value": "1-624-998-2153 x07216",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2022-10-10",
-        "end": "2025-10-10"
+        "start": "2022-11-10",
+        "end": "2025-11-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

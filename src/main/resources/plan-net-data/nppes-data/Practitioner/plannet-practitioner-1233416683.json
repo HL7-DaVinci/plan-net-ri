@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bashirian",
+      "family": "Schaefer",
       "given": [
-        "Vern"
+        "Abe"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "346.949.1414 x05239",
+      "value": "(122) 781-8625 x8945",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-294-939-1299 x8082",
+      "value": "941.528.6533 x561",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-07-07",
-        "end": "2025-07-07"
+        "start": "2023-06-21",
+        "end": "2026-06-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "36ac0b9a8e646e"
+      "value": "13b092ad8d5a27"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236041385",
-    "display": "Jame Stracke"
+    "display": "Alden Olson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223S0112X",
-          "display": "Oral and Maxillofacial Surgery"
+          "display": "Oral and Maxillofacial Surgery (Dentist)"
         }
       ],
-      "text": "Oral and Maxillofacial Surgery"
+      "text": "Oral and Maxillofacial Surgery (Dentist)"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(917) 551-8021 x9892",
+      "value": "1-178-123-6485 x6534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "282-962-5237",
+      "value": "(662) 812-1004 x8742",
       "use": "work"
     }
   ],

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Prosacco",
+      "family": "Schaefer",
       "given": [
-        "Minda",
-        "Marlene"
+        "Meghan"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "206.776.2084",
+      "value": "490-381-0021",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "216-387-2925 x880",
+      "value": "120-449-8881 x66474",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2022-05-23",
-        "end": "2025-05-23"
+        "start": "2022-10-16",
+        "end": "2025-10-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

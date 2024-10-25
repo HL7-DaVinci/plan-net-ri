@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "d0af86c98306a8"
+      "value": "51f63174397350"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237955865",
-    "display": "Todd Brakus"
+    "display": "Jack Torp"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(920) 806-0461 x72776",
+      "value": "1-882-885-4375 x0649",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "665.041.4362 x576",
+      "value": "484-585-6287 x2922",
       "use": "work"
     }
   ],

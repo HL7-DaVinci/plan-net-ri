@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "526f6a6f494224"
+      "value": "321862ab0a3248"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232903949",
-    "display": "Jon Zieme"
+    "display": "Boyce Bednar"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-460-972-3894 x72395",
+      "value": "(662) 143-9227 x384",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(434) 182-5095",
+      "value": "894.283.1320 x408",
       "use": "work"
     }
   ],

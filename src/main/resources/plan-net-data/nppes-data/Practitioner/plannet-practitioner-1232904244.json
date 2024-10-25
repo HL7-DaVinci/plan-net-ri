@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogisich",
+      "family": "Kassulke",
       "given": [
-        "Cory",
-        "Stanton"
+        "Manuel",
+        "Brice"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(327) 496-0151 x0725",
+      "value": "1-243-130-2284",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-751-204-4360 x01727",
+      "value": "590.218.7992 x56490",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-09-23",
-        "end": "2024-09-23"
+        "start": "2022-05-05",
+        "end": "2025-05-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

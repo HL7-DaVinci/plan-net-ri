@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "D'Amore",
+      "family": "Stark",
       "given": [
-        "Clifton",
-        "Milo"
+        "Terry"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(397) 252-5474 x290",
+      "value": "578-510-6600 x513",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(876) 240-4679",
+      "value": "755-595-7429 x95259",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2021-07-15",
-        "end": "2024-07-15"
+        "start": "2023-04-26",
+        "end": "2026-04-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schultz",
+      "family": "Okuneva",
       "given": [
-        "Lance",
-        "Austin"
+        "Freddie"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "427.991.4743 x2559",
+      "value": "1-504-638-9131 x71287",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-789-028-4151",
+      "value": "1-404-180-8529 x9785",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-09-10",
-        "end": "2025-09-10"
+        "start": "2024-02-16",
+        "end": "2027-02-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

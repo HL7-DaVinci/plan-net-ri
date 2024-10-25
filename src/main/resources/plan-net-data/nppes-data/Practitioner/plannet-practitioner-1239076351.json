@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Keeling",
+      "family": "Sanford",
       "given": [
-        "Deana",
-        "Theola"
+        "Louella",
+        "Dolly"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-254-442-4061 x027",
+      "value": "(183) 545-0890",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "283-689-8902 x016",
+      "value": "136.983.6348 x7308",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-01-17",
-        "end": "2027-01-17"
+        "start": "2022-08-01",
+        "end": "2025-08-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

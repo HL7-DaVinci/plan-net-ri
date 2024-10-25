@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Medhurst",
+      "family": "Langworth",
       "given": [
-        "Marshall"
+        "Darrel"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-957-398-5898 x87242",
+      "value": "714.425.5225 x50563",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(616) 217-6580 x788",
+      "value": "762-244-6014 x9152",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-10-29",
-        "end": "2025-10-29"
+        "start": "2021-12-14",
+        "end": "2024-12-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "45cc9c279a33c9"
+      "value": "58b1bafbe52a0b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231397327",
-    "display": "Coleman Runte"
+    "display": "Ben Wiza"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "190-997-3610 x1515",
+      "value": "(642) 083-6149 x754",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "743-971-6473 x8472",
+      "value": "(592) 020-1869 x2509",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Murphy",
+      "family": "Lemke",
       "given": [
-        "Magan"
+        "Tammie",
+        "Xuan"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "605-047-3955 x15038",
+      "value": "966.486.5833 x64421",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "911-651-0332 x775",
+      "value": "809.572.8010",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0200X",
-            "display": "Pediatrics"
+            "display": "Pediatric Nurse Practitioner"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatric Nurse Practitioner"
       },
       "period": {
-        "start": "2022-10-16",
-        "end": "2025-10-16"
+        "start": "2024-03-04",
+        "end": "2027-03-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

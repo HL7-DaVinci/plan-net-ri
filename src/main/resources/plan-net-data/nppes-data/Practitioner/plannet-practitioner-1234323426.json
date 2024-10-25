@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Donnelly",
+      "family": "Russel",
       "given": [
-        "Yadira",
-        "Jaimie"
+        "Janina"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(150) 481-4203 x858",
+      "value": "745-414-5505 x99144",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "461.261.6023 x22710",
+      "value": "316.393.9287",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2024-06-28",
-        "end": "2027-06-28"
+        "start": "2023-10-04",
+        "end": "2026-10-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

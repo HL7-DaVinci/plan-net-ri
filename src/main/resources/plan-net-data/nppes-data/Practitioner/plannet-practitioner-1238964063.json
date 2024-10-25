@@ -32,22 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Homenick",
+      "family": "Cremin",
       "given": [
-        "Synthia",
-        "Myriam"
+        "Christy"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "(811) 380-5893",
+      "value": "(750) 235-4514 x004",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "467.713.8558 x166",
+      "value": "1-895-145-6858 x774",
       "use": "work"
     }
   ],
@@ -106,6 +105,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

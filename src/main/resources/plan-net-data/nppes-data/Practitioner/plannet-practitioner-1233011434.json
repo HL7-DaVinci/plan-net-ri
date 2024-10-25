@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Murphy",
+      "family": "Towne",
       "given": [
-        "Perla",
-        "Yesenia"
+        "Marylouise"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "340-487-8214 x2063",
+      "value": "137-631-5843 x85386",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(689) 515-0880 x6963",
+      "value": "(656) 850-5894 x7526",
       "use": "work"
     }
   ],
@@ -112,31 +111,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

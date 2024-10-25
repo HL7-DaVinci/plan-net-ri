@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Baumbach",
+      "family": "Medhurst",
       "given": [
-        "Kirstie"
+        "Shanika",
+        "Larue"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-372-414-3676 x1608",
+      "value": "775-149-3900 x603",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(315) 098-4933 x84786",
+      "value": "951.700.3410 x2863",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WV0400X",
-            "display": "Vision Therapy"
+            "display": "Vision Therapy Optometrist"
           }
         ],
-        "text": "Vision Therapy"
+        "text": "Vision Therapy Optometrist"
       },
       "period": {
-        "start": "2022-04-10",
-        "end": "2025-04-10"
+        "start": "2021-12-18",
+        "end": "2024-12-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

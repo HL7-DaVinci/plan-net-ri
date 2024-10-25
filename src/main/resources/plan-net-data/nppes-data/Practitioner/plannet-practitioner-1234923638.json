@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Morissette",
+      "family": "Quitzon",
       "given": [
-        "Kathi"
+        "Usha"
       ],
       "suffix": [
         "MA"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "964.678.6135 x2510",
+      "value": "332-919-1658 x687",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "439-147-6363 x276",
+      "value": "1-638-351-1444",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2024-06-19",
-        "end": "2027-06-19"
+        "start": "2024-01-24",
+        "end": "2027-01-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

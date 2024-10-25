@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Volkman",
+      "family": "Quigley",
       "given": [
-        "Dexter"
+        "Jules"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(709) 446-8205 x276",
+      "value": "(726) 252-6837 x138",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "433.791.6135 x84268",
+      "value": "885.469.8606",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-05-30",
-        "end": "2025-05-30"
+        "start": "2022-10-20",
+        "end": "2025-10-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2021-12-09",
-        "end": "2024-12-09"
+        "start": "2024-01-12",
+        "end": "2027-01-12"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

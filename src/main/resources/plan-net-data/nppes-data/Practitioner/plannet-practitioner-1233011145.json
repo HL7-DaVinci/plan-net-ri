@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Franecki",
+      "family": "Friesen",
       "given": [
-        "Caleb",
-        "Christoper"
+        "Franklyn",
+        "Bryant"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-194-973-0488 x20460",
+      "value": "1-301-366-3970",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-941-003-5683 x510",
+      "value": "769-549-5482",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2024-05-28",
-        "end": "2027-05-28"
+        "start": "2022-03-12",
+        "end": "2025-03-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

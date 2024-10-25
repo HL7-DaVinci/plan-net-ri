@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Smith",
       "given": [
-        "Wilber",
-        "Hank"
+        "Benjamin",
+        "Edwardo"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "595.056.4585 x9943",
+      "value": "1-644-966-4576",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-775-162-3894",
+      "value": "725-617-1834",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-06-30",
-        "end": "2025-06-30"
+        "start": "2022-05-18",
+        "end": "2025-05-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Greenholt",
+      "family": "Mraz",
       "given": [
-        "Mayme"
+        "Rosamaria",
+        "Calandra"
       ],
       "suffix": [
         "A.P.R.N."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "879.268.8492 x55867",
+      "value": "1-485-017-4177 x94529",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "857-144-7762 x2287",
+      "value": "754.038.2889",
       "use": "work"
     }
   ],
@@ -141,8 +142,8 @@
         "text": "Registered Nurse"
       },
       "period": {
-        "start": "2021-12-02",
-        "end": "2024-12-02"
+        "start": "2022-12-02",
+        "end": "2025-12-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-06-28",
-        "end": "2026-06-28"
+        "start": "2024-10-18",
+        "end": "2027-10-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -258,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

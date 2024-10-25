@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hickle",
+      "family": "Predovic",
       "given": [
-        "Drucilla",
-        "Melba"
+        "Maye"
       ],
       "suffix": [
         "D.C."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(829) 251-4347",
+      "value": "1-980-751-0614 x462",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(955) 697-0303 x358",
+      "value": "(666) 109-5856",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-02-10",
-        "end": "2025-02-10"
+        "start": "2023-07-12",
+        "end": "2026-07-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

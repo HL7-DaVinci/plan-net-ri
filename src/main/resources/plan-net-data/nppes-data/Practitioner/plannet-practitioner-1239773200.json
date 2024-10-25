@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "King",
+      "family": "Muller",
       "given": [
-        "Jamison",
-        "Adolph"
+        "Sherman"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-130-811-4810 x434",
+      "value": "941.331.0389 x810",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(157) 457-2703",
+      "value": "1-725-957-1538 x5050",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-05-03",
-        "end": "2025-05-03"
+        "start": "2023-07-26",
+        "end": "2026-07-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2022-10-03",
-        "end": "2025-10-03"
+        "start": "2021-10-26",
+        "end": "2024-10-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

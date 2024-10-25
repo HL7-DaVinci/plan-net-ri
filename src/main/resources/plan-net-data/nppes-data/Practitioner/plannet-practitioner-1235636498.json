@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Raynor",
+      "family": "McLaughlin",
       "given": [
-        "Lyman",
-        "Dorian"
+        "Will",
+        "Richard"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(950) 258-8300",
+      "value": "1-218-626-1608 x051",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "498.012.0968",
+      "value": "1-471-997-4667 x9716",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2023-06-30",
-        "end": "2026-06-30"
+        "start": "2024-09-23",
+        "end": "2027-09-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

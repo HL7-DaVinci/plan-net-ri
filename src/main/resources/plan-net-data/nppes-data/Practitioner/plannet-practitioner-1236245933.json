@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ruecker",
+      "family": "Mohr",
       "given": [
-        "Cherie",
-        "Ursula"
+        "Hilary",
+        "Angelita"
       ],
       "suffix": [
         "C.N.M."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "826.912.4352 x7908",
+      "value": "1-103-935-0962 x585",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "412-048-6993 x0820",
+      "value": "965.410.7365 x5444",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-10-11",
-        "end": "2025-10-11"
+        "start": "2023-05-20",
+        "end": "2026-05-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

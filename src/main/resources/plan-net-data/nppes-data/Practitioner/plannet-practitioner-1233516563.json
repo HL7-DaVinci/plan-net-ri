@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lemke",
+      "family": "Lubowitz",
       "given": [
-        "Cleveland",
-        "Devin"
+        "Mitchel",
+        "Larry"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(965) 102-0717 x74716",
+      "value": "380.306.3885 x795",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "852-599-5826 x48080",
+      "value": "(474) 196-6919 x74361",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2023-01-05",
-        "end": "2026-01-05"
+        "start": "2024-02-11",
+        "end": "2027-02-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

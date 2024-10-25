@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schamberger",
+      "family": "Osinski",
       "given": [
-        "Mickey",
-        "Lindsey"
+        "Amado",
+        "Darryl"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(382) 939-9392 x41380",
+      "value": "412-584-4816",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(286) 499-6438 x15250",
+      "value": "(190) 191-0885 x56208",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2021-12-01",
-        "end": "2024-12-01"
+        "start": "2022-11-15",
+        "end": "2025-11-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

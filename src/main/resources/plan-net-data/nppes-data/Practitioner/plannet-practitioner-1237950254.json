@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Goyette",
+      "family": "Armstrong",
       "given": [
-        "Josiah",
-        "Kevin"
+        "Erin"
       ],
       "prefix": [
         "Dr."
@@ -49,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-414-660-2862 x76776",
+      "value": "699-102-2415 x04550",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "853.706.9985",
+      "value": "1-190-916-9826 x27543",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-08-22",
-        "end": "2024-08-22"
+        "start": "2023-04-25",
+        "end": "2026-04-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

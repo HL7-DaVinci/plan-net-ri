@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Collier",
+      "family": "Rogahn",
       "given": [
-        "Willard"
+        "Chance",
+        "Arlie"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "617-757-0378 x217",
+      "value": "1-487-415-3095 x6370",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-801-520-8190 x27961",
+      "value": "117-682-5572 x537",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-01-15",
-        "end": "2026-01-15"
+        "start": "2021-10-31",
+        "end": "2024-10-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2024-05-16",
-        "end": "2027-05-16"
+        "start": "2021-11-05",
+        "end": "2024-11-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -258,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

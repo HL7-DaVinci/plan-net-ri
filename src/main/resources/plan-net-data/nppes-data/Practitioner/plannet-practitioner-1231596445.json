@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhlman",
+      "family": "Zboncak",
       "given": [
-        "Tatiana"
+        "Cherly"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "422.727.6426",
+      "value": "778.219.7652 x7508",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(778) 558-5129 x839",
+      "value": "1-438-275-4093",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2023-08-13",
-        "end": "2026-08-13"
+        "start": "2023-07-17",
+        "end": "2026-07-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

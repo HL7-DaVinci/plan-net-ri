@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Larson",
+      "family": "Moore",
       "given": [
-        "Monte",
-        "Bert"
+        "Oren"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "794-934-6603 x741",
+      "value": "1-151-085-3495",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "342-818-8373 x2024",
+      "value": "1-187-057-5047 x98206",
       "use": "work"
     }
   ],
@@ -113,31 +112,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

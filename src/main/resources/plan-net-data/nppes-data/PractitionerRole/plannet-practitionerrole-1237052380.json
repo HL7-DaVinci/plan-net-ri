@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "2e3110f09d4848"
+      "value": "52bf453b9b2623"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237052380",
-    "display": "Marquis Schmidt"
+    "display": "Mike Schimmel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207X00000X",
-          "display": "Orthopaedic Surgery"
+          "display": "Orthopaedic Surgery Physician"
         }
       ],
-      "text": "Orthopaedic Surgery"
+      "text": "Orthopaedic Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-450-149-6466 x364",
+      "value": "(574) 591-9545 x53592",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-212-671-3638",
+      "value": "1-443-608-3096",
       "use": "work"
     }
   ],

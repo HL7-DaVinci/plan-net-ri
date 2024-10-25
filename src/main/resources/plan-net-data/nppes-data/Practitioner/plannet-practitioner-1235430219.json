@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Macejkovic",
+      "family": "Fadel",
       "given": [
-        "Leon"
+        "Mike",
+        "Vito"
       ],
       "suffix": [
         "PA"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "955.817.3927 x771",
+      "value": "943-282-9365 x3197",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "785-722-6898 x96968",
+      "value": "605.366.3275",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2022-04-02",
-        "end": "2025-04-02"
+        "start": "2022-08-20",
+        "end": "2025-08-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

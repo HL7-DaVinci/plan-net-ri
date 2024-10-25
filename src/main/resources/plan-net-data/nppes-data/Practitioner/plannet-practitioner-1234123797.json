@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Boyer",
+      "family": "Nicolas",
       "given": [
-        "Adalberto"
+        "Elias"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(255) 534-3436 x05597",
+      "value": "658-345-9903 x25151",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "555-810-0133 x7347",
+      "value": "(108) 805-9830",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2024-04-21",
-        "end": "2027-04-21"
+        "start": "2023-05-22",
+        "end": "2026-05-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

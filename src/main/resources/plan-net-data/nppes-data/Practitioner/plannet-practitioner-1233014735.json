@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ullrich",
+      "family": "Marquardt",
       "given": [
-        "Edmond"
+        "Byron",
+        "Dong"
       ],
       "prefix": [
         "Dr."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "576.968.6574 x6114",
+      "value": "1-772-725-8266 x20758",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-650-203-3957 x945",
+      "value": "395-343-3115",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2021-09-14",
-        "end": "2024-09-14"
+        "start": "2022-07-29",
+        "end": "2025-07-29"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

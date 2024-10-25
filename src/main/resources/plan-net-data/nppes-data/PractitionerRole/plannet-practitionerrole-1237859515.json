@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://rhode-island-substance-abuse-treatment-inc.com",
-      "value": "b60d17668d199d"
+      "value": "a02d3cc15023a9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237859515",
-    "display": "Andres Bashirian"
+    "display": "Hipolito Bashirian"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1233319368",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "620-577-6076 x793",
+      "value": "1-506-628-4135 x7312",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "869-106-7382 x919",
+      "value": "1-903-798-4382 x89374",
       "use": "work"
     }
   ],

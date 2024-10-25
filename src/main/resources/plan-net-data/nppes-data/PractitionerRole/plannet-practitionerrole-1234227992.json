@@ -10,22 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID080000",
-        "display": "Green Circle of Rhode Island HMO"
+        "reference": "Organization/plannet-network-HPID090000",
+        "display": "Rhode Island Persona Preferred Provider Network"
       }
     }
   ],
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bayside-endoscopy-llc.com",
-      "value": "0bb30ad9df126a"
+      "value": "8ed23df6f3cc13"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234227992",
-    "display": "Thomas Ernser"
+    "display": "Bobbie Windler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230085657",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "387.925.3945 x870",
+      "value": "(150) 996-0379 x8915",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "592.340.9432",
+      "value": "428-032-7719",
       "use": "work"
     }
   ],

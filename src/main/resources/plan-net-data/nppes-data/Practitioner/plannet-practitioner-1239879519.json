@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hayes",
+      "family": "Thompson",
       "given": [
-        "Carol",
-        "Cedric"
+        "Darius",
+        "Roberto"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "330.050.9782 x2332",
+      "value": "192.909.0075 x1146",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(485) 255-5750",
+      "value": "(662) 299-1970 x562",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207T00000X",
-            "display": "Neurological Surgery"
+            "display": "Neurological Surgery Physician"
           }
         ],
-        "text": "Neurological Surgery"
+        "text": "Neurological Surgery Physician"
       },
       "period": {
-        "start": "2023-02-11",
-        "end": "2026-02-11"
+        "start": "2022-09-25",
+        "end": "2025-09-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

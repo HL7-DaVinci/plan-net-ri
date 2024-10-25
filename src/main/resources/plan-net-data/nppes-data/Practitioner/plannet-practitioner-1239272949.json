@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rath",
+      "family": "Mosciski",
       "given": [
-        "Russel",
-        "Lowell"
+        "Kenton"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(360) 881-3116 x824",
+      "value": "626-352-5410 x424",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(997) 999-5725 x91165",
+      "value": "827.564.4330 x17088",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-10-08",
-        "end": "2024-10-08"
+        "start": "2022-03-08",
+        "end": "2025-03-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2083P0901X",
-            "display": "Public Health and General Preventive Medicine"
+            "display": "Public Health & General Preventive Medicine Physician"
           }
         ],
-        "text": "Public Health and General Preventive Medicine"
+        "text": "Public Health & General Preventive Medicine Physician"
       },
       "period": {
-        "start": "2024-06-23",
-        "end": "2027-06-23"
+        "start": "2023-07-22",
+        "end": "2026-07-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

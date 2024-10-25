@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://mount-auburn-hospital.com",
-      "value": "eddfd3d04ba92e"
+      "value": "982dec25c4eb43"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233915354",
-    "display": "Gabriel Stehr"
+    "display": "Raymond Predovic"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239670259",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0011X",
-          "display": "Interventional Cardiology"
+          "display": "Interventional Cardiology Physician"
         }
       ],
-      "text": "Interventional Cardiology"
+      "text": "Interventional Cardiology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(231) 783-5492 x08227",
+      "value": "(815) 878-0266 x9579",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-391-210-4245",
+      "value": "(984) 414-3777 x959",
       "use": "work"
     }
   ],

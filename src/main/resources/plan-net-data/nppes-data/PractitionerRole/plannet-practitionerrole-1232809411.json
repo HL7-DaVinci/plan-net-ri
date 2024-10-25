@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "395fc396754781"
+      "value": "8f19c52f350f81"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232809411",
-    "display": "Wesley Purdy"
+    "display": "Peter Beatty"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213ES0103X",
-          "display": "Foot and Ankle Surgery"
+          "display": "Foot & Ankle Surgery Podiatrist"
         }
       ],
-      "text": "Foot and Ankle Surgery"
+      "text": "Foot & Ankle Surgery Podiatrist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(561) 942-1767 x852",
+      "value": "1-330-874-1813 x2299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "121-442-4546 x4897",
+      "value": "429-965-1241",
       "use": "work"
     }
   ],

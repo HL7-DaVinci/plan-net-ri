@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Crona",
+      "family": "Bradtke",
       "given": [
-        "Indira"
+        "Raymonde",
+        "Myong"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-377-626-3047 x62888",
+      "value": "(133) 502-0807 x39120",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(782) 360-9360 x8620",
+      "value": "1-206-137-5474",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2024-04-16",
-        "end": "2027-04-16"
+        "start": "2024-06-20",
+        "end": "2027-06-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

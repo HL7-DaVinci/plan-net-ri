@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rosenbaum",
+      "family": "Murray",
       "given": [
-        "Ricki",
-        "Keshia"
+        "Breanne",
+        "Serafina"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(480) 588-6918 x311",
+      "value": "1-401-117-9549 x865",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "163.622.9933 x37119",
+      "value": "669.841.4019 x226",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-09-21",
-        "end": "2025-09-21"
+        "start": "2022-07-27",
+        "end": "2025-07-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

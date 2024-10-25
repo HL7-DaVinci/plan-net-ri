@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schulist",
+      "family": "Pfannerstill",
       "given": [
-        "Shaunda",
-        "Earlene"
+        "Laurine"
       ],
       "suffix": [
         "NP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-722-909-5830",
+      "value": "342.665.2098",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(302) 376-7844 x2278",
+      "value": "(666) 789-1486",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2200X",
-            "display": "Adult Health"
+            "display": "Adult Health Nurse Practitioner"
           }
         ],
-        "text": "Adult Health"
+        "text": "Adult Health Nurse Practitioner"
       },
       "period": {
-        "start": "2022-08-10",
-        "end": "2025-08-10"
+        "start": "2024-03-31",
+        "end": "2027-03-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2023-08-01",
-        "end": "2026-08-01"
+        "start": "2023-03-07",
+        "end": "2026-03-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogisich",
+      "family": "Jast",
       "given": [
-        "Cody"
+        "Alberto",
+        "Hiram"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(828) 501-1763 x1682",
+      "value": "(703) 087-5946 x92180",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "179-545-0407",
+      "value": "(295) 361-4257 x3556",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-11-05",
-        "end": "2025-11-05"
+        "start": "2023-02-02",
+        "end": "2026-02-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

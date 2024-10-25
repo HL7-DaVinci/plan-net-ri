@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID070000",
+        "display": "Acme of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://roger-williams-medical-center.com",
-      "value": "78bafcb5ca6fff"
+      "value": "87e07df76d8545"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234729863",
-    "display": "Jacinto Nolan"
+    "display": "Tommy Heidenreich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239278250",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "597.513.2202",
+      "value": "1-135-980-6354 x660",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "245-134-8325 x190",
+      "value": "236.396.3401 x950",
       "use": "work"
     }
   ],

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "7943066366564c"
+      "value": "94f967623093e8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232801434",
-    "display": "Margarito Keeling"
+    "display": "Hans Ullrich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(931) 289-2760 x61158",
+      "value": "315.146.5829 x9599",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-396-152-2487",
+      "value": "941-249-2179 x99810",
       "use": "work"
     }
   ],

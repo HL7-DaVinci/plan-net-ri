@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hudson",
+      "family": "Kessler",
       "given": [
-        "America"
+        "Nola"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "732-532-3200 x494",
+      "value": "(862) 422-2142",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(369) 826-3273 x8454",
+      "value": "(369) 868-4607 x467",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2021-07-19",
-        "end": "2024-07-19"
+        "start": "2022-11-19",
+        "end": "2025-11-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

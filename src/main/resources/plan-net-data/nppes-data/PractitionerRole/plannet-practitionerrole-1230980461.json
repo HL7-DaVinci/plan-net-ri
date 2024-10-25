@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://tollgate-sleep-disorders-center-inc.com",
-      "value": "bb9c184d4e75ed"
+      "value": "0bb36b6db20aa4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230980461",
-    "display": "Hiram Pfeffer"
+    "display": "Gregorio Rolfson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238762106",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207N00000X",
-          "display": "Dermatology"
+          "display": "Dermatology Physician"
         }
       ],
-      "text": "Dermatology"
+      "text": "Dermatology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "253-751-2950",
+      "value": "(336) 015-2353 x31615",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(638) 165-3509 x4669",
+      "value": "1-713-814-3790 x084",
       "use": "work"
     }
   ],

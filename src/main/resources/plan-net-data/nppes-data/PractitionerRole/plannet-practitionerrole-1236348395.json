@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID020000",
         "display": "Green Circle of Massachusetts HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://quincy-medical-center.com",
-      "value": "740cd113e7850a"
+      "value": "dd48a0f069faad"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236348395",
-    "display": "Wilhelmina Murray"
+    "display": "Dorinda Pfeffer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239972445",
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-819-525-2100 x65307",
+      "value": "1-943-699-8165 x9319",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(359) 144-2385",
+      "value": "378.243.4006",
       "use": "work"
     }
   ],

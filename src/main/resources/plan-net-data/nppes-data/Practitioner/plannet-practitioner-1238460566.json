@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Medhurst",
+      "family": "Zboncak",
       "given": [
-        "Ramonita",
-        "Asuncion"
+        "Alesha",
+        "Erline"
       ],
       "suffix": [
         "PHYSICIAN ASSISTANT"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(583) 241-4036 x892",
+      "value": "100.621.8255 x937",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-693-866-6597",
+      "value": "641-507-4822",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2024-02-14",
-        "end": "2027-02-14"
+        "start": "2022-12-31",
+        "end": "2025-12-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363AM0700X",
-            "display": "Medical"
+            "display": "Medical Physician Assistant"
           }
         ],
-        "text": "Medical"
+        "text": "Medical Physician Assistant"
       },
       "period": {
-        "start": "2023-01-25",
-        "end": "2026-01-25"
+        "start": "2024-05-12",
+        "end": "2027-05-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,6 +240,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

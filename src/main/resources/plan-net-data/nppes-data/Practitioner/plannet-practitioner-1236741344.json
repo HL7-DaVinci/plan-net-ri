@@ -32,21 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Beer",
+      "family": "Lowe",
       "given": [
-        "Marcelino"
+        "Nathanael"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "1-916-656-3090 x545",
+      "value": "145-093-1511",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-986-741-4382 x960",
+      "value": "684-800-2188 x907",
       "use": "work"
     }
   ],
@@ -132,14 +132,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2024-07-01",
-        "end": "2027-07-01"
+        "start": "2024-01-24",
+        "end": "2027-01-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "1f2ddd302b5e41"
+      "value": "7283f7c48a95a8"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238265853",
-    "display": "Kermit Zulauf"
+    "display": "Houston MacGyver"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(910) 535-6884 x45829",
+      "value": "1-794-230-4247 x9215",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "933.677.5967 x36352",
+      "value": "630.794.1562 x228",
       "use": "work"
     }
   ],

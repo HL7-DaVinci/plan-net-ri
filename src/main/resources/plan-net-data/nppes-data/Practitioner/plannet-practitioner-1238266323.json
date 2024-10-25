@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lemke",
+      "family": "Hegmann",
       "given": [
-        "Johnson",
-        "Felix"
+        "Doyle"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "661.677.2384 x5482",
+      "value": "(441) 737-0787 x76919",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(326) 109-8099 x32447",
+      "value": "516-085-2698",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2023-02-18",
-        "end": "2026-02-18"
+        "start": "2023-04-17",
+        "end": "2026-04-17"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

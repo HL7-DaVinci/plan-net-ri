@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernhard",
+      "family": "Upton",
       "given": [
-        "Tommie",
-        "Raphael"
+        "Tomas",
+        "Bud"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(970) 081-6108 x23706",
+      "value": "937-820-5239 x907",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "757.030.1622 x8897",
+      "value": "570.261.3670",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-06-10",
-        "end": "2025-06-10"
+        "start": "2022-03-25",
+        "end": "2025-03-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

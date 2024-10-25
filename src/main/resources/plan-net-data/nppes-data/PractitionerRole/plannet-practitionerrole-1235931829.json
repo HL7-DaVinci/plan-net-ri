@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID130000",
-        "display": "United Technologies Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID050000",
         "display": "Green Circle of Connecticut HMO"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://johnson-health-care-inc-dba-johnson-surgery-center.com",
-      "value": "d20fae928fb922"
+      "value": "8757140644e4e9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235931829",
-    "display": "Theodore O'Reilly"
+    "display": "Leslie Bailey"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235338232",
@@ -72,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207WX0110X",
-          "display": "Pediatric Ophthalmology and Strabismus Specialist"
+          "display": "Pediatric Ophthalmology and Strabismus Specialist Physician Physician"
         }
       ],
-      "text": "Pediatric Ophthalmology and Strabismus Specialist"
+      "text": "Pediatric Ophthalmology and Strabismus Specialist Physician Physician"
     }
   ],
   "location": [
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "553-210-1062 x5167",
+      "value": "190-111-8577 x0670",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-634-177-1841 x9868",
+      "value": "816-647-6580",
       "use": "work"
     }
   ],

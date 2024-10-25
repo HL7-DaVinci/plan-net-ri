@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Corkery",
+      "family": "Pfannerstill",
       "given": [
-        "Christia",
-        "Piedad"
+        "Fredricka"
       ],
       "suffix": [
         "CNM, MSN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-379-261-2311 x5546",
+      "value": "721-273-6625",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(157) 383-0704",
+      "value": "(817) 587-2904 x50415",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-09-17",
-        "end": "2025-09-17"
+        "start": "2024-05-25",
+        "end": "2027-05-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

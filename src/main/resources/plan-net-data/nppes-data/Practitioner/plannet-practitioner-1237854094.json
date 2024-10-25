@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Botsford",
+      "family": "Jaskolski",
       "given": [
-        "Donald",
-        "Ned"
+        "Jimmie",
+        "Samuel"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(580) 072-2908",
+      "value": "388.102.5203 x5209",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "498-768-0617 x69026",
+      "value": "980.453.3263 x55181",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-08-10",
-        "end": "2025-08-10"
+        "start": "2022-01-31",
+        "end": "2025-01-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213EP0504X",
-            "display": "Public Medicine"
+            "display": "Public Medicine Podiatrist"
           }
         ],
-        "text": "Public Medicine"
+        "text": "Public Medicine Podiatrist"
       },
       "period": {
-        "start": "2023-05-03",
-        "end": "2026-05-03"
+        "start": "2024-03-11",
+        "end": "2027-03-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -268,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213EP1101X",
-            "display": "Primary Podiatric Medicine"
+            "display": "Primary Podiatric Medicine Podiatrist"
           }
         ],
-        "text": "Primary Podiatric Medicine"
+        "text": "Primary Podiatric Medicine Podiatrist"
       },
       "period": {
-        "start": "2022-12-29",
-        "end": "2025-12-29"
+        "start": "2024-06-14",
+        "end": "2027-06-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -332,14 +332,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ER0200X",
-            "display": "Radiology"
+            "display": "Radiology Podiatrist"
           }
         ],
-        "text": "Radiology"
+        "text": "Radiology Podiatrist"
       },
       "period": {
-        "start": "2023-08-23",
-        "end": "2026-08-23"
+        "start": "2023-01-16",
+        "end": "2026-01-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -396,14 +396,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0000X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine Podiatrist"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine Podiatrist"
       },
       "period": {
-        "start": "2023-01-17",
-        "end": "2026-01-17"
+        "start": "2024-07-15",
+        "end": "2027-07-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -460,14 +460,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0103X",
-            "display": "Foot and Ankle Surgery"
+            "display": "Foot & Ankle Surgery Podiatrist"
           }
         ],
-        "text": "Foot and Ankle Surgery"
+        "text": "Foot & Ankle Surgery Podiatrist"
       },
       "period": {
-        "start": "2023-07-03",
-        "end": "2026-07-03"
+        "start": "2022-04-01",
+        "end": "2025-04-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -524,14 +524,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0131X",
-            "display": "Foot Surgery"
+            "display": "Foot Surgery Podiatrist"
           }
         ],
-        "text": "Foot Surgery"
+        "text": "Foot Surgery Podiatrist"
       },
       "period": {
-        "start": "2022-04-11",
-        "end": "2025-04-11"
+        "start": "2023-03-24",
+        "end": "2026-03-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -563,31 +563,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

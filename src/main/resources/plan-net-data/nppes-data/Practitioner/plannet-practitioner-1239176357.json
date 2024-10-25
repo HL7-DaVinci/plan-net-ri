@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Streich",
+      "family": "Blick",
       "given": [
-        "Benjamin"
+        "Wm"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(428) 383-5261 x88804",
+      "value": "(311) 758-0934 x74733",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "317-331-5597",
+      "value": "1-174-741-0049 x176",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2023-07-27",
-        "end": "2026-07-27"
+        "start": "2023-02-20",
+        "end": "2026-02-20"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

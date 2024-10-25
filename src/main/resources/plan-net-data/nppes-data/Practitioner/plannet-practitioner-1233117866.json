@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Davis",
+      "family": "Watsica",
       "given": [
-        "Randal"
+        "Wesley",
+        "Lynwood"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-176-532-5169",
+      "value": "(720) 503-3872 x8160",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(206) 542-4543 x76431",
+      "value": "(746) 461-7582 x177",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-11-16",
-        "end": "2024-11-16"
+        "start": "2022-07-07",
+        "end": "2025-07-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

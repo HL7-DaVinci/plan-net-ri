@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stokes",
+      "family": "Daniel",
       "given": [
-        "Eleanore",
-        "Maisie"
+        "Myriam"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-983-259-2925 x67379",
+      "value": "567.024.0237 x131",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-831-538-3038 x22047",
+      "value": "811-105-6134",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LC1500X",
-            "display": "Community Health"
+            "display": "Community Health Nurse Practitioner"
           }
         ],
-        "text": "Community Health"
+        "text": "Community Health Nurse Practitioner"
       },
       "period": {
-        "start": "2024-02-12",
-        "end": "2027-02-12"
+        "start": "2023-08-27",
+        "end": "2026-08-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

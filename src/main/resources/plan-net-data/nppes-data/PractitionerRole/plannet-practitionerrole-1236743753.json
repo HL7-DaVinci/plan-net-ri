@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "d0a288b1ef045c"
+      "value": "e398a9e08df644"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236743753",
-    "display": "Roger Reinger"
+    "display": "Marlin Gulgowski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "213ES0103X",
-          "display": "Foot and Ankle Surgery"
+          "display": "Foot & Ankle Surgery Podiatrist"
         }
       ],
-      "text": "Foot and Ankle Surgery"
+      "text": "Foot & Ankle Surgery Podiatrist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "466-687-3628 x87070",
+      "value": "238.093.0291 x027",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "907.165.9344 x47829",
+      "value": "1-459-498-4373 x1133",
       "use": "work"
     }
   ],

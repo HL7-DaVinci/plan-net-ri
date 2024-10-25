@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoppe",
+      "family": "Moen",
       "given": [
-        "Alexander"
+        "Fabian",
+        "Santo"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-544-954-7042",
+      "value": "136-488-7603 x2280",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-671-918-8179 x27304",
+      "value": "586.348.1446",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-07-12",
-        "end": "2025-07-12"
+        "start": "2023-07-01",
+        "end": "2026-07-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

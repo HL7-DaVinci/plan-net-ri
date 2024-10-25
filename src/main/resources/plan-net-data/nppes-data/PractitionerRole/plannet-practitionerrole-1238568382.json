@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "a2153b6589a243"
+      "value": "5a6e4a71363f7d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238568382",
-    "display": "Arturo Bashirian"
+    "display": "Fredric Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-345-427-3874 x0822",
+      "value": "490-406-6143 x591",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(554) 056-5183 x19124",
+      "value": "1-931-844-0339 x231",
       "use": "work"
     }
   ],

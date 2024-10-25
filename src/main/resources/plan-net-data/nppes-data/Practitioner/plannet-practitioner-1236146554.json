@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bayer",
+      "family": "Shanahan",
       "given": [
-        "Kelly"
+        "Damion"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "469-032-2789 x09975",
+      "value": "560.326.3513 x9952",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "525-782-3573 x514",
+      "value": "840.844.2956 x78426",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2024-05-02",
-        "end": "2027-05-02"
+        "start": "2022-09-08",
+        "end": "2025-09-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

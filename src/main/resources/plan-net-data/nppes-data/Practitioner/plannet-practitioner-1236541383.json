@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wintheiser",
+      "family": "Johnson",
       "given": [
-        "Numbers",
-        "Magdalena"
+        "Myung",
+        "Antonina"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "158-203-7022 x9472",
+      "value": "791.726.5577 x461",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "985.896.1891",
+      "value": "1-513-499-6364 x44030",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0006X",
-            "display": "Developmental - Behavioral Pediatrics"
+            "display": "Developmental - Behavioral Pediatrics Physician"
           }
         ],
-        "text": "Developmental - Behavioral Pediatrics"
+        "text": "Developmental - Behavioral Pediatrics Physician"
       },
       "period": {
-        "start": "2021-07-30",
-        "end": "2024-07-30"
+        "start": "2022-12-21",
+        "end": "2025-12-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

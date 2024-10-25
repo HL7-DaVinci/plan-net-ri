@@ -32,22 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Farrell",
+      "family": "Wiegand",
       "given": [
-        "Dana",
-        "Andrew"
+        "Elliot",
+        "Danny"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "897.432.6089",
+      "value": "(936) 888-3694 x47350",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(676) 000-8699 x648",
+      "value": "(919) 670-5484 x461",
       "use": "work"
     }
   ],
@@ -134,14 +134,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-04-02",
-        "end": "2026-04-02"
+        "start": "2022-07-09",
+        "end": "2025-07-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -193,11 +193,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

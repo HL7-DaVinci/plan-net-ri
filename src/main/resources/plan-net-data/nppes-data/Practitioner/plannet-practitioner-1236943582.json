@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jacobs",
+      "family": "Williamson",
       "given": [
-        "Zachariah",
-        "Antone"
+        "Elton",
+        "Mauricio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-584-875-4198 x3083",
+      "value": "790.061.7861",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "777.022.7583",
+      "value": "231.428.3423",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2024-05-25",
-        "end": "2027-05-25"
+        "start": "2023-05-19",
+        "end": "2026-05-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

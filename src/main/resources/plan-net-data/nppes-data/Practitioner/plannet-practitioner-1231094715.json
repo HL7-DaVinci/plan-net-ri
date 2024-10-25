@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Heller",
+      "family": "Sauer",
       "given": [
-        "Claud",
-        "Sydney"
+        "Isidro",
+        "Raphael"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450.148.6811 x211",
+      "value": "304-251-1164",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "431.659.1518",
+      "value": "146-641-3329",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-02-28",
-        "end": "2025-02-28"
+        "start": "2021-10-27",
+        "end": "2024-10-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

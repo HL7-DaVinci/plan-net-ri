@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuvalis",
+      "family": "Christiansen",
       "given": [
-        "Terrence"
+        "Eddie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "508.529.4199 x1072",
+      "value": "1-873-981-1114 x56683",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "862-276-0321 x376",
+      "value": "962.057.6756 x636",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-05-08",
-        "end": "2025-05-08"
+        "start": "2024-05-27",
+        "end": "2027-05-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -202,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0114X",
-            "display": "Adult Reconstructive Orthopaedic Surgery"
+            "display": "Adult Reconstructive Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Adult Reconstructive Orthopaedic Surgery"
+        "text": "Adult Reconstructive Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-09-24",
-        "end": "2024-09-24"
+        "start": "2022-01-24",
+        "end": "2025-01-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

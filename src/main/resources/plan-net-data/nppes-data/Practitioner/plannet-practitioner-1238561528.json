@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kunde",
+      "family": "Kautzer",
       "given": [
-        "Darryl"
+        "Walker"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "387-028-1725 x57214",
+      "value": "1-370-490-8846 x0876",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-355-707-3457",
+      "value": "435.334.8568",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2023-11-22",
-        "end": "2026-11-22"
+        "start": "2023-07-15",
+        "end": "2026-07-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Champlin",
+      "family": "Auer",
       "given": [
-        "Vernon",
-        "Kendal"
+        "Eboni",
+        "Josefa"
       ],
       "prefix": [
         "Ms."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "313-789-4082 x94239",
+      "value": "1-570-144-0833",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-619-481-9368 x2795",
+      "value": "720-191-7724 x9098",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2021-11-26",
-        "end": "2024-11-26"
+        "start": "2022-09-01",
+        "end": "2025-09-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

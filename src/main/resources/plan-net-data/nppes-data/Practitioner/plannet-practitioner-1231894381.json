@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Torphy",
+      "family": "Marvin",
       "given": [
-        "Kent",
-        "Lucius"
+        "Rickey"
       ],
       "suffix": [
         "Jr.",
@@ -46,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-590-398-8290 x4852",
+      "value": "(217) 060-1716 x44518",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-339-034-6454",
+      "value": "716-378-2567",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-06-01",
-        "end": "2026-06-01"
+        "start": "2021-12-20",
+        "end": "2024-12-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

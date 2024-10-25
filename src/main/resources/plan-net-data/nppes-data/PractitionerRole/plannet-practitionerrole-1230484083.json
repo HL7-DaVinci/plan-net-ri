@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "d954c938c00118"
+      "value": "855c43ad06bdee"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230484083",
-    "display": "Marlon Walsh"
+    "display": "Jorge Howell"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "811-564-0802 x837",
+      "value": "889-911-3567",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "702-486-5127 x23647",
+      "value": "167.286.9322 x0194",
       "use": "work"
     }
   ],

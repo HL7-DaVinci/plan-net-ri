@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "f5380d6e9e44d8"
+      "value": "94453dc8cdf346"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237952110",
-    "display": "Nick Hermann"
+    "display": "Russell Stark"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Y00000X",
-          "display": "Otolaryngology"
+          "display": "Otolaryngology Physician"
         }
       ],
-      "text": "Otolaryngology"
+      "text": "Otolaryngology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-958-294-5366 x6479",
+      "value": "192-303-3542 x950",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "880.171.6848",
+      "value": "433.752.2858 x5994",
       "use": "work"
     }
   ],

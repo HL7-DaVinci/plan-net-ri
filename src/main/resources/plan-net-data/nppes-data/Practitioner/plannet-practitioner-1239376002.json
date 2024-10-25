@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cummings",
+      "family": "MacGyver",
       "given": [
-        "David",
-        "Alvin"
+        "Aubrey",
+        "Eldon"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-229-432-4730 x6994",
+      "value": "(943) 900-7927",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "934.846.7045 x5078",
+      "value": "753.649.5109 x468",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-02-23",
-        "end": "2027-02-23"
+        "start": "2022-12-13",
+        "end": "2025-12-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2024-04-04",
-        "end": "2027-04-04"
+        "start": "2023-06-29",
+        "end": "2026-06-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -263,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

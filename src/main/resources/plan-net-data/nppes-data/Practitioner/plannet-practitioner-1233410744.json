@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Casper",
+      "family": "Bode",
       "given": [
-        "Jani"
+        "Julene",
+        "Kirstin"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "884.015.7309 x98438",
+      "value": "375.945.8936 x0749",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "726.399.4873 x437",
+      "value": "171-337-9459 x7670",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Occupational Therapist"
       },
       "period": {
-        "start": "2022-03-09",
-        "end": "2025-03-09"
+        "start": "2022-09-15",
+        "end": "2025-09-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

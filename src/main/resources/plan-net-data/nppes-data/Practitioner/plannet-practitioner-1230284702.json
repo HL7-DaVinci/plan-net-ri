@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bechtelar",
+      "family": "Davis",
       "given": [
-        "Reuben"
+        "Ellis",
+        "Ruben"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(904) 040-8639 x11953",
+      "value": "325.359.6443",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-448-979-0823 x38390",
+      "value": "968.637.3565",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-12-28",
-        "end": "2026-12-28"
+        "start": "2022-12-10",
+        "end": "2025-12-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2022-08-14",
-        "end": "2025-08-14"
+        "start": "2023-08-06",
+        "end": "2026-08-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -267,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2024-03-02",
-        "end": "2027-03-02"
+        "start": "2023-05-24",
+        "end": "2026-05-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -306,6 +307,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

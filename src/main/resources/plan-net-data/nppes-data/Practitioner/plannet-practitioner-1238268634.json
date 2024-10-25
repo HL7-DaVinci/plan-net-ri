@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Deckow",
+      "family": "Willms",
       "given": [
-        "Dana",
-        "Harrison"
+        "Vincent"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "895.858.6371 x06924",
+      "value": "771-942-1529",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "343.325.3360 x23028",
+      "value": "(843) 378-4036",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2022-01-12",
-        "end": "2025-01-12"
+        "start": "2023-03-20",
+        "end": "2026-03-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +202,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207PP0204X",
-            "display": "Pediatric Emergency Medicine"
+            "display": "Pediatric Emergency Medicine (Emergency Medicine) Physician"
           }
         ],
-        "text": "Pediatric Emergency Medicine"
+        "text": "Pediatric Emergency Medicine (Emergency Medicine) Physician"
       },
       "period": {
-        "start": "2022-12-05",
-        "end": "2025-12-05"
+        "start": "2023-03-25",
+        "end": "2026-03-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +261,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

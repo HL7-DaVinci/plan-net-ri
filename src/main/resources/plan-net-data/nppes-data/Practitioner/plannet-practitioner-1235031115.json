@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rohan",
+      "family": "Zboncak",
       "given": [
-        "Grant"
+        "Vaughn",
+        "Gene"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(240) 259-2920 x9377",
+      "value": "(522) 822-1638 x35383",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "906-921-8118 x530",
+      "value": "960.461.5835 x7355",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2021-11-17",
-        "end": "2024-11-17"
+        "start": "2024-07-09",
+        "end": "2027-07-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2022-09-26",
-        "end": "2025-09-26"
+        "start": "2024-09-08",
+        "end": "2027-09-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -258,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

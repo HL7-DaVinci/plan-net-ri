@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hane",
+      "family": "Dietrich",
       "given": [
-        "Domenic"
+        "Raleigh"
       ],
       "suffix": [
         "DPM"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "454-597-5189 x0703",
+      "value": "206.276.0454",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-546-484-7812 x70980",
+      "value": "1-276-797-5544 x3996",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213EP1101X",
-            "display": "Primary Podiatric Medicine"
+            "display": "Primary Podiatric Medicine Podiatrist"
           }
         ],
-        "text": "Primary Podiatric Medicine"
+        "text": "Primary Podiatric Medicine Podiatrist"
       },
       "period": {
-        "start": "2022-02-25",
-        "end": "2025-02-25"
+        "start": "2022-06-04",
+        "end": "2025-06-04"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "20",
-                "display": "Limited working proficiency"
-              }
-            ],
-            "text": "Limited working proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

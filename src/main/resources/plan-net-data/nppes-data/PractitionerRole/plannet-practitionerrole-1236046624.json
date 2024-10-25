@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "518e3c83dac984"
+      "value": "d829d8b2b314bd"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236046624",
-    "display": "Richie Kreiger"
+    "display": "Ricardo Anderson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-436-457-0796 x357",
+      "value": "620-018-9440 x0760",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-945-830-3035 x8311",
+      "value": "1-948-445-3441 x732",
       "use": "work"
     }
   ],

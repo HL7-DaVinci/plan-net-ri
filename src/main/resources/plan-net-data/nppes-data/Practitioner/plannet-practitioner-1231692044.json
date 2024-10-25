@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Koepp",
+      "family": "Jacobi",
       "given": [
-        "Vance"
+        "Hassan",
+        "Ashley"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "346-986-3101 x794",
+      "value": "577-639-8833",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-947-701-7951",
+      "value": "260-553-9355",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2023-04-25",
-        "end": "2026-04-25"
+        "start": "2022-11-18",
+        "end": "2025-11-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

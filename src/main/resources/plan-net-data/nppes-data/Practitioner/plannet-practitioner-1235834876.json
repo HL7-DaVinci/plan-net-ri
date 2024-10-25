@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Paucek",
+      "family": "Stanton",
       "given": [
-        "Lindsey",
-        "Jess"
+        "Cleveland"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(529) 368-0674 x064",
+      "value": "691.587.1004",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(786) 574-6058",
+      "value": "1-603-577-0668",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-01-11",
-        "end": "2027-01-11"
+        "start": "2022-11-25",
+        "end": "2025-11-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

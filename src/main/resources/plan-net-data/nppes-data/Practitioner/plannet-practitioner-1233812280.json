@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Considine",
+      "family": "Fadel",
       "given": [
-        "Davis"
+        "Mose",
+        "Neil"
       ],
       "suffix": [
         "DPM"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "801-730-8594 x30175",
+      "value": "338.322.3865 x5605",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "354.964.4955",
+      "value": "757-835-5142 x3176",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "213ES0131X",
-            "display": "Foot Surgery"
+            "display": "Foot Surgery Podiatrist"
           }
         ],
-        "text": "Foot Surgery"
+        "text": "Foot Surgery Podiatrist"
       },
       "period": {
-        "start": "2023-04-08",
-        "end": "2026-04-08"
+        "start": "2024-06-14",
+        "end": "2027-06-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

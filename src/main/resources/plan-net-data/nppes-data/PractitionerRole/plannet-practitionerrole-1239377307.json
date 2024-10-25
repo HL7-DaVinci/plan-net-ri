@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "347f55972a3c6c"
+      "value": "f4d8577d83d91e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239377307",
-    "display": "Manuel Ondricka"
+    "display": "Dominique Kirlin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "359-539-4652 x810",
+      "value": "1-515-067-6138 x387",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "407.603.7409 x4990",
+      "value": "417-803-4090 x1819",
       "use": "work"
     }
   ],

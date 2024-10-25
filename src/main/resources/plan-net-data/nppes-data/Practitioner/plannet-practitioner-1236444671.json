@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "D'Amore",
+      "family": "Kunde",
       "given": [
-        "Shasta",
-        "Janay"
+        "Kathie",
+        "Joseph"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "265.384.6441 x97505",
+      "value": "1-290-024-3037 x7692",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-248-348-8845",
+      "value": "1-925-935-2988 x3046",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-24",
-        "end": "2025-01-24"
+        "start": "2022-06-29",
+        "end": "2025-06-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

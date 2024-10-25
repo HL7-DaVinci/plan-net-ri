@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hintz",
+      "family": "Gutmann",
       "given": [
-        "Alvaro",
-        "Gerald"
+        "Errol",
+        "Fabian"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "758-289-4730 x0650",
+      "value": "(927) 590-7871 x207",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(872) 646-0806 x56997",
+      "value": "1-773-653-4210 x366",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-06-14",
-        "end": "2026-06-14"
+        "start": "2024-03-06",
+        "end": "2027-03-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernhard",
+      "family": "Hauck",
       "given": [
-        "Nicki",
-        "Veda"
+        "Karine",
+        "Liza"
       ],
       "suffix": [
         "CNM"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-450-916-6047 x488",
+      "value": "1-937-809-4213 x2449",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "519-173-1800 x66920",
+      "value": "832.185.8651 x69304",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2022-05-27",
-        "end": "2025-05-27"
+        "start": "2024-01-07",
+        "end": "2027-01-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -207,8 +207,8 @@
         "text": "Advanced Practice Midwife"
       },
       "period": {
-        "start": "2021-08-02",
-        "end": "2024-08-02"
+        "start": "2023-04-15",
+        "end": "2026-04-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

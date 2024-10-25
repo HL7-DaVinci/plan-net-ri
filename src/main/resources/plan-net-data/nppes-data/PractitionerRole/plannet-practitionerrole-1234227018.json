@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "dd5af13e16088f"
+      "value": "c99a29ee850682"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234227018",
-    "display": "Nicolette Murazik"
+    "display": "Gaynelle Simonis"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RP1001X",
-          "display": "Pulmonary Disease"
+          "display": "Pulmonary Disease Physician"
         }
       ],
-      "text": "Pulmonary Disease"
+      "text": "Pulmonary Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-441-511-4421 x0318",
+      "value": "372.631.4846 x59693",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "866.712.3484 x62329",
+      "value": "(340) 775-0327",
       "use": "work"
     }
   ],

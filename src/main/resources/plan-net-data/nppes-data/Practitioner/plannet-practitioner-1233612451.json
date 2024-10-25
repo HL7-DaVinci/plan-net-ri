@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ortiz",
+      "family": "Herman",
       "given": [
-        "Arnette"
+        "Eliz"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(368) 814-7578 x20270",
+      "value": "1-649-221-9524 x687",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-474-601-9533 x12284",
+      "value": "1-328-706-1726 x9701",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2023-04-15",
-        "end": "2026-04-15"
+        "start": "2024-05-19",
+        "end": "2027-05-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

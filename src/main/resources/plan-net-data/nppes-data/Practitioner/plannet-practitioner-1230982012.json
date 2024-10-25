@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lueilwitz",
+      "family": "Tremblay",
       "given": [
-        "Isaac"
+        "Efren",
+        "Bradley"
       ],
       "suffix": [
         "D.C."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-333-973-4441 x7461",
+      "value": "375-758-2023 x008",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "485.599.7047 x96738",
+      "value": "386-575-3137 x9475",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2022-11-13",
-        "end": "2025-11-13"
+        "start": "2021-11-27",
+        "end": "2024-11-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

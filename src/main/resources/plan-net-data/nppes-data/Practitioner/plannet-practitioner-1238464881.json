@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hand",
+      "family": "Kiehn",
       "given": [
-        "Elizebeth",
-        "Doloris"
+        "Lorrie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-631-500-9766 x57356",
+      "value": "1-649-474-4246 x4695",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-273-157-7373 x58137",
+      "value": "1-591-389-7053 x193",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2022-09-10",
-        "end": "2025-09-10"
+        "start": "2022-11-25",
+        "end": "2025-11-25"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

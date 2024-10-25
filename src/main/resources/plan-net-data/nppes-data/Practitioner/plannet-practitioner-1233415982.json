@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bins",
+      "family": "Runolfsdottir",
       "given": [
-        "Horacio"
+        "Joseph",
+        "Allan"
       ],
       "suffix": [
         "Jr.",
@@ -45,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "457.503.8874",
+      "value": "894.923.6147 x6309",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(537) 623-2800 x2263",
+      "value": "(509) 873-4614",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2021-08-27",
-        "end": "2024-08-27"
+        "start": "2024-02-10",
+        "end": "2027-02-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2023-10-12",
-        "end": "2026-10-12"
+        "start": "2024-02-02",
+        "end": "2027-02-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -239,31 +240,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

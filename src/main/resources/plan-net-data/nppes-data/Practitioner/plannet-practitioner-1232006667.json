@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mraz",
+      "family": "Dooley",
       "given": [
-        "Darwin",
-        "Ray"
+        "Rocco"
       ],
       "suffix": [
         "DO"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-841-664-5475 x82576",
+      "value": "947-477-7304 x73924",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "966-486-4410 x856",
+      "value": "(456) 563-5793 x39604",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2023-10-15",
-        "end": "2026-10-15"
+        "start": "2024-04-09",
+        "end": "2027-04-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,13 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID120000",
-        "display": "State of Rhode Island Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID080000",
         "display": "Green Circle of Rhode Island HMO"
       }
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://tollgate-sleep-disorders-center-inc.com",
-      "value": "cd31295cde5146"
+      "value": "1be0708b3c6330"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232205331",
-    "display": "Rosina Marquardt"
+    "display": "Leon Hilll"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238762106",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "737-992-2187 x48777",
+      "value": "828.832.1048 x68262",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.632.5481 x630",
+      "value": "136-263-5063",
       "use": "work"
     }
   ],

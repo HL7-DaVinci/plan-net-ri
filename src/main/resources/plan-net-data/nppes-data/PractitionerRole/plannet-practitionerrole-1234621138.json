@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "e168c1a4a869d3"
+      "value": "f05b1b562bd854"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234621138",
-    "display": "Emerson Vandervort"
+    "display": "Prince Stanton"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(422) 431-6586 x51728",
+      "value": "772.854.3292 x12187",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "361.654.7615",
+      "value": "233.500.5855 x5747",
       "use": "work"
     }
   ],

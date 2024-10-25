@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "7a6756a58486c7"
+      "value": "2b2600ff4e6099"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235437024",
-    "display": "Clyde Nicolas"
+    "display": "Manuel Konopelski"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0202X",
-          "display": "Diagnostic Radiology"
+          "display": "Diagnostic Radiology Physician"
         }
       ],
-      "text": "Diagnostic Radiology"
+      "text": "Diagnostic Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "519.733.7628 x94052",
+      "value": "(473) 262-6443 x133",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "510.827.9037 x50420",
+      "value": "1-913-140-3606 x0613",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Sanford",
+      "family": "White",
       "given": [
-        "June"
+        "Charissa",
+        "Amina"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "938.540.4542",
+      "value": "381-521-0050 x1255",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(271) 709-7071 x606",
+      "value": "(648) 897-2065 x3987",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-06-07",
-        "end": "2025-06-07"
+        "start": "2022-05-13",
+        "end": "2025-05-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

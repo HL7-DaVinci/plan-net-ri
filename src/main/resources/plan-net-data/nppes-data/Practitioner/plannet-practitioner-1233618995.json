@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stanton",
+      "family": "Johnston",
       "given": [
-        "Mason"
+        "Jackie"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "390-916-8629 x44855",
+      "value": "1-383-721-6320 x347",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "869.488.6293 x022",
+      "value": "(526) 910-4274 x3706",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207KA0200X",
-            "display": "Allergy"
+            "display": "Allergy Physician"
           }
         ],
-        "text": "Allergy"
+        "text": "Allergy Physician"
       },
       "period": {
-        "start": "2024-06-17",
-        "end": "2027-06-17"
+        "start": "2024-10-16",
+        "end": "2027-10-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

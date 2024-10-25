@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Waelchi",
+      "family": "Stokes",
       "given": [
-        "Ismael"
+        "Hubert",
+        "Clifford"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "301-943-1648 x184",
+      "value": "634.148.8285 x726",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "520-379-3002 x151",
+      "value": "1-910-366-0851 x431",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2024-06-27",
-        "end": "2027-06-27"
+        "start": "2023-12-25",
+        "end": "2026-12-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

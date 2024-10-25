@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nolan",
+      "family": "Champlin",
       "given": [
-        "Jared"
+        "Abraham",
+        "Perry"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "992-998-4222 x186",
+      "value": "(402) 630-3306 x96421",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-509-123-4576 x69595",
+      "value": "981-515-4638",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VE0102X",
-            "display": "Reproductive Endocrinology"
+            "display": "Reproductive Endocrinology Physician"
           }
         ],
-        "text": "Reproductive Endocrinology"
+        "text": "Reproductive Endocrinology Physician"
       },
       "period": {
-        "start": "2024-06-25",
-        "end": "2027-06-25"
+        "start": "2022-10-13",
+        "end": "2025-10-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

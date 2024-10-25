@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "2cb8111f32f9b2"
+      "value": "520ca6bb9424f7"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233217557",
-    "display": "Bennett Ullrich"
+    "display": "Nathaniel Schaefer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RN0300X",
-          "display": "Nephrology"
+          "display": "Nephrology Physician"
         }
       ],
-      "text": "Nephrology"
+      "text": "Nephrology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "450-157-3631 x39259",
+      "value": "(101) 297-5611 x8807",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "391-712-1584 x7897",
+      "value": "788-598-5038",
       "use": "work"
     }
   ],

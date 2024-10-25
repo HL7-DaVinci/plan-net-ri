@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gibson",
+      "family": "Emard",
       "given": [
-        "Gilberto",
-        "Huey"
+        "Lenny"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "416.549.7852",
+      "value": "1-776-722-8178 x820",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "655.911.0394 x2770",
+      "value": "986.076.9886",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208200000X",
-            "display": "Plastic Surgery"
+            "display": "Plastic Surgery Physician"
           }
         ],
-        "text": "Plastic Surgery"
+        "text": "Plastic Surgery Physician"
       },
       "period": {
-        "start": "2024-06-20",
-        "end": "2027-06-20"
+        "start": "2024-10-04",
+        "end": "2027-10-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

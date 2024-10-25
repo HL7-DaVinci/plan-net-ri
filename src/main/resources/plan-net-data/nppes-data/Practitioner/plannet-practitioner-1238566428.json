@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mayer",
+      "family": "Goyette",
       "given": [
-        "Jerold"
+        "Darnell",
+        "Gregory"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "313.641.3023 x71502",
+      "value": "464.306.1491 x996",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "754-284-8238 x601",
+      "value": "(949) 333-5019 x55333",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2023-12-07",
-        "end": "2026-12-07"
+        "start": "2022-12-09",
+        "end": "2025-12-09"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

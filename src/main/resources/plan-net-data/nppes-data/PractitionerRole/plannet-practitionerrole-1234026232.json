@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ac8f5d229d419b"
+      "value": "de13de3ae95f40"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234026232",
-    "display": "Lino McKenzie"
+    "display": "Jacinto O'Hara"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207P00000X",
-          "display": "Emergency Medicine"
+          "display": "Emergency Medicine Physician"
         }
       ],
-      "text": "Emergency Medicine"
+      "text": "Emergency Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "879-309-5348",
+      "value": "839.592.3015",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-117-021-3983 x015",
+      "value": "1-166-634-5939 x0675",
       "use": "work"
     }
   ],

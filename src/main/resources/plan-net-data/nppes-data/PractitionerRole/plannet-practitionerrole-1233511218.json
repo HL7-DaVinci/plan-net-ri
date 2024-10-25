@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "842aa6987cde60"
+      "value": "583d918a6ceb2b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233511218",
-    "display": "Will Padberg"
+    "display": "Ethan Ferry"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2086S0129X",
-          "display": "Vascular Surgery"
+          "display": "Vascular Surgery Physician"
         }
       ],
-      "text": "Vascular Surgery"
+      "text": "Vascular Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "322.211.5366",
+      "value": "(103) 332-6189 x738",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-537-543-7132 x150",
+      "value": "1-622-984-9388 x094",
       "use": "work"
     }
   ],

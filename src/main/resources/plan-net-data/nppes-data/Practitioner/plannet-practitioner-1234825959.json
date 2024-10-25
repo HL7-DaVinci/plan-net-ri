@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lemke",
+      "family": "Nikolaus",
       "given": [
-        "Jude",
-        "Bruna"
+        "Santana",
+        "Danielle"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-922-888-0417 x311",
+      "value": "843.698.4453 x015",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(394) 475-0907 x0223",
+      "value": "(343) 205-9639 x3307",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VM0101X",
-            "display": "Maternal and Fetal Medicine"
+            "display": "Maternal & Fetal Medicine Physician"
           }
         ],
-        "text": "Maternal and Fetal Medicine"
+        "text": "Maternal & Fetal Medicine Physician"
       },
       "period": {
-        "start": "2022-06-21",
-        "end": "2025-06-21"
+        "start": "2022-02-05",
+        "end": "2025-02-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2022-08-12",
-        "end": "2025-08-12"
+        "start": "2022-12-10",
+        "end": "2025-12-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

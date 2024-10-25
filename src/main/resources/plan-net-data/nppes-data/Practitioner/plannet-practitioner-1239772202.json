@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Corwin",
+      "family": "Wehner",
       "given": [
-        "Brandon",
-        "Sang"
+        "Jarrod"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-914-283-1796 x4052",
+      "value": "926.497.1849 x968",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(959) 648-9866 x02497",
+      "value": "838.627.2344 x397",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2024-02-07",
-        "end": "2027-02-07"
+        "start": "2023-12-18",
+        "end": "2026-12-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kiehn",
+      "family": "Keeling",
       "given": [
-        "Morris",
-        "Anderson"
+        "Israel"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "704-400-0042",
+      "value": "861-804-8001 x8656",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(310) 658-3327",
+      "value": "1-938-384-0644",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RG0100X",
-            "display": "Gastroenterology"
+            "display": "Gastroenterology Physician"
           }
         ],
-        "text": "Gastroenterology"
+        "text": "Gastroenterology Physician"
       },
       "period": {
-        "start": "2022-02-21",
-        "end": "2025-02-21"
+        "start": "2022-02-04",
+        "end": "2025-02-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

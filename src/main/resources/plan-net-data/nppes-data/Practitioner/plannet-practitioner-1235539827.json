@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Spinka",
+      "family": "D'Amore",
       "given": [
-        "Wilford"
+        "Vern"
       ],
       "suffix": [
         "D.C."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "204-551-1404 x95103",
+      "value": "(398) 475-8335 x598",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(751) 978-0864 x977",
+      "value": "677.482.6140 x32719",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2021-09-11",
-        "end": "2024-09-11"
+        "start": "2022-02-13",
+        "end": "2025-02-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

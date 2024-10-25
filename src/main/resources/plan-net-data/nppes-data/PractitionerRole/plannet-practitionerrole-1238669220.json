@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "03a026e6887ef8"
+      "value": "f1add6f419fc9c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238669220",
-    "display": "Kirstie Baumbach"
+    "display": "Shanika Medhurst"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "152WV0400X",
-          "display": "Vision Therapy"
+          "display": "Vision Therapy Optometrist"
         }
       ],
-      "text": "Vision Therapy"
+      "text": "Vision Therapy Optometrist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-372-414-3676 x1608",
+      "value": "775-149-3900 x603",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(315) 098-4933 x84786",
+      "value": "951.700.3410 x2863",
       "use": "work"
     }
   ],

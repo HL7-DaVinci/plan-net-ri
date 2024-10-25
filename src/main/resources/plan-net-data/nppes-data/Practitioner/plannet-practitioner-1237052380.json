@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schmidt",
+      "family": "Schimmel",
       "given": [
-        "Marquis",
-        "Jewel"
+        "Mike"
       ],
       "suffix": [
         "MD PC"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-450-149-6466 x364",
+      "value": "(574) 591-9545 x53592",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-212-671-3638",
+      "value": "1-443-608-3096",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2022-12-19",
-        "end": "2025-12-19"
+        "start": "2023-04-23",
+        "end": "2026-04-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

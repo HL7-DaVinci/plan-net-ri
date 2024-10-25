@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bergnaum",
+      "family": "Cassin",
       "given": [
-        "Dewitt"
+        "Shon",
+        "Sung"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(765) 161-4914 x1429",
+      "value": "1-971-451-3598 x9059",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(655) 111-9062 x2006",
+      "value": "1-690-644-2233 x05279",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0221X",
-            "display": "Pediatric Dentistry"
+            "display": "Pediatric Dentist"
           }
         ],
-        "text": "Pediatric Dentistry"
+        "text": "Pediatric Dentist"
       },
       "period": {
-        "start": "2023-06-19",
-        "end": "2026-06-19"
+        "start": "2023-11-30",
+        "end": "2026-11-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

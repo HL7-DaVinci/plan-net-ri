@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Botsford",
+      "family": "Olson",
       "given": [
-        "Albert",
-        "Thomas"
+        "Patricia",
+        "Evan"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "931-225-1962 x10514",
+      "value": "1-185-090-1411",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "474.040.6077",
+      "value": "1-898-928-6549 x5288",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2021-10-08",
-        "end": "2024-10-08"
+        "start": "2023-01-06",
+        "end": "2026-01-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251G0304X",
-            "display": "Geriatrics"
+            "display": "Geriatric Physical Therapist"
           }
         ],
-        "text": "Geriatrics"
+        "text": "Geriatric Physical Therapist"
       },
       "period": {
-        "start": "2022-10-10",
-        "end": "2025-10-10"
+        "start": "2024-09-27",
+        "end": "2027-09-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -268,14 +268,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physical Therapist"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physical Therapist"
       },
       "period": {
-        "start": "2024-02-04",
-        "end": "2027-02-04"
+        "start": "2024-09-06",
+        "end": "2027-09-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -332,14 +332,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251S0007X",
-            "display": "Sports"
+            "display": "Sports Physical Therapist"
           }
         ],
-        "text": "Sports"
+        "text": "Sports Physical Therapist"
       },
       "period": {
-        "start": "2022-04-28",
-        "end": "2025-04-28"
+        "start": "2022-12-16",
+        "end": "2025-12-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -396,14 +396,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2251X0800X",
-            "display": "Orthopedic"
+            "display": "Orthopedic Physical Therapist"
           }
         ],
-        "text": "Orthopedic"
+        "text": "Orthopedic Physical Therapist"
       },
       "period": {
-        "start": "2023-12-07",
-        "end": "2026-12-07"
+        "start": "2024-05-06",
+        "end": "2027-05-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -466,8 +466,8 @@
         "text": "Rehabilitation Practitioner"
       },
       "period": {
-        "start": "2023-01-22",
-        "end": "2026-01-22"
+        "start": "2023-01-19",
+        "end": "2026-01-19"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -519,11 +519,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

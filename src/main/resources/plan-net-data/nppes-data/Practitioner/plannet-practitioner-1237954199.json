@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Connell",
+      "family": "Legros",
       "given": [
-        "Stanford"
+        "Augustine"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "662-089-2667",
+      "value": "100.453.1827 x63430",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-199-057-6287 x744",
+      "value": "913-969-2395 x768",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RH0003X",
-            "display": "Hematology and Oncology"
+            "display": "Hematology & Oncology Physician"
           }
         ],
-        "text": "Hematology and Oncology"
+        "text": "Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2022-12-13",
-        "end": "2025-12-13"
+        "start": "2021-11-27",
+        "end": "2024-11-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kassulke",
+      "family": "Glover",
       "given": [
-        "Ernie"
+        "Stanton",
+        "Isaias"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-236-472-1556 x1713",
+      "value": "637-610-7000",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "489-176-2155 x49829",
+      "value": "(569) 339-1784",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-07-09",
-        "end": "2026-07-09"
+        "start": "2024-08-02",
+        "end": "2027-08-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

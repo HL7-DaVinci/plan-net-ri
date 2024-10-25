@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hane",
+      "family": "Walter",
       "given": [
-        "Jay",
-        "Otto"
+        "Randolph"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(292) 110-5139",
+      "value": "357-653-8145 x165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-211-279-5581",
+      "value": "537.125.9114 x863",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2024-02-21",
-        "end": "2027-02-21"
+        "start": "2023-11-14",
+        "end": "2026-11-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +177,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

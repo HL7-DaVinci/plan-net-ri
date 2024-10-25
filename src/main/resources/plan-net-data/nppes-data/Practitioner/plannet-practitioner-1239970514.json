@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bins",
+      "family": "Gottlieb",
       "given": [
-        "Debby"
+        "Charlotte",
+        "Kellie"
       ],
       "suffix": [
         "RPT"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "195.489.4507",
+      "value": "1-640-796-6973 x1497",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "981.852.1595 x120",
+      "value": "415.820.5257 x86440",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-08-06",
-        "end": "2025-08-06"
+        "start": "2024-04-28",
+        "end": "2027-04-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

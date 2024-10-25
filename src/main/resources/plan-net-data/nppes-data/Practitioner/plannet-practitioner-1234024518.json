@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kilback",
+      "family": "Kohler",
       "given": [
-        "Loren",
-        "Trenton"
+        "Howard"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(400) 368-2816 x821",
+      "value": "431-261-5634 x784",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-273-946-9282 x944",
+      "value": "1-206-014-3935",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-12-19",
-        "end": "2025-12-19"
+        "start": "2022-05-11",
+        "end": "2025-05-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

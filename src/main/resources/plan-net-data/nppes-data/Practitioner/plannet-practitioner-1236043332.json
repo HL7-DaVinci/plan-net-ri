@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lind",
+      "family": "Borer",
       "given": [
-        "Hassan",
-        "Kevin"
+        "Valentin"
       ],
       "suffix": [
         "DPM"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(986) 159-2748 x97587",
+      "value": "599-913-1391 x771",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(882) 223-5551 x75359",
+      "value": "976.343.1489 x415",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-05-15",
-        "end": "2025-05-15"
+        "start": "2024-04-08",
+        "end": "2027-04-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -206,8 +205,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-10-28",
-        "end": "2024-10-28"
+        "start": "2023-04-19",
+        "end": "2026-04-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "9635713925f884"
+      "value": "439d44fbcb48de"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236842133",
-    "display": "Lane Hermann"
+    "display": "Anette Koelpin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(573) 446-6196",
+      "value": "1-496-706-5459 x8909",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(894) 587-2767",
+      "value": "168.841.2848",
       "use": "work"
     }
   ],

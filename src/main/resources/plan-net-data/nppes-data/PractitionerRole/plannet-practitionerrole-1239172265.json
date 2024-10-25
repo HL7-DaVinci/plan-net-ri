@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "38c44d85256535"
+      "value": "7b0961fab18005"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239172265",
-    "display": "Patrina Stark"
+    "display": "Serita Kub"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LA2100X",
-          "display": "Acute Care"
+          "display": "Acute Care Nurse Practitioner"
         }
       ],
-      "text": "Acute Care"
+      "text": "Acute Care Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "912-293-4408 x25305",
+      "value": "636-247-4347 x0385",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(984) 924-5267 x742",
+      "value": "587.740.5028 x146",
       "use": "work"
     }
   ],

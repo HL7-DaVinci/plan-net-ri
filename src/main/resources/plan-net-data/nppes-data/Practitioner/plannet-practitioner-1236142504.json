@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Parker",
+      "family": "Pacocha",
       "given": [
-        "Thaddeus"
+        "Homer"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "379.405.5101 x140",
+      "value": "1-690-127-5818 x7275",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "383.237.9024 x618",
+      "value": "245-028-3405 x93214",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2023-09-04",
-        "end": "2026-09-04"
+        "start": "2022-07-04",
+        "end": "2025-07-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

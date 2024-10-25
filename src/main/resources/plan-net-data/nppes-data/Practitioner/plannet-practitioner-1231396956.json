@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Sporer",
+      "family": "Brekke",
       "given": [
-        "Theo"
+        "Lance",
+        "Efrain"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(789) 393-0835 x8095",
+      "value": "(593) 536-7745 x95672",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "611-677-9027",
+      "value": "1-599-932-1906",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2023-04-24",
-        "end": "2026-04-24"
+        "start": "2022-03-27",
+        "end": "2025-03-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

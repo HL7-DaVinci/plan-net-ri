@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Sauer",
+      "family": "Rutherford",
       "given": [
-        "Leonor"
+        "Amee"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(231) 922-0939 x84551",
+      "value": "292.725.7922 x78234",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-210-116-4396 x27984",
+      "value": "1-586-836-1361",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-08-20",
-        "end": "2026-08-20"
+        "start": "2022-06-01",
+        "end": "2025-06-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

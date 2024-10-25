@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Johnson",
+      "family": "Huel",
       "given": [
-        "Maximo"
+        "Henry",
+        "Reynaldo"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "316-563-7517",
+      "value": "(916) 866-9522 x6092",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "954.790.2801 x82181",
+      "value": "896.540.3432",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2023-12-10",
-        "end": "2026-12-10"
+        "start": "2022-09-05",
+        "end": "2025-09-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

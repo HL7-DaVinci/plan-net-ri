@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "ea539840f782d2"
+      "value": "055e15c47e55e5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234924917",
-    "display": "Valentin Waelchi"
+    "display": "Cruz Weber"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(353) 309-3329 x87684",
+      "value": "851.056.3382",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(953) 784-7279 x5912",
+      "value": "(833) 347-6740 x448",
       "use": "work"
     }
   ],

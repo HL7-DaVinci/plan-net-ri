@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Prosacco",
+      "family": "Cartwright",
       "given": [
-        "Matthew",
-        "Issac"
+        "Weldon"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "651.091.3521 x5195",
+      "value": "(929) 821-7813 x62320",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "250-551-6164 x1668",
+      "value": "(821) 687-7322",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2023-06-09",
-        "end": "2026-06-09"
+        "start": "2023-06-08",
+        "end": "2026-06-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RP1001X",
-            "display": "Pulmonary Disease"
+            "display": "Pulmonary Disease Physician"
           }
         ],
-        "text": "Pulmonary Disease"
+        "text": "Pulmonary Disease Physician"
       },
       "period": {
-        "start": "2021-11-17",
-        "end": "2024-11-17"
+        "start": "2023-07-31",
+        "end": "2026-07-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -268,14 +267,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RS0012X",
-            "display": "Sleep Medicine"
+            "display": "Sleep Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Sleep Medicine"
+        "text": "Sleep Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2024-05-31",
-        "end": "2027-05-31"
+        "start": "2024-02-14",
+        "end": "2027-02-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Spencer",
+      "family": "Bruen",
       "given": [
-        "Marc"
+        "Jared",
+        "Brendan"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(136) 882-0253 x18266",
+      "value": "(523) 999-8565 x09515",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(898) 758-0749 x14516",
+      "value": "(145) 476-3004 x809",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-03-02",
-        "end": "2027-03-02"
+        "start": "2024-07-08",
+        "end": "2027-07-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

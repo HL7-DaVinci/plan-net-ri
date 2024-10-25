@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "ecc2bd47a823fb"
+      "value": "db53c004351c86"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235933841",
-    "display": "Johnny Kirlin"
+    "display": "Jonathon Leffler"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(534) 524-4521",
+      "value": "132.100.7897 x212",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "217-214-4862 x2678",
+      "value": "472.898.7170",
       "use": "work"
     }
   ],

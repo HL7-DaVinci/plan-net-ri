@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "7e936e0ff83180"
+      "value": "7c2b239b981fd1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234629545",
-    "display": "Rocky Howell"
+    "display": "Sammie Turcotte"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-192-319-3947",
+      "value": "870.256.6018 x0176",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "667.034.0329 x04855",
+      "value": "1-897-010-7127 x72644",
       "use": "work"
     }
   ],

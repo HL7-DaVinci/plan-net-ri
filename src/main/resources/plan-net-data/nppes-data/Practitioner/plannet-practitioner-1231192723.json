@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Haley",
+      "family": "Cummerata",
       "given": [
-        "Thanh"
+        "Bud",
+        "Brian"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "365.601.9985 x13535",
+      "value": "485-980-3647 x767",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "909-831-5305",
+      "value": "(547) 591-7042",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2023-10-12",
-        "end": "2026-10-12"
+        "start": "2024-01-13",
+        "end": "2027-01-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2023-02-10",
-        "end": "2026-02-10"
+        "start": "2023-07-16",
+        "end": "2026-07-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

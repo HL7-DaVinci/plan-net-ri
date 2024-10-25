@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mueller",
+      "family": "Jacobi",
       "given": [
-        "Richard",
-        "Eugenia"
+        "Cora"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "549-545-6187 x845",
+      "value": "(160) 108-9518 x122",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "510.725.3343 x83730",
+      "value": "658.998.3521",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-01-13",
-        "end": "2026-01-13"
+        "start": "2023-12-13",
+        "end": "2026-12-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

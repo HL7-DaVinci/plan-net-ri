@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "5584b11f53a6d9"
+      "value": "a1071deb1c5ed5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237055987",
-    "display": "Maurice Klocko"
+    "display": "Kristopher Wolff"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0204X",
-          "display": "Vascular and Interventional Radiology"
+          "display": "Vascular & Interventional Radiology Physician"
         }
       ],
-      "text": "Vascular and Interventional Radiology"
+      "text": "Vascular & Interventional Radiology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "360-991-2241 x9185",
+      "value": "324.726.4615",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "454.102.6722",
+      "value": "658-063-0463 x33633",
       "use": "work"
     }
   ],

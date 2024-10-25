@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "95aef5bc51849a"
+      "value": "bc8fcb0e4fce61"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230781078",
-    "display": "Gertha Beahan"
+    "display": "Shawanda Torphy"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "703-511-5893 x8425",
+      "value": "518-531-8222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "350-106-3785 x21079",
+      "value": "1-775-640-2673 x955",
       "use": "work"
     }
   ],

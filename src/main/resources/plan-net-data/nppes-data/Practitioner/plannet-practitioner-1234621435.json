@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McLaughlin",
+      "family": "Hoppe",
       "given": [
-        "Son"
+        "David"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(725) 965-8283 x6443",
+      "value": "(257) 164-7709 x82452",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(357) 921-2010 x464",
+      "value": "486.028.3937 x034",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-06-27",
-        "end": "2025-06-27"
+        "start": "2022-12-30",
+        "end": "2025-12-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

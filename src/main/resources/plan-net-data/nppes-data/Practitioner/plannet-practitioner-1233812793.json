@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Blick",
+      "family": "Littel",
       "given": [
-        "Delorse",
-        "Dalia"
+        "Beverly"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-223-449-7995 x92266",
+      "value": "586.341.4038",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "663-371-6296 x8072",
+      "value": "(336) 870-3600 x0463",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-01-14",
-        "end": "2026-01-14"
+        "start": "2023-07-12",
+        "end": "2026-07-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

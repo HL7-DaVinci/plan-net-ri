@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://cambridge-health-alliance-elder-service-plan.com",
-      "value": "0c75870e5548e3"
+      "value": "ed19d714a4d413"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232809767",
-    "display": "Maryanne Kertzmann"
+    "display": "Echo Cassin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238863986",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "185-518-3760 x312",
+      "value": "(431) 069-6953 x69728",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "505.017.5314 x8200",
+      "value": "1-783-643-8825 x976",
       "use": "work"
     }
   ],

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feil",
+      "family": "Kulas",
       "given": [
-        "Pandora",
-        "Ebonie"
+        "Shari",
+        "Jamika"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(995) 726-9931 x245",
+      "value": "(227) 746-2231",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(477) 080-5998 x23170",
+      "value": "377.404.1431 x68981",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-03-30",
-        "end": "2025-03-30"
+        "start": "2023-07-17",
+        "end": "2026-07-17"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

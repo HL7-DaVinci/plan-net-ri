@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuster",
+      "family": "Weimann",
       "given": [
-        "Darby",
-        "Ali"
+        "Tonette"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "123-419-5025",
+      "value": "977-353-3111 x8401",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "542-621-6343 x1506",
+      "value": "(811) 502-2143",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-10-02",
-        "end": "2025-10-02"
+        "start": "2023-02-08",
+        "end": "2026-02-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Grimes",
+      "family": "Padberg",
       "given": [
-        "Ellen",
-        "Marilee"
+        "Shenika"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "487.608.6306 x6293",
+      "value": "(271) 178-4068 x828",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(345) 655-8832",
+      "value": "624-125-6712 x36239",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-04-21",
-        "end": "2027-04-21"
+        "start": "2023-03-20",
+        "end": "2026-03-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

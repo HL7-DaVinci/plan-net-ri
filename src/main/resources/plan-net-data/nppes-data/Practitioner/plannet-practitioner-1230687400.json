@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cremin",
+      "family": "Bahringer",
       "given": [
-        "Jonathon",
-        "Junior"
+        "Bernard"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "606-347-3227",
+      "value": "1-251-451-1594 x8372",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(902) 556-6880 x9177",
+      "value": "(427) 448-4008 x2147",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-10-20",
-        "end": "2026-10-20"
+        "start": "2024-06-03",
+        "end": "2027-06-03"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085U0001X",
-            "display": "Diagnostic Ultrasound"
+            "display": "Diagnostic Ultrasound Physician"
           }
         ],
-        "text": "Diagnostic Ultrasound"
+        "text": "Diagnostic Ultrasound Physician"
       },
       "period": {
-        "start": "2024-05-03",
-        "end": "2027-05-03"
+        "start": "2022-10-11",
+        "end": "2025-10-11"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -239,31 +238,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

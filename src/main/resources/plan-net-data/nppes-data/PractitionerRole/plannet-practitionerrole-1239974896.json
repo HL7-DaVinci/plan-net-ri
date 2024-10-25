@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ddbff2252746e3"
+      "value": "7fee91eb1a0a8b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239974896",
-    "display": "Brandon Mann"
+    "display": "Willie Mueller"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207K00000X",
-          "display": "Allergy and Immunology"
+          "display": "Allergy & Immunology Physician"
         }
       ],
-      "text": "Allergy and Immunology"
+      "text": "Allergy & Immunology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "918-695-9016 x8563",
+      "value": "1-110-691-4982 x295",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-871-478-6702 x77562",
+      "value": "1-911-235-6697 x085",
       "use": "work"
     }
   ],

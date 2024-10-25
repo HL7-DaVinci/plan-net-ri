@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Heidenreich",
+      "family": "Pouros",
       "given": [
-        "Hoyt",
-        "Cecil"
+        "Preston",
+        "Claudio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "166.728.2051",
+      "value": "1-765-567-7423 x984",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-491-121-9366",
+      "value": "1-753-688-0857 x64292",
       "use": "work"
     }
   ],
@@ -146,8 +146,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2021-12-21",
-        "end": "2024-12-21"
+        "start": "2023-03-22",
+        "end": "2026-03-22"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -179,6 +179,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

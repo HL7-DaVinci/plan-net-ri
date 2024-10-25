@@ -33,12 +33,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-427-289-0469",
+      "value": "164-462-0228 x26948",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-509-011-6249 x71460",
+      "value": "353-434-0832",
       "use": "work"
     }
   ],
@@ -84,10 +84,10 @@
       },
       "name": {
         "use": "official",
-        "text": "Delana Lemke",
-        "family": "Lemke",
+        "text": "Allan Hegmann",
+        "family": "Hegmann",
         "given": [
-          "Delana"
+          "Allan"
         ]
       },
       "telecom": [
@@ -128,7 +128,7 @@
             }
           ],
           "system": "phone",
-          "value": "1-427-289-0469",
+          "value": "164-462-0228 x26948",
           "use": "work"
         }
       ],

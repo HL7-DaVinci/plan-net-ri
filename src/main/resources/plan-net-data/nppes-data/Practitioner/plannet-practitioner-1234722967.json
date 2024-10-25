@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Braun",
+      "family": "Weber",
       "given": [
-        "Bob",
-        "Alexander"
+        "Luke",
+        "Earle"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "327-851-6904",
+      "value": "1-346-485-6208",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "790.539.6976 x3251",
+      "value": "1-255-857-3866 x0606",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2021-09-19",
-        "end": "2024-09-19"
+        "start": "2024-07-26",
+        "end": "2027-07-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

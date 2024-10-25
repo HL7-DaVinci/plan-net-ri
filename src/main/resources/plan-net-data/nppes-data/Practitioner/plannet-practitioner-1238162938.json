@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Frami",
+      "family": "Leuschke",
       "given": [
-        "Aja"
+        "Patti",
+        "Hana"
       ],
       "prefix": [
         "Mrs."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "473.578.3399 x37513",
+      "value": "917-708-0610 x5134",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(968) 317-2144 x9153",
+      "value": "587-991-9690 x86394",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "133V00000X",
-            "display": "Dietitian, Registered"
+            "display": "Registered Dietitian"
           }
         ],
-        "text": "Dietitian, Registered"
+        "text": "Registered Dietitian"
       },
       "period": {
-        "start": "2021-09-11",
-        "end": "2024-09-11"
+        "start": "2024-10-24",
+        "end": "2027-10-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

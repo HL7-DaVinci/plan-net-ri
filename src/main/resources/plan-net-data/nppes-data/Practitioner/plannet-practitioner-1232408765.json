@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Harvey",
+      "family": "Hamill",
       "given": [
-        "Fidelia",
-        "Laurinda"
+        "Jocelyn"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(721) 395-3749 x2767",
+      "value": "644-777-0347 x96156",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "128.932.1284",
+      "value": "268.820.0465 x23579",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208200000X",
-            "display": "Plastic Surgery"
+            "display": "Plastic Surgery Physician"
           }
         ],
-        "text": "Plastic Surgery"
+        "text": "Plastic Surgery Physician"
       },
       "period": {
-        "start": "2024-05-22",
-        "end": "2027-05-22"
+        "start": "2024-02-22",
+        "end": "2027-02-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "ce020970bf3545"
+      "value": "ca3a365ab971c6"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1236147214",
-    "display": "Angie Russel"
+    "display": "Belen Labadie"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-365-283-0246 x581",
+      "value": "773.503.3725 x00429",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-383-143-3399 x6004",
+      "value": "852.438.0091 x0600",
       "use": "work"
     }
   ],

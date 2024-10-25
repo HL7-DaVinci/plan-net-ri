@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gleason",
+      "family": "Bruen",
       "given": [
-        "Taylor",
-        "Devin"
+        "Brenton"
       ],
       "suffix": [
         "Iii",
@@ -46,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "705.851.8541 x509",
+      "value": "(528) 387-4300 x1548",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-252-859-2765 x0356",
+      "value": "1-941-751-7663 x2574",
       "use": "work"
     }
   ],
@@ -138,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2024-02-27",
-        "end": "2027-02-27"
+        "start": "2022-08-30",
+        "end": "2025-08-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

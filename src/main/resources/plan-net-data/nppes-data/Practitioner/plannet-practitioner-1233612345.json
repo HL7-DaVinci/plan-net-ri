@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Upton",
+      "family": "Tremblay",
       "given": [
-        "Laquanda",
-        "Kacie"
+        "Silvia",
+        "Elsie"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-489-165-0278 x556",
+      "value": "242-442-1083 x367",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "573.479.6196 x716",
+      "value": "(341) 806-3985 x317",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-06-07",
-        "end": "2025-06-07"
+        "start": "2021-11-06",
+        "end": "2024-11-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-07-06",
-        "end": "2026-07-06"
+        "start": "2023-06-02",
+        "end": "2026-06-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

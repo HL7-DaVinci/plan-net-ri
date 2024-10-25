@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Huel",
+      "family": "Kerluke",
       "given": [
-        "Shala",
-        "Bella"
+        "Shanell"
       ],
       "suffix": [
         "F.N.P"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "738-058-3490",
+      "value": "(988) 092-2688 x8655",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(591) 259-8406 x359",
+      "value": "257.550.4099 x3832",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2021-12-27",
-        "end": "2024-12-27"
+        "start": "2024-01-27",
+        "end": "2027-01-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +174,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stroman",
+      "family": "Dickens",
       "given": [
-        "Charles",
-        "Joe"
+        "Odell"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "228-506-0247",
+      "value": "342-083-4803 x97997",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "804-651-7337 x9047",
+      "value": "1-734-172-6254 x882",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-07-13",
-        "end": "2024-07-13"
+        "start": "2024-07-10",
+        "end": "2027-07-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

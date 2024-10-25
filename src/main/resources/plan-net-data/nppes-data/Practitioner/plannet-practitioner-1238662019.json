@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koepp",
+      "family": "Barton",
       "given": [
-        "Giuseppe"
+        "Luciano"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(421) 616-2122 x4631",
+      "value": "1-637-371-7395 x8609",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(600) 070-3048 x7340",
+      "value": "1-154-286-8797 x2551",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2021-11-12",
-        "end": "2024-11-12"
+        "start": "2022-08-01",
+        "end": "2025-08-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ND0900X",
-            "display": "Dermatopathology"
+            "display": "Dermatopathology Physician"
           }
         ],
-        "text": "Dermatopathology"
+        "text": "Dermatopathology Physician"
       },
       "period": {
-        "start": "2023-08-13",
-        "end": "2026-08-13"
+        "start": "2022-03-13",
+        "end": "2025-03-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

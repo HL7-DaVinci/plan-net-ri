@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Brakus",
+      "family": "Blanda",
       "given": [
-        "Bruce"
+        "Rubin"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "223-602-4129 x721",
+      "value": "856-835-3341 x41119",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "234.559.8433",
+      "value": "(142) 360-8061",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-03-07",
-        "end": "2025-03-07"
+        "start": "2023-07-19",
+        "end": "2026-07-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2021-08-11",
-        "end": "2024-08-11"
+        "start": "2022-06-27",
+        "end": "2025-06-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

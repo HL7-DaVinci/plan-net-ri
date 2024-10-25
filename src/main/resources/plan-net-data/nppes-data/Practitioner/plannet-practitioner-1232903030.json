@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McClure",
+      "family": "Nienow",
       "given": [
-        "Cristin",
-        "Eun"
+        "Christa"
       ],
       "suffix": [
         "DO"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "344.880.2367 x7851",
+      "value": "210-970-8805 x955",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(941) 341-7494 x8376",
+      "value": "1-103-562-9085 x957",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-11-30",
-        "end": "2024-11-30"
+        "start": "2022-10-28",
+        "end": "2025-10-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -195,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

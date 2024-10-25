@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jast",
+      "family": "Ziemann",
       "given": [
-        "Olin",
-        "Colin"
+        "Charlie",
+        "Devon"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "226-289-5583 x5157",
+      "value": "801-521-1600 x59318",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-306-034-3454 x913",
+      "value": "869-624-9224 x49532",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-03-07",
-        "end": "2026-03-07"
+        "start": "2023-02-07",
+        "end": "2026-02-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

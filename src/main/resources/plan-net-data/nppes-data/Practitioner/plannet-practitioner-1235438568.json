@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lind",
+      "family": "Gorczany",
       "given": [
-        "Ariana",
-        "Maritza"
+        "Perry",
+        "Alishia"
       ],
       "suffix": [
         "MA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "118.653.5693",
+      "value": "1-194-197-7664 x7667",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "749.886.5873 x69981",
+      "value": "1-991-124-9432 x3019",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2022-10-15",
-        "end": "2025-10-15"
+        "start": "2024-08-13",
+        "end": "2027-08-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

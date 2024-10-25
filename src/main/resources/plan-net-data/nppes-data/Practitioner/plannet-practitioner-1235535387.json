@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gibson",
+      "family": "Tremblay",
       "given": [
-        "Leroy",
-        "Kermit"
+        "Lane",
+        "Emmanuel"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-273-199-7948 x01963",
+      "value": "(707) 370-1489",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "450.902.3534 x4648",
+      "value": "(137) 880-2502 x3526",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-07-20",
-        "end": "2026-07-20"
+        "start": "2024-04-05",
+        "end": "2027-04-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

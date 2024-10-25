@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernhard",
+      "family": "Rempel",
       "given": [
-        "Shane",
-        "Belen"
+        "Katlyn"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(684) 068-1211 x8830",
+      "value": "490-055-9801 x7551",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "176-272-9478 x3785",
+      "value": "467-758-6058 x25832",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-11-20",
-        "end": "2026-11-20"
+        "start": "2024-09-18",
+        "end": "2027-09-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

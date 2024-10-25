@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mayer",
+      "family": "Schumm",
       "given": [
-        "Eladia",
-        "Ayako"
+        "Nanci"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(316) 412-5090 x8161",
+      "value": "(222) 864-8361 x144",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-611-517-9330 x666",
+      "value": "(192) 046-4423 x04651",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2021-10-24",
-        "end": "2024-10-24"
+        "start": "2024-10-21",
+        "end": "2027-10-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -207,8 +206,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2024-06-09",
-        "end": "2027-06-09"
+        "start": "2023-07-30",
+        "end": "2026-07-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Runolfsdottir",
+      "family": "Balistreri",
       "given": [
-        "Blake",
-        "Mathew"
+        "Barney"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(548) 397-1595 x84959",
+      "value": "(434) 665-6338 x47555",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-509-962-2059 x041",
+      "value": "(849) 713-1137 x9429",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-02-08",
-        "end": "2025-02-08"
+        "start": "2024-09-10",
+        "end": "2027-09-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

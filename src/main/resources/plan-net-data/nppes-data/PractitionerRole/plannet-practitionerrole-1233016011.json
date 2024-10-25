@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "de4cfe41fbf457"
+      "value": "aa4914e29d35c2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233016011",
-    "display": "Bradley Wunsch"
+    "display": "Rayford Herzog"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(770) 576-6040",
+      "value": "(439) 597-7291 x7694",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "195-555-3519 x25528",
+      "value": "1-191-173-0351",
       "use": "work"
     }
   ],

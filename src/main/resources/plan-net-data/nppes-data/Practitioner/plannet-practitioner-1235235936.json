@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Pacocha",
+      "family": "Olson",
       "given": [
-        "Burton"
+        "Vernon"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "433.477.9276 x264",
+      "value": "310.408.2869 x433",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "818.294.5076",
+      "value": "1-739-158-3007 x6573",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208G00000X",
-            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+            "display": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
           }
         ],
-        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery)"
+        "text": "Thoracic Surgery (Cardiothoracic Vascular Surgery) Physician"
       },
       "period": {
-        "start": "2021-07-06",
-        "end": "2024-07-06"
+        "start": "2022-05-29",
+        "end": "2025-05-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

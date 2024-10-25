@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoeger",
+      "family": "Douglas",
       "given": [
-        "Josphine"
+        "Holly",
+        "Manda"
       ],
       "suffix": [
         "D.M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-932-849-8487 x750",
+      "value": "1-644-386-2644",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "773.722.4386 x8808",
+      "value": "1-530-516-0972 x221",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-02-12",
-        "end": "2027-02-12"
+        "start": "2023-03-24",
+        "end": "2026-03-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

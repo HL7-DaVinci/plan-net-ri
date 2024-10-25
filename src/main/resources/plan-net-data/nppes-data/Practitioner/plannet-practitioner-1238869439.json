@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hand",
+      "family": "Bosco",
       "given": [
-        "Hallie",
-        "Jessia"
+        "Donetta"
       ],
       "prefix": [
         "Ms."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "916.741.8978",
+      "value": "(947) 511-5162",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-235-490-8617 x4594",
+      "value": "(282) 915-3518 x400",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Optician"
       },
       "period": {
-        "start": "2023-12-26",
-        "end": "2026-12-26"
+        "start": "2023-10-22",
+        "end": "2026-10-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

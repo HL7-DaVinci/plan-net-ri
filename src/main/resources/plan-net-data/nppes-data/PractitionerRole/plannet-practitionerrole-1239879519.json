@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "3e1b1a66bcef17"
+      "value": "80bf5d0236dde4"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239879519",
-    "display": "Carol Hayes"
+    "display": "Darius Thompson"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207T00000X",
-          "display": "Neurological Surgery"
+          "display": "Neurological Surgery Physician"
         }
       ],
-      "text": "Neurological Surgery"
+      "text": "Neurological Surgery Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "330.050.9782 x2332",
+      "value": "192.909.0075 x1146",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(485) 255-5750",
+      "value": "(662) 299-1970 x562",
       "use": "work"
     }
   ],

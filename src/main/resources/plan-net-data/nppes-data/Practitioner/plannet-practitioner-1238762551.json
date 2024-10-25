@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Considine",
+      "family": "Boyer",
       "given": [
-        "Soraya"
+        "Caroline"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "505.011.8261 x61883",
+      "value": "(278) 821-7575",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-112-623-9527 x303",
+      "value": "(258) 719-1655 x9872",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2024-06-23",
-        "end": "2027-06-23"
+        "start": "2024-05-23",
+        "end": "2027-05-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

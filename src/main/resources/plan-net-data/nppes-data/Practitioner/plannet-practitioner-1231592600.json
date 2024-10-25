@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoeger",
+      "family": "Ondricka",
       "given": [
-        "Nelson"
+        "Harley",
+        "Arden"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "624-438-7587 x930",
+      "value": "306.798.2268 x122",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-364-725-0519 x2497",
+      "value": "1-162-241-3337",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207X00000X",
-            "display": "Orthopaedic Surgery"
+            "display": "Orthopaedic Surgery Physician"
           }
         ],
-        "text": "Orthopaedic Surgery"
+        "text": "Orthopaedic Surgery Physician"
       },
       "period": {
-        "start": "2024-02-10",
-        "end": "2027-02-10"
+        "start": "2022-11-15",
+        "end": "2025-11-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XS0117X",
-            "display": "Orthopaedic Surgery of the Spine"
+            "display": "Orthopaedic Surgery of the Spine Physician"
           }
         ],
-        "text": "Orthopaedic Surgery of the Spine"
+        "text": "Orthopaedic Surgery of the Spine Physician"
       },
       "period": {
-        "start": "2021-11-01",
-        "end": "2024-11-01"
+        "start": "2024-09-16",
+        "end": "2027-09-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -264,14 +265,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207XX0005X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Orthopaedic Surgery) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Orthopaedic Surgery) Physician"
       },
       "period": {
-        "start": "2023-12-20",
-        "end": "2026-12-20"
+        "start": "2023-11-25",
+        "end": "2026-11-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -323,11 +324,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

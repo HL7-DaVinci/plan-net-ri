@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Altenwerth",
+      "family": "Hane",
       "given": [
-        "Neil"
+        "Jarrett"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(502) 196-7125 x89353",
+      "value": "362-027-4812",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-471-622-9775 x43359",
+      "value": "1-978-820-9213 x6494",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-09-11",
-        "end": "2024-09-11"
+        "start": "2022-12-24",
+        "end": "2025-12-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LG0600X",
-            "display": "Gerontology"
+            "display": "Gerontology Nurse Practitioner"
           }
         ],
-        "text": "Gerontology"
+        "text": "Gerontology Nurse Practitioner"
       },
       "period": {
-        "start": "2023-12-30",
-        "end": "2026-12-30"
+        "start": "2023-07-24",
+        "end": "2026-07-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -258,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuhlman",
+      "family": "Leffler",
       "given": [
-        "Albert"
+        "Emmett"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-886-250-5059 x1505",
+      "value": "606.454.6388 x4796",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(984) 724-3149 x1845",
+      "value": "1-472-866-5040 x684",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2022-08-18",
-        "end": "2025-08-18"
+        "start": "2022-10-28",
+        "end": "2025-10-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,22 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Howell",
+      "family": "Beier",
       "given": [
-        "Amparo",
-        "Lera"
+        "Miguelina"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "276-583-4765 x634",
+      "value": "1-939-501-1511 x31269",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-818-294-3091 x9814",
+      "value": "(410) 111-3810 x3738",
       "use": "work"
     }
   ],
@@ -133,14 +132,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-03-09",
-        "end": "2025-03-09"
+        "start": "2024-07-16",
+        "end": "2027-07-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -192,11 +191,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

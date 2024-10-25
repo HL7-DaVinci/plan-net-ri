@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Reichel",
+      "family": "Satterfield",
       "given": [
-        "Reyes",
-        "Jorge"
+        "Brandon"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "207.749.5762 x4827",
+      "value": "(222) 645-8395 x8645",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "786.045.5813 x785",
+      "value": "1-777-116-9248",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-09-28",
-        "end": "2024-09-28"
+        "start": "2023-06-08",
+        "end": "2026-06-08"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -175,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

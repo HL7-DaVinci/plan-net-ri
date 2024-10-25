@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cronin",
+      "family": "Dicki",
       "given": [
-        "Billie"
+        "Peter"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "603-780-8576 x22916",
+      "value": "991-894-4742 x59135",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "579-762-9400 x631",
+      "value": "607-900-3363",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "204F00000X",
-            "display": "Transplant Surgery"
+            "display": "Transplant Surgery Physician"
           }
         ],
-        "text": "Transplant Surgery"
+        "text": "Transplant Surgery Physician"
       },
       "period": {
-        "start": "2023-06-05",
-        "end": "2026-06-05"
+        "start": "2022-03-27",
+        "end": "2025-03-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2022-03-04",
-        "end": "2025-03-04"
+        "start": "2023-09-05",
+        "end": "2026-09-05"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

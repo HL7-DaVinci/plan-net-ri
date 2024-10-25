@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Spinka",
+      "family": "Franecki",
       "given": [
-        "Darrick",
-        "Leo"
+        "Stefan",
+        "Arturo"
       ],
       "suffix": [
         "RPT"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-542-940-6758",
+      "value": "1-964-246-4957 x83715",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "607-129-8704 x89821",
+      "value": "721-252-8032 x11507",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2023-05-30",
-        "end": "2026-05-30"
+        "start": "2023-10-25",
+        "end": "2026-10-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

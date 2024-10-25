@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Reilly",
+      "family": "Stamm",
       "given": [
-        "Noah",
-        "Armando"
+        "Reggie"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(169) 255-0545",
+      "value": "521.290.8635 x43234",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "998-029-0068 x794",
+      "value": "416.011.7669 x95152",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0200X",
-            "display": "Critical Care Medicine"
+            "display": "Critical Care Medicine (Internal Medicine) Physician"
           }
         ],
-        "text": "Critical Care Medicine"
+        "text": "Critical Care Medicine (Internal Medicine) Physician"
       },
       "period": {
-        "start": "2024-03-08",
-        "end": "2027-03-08"
+        "start": "2023-08-18",
+        "end": "2026-08-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0102X",
-            "display": "Surgical Critical Care"
+            "display": "Surgical Critical Care Physician"
           }
         ],
-        "text": "Surgical Critical Care"
+        "text": "Surgical Critical Care Physician"
       },
       "period": {
-        "start": "2022-06-26",
-        "end": "2025-06-26"
+        "start": "2024-06-03",
+        "end": "2027-06-03"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

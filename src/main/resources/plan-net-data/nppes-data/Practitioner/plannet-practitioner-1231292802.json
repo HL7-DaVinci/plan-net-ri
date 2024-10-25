@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Dibbert",
+      "family": "Terry",
       "given": [
-        "Kurt"
+        "Hosea",
+        "Esteban"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "623-958-9832",
+      "value": "521.621.0707 x9860",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "776-940-5016",
+      "value": "1-575-330-8432 x66613",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-10-16",
-        "end": "2024-10-16"
+        "start": "2023-12-08",
+        "end": "2026-12-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "152WC0802X",
-            "display": "Corneal and Contact Management"
+            "display": "Corneal and Contact Management Optometrist"
           }
         ],
-        "text": "Corneal and Contact Management"
+        "text": "Corneal and Contact Management Optometrist"
       },
       "period": {
-        "start": "2022-08-28",
-        "end": "2025-08-28"
+        "start": "2023-05-31",
+        "end": "2026-05-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

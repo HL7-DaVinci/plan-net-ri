@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nitzsche",
+      "family": "Hudson",
       "given": [
-        "Halley"
+        "Gita",
+        "Emilie"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "673.793.5008 x4594",
+      "value": "216.442.3088 x80843",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(995) 361-2037 x1312",
+      "value": "1-623-646-7691 x84365",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Midwife"
       },
       "period": {
-        "start": "2022-12-13",
-        "end": "2025-12-13"
+        "start": "2024-07-06",
+        "end": "2027-07-06"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

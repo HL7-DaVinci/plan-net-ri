@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "bfe694285f6d4f"
+      "value": "f5fe8223f803b1"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230480719",
-    "display": "Herb Collins"
+    "display": "Theron Maggio"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207ZP0101X",
-          "display": "Anatomic Pathology"
+          "display": "Anatomic Pathology Physician"
         }
       ],
-      "text": "Anatomic Pathology"
+      "text": "Anatomic Pathology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "812.030.5532",
+      "value": "(243) 589-7081 x411",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "775.865.0920",
+      "value": "1-986-587-1945 x8274",
       "use": "work"
     }
   ],

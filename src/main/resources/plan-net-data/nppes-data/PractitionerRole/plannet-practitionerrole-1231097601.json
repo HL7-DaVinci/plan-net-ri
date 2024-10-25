@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "97edfdc1d5397f"
+      "value": "dc3300bd07cf49"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231097601",
-    "display": "Ernie Smith"
+    "display": "Oswaldo Larkin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-765-128-1965 x86256",
+      "value": "578-542-7826 x9379",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "447.669.8203",
+      "value": "1-193-672-7032 x49816",
       "use": "work"
     }
   ],

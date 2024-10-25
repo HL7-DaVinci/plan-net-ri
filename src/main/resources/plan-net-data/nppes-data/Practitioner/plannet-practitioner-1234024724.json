@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bernier",
+      "family": "Stamm",
       "given": [
-        "Nakesha",
-        "Charisse"
+        "Kesha",
+        "Audry"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "642.496.8291 x4788",
+      "value": "187.443.6552 x61844",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-665-472-1619 x0889",
+      "value": "215.582.6145",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-19",
-        "end": "2025-12-19"
+        "start": "2024-06-03",
+        "end": "2027-06-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084P0800X",
-            "display": "Psychiatry"
+            "display": "Psychiatry Physician"
           }
         ],
-        "text": "Psychiatry"
+        "text": "Psychiatry Physician"
       },
       "period": {
-        "start": "2023-11-14",
-        "end": "2026-11-14"
+        "start": "2024-05-21",
+        "end": "2027-05-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

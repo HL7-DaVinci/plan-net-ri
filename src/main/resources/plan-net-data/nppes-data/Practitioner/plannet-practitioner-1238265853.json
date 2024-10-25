@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Zulauf",
+      "family": "MacGyver",
       "given": [
-        "Kermit",
-        "Kurt"
+        "Houston"
       ],
       "suffix": [
         "D.C."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(910) 535-6884 x45829",
+      "value": "1-794-230-4247 x9215",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "933.677.5967 x36352",
+      "value": "630.794.1562 x228",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Chiropractor"
       },
       "period": {
-        "start": "2024-02-07",
-        "end": "2027-02-07"
+        "start": "2022-10-12",
+        "end": "2025-10-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -176,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

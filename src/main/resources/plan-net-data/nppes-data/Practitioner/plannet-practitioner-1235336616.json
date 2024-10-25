@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Witting",
+      "family": "Wisoky",
       "given": [
-        "Jordan"
+        "Jamar",
+        "Murray"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "314-158-2395 x517",
+      "value": "735.502.9234 x0483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-483-482-1226 x6217",
+      "value": "1-375-597-6263 x70584",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2022-10-13",
-        "end": "2025-10-13"
+        "start": "2022-09-27",
+        "end": "2025-09-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2023-12-14",
-        "end": "2026-12-14"
+        "start": "2021-11-27",
+        "end": "2024-11-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

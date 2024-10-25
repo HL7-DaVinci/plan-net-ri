@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feest",
+      "family": "Bailey",
       "given": [
-        "Shela",
-        "Felicita"
+        "Wenona",
+        "Loreen"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-516-747-8096 x34705",
+      "value": "(473) 720-9273 x0636",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(190) 143-8336 x74316",
+      "value": "1-360-890-9192 x150",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207ZP0213X",
-            "display": "Pediatric Pathology"
+            "display": "Pediatric Pathology Physician"
           }
         ],
-        "text": "Pediatric Pathology"
+        "text": "Pediatric Pathology Physician"
       },
       "period": {
-        "start": "2022-10-10",
-        "end": "2025-10-10"
+        "start": "2024-09-19",
+        "end": "2027-09-19"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -201,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080P0207X",
-            "display": "Pediatric Hematology-Oncology"
+            "display": "Pediatric Hematology & Oncology Physician"
           }
         ],
-        "text": "Pediatric Hematology-Oncology"
+        "text": "Pediatric Hematology & Oncology Physician"
       },
       "period": {
-        "start": "2024-03-27",
-        "end": "2027-03-27"
+        "start": "2023-05-13",
+        "end": "2026-05-13"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -260,11 +260,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

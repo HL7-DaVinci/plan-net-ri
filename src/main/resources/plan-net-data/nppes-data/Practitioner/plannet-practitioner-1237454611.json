@@ -34,8 +34,7 @@
       "use": "official",
       "family": "Schmidt",
       "given": [
-        "Tamar",
-        "Bessie"
+        "Jamila"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(117) 307-6661 x7763",
+      "value": "(988) 921-1487 x01979",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "865-817-1545",
+      "value": "(790) 625-8868 x2188",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-09-10",
-        "end": "2026-09-10"
+        "start": "2022-01-23",
+        "end": "2025-01-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

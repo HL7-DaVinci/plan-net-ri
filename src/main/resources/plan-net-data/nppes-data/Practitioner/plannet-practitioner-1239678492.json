@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McClure",
+      "family": "Schaden",
       "given": [
-        "Orlando",
-        "Kirby"
+        "Paris"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "319-134-5183 x640",
+      "value": "1-225-155-0182",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-234-727-7825 x4863",
+      "value": "1-192-046-6044 x9826",
       "use": "work"
     }
   ],
@@ -145,8 +144,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2022-08-18",
-        "end": "2025-08-18"
+        "start": "2023-09-27",
+        "end": "2026-09-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://seacoast-affiliated-group-practice-inc.com",
-      "value": "1294b945e711f2"
+      "value": "3fa535a8733f58"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239175243",
-    "display": "Bennett Hudson"
+    "display": "Alex Runte"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231892344",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VG0400X",
-          "display": "Gynecology"
+          "display": "Gynecology Physician"
         }
       ],
-      "text": "Gynecology"
+      "text": "Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(478) 379-1168 x7438",
+      "value": "917.329.3842",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "729-636-4054 x046",
+      "value": "(158) 391-4698 x49998",
       "use": "work"
     }
   ],

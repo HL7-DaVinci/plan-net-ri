@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ferry",
+      "family": "Sawayn",
       "given": [
-        "Milton",
-        "Carmelo"
+        "Valentin"
       ],
       "suffix": [
         "DDS"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-390-549-9807 x1770",
+      "value": "(547) 202-5844 x75052",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-804-376-7788 x99507",
+      "value": "(933) 016-0318",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Dentist"
       },
       "period": {
-        "start": "2022-01-19",
-        "end": "2025-01-19"
+        "start": "2024-08-20",
+        "end": "2027-08-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-02-28",
-        "end": "2025-02-28"
+        "start": "2023-06-09",
+        "end": "2026-06-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -260,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

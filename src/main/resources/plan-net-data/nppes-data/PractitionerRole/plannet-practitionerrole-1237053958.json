@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "b50954ae63b52f"
+      "value": "c8d77880f9feb5"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237053958",
-    "display": "Jesus Pfannerstill"
+    "display": "Wyatt Orn"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084N0400X",
-          "display": "Neurology"
+          "display": "Neurology Physician"
         }
       ],
-      "text": "Neurology"
+      "text": "Neurology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "646.992.7988 x39880",
+      "value": "859-389-0780",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(874) 098-8055 x892",
+      "value": "286.948.6665 x355",
       "use": "work"
     }
   ],

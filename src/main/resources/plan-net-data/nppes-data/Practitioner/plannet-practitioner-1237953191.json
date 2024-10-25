@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Olson",
+      "family": "Kozey",
       "given": [
-        "Wayne",
-        "Jonathon"
+        "Allan",
+        "Olin"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "866-910-6666",
+      "value": "(501) 989-1779 x73719",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(731) 437-8493 x1049",
+      "value": "581-909-0932 x48398",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2022-11-17",
-        "end": "2025-11-17"
+        "start": "2022-02-23",
+        "end": "2025-02-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

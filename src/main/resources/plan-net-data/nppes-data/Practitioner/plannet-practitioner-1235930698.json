@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Leuschke",
+      "family": "Jast",
       "given": [
-        "Marissa"
+        "Racheal"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(979) 975-9159",
+      "value": "(227) 961-7935",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "745.757.2379",
+      "value": "636-019-7009 x09424",
       "use": "work"
     }
   ],
@@ -111,6 +111,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "zh",
+          "display": "Chinese"
+        }
+      ],
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

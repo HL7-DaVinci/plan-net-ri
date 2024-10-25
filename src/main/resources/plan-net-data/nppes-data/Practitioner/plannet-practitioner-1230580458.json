@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bogan",
+      "family": "Hirthe",
       "given": [
-        "Earlean",
-        "Hermina"
+        "Yukiko"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "923-951-7699 x212",
+      "value": "584-465-4236 x305",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-135-702-0465 x5606",
+      "value": "660.787.3179 x791",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207QG0300X",
-            "display": "Geriatric Medicine"
+            "display": "Geriatric Medicine (Family Medicine) Physician"
           }
         ],
-        "text": "Geriatric Medicine"
+        "text": "Geriatric Medicine (Family Medicine) Physician"
       },
       "period": {
-        "start": "2022-06-04",
-        "end": "2025-06-04"
+        "start": "2024-02-01",
+        "end": "2027-02-01"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "7bd7de160b2295"
+      "value": "b6cdd53d67d6b9"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237253422",
-    "display": "Deandrea Cormier"
+    "display": "Willow Klein"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RH0003X",
-          "display": "Hematology and Oncology"
+          "display": "Hematology & Oncology Physician"
         }
       ],
-      "text": "Hematology and Oncology"
+      "text": "Hematology & Oncology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "584-925-9005 x426",
+      "value": "256.704.7327 x448",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(462) 107-5312",
+      "value": "(692) 609-2759 x437",
       "use": "work"
     }
   ],

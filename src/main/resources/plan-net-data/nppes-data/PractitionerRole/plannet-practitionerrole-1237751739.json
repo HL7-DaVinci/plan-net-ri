@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "5214d1ebf6f7d3"
+      "value": "af267729dd619f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237751739",
-    "display": "Samella Willms"
+    "display": "Annmarie Senger"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207R00000X",
-          "display": "Internal Medicine"
+          "display": "Internal Medicine Physician"
         }
       ],
-      "text": "Internal Medicine"
+      "text": "Internal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(100) 121-6157 x513",
+      "value": "732-625-2137",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "141-112-3541",
+      "value": "(993) 175-2269 x02299",
       "use": "work"
     }
   ],

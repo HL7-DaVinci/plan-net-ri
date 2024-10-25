@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Casper",
+      "family": "Swaniawski",
       "given": [
-        "Ivonne",
-        "Alverta"
+        "Kyung",
+        "Shawna"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-494-418-8594 x78236",
+      "value": "(604) 660-6435 x6333",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "138-031-6091",
+      "value": "803.244.1584 x8658",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Acupuncturist"
       },
       "period": {
-        "start": "2022-12-07",
-        "end": "2025-12-07"
+        "start": "2023-09-17",
+        "end": "2026-09-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2081S0010X",
-            "display": "Sports Medicine"
+            "display": "Sports Medicine (Physical Medicine & Rehabilitation) Physician"
           }
         ],
-        "text": "Sports Medicine"
+        "text": "Sports Medicine (Physical Medicine & Rehabilitation) Physician"
       },
       "period": {
-        "start": "2023-11-05",
-        "end": "2026-11-05"
+        "start": "2023-01-04",
+        "end": "2026-01-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -264,14 +264,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208VP0000X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine Physician"
       },
       "period": {
-        "start": "2021-12-31",
-        "end": "2024-12-31"
+        "start": "2023-09-11",
+        "end": "2026-09-11"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -303,31 +303,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

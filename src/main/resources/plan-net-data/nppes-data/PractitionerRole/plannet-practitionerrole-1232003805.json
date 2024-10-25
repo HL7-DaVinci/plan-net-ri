@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "1d8bb891de7318"
+      "value": "161c6c2ff2c211"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232003805",
-    "display": "Theda Klocko"
+    "display": "Genny Kautzer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084N0400X",
-          "display": "Neurology"
+          "display": "Neurology Physician"
         }
       ],
-      "text": "Neurology"
+      "text": "Neurology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "223-610-7837 x8200",
+      "value": "(846) 137-8435 x671",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(108) 989-0496 x709",
+      "value": "1-809-159-8359",
       "use": "work"
     }
   ],

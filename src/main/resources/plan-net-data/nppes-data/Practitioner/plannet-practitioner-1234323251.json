@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Daugherty",
+      "family": "Turner",
       "given": [
-        "Noma"
+        "Dorian",
+        "Cyndi"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "533-007-3489 x8555",
+      "value": "1-956-051-7573",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "281-213-9054",
+      "value": "(490) 204-6182 x154",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-06-23",
-        "end": "2026-06-23"
+        "start": "2022-01-01",
+        "end": "2025-01-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

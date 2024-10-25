@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Barton",
+      "family": "Hirthe",
       "given": [
-        "Casey",
-        "Frederic"
+        "Gilbert",
+        "Dominick"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "471-135-9847",
+      "value": "1-197-730-7155 x26534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-121-481-8185 x65908",
+      "value": "332-206-0918",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208C00000X",
-            "display": "Colon and Rectal Surgery"
+            "display": "Colon & Rectal Surgery Physician"
           }
         ],
-        "text": "Colon and Rectal Surgery"
+        "text": "Colon & Rectal Surgery Physician"
       },
       "period": {
-        "start": "2021-07-27",
-        "end": "2024-07-27"
+        "start": "2022-10-04",
+        "end": "2025-10-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

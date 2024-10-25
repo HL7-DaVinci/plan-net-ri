@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Yundt",
+      "family": "Champlin",
       "given": [
-        "Dustin",
-        "Dean"
+        "Alton"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(736) 738-0751 x5326",
+      "value": "820.879.0345 x88071",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-223-868-8896 x00225",
+      "value": "(657) 454-5031 x6472",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-12-10",
-        "end": "2026-12-10"
+        "start": "2024-06-20",
+        "end": "2027-06-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

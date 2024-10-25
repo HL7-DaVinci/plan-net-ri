@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Botsford",
+      "family": "Walsh",
       "given": [
-        "Ramon"
+        "Michel",
+        "Stan"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "873.520.0098",
+      "value": "309-748-0993 x78422",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(984) 292-3981 x0653",
+      "value": "(873) 758-4263 x08465",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RR0500X",
-            "display": "Rheumatology"
+            "display": "Rheumatology Physician"
           }
         ],
-        "text": "Rheumatology"
+        "text": "Rheumatology Physician"
       },
       "period": {
-        "start": "2023-12-08",
-        "end": "2026-12-08"
+        "start": "2022-02-25",
+        "end": "2025-02-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

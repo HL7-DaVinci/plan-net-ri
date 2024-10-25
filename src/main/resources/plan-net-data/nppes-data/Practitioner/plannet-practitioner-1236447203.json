@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zboncak",
+      "family": "Dooley",
       "given": [
-        "Kristopher",
-        "Hans"
+        "Vicente",
+        "Jan"
       ],
       "suffix": [
         "Jr.",
@@ -46,12 +46,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-906-226-7553 x7812",
+      "value": "762.778.0422 x624",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "195-590-6426 x9080",
+      "value": "(385) 647-8662 x98517",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2023-11-29",
-        "end": "2026-11-29"
+        "start": "2023-02-02",
+        "end": "2026-02-02"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -176,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

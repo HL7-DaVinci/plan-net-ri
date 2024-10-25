@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID010000",
-        "display": "Acme of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://eye-associates-pc.com",
-      "value": "c8c52e021a9f70"
+      "value": "8f070b11605b3c"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232006667",
-    "display": "Darwin Mraz"
+    "display": "Rocco Dooley"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230789741",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207P00000X",
-          "display": "Emergency Medicine"
+          "display": "Emergency Medicine Physician"
         }
       ],
-      "text": "Emergency Medicine"
+      "text": "Emergency Medicine Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-841-664-5475 x82576",
+      "value": "947-477-7304 x73924",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "966-486-4410 x856",
+      "value": "(456) 563-5793 x39604",
       "use": "work"
     }
   ],

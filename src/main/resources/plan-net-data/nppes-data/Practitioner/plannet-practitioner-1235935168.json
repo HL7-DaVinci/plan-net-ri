@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Baumbach",
+      "family": "West",
       "given": [
-        "Wiley",
-        "Shelton"
+        "Kelvin",
+        "Dion"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "781.139.8909 x062",
+      "value": "1-140-398-8456 x0241",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(148) 065-9547 x7637",
+      "value": "(999) 326-8050 x93145",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2021-10-18",
-        "end": "2024-10-18"
+        "start": "2024-04-08",
+        "end": "2027-04-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

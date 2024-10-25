@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Marquardt",
+      "family": "Hilll",
       "given": [
-        "Rosina"
+        "Leon",
+        "Tobi"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "737-992-2187 x48777",
+      "value": "828.832.1048 x68262",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.632.5481 x630",
+      "value": "136-263-5063",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-09-21",
-        "end": "2025-09-21"
+        "start": "2024-06-15",
+        "end": "2027-06-15"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -202,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-07-26",
-        "end": "2025-07-26"
+        "start": "2022-08-26",
+        "end": "2025-08-26"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

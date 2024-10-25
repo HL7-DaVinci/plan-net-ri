@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gerhold",
+      "family": "Raynor",
       "given": [
-        "Rosana"
+        "Carolina",
+        "Shaniqua"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "247.166.9465 x69050",
+      "value": "516.415.2780 x5862",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "549.397.6712 x617",
+      "value": "315.436.5368 x25692",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2024-02-11",
-        "end": "2027-02-11"
+        "start": "2022-05-24",
+        "end": "2025-05-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

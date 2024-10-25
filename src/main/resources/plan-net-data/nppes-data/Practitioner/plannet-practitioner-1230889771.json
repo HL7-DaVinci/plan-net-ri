@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Stark",
+      "family": "Spinka",
       "given": [
-        "Sammy",
-        "Darell"
+        "Sammy"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "680-811-7279",
+      "value": "1-110-777-9605 x99140",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "289.381.0392",
+      "value": "306-291-2126 x81743",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RX0202X",
-            "display": "Medical Oncology"
+            "display": "Medical Oncology Physician"
           }
         ],
-        "text": "Medical Oncology"
+        "text": "Medical Oncology Physician"
       },
       "period": {
-        "start": "2022-06-27",
-        "end": "2025-06-27"
+        "start": "2022-05-29",
+        "end": "2025-05-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

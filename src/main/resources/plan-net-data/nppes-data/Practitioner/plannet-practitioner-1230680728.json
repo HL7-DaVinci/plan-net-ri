@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koepp",
+      "family": "Sporer",
       "given": [
-        "Jonas",
-        "Freddie"
+        "Darrick"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "682-823-7272 x45871",
+      "value": "508.458.1187",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "261.409.1833 x1559",
+      "value": "1-210-001-2577 x6890",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-04-24",
-        "end": "2027-04-24"
+        "start": "2022-03-07",
+        "end": "2025-03-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

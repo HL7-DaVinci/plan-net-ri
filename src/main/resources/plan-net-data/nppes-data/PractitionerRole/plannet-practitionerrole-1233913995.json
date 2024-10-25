@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "f410d4632b499b"
+      "value": "0858841384a64a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233913995",
-    "display": "Mark Schowalter"
+    "display": "Bret Schinner"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RP1001X",
-          "display": "Pulmonary Disease"
+          "display": "Pulmonary Disease Physician"
         }
       ],
-      "text": "Pulmonary Disease"
+      "text": "Pulmonary Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-513-216-2679 x899",
+      "value": "(613) 883-3772 x581",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(687) 955-6899 x5533",
+      "value": "(477) 978-3390 x25344",
       "use": "work"
     }
   ],

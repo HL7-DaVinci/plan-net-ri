@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "d2bdaf6be2b84b"
+      "value": "f5a48a3e30f821"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232406363",
-    "display": "Duane Kihn"
+    "display": "Ariel Jenkins"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223S0112X",
-          "display": "Oral and Maxillofacial Surgery"
+          "display": "Oral and Maxillofacial Surgery (Dentist)"
         }
       ],
-      "text": "Oral and Maxillofacial Surgery"
+      "text": "Oral and Maxillofacial Surgery (Dentist)"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "781.895.5726 x39555",
+      "value": "1-444-855-0817 x8324",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "813.433.6218",
+      "value": "684-385-1558 x723",
       "use": "work"
     }
   ],

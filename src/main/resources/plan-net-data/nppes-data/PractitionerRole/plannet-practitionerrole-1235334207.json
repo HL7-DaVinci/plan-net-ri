@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "aaf567fee15651"
+      "value": "4f0dc9d6a52b3a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235334207",
-    "display": "Mckinley Dare"
+    "display": "Hosea Russel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-765-735-9535 x11652",
+      "value": "188-538-5703",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "478.253.2686 x8177",
+      "value": "1-423-515-5682 x4023",
       "use": "work"
     }
   ],

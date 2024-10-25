@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jaskolski",
+      "family": "Rodriguez",
       "given": [
-        "Josh"
+        "Mitch",
+        "Keven"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(707) 718-6578",
+      "value": "1-714-695-7877",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "376.609.4542 x84748",
+      "value": "1-299-261-2347",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223P0221X",
-            "display": "Pediatric Dentistry"
+            "display": "Pediatric Dentist"
           }
         ],
-        "text": "Pediatric Dentistry"
+        "text": "Pediatric Dentist"
       },
       "period": {
-        "start": "2021-08-14",
-        "end": "2024-08-14"
+        "start": "2023-08-26",
+        "end": "2026-08-26"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

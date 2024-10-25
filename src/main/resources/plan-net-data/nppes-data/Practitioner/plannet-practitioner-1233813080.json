@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Beahan",
+      "family": "Thiel",
       "given": [
-        "Shanita"
+        "Velva",
+        "Wendy"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "358-285-2018 x5320",
+      "value": "675-447-0360 x8310",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(209) 738-4720 x58233",
+      "value": "(209) 889-9618",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-09-16",
-        "end": "2024-09-16"
+        "start": "2021-12-21",
+        "end": "2024-12-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

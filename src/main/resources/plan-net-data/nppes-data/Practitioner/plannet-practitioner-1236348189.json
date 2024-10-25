@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McKenzie",
+      "family": "Kris",
       "given": [
-        "Dora",
-        "Lilliana"
+        "Mercy"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "388-315-1085 x4266",
+      "value": "1-729-347-3272 x4266",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(901) 208-8056 x06397",
+      "value": "(441) 493-4903",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-12-11",
-        "end": "2026-12-11"
+        "start": "2021-12-10",
+        "end": "2024-12-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -201,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LA2100X",
-            "display": "Acute Care"
+            "display": "Acute Care Nurse Practitioner"
           }
         ],
-        "text": "Acute Care"
+        "text": "Acute Care Nurse Practitioner"
       },
       "period": {
-        "start": "2023-03-17",
-        "end": "2026-03-17"
+        "start": "2022-08-30",
+        "end": "2025-08-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -240,31 +239,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

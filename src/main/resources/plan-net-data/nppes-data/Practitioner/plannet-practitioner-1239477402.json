@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Terry",
+      "family": "Stokes",
       "given": [
-        "Corie"
+        "Adriane"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(469) 345-4927 x57687",
+      "value": "1-583-181-1268",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-960-605-7126 x168",
+      "value": "735.204.4525 x97906",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Social Worker"
       },
       "period": {
-        "start": "2024-02-09",
-        "end": "2027-02-09"
+        "start": "2024-03-06",
+        "end": "2027-03-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

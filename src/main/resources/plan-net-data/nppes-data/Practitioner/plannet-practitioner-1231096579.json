@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Parisian",
+      "family": "Schmitt",
       "given": [
-        "Armando"
+        "Ellsworth",
+        "Jerrold"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "506-702-1769 x3692",
+      "value": "1-670-447-4503",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(198) 244-1350 x24945",
+      "value": "764.429.1579 x614",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-03-18",
-        "end": "2027-03-18"
+        "start": "2022-03-29",
+        "end": "2025-03-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

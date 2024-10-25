@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "77698f801298cd"
+      "value": "1cc3abf81dc009"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237450395",
-    "display": "Michale Nicolas"
+    "display": "Dan Lowe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207P00000X",
-          "display": "Emergency Medicine"
+          "display": "Emergency Medicine Physician"
         }
       ],
-      "text": "Emergency Medicine"
+      "text": "Emergency Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "472.357.2657 x211",
+      "value": "(108) 036-8424",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(330) 819-0326",
+      "value": "(490) 848-8748 x656",
       "use": "work"
     }
   ],

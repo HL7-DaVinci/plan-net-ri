@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Green",
+      "family": "Stiedemann",
       "given": [
-        "Ivy"
+        "Jung",
+        "Rose"
       ],
       "suffix": [
         "C.R.N.A."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "581.034.7351",
+      "value": "122-494-3509",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "658.556.2617 x7800",
+      "value": "1-671-207-8496 x559",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2023-10-08",
-        "end": "2026-10-08"
+        "start": "2024-04-14",
+        "end": "2027-04-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

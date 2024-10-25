@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Blick",
+      "family": "Doyle",
       "given": [
-        "Jess"
+        "Marcellus",
+        "Blake"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "288-091-6138 x035",
+      "value": "1-790-366-0494 x498",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(697) 982-0471",
+      "value": "(546) 839-8289 x81556",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2023-07-03",
-        "end": "2026-07-03"
+        "start": "2024-07-27",
+        "end": "2027-07-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "50",
+                "display": "Functional native proficiency"
+              }
+            ],
+            "text": "Functional native proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "vi",
+          "display": "Vietnamese"
+        }
+      ],
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

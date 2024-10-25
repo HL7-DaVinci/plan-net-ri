@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ae6c87724bc6a9"
+      "value": "d3666be81a39c2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234026604",
-    "display": "Sean Watsica"
+    "display": "Devon Schimmel"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "604-836-7245 x4701",
+      "value": "(944) 417-8216",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "541-137-7930 x6623",
+      "value": "636-831-7493 x719",
       "use": "work"
     }
   ],

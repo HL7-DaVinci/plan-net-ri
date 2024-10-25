@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Konopelski",
+      "family": "Bahringer",
       "given": [
-        "Virgil"
+        "Branden"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "368-639-7511 x1965",
+      "value": "(763) 230-1584 x18320",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(655) 215-7642 x1414",
+      "value": "1-691-420-5371",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-02-05",
-        "end": "2025-02-05"
+        "start": "2024-04-21",
+        "end": "2027-04-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

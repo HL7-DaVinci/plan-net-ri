@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Crist",
+      "family": "Metz",
       "given": [
-        "Marisol"
+        "Mirella"
       ],
       "suffix": [
         "AUD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(695) 585-5598 x167",
+      "value": "1-792-142-1136",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-801-697-0952 x2481",
+      "value": "1-572-545-2530 x2047",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2021-08-09",
-        "end": "2024-08-09"
+        "start": "2022-03-14",
+        "end": "2025-03-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

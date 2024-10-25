@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "0043f5121751d4"
+      "value": "6a2aaaf3190029"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239879543",
-    "display": "Haywood Beatty"
+    "display": "Milton Spencer"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207V00000X",
-          "display": "Obstetrics and Gynecology"
+          "display": "Obstetrics & Gynecology Physician"
         }
       ],
-      "text": "Obstetrics and Gynecology"
+      "text": "Obstetrics & Gynecology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-804-470-1569",
+      "value": "(685) 209-8709",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "708.619.8997 x6799",
+      "value": "1-725-678-2452 x872",
       "use": "work"
     }
   ],

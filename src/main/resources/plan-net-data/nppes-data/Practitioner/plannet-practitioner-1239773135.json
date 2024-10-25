@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mraz",
+      "family": "Bailey",
       "given": [
-        "Terence",
-        "Leigh"
+        "Edmund"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "283.238.0931 x60126",
+      "value": "(402) 821-6038 x00534",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(880) 119-9406 x3751",
+      "value": "383.766.5659 x4322",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0122X",
-            "display": "Plastic and Reconstructive Surgery"
+            "display": "Plastic and Reconstructive Surgery Physician"
           }
         ],
-        "text": "Plastic and Reconstructive Surgery"
+        "text": "Plastic and Reconstructive Surgery Physician"
       },
       "period": {
-        "start": "2023-11-08",
-        "end": "2026-11-08"
+        "start": "2022-07-07",
+        "end": "2025-07-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

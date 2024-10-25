@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bartell",
+      "family": "Bailey",
       "given": [
-        "Wes",
-        "Orlando"
+        "Stephen",
+        "Willard"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "223.115.4760 x4849",
+      "value": "1-465-880-7681 x68951",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-377-074-8799 x235",
+      "value": "1-676-781-0091 x0185",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-09-18",
-        "end": "2026-09-18"
+        "start": "2024-02-09",
+        "end": "2027-02-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

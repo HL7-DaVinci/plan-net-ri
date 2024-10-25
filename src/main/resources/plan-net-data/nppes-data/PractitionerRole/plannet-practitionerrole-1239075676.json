@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "3378792bb80029"
+      "value": "a07abcbfd24f9e"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239075676",
-    "display": "Rodger Koss"
+    "display": "Zack Denesik"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RC0000X",
-          "display": "Cardiovascular Disease"
+          "display": "Cardiovascular Disease Physician"
         }
       ],
-      "text": "Cardiovascular Disease"
+      "text": "Cardiovascular Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "634.239.7317 x21239",
+      "value": "1-820-174-0495 x84370",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "951-899-6827 x1453",
+      "value": "1-225-182-8695 x44020",
       "use": "work"
     }
   ],

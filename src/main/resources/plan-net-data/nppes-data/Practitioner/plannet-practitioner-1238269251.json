@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Crona",
+      "family": "Tillman",
       "given": [
-        "Buford",
-        "Jarred"
+        "Fred"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-147-306-3157 x9981",
+      "value": "(442) 341-2106",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "249.969.7686",
+      "value": "(676) 478-6658 x0843",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-06-11",
-        "end": "2026-06-11"
+        "start": "2023-08-31",
+        "end": "2026-08-31"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

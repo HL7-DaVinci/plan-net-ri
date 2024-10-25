@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Conner",
+      "family": "Tremblay",
       "given": [
-        "Darwin",
-        "Emory"
+        "Burl",
+        "Brandon"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(367) 640-3331 x46728",
+      "value": "278-659-1657 x502",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-143-569-6303",
+      "value": "648.656.3723",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0200X",
-            "display": "Infectious Disease"
+            "display": "Infectious Disease Physician"
           }
         ],
-        "text": "Infectious Disease"
+        "text": "Infectious Disease Physician"
       },
       "period": {
-        "start": "2022-04-06",
-        "end": "2025-04-06"
+        "start": "2022-03-03",
+        "end": "2025-03-03"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

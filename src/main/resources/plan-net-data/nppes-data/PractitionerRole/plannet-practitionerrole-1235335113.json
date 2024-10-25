@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "0a4b3e18455212"
+      "value": "a996ff8092b258"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235335113",
-    "display": "Hershel Conroy"
+    "display": "Claudio Hoeger"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207W00000X",
-          "display": "Ophthalmology"
+          "display": "Ophthalmology Physician"
         }
       ],
-      "text": "Ophthalmology"
+      "text": "Ophthalmology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-867-861-8998 x72981",
+      "value": "(536) 698-8335 x6592",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "404.943.6194 x36554",
+      "value": "104-496-7726 x49081",
       "use": "work"
     }
   ],

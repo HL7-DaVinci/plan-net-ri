@@ -32,21 +32,21 @@
   "name": [
     {
       "use": "official",
-      "family": "Ruecker",
+      "family": "Franecki",
       "given": [
-        "Trevor"
+        "Dirk"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "253-248-5406 x4913",
+      "value": "101-513-7459 x0456",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(840) 502-2393",
+      "value": "401.000.8667 x2828",
       "use": "work"
     }
   ],
@@ -132,14 +132,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-01-28",
-        "end": "2026-01-28"
+        "start": "2022-10-04",
+        "end": "2025-10-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,14 +196,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2083X0100X",
-            "display": "Occupational Medicine"
+            "display": "Occupational Medicine Physician"
           }
         ],
-        "text": "Occupational Medicine"
+        "text": "Occupational Medicine Physician"
       },
       "period": {
-        "start": "2021-11-03",
-        "end": "2024-11-03"
+        "start": "2024-02-07",
+        "end": "2027-02-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -255,11 +255,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

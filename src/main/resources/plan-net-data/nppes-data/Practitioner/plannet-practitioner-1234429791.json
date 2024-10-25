@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Fahey",
+      "family": "Abbott",
       "given": [
-        "Alisia"
+        "Larue",
+        "Maritza"
       ],
       "suffix": [
         "APRN"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-558-735-5344",
+      "value": "1-965-255-6610 x4914",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(262) 704-3644 x33791",
+      "value": "(274) 592-8632 x162",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LF0000X",
-            "display": "Family"
+            "display": "Family Nurse Practitioner"
           }
         ],
-        "text": "Family"
+        "text": "Family Nurse Practitioner"
       },
       "period": {
-        "start": "2022-06-06",
-        "end": "2025-06-06"
+        "start": "2022-06-18",
+        "end": "2025-06-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

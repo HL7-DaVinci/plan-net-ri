@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://comprehensive-community-action-inc.com",
-      "value": "fdfb1a9853676d"
+      "value": "8b3ef49f575400"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230580458",
-    "display": "Earlean Bogan"
+    "display": "Yukiko Hirthe"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236441719",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207QG0300X",
-          "display": "Geriatric Medicine"
+          "display": "Geriatric Medicine (Family Medicine) Physician"
         }
       ],
-      "text": "Geriatric Medicine"
+      "text": "Geriatric Medicine (Family Medicine) Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "923-951-7699 x212",
+      "value": "584-465-4236 x305",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-135-702-0465 x5606",
+      "value": "660.787.3179 x791",
       "use": "work"
     }
   ],

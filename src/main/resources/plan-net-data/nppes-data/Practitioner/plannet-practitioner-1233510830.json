@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zulauf",
+      "family": "Funk",
       "given": [
-        "Leonia",
-        "Kristal"
+        "Marilyn",
+        "Tawnya"
       ],
       "suffix": [
         "R.PH."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "710-807-8054 x209",
+      "value": "(388) 298-7857 x87110",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-130-054-8898",
+      "value": "1-503-213-0024 x98730",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Pharmacist"
       },
       "period": {
-        "start": "2022-03-17",
-        "end": "2025-03-17"
+        "start": "2023-01-16",
+        "end": "2026-01-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

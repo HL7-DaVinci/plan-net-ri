@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Cartwright",
+      "family": "Purdy",
       "given": [
-        "Lezlie"
+        "Judi",
+        "Roselyn"
       ],
       "suffix": [
         "RD, LD, CDE"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "376-491-5615 x703",
+      "value": "676-339-6530 x01547",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "599.407.0654 x3378",
+      "value": "163.288.6115 x047",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "133V00000X",
-            "display": "Dietitian, Registered"
+            "display": "Registered Dietitian"
           }
         ],
-        "text": "Dietitian, Registered"
+        "text": "Registered Dietitian"
       },
       "period": {
-        "start": "2021-09-09",
-        "end": "2024-09-09"
+        "start": "2023-10-29",
+        "end": "2026-10-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

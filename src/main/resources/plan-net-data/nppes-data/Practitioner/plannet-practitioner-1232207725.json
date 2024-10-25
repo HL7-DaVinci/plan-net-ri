@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Simonis",
+      "family": "Wunsch",
       "given": [
-        "Stan"
+        "Mariano",
+        "Dane"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-906-795-1942 x9426",
+      "value": "1-330-951-1484 x7938",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-192-935-5874 x7985",
+      "value": "870.207.7856 x06912",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2023-06-05",
-        "end": "2026-06-05"
+        "start": "2022-03-21",
+        "end": "2025-03-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Chinese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

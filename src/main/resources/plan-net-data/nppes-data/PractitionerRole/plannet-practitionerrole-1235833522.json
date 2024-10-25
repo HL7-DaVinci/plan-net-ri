@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://greater-new-bedford-community-health-center-inc.com",
-      "value": "b5dadec14c7551"
+      "value": "ffdcc4e3ec5b99"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235833522",
-    "display": "Eduardo Emmerich"
+    "display": "Waylon Pagac"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232607537",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1835P1300X",
-          "display": "Psychiatric"
+          "display": "Psychiatric Pharmacist"
         }
       ],
-      "text": "Psychiatric"
+      "text": "Psychiatric Pharmacist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-103-373-6604 x263",
+      "value": "1-108-580-9767 x7128",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(670) 944-0814 x661",
+      "value": "1-122-471-6356 x56019",
       "use": "work"
     }
   ],

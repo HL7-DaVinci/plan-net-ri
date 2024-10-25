@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Turner",
+      "family": "Stark",
       "given": [
-        "Francesca"
+        "Ruby",
+        "Caron"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-416-303-7152",
+      "value": "1-908-672-9664 x1104",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "238-640-7655",
+      "value": "1-566-353-4820 x37762",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-01-02",
-        "end": "2025-01-02"
+        "start": "2024-07-16",
+        "end": "2027-07-16"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-06-30",
-        "end": "2025-06-30"
+        "start": "2024-02-12",
+        "end": "2027-02-12"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Rippin",
+      "family": "Parisian",
       "given": [
-        "Maryam"
+        "Malvina",
+        "Lore"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(392) 113-7420",
+      "value": "484.917.6698 x4135",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "644.045.5719 x7217",
+      "value": "446-541-6184 x17033",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "101YM0800X",
-            "display": "Mental Health"
+            "display": "Mental Health Counselor"
           }
         ],
-        "text": "Mental Health"
+        "text": "Mental Health Counselor"
       },
       "period": {
-        "start": "2023-07-07",
-        "end": "2026-07-07"
+        "start": "2023-09-18",
+        "end": "2026-09-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -177,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

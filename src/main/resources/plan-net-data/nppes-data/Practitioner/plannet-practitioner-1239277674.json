@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kessler",
+      "family": "Raynor",
       "given": [
-        "Edgar",
-        "Ezra"
+        "Long",
+        "Gregorio"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(933) 396-5567 x85306",
+      "value": "(486) 476-1053",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(455) 821-0436 x09205",
+      "value": "1-119-846-7875 x762",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2021-12-10",
-        "end": "2024-12-10"
+        "start": "2024-04-29",
+        "end": "2027-04-29"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -204,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2022-10-31",
-        "end": "2025-10-31"
+        "start": "2024-08-07",
+        "end": "2027-08-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -263,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Spanish"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

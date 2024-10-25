@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Mraz",
+      "family": "Heathcote",
       "given": [
-        "Lakia"
+        "Angila",
+        "Jillian"
       ],
       "suffix": [
         "LICSW"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-698-257-6696 x6664",
+      "value": "1-163-997-5222 x427",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "290-502-3201",
+      "value": "(139) 528-7290",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2023-02-15",
-        "end": "2026-02-15"
+        "start": "2024-07-13",
+        "end": "2027-07-13"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

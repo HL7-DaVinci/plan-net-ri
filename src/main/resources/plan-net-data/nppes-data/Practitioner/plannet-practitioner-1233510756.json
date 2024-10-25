@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "McDermott",
+      "family": "Conroy",
       "given": [
-        "Gaye",
-        "Ellan"
+        "Zelda",
+        "Frances"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "626.596.6924 x856",
+      "value": "(984) 252-4930 x2746",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-201-618-5404",
+      "value": "1-618-931-9608",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0122X",
-            "display": "Plastic and Reconstructive Surgery"
+            "display": "Plastic and Reconstructive Surgery Physician"
           }
         ],
-        "text": "Plastic and Reconstructive Surgery"
+        "text": "Plastic and Reconstructive Surgery Physician"
       },
       "period": {
-        "start": "2024-04-29",
-        "end": "2027-04-29"
+        "start": "2022-10-22",
+        "end": "2025-10-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

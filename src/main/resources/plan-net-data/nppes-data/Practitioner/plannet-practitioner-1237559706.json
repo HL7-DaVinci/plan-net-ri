@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McGlynn",
+      "family": "Mraz",
       "given": [
-        "Dalton"
+        "Oscar"
       ],
       "suffix": [
         "D.O."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-747-220-8531 x54280",
+      "value": "506-485-8843 x69599",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "282.164.0623 x593",
+      "value": "724.213.2208 x5401",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-05-18",
-        "end": "2025-05-18"
+        "start": "2023-10-19",
+        "end": "2026-10-19"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

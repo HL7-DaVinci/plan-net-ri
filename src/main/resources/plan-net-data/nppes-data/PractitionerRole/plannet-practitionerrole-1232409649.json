@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID090000",
-        "display": "Rhode Island Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID070000",
-        "display": "Acme of Rhode Island Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID120000",
+        "display": "State of Rhode Island Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://kent-county-memorial-hospital.com",
-      "value": "e7bc039711c959"
+      "value": "4b7a8bdf02db5b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232409649",
-    "display": "Leslie Windler"
+    "display": "Hilario Volkman"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1236643294",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "103TA0400X",
-          "display": "Addiction (Substance Use Disorder)"
+          "display": "Addiction (Substance Use Disorder) Psychologist"
         }
       ],
-      "text": "Addiction (Substance Use Disorder)"
+      "text": "Addiction (Substance Use Disorder) Psychologist"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-654-321-0802 x8145",
+      "value": "1-555-380-4685 x51445",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(230) 223-0122 x9940",
+      "value": "(440) 660-2283",
       "use": "work"
     }
   ],

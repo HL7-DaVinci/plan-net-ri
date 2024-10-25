@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lynch",
+      "family": "Moen",
       "given": [
-        "Michael",
-        "Zachariah"
+        "Russ",
+        "Floyd"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "985-037-1296 x4422",
+      "value": "(951) 163-8261 x5572",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "884-844-4662 x15160",
+      "value": "856-683-7478 x7804",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2080A0000X",
-            "display": "Adolescent Medicine"
+            "display": "Pediatric Adolescent Medicine Physician"
           }
         ],
-        "text": "Adolescent Medicine"
+        "text": "Pediatric Adolescent Medicine Physician"
       },
       "period": {
-        "start": "2023-04-22",
-        "end": "2026-04-22"
+        "start": "2022-07-05",
+        "end": "2025-07-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -178,31 +178,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
-        }
-      ],
-      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Pouros",
+      "family": "Larson",
       "given": [
-        "Maricruz"
+        "Branda",
+        "Jesse"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "805.370.9187",
+      "value": "903-784-2339 x633",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "371-254-7777 x73014",
+      "value": "1-778-385-1216 x083",
       "use": "work"
     }
   ],
@@ -138,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RN0300X",
-            "display": "Nephrology"
+            "display": "Nephrology Physician"
           }
         ],
-        "text": "Nephrology"
+        "text": "Nephrology Physician"
       },
       "period": {
-        "start": "2022-04-18",
-        "end": "2025-04-18"
+        "start": "2024-07-22",
+        "end": "2027-07-22"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -197,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

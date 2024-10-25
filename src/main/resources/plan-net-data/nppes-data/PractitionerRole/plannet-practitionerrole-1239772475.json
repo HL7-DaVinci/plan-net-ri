@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "f779bfdc80633e"
+      "value": "7b531c32b4456b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239772475",
-    "display": "Chadwick Sanford"
+    "display": "Dewitt Watsica"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "337-797-6430",
+      "value": "1-198-006-1894 x9991",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(268) 714-5213",
+      "value": "1-216-977-2501 x656",
       "use": "work"
     }
   ],

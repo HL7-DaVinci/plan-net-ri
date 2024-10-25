@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cremin",
+      "family": "Feest",
       "given": [
-        "Jorge",
-        "Ward"
+        "Jarrod"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "640.370.9982",
+      "value": "635.361.0628 x6800",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "766-382-0040 x64815",
+      "value": "297.573.6211 x7477",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-12-30",
-        "end": "2025-12-30"
+        "start": "2023-11-23",
+        "end": "2026-11-23"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"

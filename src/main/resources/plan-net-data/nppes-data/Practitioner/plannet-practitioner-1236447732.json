@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Macejkovic",
+      "family": "Hagenes",
       "given": [
-        "Jerrell",
-        "Clair"
+        "Ned"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "758.741.5137",
+      "value": "(857) 027-3790 x14906",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "372-960-6776 x27013",
+      "value": "332.422.9864 x077",
       "use": "work"
     }
   ],
@@ -146,8 +145,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-02-14",
-        "end": "2027-02-14"
+        "start": "2024-02-26",
+        "end": "2027-02-26"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -204,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0122X",
-            "display": "Plastic and Reconstructive Surgery"
+            "display": "Plastic and Reconstructive Surgery Physician"
           }
         ],
-        "text": "Plastic and Reconstructive Surgery"
+        "text": "Plastic and Reconstructive Surgery Physician"
       },
       "period": {
-        "start": "2023-01-21",
-        "end": "2026-01-21"
+        "start": "2024-06-27",
+        "end": "2027-06-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -243,6 +242,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "40",
+                "display": "Advanced professional proficiency"
+              }
+            ],
+            "text": "Advanced professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

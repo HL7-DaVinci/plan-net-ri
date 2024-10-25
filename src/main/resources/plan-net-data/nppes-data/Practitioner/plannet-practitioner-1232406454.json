@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Denesik",
+      "family": "Lebsack",
       "given": [
-        "Terrie",
-        "Felicitas"
+        "Sammy",
+        "Digna"
       ],
       "suffix": [
         "O.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(752) 411-8850",
+      "value": "941.860.9715",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(967) 404-5212 x812",
+      "value": "1-242-271-3950 x653",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2021-08-01",
-        "end": "2024-08-01"
+        "start": "2023-12-11",
+        "end": "2026-12-11"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

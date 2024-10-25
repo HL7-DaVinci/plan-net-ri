@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Leannon",
+      "family": "Olson",
       "given": [
-        "Tommie"
+        "Chuck"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(381) 689-7560 x06815",
+      "value": "508.314.9432",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-536-217-1083",
+      "value": "(506) 488-4128 x48127",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207W00000X",
-            "display": "Ophthalmology"
+            "display": "Ophthalmology Physician"
           }
         ],
-        "text": "Ophthalmology"
+        "text": "Ophthalmology Physician"
       },
       "period": {
-        "start": "2022-05-20",
-        "end": "2025-05-20"
+        "start": "2023-12-23",
+        "end": "2026-12-23"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

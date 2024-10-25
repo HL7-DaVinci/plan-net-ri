@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Walker",
+      "family": "Huels",
       "given": [
-        "Emerson"
+        "Royal",
+        "Graham"
       ],
       "suffix": [
         "PHD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(741) 239-9710 x1524",
+      "value": "1-214-167-5637 x191",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "470.098.4403 x37926",
+      "value": "346.052.3120 x18206",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Psychologist"
       },
       "period": {
-        "start": "2023-12-21",
-        "end": "2026-12-21"
+        "start": "2024-04-13",
+        "end": "2027-04-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Portuguese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

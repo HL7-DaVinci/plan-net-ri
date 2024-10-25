@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Rowe",
+      "family": "Wunsch",
       "given": [
-        "Joshua",
-        "Rayna"
+        "Deonna"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-383-713-1849 x878",
+      "value": "598.488.9309 x922",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "702-543-2712",
+      "value": "(942) 528-7150 x55341",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-06-06",
-        "end": "2025-06-06"
+        "start": "2023-03-24",
+        "end": "2026-03-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "8f9d02dfa9c09d"
+      "value": "95cd511af110db"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235530487",
-    "display": "Jo Fay"
+    "display": "Nilsa Blick"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "821-436-6357",
+      "value": "359-506-1490 x7299",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "893.891.4416",
+      "value": "1-134-971-2750 x6450",
       "use": "work"
     }
   ],

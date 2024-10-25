@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Leuschke",
+      "family": "Ferry",
       "given": [
-        "Jesus",
-        "Samatha"
+        "Madelaine"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(417) 063-9347 x160",
+      "value": "400.578.3632",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "715.635.8777",
+      "value": "1-995-220-7947 x08702",
       "use": "work"
     }
   ],
@@ -139,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-12-25",
-        "end": "2025-12-25"
+        "start": "2021-12-17",
+        "end": "2024-12-17"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

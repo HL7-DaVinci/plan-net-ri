@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Greenholt",
+      "family": "Tremblay",
       "given": [
-        "Shawanna"
+        "Zita"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "456-690-2835 x766",
+      "value": "833-488-6576",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "382-302-9488 x958",
+      "value": "(336) 739-8660",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085N0904X",
-            "display": "Nuclear Radiology"
+            "display": "Nuclear Radiology Physician"
           }
         ],
-        "text": "Nuclear Radiology"
+        "text": "Nuclear Radiology Physician"
       },
       "period": {
-        "start": "2023-11-07",
-        "end": "2026-11-07"
+        "start": "2024-01-15",
+        "end": "2027-01-15"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-10-27",
-        "end": "2026-10-27"
+        "start": "2024-03-27",
+        "end": "2027-03-27"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -263,14 +263,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085U0001X",
-            "display": "Diagnostic Ultrasound"
+            "display": "Diagnostic Ultrasound Physician"
           }
         ],
-        "text": "Diagnostic Ultrasound"
+        "text": "Diagnostic Ultrasound Physician"
       },
       "period": {
-        "start": "2022-10-11",
-        "end": "2025-10-11"
+        "start": "2024-01-05",
+        "end": "2027-01-05"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -302,6 +302,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        }
+      ],
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

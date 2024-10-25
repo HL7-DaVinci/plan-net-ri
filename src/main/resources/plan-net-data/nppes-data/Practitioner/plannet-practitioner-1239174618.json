@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Ward",
+      "family": "Ratke",
       "given": [
-        "Ronald",
-        "Philip"
+        "Carlos",
+        "Travis"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "366.833.9334 x0562",
+      "value": "950-147-1297 x9434",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "752.318.8469",
+      "value": "(928) 908-5040",
       "use": "work"
     }
   ],
@@ -140,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-12-12",
-        "end": "2026-12-12"
+        "start": "2022-06-09",
+        "end": "2025-06-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,11 +199,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Haitian"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

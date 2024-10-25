@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "35455f5697f5e9"
+      "value": "e78d0c974a990f"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238763807",
-    "display": "Magan Murphy"
+    "display": "Tammie Lemke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LP0200X",
-          "display": "Pediatrics"
+          "display": "Pediatric Nurse Practitioner"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatric Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "605-047-3955 x15038",
+      "value": "966.486.5833 x64421",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "911-651-0332 x775",
+      "value": "809.572.8010",
       "use": "work"
     }
   ],

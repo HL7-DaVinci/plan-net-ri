@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Cruickshank",
+      "family": "Parisian",
       "given": [
-        "Flo"
+        "Yuko"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "297.421.4086 x71015",
+      "value": "(695) 977-3994 x3052",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(238) 405-8380 x256",
+      "value": "(988) 648-2105 x5338",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2022-01-03",
-        "end": "2025-01-03"
+        "start": "2024-01-24",
+        "end": "2027-01-24"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -195,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Hane",
+      "family": "Lang",
       "given": [
-        "Bennett"
+        "Osvaldo"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-819-060-8144",
+      "value": "448.019.7204",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "402-266-4294 x0198",
+      "value": "(477) 159-2389 x242",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207P00000X",
-            "display": "Emergency Medicine"
+            "display": "Emergency Medicine Physician"
           }
         ],
-        "text": "Emergency Medicine"
+        "text": "Emergency Medicine Physician"
       },
       "period": {
-        "start": "2021-12-04",
-        "end": "2024-12-04"
+        "start": "2024-02-07",
+        "end": "2027-02-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

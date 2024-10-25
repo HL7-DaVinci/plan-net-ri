@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Gulgowski",
+      "family": "Dach",
       "given": [
-        "Rodrigo"
+        "Anton"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "463.393.0300",
+      "value": "(811) 167-6073 x221",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "170-637-1489",
+      "value": "858-041-6425",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Podiatrist"
       },
       "period": {
-        "start": "2024-05-07",
-        "end": "2027-05-07"
+        "start": "2023-11-14",
+        "end": "2026-11-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

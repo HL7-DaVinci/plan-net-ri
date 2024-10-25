@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kessler",
+      "family": "Bashirian",
       "given": [
-        "Lucretia"
+        "Stephanie"
       ],
       "prefix": [
         "Ms."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "841.228.8806 x3593",
+      "value": "684.403.1507 x4546",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-136-161-7339 x519",
+      "value": "(141) 167-7523",
       "use": "work"
     }
   ],
@@ -144,8 +144,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-09-23",
-        "end": "2025-09-23"
+        "start": "2024-10-20",
+        "end": "2027-10-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

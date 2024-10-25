@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lindgren",
+      "family": "Douglas",
       "given": [
-        "Elijah"
+        "Jesus"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-888-717-1638 x087",
+      "value": "(849) 323-1399 x24190",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(928) 742-9083 x35299",
+      "value": "1-733-943-5627",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2024-01-27",
-        "end": "2027-01-27"
+        "start": "2021-12-08",
+        "end": "2024-12-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

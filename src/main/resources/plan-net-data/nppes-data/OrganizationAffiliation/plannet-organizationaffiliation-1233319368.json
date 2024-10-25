@@ -20,7 +20,7 @@
         "text": "Network Provider ID"
       },
       "system": "https://plannetorganization.com",
-      "value": "25eafc91900a6b",
+      "value": "89dc08aa81984c",
       "assigner": {
         "display": "Blue Hope"
       }
@@ -37,8 +37,8 @@
   },
   "network": [
     {
-      "reference": "Organization/plannet-network-HPID090000",
-      "display": "Rhode Island Persona Preferred Provider Network"
+      "reference": "Organization/plannet-network-HPID120000",
+      "display": "State of Rhode Island Preferred Provider Network"
     }
   ],
   "healthcareService": [

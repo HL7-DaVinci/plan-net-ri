@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Morar",
+      "family": "Hintz",
       "given": [
-        "Sunny",
-        "Malvina"
+        "Melanie",
+        "Cindy"
       ],
       "prefix": [
         "Mrs."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "392.588.4007 x02516",
+      "value": "1-816-992-9279 x11264",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(519) 913-8437 x22060",
+      "value": "1-510-677-5248 x1704",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2021-09-20",
-        "end": "2024-09-20"
+        "start": "2024-07-09",
+        "end": "2027-07-09"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

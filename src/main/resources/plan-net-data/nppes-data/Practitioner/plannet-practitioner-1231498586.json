@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Ryan",
+      "family": "O'Kon",
       "given": [
-        "Susanne"
+        "Rosalia"
       ],
       "suffix": [
         "APRN, LCSW, LADC"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(191) 758-0001 x226",
+      "value": "818.660.9659 x08676",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "957-828-7010 x351",
+      "value": "972.784.2378",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "101YA0400X",
-            "display": "Addiction (Substance Use Disorder)"
+            "display": "Addiction (Substance Use Disorder) Counselor"
           }
         ],
-        "text": "Addiction (Substance Use Disorder)"
+        "text": "Addiction (Substance Use Disorder) Counselor"
       },
       "period": {
-        "start": "2022-04-19",
-        "end": "2025-04-19"
+        "start": "2022-11-01",
+        "end": "2025-11-01"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -199,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1041C0700X",
-            "display": "Clinical"
+            "display": "Clinical Social Worker"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Social Worker"
       },
       "period": {
-        "start": "2022-05-03",
-        "end": "2025-05-03"
+        "start": "2023-11-05",
+        "end": "2026-11-05"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -269,8 +269,8 @@
         "text": "Registered Nurse"
       },
       "period": {
-        "start": "2022-05-21",
-        "end": "2025-05-21"
+        "start": "2022-05-31",
+        "end": "2025-05-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -327,14 +327,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0808X",
-            "display": "Psychiatric/Mental Health"
+            "display": "Psychiatric/Mental Health Nurse Practitioner"
           }
         ],
-        "text": "Psychiatric/Mental Health"
+        "text": "Psychiatric/Mental Health Nurse Practitioner"
       },
       "period": {
-        "start": "2024-03-16",
-        "end": "2027-03-16"
+        "start": "2024-04-08",
+        "end": "2027-04-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -386,11 +386,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Chinese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

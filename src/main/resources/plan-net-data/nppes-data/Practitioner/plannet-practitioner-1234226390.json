@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Feeney",
+      "family": "King",
       "given": [
-        "Ben"
+        "Ervin",
+        "Quinton"
       ],
       "suffix": [
         "PHD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "933.220.9551 x658",
+      "value": "857.578.4218 x355",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(629) 994-3753",
+      "value": "(892) 431-7738 x7084",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "103TC0700X",
-            "display": "Clinical"
+            "display": "Clinical Psychologist"
           }
         ],
-        "text": "Clinical"
+        "text": "Clinical Psychologist"
       },
       "period": {
-        "start": "2021-07-31",
-        "end": "2024-07-31"
+        "start": "2021-11-04",
+        "end": "2024-11-04"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

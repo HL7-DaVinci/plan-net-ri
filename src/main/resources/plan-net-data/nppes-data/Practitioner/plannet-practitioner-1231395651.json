@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Feeney",
+      "family": "Zulauf",
       "given": [
-        "Irving"
+        "Dominic"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "183-239-6781 x9469",
+      "value": "(409) 134-6670 x8074",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-137-359-7904 x34494",
+      "value": "1-338-458-3352",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-11-23",
-        "end": "2026-11-23"
+        "start": "2024-06-13",
+        "end": "2027-06-13"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -198,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

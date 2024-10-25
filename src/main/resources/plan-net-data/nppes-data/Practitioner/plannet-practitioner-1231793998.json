@@ -32,21 +32,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Simonis",
+      "family": "Veum",
       "given": [
-        "Jill"
+        "Mirta",
+        "Reita"
       ]
     }
   ],
   "telecom": [
     {
       "system": "phone",
-      "value": "127-071-1196 x5153",
+      "value": "1-820-886-8884 x3924",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "269-447-3473 x904",
+      "value": "486.803.9278 x510",
       "use": "work"
     }
   ],
@@ -139,8 +140,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-01-21",
-        "end": "2026-01-21"
+        "start": "2023-05-30",
+        "end": "2026-05-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -172,31 +173,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "10",
-                "display": "Elementary proficiency"
-              }
-            ],
-            "text": "Elementary proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

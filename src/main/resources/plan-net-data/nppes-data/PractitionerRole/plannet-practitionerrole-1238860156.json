@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "ea15d9121c70d0"
+      "value": "e965cadecbb8be"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1238860156",
-    "display": "Emery Robel"
+    "display": "Roscoe Gerhold"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2084N0400X",
-          "display": "Neurology"
+          "display": "Neurology Physician"
         }
       ],
-      "text": "Neurology"
+      "text": "Neurology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "372-128-5839 x88118",
+      "value": "748-131-5512 x672",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "918-806-2024",
+      "value": "329.484.8123 x402",
       "use": "work"
     }
   ],

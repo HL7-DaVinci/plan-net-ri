@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://physical-therapy-center-inc.com",
-      "value": "0606579f67f0bc"
+      "value": "3276d0ccc955b0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237455337",
-    "display": "Reyes Wiegand"
+    "display": "Benny Murphy"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234723478",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223P0700X",
-          "display": "Prosthodontics"
+          "display": "Prosthodontist"
         }
       ],
-      "text": "Prosthodontics"
+      "text": "Prosthodontist"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(416) 598-0592",
+      "value": "244.136.2420 x86316",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "652.609.6059 x40210",
+      "value": "405.778.6985",
       "use": "work"
     }
   ],

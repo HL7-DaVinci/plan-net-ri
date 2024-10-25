@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kuvalis",
+      "family": "Bins",
       "given": [
-        "Levi"
+        "James"
       ],
       "suffix": [
         "DMD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "155.192.7704 x9717",
+      "value": "644.790.9062 x222",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "496.606.5904 x538",
+      "value": "1-644-807-2203",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2024-05-24",
-        "end": "2027-05-24"
+        "start": "2022-01-06",
+        "end": "2025-01-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,31 +174,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

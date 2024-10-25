@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Koepp",
+      "family": "Miller",
       "given": [
-        "Dwain"
+        "Deandre"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-830-366-5716",
+      "value": "766-083-9433 x0455",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "340-900-7789",
+      "value": "1-880-984-5460 x528",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RE0101X",
-            "display": "Endocrinology, Diabetes and Metabolism"
+            "display": "Endocrinology, Diabetes & Metabolism Physician"
           }
         ],
-        "text": "Endocrinology, Diabetes and Metabolism"
+        "text": "Endocrinology, Diabetes & Metabolism Physician"
       },
       "period": {
-        "start": "2024-02-07",
-        "end": "2027-02-07"
+        "start": "2023-12-12",
+        "end": "2026-12-12"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

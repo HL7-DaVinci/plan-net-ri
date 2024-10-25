@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hessel",
+      "family": "Considine",
       "given": [
-        "Von",
-        "Gordon"
+        "Renato",
+        "Leon"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "751.078.0764 x602",
+      "value": "1-768-286-8469 x566",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "136.786.2788 x152",
+      "value": "(471) 134-0645 x089",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208100000X",
-            "display": "Physical Medicine and Rehabilitation"
+            "display": "Physical Medicine & Rehabilitation Physician"
           }
         ],
-        "text": "Physical Medicine and Rehabilitation"
+        "text": "Physical Medicine & Rehabilitation Physician"
       },
       "period": {
-        "start": "2023-11-30",
-        "end": "2026-11-30"
+        "start": "2022-12-08",
+        "end": "2025-12-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

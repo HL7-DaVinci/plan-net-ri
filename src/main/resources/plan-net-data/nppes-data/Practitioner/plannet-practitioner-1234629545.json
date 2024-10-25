@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Howell",
+      "family": "Turcotte",
       "given": [
-        "Rocky"
+        "Sammie",
+        "Israel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-192-319-3947",
+      "value": "870.256.6018 x0176",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "667.034.0329 x04855",
+      "value": "1-897-010-7127 x72644",
       "use": "work"
     }
   ],
@@ -145,8 +146,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2024-06-06",
-        "end": "2027-06-06"
+        "start": "2022-04-08",
+        "end": "2025-04-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -203,14 +204,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208200000X",
-            "display": "Plastic Surgery"
+            "display": "Plastic Surgery Physician"
           }
         ],
-        "text": "Plastic Surgery"
+        "text": "Plastic Surgery Physician"
       },
       "period": {
-        "start": "2021-12-27",
-        "end": "2024-12-27"
+        "start": "2024-01-31",
+        "end": "2027-01-31"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -262,11 +263,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Chinese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

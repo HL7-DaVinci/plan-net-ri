@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Lockman",
+      "family": "Donnelly",
       "given": [
-        "Andres"
+        "Roland"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-897-412-3334",
+      "value": "561.874.0483",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "747.768.0616",
+      "value": "1-252-818-9694 x95984",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Y00000X",
-            "display": "Otolaryngology"
+            "display": "Otolaryngology Physician"
           }
         ],
-        "text": "Otolaryngology"
+        "text": "Otolaryngology Physician"
       },
       "period": {
-        "start": "2022-06-22",
-        "end": "2025-06-22"
+        "start": "2023-11-21",
+        "end": "2026-11-21"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

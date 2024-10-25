@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Dooley",
+      "family": "Schuppe",
       "given": [
-        "Noel",
-        "Oscar"
+        "Loida"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "182.750.0239 x45859",
+      "value": "622-510-4895",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-970-228-9982",
+      "value": "534-655-5976 x91618",
       "use": "work"
     }
   ],
@@ -140,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2022-08-02",
-        "end": "2025-08-02"
+        "start": "2022-09-24",
+        "end": "2025-09-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -199,11 +198,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Haitian"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

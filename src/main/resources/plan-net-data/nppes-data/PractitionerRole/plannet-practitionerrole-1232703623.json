@@ -13,13 +13,6 @@
         "reference": "Organization/plannet-network-HPID030000",
         "display": "Massachusetts Persona Preferred Provider Network"
       }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
     }
   ],
   "identifier": [
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://start-inc.com",
-      "value": "b9021bbd5aca4d"
+      "value": "e28448da962192"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232703623",
-    "display": "Delpha Hilpert"
+    "display": "Arline Corwin"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238962430",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "2085R0001X",
-          "display": "Radiation Oncology"
+          "display": "Radiation Oncology Physician"
         }
       ],
-      "text": "Radiation Oncology"
+      "text": "Radiation Oncology Physician"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "935-241-8930",
+      "value": "936-019-9793 x147",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(381) 419-0340 x4500",
+      "value": "334-670-8841 x5024",
       "use": "work"
     }
   ],

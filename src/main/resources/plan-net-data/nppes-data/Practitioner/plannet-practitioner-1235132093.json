@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Mante",
+      "family": "Bechtelar",
       "given": [
-        "Kit",
-        "Nilda"
+        "Andera"
       ],
       "suffix": [
         "CRNA"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "406-670-7756 x6962",
+      "value": "397-510-4611 x5210",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-273-323-2283",
+      "value": "1-507-343-8010 x99429",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "367500000X",
-            "display": "Nurse Anesthetist, Certified Registered"
+            "display": "Certified Registered Nurse Anesthetist"
           }
         ],
-        "text": "Nurse Anesthetist, Certified Registered"
+        "text": "Certified Registered Nurse Anesthetist"
       },
       "period": {
-        "start": "2022-01-11",
-        "end": "2025-01-11"
+        "start": "2023-08-10",
+        "end": "2026-08-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

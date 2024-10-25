@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Jaskolski",
+      "family": "Waelchi",
       "given": [
-        "Ivory",
-        "Rowena"
+        "Charity",
+        "Eusebia"
       ],
       "suffix": [
         "O.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "458-681-8960 x43030",
+      "value": "(696) 458-0438 x5893",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "828-535-8774 x8983",
+      "value": "919-880-6034",
       "use": "work"
     }
   ],
@@ -142,8 +142,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2024-01-28",
-        "end": "2027-01-28"
+        "start": "2024-03-20",
+        "end": "2027-03-20"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

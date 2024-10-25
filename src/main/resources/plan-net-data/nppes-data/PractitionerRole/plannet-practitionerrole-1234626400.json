@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "e92f6cae5dca0b"
+      "value": "2fa459e6cbe80b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234626400",
-    "display": "Darwin O'Conner"
+    "display": "Burl Tremblay"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207RI0200X",
-          "display": "Infectious Disease"
+          "display": "Infectious Disease Physician"
         }
       ],
-      "text": "Infectious Disease"
+      "text": "Infectious Disease Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(367) 640-3331 x46728",
+      "value": "278-659-1657 x502",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-143-569-6303",
+      "value": "648.656.3723",
       "use": "work"
     }
   ],

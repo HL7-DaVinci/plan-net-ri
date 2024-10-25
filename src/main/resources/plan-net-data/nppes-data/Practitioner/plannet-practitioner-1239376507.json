@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Nitzsche",
+      "family": "Durgan",
       "given": [
-        "Shon"
+        "Leland",
+        "Xavier"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(861) 215-7071 x671",
+      "value": "125.588.8161 x5934",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "712.988.4338 x35634",
+      "value": "137.591.8556 x69080",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223S0112X",
-            "display": "Oral and Maxillofacial Surgery"
+            "display": "Oral and Maxillofacial Surgery (Dentist)"
           }
         ],
-        "text": "Oral and Maxillofacial Surgery"
+        "text": "Oral and Maxillofacial Surgery (Dentist)"
       },
       "period": {
-        "start": "2024-06-19",
-        "end": "2027-06-19"
+        "start": "2022-08-02",
+        "end": "2025-08-02"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

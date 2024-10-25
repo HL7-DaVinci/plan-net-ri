@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://harbor-health-services-inc.com",
-      "value": "b4c1ba11133b4b"
+      "value": "0262555093526b"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234329134",
-    "display": "Landon Lakin"
+    "display": "Jeffry Dicki"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231692366",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-114-378-5402",
+      "value": "190-207-8817 x302",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-588-088-9180 x8153",
+      "value": "1-358-476-9263 x340",
       "use": "work"
     }
   ],

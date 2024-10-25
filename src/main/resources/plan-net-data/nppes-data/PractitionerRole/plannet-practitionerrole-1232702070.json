@@ -10,15 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID110000",
-        "display": "State of Connecticut HMO"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID040000",
-        "display": "Acme of Connecticut Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID060000",
+        "display": "Connecticut Persona Preferred Provider Network"
       }
     }
   ],
@@ -36,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://vassar-health-connecticut-inc.com",
-      "value": "6ac0e869da03ae"
+      "value": "da0782aecd31df"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232702070",
-    "display": "Renea Lemke"
+    "display": "Charlyn Block"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1235131442",
@@ -65,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LP0808X",
-          "display": "Psychiatric/Mental Health"
+          "display": "Psychiatric/Mental Health Nurse Practitioner"
         }
       ],
-      "text": "Psychiatric/Mental Health"
+      "text": "Psychiatric/Mental Health Nurse Practitioner"
     }
   ],
   "location": [
@@ -86,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "979.518.5484",
+      "value": "701-949-0130 x9923",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "239.482.9012 x2521",
+      "value": "273.685.2457 x393",
       "use": "work"
     }
   ],

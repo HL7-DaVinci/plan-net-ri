@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kertzmann",
+      "family": "Cassin",
       "given": [
-        "Maryanne"
+        "Echo",
+        "Temika"
       ],
       "suffix": [
         "NP"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "185-518-3760 x312",
+      "value": "(431) 069-6953 x69728",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "505.017.5314 x8200",
+      "value": "1-783-643-8825 x976",
       "use": "work"
     }
   ],
@@ -142,8 +143,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2024-05-15",
-        "end": "2027-05-15"
+        "start": "2022-08-28",
+        "end": "2025-08-28"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -175,6 +176,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "20",
+                "display": "Limited working proficiency"
+              }
+            ],
+            "text": "Limited working proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "ht",
+          "display": "Haitian"
+        }
+      ],
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

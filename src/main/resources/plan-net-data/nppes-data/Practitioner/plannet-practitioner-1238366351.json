@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Kilback",
+      "family": "Grimes",
       "given": [
-        "Leeanna",
-        "Yuriko"
+        "Lashonda",
+        "Robbyn"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(412) 070-9512 x640",
+      "value": "308.289.5707",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "804.614.7572 x6474",
+      "value": "643-593-9349 x2419",
       "use": "work"
     }
   ],
@@ -137,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207R00000X",
-            "display": "Internal Medicine"
+            "display": "Internal Medicine Physician"
           }
         ],
-        "text": "Internal Medicine"
+        "text": "Internal Medicine Physician"
       },
       "period": {
-        "start": "2023-06-02",
-        "end": "2026-06-02"
+        "start": "2024-08-21",
+        "end": "2027-08-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

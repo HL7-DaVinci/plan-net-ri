@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "dd420498c5cc40"
+      "value": "3290967a1c2fee"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232107851",
-    "display": "Bradley Bogisich"
+    "display": "Arron Parker"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208800000X",
-          "display": "Urology"
+          "display": "Urology Physician"
         }
       ],
-      "text": "Urology"
+      "text": "Urology Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "750-228-0623 x48942",
+      "value": "522.934.3133 x61670",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "796.771.0329 x169",
+      "value": "527.352.7212 x240",
       "use": "work"
     }
   ],

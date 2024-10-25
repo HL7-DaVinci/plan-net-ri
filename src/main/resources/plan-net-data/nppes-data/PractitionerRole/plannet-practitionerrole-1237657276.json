@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "9680c34b0c462d"
+      "value": "341bfa21100278"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237657276",
-    "display": "Indira Crona"
+    "display": "Raymonde Bradtke"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "363LF0000X",
-          "display": "Family"
+          "display": "Family Nurse Practitioner"
         }
       ],
-      "text": "Family"
+      "text": "Family Nurse Practitioner"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-377-626-3047 x62888",
+      "value": "(133) 502-0807 x39120",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(782) 360-9360 x8620",
+      "value": "1-206-137-5474",
       "use": "work"
     }
   ],

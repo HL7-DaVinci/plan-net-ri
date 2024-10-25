@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lakin",
+      "family": "Dicki",
       "given": [
-        "Landon"
+        "Jeffry",
+        "Burton"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-114-378-5402",
+      "value": "190-207-8817 x302",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-588-088-9180 x8153",
+      "value": "1-358-476-9263 x340",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-09-10",
-        "end": "2026-09-10"
+        "start": "2021-12-10",
+        "end": "2024-12-10"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

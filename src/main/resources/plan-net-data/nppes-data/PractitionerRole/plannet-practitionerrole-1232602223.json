@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID020000",
+        "display": "Green Circle of Massachusetts HMO"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://family-medicine-associates-p-c.com",
-      "value": "41bac1e18b380e"
+      "value": "83a487f6f9bc64"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1232602223",
-    "display": "Sarina Kutch"
+    "display": "Caryn Green"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238864828",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(465) 096-5512 x898",
+      "value": "(323) 488-8234 x30359",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "827-119-8941",
+      "value": "(413) 525-8633",
       "use": "work"
     }
   ],

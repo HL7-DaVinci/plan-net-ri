@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kulas",
+      "family": "O'Hara",
       "given": [
-        "Lacie",
-        "Pura"
+        "Jessica"
       ],
       "suffix": [
         "AUD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-527-266-1730 x3035",
+      "value": "824-535-6702 x4685",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(794) 888-8101 x988",
+      "value": "1-974-396-4020",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Audiologist"
       },
       "period": {
-        "start": "2022-03-18",
-        "end": "2025-03-18"
+        "start": "2024-07-14",
+        "end": "2027-07-14"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

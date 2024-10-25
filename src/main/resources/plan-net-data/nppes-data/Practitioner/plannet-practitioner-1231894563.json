@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hoeger",
+      "family": "Strosin",
       "given": [
-        "Penni",
-        "Curtis"
+        "Lakeesha",
+        "Coretta"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-332-199-3925 x36373",
+      "value": "(360) 471-2271 x06762",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "233.005.2630 x656",
+      "value": "(901) 683-7624 x920",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2024-06-29",
-        "end": "2027-06-29"
+        "start": "2022-07-15",
+        "end": "2025-07-15"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -176,31 +176,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
-        }
-      ],
-      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

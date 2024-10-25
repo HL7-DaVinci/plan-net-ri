@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Quitzon",
+      "family": "Padberg",
       "given": [
-        "Ervin",
-        "Tuan"
+        "Chang"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "252-466-2842 x3701",
+      "value": "(973) 971-5317 x0955",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "953.946.0298 x1782",
+      "value": "(983) 371-0640 x3499",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2023-11-26",
-        "end": "2026-11-26"
+        "start": "2021-11-21",
+        "end": "2024-11-21"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

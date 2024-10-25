@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Crist",
+      "family": "Cartwright",
       "given": [
-        "Vincenza"
+        "Tenesha"
       ],
       "suffix": [
         "NP"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "632-776-8676",
+      "value": "670.198.0447 x00916",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "632.675.7565 x71225",
+      "value": "652.867.4810 x9226",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2024-04-07",
-        "end": "2027-04-07"
+        "start": "2022-01-04",
+        "end": "2025-01-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -205,8 +205,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2021-12-21",
-        "end": "2024-12-21"
+        "start": "2022-11-01",
+        "end": "2025-11-01"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -238,31 +238,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
-        }
-      ],
-      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

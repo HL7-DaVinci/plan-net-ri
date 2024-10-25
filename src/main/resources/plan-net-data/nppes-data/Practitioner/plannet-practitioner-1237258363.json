@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Treutel",
+      "family": "Osinski",
       "given": [
-        "Ebony"
+        "Melynda"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-193-274-4422 x49488",
+      "value": "(641) 963-4444 x17420",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(425) 185-0636 x5470",
+      "value": "633.105.1313 x13775",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208600000X",
-            "display": "Surgery"
+            "display": "Surgery Physician"
           }
         ],
-        "text": "Surgery"
+        "text": "Surgery Physician"
       },
       "period": {
-        "start": "2024-06-28",
-        "end": "2027-06-28"
+        "start": "2023-10-06",
+        "end": "2026-10-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2086S0129X",
-            "display": "Vascular Surgery"
+            "display": "Vascular Surgery Physician"
           }
         ],
-        "text": "Vascular Surgery"
+        "text": "Vascular Surgery Physician"
       },
       "period": {
-        "start": "2021-11-02",
-        "end": "2024-11-02"
+        "start": "2022-09-24",
+        "end": "2025-09-24"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Spanish"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

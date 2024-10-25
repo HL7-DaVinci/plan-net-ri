@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Hackett",
+      "family": "Bosco",
       "given": [
-        "Nicky",
-        "Marcos"
+        "Shelby",
+        "Gino"
       ],
       "prefix": [
         "Mr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-331-747-4946 x92823",
+      "value": "(956) 155-1015 x25107",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-130-828-2777",
+      "value": "(122) 203-4507",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-06-16",
-        "end": "2025-06-16"
+        "start": "2023-06-07",
+        "end": "2026-06-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -209,8 +209,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-04-22",
-        "end": "2025-04-22"
+        "start": "2024-08-14",
+        "end": "2027-08-14"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

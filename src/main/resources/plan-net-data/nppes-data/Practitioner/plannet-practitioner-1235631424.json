@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Douglas",
+      "family": "Gleichner",
       "given": [
-        "Valorie",
-        "Zena"
+        "Lyla"
       ],
       "suffix": [
         "RNP"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-375-099-5694 x0147",
+      "value": "742.956.7515 x886",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(356) 985-2068 x844",
+      "value": "1-803-776-4550",
       "use": "work"
     }
   ],
@@ -143,8 +142,8 @@
         "text": "Nurse Practitioner"
       },
       "period": {
-        "start": "2023-03-04",
-        "end": "2026-03-04"
+        "start": "2022-01-07",
+        "end": "2025-01-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

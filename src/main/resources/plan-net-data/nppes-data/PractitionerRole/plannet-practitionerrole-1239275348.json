@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "55fc5c771e58b9"
+      "value": "2c05bf4e048b24"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239275348",
-    "display": "Florance Nikolaus"
+    "display": "Glendora Ryan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207VM0101X",
-          "display": "Maternal and Fetal Medicine"
+          "display": "Maternal & Fetal Medicine Physician"
         }
       ],
-      "text": "Maternal and Fetal Medicine"
+      "text": "Maternal & Fetal Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "524.214.3932",
+      "value": "(383) 372-4744 x3572",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "159-137-5651 x94058",
+      "value": "(887) 915-6749",
       "use": "work"
     }
   ],

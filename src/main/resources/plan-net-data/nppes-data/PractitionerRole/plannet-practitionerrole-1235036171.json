@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID060000",
-        "display": "Connecticut Persona Preferred Provider Network"
+        "reference": "Organization/plannet-network-HPID130000",
+        "display": "United Technologies Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://hospital-of-saint-raphael.com",
-      "value": "adcdbc8ca4159a"
+      "value": "b8ceabbd459958"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1235036171",
-    "display": "Trudi Larkin"
+    "display": "Cassy Ryan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1238269624",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-825-535-6450 x2519",
+      "value": "838-124-0681 x20074",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "505-870-4559 x1649",
+      "value": "1-216-489-2549 x081",
       "use": "work"
     }
   ],

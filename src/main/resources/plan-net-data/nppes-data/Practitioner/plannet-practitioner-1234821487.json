@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Bergnaum",
+      "family": "Marvin",
       "given": [
-        "Thomas"
+        "Ned",
+        "Emmett"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +49,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-597-580-4796 x3823",
+      "value": "1-123-553-3264 x491",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "984-563-2125 x293",
+      "value": "(409) 855-2366 x38415",
       "use": "work"
     }
   ],
@@ -139,14 +140,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "1223G0001X",
-            "display": "General Practice"
+            "display": "General Practice Dentistry"
           }
         ],
-        "text": "General Practice"
+        "text": "General Practice Dentistry"
       },
       "period": {
-        "start": "2023-12-30",
-        "end": "2026-12-30"
+        "start": "2024-02-23",
+        "end": "2027-02-23"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,31 +179,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "30",
-                "display": "General professional proficiency"
-              }
-            ],
-            "text": "General professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

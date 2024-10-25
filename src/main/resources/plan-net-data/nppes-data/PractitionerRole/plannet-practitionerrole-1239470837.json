@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID010000",
+        "display": "Acme of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lowell-community-health-center-inc.com",
-      "value": "f1e6f2e6fb2258"
+      "value": "eef8ae22047bd2"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239470837",
-    "display": "Isaura Padberg"
+    "display": "Jenny Wisozk"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232307530",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(894) 811-9987 x879",
+      "value": "985.983.2466 x16224",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "750.885.7445 x165",
+      "value": "645.227.8588 x178",
       "use": "work"
     }
   ],

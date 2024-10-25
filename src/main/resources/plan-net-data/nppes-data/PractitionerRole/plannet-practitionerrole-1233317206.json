@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://lifebridge-community-services-inc.com",
-      "value": "2a78fd36038c78"
+      "value": "9e2d00356934dc"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1233317206",
-    "display": "Avis Zemlak"
+    "display": "Keith Waters"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1232006923",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "378-322-4713 x25838",
+      "value": "836-136-5607 x86506",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "784.556.9424 x501",
+      "value": "(291) 959-4275 x9825",
       "use": "work"
     }
   ],

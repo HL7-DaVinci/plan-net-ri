@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Padberg",
+      "family": "Wisozk",
       "given": [
-        "Isaura"
+        "Jenny"
       ],
       "suffix": [
         "PA-C"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(894) 811-9987 x879",
+      "value": "985.983.2466 x16224",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "750.885.7445 x165",
+      "value": "645.227.8588 x178",
       "use": "work"
     }
   ],
@@ -141,8 +141,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2023-11-26",
-        "end": "2026-11-26"
+        "start": "2022-11-16",
+        "end": "2025-11-16"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

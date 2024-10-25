@@ -52,7 +52,7 @@
         {
           "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS",
           "code": "pharm",
-          "display": "Pharm"
+          "display": "Pharmacy"
         }
       ],
       "text": "pharm"
@@ -111,12 +111,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-550-981-4968 x176",
+      "value": "972-832-7230 x511",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-319-398-7812",
+      "value": "1-363-800-9169 x208",
       "use": "work"
     }
   ],

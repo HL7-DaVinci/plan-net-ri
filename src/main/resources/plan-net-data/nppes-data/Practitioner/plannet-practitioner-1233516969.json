@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Carroll",
+      "family": "Stehr",
       "given": [
-        "Hung",
-        "Deshawn"
+        "Lucas",
+        "Gerard"
       ],
       "suffix": [
         "MD"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-890-831-9257 x3128",
+      "value": "153.051.5179 x452",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "702-765-0379",
+      "value": "(320) 181-0563 x686",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207L00000X",
-            "display": "Anesthesiology"
+            "display": "Anesthesiology Physician"
           }
         ],
-        "text": "Anesthesiology"
+        "text": "Anesthesiology Physician"
       },
       "period": {
-        "start": "2024-02-27",
-        "end": "2027-02-27"
+        "start": "2022-02-27",
+        "end": "2025-02-27"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207LP2900X",
-            "display": "Pain Medicine"
+            "display": "Pain Medicine (Anesthesiology) Physician"
           }
         ],
-        "text": "Pain Medicine"
+        "text": "Pain Medicine (Anesthesiology) Physician"
       },
       "period": {
-        "start": "2023-02-07",
-        "end": "2026-02-07"
+        "start": "2023-03-30",
+        "end": "2026-03-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "zh",
-          "display": "Chinese"
+          "code": "ht",
+          "display": "Haitian"
         }
       ],
-      "text": "Chinese"
+      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

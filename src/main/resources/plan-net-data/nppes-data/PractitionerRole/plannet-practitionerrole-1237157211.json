@@ -10,20 +10,6 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID030000",
-        "display": "Massachusetts Persona Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
-        "reference": "Organization/plannet-network-HPID100000",
-        "display": "State of Massachusetts Preferred Provider Network"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
-      "valueReference": {
         "reference": "Organization/plannet-network-HPID010000",
         "display": "Acme of Massachusetts Preferred Provider Network"
       }
@@ -43,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://bay-state-community-services-inc.com",
-      "value": "c8ed38261c3a90"
+      "value": "a61162c7c5c4a0"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237157211",
-    "display": "Ivory Gerhold"
+    "display": "Sylvia Kilback"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1234126865",
@@ -93,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "839-428-4409 x5213",
+      "value": "1-770-646-2069",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "903-231-6744 x5944",
+      "value": "333.208.7957",
       "use": "work"
     }
   ],

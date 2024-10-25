@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Lehner",
+      "family": "Schroeder",
       "given": [
-        "Alex"
+        "Nicholas",
+        "Ignacio"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-802-359-6949",
+      "value": "665.100.5633 x14528",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "446-730-3440 x0518",
+      "value": "620-873-3882 x552",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2023-08-05",
-        "end": "2026-08-05"
+        "start": "2023-08-27",
+        "end": "2026-08-27"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -174,31 +175,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "50",
-                "display": "Functional native proficiency"
-              }
-            ],
-            "text": "Functional native proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
-        }
-      ],
-      "text": "Haitian"
     }
   ],
   "resourceType": "Practitioner"

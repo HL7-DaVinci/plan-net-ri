@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Christiansen",
+      "family": "Bahringer",
       "given": [
-        "Idalia",
-        "Ila"
+        "Lawrence"
       ],
       "suffix": [
         "PT"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "963-952-3420 x43556",
+      "value": "635-450-1271 x349",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "691-260-1600 x8505",
+      "value": "1-263-381-2362 x63311",
       "use": "work"
     }
   ],
@@ -142,8 +141,8 @@
         "text": "Physical Therapist"
       },
       "period": {
-        "start": "2022-06-05",
-        "end": "2025-06-05"
+        "start": "2024-09-08",
+        "end": "2027-09-08"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"

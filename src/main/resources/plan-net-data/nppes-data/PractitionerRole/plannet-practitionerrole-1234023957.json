@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "36007497c1ca8b"
+      "value": "153585d5fc4d64"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1234023957",
-    "display": "Gudrun Fay"
+    "display": "Sharika Bogan"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "133V00000X",
-          "display": "Dietitian, Registered"
+          "display": "Registered Dietitian"
         }
       ],
-      "text": "Dietitian, Registered"
+      "text": "Registered Dietitian"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "896.948.6594 x06948",
+      "value": "1-405-843-4580",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(254) 266-1070 x35553",
+      "value": "274-344-3615",
       "use": "work"
     }
   ],

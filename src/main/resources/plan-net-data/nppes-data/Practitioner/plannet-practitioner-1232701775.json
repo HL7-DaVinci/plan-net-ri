@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "O'Hara",
+      "family": "Klocko",
       "given": [
-        "Dewayne"
+        "Michel"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(960) 219-5331 x28059",
+      "value": "(851) 794-5606 x99165",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(994) 744-0161 x454",
+      "value": "661-554-8325",
       "use": "work"
     }
   ],
@@ -138,14 +138,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207Q00000X",
-            "display": "Family Medicine"
+            "display": "Family Medicine Physician"
           }
         ],
-        "text": "Family Medicine"
+        "text": "Family Medicine Physician"
       },
       "period": {
-        "start": "2021-09-02",
-        "end": "2024-09-02"
+        "start": "2023-07-31",
+        "end": "2026-07-31"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -197,11 +197,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Portuguese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

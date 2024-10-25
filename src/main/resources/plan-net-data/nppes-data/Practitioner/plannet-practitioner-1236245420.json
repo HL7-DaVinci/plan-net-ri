@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Gislason",
+      "family": "Oberbrunner",
       "given": [
-        "Emelda"
+        "Crissy",
+        "Alexandria"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-352-528-8608 x576",
+      "value": "333.570.4578 x6257",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "590-695-8377 x63000",
+      "value": "517.861.2588 x197",
       "use": "work"
     }
   ],
@@ -144,8 +145,8 @@
         "text": "Clinical Neuropsychologist"
       },
       "period": {
-        "start": "2021-09-08",
-        "end": "2024-09-08"
+        "start": "2022-07-08",
+        "end": "2025-07-08"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -208,8 +209,8 @@
         "text": "Specialist"
       },
       "period": {
-        "start": "2021-12-06",
-        "end": "2024-12-06"
+        "start": "2023-04-29",
+        "end": "2026-04-29"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -266,14 +267,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2084N0400X",
-            "display": "Neurology"
+            "display": "Neurology Physician"
           }
         ],
-        "text": "Neurology"
+        "text": "Neurology Physician"
       },
       "period": {
-        "start": "2023-03-13",
-        "end": "2026-03-13"
+        "start": "2023-12-20",
+        "end": "2026-12-20"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -305,31 +306,6 @@
         }
       ],
       "text": "English"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
-                "code": "40",
-                "display": "Advanced professional proficiency"
-              }
-            ],
-            "text": "Advanced professional proficiency"
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
-        }
-      ],
-      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

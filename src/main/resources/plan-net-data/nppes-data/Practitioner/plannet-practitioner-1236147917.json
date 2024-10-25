@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Bartell",
+      "family": "Cronin",
       "given": [
-        "Manuel",
-        "Antone"
+        "Chris"
       ],
       "suffix": [
         "D.O."
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "828-597-8280",
+      "value": "1-374-682-7103 x898",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "574.248.1081 x39436",
+      "value": "1-668-218-1633 x2244",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208000000X",
-            "display": "Pediatrics"
+            "display": "Pediatrics Physician"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatrics Physician"
       },
       "period": {
-        "start": "2023-01-05",
-        "end": "2026-01-05"
+        "start": "2022-12-18",
+        "end": "2025-12-18"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

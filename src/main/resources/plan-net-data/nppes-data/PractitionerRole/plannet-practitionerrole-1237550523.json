@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "90f4ab6efbc5a2"
+      "value": "a516e394231a15"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1237550523",
-    "display": "James Schultz"
+    "display": "Keenan Wiza"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "207Q00000X",
-          "display": "Family Medicine"
+          "display": "Family Medicine Physician"
         }
       ],
-      "text": "Family Medicine"
+      "text": "Family Medicine Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-327-203-6702",
+      "value": "1-774-560-2859 x2978",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "654-997-3123",
+      "value": "1-703-388-2053 x41455",
       "use": "work"
     }
   ],

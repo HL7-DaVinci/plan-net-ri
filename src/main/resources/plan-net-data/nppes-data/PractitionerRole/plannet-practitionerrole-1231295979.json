@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://easter-seals-capital-region--eastern-connecticut-inc.com",
-      "value": "e5a19508dbe036"
+      "value": "fad79d035d245a"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1231295979",
-    "display": "Jacques Hegmann"
+    "display": "Edgardo Ullrich"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1239177926",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "1223G0001X",
-          "display": "General Practice"
+          "display": "General Practice Dentistry"
         }
       ],
-      "text": "General Practice"
+      "text": "General Practice Dentistry"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "783-147-1805 x2816",
+      "value": "1-394-210-2965 x482",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "626.889.3947 x98791",
+      "value": "318-321-4914 x429",
       "use": "work"
     }
   ],

@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Orn",
+      "family": "Willms",
       "given": [
-        "Horacio"
+        "Josh",
+        "Judson"
       ],
       "suffix": [
         "MD"
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-371-189-7098",
+      "value": "545.321.4756 x46844",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "607-972-3414 x401",
+      "value": "(227) 815-4637 x18586",
       "use": "work"
     }
   ],
@@ -136,14 +137,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-10-05",
-        "end": "2025-10-05"
+        "start": "2022-04-28",
+        "end": "2025-04-28"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +201,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RI0011X",
-            "display": "Interventional Cardiology"
+            "display": "Interventional Cardiology Physician"
           }
         ],
-        "text": "Interventional Cardiology"
+        "text": "Interventional Cardiology Physician"
       },
       "period": {
-        "start": "2023-05-18",
-        "end": "2026-05-18"
+        "start": "2022-02-10",
+        "end": "2025-02-10"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"

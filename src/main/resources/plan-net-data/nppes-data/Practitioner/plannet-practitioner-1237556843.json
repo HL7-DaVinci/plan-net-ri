@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Wintheiser",
+      "family": "Waelchi",
       "given": [
-        "Sanford",
-        "Leopoldo"
+        "Warren",
+        "Pierre"
       ],
       "prefix": [
         "Dr."
@@ -48,12 +48,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "587.845.8960 x030",
+      "value": "(595) 079-4298 x5147",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "911.045.2388",
+      "value": "1-908-943-2764",
       "use": "work"
     }
   ],
@@ -145,8 +145,8 @@
         "text": "Optometrist"
       },
       "period": {
-        "start": "2022-03-25",
-        "end": "2025-03-25"
+        "start": "2024-03-02",
+        "end": "2027-03-02"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -178,6 +178,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "30",
+                "display": "General professional proficiency"
+              }
+            ],
+            "text": "General professional proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

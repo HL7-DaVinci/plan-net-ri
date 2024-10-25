@@ -10,8 +10,8 @@
     {
       "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference",
       "valueReference": {
-        "reference": "Organization/plannet-network-HPID020000",
-        "display": "Green Circle of Massachusetts HMO"
+        "reference": "Organization/plannet-network-HPID100000",
+        "display": "State of Massachusetts Preferred Provider Network"
       }
     }
   ],
@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://planned-parenthood-league-of-massachusetts-inc.com",
-      "value": "b7eb8d000c702f"
+      "value": "65d3a2dd35d588"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1239072178",
-    "display": "Jess Blick"
+    "display": "Marcellus Doyle"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1231095779",
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "288-091-6138 x035",
+      "value": "1-790-366-0494 x498",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "(697) 982-0471",
+      "value": "(546) 839-8289 x81556",
       "use": "work"
     }
   ],

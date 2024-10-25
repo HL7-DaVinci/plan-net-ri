@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Goyette",
+      "family": "Bergnaum",
       "given": [
-        "Rosanne"
+        "Dion"
       ],
       "suffix": [
         "MD"
@@ -44,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-536-583-5837 x3476",
+      "value": "231-359-6399 x986",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "237-464-6854",
+      "value": "(176) 415-7583 x46527",
       "use": "work"
     }
   ],
@@ -135,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207N00000X",
-            "display": "Dermatology"
+            "display": "Dermatology Physician"
           }
         ],
-        "text": "Dermatology"
+        "text": "Dermatology Physician"
       },
       "period": {
-        "start": "2022-04-08",
-        "end": "2025-04-08"
+        "start": "2024-03-30",
+        "end": "2027-03-30"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -194,11 +194,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "vi",
-          "display": "Vietnamese"
+          "code": "es",
+          "display": "Spanish"
         }
       ],
-      "text": "Vietnamese"
+      "text": "Spanish"
     }
   ],
   "resourceType": "Practitioner"

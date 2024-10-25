@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "McClure",
+      "family": "Beier",
       "given": [
-        "Taylor",
-        "Lonny"
+        "Sidney"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "254.373.7539 x25328",
+      "value": "377.403.0897",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-893-118-5889",
+      "value": "1-167-118-4596 x64330",
       "use": "work"
     }
   ],
@@ -137,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "208800000X",
-            "display": "Urology"
+            "display": "Urology Physician"
           }
         ],
-        "text": "Urology"
+        "text": "Urology Physician"
       },
       "period": {
-        "start": "2022-10-13",
-        "end": "2025-10-13"
+        "start": "2022-03-06",
+        "end": "2025-03-06"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +195,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "pt",
-          "display": "Portuguese"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Portuguese"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,9 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "Kihn",
+      "family": "Borer",
       "given": [
-        "Roderick"
+        "Alfred"
       ],
       "prefix": [
         "Dr."
@@ -47,12 +47,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "382.496.9232 x50413",
+      "value": "1-117-027-7872 x6922",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "326-481-0453",
+      "value": "996-551-6495 x5901",
       "use": "work"
     }
   ],
@@ -139,14 +139,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-06-12",
-        "end": "2026-06-12"
+        "start": "2022-03-07",
+        "end": "2025-03-07"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -203,14 +203,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2023-01-27",
-        "end": "2026-01-27"
+        "start": "2023-03-25",
+        "end": "2026-03-25"
       },
       "issuer": {
         "display": "State of Rhode Island Department of Health"
@@ -262,11 +262,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "zh",
+          "display": "Chinese"
         }
       ],
-      "text": "Spanish"
+      "text": "Chinese"
     }
   ],
   "resourceType": "Practitioner"

@@ -29,13 +29,13 @@
         "text": "Hospital ID"
       },
       "system": "https://soundview-orthopaedic-assoc-llp.com",
-      "value": "90ae94d2dd99b5"
+      "value": "ec8919655a603d"
     }
   ],
   "active": true,
   "practitioner": {
     "reference": "Practitioner/plannet-practitioner-1230681767",
-    "display": "Juan Ortiz"
+    "display": "Haywood Satterfield"
   },
   "organization": {
     "reference": "Organization/plannet-organization-1230188327",
@@ -58,10 +58,10 @@
         {
           "system": "http://nucc.org/provider-taxonomy",
           "code": "208000000X",
-          "display": "Pediatrics"
+          "display": "Pediatrics Physician"
         }
       ],
-      "text": "Pediatrics"
+      "text": "Pediatrics Physician"
     }
   ],
   "location": [
@@ -79,12 +79,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(810) 602-1718 x1786",
+      "value": "627-884-1169 x40110",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "315.348.7581 x12178",
+      "value": "656.458.2919 x7512",
       "use": "work"
     }
   ],

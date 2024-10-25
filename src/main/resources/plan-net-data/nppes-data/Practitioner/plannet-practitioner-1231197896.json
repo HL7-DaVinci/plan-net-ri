@@ -32,10 +32,9 @@
   "name": [
     {
       "use": "official",
-      "family": "MacGyver",
+      "family": "Waelchi",
       "given": [
-        "Rory",
-        "Ramona"
+        "Suzann"
       ],
       "suffix": [
         "MD"
@@ -45,12 +44,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(137) 746-7394 x291",
+      "value": "(248) 532-5625 x2186",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "1-900-063-4101",
+      "value": "(431) 256-9328",
       "use": "work"
     }
   ],
@@ -136,14 +135,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207V00000X",
-            "display": "Obstetrics and Gynecology"
+            "display": "Obstetrics & Gynecology Physician"
           }
         ],
-        "text": "Obstetrics and Gynecology"
+        "text": "Obstetrics & Gynecology Physician"
       },
       "period": {
-        "start": "2023-09-16",
-        "end": "2026-09-16"
+        "start": "2023-08-25",
+        "end": "2026-08-25"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -200,14 +199,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207VG0400X",
-            "display": "Gynecology"
+            "display": "Gynecology Physician"
           }
         ],
-        "text": "Gynecology"
+        "text": "Gynecology Physician"
       },
       "period": {
-        "start": "2022-06-14",
-        "end": "2025-06-14"
+        "start": "2022-04-07",
+        "end": "2025-04-07"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +258,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "es",
-          "display": "Spanish"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Spanish"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

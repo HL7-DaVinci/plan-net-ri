@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Zemlak",
+      "family": "Osinski",
       "given": [
-        "Gene",
-        "Melony"
+        "Paulina",
+        "Hester"
       ],
       "suffix": [
         "PA"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "1-171-677-3311 x65585",
+      "value": "(679) 029-2370",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "893.997.7369 x5664",
+      "value": "1-425-363-5200 x594",
       "use": "work"
     }
   ],
@@ -143,8 +143,8 @@
         "text": "Physician Assistant"
       },
       "period": {
-        "start": "2023-12-19",
-        "end": "2026-12-19"
+        "start": "2024-05-04",
+        "end": "2027-05-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -196,11 +196,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "vi",
+          "display": "Vietnamese"
         }
       ],
-      "text": "Haitian"
+      "text": "Vietnamese"
     }
   ],
   "resourceType": "Practitioner"

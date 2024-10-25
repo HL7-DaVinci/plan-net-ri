@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Davis",
+      "family": "Turner",
       "given": [
-        "Bernadette",
-        "Rebbeca"
+        "Bethann",
+        "Hortencia"
       ],
       "suffix": [
         "APRN"
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "492.773.4659 x8538",
+      "value": "232-121-4526 x35526",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "352-521-1447 x854",
+      "value": "(840) 122-4297 x782",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "363LP0200X",
-            "display": "Pediatrics"
+            "display": "Pediatric Nurse Practitioner"
           }
         ],
-        "text": "Pediatrics"
+        "text": "Pediatric Nurse Practitioner"
       },
       "period": {
-        "start": "2023-11-28",
-        "end": "2026-11-28"
+        "start": "2024-04-30",
+        "end": "2027-04-30"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
@@ -175,6 +175,31 @@
         }
       ],
       "text": "English"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS",
+                "code": "10",
+                "display": "Elementary proficiency"
+              }
+            ],
+            "text": "Elementary proficiency"
+          }
+        }
+      ],
+      "coding": [
+        {
+          "system": "urn:ietf:bcp:47",
+          "code": "pt",
+          "display": "Portuguese"
+        }
+      ],
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

@@ -32,10 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Huels",
+      "family": "Price",
       "given": [
-        "Myron",
-        "Robby"
+        "Thaddeus",
+        "Avery"
       ],
       "suffix": [
         "M.D."
@@ -45,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(869) 134-3468 x543",
+      "value": "780-240-5724 x912",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "747-198-7820",
+      "value": "(369) 494-4223 x90577",
       "use": "work"
     }
   ],
@@ -136,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085N0700X",
-            "display": "Neuroradiology"
+            "display": "Neuroradiology Physician"
           }
         ],
-        "text": "Neuroradiology"
+        "text": "Neuroradiology Physician"
       },
       "period": {
-        "start": "2023-07-08",
-        "end": "2026-07-08"
+        "start": "2024-07-18",
+        "end": "2027-07-18"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -200,14 +200,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "2085R0202X",
-            "display": "Diagnostic Radiology"
+            "display": "Diagnostic Radiology Physician"
           }
         ],
-        "text": "Diagnostic Radiology"
+        "text": "Diagnostic Radiology Physician"
       },
       "period": {
-        "start": "2024-06-06",
-        "end": "2027-06-06"
+        "start": "2022-11-04",
+        "end": "2025-11-04"
       },
       "issuer": {
         "display": "Board of Registration in Medicine (BORIM)"
@@ -259,11 +259,11 @@
       "coding": [
         {
           "system": "urn:ietf:bcp:47",
-          "code": "ht",
-          "display": "Haitian"
+          "code": "pt",
+          "display": "Portuguese"
         }
       ],
-      "text": "Haitian"
+      "text": "Portuguese"
     }
   ],
   "resourceType": "Practitioner"

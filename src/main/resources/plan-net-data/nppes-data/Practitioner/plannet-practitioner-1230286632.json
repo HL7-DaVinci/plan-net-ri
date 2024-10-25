@@ -32,9 +32,10 @@
   "name": [
     {
       "use": "official",
-      "family": "Schuppe",
+      "family": "Herman",
       "given": [
-        "Tyron"
+        "Hayden",
+        "Brock"
       ],
       "suffix": [
         "M.D."
@@ -44,12 +45,12 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "(870) 955-5369 x242",
+      "value": "367.158.7522 x32063",
       "use": "work"
     },
     {
       "system": "fax",
-      "value": "508-177-5309 x02534",
+      "value": "317-306-8497",
       "use": "work"
     }
   ],
@@ -135,14 +136,14 @@
           {
             "system": "http://nucc.org/provider-taxonomy",
             "code": "207RC0000X",
-            "display": "Cardiovascular Disease"
+            "display": "Cardiovascular Disease Physician"
           }
         ],
-        "text": "Cardiovascular Disease"
+        "text": "Cardiovascular Disease Physician"
       },
       "period": {
-        "start": "2022-07-29",
-        "end": "2025-07-29"
+        "start": "2024-03-07",
+        "end": "2027-03-07"
       },
       "issuer": {
         "display": "Connecticut Medical Examining Board"
