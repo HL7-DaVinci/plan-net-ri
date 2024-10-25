@@ -68,5 +68,8 @@
     {
       "reference": "Endpoint/TestEndpoint2"
     }
-  ]
+  ],
+  "partOf": {
+    "reference": "Organization/Acme"
+  }
 }
