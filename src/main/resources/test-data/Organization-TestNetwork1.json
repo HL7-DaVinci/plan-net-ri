@@ -52,7 +52,7 @@
   ],
   "endpoint": [
     {
-      "reference": "Endpoint/AcmeOfCTPortalEndpoint"
+      "reference": "Endpoint/TestEndpoint1"
     }
   ]
 }
