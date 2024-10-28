@@ -48,6 +48,6 @@
   ],
   "address": "https://urlofportal.acmect.com",
   "managingOrganization": {
-    "reference": "Organization/TestNetwork1"
+    "reference": "Organization/TestOrganization1"
   }
 }
