@@ -65,10 +65,9 @@ public class Application extends SpringBootServletInitializer {
 		return servletRegistrationBean;
 	}
 
-  // Ensure data is loaded when the application starts
-  @Bean
-  public DataInitializer dataInitializer() {
-    return new DataInitializer();
-  }
-  
+	// Ensure data is loaded when the application starts
+	@Bean
+	public DataInitializer dataInitializer() {
+		return new DataInitializer();
+	}
 }

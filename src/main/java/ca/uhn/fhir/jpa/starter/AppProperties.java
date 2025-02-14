@@ -958,20 +958,18 @@ public class AppProperties {
 		this.resource_dbhistory_enabled = resource_dbhistory_enabled;
 	}
 
+	/**
+	 * Properties added to the regular starter AppProperties
+	 */
 
-  /**
-   * Properties added to the regular starter AppProperties
-   */
+	// Initial resources to be loaded into the database
+	private List<String> initialData;
 
-  // Initial resources to be loaded into the database
-  private List<String> initialData;
+	public List<String> getInitialData() {
+		return initialData;
+	}
 
-  public List<String> getInitialData() {
-    return initialData;
-  }
-
-  public void setInitialData(List<String> initialData) {
-    this.initialData = initialData;
-  }
-  
+	public void setInitialData(List<String> initialData) {
+		this.initialData = initialData;
+	}
 }
