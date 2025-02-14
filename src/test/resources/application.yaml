@@ -1,7 +1,34 @@
+management:
+  #The following configuration will enable the actuator endpoints at /actuator/health, /actuator/info, /actuator/prometheus
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: 'info,health,prometheus,metrics' # or '*' for all'
+  endpoint:
+    info:
+      enabled: true
+    metrics:
+      enabled: true
+    health:
+      enabled: true
+      probes:
+        enabled: true
+      group:
+        liveness:
+          include:
+            - livenessState
+            - readinessState
+    prometheus:
+      enabled: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
 spring:
   main:
     allow-circular-references: true
-    #allow-bean-definition-overriding: true
+    allow-bean-definition-overriding: true
   flyway:
     enabled: false
     check-location: false
@@ -20,11 +47,20 @@ spring:
     properties:
       hibernate.format_sql: false
       hibernate.show_sql: false
-      #Hibernate dialect is automatically detected except Postgres and H2.
-      #If using H2, then supply the value of ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
-      #If using postgres, then supply the value of ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgres94Dialect
 
+      #########################################
+      # Hibernate Dialect Setting
+      #########################################
+      # Use one of the following values:
+      # ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
+      # ca.uhn.fhir.jpa.model.dialect.HapiFhirDerbyDialect
+      # ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgresDialect
+      # ca.uhn.fhir.jpa.model.dialect.HapiFhirOracleDialect
+      # ca.uhn.fhir.jpa.model.dialect.HapiFhirSQLServerDialect
+      # ca.uhn.fhir.jpa.model.dialect.HapiFhirMySQLDialect (Deprecated!)
+      #########################################
       hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
+      #########################################
       #      hibernate.hbm2ddl.auto: update
       #      hibernate.jdbc.batch_size: 20
       #      hibernate.cache.use_query_cache: false
@@ -58,15 +94,18 @@ hapi:
     ### enable to set the Server URL
     #    server_address: http://hapi.fhir.org/baseR4
     #    defer_indexing_for_codesystems_of_size: 101
+    ### Flag is true by default. This flag filters resources during package installation, allowing only those resources with a valid status (e.g. active) to be installed.
+    #    validate_resource_status_for_package_upload: false 
     #    install_transitive_ig_dependencies: true
     #    implementationguides:
     ###    example from registry (packages.fhir.org)
     #      swiss:
     #        name: swiss.mednet.fhir
     #        version: 0.8.0
+    #        reloadExisting : false
     #      example not from registry
     #      ips_1_0_0:
-    #        url: https://build.fhir.org/ig/HL7/fhir-ips/package.tgz
+    #        packageUrl: https://build.fhir.org/ig/HL7/fhir-ips/package.tgz
     #        name: hl7.fhir.uv.ips
     #        version: 1.0.0
     #    supported_resource_types:
@@ -78,7 +117,7 @@ hapi:
     #    allow_multiple_delete: true
     #    allow_override_default_search_params: true
     #    auto_create_placeholder_reference_targets: false
-    #    cql_enabled: true
+    #    cr_enabled: true
     #    default_encoding: JSON
     #    default_pretty_print: true
     #    default_page_size: 20
@@ -109,6 +148,7 @@ hapi:
     #    partitioning:
     #      allow_references_across_partitions: false
     #      partitioning_include_in_search_hashes: false
+    #      partitioning_include_in_search_hashes
     #cors:
     #  allow_Credentials: true
       # These are allowed_origin patterns, see: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html#setAllowedOriginPatterns-java.util.List-
