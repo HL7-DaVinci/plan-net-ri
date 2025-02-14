@@ -1,12 +1,6 @@
 package ca.uhn.fhir.jpa.starter.custom;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.stream.Collectors;
-
-import javax.annotation.PostConstruct;
 
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.slf4j.Logger;
@@ -14,17 +8,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternUtils;
 import org.springframework.util.FileCopyUtils;
 
 import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.jpa.api.config.DaoConfig;
+import ca.uhn.fhir.jpa.api.config.JpaStorageSettings;
 import ca.uhn.fhir.jpa.api.dao.DaoRegistry;
 import ca.uhn.fhir.jpa.api.dao.IFhirResourceDao;
-import ca.uhn.fhir.jpa.partition.SystemRequestDetails;
 import ca.uhn.fhir.jpa.starter.AppProperties;
+import ca.uhn.fhir.rest.api.server.SystemRequestDetails;
+import jakarta.annotation.PostConstruct;
 
 public class DataInitializer {
 
@@ -43,7 +36,7 @@ public class DataInitializer {
   private ResourceLoader resourceLoader;
 
   @Autowired
-  private DaoConfig daoConfig;
+  private JpaStorageSettings storageSettings;
 
 
   @PostConstruct
@@ -56,7 +49,7 @@ public class DataInitializer {
     logger.info("Initializing data");
 
     // Disable referential integrity checks so that resources can be loaded in any order
-    daoConfig.setEnforceReferentialIntegrityOnWrite(false);
+    storageSettings.setEnforceReferentialIntegrityOnWrite(false);
 
     for (String directoryPath : appProperties.getInitialData()) {
       logger.info("Loading resources from directory: " + directoryPath);
@@ -87,7 +80,7 @@ public class DataInitializer {
     }
 
     // Re-enable referential integrity checks if they were previously enabled
-    daoConfig.setEnforceReferentialIntegrityOnWrite(appProperties.getEnforce_referential_integrity_on_write());
+    storageSettings.setEnforceReferentialIntegrityOnWrite(appProperties.getEnforce_referential_integrity_on_write());
 
   }
 
