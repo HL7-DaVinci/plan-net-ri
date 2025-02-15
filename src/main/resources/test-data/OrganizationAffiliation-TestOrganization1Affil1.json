@@ -1,0 +1,53 @@
+{
+  "resourceType": "OrganizationAffiliation",
+  "id": "TestOrgAffil2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"
+    ]
+  },
+  "language": "en-US",
+  "active": true,
+  "organization": {
+    "reference": "Organization/Hospital"
+  },
+  "participatingOrganization": {
+    "reference": "Organization/TestOrganization1"
+  },
+  "network": [
+    {
+      "reference": "Organization/TestNetwork1"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrganizationAffiliationRoleCS",
+          "code": "outpatient"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "3336C0004X",
+          "display": "Compounding Pharmacy"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/HospLoc1"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/TestHealthcareService1"
+    }
+  ]
+}

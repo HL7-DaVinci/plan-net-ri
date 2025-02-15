@@ -18,6 +18,34 @@
       "value": "NPI456"
     }
   ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://nucc.org/provider-taxonomy",
+                "code": "207R00000X"
+              }
+            ]
+          }
+        },
+        {
+          "url": "status",
+          "valueCode": "active"
+        },
+        {
+          "url": "issuer",
+          "valueReference": {
+            "display": "American Board of Internal Medicine"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/qualification"
+    }
+  ],
   "active": true,
   "type": [
     {
