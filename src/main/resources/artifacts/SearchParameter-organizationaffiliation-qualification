@@ -1,0 +1,13 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organizationaffiliation-qualification",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-qualification",
+  "name": "OrganizationAffiliationQualificationSearchParameter",
+  "status": "active",
+  "experimental": true,
+  "description": "Search by qualification extension",
+  "code": "qualification",
+  "base": ["OrganizationAffiliation"],
+  "type": "token",
+  "expression": "OrganizationAffiliation.extension('http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/qualification').extension.value"
+}

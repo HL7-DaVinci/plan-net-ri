@@ -1,0 +1,13 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "practitioner-qualification",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-qualification",
+  "name": "PractitionerQualificationSearchParameter",
+  "status": "active",
+  "experimental": true,
+  "description": "Search by qualification extension",
+  "code": "qualification",
+  "base": ["Practitioner"],
+  "type": "token",
+  "expression": "Practitioner.qualification.extension('http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification').extension.value"
+}
