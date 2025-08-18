@@ -6,7 +6,6 @@ import ca.uhn.fhir.jpa.starter.annotations.OnEitherVersion;
 import ca.uhn.fhir.jpa.starter.cdshooks.StarterCdsHooksConfig;
 import ca.uhn.fhir.jpa.starter.cr.StarterCrDstu3Config;
 import ca.uhn.fhir.jpa.starter.cr.StarterCrR4Config;
-import ca.uhn.fhir.jpa.starter.custom.DataInitializer;
 import ca.uhn.fhir.jpa.starter.mdm.MdmConfig;
 import ca.uhn.fhir.jpa.subscription.channel.config.SubscriptionChannelConfig;
 import ca.uhn.fhir.jpa.subscription.match.config.SubscriptionProcessorConfig;
@@ -64,10 +63,5 @@ public class Application extends SpringBootServletInitializer {
 
 		return servletRegistrationBean;
 	}
-
-	// Ensure data is loaded when the application starts
-	@Bean
-	public DataInitializer dataInitializer() {
-		return new DataInitializer();
-	}
+	
 }
