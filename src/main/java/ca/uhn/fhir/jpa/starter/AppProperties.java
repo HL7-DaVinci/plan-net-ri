@@ -1,6 +1,7 @@
 package ca.uhn.fhir.jpa.starter;
 
 import ca.uhn.fhir.context.FhirVersionEnum;
+import ca.uhn.fhir.jpa.api.config.JpaStorageSettings;
 import ca.uhn.fhir.jpa.api.config.JpaStorageSettings.ClientIdStrategyEnum;
 import ca.uhn.fhir.jpa.api.config.JpaStorageSettings.IdStrategyEnum;
 import ca.uhn.fhir.jpa.model.entity.NormalizedQuantitySearchLevel;
@@ -18,17 +19,25 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
+import static org.apache.commons.lang3.ObjectUtils.defaultIfNull;
+
 @ConfigurationProperties(prefix = "hapi.fhir")
 @Configuration
 @EnableConfigurationProperties
 public class AppProperties {
 
+	private final Set<String> auto_version_reference_at_paths = new HashSet<>();
+	private final Set<String> local_base_urls = new HashSet<>();
+	private final Set<String> logical_urls = new HashSet<>();
+	private final List<String> custom_interceptor_classes = new ArrayList<>();
+	private final List<String> custom_provider_classes = new ArrayList<>();
 	private Boolean cr_enabled = false;
 	private Boolean ips_enabled = false;
 	private Boolean openapi_enabled = false;
 	private Boolean mdm_enabled = false;
 	private String mdm_rules_json_location = "mdm-rules.json";
 	private boolean advanced_lucene_indexing = false;
+	private boolean search_index_full_text_enabled = false;
 	private boolean enable_index_of_type = false;
 	private Boolean allow_cascading_deletes = false;
 	private Boolean allow_contains_searches = true;
@@ -37,9 +46,9 @@ public class AppProperties {
 	private Boolean allow_override_default_search_params = true;
 	private Boolean auto_create_placeholder_reference_targets = false;
 	private Boolean mass_ingestion_mode_enabled = false;
-	private final Set<String> auto_version_reference_at_paths = new HashSet<>();
 	private Boolean language_search_parameter_enabled = false;
 	private Boolean dao_scheduling_enabled = true;
+	private Boolean delete_enabled = true;
 	private Boolean delete_expunge_enabled = false;
 	private Boolean enable_index_missing_fields = false;
 	private Boolean enable_index_contained_resource = false;
@@ -70,9 +79,7 @@ public class AppProperties {
 	private List<String> supported_resource_types = new ArrayList<>();
 	private List<Bundle.BundleType> allowed_bundle_types = null;
 	private Boolean narrative_enabled = true;
-
 	private Boolean ig_runtime_upload_enabled = false;
-
 	private Validation validation = new Validation();
 	private Map<String, Tester> tester = null;
 	private Logger logger = new Logger();
@@ -82,33 +89,33 @@ public class AppProperties {
 	private Boolean validate_resource_status_for_package_upload = true;
 	private Boolean install_transitive_ig_dependencies = true;
 	private Map<String, PackageInstallationSpec> implementationGuides = null;
-
 	private String custom_content_path = null;
 	private String app_content_path = null;
-
 	private Boolean lastn_enabled = false;
 	private boolean store_resource_in_lucene_index_enabled = false;
 	private NormalizedQuantitySearchLevel normalized_quantity_search_level =
 			NormalizedQuantitySearchLevel.NORMALIZED_QUANTITY_SEARCH_NOT_SUPPORTED;
-
 	private Boolean use_apache_address_strategy = false;
 	private Boolean use_apache_address_strategy_https = false;
-
 	private Integer bundle_batch_pool_size = 20;
 	private Integer bundle_batch_pool_max_size = 100;
-	private final Set<String> local_base_urls = new HashSet<>();
-	private final Set<String> logical_urls = new HashSet<>();
-
 	private Boolean resource_dbhistory_enabled = true;
-
-	private final List<String> custom_interceptor_classes = new ArrayList<>();
-
-	private final List<String> custom_provider_classes = new ArrayList<>();
 	private Boolean upliftedRefchains_enabled = false;
 
 	private boolean userRequestRetryVersionConflictsInterceptorEnabled = false;
 
 	private List<Integer> search_prefetch_thresholds = new ArrayList<>();
+	private Boolean pre_expand_value_sets = true;
+	private Boolean enable_task_pre_expand_value_sets = true;
+	private Integer pre_expand_value_sets_default_count = 1000;
+	private Integer pre_expand_value_sets_max_count = 1000;
+	private Integer maximum_expansion_size = 1000;
+	private JpaStorageSettings.StoreMetaSourceInformationEnum store_meta_source_information =
+			JpaStorageSettings.StoreMetaSourceInformationEnum.NONE;
+
+	private Map<String, RemoteSystem> remote_terminology_service = null;
+	private Boolean match_url_cache_enabled = false;
+	private Boolean index_storage_optimized = false;
 
 	public List<String> getCustomInterceptorClasses() {
 		return custom_interceptor_classes;
@@ -226,16 +233,16 @@ public class AppProperties {
 		return subscription;
 	}
 
+	public void setSubscription(Subscription subscription) {
+		this.subscription = subscription;
+	}
+
 	public Boolean getDefault_pretty_print() {
 		return default_pretty_print;
 	}
 
 	public void setDefault_pretty_print(Boolean default_pretty_print) {
 		this.default_pretty_print = default_pretty_print;
-	}
-
-	public void setSubscription(Subscription subscription) {
-		this.subscription = subscription;
 	}
 
 	public Validation getValidation() {
@@ -284,6 +291,14 @@ public class AppProperties {
 
 	public void setAdvanced_lucene_indexing(boolean theAdvanced_lucene_indexing) {
 		advanced_lucene_indexing = theAdvanced_lucene_indexing;
+	}
+
+	public boolean getSearch_index_full_text_enabled() {
+		return this.search_index_full_text_enabled;
+	}
+
+	public void setSearch_index_full_text_enabled(boolean theSearch_index_full_text_enabled) {
+		search_index_full_text_enabled = theSearch_index_full_text_enabled;
 	}
 
 	public Boolean getAllow_cascading_deletes() {
@@ -364,6 +379,14 @@ public class AppProperties {
 
 	public Boolean getDelete_expunge_enabled() {
 		return delete_expunge_enabled;
+	}
+
+	public boolean getDelete_enabled() {
+		return defaultIfNull(delete_enabled, true);
+	}
+
+	public void setDelete_enabled(boolean theDelete_enabled) {
+		delete_enabled = theDelete_enabled;
 	}
 
 	public void setDelete_expunge_enabled(Boolean delete_expunge_enabled) {
@@ -671,6 +694,95 @@ public class AppProperties {
 		this.userRequestRetryVersionConflictsInterceptorEnabled = userRequestRetryVersionConflictsInterceptorEnabled;
 	}
 
+	public boolean getEnable_index_of_type() {
+		return enable_index_of_type;
+	}
+
+	public void setEnable_index_of_type(boolean enable_index_of_type) {
+		this.enable_index_of_type = enable_index_of_type;
+	}
+
+	public Boolean getResource_dbhistory_enabled() {
+		return resource_dbhistory_enabled;
+	}
+
+	public void setResource_dbhistory_enabled(Boolean resource_dbhistory_enabled) {
+		this.resource_dbhistory_enabled = resource_dbhistory_enabled;
+	}
+
+	public Boolean getPre_expand_value_sets() {
+		return this.pre_expand_value_sets;
+	}
+
+	public void setPre_expand_value_sets(Boolean pre_expand_value_sets) {
+		this.pre_expand_value_sets = pre_expand_value_sets;
+	}
+
+	public Boolean getEnable_task_pre_expand_value_sets() {
+		return this.enable_task_pre_expand_value_sets;
+	}
+
+	public void setEnable_task_pre_expand_value_sets(Boolean enable_task_pre_expand_value_sets) {
+		this.enable_task_pre_expand_value_sets = enable_task_pre_expand_value_sets;
+	}
+
+	public Integer getPre_expand_value_sets_default_count() {
+		return pre_expand_value_sets_default_count;
+	}
+
+	public void setPre_expand_value_sets_default_count(Integer pre_expand_value_sets_default_count) {
+		this.pre_expand_value_sets_default_count = pre_expand_value_sets_default_count;
+	}
+
+	public Integer getPre_expand_value_sets_max_count() {
+		return pre_expand_value_sets_max_count;
+	}
+
+	public void setPre_expand_value_sets_max_count(Integer pre_expand_value_sets_max_count) {
+		this.pre_expand_value_sets_max_count = pre_expand_value_sets_max_count;
+	}
+
+	public Integer getMaximum_expansion_size() {
+		return maximum_expansion_size;
+	}
+
+	public void setMaximum_expansion_size(Integer maximum_expansion_size) {
+		this.maximum_expansion_size = maximum_expansion_size;
+	}
+
+	public Map<String, RemoteSystem> getRemoteTerminologyServicesMap() {
+		return remote_terminology_service;
+	}
+
+	public void setRemote_terminology_service(Map<String, RemoteSystem> remote_terminology_service) {
+		this.remote_terminology_service = remote_terminology_service;
+	}
+
+	public boolean getMatch_url_cache_enabled() {
+		return defaultIfNull(match_url_cache_enabled, false);
+	}
+
+	public void setMatch_url_cache_enabled(boolean theMatchUrlCacheEnabled) {
+		match_url_cache_enabled = theMatchUrlCacheEnabled;
+	}
+
+	public boolean getIndex_storage_optimized() {
+		return defaultIfNull(index_storage_optimized, false);
+	}
+
+	public void setIndex_storage_optimized(boolean theIndex_storage_optimized) {
+		index_storage_optimized = theIndex_storage_optimized;
+	}
+
+	public JpaStorageSettings.StoreMetaSourceInformationEnum getStore_meta_source_information() {
+		return store_meta_source_information;
+	}
+
+	public void setStore_meta_source_information(
+			JpaStorageSettings.StoreMetaSourceInformationEnum store_meta_source_information) {
+		this.store_meta_source_information = store_meta_source_information;
+	}
+
 	public static class Cors {
 		private Boolean allow_Credentials = true;
 		private List<String> allowed_origin = List.of("*");
@@ -800,6 +912,38 @@ public class AppProperties {
 		private Boolean partitioning_include_in_search_hashes = false;
 		private Boolean allow_references_across_partitions = false;
 		private Boolean conditional_create_duplicate_identifiers_enabled = false;
+		private Boolean database_partition_mode_enabled = false;
+		private Boolean patient_id_partitioning_mode = false;
+		private Integer default_partition_id = 0;
+		private boolean request_tenant_partitioning_mode = true;
+
+		public boolean isRequest_tenant_partitioning_mode() {
+			return request_tenant_partitioning_mode;
+		}
+
+		public Integer getDefault_partition_id() {
+			return default_partition_id;
+		}
+
+		public void setDefault_partition_id(Integer theDefault_partition_id) {
+			default_partition_id = theDefault_partition_id;
+		}
+
+		public Boolean getDatabase_partition_mode_enabled() {
+			return database_partition_mode_enabled;
+		}
+
+		public void setDatabase_partition_mode_enabled(Boolean theDatabase_partition_mode_enabled) {
+			database_partition_mode_enabled = theDatabase_partition_mode_enabled;
+		}
+
+		public Boolean getPatient_id_partitioning_mode() {
+			return patient_id_partitioning_mode;
+		}
+
+		public void setPatient_id_partitioning_mode(Boolean thePatient_id_partitioning_mode) {
+			patient_id_partitioning_mode = thePatient_id_partitioning_mode;
+		}
 
 		public Boolean getPartitioning_include_in_search_hashes() {
 			return partitioning_include_in_search_hashes;
@@ -825,9 +969,44 @@ public class AppProperties {
 				Boolean conditional_create_duplicate_identifiers_enabled) {
 			this.conditional_create_duplicate_identifiers_enabled = conditional_create_duplicate_identifiers_enabled;
 		}
+
+		public boolean getRequest_tenant_partitioning_mode() {
+			return request_tenant_partitioning_mode;
+		}
+
+		public void setRequest_tenant_partitioning_mode(boolean theRequest_tenant_partitioning_mode) {
+			request_tenant_partitioning_mode = theRequest_tenant_partitioning_mode;
+		}
+	}
+
+	public static class RemoteSystem {
+		private String system;
+		private String url;
+
+		public String getSystem() {
+			return system;
+		}
+
+		public void setSystem(String system) {
+			this.system = system;
+		}
+
+		public String getUrl() {
+			return url;
+		}
+
+		public void setUrl(String url) {
+			this.url = url;
+		}
 	}
 
 	public static class Subscription {
+
+		private Boolean resthook_enabled = false;
+		private Boolean websocket_enabled = false;
+		private Email email = null;
+		private Integer polling_interval_ms = null;
+		private Boolean immediately_queued = false;
 
 		public Boolean getResthook_enabled() {
 			return resthook_enabled;
@@ -845,10 +1024,6 @@ public class AppProperties {
 			this.websocket_enabled = websocket_enabled;
 		}
 
-		private Boolean resthook_enabled = false;
-		private Boolean websocket_enabled = false;
-		private Email email = null;
-
 		public Email getEmail() {
 			return email;
 		}
@@ -857,7 +1032,33 @@ public class AppProperties {
 			this.email = email;
 		}
 
+		public Integer getPolling_interval_ms() {
+			return polling_interval_ms;
+		}
+
+		public void setPolling_interval_ms(Integer polling_interval_ms) {
+			this.polling_interval_ms = polling_interval_ms;
+		}
+
+		public Boolean getImmediately_queued() {
+			return immediately_queued;
+		}
+
+		public void setImmediately_queued(Boolean immediately_queued) {
+			this.immediately_queued = immediately_queued;
+		}
+
 		public static class Email {
+			private String from;
+			private String host;
+			private Integer port = 25;
+			private String username;
+			private String password;
+			private Boolean auth = false;
+			private Boolean startTlsEnable = false;
+			private Boolean startTlsRequired = false;
+			private Boolean quitWait = false;
+
 			public String getFrom() {
 				return from;
 			}
@@ -929,33 +1130,6 @@ public class AppProperties {
 			public void setQuitWait(Boolean quitWait) {
 				this.quitWait = quitWait;
 			}
-
-			private String from;
-			private String host;
-			private Integer port = 25;
-			private String username;
-			private String password;
-			private Boolean auth = false;
-			private Boolean startTlsEnable = false;
-			private Boolean startTlsRequired = false;
-			private Boolean quitWait = false;
 		}
 	}
-
-	public boolean getEnable_index_of_type() {
-		return enable_index_of_type;
-	}
-
-	public void setEnable_index_of_type(boolean enable_index_of_type) {
-		this.enable_index_of_type = enable_index_of_type;
-	}
-
-	public Boolean getResource_dbhistory_enabled() {
-		return resource_dbhistory_enabled;
-	}
-
-	public void setResource_dbhistory_enabled(Boolean resource_dbhistory_enabled) {
-		this.resource_dbhistory_enabled = resource_dbhistory_enabled;
-	}
-	
 }

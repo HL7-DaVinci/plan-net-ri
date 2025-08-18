@@ -16,6 +16,8 @@ import ca.uhn.fhir.rest.server.mail.MailConfig;
 import ca.uhn.fhir.rest.server.mail.MailSvc;
 import com.google.common.base.Strings;
 import org.hl7.fhir.r4.model.Bundle.BundleType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.env.YamlPropertySourceLoader;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,6 +29,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
+import static org.apache.commons.lang3.ObjectUtils.defaultIfNull;
+
 /**
  * This is the primary configuration file for the example server
  */
@@ -34,7 +38,7 @@ import java.util.stream.Collectors;
 @EnableTransactionManagement
 public class FhirServerConfigCommon {
 
-	private static final org.slf4j.Logger ourLog = org.slf4j.LoggerFactory.getLogger(FhirServerConfigCommon.class);
+	private static final Logger ourLog = LoggerFactory.getLogger(FhirServerConfigCommon.class);
 
 	public FhirServerConfigCommon(AppProperties appProperties) {
 		ourLog.info("Server configured to " + (appProperties.getAllow_contains_searches() ? "allow" : "deny")
@@ -86,6 +90,18 @@ public class FhirServerConfigCommon {
 		if (appProperties.getEnable_index_contained_resource() == Boolean.TRUE) {
 			ourLog.info("Indexed on contained resource enabled");
 		}
+
+		ourLog.info("Server configured to " + (appProperties.getPre_expand_value_sets() ? "enable" : "disable")
+				+ " value set pre-expansion");
+		ourLog.info(
+				"Server configured to " + (appProperties.getEnable_task_pre_expand_value_sets() ? "enable" : "disable")
+						+ " value set pre-expansion task");
+		ourLog.info("Server configured for pre-expand value set default count of "
+				+ (appProperties.getPre_expand_value_sets_default_count().toString()));
+		ourLog.info("Server configured for pre-expand value set max count of "
+				+ (appProperties.getPre_expand_value_sets_max_count().toString()));
+		ourLog.info("Server configured for maximum expansion size of "
+				+ (appProperties.getMaximum_expansion_size().toString()));
 	}
 
 	@Bean
@@ -112,6 +128,18 @@ public class FhirServerConfigCommon {
 				subscriptionSettings.addSupportedSubscriptionType(
 						org.hl7.fhir.dstu2.model.Subscription.SubscriptionChannelType.WEBSOCKET);
 			}
+			if (appProperties.getSubscription().getPolling_interval_ms() != null) {
+				ourLog.info(
+						"Setting subscription polling interval to {} ms",
+						appProperties.getSubscription().getPolling_interval_ms());
+				subscriptionSettings.setSubscriptionIntervalInMs(
+						appProperties.getSubscription().getPolling_interval_ms());
+			}
+			if (appProperties.getSubscription().getImmediately_queued()) {
+				ourLog.info("Subscription update will be queued immediately");
+				subscriptionSettings.setSubscriptionChangeQueuedImmediately(
+						appProperties.getSubscription().getImmediately_queued());
+			}
 		}
 		if (appProperties.getMdm_enabled()) {
 			// MDM requires the subscription of type message
@@ -127,6 +155,12 @@ public class FhirServerConfigCommon {
 	@Bean
 	public JpaStorageSettings jpaStorageSettings(AppProperties appProperties) {
 		JpaStorageSettings jpaStorageSettings = new JpaStorageSettings();
+
+		jpaStorageSettings.setPreExpandValueSets(appProperties.getPre_expand_value_sets());
+		jpaStorageSettings.setEnableTaskPreExpandValueSets(appProperties.getEnable_task_pre_expand_value_sets());
+		jpaStorageSettings.setPreExpandValueSetsMaxCount(appProperties.getPre_expand_value_sets_max_count());
+		jpaStorageSettings.setPreExpandValueSetsDefaultCount(appProperties.getPre_expand_value_sets_default_count());
+		jpaStorageSettings.setMaximumExpansionSize(appProperties.getMaximum_expansion_size());
 
 		jpaStorageSettings.setIndexMissingFields(
 				appProperties.getEnable_index_missing_fields()
@@ -144,6 +178,9 @@ public class FhirServerConfigCommon {
 		jpaStorageSettings.setAllowMultipleDelete(appProperties.getAllow_multiple_delete());
 		jpaStorageSettings.setAllowExternalReferences(appProperties.getAllow_external_references());
 		jpaStorageSettings.setSchedulingDisabled(!appProperties.getDao_scheduling_enabled());
+		jpaStorageSettings.setIndexStorageOptimized(appProperties.getIndex_storage_optimized());
+		jpaStorageSettings.setMatchUrlCacheEnabled(appProperties.getMatch_url_cache_enabled());
+		jpaStorageSettings.setDeleteEnabled(appProperties.getDelete_enabled());
 		jpaStorageSettings.setDeleteExpungeEnabled(appProperties.getDelete_expunge_enabled());
 		jpaStorageSettings.setExpungeEnabled(appProperties.getExpunge_enabled());
 		jpaStorageSettings.setLanguageSearchParameterEnabled(appProperties.getLanguage_search_parameter_enabled());
@@ -168,7 +205,8 @@ public class FhirServerConfigCommon {
 		jpaStorageSettings.setExpireSearchResultsAfterMillis(retainCachedSearchesMinutes * 60 * 1000);
 
 		jpaStorageSettings.setFilterParameterEnabled(appProperties.getFilter_search_enabled());
-		jpaStorageSettings.setAdvancedHSearchIndexing(appProperties.getAdvanced_lucene_indexing());
+		jpaStorageSettings.setHibernateSearchIndexSearchParams(appProperties.getAdvanced_lucene_indexing());
+		jpaStorageSettings.setHibernateSearchIndexFullText(appProperties.getSearch_index_full_text_enabled());
 		jpaStorageSettings.setTreatBaseUrlsAsLocal(new HashSet<>(appProperties.getLocal_base_urls()));
 		jpaStorageSettings.setTreatReferencesAsLogical(new HashSet<>(appProperties.getLogical_urls()));
 
@@ -221,6 +259,10 @@ public class FhirServerConfigCommon {
 		jpaStorageSettings.setBundleBatchPoolSize(appProperties.getBundle_batch_pool_size());
 		jpaStorageSettings.setBundleBatchPoolSize(appProperties.getBundle_batch_pool_max_size());
 
+		// Set store meta source information
+		ourLog.debug("Server configured to Store Meta Source: {}", appProperties.getStore_meta_source_information());
+		jpaStorageSettings.setStoreMetaSourceInformation(appProperties.getStore_meta_source_information());
+
 		storageSettings(appProperties, jpaStorageSettings);
 		return jpaStorageSettings;
 	}
@@ -237,6 +279,14 @@ public class FhirServerConfigCommon {
 		// Partitioning
 		if (appProperties.getPartitioning() != null) {
 			retVal.setPartitioningEnabled(true);
+			boolean databasePartitionModeEnabled =
+					defaultIfNull(appProperties.getPartitioning().getDatabase_partition_mode_enabled(), Boolean.FALSE);
+			Integer defaultPartitionId = appProperties.getPartitioning().getDefault_partition_id();
+			if (databasePartitionModeEnabled) {
+				retVal.setDatabasePartitionMode(true);
+				defaultPartitionId = defaultIfNull(defaultPartitionId, 0);
+			}
+			retVal.setDefaultPartitionId(defaultPartitionId);
 			retVal.setIncludePartitionInSearchHashes(
 					appProperties.getPartitioning().getPartitioning_include_in_search_hashes());
 			if (appProperties.getPartitioning().getAllow_references_across_partitions()) {
@@ -246,9 +296,27 @@ public class FhirServerConfigCommon {
 			}
 			retVal.setConditionalCreateDuplicateIdentifiersEnabled(
 					appProperties.getPartitioning().getConditional_create_duplicate_identifiers_enabled());
+
+			ourLog.info(
+					"""
+					Partitioning is enabled on this server. Settings:
+					 * Database Partition Mode Enabled: {}
+					 * Default Partition ID           : {}
+					 * Cross-Partition References     : {}""",
+					databasePartitionModeEnabled,
+					defaultPartitionId,
+					retVal.getAllowReferencesAcrossPartitions());
+
+		} else {
+			ourLog.info("Partitioning is not enabled on this server");
 		}
 
 		return retVal;
+	}
+
+	@Bean
+	public PartitionModeConfigurer partitionModeConfigurer() {
+		return new PartitionModeConfigurer();
 	}
 
 	@Primary

@@ -1,7 +1,8 @@
 package ca.uhn.fhir.jpa.starter;
 
 import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.cr.config.RepositoryConfig;
+import ca.uhn.fhir.jpa.config.HibernatePropertiesProvider;
+import ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect;
 import ca.uhn.fhir.jpa.searchparam.config.NicknameServiceConfig;
 import ca.uhn.fhir.jpa.starter.cr.CrProperties;
 import ca.uhn.fhir.model.primitive.IdDt;
@@ -19,22 +20,13 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IIdType;
-import org.hl7.fhir.r4.model.Bundle;
-import org.hl7.fhir.r4.model.DateType;
-import org.hl7.fhir.r4.model.IdType;
-import org.hl7.fhir.r4.model.Measure;
-import org.hl7.fhir.r4.model.MeasureReport;
-import org.hl7.fhir.r4.model.Observation;
-import org.hl7.fhir.r4.model.Parameters;
-import org.hl7.fhir.r4.model.Patient;
-import org.hl7.fhir.r4.model.Period;
-import org.hl7.fhir.r4.model.StringType;
-import org.hl7.fhir.r4.model.Subscription;
+import org.hl7.fhir.r4.model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.opencds.cqf.fhir.cr.hapi.config.RepositoryConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
@@ -74,10 +66,14 @@ import static org.opencds.cqf.fhir.utility.r4.Parameters.stringPart;
 	"hapi.fhir.implementationguides.dk-core.name=hl7.fhir.dk.core",
 	"hapi.fhir.implementationguides.dk-core.version=1.1.0",
 	"hapi.fhir.auto_create_placeholder_reference_targets=true",
+	"hibernate.search.enabled=true",
 	// Override is currently required when using MDM as the construction of the MDM
 	// beans are ambiguous as they are constructed multiple places. This is evident
 	// when running in a spring boot environment
-	"spring.main.allow-bean-definition-overriding=true"})
+	"spring.main.allow-bean-definition-overriding=true",
+	"hapi.fhir.remote_terminology_service.snomed.system=http://snomed.info/sct",
+	"hapi.fhir.remote_terminology_service.snomed.url=https://tx.fhir.org/r4"
+})
 class ExampleServerR4IT implements IServerSupport {
 	private static final org.slf4j.Logger ourLog = org.slf4j.LoggerFactory.getLogger(ExampleServerR4IT.class);
 	private IGenericClient ourClient;
@@ -85,6 +81,9 @@ class ExampleServerR4IT implements IServerSupport {
 
 	@Autowired
 	private CrProperties crProperties;
+
+	@Autowired
+	private HibernatePropertiesProvider myHibernatePropertiesProvider;
 
 	@LocalServerPort
 	private int port;
@@ -118,7 +117,7 @@ class ExampleServerR4IT implements IServerSupport {
 		Parameters inParams = new Parameters();
 		inParams.addParameter().setName("periodStart").setValue(new StringType("2019-01-01"));
 		inParams.addParameter().setName("periodEnd").setValue(new StringType("2019-12-31"));
-		inParams.addParameter().setName("reportType").setValue(new StringType("summary"));
+		inParams.addParameter().setName("reportType").setValue(new StringType("population"));
 
 		Parameters outParams = ourClient
 			.operation()
@@ -325,6 +324,59 @@ class ExampleServerR4IT implements IServerSupport {
 
 	}
 
+	@Test
+	void testDiffOperationIsRegistered() {
+		String methodName = "testDiff";
+		ourLog.info("Entering " + methodName + "()...");
+
+		Patient pt = new Patient();
+		pt.setActive(true);
+		pt.getBirthDateElement().setValueAsString("2020-01-01");
+		pt.addIdentifier().setSystem("http://foo").setValue("12345");
+		pt.addName().setFamily(methodName);
+		IIdType id = ourClient.create().resource(pt).execute().getId();
+
+		//now update the patient
+		pt.setId(id);
+		pt.getBirthDateElement().setValueAsString("2025-01-01");
+		ourClient.update().resource(pt).execute();
+
+		//now try a diff
+		Parameters outParams = ourClient.operation().onInstance(id).named("$diff").withNoParameters(Parameters.class).execute();
+		ourLog.trace("Params->\n{}", ourCtx.newJsonParser().setPrettyPrint(true).encodeResourceToString(outParams));
+		boolean foundDobChange = false;
+		//really, if we get a response at all, then the Diff worked, but we'll check the contents here anyway for good measure to see that our change is reflected
+		for(Parameters.ParametersParameterComponent ppc : outParams.getParameter() ) {
+			for(Parameters.ParametersParameterComponent ppc2 : ppc.getPart() ) {
+				if( "Patient.birthDate".equals(ppc2.getValue().toString()) ){
+					foundDobChange = true;
+					break;
+				}
+			}
+		}
+		assertTrue(foundDobChange);
+	}
+
+	@Test
+	void testValidateRemoteTerminology() {
+
+		String testCodeSystem = "http://foo/cs";
+		String testValueSet = "http://foo/vs";
+		ourClient.create().resource(new CodeSystem().setUrl(testCodeSystem).addConcept(new CodeSystem.ConceptDefinitionComponent().setCode("yes")).addConcept(new CodeSystem.ConceptDefinitionComponent().setCode("no"))).execute();
+		ourClient.create().resource(new ValueSet().setUrl(testValueSet).setCompose(new ValueSet.ValueSetComposeComponent().addInclude(new ValueSet.ConceptSetComponent().setSystem(testValueSet)))).execute();
+
+		Parameters remoteResult = ourClient.operation().onType(ValueSet.class).named("$validate-code").withParameter(Parameters.class, "code", new StringType("22298006")).andParameter("system", new UriType("http://snomed.info/sct")).execute();
+		assertEquals(true, ((BooleanType) remoteResult.getParameterValue("result")).getValue());
+		assertEquals("Myocardial infarction", ((StringType) remoteResult.getParameterValue("display")).getValue());
+
+		Parameters localResult = ourClient.operation().onType(CodeSystem.class).named("$validate-code").withParameter(Parameters.class, "url", new UrlType(testCodeSystem)).andParameter("coding", new Coding(testCodeSystem, "yes", null)).execute();
+	}
+
+	@Test
+	public void testHibernatePropertiesProvider_GetDialect() {
+		assertEquals(HapiFhirH2Dialect.class, myHibernatePropertiesProvider.getDialect().getClass());
+	}
+
 	@BeforeEach
 	void beforeEach() {
 
@@ -338,4 +390,5 @@ class ExampleServerR4IT implements IServerSupport {
 		//	return activeSubscriptionCount() == 2; // 2 subscription based on mdm-rules.json
 		//});
 	}
+
 }

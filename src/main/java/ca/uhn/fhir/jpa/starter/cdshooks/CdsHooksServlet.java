@@ -1,10 +1,10 @@
 package ca.uhn.fhir.jpa.starter.cdshooks;
 
 import ca.uhn.fhir.jpa.starter.AppProperties;
+import ca.uhn.fhir.rest.api.server.cdshooks.CdsServiceRequestJson;
 import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import ca.uhn.hapi.fhir.cdshooks.api.ICdsServiceRegistry;
-import ca.uhn.hapi.fhir.cdshooks.api.json.CdsServiceRequestJson;
 import ca.uhn.hapi.fhir.cdshooks.api.json.CdsServiceResponseJson;
 import ca.uhn.hapi.fhir.cdshooks.api.json.CdsServicesJson;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,7 +24,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import java.io.IOException;
 import java.util.stream.Collectors;
 
-import static ca.uhn.hapi.fhir.cdshooks.config.CdsHooksConfig.CDS_HOOKS_OBJECT_MAPPER_FACTORY;
+import static org.opencds.cqf.fhir.cr.hapi.config.test.TestCdsHooksConfig.CDS_HOOKS_OBJECT_MAPPER_FACTORY;
 
 @Configurable
 public class CdsHooksServlet extends HttpServlet {

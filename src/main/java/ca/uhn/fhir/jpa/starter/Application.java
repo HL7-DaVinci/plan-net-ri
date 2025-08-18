@@ -63,5 +63,4 @@ public class Application extends SpringBootServletInitializer {
 
 		return servletRegistrationBean;
 	}
-	
 }
