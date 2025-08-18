@@ -957,19 +957,5 @@ public class AppProperties {
 	public void setResource_dbhistory_enabled(Boolean resource_dbhistory_enabled) {
 		this.resource_dbhistory_enabled = resource_dbhistory_enabled;
 	}
-
-	/**
-	 * Properties added to the regular starter AppProperties
-	 */
-
-	// Initial resources to be loaded into the database
-	private List<String> initialData;
-
-	public List<String> getInitialData() {
-		return initialData;
-	}
-
-	public void setInitialData(List<String> initialData) {
-		this.initialData = initialData;
-	}
+	
 }
