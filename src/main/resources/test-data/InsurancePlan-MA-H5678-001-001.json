@@ -1,0 +1,49 @@
+{
+  "resourceType": "InsurancePlan",
+  "id": "plannet-insuranceplan-MA-H5678-001-001",
+  "meta": {
+    "lastUpdated": "2026-05-04T00:00:00Z",
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "text": "Medicare Advantage Contract-Plan-Segment Identifier"
+      },
+      "system": "https://www.cms.gov/medicare/ma-plan-id",
+      "value": "H5678-001-001"
+    }
+  ],
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/InsuranceProductTypeCS",
+          "code": "medicare",
+          "display": "Medicare"
+        }
+      ],
+      "text": "Medicare Advantage"
+    }
+  ],
+  "name": "Acme Medicare Advantage H5678-001-001",
+  "ownedBy": {
+    "reference": "Organization/plannet-organization-1230210000",
+    "display": "Acme Insurance Co"
+  },
+  "administeredBy": {
+    "reference": "Organization/plannet-organization-1230210000",
+    "display": "Acme Insurance Co"
+  },
+  "network": [
+    {
+      "reference": "Organization/plannet-network-HPID070000",
+      "display": "Acme Medicare Advantage Network"
+    }
+  ]
+}
+
