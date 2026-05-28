@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "src",
+  "tags": [
+    "nx-fhir-server",
+    "fhir",
+    "server"
+  ],
+  "packageBase": "org.hl7.davinci",
+  "fhirVersion": "R4",
+  "hapiReleaseVersion": "8.2.0",
+  "pluginVersion": "0.2.1"
+}

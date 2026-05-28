@@ -1,0 +1,21 @@
+{
+  "name": "plan-net-ri",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@nx/devkit": "^22.7.5",
+    "nx": "^22.7.5",
+    "nx-fhir": "^0.2.1"
+  },
+  "scripts": {
+    "build": "nx run-many -t build",
+    "serve": "nx run-many -t serve",
+    "test": "nx run-many -t test"
+  },
+  "nx": {
+    "includedScripts": []
+  },
+  "workspaces": [
+    "frontend"
+  ]
+}

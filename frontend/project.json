@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "frontend/src",
+  "tags": [
+    "nx-fhir-frontend",
+    "fhir",
+    "frontend",
+    "client"
+  ],
+  "frontendVersion": "0.2.1",
+  "frontendTemplate": "browser",
+  "pluginVersion": "0.2.1"
+}

@@ -1,0 +1,190 @@
+/* Google Fonts - IBM Plex Sans for clinical/healthcare data aesthetic */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  @apply m-0;
+  font-family:
+    "IBM Plex Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+}
+
+code,
+.font-mono {
+  font-family:
+    "IBM Plex Mono", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --background: oklch(0.985 0.001 260);
+  --foreground: oklch(0.145 0.015 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0.015 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0.015 260);
+  --primary: oklch(0.55 0.14 180);
+  --primary-foreground: oklch(0.985 0.001 260);
+  --secondary: oklch(0.965 0.002 260);
+  --secondary-foreground: oklch(0.205 0.015 260);
+  --muted: oklch(0.965 0.002 260);
+  --muted-foreground: oklch(0.525 0.015 260);
+  --accent: oklch(0.965 0.002 260);
+  --accent-foreground: oklch(0.205 0.015 260);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0.001 260);
+  --border: oklch(0.915 0.005 260);
+  --input: oklch(0.915 0.005 260);
+  --ring: oklch(0.55 0.14 180);
+  --radius: 0.5rem;
+
+  /* Sidebar */
+  --sidebar: oklch(0.975 0.002 260);
+  --sidebar-foreground: oklch(0.145 0.015 260);
+  --sidebar-primary: oklch(0.55 0.14 180);
+  --sidebar-primary-foreground: oklch(0.985 0.001 260);
+  --sidebar-accent: oklch(0.945 0.005 260);
+  --sidebar-accent-foreground: oklch(0.145 0.015 260);
+  --sidebar-border: oklch(0.915 0.005 260);
+  --sidebar-ring: oklch(0.55 0.14 180);
+
+  /* Status colors */
+  --success: oklch(0.627 0.194 145.071);
+  --success-foreground: oklch(0.985 0.001 260);
+  --warning: oklch(0.769 0.188 70.08);
+  --warning-foreground: oklch(0.205 0.015 260);
+}
+
+.dark {
+  --background: oklch(0.205 0.01 260);
+  --foreground: oklch(0.965 0.002 260);
+  --card: oklch(0.235 0.012 260);
+  --card-foreground: oklch(0.965 0.002 260);
+  --popover: oklch(0.235 0.012 260);
+  --popover-foreground: oklch(0.965 0.002 260);
+  --primary: oklch(0.65 0.12 180);
+  --primary-foreground: oklch(0.205 0.015 260);
+  --secondary: oklch(0.285 0.012 260);
+  --secondary-foreground: oklch(0.965 0.002 260);
+  --muted: oklch(0.285 0.012 260);
+  --muted-foreground: oklch(0.635 0.015 260);
+  --accent: oklch(0.285 0.012 260);
+  --accent-foreground: oklch(0.965 0.002 260);
+  --destructive: oklch(0.496 0.186 25.723);
+  --destructive-foreground: oklch(0.965 0.002 260);
+  --border: oklch(0.325 0.012 260);
+  --input: oklch(0.325 0.012 260);
+  --ring: oklch(0.65 0.12 180);
+
+  /* Sidebar */
+  --sidebar: oklch(0.185 0.01 260);
+  --sidebar-foreground: oklch(0.965 0.002 260);
+  --sidebar-primary: oklch(0.65 0.12 180);
+  --sidebar-primary-foreground: oklch(0.205 0.015 260);
+  --sidebar-accent: oklch(0.265 0.012 260);
+  --sidebar-accent-foreground: oklch(0.965 0.002 260);
+  --sidebar-border: oklch(0.325 0.012 260);
+  --sidebar-ring: oklch(0.65 0.12 180);
+
+  /* Status colors */
+  --success: oklch(0.627 0.194 145.071);
+  --success-foreground: oklch(0.205 0.015 260);
+  --warning: oklch(0.769 0.188 70.08);
+  --warning-foreground: oklch(0.205 0.015 260);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .data-table {
+    @apply text-sm;
+  }
+
+  .status-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+
+  .kbd {
+    @apply inline-flex items-center justify-center h-5 min-w-5 px-1.5 text-xs font-medium rounded border bg-muted text-muted-foreground;
+  }
+
+  .metric-value {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Sonner toast styling */
+[data-sonner-toaster] {
+  --normal-bg: var(--popover);
+  --normal-border: var(--border);
+  --normal-text: var(--popover-foreground);
+  --success-bg: var(--success);
+  --success-border: var(--success);
+  --success-text: var(--success-foreground);
+  --error-bg: var(--destructive);
+  --error-border: var(--destructive);
+  --error-text: var(--destructive-foreground);
+}
