@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Folders, Radar, SlidersHorizontal } from "lucide-react";
+import {
+  Download,
+  Folders,
+  Loader2,
+  Radar,
+  SlidersHorizontal,
+} from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
 import { AggregateStats } from "@/components/crawler/aggregate-stats";
 import { AggregateSummary } from "@/components/crawler/aggregate-summary";
 import { AggregateTable } from "@/components/crawler/aggregate-table";
@@ -12,9 +20,11 @@ import { HeadlineMetrics } from "@/components/crawler/headline-metrics";
 import { MutationPanel } from "@/components/crawler/mutation-panel";
 import { RequestLog } from "@/components/crawler/request-log";
 import { ServerScopeSelector } from "@/components/crawler/server-scope-selector";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useCrawler } from "@/hooks/use-crawler";
 import { useDemoWalkthrough } from "@/hooks/use-demo-walkthrough";
+import { exportAggregateNdjson } from "@/lib/crawler/export-ndjson";
 
 export const Route = createFileRoute("/directory-crawler/")({
   component: DirectoryCrawler,
@@ -25,6 +35,31 @@ function DirectoryCrawler() {
   const demo = useDemoWalkthrough(crawler);
 
   const refreshKey = crawler.runs.length * 1_000_000 + crawler.aggregate.total;
+  const [exporting, setExporting] = useState(false);
+
+  const handleExport = async () => {
+    setExporting(true);
+    try {
+      const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+      const result = await exportAggregateNdjson(
+        crawler.scope.map((s) => s.serverKey),
+        stamp,
+      );
+      if (result.resources === 0) {
+        toast.info("Nothing to export. Run a crawl first.");
+      } else {
+        toast.success(
+          `Exported ${result.resources.toLocaleString()} resources to ${result.types} NDJSON file(s).`,
+        );
+      }
+    } catch (error) {
+      toast.error("Export failed", {
+        description: error instanceof Error ? error.message : String(error),
+      });
+    } finally {
+      setExporting(false);
+    }
+  };
 
   return (
     // On xl, fill the viewport (minus the app header) so the left column scrolls
@@ -105,10 +140,26 @@ function DirectoryCrawler() {
 
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-base flex items-center gap-2">
-                  <Folders className="h-4 w-4" />
-                  Aggregated data
-                </CardTitle>
+                <div className="flex items-center justify-between gap-3">
+                  <CardTitle className="text-base flex items-center gap-2">
+                    <Folders className="h-4 w-4" />
+                    Aggregated data
+                  </CardTitle>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleExport}
+                    disabled={exporting || crawler.aggregate.total === 0}
+                    title="Download one NDJSON file per resource type (zipped)"
+                  >
+                    {exporting ? (
+                      <Loader2 className="h-4 w-4 mr-1 animate-spin" />
+                    ) : (
+                      <Download className="h-4 w-4 mr-1" />
+                    )}
+                    Export NDJSON
+                  </Button>
+                </div>
               </CardHeader>
               <CardContent>
                 <AggregateTable
