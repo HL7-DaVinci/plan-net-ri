@@ -50,7 +50,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </div>
         <div className="flex flex-col group-data-[collapsible=icon]:hidden">
           <span className="text-sm font-semibold leading-tight">
-            FHIR Browser
+            Plan Net Browser
           </span>
         </div>
       </SidebarHeader>
