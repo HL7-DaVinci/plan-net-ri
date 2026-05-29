@@ -4,6 +4,7 @@ import {
   FileJson,
   LayoutDashboard,
   Moon,
+  Radar,
   Search,
   Server,
   Settings,
@@ -56,6 +57,8 @@ export function CommandPalette({
         navigate({ to: "/" });
       } else if (value === "resources") {
         navigate({ to: "/resources", search: {} });
+      } else if (value === "directory-crawler") {
+        navigate({ to: "/directory-crawler" });
       } else if (value === "settings") {
         onOpenSettings?.();
       } else if (value === "theme-light") {
@@ -118,6 +121,14 @@ export function CommandPalette({
               >
                 <FileJson className="h-4 w-4 text-muted-foreground" />
                 <span>Resources</span>
+              </Command.Item>
+              <Command.Item
+                value="directory-crawler"
+                onSelect={handleSelect}
+                className="flex items-center gap-3 px-2 py-1.5 text-sm rounded-md cursor-pointer aria-selected:bg-accent aria-selected:text-accent-foreground"
+              >
+                <Radar className="h-4 w-4 text-muted-foreground" />
+                <span>Directory Crawler</span>
               </Command.Item>
               <Command.Item
                 value="settings"

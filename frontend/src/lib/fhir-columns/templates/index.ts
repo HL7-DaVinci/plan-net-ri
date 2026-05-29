@@ -1,6 +1,7 @@
 import { conditionTemplate } from "./condition";
 import { defaultTemplate } from "./default";
 import { encounterTemplate } from "./encounter";
+import { insurancePlanTemplate } from "./insurance-plan";
 import { medicationTemplate } from "./medication";
 import { medicationRequestTemplate } from "./medication-request";
 import { observationTemplate } from "./observation";
@@ -19,6 +20,7 @@ import type { ResourceColumnTemplate } from "./types";
 const templates: ResourceColumnTemplate[] = [
   conditionTemplate,
   encounterTemplate,
+  insurancePlanTemplate,
   medicationTemplate,
   medicationRequestTemplate,
   observationTemplate,

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ResourcesIndexRouteImport } from './routes/resources/index'
+import { Route as DirectoryCrawlerIndexRouteImport } from './routes/directory-crawler/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,30 +23,39 @@ const ResourcesIndexRoute = ResourcesIndexRouteImport.update({
   path: '/resources/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DirectoryCrawlerIndexRoute = DirectoryCrawlerIndexRouteImport.update({
+  id: '/directory-crawler/',
+  path: '/directory-crawler/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/directory-crawler/': typeof DirectoryCrawlerIndexRoute
   '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/directory-crawler': typeof DirectoryCrawlerIndexRoute
   '/resources': typeof ResourcesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/directory-crawler/': typeof DirectoryCrawlerIndexRoute
   '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/resources/'
+  fullPaths: '/' | '/directory-crawler/' | '/resources/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/resources'
-  id: '__root__' | '/' | '/resources/'
+  to: '/' | '/directory-crawler' | '/resources'
+  id: '__root__' | '/' | '/directory-crawler/' | '/resources/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DirectoryCrawlerIndexRoute: typeof DirectoryCrawlerIndexRoute
   ResourcesIndexRoute: typeof ResourcesIndexRoute
 }
 
@@ -65,11 +75,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/directory-crawler/': {
+      id: '/directory-crawler/'
+      path: '/directory-crawler'
+      fullPath: '/directory-crawler/'
+      preLoaderRoute: typeof DirectoryCrawlerIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DirectoryCrawlerIndexRoute: DirectoryCrawlerIndexRoute,
   ResourcesIndexRoute: ResourcesIndexRoute,
 }
 export const routeTree = rootRouteImport
