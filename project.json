@@ -1,15 +1,16 @@
 {
   "name": "server",
   "$schema": "node_modules/nx/schemas/project-schema.json",
+  "includedScripts": [],
   "projectType": "application",
   "sourceRoot": "src",
+  "packageBase": "org.hl7.davinci",
+  "fhirVersion": "R4",
+  "hapiReleaseVersion": "8.10.0-1",
+  "pluginVersion": "0.0.0-dev",
   "tags": [
     "nx-fhir-server",
     "fhir",
     "server"
-  ],
-  "packageBase": "org.hl7.davinci",
-  "fhirVersion": "R4",
-  "hapiReleaseVersion": "8.2.0",
-  "pluginVersion": "0.2.1"
+  ]
 }

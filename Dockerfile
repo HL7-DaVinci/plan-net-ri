@@ -15,28 +15,30 @@ FROM build-hapi AS build-distroless
 RUN mvn package -DskipTests spring-boot:repackage -Pboot
 RUN mkdir /app && cp /tmp/hapi-fhir-jpaserver-starter/target/ROOT.war /app/main.war
 
+COPY src/main/java/HealthCheck.java /app/HealthCheck.java
+RUN javac /app/HealthCheck.java
 
-########### bitnami tomcat version is suitable for debugging and comes with a shell
+
+########### Use the official Tomcat image as base image for the Tomcat variant
 ########### it can be built using eg. `docker build --target tomcat .`
-FROM docker.io/library/tomcat:10-jre17-temurin AS tomcat
+FROM docker.io/library/tomcat:10-jre21-temurin-noble AS tomcat
 
 USER root
 RUN rm -rf /usr/local/tomcat/webapps/ROOT && \
     mkdir -p /usr/local/tomcat/data/hapi/lucenefiles && \
-    chown -R 1001:1001 /usr/local/tomcat/data/hapi/lucenefiles && \
+    chown -R 65532:65532 /usr/local/tomcat/data/hapi/lucenefiles && \
     chmod 775 /usr/local/tomcat/data/hapi/lucenefiles
 
-RUN mkdir -p /target && chown -R 1001:1001 /target
-USER 1001
+RUN mkdir -p /target && chown -R 65532:65532 /target
+USER 65532
 
-COPY --chown=1001:1001 catalina.properties /usr/local/tomcat/conf/catalina.properties
-COPY --chown=1001:1001 server.xml /usr/local/tomcat/conf/server.xml
-COPY --from=build-hapi --chown=1001:1001 /tmp/hapi-fhir-jpaserver-starter/target/ROOT.war /usr/local/tomcat/webapps/ROOT.war
-COPY --from=build-hapi --chown=1001:1001 /tmp/hapi-fhir-jpaserver-starter/opentelemetry-javaagent.jar /app
-
+COPY --chown=65532:65532 catalina.properties /usr/local/tomcat/conf/catalina.properties
+COPY --chown=65532:65532 server.xml /usr/local/tomcat/conf/server.xml
+COPY --from=build-hapi --chown=65532:65532 /tmp/hapi-fhir-jpaserver-starter/target/ROOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build-hapi --chown=65532:65532 /tmp/hapi-fhir-jpaserver-starter/opentelemetry-javaagent.jar /app
 
 ########### distroless brings focus on security and runs on plain spring boot - this is the default image
-FROM gcr.io/distroless/java17-debian12:nonroot AS default
+FROM gcr.io/distroless/java21-debian13:nonroot AS default
 # 65532 is the nonroot user's uid
 # used here instead of the name to allow Kubernetes to easily detect that the container
 # is running as a non-root (uid != 0) user.

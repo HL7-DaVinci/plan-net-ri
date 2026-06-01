@@ -2,7 +2,6 @@ package ca.uhn.fhir.jpa.starter.cdshooks;
 
 import ca.uhn.fhir.jpa.starter.AppProperties;
 import ca.uhn.fhir.rest.api.server.cdshooks.CdsServiceRequestJson;
-import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import ca.uhn.hapi.fhir.cdshooks.api.ICdsServiceRegistry;
 import ca.uhn.hapi.fhir.cdshooks.api.json.CdsServiceResponseJson;
@@ -22,6 +21,7 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.io.IOException;
+import java.io.Serial;
 import java.util.stream.Collectors;
 
 import static org.opencds.cqf.fhir.cr.hapi.config.test.TestCdsHooksConfig.CDS_HOOKS_OBJECT_MAPPER_FACTORY;
@@ -29,6 +29,8 @@ import static org.opencds.cqf.fhir.cr.hapi.config.test.TestCdsHooksConfig.CDS_HO
 @Configurable
 public class CdsHooksServlet extends HttpServlet {
 	private static final Logger logger = LoggerFactory.getLogger(CdsHooksServlet.class);
+
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 	@Autowired
@@ -39,9 +41,6 @@ public class CdsHooksServlet extends HttpServlet {
 
 	@Autowired
 	ICdsServiceRegistry cdsServiceRegistry;
-
-	@Autowired
-	RestfulServer restfulServer;
 
 	@Autowired
 	@Qualifier(CDS_HOOKS_OBJECT_MAPPER_FACTORY)

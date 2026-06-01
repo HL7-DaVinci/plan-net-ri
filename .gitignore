@@ -167,6 +167,7 @@ Temporary Items
 
 # Helm Chart dependencies
 **/charts/*.tgz
+.claude
 
 .nx/
 node_modules/
