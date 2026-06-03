@@ -1,5 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { FileJson, FlameIcon, LayoutDashboard, Radar } from "lucide-react";
+import {
+  CalendarClock,
+  FileJson,
+  FlameIcon,
+  LayoutDashboard,
+  Radar,
+} from "lucide-react";
 import type * as React from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
@@ -35,6 +41,11 @@ const data = {
           title: "Directory Crawler",
           url: "/directory-crawler",
           icon: Radar,
+        },
+        {
+          title: "Crawl Jobs",
+          url: "/crawl-jobs",
+          icon: CalendarClock,
         },
       ],
     },

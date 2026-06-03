@@ -11,6 +11,7 @@ export interface CdsServer {
 interface AppConfig {
   fhirServers?: FhirServer[];
   cdsServers?: CdsServer[];
+  apiBaseUrl?: string;
 }
 
 declare global {
@@ -83,4 +84,19 @@ export function setStoredServerUrl(url: string): void {
 
 export function getServerByUrl(url: string): FhirServer | undefined {
   return FHIR_SERVERS.find((server) => server.url === url);
+}
+
+/**
+ * Base URL of the Directory Crawler API. Uses the configured override if present,
+ * otherwise derives it from the selected FHIR server origin (strips a trailing /fhir).
+ */
+export function getApiBaseUrl(): string {
+  const configured =
+    window?.APP_CONFIG?.apiBaseUrl ?? import.meta.env.VITE_API_BASE_URL;
+  if (configured && typeof configured === "string") {
+    return configured.replace(/\/+$/, "");
+  }
+  return getStoredServerUrl()
+    .replace(/\/fhir\/?$/, "")
+    .replace(/\/+$/, "");
 }

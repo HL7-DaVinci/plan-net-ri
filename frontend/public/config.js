@@ -9,4 +9,6 @@
 //     { name: "Public HAPI R4", url: "https://hapi.fhir.org/baseR4" },
 //   ],
 //   singleServerMode: true,
+//   // Base URL of the Directory Crawler API (defaults to the FHIR server origin).
+//   apiBaseUrl: "http://localhost:8080",
 // };

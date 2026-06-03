@@ -1,6 +1,7 @@
 import { useNavigate } from "@tanstack/react-router";
 import { Command } from "cmdk";
 import {
+  CalendarClock,
   FileJson,
   LayoutDashboard,
   Moon,
@@ -59,6 +60,8 @@ export function CommandPalette({
         navigate({ to: "/resources", search: {} });
       } else if (value === "directory-crawler") {
         navigate({ to: "/directory-crawler" });
+      } else if (value === "crawl-jobs") {
+        navigate({ to: "/crawl-jobs" });
       } else if (value === "settings") {
         onOpenSettings?.();
       } else if (value === "theme-light") {
@@ -129,6 +132,14 @@ export function CommandPalette({
               >
                 <Radar className="h-4 w-4 text-muted-foreground" />
                 <span>Directory Crawler</span>
+              </Command.Item>
+              <Command.Item
+                value="crawl-jobs"
+                onSelect={handleSelect}
+                className="flex items-center gap-3 px-2 py-1.5 text-sm rounded-md cursor-pointer aria-selected:bg-accent aria-selected:text-accent-foreground"
+              >
+                <CalendarClock className="h-4 w-4 text-muted-foreground" />
+                <span>Crawl Jobs</span>
               </Command.Item>
               <Command.Item
                 value="settings"

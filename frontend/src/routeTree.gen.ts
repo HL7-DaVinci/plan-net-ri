@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ResourcesIndexRouteImport } from './routes/resources/index'
 import { Route as DirectoryCrawlerIndexRouteImport } from './routes/directory-crawler/index'
+import { Route as CrawlJobsIndexRouteImport } from './routes/crawl-jobs/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,33 +29,42 @@ const DirectoryCrawlerIndexRoute = DirectoryCrawlerIndexRouteImport.update({
   path: '/directory-crawler/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CrawlJobsIndexRoute = CrawlJobsIndexRouteImport.update({
+  id: '/crawl-jobs/',
+  path: '/crawl-jobs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/crawl-jobs/': typeof CrawlJobsIndexRoute
   '/directory-crawler/': typeof DirectoryCrawlerIndexRoute
   '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/crawl-jobs': typeof CrawlJobsIndexRoute
   '/directory-crawler': typeof DirectoryCrawlerIndexRoute
   '/resources': typeof ResourcesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/crawl-jobs/': typeof CrawlJobsIndexRoute
   '/directory-crawler/': typeof DirectoryCrawlerIndexRoute
   '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/directory-crawler/' | '/resources/'
+  fullPaths: '/' | '/crawl-jobs/' | '/directory-crawler/' | '/resources/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/directory-crawler' | '/resources'
-  id: '__root__' | '/' | '/directory-crawler/' | '/resources/'
+  to: '/' | '/crawl-jobs' | '/directory-crawler' | '/resources'
+  id: '__root__' | '/' | '/crawl-jobs/' | '/directory-crawler/' | '/resources/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CrawlJobsIndexRoute: typeof CrawlJobsIndexRoute
   DirectoryCrawlerIndexRoute: typeof DirectoryCrawlerIndexRoute
   ResourcesIndexRoute: typeof ResourcesIndexRoute
 }
@@ -82,11 +92,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DirectoryCrawlerIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/crawl-jobs/': {
+      id: '/crawl-jobs/'
+      path: '/crawl-jobs'
+      fullPath: '/crawl-jobs/'
+      preLoaderRoute: typeof CrawlJobsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CrawlJobsIndexRoute: CrawlJobsIndexRoute,
   DirectoryCrawlerIndexRoute: DirectoryCrawlerIndexRoute,
   ResourcesIndexRoute: ResourcesIndexRoute,
 }

@@ -106,8 +106,8 @@ spring:
     fail-on-missing-locations: false
 
   datasource:
-    # url: "jdbc:h2:file:./target/database/h2"
-    url: jdbc:h2:mem:test_mem
+    url: "jdbc:h2:file:./target/database/h2"
+    # url: jdbc:h2:mem:test_mem
     username: sa
     password: null
     driver-class-name: org.h2.Driver
@@ -434,7 +434,7 @@ hapi:
     # -------------------------------------------------------------------------------
     # comma-separated package names, will be @ComponentScan'ed by Spring to allow for creating custom Spring beans
 
-    # custom-bean-packages:
+    custom-bean-packages: org.hl7.davinci
     # custom-interceptor-classes:
     # custom-provider-classes:
     
@@ -516,3 +516,15 @@ hapi:
         server_address: 'http://localhost:8080/fhir'
         refuse_to_fetch_third_party_urls: false
         fhir_version: R4
+
+# Directory Crawler API service (scheduled crawls + served manifests).
+# Bound to ApiProperties. The crawler uses its own isolated persistence unit
+# (CRAWLER_PU) over the same datasource as HAPI.
+api:
+  enabled: true
+  storage-path: ./target/crawler-data
+  poller-interval-ms: 30000
+  page-size: 500
+  request-timeout-ms: 60000
+  retention-per-job: 5
+  # public-base-url: https://directory.example.org   # override for reverse-proxy deployments
