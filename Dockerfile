@@ -40,8 +40,8 @@ RUN mvn -ntp dependency:go-offline
 
 COPY src/ /tmp/hapi-fhir-jpaserver-starter/src/
 
-# Copy frontend build artifacts to server's static resources directory
-COPY --from=build-frontend /app/frontend/dist/ /tmp/hapi-fhir-jpaserver-starter/src/main/resources/static/
+# Copy frontend build artifacts to server's static resources directory under /crawler
+COPY --from=build-frontend /app/frontend/dist/ /tmp/hapi-fhir-jpaserver-starter/src/main/resources/static/crawler/
 
 RUN mvn clean install -DskipTests -Djdk.lang.Process.launchMechanism=vfork
 

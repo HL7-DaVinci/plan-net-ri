@@ -7,7 +7,10 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { fileURLToPath, URL } from "node:url";
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command, isPreview }) => ({
+  // The production build (and `vite preview` of it) is served under /crawler so the
+  // web root is left for the HAPI tester overlay. Dev (`vite`) runs at the root.
+  base: command === "build" || isPreview ? "/crawler/" : "/",
   plugins: [
     devtools(),
     tanstackRouter({
@@ -45,4 +48,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));

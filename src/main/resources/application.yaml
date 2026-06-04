@@ -510,12 +510,12 @@ hapi:
     # -------------------------------------------------------------------------------
     # S. Testers (webui)
     # -------------------------------------------------------------------------------
-    # tester:
-    #   home:
-    #     name: Local Tester
-    #     server_address: 'http://localhost:8080/fhir'
-    #     refuse_to_fetch_third_party_urls: false
-    #     fhir_version: R4
+    tester:
+      home:
+        name: Local Tester
+        server_address: 'http://localhost:8080/fhir'
+        refuse_to_fetch_third_party_urls: false
+        fhir_version: R4
 
 # Directory Crawler API service (scheduled crawls + served manifests).
 # Bound to ApiProperties. The crawler uses its own isolated persistence unit
