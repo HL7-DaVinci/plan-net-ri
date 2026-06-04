@@ -40,6 +40,9 @@ export function PlayByPlay({ batchId }: { batchId: string }) {
 
   return (
     <div className="space-y-1.5">
+      <p className="text-sm text-muted-foreground">
+        View real-time steps for a manually triggered crawl.
+      </p>
       <div className="flex items-center gap-2 text-xs text-muted-foreground">
         {done ? (
           <CheckCircle2 className="h-3.5 w-3.5 text-success" />

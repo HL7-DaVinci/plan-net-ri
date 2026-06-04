@@ -2,17 +2,24 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   BarChart3,
   CalendarClock,
+  ChevronDown,
+  ChevronRight,
   Folders,
   History,
   Radio,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { JobStats } from "@/components/api/job-stats";
 import { JobsPanel } from "@/components/api/jobs-panel";
 import { ManifestBrowser } from "@/components/api/manifest-browser";
 import { PlayByPlay } from "@/components/api/play-by-play";
 import { RunHistory } from "@/components/api/run-history";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 export const Route = createFileRoute("/crawl-jobs/")({
   component: CrawlJobs,
@@ -21,6 +28,12 @@ export const Route = createFileRoute("/crawl-jobs/")({
 function CrawlJobs() {
   const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
   const [liveBatchId, setLiveBatchId] = useState<string | null>(null);
+  const [livePlayOpen, setLivePlayOpen] = useState(true);
+
+  // Re-open the live panel each time a new run starts.
+  useEffect(() => {
+    if (liveBatchId) setLivePlayOpen(true);
+  }, [liveBatchId]);
 
   return (
     <div className="p-6">
@@ -56,15 +69,26 @@ function CrawlJobs() {
 
             {liveBatchId && (
               <Card>
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-base flex items-center gap-2">
-                    <Radio className="h-4 w-4 text-primary" />
-                    Live play-by-play
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <PlayByPlay batchId={liveBatchId} />
-                </CardContent>
+                <Collapsible open={livePlayOpen} onOpenChange={setLivePlayOpen}>
+                  <CardHeader className="pb-3">
+                    <CollapsibleTrigger className="flex w-full cursor-pointer items-center gap-2 text-left">
+                      {livePlayOpen ? (
+                        <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground" />
+                      ) : (
+                        <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" />
+                      )}
+                      <Radio className="h-4 w-4 shrink-0 text-primary" />
+                      <CardTitle className="text-base">
+                        Live play-by-play
+                      </CardTitle>
+                    </CollapsibleTrigger>
+                  </CardHeader>
+                  <CollapsibleContent>
+                    <CardContent>
+                      <PlayByPlay batchId={liveBatchId} />
+                    </CardContent>
+                  </CollapsibleContent>
+                </Collapsible>
               </Card>
             )}
 
