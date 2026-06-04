@@ -40,14 +40,13 @@ interface RunHistoryProps {
 }
 
 export function RunHistory({ jobId }: RunHistoryProps) {
+  return <RunHistoryContent key={jobId ?? "none"} jobId={jobId} />;
+}
+
+function RunHistoryContent({ jobId }: RunHistoryProps) {
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(DEFAULT_PAGE_SIZE);
   const [expandedId, setExpandedId] = useState<string | null>(null);
-
-  // Reset to the first page when the job or page size changes.
-  useEffect(() => {
-    setPage(0);
-  }, [jobId, pageSize]);
 
   const { data, isLoading } = useRuns(jobId ?? undefined, page, pageSize);
 
@@ -159,7 +158,10 @@ export function RunHistory({ jobId }: RunHistoryProps) {
           <span className="text-muted-foreground">Per page</span>
           <Select
             value={String(pageSize)}
-            onValueChange={(v) => setPageSize(Number(v))}
+            onValueChange={(v) => {
+              setPageSize(Number(v));
+              setPage(0);
+            }}
           >
             <SelectTrigger className="h-8 w-[72px] cursor-pointer">
               <SelectValue />

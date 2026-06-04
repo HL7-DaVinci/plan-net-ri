@@ -70,11 +70,11 @@ function DirectoryCrawler() {
         <div className="space-y-1 xl:shrink-0">
           <h1 className="text-xl font-semibold flex items-center gap-2">
             <Radar className="h-5 w-5 text-primary" />
-            Directory Crawler
+            Local Directory Crawler
           </h1>
           <p className="text-sm text-muted-foreground">
-            Keep payer provider directories in sync. Crawl one or more servers,
-            detect updates and deletions, and aggregate it all locally.
+            Crawl one or more servers locally in the browser. Aggregated results
+            are stored in the browser, not published on the server.
           </p>
         </div>
 

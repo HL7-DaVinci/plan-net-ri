@@ -41,11 +41,12 @@ function CrawlJobs() {
         <div className="space-y-1">
           <h1 className="text-xl font-semibold flex items-center gap-2">
             <CalendarClock className="h-5 w-5 text-primary" />
-            Crawl Jobs
+            Server Crawl Jobs
           </h1>
           <p className="text-sm text-muted-foreground">
             Schedule server-side crawls against one or more FHIR servers. Each
-            run retains a directory snapshot and publishes a fetchable manifest.
+            run is stored on the server and published as a manifest.json URL
+            that downstream systems can fetch.
           </p>
         </div>
 

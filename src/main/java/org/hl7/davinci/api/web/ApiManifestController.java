@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.regex.Pattern;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
+import org.springframework.http.ContentDisposition;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -71,7 +73,12 @@ public class ApiManifestController {
 		if (!Files.exists(file)) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "File not found");
 		}
-		return ResponseEntity.ok().contentType(NDJSON).body(new FileSystemResource(file));
+		// Serve inline with the real type name so the browser does not save it as "f.txt".
+		ContentDisposition disposition = ContentDisposition.inline().filename(fileName).build();
+		return ResponseEntity.ok()
+				.contentType(NDJSON)
+				.header(HttpHeaders.CONTENT_DISPOSITION, disposition.toString())
+				.body(new FileSystemResource(file));
 	}
 
 	private ManifestRecord requireManifest(String id) {

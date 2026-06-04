@@ -38,14 +38,14 @@ const data = {
           icon: FileJson,
         },
         {
-          title: "Directory Crawler",
-          url: "/directory-crawler",
-          icon: Radar,
-        },
-        {
-          title: "Crawl Jobs",
+          title: "Server Crawl Jobs",
           url: "/crawl-jobs",
           icon: CalendarClock,
+        },
+        {
+          title: "Local Directory Crawler",
+          url: "/directory-crawler",
+          icon: Radar,
         },
       ],
     },

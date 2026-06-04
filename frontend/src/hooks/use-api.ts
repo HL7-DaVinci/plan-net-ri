@@ -28,11 +28,7 @@ export function useJobs() {
   });
 }
 
-export function useRuns(
-  jobId: string | undefined,
-  page: number,
-  size: number,
-) {
+export function useRuns(jobId: string | undefined, page: number, size: number) {
   return useQuery({
     queryKey: ["api", "runs", jobId, page, size],
     queryFn: () => api.listRuns(jobId as string, page, size),

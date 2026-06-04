@@ -1,3 +1,33 @@
+
+##########################################################################
+# Stage 1: Build the TanStack SPA frontend
+##########################################################################
+FROM oven/bun:1-slim AS build-frontend
+
+WORKDIR /app
+
+# Copy workspace package files and lockfile
+COPY package.json bun.lock ./
+COPY frontend/package.json ./frontend/
+
+# Install dependencies
+RUN bun install --frozen-lockfile
+
+COPY frontend/index.html ./frontend/
+COPY frontend/tsconfig.json ./frontend/
+COPY frontend/tsconfig.build.json ./frontend/
+COPY frontend/vite.config.ts ./frontend/
+COPY frontend/public/ ./frontend/public/
+COPY frontend/src/ ./frontend/src/
+
+# Build the frontend for production
+WORKDIR /app/frontend
+RUN bun run build
+
+
+##########################################################################
+# Stage 2: Build the HAPI FHIR Server
+##########################################################################
 FROM docker.io/library/maven:3.9.12-eclipse-temurin-17 AS build-hapi
 WORKDIR /tmp/hapi-fhir-jpaserver-starter
 
@@ -9,8 +39,16 @@ COPY server.xml .
 RUN mvn -ntp dependency:go-offline
 
 COPY src/ /tmp/hapi-fhir-jpaserver-starter/src/
+
+# Copy frontend build artifacts to server's static resources directory
+COPY --from=build-frontend /app/frontend/dist/ /tmp/hapi-fhir-jpaserver-starter/src/main/resources/static/
+
 RUN mvn clean install -DskipTests -Djdk.lang.Process.launchMechanism=vfork
 
+
+##########################################################################
+# Stage 3: Package for Spring Boot
+##########################################################################
 FROM build-hapi AS build-distroless
 RUN mvn package -DskipTests spring-boot:repackage -Pboot
 RUN mkdir /app && cp /tmp/hapi-fhir-jpaserver-starter/target/ROOT.war /app/main.war
@@ -19,25 +57,9 @@ COPY src/main/java/HealthCheck.java /app/HealthCheck.java
 RUN javac /app/HealthCheck.java
 
 
-########### Use the official Tomcat image as base image for the Tomcat variant
-########### it can be built using eg. `docker build --target tomcat .`
-FROM docker.io/library/tomcat:10-jre21-temurin-noble AS tomcat
-
-USER root
-RUN rm -rf /usr/local/tomcat/webapps/ROOT && \
-    mkdir -p /usr/local/tomcat/data/hapi/lucenefiles && \
-    chown -R 65532:65532 /usr/local/tomcat/data/hapi/lucenefiles && \
-    chmod 775 /usr/local/tomcat/data/hapi/lucenefiles
-
-RUN mkdir -p /target && chown -R 65532:65532 /target
-USER 65532
-
-COPY --chown=65532:65532 catalina.properties /usr/local/tomcat/conf/catalina.properties
-COPY --chown=65532:65532 server.xml /usr/local/tomcat/conf/server.xml
-COPY --from=build-hapi --chown=65532:65532 /tmp/hapi-fhir-jpaserver-starter/target/ROOT.war /usr/local/tomcat/webapps/ROOT.war
-COPY --from=build-hapi --chown=65532:65532 /tmp/hapi-fhir-jpaserver-starter/opentelemetry-javaagent.jar /app
-
-########### distroless brings focus on security and runs on plain spring boot - this is the default image
+##########################################################################
+# Stage 4: Final Production Image (Distroless)
+##########################################################################
 FROM gcr.io/distroless/java21-debian13:nonroot AS default
 # 65532 is the nonroot user's uid
 # used here instead of the name to allow Kubernetes to easily detect that the container

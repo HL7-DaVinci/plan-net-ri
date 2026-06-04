@@ -44,6 +44,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.http.ContentDisposition;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -192,6 +193,13 @@ class DirectoryCrawlerSelfCrawlIT {
 		ResponseEntity<String> ndjson = rest.getForEntity(fileUrl, String.class);
 		assertEquals(HttpStatus.OK, ndjson.getStatusCode());
 		assertFalse(ndjson.getBody().isBlank(), "served NDJSON should not be empty");
+
+		ContentDisposition disposition = ndjson.getHeaders().getContentDisposition();
+		assertTrue(disposition.isInline(), "NDJSON should be served inline, not as a generic attachment");
+		assertEquals(
+				fileUrl.substring(fileUrl.lastIndexOf('/') + 1),
+				disposition.getFilename(),
+				"download filename should match the URL file name (e.g. Endpoint.ndjson), not f.txt");
 
 		JobStatsResponse stats =
 				rest.getForObject(origin + "/api/jobs/self-crawl/stats", JobStatsResponse.class);

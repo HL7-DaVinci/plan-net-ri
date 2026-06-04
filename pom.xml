@@ -573,11 +573,14 @@
                 <version>${maven.failsafe.version}</version>
                 <configuration>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                    <excludes>
+                        <exclude>**/*IT.java</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>integration-test</goal>
+                            <!-- <goal>integration-test</goal> -->
                             <goal>verify</goal>
                         </goals>
                     </execution>

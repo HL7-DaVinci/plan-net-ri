@@ -27,6 +27,7 @@ import type {
   JobResponse,
   ServerScope,
 } from "@/lib/api/types";
+import { getStoredServerUrl } from "@/lib/fhir-config";
 
 const STRATEGY_LABELS: Record<CrawlStrategy, string> = {
   SEARCH: "Incremental search",
@@ -101,7 +102,9 @@ export function JobsPanel({
 
   const [form, setForm] = useState<FormState | null>(null);
 
-  const startCreate = () => setForm({ ...EMPTY_FORM });
+  // Pre-fill with the configured FHIR server so a new job is ready to run as-is.
+  const startCreate = () =>
+    setForm({ ...EMPTY_FORM, serversText: getStoredServerUrl() });
   const startEdit = (job: JobResponse) =>
     setForm({
       id: job.id,
@@ -289,16 +292,18 @@ export function JobsPanel({
       ) : (
         <div className="space-y-2">
           {jobs.map((job) => (
-            <button
+            <div
               key={job.id}
-              type="button"
-              onClick={() => onSelectJob(job.id)}
-              className={`w-full cursor-pointer rounded-lg border p-3 text-left transition-colors hover:bg-accent/50 ${
+              className={`rounded-lg border transition-colors hover:bg-accent/50 ${
                 selectedJobId === job.id ? "border-primary bg-accent/40" : ""
               }`}
             >
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0 space-y-1">
+              <div className="flex items-start justify-between gap-3 p-3">
+                <button
+                  type="button"
+                  onClick={() => onSelectJob(job.id)}
+                  className="min-w-0 flex-1 cursor-pointer space-y-1 text-left"
+                >
                   <div className="flex items-center gap-2">
                     <span className="font-medium truncate">{job.name}</span>
                     {job.running && (
@@ -323,7 +328,7 @@ export function JobsPanel({
                       <span>cron: {job.cronExpression}</span>
                     )}
                   </div>
-                </div>
+                </button>
                 <div className="flex shrink-0 items-center gap-1">
                   <Button
                     variant="ghost"
@@ -366,7 +371,7 @@ export function JobsPanel({
                   </Button>
                 </div>
               </div>
-            </button>
+            </div>
           ))}
         </div>
       )}
