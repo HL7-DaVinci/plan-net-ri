@@ -423,6 +423,22 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(7, defaulted.runs().size());
 	}
 
+	@Test
+	void servesDynamicConfigJsOverridingStaticFile() {
+		String origin = "http://localhost:" + port;
+		ResponseEntity<String> response = rest.getForEntity(origin + "/crawler/config.js", String.class);
+
+		assertEquals(HttpStatus.OK, response.getStatusCode());
+		assertTrue(
+				response.getHeaders().getContentType().toString().startsWith("application/javascript"),
+				"config.js should be served as javascript");
+		assertNotNull(response.getBody());
+		assertTrue(
+				response.getBody().trim().startsWith("window.APP_CONFIG ="),
+				"the controller should serve the generated config, not the static placeholder");
+		assertTrue(response.getBody().contains("\"apiBaseUrl\""), "config should include apiBaseUrl");
+	}
+
 	/** Run a full crawl and return the set of fetched resource identities (Type/id) for that server. */
 	private Set<String> runFullStrategy(String jobId, CrawlStrategy strategy, String base) {
 		CrawlJob job = new CrawlJob();

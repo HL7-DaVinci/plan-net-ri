@@ -93,7 +93,7 @@ export function getServerByUrl(url: string): FhirServer | undefined {
 export function getApiBaseUrl(): string {
   const configured =
     window?.APP_CONFIG?.apiBaseUrl ?? import.meta.env.VITE_API_BASE_URL;
-  if (configured && typeof configured === "string") {
+  if (typeof configured === "string") {
     return configured.replace(/\/+$/, "");
   }
   return getStoredServerUrl()
