@@ -54,6 +54,10 @@ export const api = {
     request<void>(`/api/jobs/${id}`, { method: "DELETE" }),
   runJob: (id: string) =>
     request<RunTriggerResponse>(`/api/jobs/${id}/run`, { method: "POST" }),
+  pauseJob: (id: string) =>
+    request<JobResponse>(`/api/jobs/${id}/pause`, { method: "POST" }),
+  resumeJob: (id: string) =>
+    request<JobResponse>(`/api/jobs/${id}/resume`, { method: "POST" }),
   listRuns: (jobId: string, page = 0, size = 25) =>
     request<RunPage>(
       `/api/runs?jobId=${encodeURIComponent(jobId)}&page=${page}&size=${size}`,

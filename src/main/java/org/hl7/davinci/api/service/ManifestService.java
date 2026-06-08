@@ -20,6 +20,8 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Stream;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.support.TransactionSynchronization;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 /** Creates retained snapshots and renders the served manifest. */
 @Service
@@ -61,6 +63,39 @@ public class ManifestService {
 		ManifestRecord saved = manifestRepo.save(manifest);
 		pruneOldManifests(job.getId());
 		return saved;
+	}
+
+	/** Delete every retained snapshot for a job: its NDJSON files and rows. Returns the count removed. */
+	public int deleteManifestsForJob(String jobId) {
+		List<ManifestRecord> manifests = manifestRepo.findByJobIdOrderByGeneratedAtDescIdDesc(jobId);
+		List<String> storageDirs = new ArrayList<>();
+		for (ManifestRecord manifest : manifests) {
+			storageDirs.add(manifest.getStorageDir());
+			manifestRepo.delete(manifest);
+		}
+		deleteDirectoriesAfterCommit(storageDirs);
+		return manifests.size();
+	}
+
+	/**
+	 * Remove snapshot directories only once the surrounding transaction commits, so a rollback
+	 * partway through a cascading delete cannot strand on-disk files whose rows were restored.
+	 * Outside a transaction (a direct call) the cleanup runs immediately.
+	 */
+	private void deleteDirectoriesAfterCommit(List<String> storageDirs) {
+		if (storageDirs.isEmpty()) {
+			return;
+		}
+		if (TransactionSynchronizationManager.isSynchronizationActive()) {
+			TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronization() {
+				@Override
+				public void afterCommit() {
+					storageDirs.forEach(ManifestService.this::deleteDirectory);
+				}
+			});
+		} else {
+			storageDirs.forEach(this::deleteDirectory);
+		}
 	}
 
 	/** Delete a manifest on demand: remove its NDJSON files and row. Returns false if not found. */

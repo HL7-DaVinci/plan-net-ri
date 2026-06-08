@@ -1,9 +1,26 @@
-import { Loader2, Pencil, Play, Plus, Trash2, X } from "lucide-react";
+import {
+  CirclePlay,
+  Loader2,
+  Pause,
+  Pencil,
+  Play,
+  Plus,
+  Trash2,
+  X,
+} from "lucide-react";
 import { useState } from "react";
 import { StrategyInfo } from "@/components/api/strategy-info";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -18,6 +35,8 @@ import {
   useCreateJob,
   useDeleteJob,
   useJobs,
+  usePauseJob,
+  useResumeJob,
   useRunJob,
   useUpdateJob,
 } from "@/hooks/use-api";
@@ -99,8 +118,11 @@ export function JobsPanel({
   const updateJob = useUpdateJob();
   const deleteJob = useDeleteJob();
   const runJob = useRunJob();
+  const pauseJob = usePauseJob();
+  const resumeJob = useResumeJob();
 
   const [form, setForm] = useState<FormState | null>(null);
+  const [jobToDelete, setJobToDelete] = useState<JobResponse | null>(null);
 
   // Pre-fill with the configured FHIR server so a new job is ready to run as-is.
   const startCreate = () =>
@@ -137,6 +159,12 @@ export function JobsPanel({
   };
 
   const saving = createJob.isPending || updateJob.isPending;
+
+  // Resolve against the live list so a job that started running after the dialog
+  // opened is reflected here, not the stale snapshot captured on click.
+  const pendingDeleteJob = jobToDelete
+    ? (jobs?.find((j) => j.id === jobToDelete.id) ?? jobToDelete)
+    : null;
 
   return (
     <div className="space-y-4">
@@ -312,9 +340,7 @@ export function JobsPanel({
                         running
                       </Badge>
                     )}
-                    {!job.enabled && (
-                      <Badge variant="secondary">disabled</Badge>
-                    )}
+                    {!job.enabled && <Badge variant="secondary">paused</Badge>}
                   </div>
                   <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                     <Badge variant="outline">
@@ -345,6 +371,35 @@ export function JobsPanel({
                   >
                     <Play className="h-4 w-4" />
                   </Button>
+                  {job.enabled ? (
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      title="Pause schedule"
+                      disabled={pauseJob.isPending}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        pauseJob.mutate(job.id);
+                      }}
+                      className="cursor-pointer"
+                    >
+                      <Pause className="h-4 w-4" />
+                    </Button>
+                  ) : (
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      title="Resume schedule"
+                      disabled={resumeJob.isPending}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        resumeJob.mutate(job.id);
+                      }}
+                      className="cursor-pointer"
+                    >
+                      <CirclePlay className="h-4 w-4" />
+                    </Button>
+                  )}
                   <Button
                     variant="ghost"
                     size="icon"
@@ -360,10 +415,15 @@ export function JobsPanel({
                   <Button
                     variant="ghost"
                     size="icon"
-                    title="Delete"
+                    title={
+                      job.running
+                        ? "Stop the running crawl before deleting"
+                        : "Delete"
+                    }
+                    disabled={job.running}
                     onClick={(e) => {
                       e.stopPropagation();
-                      deleteJob.mutate(job.id);
+                      setJobToDelete(job);
                     }}
                     className="cursor-pointer text-destructive"
                   >
@@ -375,6 +435,57 @@ export function JobsPanel({
           ))}
         </div>
       )}
+
+      <Dialog
+        open={jobToDelete !== null}
+        onOpenChange={(open) => {
+          if (!open) setJobToDelete(null);
+        }}
+      >
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Delete this crawl job?</DialogTitle>
+            <DialogDescription>
+              This permanently removes{" "}
+              <span className="font-medium text-foreground">
+                {pendingDeleteJob?.name}
+              </span>{" "}
+              along with all of its run history and published manifests. This
+              cannot be undone.
+            </DialogDescription>
+          </DialogHeader>
+          {pendingDeleteJob?.running && (
+            <p className="text-sm text-destructive">
+              This job is currently running. Stop the crawl before deleting it.
+            </p>
+          )}
+          <DialogFooter>
+            <Button
+              variant="outline"
+              onClick={() => setJobToDelete(null)}
+              className="cursor-pointer"
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="destructive"
+              disabled={deleteJob.isPending || pendingDeleteJob?.running}
+              onClick={() => {
+                if (!pendingDeleteJob) return;
+                deleteJob.mutate(pendingDeleteJob.id, {
+                  onSuccess: () => setJobToDelete(null),
+                });
+              }}
+              className="cursor-pointer"
+            >
+              {deleteJob.isPending && (
+                <Loader2 className="h-4 w-4 mr-1 animate-spin" />
+              )}
+              Delete job
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

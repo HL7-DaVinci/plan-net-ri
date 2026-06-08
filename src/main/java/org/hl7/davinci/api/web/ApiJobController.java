@@ -15,6 +15,7 @@ import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.CronSupport;
 import org.hl7.davinci.api.service.JobAlreadyRunningException;
+import org.hl7.davinci.api.service.JobDeletionService;
 import org.hl7.davinci.api.service.ServerScope;
 import org.hl7.davinci.api.service.StatsService;
 import java.time.Instant;
@@ -45,18 +46,21 @@ public class ApiJobController {
 	private final CrawlService crawlService;
 	private final StatsService statsService;
 	private final ObjectMapper objectMapper;
+	private final JobDeletionService jobDeletionService;
 
 	public ApiJobController(
 			CrawlJobRepository jobRepo,
 			CrawlRunRepository runRepo,
 			CrawlService crawlService,
 			StatsService statsService,
-			ObjectMapper objectMapper) {
+			ObjectMapper objectMapper,
+			JobDeletionService jobDeletionService) {
 		this.jobRepo = jobRepo;
 		this.runRepo = runRepo;
 		this.crawlService = crawlService;
 		this.statsService = statsService;
 		this.objectMapper = objectMapper;
+		this.jobDeletionService = jobDeletionService;
 	}
 
 	@GetMapping("/jobs")
@@ -89,8 +93,10 @@ public class ApiJobController {
 
 	@DeleteMapping("/jobs/{id}")
 	public ResponseEntity<Void> delete(@PathVariable("id") String id) {
-		if (jobRepo.existsById(id)) {
-			jobRepo.deleteById(id);
+		try {
+			jobDeletionService.deleteJob(id);
+		} catch (JobAlreadyRunningException e) {
+			throw new ResponseStatusException(HttpStatus.CONFLICT, e.getMessage());
 		}
 		return ResponseEntity.noContent().build();
 	}
@@ -103,6 +109,21 @@ public class ApiJobController {
 		} catch (JobAlreadyRunningException e) {
 			throw new ResponseStatusException(HttpStatus.CONFLICT, e.getMessage());
 		}
+	}
+
+	@PostMapping("/jobs/{id}/pause")
+	public JobResponse pause(@PathVariable("id") String id) {
+		CrawlJob job = requireJob(id);
+		job.setEnabled(false);
+		return toResponse(jobRepo.save(job));
+	}
+
+	@PostMapping("/jobs/{id}/resume")
+	public JobResponse resume(@PathVariable("id") String id) {
+		CrawlJob job = requireJob(id);
+		job.setEnabled(true);
+		job.setNextRunAt(CronSupport.nextRun(job.getCronExpression()));
+		return toResponse(jobRepo.save(job));
 	}
 
 	@GetMapping("/runs")

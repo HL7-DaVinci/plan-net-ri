@@ -102,10 +102,42 @@ export function useDeleteJob() {
     mutationFn: (id: string) => api.deleteJob(id),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: JOBS_KEY });
+      queryClient.invalidateQueries({ queryKey: MANIFESTS_KEY });
       toast.success("Crawl job deleted");
     },
+    onError: (error) => {
+      if (error instanceof ApiError && error.status === 409) {
+        toast.info("Can't delete a job while a crawl is running");
+        return;
+      }
+      toast.error("Delete failed", { description: describe(error) });
+    },
+  });
+}
+
+export function usePauseJob() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (id: string) => api.pauseJob(id),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: JOBS_KEY });
+      toast.success("Job paused");
+    },
     onError: (error) =>
-      toast.error("Delete failed", { description: describe(error) }),
+      toast.error("Pause failed", { description: describe(error) }),
+  });
+}
+
+export function useResumeJob() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (id: string) => api.resumeJob(id),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: JOBS_KEY });
+      toast.success("Job resumed");
+    },
+    onError: (error) =>
+      toast.error("Resume failed", { description: describe(error) }),
   });
 }
 
