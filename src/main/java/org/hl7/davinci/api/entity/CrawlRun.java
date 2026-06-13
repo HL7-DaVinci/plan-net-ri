@@ -7,9 +7,10 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
 import jakarta.persistence.Table;
-import java.time.Instant;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
+
+import java.time.Instant;
 
 /** One per-server crawl run; runs from one operation share a batchId. */
 @Entity
@@ -49,6 +50,10 @@ public class CrawlRun {
 	private int updated;
 	private int deleted;
 	private long records;
+
+	/** Aggregate resource count for this server after the run was applied. */
+	private Integer totalAfter;
+
 	private long bytes;
 	private int requests;
 	private int pages;
@@ -170,6 +175,14 @@ public class CrawlRun {
 
 	public void setRecords(long records) {
 		this.records = records;
+	}
+
+	public Integer getTotalAfter() {
+		return totalAfter;
+	}
+
+	public void setTotalAfter(Integer totalAfter) {
+		this.totalAfter = totalAfter;
 	}
 
 	public long getBytes() {

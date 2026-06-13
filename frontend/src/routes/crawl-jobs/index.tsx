@@ -20,6 +20,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { useJobs } from "@/hooks/use-api";
 
 export const Route = createFileRoute("/crawl-jobs/")({
   component: CrawlJobs,
@@ -27,13 +28,29 @@ export const Route = createFileRoute("/crawl-jobs/")({
 
 function CrawlJobs() {
   const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
-  const [liveBatchId, setLiveBatchId] = useState<string | null>(null);
   const [livePlayOpen, setLivePlayOpen] = useState(true);
+  const { data: jobs } = useJobs();
+
+  // The live panel follows the selected job and only exists while it is running;
+  // completed runs are reviewed in the run history section instead.
+  const selectedJob = jobs?.find((job) => job.id === selectedJobId);
+  const liveBatchId =
+    (selectedJob?.running ? selectedJob.currentBatchId : null) ?? null;
 
   // Re-open the live panel each time a new run starts.
   useEffect(() => {
     if (liveBatchId) setLivePlayOpen(true);
   }, [liveBatchId]);
+
+  // Surface a run already underway (scheduled, or started before this page
+  // loaded) when the user has not picked a job yet.
+  useEffect(() => {
+    if (selectedJobId) return;
+    const active = jobs?.find((job) => job.running && job.currentBatchId);
+    if (active) {
+      setSelectedJobId(active.id);
+    }
+  }, [jobs, selectedJobId]);
 
   return (
     <div className="p-6">
@@ -63,12 +80,11 @@ function CrawlJobs() {
                 <JobsPanel
                   selectedJobId={selectedJobId}
                   onSelectJob={setSelectedJobId}
-                  onRunTriggered={setLiveBatchId}
                 />
               </CardContent>
             </Card>
 
-            {liveBatchId && (
+            {liveBatchId && selectedJob && (
               <Card>
                 <Collapsible open={livePlayOpen} onOpenChange={setLivePlayOpen}>
                   <CardHeader className="pb-3">
@@ -80,13 +96,16 @@ function CrawlJobs() {
                       )}
                       <Radio className="h-4 w-4 shrink-0 text-primary" />
                       <CardTitle className="text-base">
-                        Live play-by-play
+                        Live play-by-play: {selectedJob.name}
                       </CardTitle>
                     </CollapsibleTrigger>
                   </CardHeader>
                   <CollapsibleContent>
                     <CardContent>
-                      <PlayByPlay batchId={liveBatchId} />
+                      <PlayByPlay
+                        batchId={liveBatchId}
+                        jobName={selectedJob.name}
+                      />
                     </CardContent>
                   </CollapsibleContent>
                 </Collapsible>

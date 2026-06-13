@@ -8,7 +8,7 @@ The server is based on the [HAPI FHIR JPA Server Starter](https://github.com/hap
 
 The server is publicly hosted in the HL7 Foundry.
 
-- Server base:https://plan-net-ri.davinci.hl7.org 
+- Server base:https://plan-net-ri.davinci.hl7.org
 - FHIR base: https://plan-net-ri.davinci.hl7.org/fhir
 - Directory crawler: https://plan-net-ri.davinci.hl7.org/crawler
 
@@ -121,7 +121,8 @@ API_PUBLIC_BASE_URL=https://plan-net-ri.davinci.hl7.org
 | `API_STORAGE_PATH` | `./target/crawler-data` | Directory where per-manifest NDJSON snapshots are written. |
 | `API_POLLER_INTERVAL_MS` | `30000` | How often the scheduler checks for due jobs. |
 | `API_PAGE_SIZE` | `500` | Page size used when fetching from FHIR servers. |
-| `API_REQUEST_TIMEOUT_MS` | `60000` | Per-request HTTP timeout for crawls. |
+| `API_REQUEST_TIMEOUT_MS` | `180000` | Per-request HTTP timeout for crawls. |
+| `API_PAGE_DELAY_MS` | `0` | Pause between page fetches against a crawled server. |
 | `API_RETENTION_PER_JOB` | `5` | Manifests retained per job (`0` = unlimited). |
 | `API_PUBLIC_BASE_URL` | unset | Public base URL used for manifest `output[].url`. The inbound request URL is used when unset. |
 

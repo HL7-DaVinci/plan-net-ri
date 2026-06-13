@@ -5,9 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
 import jakarta.persistence.Table;
-import java.time.Instant;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
+
+import java.time.Instant;
 
 /** One recorded step of a crawl operation, for the play-by-play timeline and live stream. */
 @Entity
@@ -47,6 +48,11 @@ public class CrawlStep {
 	private Long bytes;
 
 	private Integer count;
+
+	/** Raw response body of a failed request, retained for diagnosis. */
+	@JdbcTypeCode(SqlTypes.LONGVARCHAR)
+	@Column(name = "error_body")
+	private String errorBody;
 
 	private Instant at;
 
@@ -152,6 +158,14 @@ public class CrawlStep {
 
 	public void setCount(Integer count) {
 		this.count = count;
+	}
+
+	public String getErrorBody() {
+		return errorBody;
+	}
+
+	public void setErrorBody(String errorBody) {
+		this.errorBody = errorBody;
 	}
 
 	public Instant getAt() {

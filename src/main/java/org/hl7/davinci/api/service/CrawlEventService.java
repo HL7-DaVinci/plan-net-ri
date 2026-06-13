@@ -3,6 +3,9 @@ package org.hl7.davinci.api.service;
 import org.hl7.davinci.api.entity.CrawlStep;
 import org.hl7.davinci.api.model.CrawlStepResponse;
 import org.hl7.davinci.api.repository.CrawlStepRepository;
+import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
+
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
@@ -10,8 +13,6 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 /**
  * Records crawl steps (for the play-by-play timeline) and broadcasts them to live SSE
@@ -26,6 +27,9 @@ public class CrawlEventService {
 	private final Map<String, List<SseEmitter>> emitters = new ConcurrentHashMap<>();
 	private final Set<String> activeBatches = ConcurrentHashMap.newKeySet();
 
+	/** The latest transient progress marker per active batch, replayed to late subscribers. */
+	private final Map<String, CrawlStepResponse> lastProgress = new ConcurrentHashMap<>();
+
 	public CrawlEventService(CrawlStepRepository stepRepo) {
 		this.stepRepo = stepRepo;
 	}
@@ -35,8 +39,30 @@ public class CrawlEventService {
 		activeBatches.add(batchId);
 	}
 
-	/** Persist a step and push it to any live subscribers. */
+	/**
+	 * Persist a step and push it to any live subscribers. Transient progress events are
+	 * broadcast only, never persisted, so the recorded timeline stays one row per completed step.
+	 */
 	public void publish(String batchId, String runId, String serverKey, int seq, StepEvent event) {
+		if (event.progress()) {
+			CrawlStepResponse dto = new CrawlStepResponse(
+					seq,
+					event.phase(),
+					event.message(),
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					serverKey,
+					String.valueOf(Instant.now()));
+			lastProgress.put(batchId, dto);
+			broadcast(batchId, "progress", dto);
+			return;
+		}
+
 		CrawlStep step = new CrawlStep();
 		step.setId(UUID.randomUUID().toString());
 		step.setBatchId(batchId);
@@ -51,14 +77,20 @@ public class CrawlEventService {
 		step.setMs(event.ms());
 		step.setBytes(event.bytes());
 		step.setCount(event.count());
+		step.setErrorBody(event.errorBody());
 		step.setAt(Instant.now());
 		stepRepo.save(step);
 
+		// A persisted step means the in-progress operation finished.
+		lastProgress.remove(batchId);
+		broadcast(batchId, "step", toDto(step));
+	}
+
+	private void broadcast(String batchId, String name, CrawlStepResponse dto) {
 		List<SseEmitter> subscribers = emitters.get(batchId);
 		if (subscribers != null) {
-			CrawlStepResponse dto = toDto(step);
 			for (SseEmitter emitter : subscribers) {
-				trySend(batchId, emitter, dto);
+				trySend(batchId, emitter, name, dto);
 			}
 		}
 	}
@@ -66,6 +98,7 @@ public class CrawlEventService {
 	/** Close the operation: notify and complete any live subscribers. */
 	public void complete(String batchId) {
 		activeBatches.remove(batchId);
+		lastProgress.remove(batchId);
 		List<SseEmitter> subscribers = emitters.remove(batchId);
 		if (subscribers != null) {
 			for (SseEmitter emitter : subscribers) {
@@ -77,7 +110,9 @@ public class CrawlEventService {
 
 	/** The recorded steps for a batch, oldest first. */
 	public List<CrawlStepResponse> steps(String batchId) {
-		return stepRepo.findByBatchIdOrderBySeqAsc(batchId).stream().map(this::toDto).toList();
+		return stepRepo.findByBatchIdOrderBySeqAsc(batchId).stream()
+				.map(this::toDto)
+				.toList();
 	}
 
 	/** Subscribe to a batch: replay recorded steps, then stream live ones (or close if finished). */
@@ -86,6 +121,11 @@ public class CrawlEventService {
 		try {
 			for (CrawlStep step : stepRepo.findByBatchIdOrderBySeqAsc(batchId)) {
 				emitter.send(SseEmitter.event().name("step").data(toDto(step)));
+			}
+			// Show a late subscriber what is currently executing (e.g. a slow page fetch).
+			CrawlStepResponse current = lastProgress.get(batchId);
+			if (current != null) {
+				emitter.send(SseEmitter.event().name("progress").data(current));
 			}
 		} catch (Exception e) {
 			emitter.completeWithError(e);
@@ -120,9 +160,9 @@ public class CrawlEventService {
 		}
 	}
 
-	private void trySend(String batchId, SseEmitter emitter, CrawlStepResponse dto) {
+	private void trySend(String batchId, SseEmitter emitter, String name, CrawlStepResponse dto) {
 		try {
-			emitter.send(SseEmitter.event().name("step").data(dto));
+			emitter.send(SseEmitter.event().name(name).data(dto));
 		} catch (Exception e) {
 			remove(batchId, emitter);
 		}
@@ -147,6 +187,7 @@ public class CrawlEventService {
 				s.getMs(),
 				s.getBytes(),
 				s.getCount(),
+				s.getErrorBody(),
 				s.getServerKey(),
 				String.valueOf(s.getAt()));
 	}

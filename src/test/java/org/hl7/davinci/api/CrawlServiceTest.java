@@ -1,8 +1,14 @@
 package org.hl7.davinci.api;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import ca.uhn.fhir.context.FhirContext;
+import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
+import ca.uhn.fhir.rest.server.exceptions.InternalErrorException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlJob;
@@ -16,14 +22,18 @@ import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.service.CrawlEventService;
 import org.hl7.davinci.api.service.CrawlPersistenceService;
 import org.hl7.davinci.api.service.CrawlService;
+import org.hl7.davinci.api.service.JobAlreadyRunningException;
 import org.hl7.davinci.api.service.FetchedResource;
 import org.hl7.davinci.api.service.FhirCrawlClient;
 import org.hl7.davinci.api.service.ManifestService;
 import org.hl7.davinci.api.service.StepEvent;
 import java.lang.reflect.Proxy;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;
 
 class CrawlServiceTest {
@@ -70,13 +80,140 @@ class CrawlServiceTest {
 		assertEquals(0, manifestService.createCalls);
 	}
 
+	@Test
+	void serverErrorsRetainTheResponseBodyOnTheErrorStep() {
+		String body = "{\"resourceType\":\"OperationOutcome\",\"issue\":[]}";
+		InternalErrorException failure = new InternalErrorException("HTTP 500 Internal Server Error");
+		failure.setResponseBody(body);
+		RecordingEvents events = new RecordingEvents();
+		CrawlService service = new CrawlService(
+				new ThrowingFhirCrawlClient(failure),
+				new FakePersistence(),
+				new RecordingManifestService(),
+				events,
+				jobRepo(),
+				runRepo(),
+				new ObjectMapper(),
+				new ApiProperties());
+		CrawlJob job = new CrawlJob();
+		job.setId("err-job");
+		job.setName("Erroring job");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"bad\",\"url\":\"http://bad.example/fhir\"}]");
+
+		List<CrawlRun> runs = service.crawlJob(job, "batch-err");
+
+		assertEquals(RunStatus.ERROR, runs.get(0).getStatus());
+		StepEvent errorStep = events.published.stream()
+				.filter(step -> "ERROR".equals(step.phase()))
+				.findFirst()
+				.orElseThrow();
+		assertEquals(Integer.valueOf(500), errorStep.status(), "the failing status should be on the step");
+		assertEquals(body, errorStep.errorBody(), "the raw response body should be on the step");
+
+		List<Integer> contiguous = new ArrayList<>();
+		for (int i = 1; i <= events.persistedSeqs.size(); i++) {
+			contiguous.add(i);
+		}
+		assertEquals(
+				contiguous,
+				events.persistedSeqs,
+				"transient progress markers must not consume persisted sequence numbers");
+	}
+
+	@Test
+	void cancelJobStopsTheRunAndSuppressesItsWrites() throws Exception {
+		String server = "http://good.example/fhir";
+		FetchedResource fetched = new FetchedResource(
+				server + "|Organization/a",
+				"Organization",
+				"a",
+				"1",
+				"2026-01-01T00:00:00Z",
+				"{\"resourceType\":\"Organization\",\"id\":\"a\"}",
+				40);
+		CountDownLatch release = new CountDownLatch(1);
+		BlockingFhirCrawlClient client = new BlockingFhirCrawlClient(fetched, release);
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		RecordingManifestService manifestService = new RecordingManifestService();
+		CompletionAwareEvents events = new CompletionAwareEvents();
+		CrawlService service = new CrawlService(
+				client,
+				new FakePersistence(),
+				manifestService,
+				events,
+				idleJobRepo(),
+				recordingRunRepo(savedRuns),
+				new ObjectMapper(),
+				new ApiProperties());
+		CrawlJob job = new CrawlJob();
+		job.setId("cancel-job");
+		job.setName("Cancelled job");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"good\",\"url\":\"" + server + "\"}]");
+
+		service.triggerAsync(job);
+		assertNotNull(service.getActiveBatchId("cancel-job"));
+		assertTrue(client.entered.await(5, TimeUnit.SECONDS), "the worker should start crawling");
+
+		service.cancelJob("cancel-job");
+
+		assertNull(service.getActiveBatchId("cancel-job"), "cancel must release the guard immediately");
+		assertTrue(events.completed.await(5, TimeUnit.SECONDS), "the interrupted worker should finish promptly");
+		assertEquals(List.of(), savedRuns, "a cancelled run must not be persisted");
+		assertEquals(0, manifestService.createCalls, "a cancelled run must not publish a manifest");
+	}
+
+	@Test
+	void triggerAsyncExposesTheActiveBatchUntilTheRunCompletes() throws Exception {
+		String server = "http://good.example/fhir";
+		FetchedResource fetched = new FetchedResource(
+				server + "|Organization/a",
+				"Organization",
+				"a",
+				"1",
+				"2026-01-01T00:00:00Z",
+				"{\"resourceType\":\"Organization\",\"id\":\"a\"}",
+				40);
+		CountDownLatch release = new CountDownLatch(1);
+		CrawlService service = new CrawlService(
+				new BlockingFhirCrawlClient(fetched, release),
+				new FakePersistence(),
+				new RecordingManifestService(),
+				new NoopEvents(),
+				idleJobRepo(),
+				runRepo(),
+				new ObjectMapper(),
+				new ApiProperties());
+		CrawlJob job = new CrawlJob();
+		job.setId("live-job");
+		job.setName("Live job");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"good\",\"url\":\"" + server + "\"}]");
+
+		String batchId = service.triggerAsync(job);
+
+		assertEquals(batchId, service.getActiveBatchId("live-job"), "the in-flight batch should be discoverable");
+		assertThrows(JobAlreadyRunningException.class, () -> service.triggerAsync(job));
+
+		release.countDown();
+		long deadline = System.currentTimeMillis() + 5_000;
+		while (service.getActiveBatchId("live-job") != null && System.currentTimeMillis() < deadline) {
+			Thread.sleep(10);
+		}
+		assertNull(service.getActiveBatchId("live-job"), "the guard should clear when the run completes");
+	}
+
 	private static class FakeFhirCrawlClient extends FhirCrawlClient {
 		private final String good;
 		private final String bad;
 		private final FetchedResource fetched;
 
 		FakeFhirCrawlClient(String good, String bad, FetchedResource fetched) {
-			super(FhirContext.forR4(), new ObjectMapper());
+			super(FhirContext.forR4(), new ObjectMapper(), new ApiProperties());
 			this.good = good;
 			this.bad = bad;
 			this.fetched = fetched;
@@ -104,6 +241,43 @@ class CrawlServiceTest {
 		}
 	}
 
+	/** Holds the crawl on the worker thread until released, so the in-flight window is observable. */
+	private static class BlockingFhirCrawlClient extends FhirCrawlClient {
+		private final FetchedResource fetched;
+		private final CountDownLatch release;
+
+		/** Signals that the worker thread has actually started crawling. */
+		final CountDownLatch entered = new CountDownLatch(1);
+
+		BlockingFhirCrawlClient(FetchedResource fetched, CountDownLatch release) {
+			super(FhirContext.forR4(), new ObjectMapper(), new ApiProperties());
+			this.fetched = fetched;
+			this.release = release;
+		}
+
+		@Override
+		public ServerTime getServerTime(String serverUrl) {
+			entered.countDown();
+			try {
+				release.await();
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+				throw new IllegalStateException(e);
+			}
+			return new ServerTime("2026-01-01T00:00:00Z", "test");
+		}
+
+		@Override
+		public SearchResult searchTypes(
+				String serverUrl,
+				String serverKey,
+				int pageSize,
+				String since,
+				java.util.function.Consumer<StepEvent> steps) {
+			return new SearchResult(List.of(fetched), 40, 1, 1);
+		}
+	}
+
 	private static class FakePersistence extends CrawlPersistenceService {
 		FakePersistence() {
 			super(resourceRepo());
@@ -111,7 +285,7 @@ class CrawlServiceTest {
 
 		@Override
 		public PersistCounts persistFullSnapshot(String serverKey, String serverLabel, List<FetchedResource> fetched) {
-			return new PersistCounts(1, 0, 0);
+			return new PersistCounts(1, 0, 0, 1);
 		}
 	}
 
@@ -145,8 +319,71 @@ class CrawlServiceTest {
 		public void complete(String batchId) {}
 	}
 
+	private static class RecordingEvents extends NoopEvents {
+		final List<StepEvent> published = new ArrayList<>();
+		final List<Integer> persistedSeqs = new ArrayList<>();
+
+		@Override
+		public void publish(String batchId, String runId, String serverKey, int seq, StepEvent event) {
+			published.add(event);
+			if (!event.progress()) {
+				persistedSeqs.add(seq);
+			}
+		}
+	}
+
+	private static class CompletionAwareEvents extends NoopEvents {
+		final CountDownLatch completed = new CountDownLatch(1);
+
+		@Override
+		public void complete(String batchId) {
+			completed.countDown();
+		}
+	}
+
+	/** Fails the first server interaction with the given HAPI server exception. */
+	private static class ThrowingFhirCrawlClient extends FhirCrawlClient {
+		private final BaseServerResponseException failure;
+
+		ThrowingFhirCrawlClient(BaseServerResponseException failure) {
+			super(FhirContext.forR4(), new ObjectMapper(), new ApiProperties());
+			this.failure = failure;
+		}
+
+		@Override
+		public ServerTime getServerTime(String serverUrl) {
+			throw failure;
+		}
+	}
+
 	private static CrawlJobRepository jobRepo() {
 		return proxy(CrawlJobRepository.class);
+	}
+
+	/** Records saved runs so write suppression is observable. */
+	private static CrawlRunRepository recordingRunRepo(List<CrawlRun> saved) {
+		return (CrawlRunRepository) Proxy.newProxyInstance(
+				CrawlRunRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlRunRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> Optional.empty();
+					case "save" -> {
+						saved.add((CrawlRun) args[0]);
+						yield args[0];
+					}
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+	}
+
+	/** A repo with no stored jobs, so the trigger path's markRunning is a no-op. */
+	private static CrawlJobRepository idleJobRepo() {
+		return (CrawlJobRepository) Proxy.newProxyInstance(
+				CrawlJobRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlJobRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findById" -> Optional.empty();
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
 	}
 
 	private static CrawlRunRepository runRepo() {

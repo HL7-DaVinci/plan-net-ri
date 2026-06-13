@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,13 +13,11 @@ import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlStrategy;
 import org.hl7.davinci.api.model.JobResponse;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
-import org.hl7.davinci.api.service.JobAlreadyRunningException;
+import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.JobDeletionService;
 import org.hl7.davinci.api.web.ApiJobController;
 import org.junit.jupiter.api.Test;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.server.ResponseStatusException;
 
 class ApiJobControllerTest {
 
@@ -28,7 +25,7 @@ class ApiJobControllerTest {
 	void pauseDisablesAndPersistsTheJob() {
 		CrawlJob[] saved = new CrawlJob[1];
 		ApiJobController controller =
-				controller(jobRepo(job("job-1", true, "0 0 2 * * *"), saved), deletionService(new boolean[1], false));
+				controller(jobRepo(job("job-1", true, "0 0 2 * * *"), saved), deletionService(new boolean[1]));
 
 		JobResponse response = controller.pause("job-1");
 
@@ -41,7 +38,7 @@ class ApiJobControllerTest {
 	void resumeEnablesPersistsAndRecomputesTheNextRun() {
 		CrawlJob[] saved = new CrawlJob[1];
 		ApiJobController controller =
-				controller(jobRepo(job("job-1", false, "0 0 2 * * *"), saved), deletionService(new boolean[1], false));
+				controller(jobRepo(job("job-1", false, "0 0 2 * * *"), saved), deletionService(new boolean[1]));
 
 		JobResponse response = controller.resume("job-1");
 
@@ -56,7 +53,7 @@ class ApiJobControllerTest {
 	void resumeLeavesTheNextRunUnsetForAManualJob() {
 		CrawlJob[] saved = new CrawlJob[1];
 		ApiJobController controller =
-				controller(jobRepo(job("job-1", false, ""), saved), deletionService(new boolean[1], false));
+				controller(jobRepo(job("job-1", false, ""), saved), deletionService(new boolean[1]));
 
 		JobResponse response = controller.resume("job-1");
 
@@ -67,21 +64,10 @@ class ApiJobControllerTest {
 	}
 
 	@Test
-	void deleteReturns409WhileACrawlIsRunning() {
-		ApiJobController controller =
-				controller(jobRepo(job("job-1", true, ""), new CrawlJob[1]), deletionService(new boolean[1], true));
-
-		ResponseStatusException thrown =
-				assertThrows(ResponseStatusException.class, () -> controller.delete("job-1"));
-
-		assertEquals(HttpStatus.CONFLICT, thrown.getStatusCode());
-	}
-
-	@Test
 	void deleteReturns204AndDelegatesTheCascade() {
 		boolean[] deleted = new boolean[1];
 		ApiJobController controller =
-				controller(jobRepo(job("job-1", false, ""), new CrawlJob[1]), deletionService(deleted, false));
+				controller(jobRepo(job("job-1", false, ""), new CrawlJob[1]), deletionService(deleted));
 
 		ResponseEntity<Void> response = controller.delete("job-1");
 
@@ -89,17 +75,46 @@ class ApiJobControllerTest {
 		assertTrue(deleted[0]);
 	}
 
-	private static ApiJobController controller(CrawlJobRepository jobRepo, JobDeletionService deletion) {
-		return new ApiJobController(jobRepo, null, null, null, new ObjectMapper(), deletion);
+	@Test
+	void jobResponseCarriesTheActiveBatchIdWhileRunning() {
+		ApiJobController controller = controller(
+				jobRepo(job("job-1", true, ""), new CrawlJob[1]),
+				deletionService(new boolean[1]),
+				"batch-42");
+
+		assertEquals("batch-42", controller.get("job-1").currentBatchId());
 	}
 
-	private static JobDeletionService deletionService(boolean[] deletedFlag, boolean running) {
-		return new JobDeletionService(null, null, null, null) {
+	@Test
+	void jobResponseHasNoBatchIdWhenIdle() {
+		ApiJobController controller =
+				controller(jobRepo(job("job-1", true, ""), new CrawlJob[1]), deletionService(new boolean[1]));
+
+		assertNull(controller.get("job-1").currentBatchId());
+	}
+
+	private static ApiJobController controller(CrawlJobRepository jobRepo, JobDeletionService deletion) {
+		return controller(jobRepo, deletion, null);
+	}
+
+	private static ApiJobController controller(
+			CrawlJobRepository jobRepo, JobDeletionService deletion, String activeBatchId) {
+		return new ApiJobController(jobRepo, null, crawlService(activeBatchId), null, new ObjectMapper(), deletion);
+	}
+
+	private static CrawlService crawlService(String activeBatchId) {
+		return new CrawlService(null, null, null, null, null, null, null, null) {
+			@Override
+			public String getActiveBatchId(String jobId) {
+				return activeBatchId;
+			}
+		};
+	}
+
+	private static JobDeletionService deletionService(boolean[] deletedFlag) {
+		return new JobDeletionService(null, null, null, null, null) {
 			@Override
 			public void deleteJob(String jobId) {
-				if (running) {
-					throw new JobAlreadyRunningException(jobId);
-				}
 				deletedFlag[0] = true;
 			}
 		};

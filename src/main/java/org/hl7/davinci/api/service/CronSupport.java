@@ -1,9 +1,10 @@
 package org.hl7.davinci.api.service;
 
+import org.springframework.scheduling.support.CronExpression;
+
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import org.springframework.scheduling.support.CronExpression;
 
 /** Computes the next run time from a Spring cron expression. */
 public final class CronSupport {

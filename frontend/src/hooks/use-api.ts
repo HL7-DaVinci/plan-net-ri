@@ -22,9 +22,10 @@ export function useJobs() {
   return useQuery({
     queryKey: JOBS_KEY,
     queryFn: api.listJobs,
-    // Poll while any job is running so the "running" indicator clears on completion.
+    // Poll fast while any job is running so the live indicator stays current,
+    // and slowly otherwise so a scheduled run starting mid-visit is discovered.
     refetchInterval: (query) =>
-      query.state.data?.some((job) => job.running) ? 3000 : false,
+      query.state.data?.some((job) => job.running) ? 3000 : 15000,
   });
 }
 
@@ -105,13 +106,8 @@ export function useDeleteJob() {
       queryClient.invalidateQueries({ queryKey: MANIFESTS_KEY });
       toast.success("Crawl job deleted");
     },
-    onError: (error) => {
-      if (error instanceof ApiError && error.status === 409) {
-        toast.info("Can't delete a job while a crawl is running");
-        return;
-      }
-      toast.error("Delete failed", { description: describe(error) });
-    },
+    onError: (error) =>
+      toast.error("Delete failed", { description: describe(error) }),
   });
 }
 

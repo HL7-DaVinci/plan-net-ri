@@ -3,11 +3,12 @@ package org.hl7.davinci.api.service;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
-import java.time.Instant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+
+import java.time.Instant;
 
 /** Polls for due crawl jobs and dispatches each via the async crawl trigger. */
 @Component
@@ -25,7 +26,7 @@ public class CrawlScheduler {
 		this.props = props;
 	}
 
-	@Scheduled(fixedDelayString = "${api.poller-interval-ms:30000}")
+	@Scheduled(fixedDelayString = "#{@apiProperties.pollerIntervalMs}")
 	public void poll() {
 		if (!props.isEnabled()) {
 			return;

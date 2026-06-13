@@ -18,9 +18,6 @@ import org.hl7.davinci.api.service.JobAlreadyRunningException;
 import org.hl7.davinci.api.service.JobDeletionService;
 import org.hl7.davinci.api.service.ServerScope;
 import org.hl7.davinci.api.service.StatsService;
-import java.time.Instant;
-import java.util.List;
-import java.util.UUID;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
@@ -35,6 +32,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.time.Instant;
+import java.util.List;
+import java.util.UUID;
 
 /** CRUD and trigger endpoints for crawl jobs. */
 @RestController
@@ -93,11 +94,8 @@ public class ApiJobController {
 
 	@DeleteMapping("/jobs/{id}")
 	public ResponseEntity<Void> delete(@PathVariable("id") String id) {
-		try {
-			jobDeletionService.deleteJob(id);
-		} catch (JobAlreadyRunningException e) {
-			throw new ResponseStatusException(HttpStatus.CONFLICT, e.getMessage());
-		}
+		// Force delete: an in-flight crawl is cancelled by the deletion service.
+		jobDeletionService.deleteJob(id);
 		return ResponseEntity.noContent().build();
 	}
 
@@ -162,8 +160,7 @@ public class ApiJobController {
 				|| request.strategy() == null
 				|| request.servers() == null
 				|| request.servers().isEmpty()) {
-			throw new ResponseStatusException(
-					HttpStatus.BAD_REQUEST, "strategy and at least one server are required");
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "strategy and at least one server are required");
 		}
 		if (!CronSupport.isValid(request.cronExpression())) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "invalid cron expression");
@@ -171,8 +168,7 @@ public class ApiJobController {
 	}
 
 	private CrawlJob requireJob(String id) {
-		return jobRepo
-				.findById(id)
+		return jobRepo.findById(id)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Job not found"));
 	}
 
@@ -204,6 +200,7 @@ public class ApiJobController {
 				job.getCronExpression(),
 				job.isEnabled(),
 				job.isRunning(),
+				crawlService.getActiveBatchId(job.getId()),
 				str(job.getLastRunAt()),
 				str(job.getNextRunAt()),
 				str(job.getCreatedAt()));
@@ -225,6 +222,7 @@ public class ApiJobController {
 				run.getUpdated(),
 				run.getDeleted(),
 				run.getRecords(),
+				run.getTotalAfter(),
 				run.getBytes(),
 				run.getRequests(),
 				run.getPages(),

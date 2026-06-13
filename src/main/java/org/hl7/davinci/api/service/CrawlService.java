@@ -1,5 +1,8 @@
 package org.hl7.davinci.api.service;
 
+import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.annotation.PreDestroy;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlMode;
@@ -9,24 +12,26 @@ import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.entity.RunStatus;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.annotation.PreDestroy;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
 
 /** Orchestrates a crawl: fetch per server (outside any tx), persist, and record a run. */
 @Service
@@ -43,8 +48,14 @@ public class CrawlService {
 	private final ObjectMapper objectMapper;
 	private final ApiProperties props;
 
-	/** Per-job single-flight guard (restores the browser's isCrawling invariant). */
-	private final Set<String> inFlight = ConcurrentHashMap.newKeySet();
+	/** Per-job single-flight guard (restores the browser's isCrawling invariant); maps jobId to its in-flight batchId. */
+	private final Map<String, String> inFlight = new ConcurrentHashMap<>();
+
+	/** The worker task per job, so a force delete can interrupt an in-flight run. */
+	private final Map<String, Future<?>> tasks = new ConcurrentHashMap<>();
+
+	/** Jobs whose in-flight run was cancelled; the worker suppresses all further writes. */
+	private final Set<String> cancelled = ConcurrentHashMap.newKeySet();
 
 	/** Background workers for /run and scheduled crawls so callers return immediately. */
 	private final ExecutorService executor;
@@ -84,30 +95,55 @@ public class CrawlService {
 	 * the batchId immediately. Throws {@link JobAlreadyRunningException} if already running.
 	 */
 	public String triggerAsync(CrawlJob job) {
-		if (!inFlight.add(job.getId())) {
+		String batchId = UUID.randomUUID().toString();
+		if (inFlight.putIfAbsent(job.getId(), batchId) != null) {
 			throw new JobAlreadyRunningException(job.getId());
 		}
-		String batchId = UUID.randomUUID().toString();
 		// Mark running synchronously so the flag is set before this call returns.
 		markRunning(job.getId(), true);
+		FutureTask<Void> task = new FutureTask<>(
+				() -> {
+					try {
+						crawlJob(job, batchId);
+					} catch (Exception e) {
+						ourLog.error("Crawl failed for job {}: {}", job.getId(), e.getMessage(), e);
+					} finally {
+						markRunning(job.getId(), false);
+						inFlight.remove(job.getId());
+						tasks.remove(job.getId());
+						cancelled.remove(job.getId());
+					}
+				},
+				null);
+		// Registered before execution so cancelJob can always reach the worker.
+		tasks.put(job.getId(), task);
 		try {
-			executor.submit(() -> {
-				try {
-					crawlJob(job, batchId);
-				} catch (Exception e) {
-					ourLog.error("Crawl failed for job {}: {}", job.getId(), e.getMessage(), e);
-				} finally {
-					markRunning(job.getId(), false);
-					inFlight.remove(job.getId());
-				}
-			});
+			executor.execute(task);
 		} catch (RejectedExecutionException e) {
 			// Submission failed (e.g. executor shutdown); release the guard the worker would have cleared.
 			markRunning(job.getId(), false);
 			inFlight.remove(job.getId());
+			tasks.remove(job.getId());
 			throw e;
 		}
 		return batchId;
+	}
+
+	/**
+	 * Cooperatively stop an in-flight run so its job can be force deleted: suppress further
+	 * writes, interrupt the worker, and release the guard. A no-op when the job is idle.
+	 */
+	public void cancelJob(String jobId) {
+		if (inFlight.get(jobId) == null) {
+			return;
+		}
+		cancelled.add(jobId);
+		Future<?> task = tasks.remove(jobId);
+		if (task != null) {
+			task.cancel(true);
+		}
+		markRunning(jobId, false);
+		inFlight.remove(jobId);
 	}
 
 	private void markRunning(String jobId, boolean running) {
@@ -118,6 +154,11 @@ public class CrawlService {
 			}
 			jobRepo.save(j);
 		});
+	}
+
+	/** The batchId of the run currently in flight for this job, or null when idle. */
+	public String getActiveBatchId(String jobId) {
+		return inFlight.get(jobId);
 	}
 
 	/** Synchronous crawl with a generated batchId (used by tests). */
@@ -132,20 +173,29 @@ public class CrawlService {
 		AtomicInteger seq = new AtomicInteger();
 		try {
 			List<ServerScope> servers = parseServers(job.getServers());
-			List<String> serverKeys = servers.stream().map(s -> normalizeServerKey(s.url())).toList();
-			events.publish(batchId, null, null, seq.incrementAndGet(), StepEvent.info(
-					"STARTING",
-					"Crawl started: " + job.getStrategy() + " strategy across " + servers.size()
-							+ " server(s)"));
+			List<String> serverKeys =
+					servers.stream().map(s -> normalizeServerKey(s.url())).toList();
+			events.publish(
+					batchId,
+					null,
+					null,
+					seq.incrementAndGet(),
+					StepEvent.info(
+							"STARTING",
+							"Crawl started: " + job.getStrategy() + " strategy across " + servers.size()
+									+ " server(s)"));
 
 			List<ServerCrawlOutcome> outcomes = new ArrayList<>();
 			for (ServerScope server : servers) {
+				if (cancelled.contains(job.getId())) {
+					break;
+				}
 				outcomes.add(crawlServer(job, server, batchId, seq));
 			}
 
-			boolean allCompleted =
-					!outcomes.isEmpty()
-							&& outcomes.stream().allMatch(o -> o.run().getStatus() == RunStatus.COMPLETED);
+			boolean allCompleted = !outcomes.isEmpty()
+					&& !cancelled.contains(job.getId())
+					&& outcomes.stream().allMatch(o -> o.run().getStatus() == RunStatus.COMPLETED);
 			if (allCompleted) {
 				String windowSince = outcomes.stream()
 						.map(ServerCrawlOutcome::sinceUsed)
@@ -154,12 +204,19 @@ public class CrawlService {
 						.orElse(null);
 				ManifestRecord manifest =
 						manifestService.createManifest(job, batchId, windowSince, serverKeys, operationStartNanos);
-				events.publish(batchId, null, null, seq.incrementAndGet(), StepEvent.info(
-						"MANIFEST",
-						"Published manifest: " + manifest.getTotalResources() + " resources, built in "
-								+ manifest.getBuildDurationMs() + " ms"));
+				events.publish(
+						batchId,
+						null,
+						null,
+						seq.incrementAndGet(),
+						StepEvent.info(
+								"MANIFEST",
+								"Published manifest: " + manifest.getTotalResources() + " resources, built in "
+										+ manifest.getBuildDurationMs() + " ms"));
 			}
-			events.publish(batchId, null, null, seq.incrementAndGet(), StepEvent.info("DONE", "Crawl complete"));
+			if (!cancelled.contains(job.getId())) {
+				events.publish(batchId, null, null, seq.incrementAndGet(), StepEvent.info("DONE", "Crawl complete"));
+			}
 			return outcomes.stream().map(ServerCrawlOutcome::run).toList();
 		} finally {
 			events.complete(batchId);
@@ -185,8 +242,14 @@ public class CrawlService {
 		run.setMode(mode);
 		run.setStartedAt(Instant.now());
 
-		Consumer<StepEvent> sink =
-				ev -> events.publish(batchId, run.getId(), serverKey, seq.incrementAndGet(), ev);
+		// A cancelled run stops publishing so it cannot repopulate steps the delete just removed.
+		// Transient progress markers do not consume a sequence number, keeping the persisted
+		// timeline contiguous.
+		Consumer<StepEvent> sink = ev -> {
+			if (!cancelled.contains(job.getId())) {
+				events.publish(batchId, run.getId(), serverKey, ev.progress() ? 0 : seq.incrementAndGet(), ev);
+			}
+		};
 
 		try {
 			switch (job.getStrategy()) {
@@ -208,11 +271,26 @@ public class CrawlService {
 			if (run.getServerTimeAtStart() == null) {
 				run.setServerTimeAtStart(Instant.now().toString());
 			}
-			sink.accept(StepEvent.info("ERROR", "Crawl failed for " + serverLabel + ": " + e.getMessage()));
+			String message = "Crawl failed for " + serverLabel + ": " + e.getMessage();
+			// Server errors keep their status and raw response body so the UI can show them.
+			if (e instanceof BaseServerResponseException serverError) {
+				sink.accept(StepEvent.failure(
+						"ERROR",
+						message,
+						null,
+						null,
+						serverError.getStatusCode(),
+						null,
+						serverError.getResponseBody()));
+			} else {
+				sink.accept(StepEvent.info("ERROR", message));
+			}
 		}
 
 		run.setDurationMs((System.nanoTime() - startNanos) / 1_000_000);
-		runRepo.save(run);
+		if (!cancelled.contains(job.getId())) {
+			runRepo.save(run);
+		}
 		return new ServerCrawlOutcome(run, mode == CrawlMode.INCREMENTAL ? since : null);
 	}
 
@@ -224,8 +302,8 @@ public class CrawlService {
 		if (job.getStrategy() == CrawlStrategy.BULK_EXPORT) {
 			return null;
 		}
-		return runRepo
-				.findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc(job.getId(), serverKey, RunStatus.COMPLETED)
+		return runRepo.findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc(
+						job.getId(), serverKey, RunStatus.COMPLETED)
 				.map(CrawlRun::getServerTimeAtStart)
 				.orElse(null);
 	}
@@ -318,6 +396,7 @@ public class CrawlService {
 		run.setUpdated(counts.updated());
 		run.setDeleted(counts.deleted());
 		run.setRecords(result.fetched().size());
+		run.setTotalAfter(counts.total());
 		run.setBytes(result.bytes());
 		run.setRequests(result.requests() + 1); // + the metadata call
 		run.setPages(result.pages());
@@ -325,6 +404,7 @@ public class CrawlService {
 	}
 
 	private FhirCrawlClient.ServerTime captureServerTime(ServerScope server, CrawlRun run, Consumer<StepEvent> sink) {
+		sink.accept(StepEvent.progress("SERVER_TIME", "Reading the server-time anchor..."));
 		FhirCrawlClient.ServerTime serverTime = client.getServerTime(server.url());
 		run.setServerTimeAtStart(serverTime.iso());
 		sink.accept(StepEvent.info(
@@ -351,6 +431,7 @@ public class CrawlService {
 		run.setUpdated(counts.updated());
 		run.setDeleted(counts.deleted());
 		run.setRecords(result.fetched().size());
+		run.setTotalAfter(counts.total());
 		run.setBytes(result.bytes() + extraBytes);
 		run.setRequests(result.requests() + extraRequests + 1); // + the metadata call
 		run.setPages(result.pages() + extraPages);

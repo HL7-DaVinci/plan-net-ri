@@ -1,9 +1,10 @@
 package org.hl7.davinci.api.repository;
 
 import org.hl7.davinci.api.entity.CrawlJob;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import java.time.Instant;
 import java.util.List;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CrawlJobRepository extends JpaRepository<CrawlJob, String> {
 

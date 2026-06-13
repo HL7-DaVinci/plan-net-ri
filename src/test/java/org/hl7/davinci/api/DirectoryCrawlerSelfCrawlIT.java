@@ -235,6 +235,10 @@ class DirectoryCrawlerSelfCrawlIT {
 		CrawlRun first = crawlService.crawlJob(job).get(0);
 		assertEquals(CrawlMode.FULL, first.getMode());
 		assertEquals(RunStatus.COMPLETED, first.getStatus());
+		assertEquals(
+				first.getRecords(),
+				first.getTotalAfter().longValue(),
+				"a full crawl's total should equal what it fetched");
 
 		Organization org = new Organization();
 		org.setName("Crawler IT Temp Org");
@@ -247,6 +251,10 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(RunStatus.COMPLETED, added.getStatus());
 		assertEquals(Boolean.TRUE, added.getHistorySupported(), "server should support system _history");
 		assertTrue(added.getAdded() >= 1, "the new resource should be detected as added");
+		assertEquals(
+				Integer.valueOf(first.getTotalAfter() + 1),
+				added.getTotalAfter(),
+				"the directory total should grow by the added resource even though only the delta was fetched");
 		assertTrue(resourceRepo.findById(key).isPresent(), "new resource should be stored");
 		assertTrue(
 				added.getRecords() < first.getRecords(),
@@ -270,6 +278,10 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(RunStatus.COMPLETED, deleted.getStatus());
 		assertTrue(deleted.getDeleted() >= 1, "the deletion should be detected via system _history");
 		assertTrue(resourceRepo.findById(key).isEmpty(), "deleted resource should be removed from the store");
+		assertEquals(
+				first.getTotalAfter(),
+				deleted.getTotalAfter(),
+				"the directory total should shrink back after the deletion");
 	}
 
 	@Test
@@ -436,7 +448,7 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertTrue(
 				response.getBody().trim().startsWith("window.APP_CONFIG ="),
 				"the controller should serve the generated config, not the static placeholder");
-		assertTrue(response.getBody().contains("\"apiBaseUrl\""), "config should include apiBaseUrl");
+		assertTrue(response.getBody().contains("apiBaseUrl"), "config should include apiBaseUrl");
 	}
 
 	/** Run a full crawl and return the set of fetched resource identities (Type/id) for that server. */

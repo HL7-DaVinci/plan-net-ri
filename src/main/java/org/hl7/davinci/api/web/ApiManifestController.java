@@ -6,10 +6,6 @@ import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
 import org.hl7.davinci.api.repository.ManifestRepository;
 import org.hl7.davinci.api.service.ManifestService;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.List;
-import java.util.regex.Pattern;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ContentDisposition;
@@ -25,6 +21,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /** Lists snapshots and serves each manifest and its NDJSON files. */
 @RestController
@@ -74,7 +75,8 @@ public class ApiManifestController {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "File not found");
 		}
 		// Serve inline with the real type name so the browser does not save it as "f.txt".
-		ContentDisposition disposition = ContentDisposition.inline().filename(fileName).build();
+		ContentDisposition disposition =
+				ContentDisposition.inline().filename(fileName).build();
 		return ResponseEntity.ok()
 				.contentType(NDJSON)
 				.header(HttpHeaders.CONTENT_DISPOSITION, disposition.toString())
@@ -92,6 +94,8 @@ public class ApiManifestController {
 		if (configured != null && !configured.isBlank()) {
 			return configured.replaceAll("/+$", "");
 		}
-		return ServletUriComponentsBuilder.fromCurrentContextPath().toUriString().replaceAll("/+$", "");
+		return ServletUriComponentsBuilder.fromCurrentContextPath()
+				.toUriString()
+				.replaceAll("/+$", "");
 	}
 }

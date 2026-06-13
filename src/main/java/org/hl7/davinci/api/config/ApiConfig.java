@@ -1,15 +1,13 @@
 package org.hl7.davinci.api.config;
 
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-/** Enables scheduling, binds {@link ApiProperties}, and applies CORS to /api/**. */
+/** Enables scheduling and applies CORS to /api/**. {@link ApiProperties} registers itself as a component. */
 @Configuration
 @EnableScheduling
-@EnableConfigurationProperties(ApiProperties.class)
 public class ApiConfig implements WebMvcConfigurer {
 
 	@Override

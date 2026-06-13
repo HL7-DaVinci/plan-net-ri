@@ -2,21 +2,33 @@ package org.hl7.davinci.api.service;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
+import ca.uhn.fhir.rest.client.api.IGenericClient;
+import ca.uhn.fhir.rest.client.api.IHttpResponse;
+import ca.uhn.fhir.rest.client.exceptions.FhirClientConnectionException;
+import ca.uhn.fhir.rest.client.interceptor.CapturingInterceptor;
+import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.hl7.davinci.api.config.ApiProperties;
+import org.hl7.fhir.r4.model.Bundle;
+import org.hl7.fhir.r4.model.CapabilityStatement;
+import org.hl7.fhir.r4.model.Resource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
 import java.io.IOException;
 import java.io.UncheckedIOException;
+import java.net.ConnectException;
+import java.net.SocketException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.net.http.HttpTimeoutException;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
-import ca.uhn.fhir.rest.client.api.IGenericClient;
-import ca.uhn.fhir.rest.client.api.IHttpResponse;
-import ca.uhn.fhir.rest.client.interceptor.CapturingInterceptor;
-import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import java.time.Instant;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
@@ -28,12 +40,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
-import org.hl7.fhir.r4.model.Bundle;
-import org.hl7.fhir.r4.model.CapabilityStatement;
-import org.hl7.fhir.r4.model.Resource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
+import java.util.function.Supplier;
 
 /** Outbound FHIR client for crawling external servers. */
 @Component
@@ -55,16 +62,34 @@ public class FhirCrawlClient {
 	/** Hard cap on pages per type to guard against pagination loops. */
 	static final int MAX_PAGES_PER_TYPE = 1000;
 
-	private static final Duration HTTP_TIMEOUT = Duration.ofSeconds(60);
 	private static final int POLL_MAX_ATTEMPTS = 120;
 	private static final int POLL_DEFAULT_WAIT_SECONDS = 2;
+
+	/** Bounded attempts per request for transient failures (timeouts, dropped connections, gateway 5xx). */
+	static final int MAX_RETRY_ATTEMPTS = 3;
+
+	private static final long RETRY_BACKOFF_MS = 2_000;
+
+	/** Cap on server-requested Retry-After waits so a hostile header cannot stall a worker. */
+	private static final long MAX_RETRY_AFTER_MS = 60_000;
 
 	private final FhirContext fhirContext;
 	private final ObjectMapper objectMapper;
 
-	public FhirCrawlClient(FhirContext fhirContext, ObjectMapper objectMapper) {
+	/** Connect and per-request timeout for all outbound crawl calls (api.request-timeout-ms). */
+	private final Duration httpTimeout;
+
+	/** Politeness pause between page fetches (api.page-delay-ms); 0 = none. */
+	private final long pageDelayMs;
+
+	public FhirCrawlClient(FhirContext fhirContext, ObjectMapper objectMapper, ApiProperties props) {
 		this.fhirContext = fhirContext;
 		this.objectMapper = objectMapper;
+		this.httpTimeout = Duration.ofMillis(props.getRequestTimeoutMs());
+		this.pageDelayMs = props.getPageDelayMs();
+		// HAPI client timeouts are factory-wide, so clients from newClient() pick these up.
+		fhirContext.getRestfulClientFactory().setConnectTimeout(props.getRequestTimeoutMs());
+		fhirContext.getRestfulClientFactory().setSocketTimeout(props.getRequestTimeoutMs());
 	}
 
 	public record ServerTime(String iso, String source) {}
@@ -75,8 +100,116 @@ public class FhirCrawlClient {
 		return fhirContext.newRestfulGenericClient(serverUrl);
 	}
 
+	/** A failure step for a HAPI client error, retaining its status and raw response body. */
+	private static StepEvent serverError(
+			String phase, String message, String url, long startNanos, BaseServerResponseException e) {
+		return StepEvent.failure(
+				phase,
+				message + ": HTTP " + e.getStatusCode(),
+				"GET",
+				url,
+				e.getStatusCode(),
+				(System.nanoTime() - startNanos) / 1_000_000,
+				e.getResponseBody());
+	}
+
 	HttpClient newBulkHttpClient() {
-		return HttpClient.newBuilder().connectTimeout(HTTP_TIMEOUT).build();
+		return HttpClient.newBuilder().connectTimeout(httpTimeout).build();
+	}
+
+	@FunctionalInterface
+	interface RetryableCall<T> {
+		T run() throws IOException, InterruptedException;
+	}
+
+	/**
+	 * Run an idempotent GET with bounded retries on transient failures, backing off linearly and
+	 * narrating each retry into the play-by-play. Permanent errors (4xx, most 5xx) fail fast.
+	 */
+	<T> T withRetry(String phase, String what, Consumer<StepEvent> steps, RetryableCall<T> call)
+			throws IOException, InterruptedException {
+		for (int attempt = 1; ; attempt++) {
+			try {
+				return call.run();
+			} catch (Exception e) {
+				if (attempt >= MAX_RETRY_ATTEMPTS || !isTransient(e)) {
+					throw e;
+				}
+				long backoffMs = retryDelayMs(e, RETRY_BACKOFF_MS * attempt);
+				steps.accept(StepEvent.info(
+						phase,
+						"Transient failure on " + what + " (" + reason(e) + "); retrying in " + (backoffMs / 1000)
+								+ "s (attempt " + (attempt + 1) + " of " + MAX_RETRY_ATTEMPTS + ")"));
+				Thread.sleep(backoffMs);
+			}
+		}
+	}
+
+	/** Adapter for the HAPI call sites, whose failures are all unchecked. */
+	private <T> T withRetryUnchecked(String phase, String what, Consumer<StepEvent> steps, Supplier<T> call) {
+		try {
+			return withRetry(phase, what, steps, call::get);
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+			throw new IllegalStateException("Crawl interrupted during retry backoff", e);
+		}
+	}
+
+	/**
+	 * Timeouts, dropped connections, rate limiting (429), and gateway-style 5xx are worth
+	 * retrying; the rest fail fast.
+	 */
+	static boolean isTransient(Exception e) {
+		if (e instanceof FhirClientConnectionException) {
+			return true;
+		}
+		if (e instanceof BaseServerResponseException serverError) {
+			int status = serverError.getStatusCode();
+			return status == 429 || status == 502 || status == 503 || status == 504;
+		}
+		return e instanceof HttpTimeoutException || e instanceof ConnectException || e instanceof SocketException;
+	}
+
+	/** The server's Retry-After (seconds form, clamped) for a 429; the fixed backoff otherwise. */
+	static long retryDelayMs(Exception e, long fallbackMs) {
+		if (e instanceof BaseServerResponseException serverError
+				&& serverError.getStatusCode() == 429
+				&& serverError.hasResponseHeaders()) {
+			for (Map.Entry<String, List<String>> header :
+					serverError.getResponseHeaders().entrySet()) {
+				if ("retry-after".equalsIgnoreCase(header.getKey())
+						&& !header.getValue().isEmpty()) {
+					try {
+						long ms = Long.parseLong(header.getValue().get(0).trim()) * 1000L;
+						return Math.min(Math.max(ms, 1_000L), MAX_RETRY_AFTER_MS);
+					} catch (NumberFormatException ignored) {
+						// HTTP-date form or junk; the fixed backoff applies
+					}
+				}
+			}
+		}
+		return fallbackMs;
+	}
+
+	/** Optional politeness pause before fetching the next page (api.page-delay-ms). */
+	private void pauseBetweenPages() {
+		if (pageDelayMs <= 0) {
+			return;
+		}
+		try {
+			Thread.sleep(pageDelayMs);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+			throw new IllegalStateException("Crawl interrupted during page delay", e);
+		}
+	}
+
+	private static String reason(Exception e) {
+		return e.getMessage() != null && !e.getMessage().isBlank()
+				? e.getMessage()
+				: e.getClass().getSimpleName();
 	}
 
 	/** Server-time anchor: HTTP Date header, then meta.lastUpdated, then local time. */
@@ -90,8 +223,10 @@ public class FhirCrawlClient {
 
 			IHttpResponse response = capture.getLastResponse();
 			if (response != null) {
-				for (Map.Entry<String, List<String>> header : response.getAllHeaders().entrySet()) {
-					if ("date".equalsIgnoreCase(header.getKey()) && !header.getValue().isEmpty()) {
+				for (Map.Entry<String, List<String>> header :
+						response.getAllHeaders().entrySet()) {
+					if ("date".equalsIgnoreCase(header.getKey())
+							&& !header.getValue().isEmpty()) {
 						Instant parsed = parseHttpDate(header.getValue().get(0));
 						if (parsed != null) {
 							return new ServerTime(parsed.toString(), "date-header");
@@ -134,10 +269,8 @@ public class FhirCrawlClient {
 
 		for (String type : PLAN_NET_TYPES) {
 			Set<String> seen = new HashSet<>();
-			StringBuilder query = new StringBuilder(type)
-					.append("?_count=")
-					.append(pageSize)
-					.append("&_sort=_lastUpdated");
+			StringBuilder query =
+					new StringBuilder(type).append("?_count=").append(pageSize).append("&_sort=_lastUpdated");
 			if (since != null) {
 				// Inclusive (ge) so a resource stamped exactly at the anchor instant is never skipped;
 				// DiffUtil marks an unchanged re-fetch as no-op, so the boundary overlap is harmless.
@@ -148,32 +281,49 @@ public class FhirCrawlClient {
 			int beforeCount = fetched.size();
 			long beforeBytes = bytes[0];
 
-			Bundle bundle =
-					client.search().byUrl(query.toString()).returnBundle(Bundle.class).execute();
+			steps.accept(StepEvent.progress(
+					"SEARCH",
+					(since != null ? "Searching " + type + " changes since the anchor" : "Searching all " + type)
+							+ "..."));
 			int typePages = 0;
-			while (bundle != null) {
-				requests++;
-				pages++;
-				typePages++;
-				collectEntries(bundle, serverKey, parser, fetched, bytes);
+			try {
+				Bundle bundle = withRetryUnchecked("SEARCH", type + " search", steps, () -> client.search()
+						.byUrl(query.toString())
+						.returnBundle(Bundle.class)
+						.execute());
+				while (bundle != null) {
+					requests++;
+					pages++;
+					typePages++;
+					collectEntries(bundle, serverKey, parser, fetched, bytes);
 
-				Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
-				if (next == null || next.getUrl() == null || seen.contains(next.getUrl())) {
-					break;
+					Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
+					if (next == null || next.getUrl() == null || seen.contains(next.getUrl())) {
+						break;
+					}
+					if (typePages >= MAX_PAGES_PER_TYPE) {
+						ourLog.warn("Hit page cap for {} on {}", type, serverKey);
+						break;
+					}
+					seen.add(next.getUrl());
+					pauseBetweenPages();
+					steps.accept(StepEvent.progress("SEARCH", "Fetching " + type + " page " + (typePages + 1) + "..."));
+					Bundle current = bundle;
+					bundle = withRetryUnchecked("SEARCH", type + " page fetch", steps, () -> client.loadPage()
+							.next(current)
+							.execute());
 				}
-				if (typePages >= MAX_PAGES_PER_TYPE) {
-					ourLog.warn("Hit page cap for {} on {}", type, serverKey);
-					break;
-				}
-				seen.add(next.getUrl());
-				bundle = client.loadPage().next(bundle).execute();
+			} catch (BaseServerResponseException e) {
+				steps.accept(
+						serverError("SEARCH", "Search failed for " + type, serverUrl + "/" + query, typeStartNanos, e));
+				throw e;
 			}
 
 			int typeCount = fetched.size() - beforeCount;
 			steps.accept(StepEvent.request(
 					"SEARCH",
-					(since != null ? "Searched " + type + " changed since the anchor" : "Searched all " + type)
-							+ " (" + typePages + " page" + (typePages == 1 ? "" : "s") + ")",
+					(since != null ? "Searched " + type + " changed since the anchor" : "Searched all " + type) + " ("
+							+ typePages + " page" + (typePages == 1 ? "" : "s") + ")",
 					"GET",
 					serverUrl + "/" + query,
 					200,
@@ -189,15 +339,19 @@ public class FhirCrawlClient {
 			Bundle bundle, String serverKey, IParser parser, List<FetchedResource> out, long[] bytes) {
 		for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
 			Resource resource = entry.getResource();
-			if (resource == null || resource.getIdElement() == null || resource.getIdElement().getIdPart() == null) {
+			if (resource == null
+					|| resource.getIdElement() == null
+					|| resource.getIdElement().getIdPart() == null) {
 				continue;
 			}
 			String type = resource.fhirType();
 			String id = resource.getIdElement().getIdPart();
-			String versionId = resource.getMeta() != null ? emptyToNull(resource.getMeta().getVersionId()) : null;
-			String lastUpdated = resource.getMeta() != null && resource.getMeta().hasLastUpdated()
-					? resource.getMeta().getLastUpdatedElement().getValueAsString()
-					: null;
+			String versionId =
+					resource.getMeta() != null ? emptyToNull(resource.getMeta().getVersionId()) : null;
+			String lastUpdated =
+					resource.getMeta() != null && resource.getMeta().hasLastUpdated()
+							? resource.getMeta().getLastUpdatedElement().getValueAsString()
+							: null;
 			String json = parser.encodeResourceToString(resource);
 			bytes[0] += json.length();
 			out.add(new FetchedResource(
@@ -216,8 +370,7 @@ public class FhirCrawlClient {
 	 * resource body is treated as a deletion. Throws {@link HistoryUnsupportedException}
 	 * if the server rejects _history.
 	 */
-	public DeletionScanResult scanDeletions(
-			String serverUrl, String since, int pageSize, Consumer<StepEvent> steps) {
+	public DeletionScanResult scanDeletions(String serverUrl, String since, int pageSize, Consumer<StepEvent> steps) {
 		IGenericClient client = newClient(serverUrl);
 		List<DeletionEntry> deletions = new ArrayList<>();
 		Set<String> seen = new HashSet<>();
@@ -225,32 +378,45 @@ public class FhirCrawlClient {
 		int pages = 0;
 		long startNanos = System.nanoTime();
 
+		String scanUrl = serverUrl + "/_history?_since=" + since;
+		steps.accept(StepEvent.progress("HISTORY", "Scanning system _history for deletions..."));
 		Bundle bundle;
 		try {
-			bundle = client.history()
+			bundle = withRetryUnchecked("HISTORY", "deletion scan", steps, () -> client.history()
 					.onServer()
 					.andReturnBundle(Bundle.class)
 					.since(Date.from(parseInstant(since)))
 					.count(pageSize)
-					.execute();
+					.execute());
 		} catch (BaseServerResponseException e) {
 			if (e.getStatusCode() >= 400 && e.getStatusCode() < 500) {
 				throw new HistoryUnsupportedException(serverUrl);
 			}
+			steps.accept(serverError("HISTORY", "Deletion scan via system _history failed", scanUrl, startNanos, e));
 			throw e;
 		}
 
-		while (bundle != null) {
-			requests++;
-			pages++;
-			extractDeletions(bundle, deletions);
+		try {
+			while (bundle != null) {
+				requests++;
+				pages++;
+				extractDeletions(bundle, deletions);
 
-			Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
-			if (next == null || next.getUrl() == null || seen.contains(next.getUrl())) {
-				break;
+				Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
+				if (next == null || next.getUrl() == null || seen.contains(next.getUrl())) {
+					break;
+				}
+				seen.add(next.getUrl());
+				pauseBetweenPages();
+				steps.accept(StepEvent.progress("HISTORY", "Fetching deletion scan page " + (pages + 1) + "..."));
+				Bundle current = bundle;
+				bundle = withRetryUnchecked("HISTORY", "deletion scan page fetch", steps, () -> client.loadPage()
+						.next(current)
+						.execute());
 			}
-			seen.add(next.getUrl());
-			bundle = client.loadPage().next(bundle).execute();
+		} catch (BaseServerResponseException e) {
+			steps.accept(serverError("HISTORY", "Deletion scan via system _history failed", scanUrl, startNanos, e));
+			throw e;
 		}
 
 		steps.accept(StepEvent.request(
@@ -265,9 +431,17 @@ public class FhirCrawlClient {
 		return new DeletionScanResult(deletions, requests, pages, 0);
 	}
 
-	private static void extractDeletions(Bundle bundle, List<DeletionEntry> out) {
+	static boolean isDeletion(Bundle.BundleEntryComponent entry) {
+		Bundle.HTTPVerb method = entry.hasRequest() ? entry.getRequest().getMethod() : null;
+		if (method != null) {
+			return method == Bundle.HTTPVerb.DELETE;
+		}
+		return entry.getResource() == null;
+	}
+
+	static void extractDeletions(Bundle bundle, List<DeletionEntry> out) {
 		for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
-			if (entry.getResource() != null) {
+			if (!isDeletion(entry)) {
 				continue;
 			}
 			String ref = entry.getRequest() != null && entry.getRequest().getUrl() != null
@@ -323,28 +497,42 @@ public class FhirCrawlClient {
 		try {
 			String typeParam = URLEncoder.encode(String.join(",", PLAN_NET_TYPES), StandardCharsets.UTF_8);
 			String kickoffUrl = serverUrl + "/$export?_type=" + typeParam;
+			steps.accept(StepEvent.progress("EXPORT", "Kicking off system $export..."));
 			long kickStart = System.nanoTime();
-			HttpResponse<String> kickoff = http.send(
-					HttpRequest.newBuilder(URI.create(kickoffUrl))
-							.timeout(HTTP_TIMEOUT)
-							.header("Accept", "application/fhir+json")
-							.header("Prefer", "respond-async")
-							.GET()
-							.build(),
-					HttpResponse.BodyHandlers.ofString());
+			HttpResponse<String> kickoff = withRetry(
+					"EXPORT",
+					"$export kick-off",
+					steps,
+					() -> http.send(
+							HttpRequest.newBuilder(URI.create(kickoffUrl))
+									.timeout(httpTimeout)
+									.header("Accept", "application/fhir+json")
+									.header("Prefer", "respond-async")
+									.GET()
+									.build(),
+							HttpResponse.BodyHandlers.ofString()));
 			requests++;
+			long kickMs = (System.nanoTime() - kickStart) / 1_000_000;
+			if (kickoff.statusCode() != 202) {
+				steps.accept(StepEvent.failure(
+						"EXPORT",
+						"Bulk $export kick-off failed: HTTP " + kickoff.statusCode(),
+						"GET",
+						kickoffUrl,
+						kickoff.statusCode(),
+						kickMs,
+						kickoff.body()));
+				throw new IllegalStateException("Expected 202 from $export, got " + kickoff.statusCode());
+			}
 			steps.accept(StepEvent.request(
 					"EXPORT",
 					"Kicked off system $export with Prefer: respond-async",
 					"GET",
 					kickoffUrl,
 					kickoff.statusCode(),
-					(System.nanoTime() - kickStart) / 1_000_000,
+					kickMs,
 					null,
 					null));
-			if (kickoff.statusCode() != 202) {
-				throw new IllegalStateException("Expected 202 from $export, got " + kickoff.statusCode());
-			}
 			String pollUrl = kickoff.headers()
 					.firstValue("Content-Location")
 					.orElseThrow(() -> new IllegalStateException("$export 202 missing Content-Location"));
@@ -352,13 +540,17 @@ public class FhirCrawlClient {
 			JsonNode manifest = null;
 			for (int attempt = 1; attempt <= POLL_MAX_ATTEMPTS && manifest == null; attempt++) {
 				long pollStart = System.nanoTime();
-				HttpResponse<String> poll = http.send(
-						HttpRequest.newBuilder(URI.create(pollUrl))
-								.timeout(HTTP_TIMEOUT)
-								.header("Accept", "application/json")
-								.GET()
-								.build(),
-						HttpResponse.BodyHandlers.ofString());
+				HttpResponse<String> poll = withRetry(
+						"EXPORT",
+						"$export status poll",
+						steps,
+						() -> http.send(
+								HttpRequest.newBuilder(URI.create(pollUrl))
+										.timeout(httpTimeout)
+										.header("Accept", "application/json")
+										.GET()
+										.build(),
+								HttpResponse.BodyHandlers.ofString()));
 				requests++;
 				int status = poll.statusCode();
 				String retryAfter = poll.headers().firstValue("Retry-After").orElse(null);
@@ -375,10 +567,21 @@ public class FhirCrawlClient {
 				if (status == 200) {
 					manifest = objectMapper.readTree(poll.body());
 				} else if (status >= 500) {
+					steps.accept(StepEvent.failure(
+							"EXPORT", "$export failed: HTTP " + status, "GET", pollUrl, status, null, poll.body()));
 					throw new IllegalStateException("$export failed: HTTP " + status);
-				} else if (status == 202) {
+				} else if (status == 202 || status == 429) {
+					// 429 during polling is the server asking us to slow down, not a failure.
 					Thread.sleep(parseRetryAfter(retryAfter) * 1000L);
 				} else {
+					steps.accept(StepEvent.failure(
+							"EXPORT",
+							"Unexpected $export poll status " + status,
+							"GET",
+							pollUrl,
+							status,
+							null,
+							poll.body()));
 					throw new IllegalStateException("Unexpected $export poll status " + status);
 				}
 			}
@@ -397,27 +600,33 @@ public class FhirCrawlClient {
 					continue;
 				}
 				String fileType = output.path("type").asText(null);
+				steps.accept(StepEvent.progress(
+						"EXPORT", "Downloading export file" + (fileType != null ? " (" + fileType + ")" : "") + "..."));
 				long fileStart = System.nanoTime();
-				HttpResponse<String> file = http.send(
-						HttpRequest.newBuilder(URI.create(fileUrl))
-								.timeout(HTTP_TIMEOUT)
-								.header("Accept", "application/fhir+ndjson")
-								.GET()
-								.build(),
-						HttpResponse.BodyHandlers.ofString());
+				HttpResponse<String> file = withRetry(
+						"EXPORT",
+						"export file download",
+						steps,
+						() -> http.send(
+								HttpRequest.newBuilder(URI.create(fileUrl))
+										.timeout(httpTimeout)
+										.header("Accept", "application/fhir+ndjson")
+										.GET()
+										.build(),
+								HttpResponse.BodyHandlers.ofString()));
 				requests++;
 				int fileStatus = file.statusCode();
 				long fileBytes = file.body().length();
 				if (fileStatus < 200 || fileStatus >= 300) {
-					steps.accept(StepEvent.request(
+					steps.accept(StepEvent.failure(
 							"EXPORT",
-							"Downloaded export file" + (fileType != null ? " (" + fileType + ")" : ""),
+							"Export file download failed" + (fileType != null ? " (" + fileType + ")" : "") + ": HTTP "
+									+ fileStatus,
 							"GET",
 							fileUrl,
 							fileStatus,
 							(System.nanoTime() - fileStart) / 1_000_000,
-							fileBytes,
-							null));
+							file.body()));
 					throw new IllegalStateException(
 							"Failed to download export file " + fileUrl + ": HTTP " + fileStatus);
 				}
@@ -461,8 +670,7 @@ public class FhirCrawlClient {
 	 * yielding an incremental delta (upserts + deletions). History is returned newest-first,
 	 * so the first entry seen per key wins; an entry with no resource body is a deletion.
 	 */
-	public HistoryResult historyExport(
-			String serverUrl, String serverKey, String since, Consumer<StepEvent> steps) {
+	public HistoryResult historyExport(String serverUrl, String serverKey, String since, Consumer<StepEvent> steps) {
 		IGenericClient client = newClient(serverUrl);
 		IParser parser = fhirContext.newJsonParser();
 		Map<String, FetchedResource> current = new LinkedHashMap<>();
@@ -478,38 +686,23 @@ public class FhirCrawlClient {
 		if (since != null) {
 			history = history.since(Date.from(parseInstant(since)));
 		}
-		Bundle bundle = history.execute();
+		String historyUrl = serverUrl + "/_history?_count=500" + (since != null ? "&_since=" + since : "");
+		steps.accept(StepEvent.progress(
+				"HISTORY",
+				since != null ? "Paging system _history since the anchor..." : "Paging full system _history..."));
+		var pagedHistory = history;
+		Bundle bundle;
+		try {
+			bundle = withRetryUnchecked("HISTORY", "history export", steps, pagedHistory::execute);
+		} catch (BaseServerResponseException e) {
+			steps.accept(serverError("HISTORY", "System _history export failed", historyUrl, startNanos, e));
+			throw e;
+		}
 		while (bundle != null) {
 			requests++;
 			pages++;
 			for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
-				Resource resource = entry.getResource();
-				if (resource != null && resource.getIdElement() != null && resource.getIdElement().getIdPart() != null) {
-					String type = resource.fhirType();
-					if (!PLAN_NET_TYPES.contains(type)) {
-						continue;
-					}
-					String key = serverKey + "|" + type + "/" + resource.getIdElement().getIdPart();
-					if (!seenKeys.add(key)) {
-						continue;
-					}
-					String json = parser.encodeResourceToString(resource);
-					bytes += json.length();
-					String versionId = resource.getMeta() != null ? emptyToNull(resource.getMeta().getVersionId()) : null;
-					String lastUpdated = resource.getMeta() != null && resource.getMeta().hasLastUpdated()
-							? resource.getMeta().getLastUpdatedElement().getValueAsString()
-							: null;
-					current.put(
-							key,
-							new FetchedResource(
-									key,
-									type,
-									resource.getIdElement().getIdPart(),
-									versionId,
-									lastUpdated,
-									json,
-									json.length()));
-				} else {
+				if (isDeletion(entry)) {
 					DeletionEntry deletion = parseReference(
 							entry.getRequest() != null ? entry.getRequest().getUrl() : entry.getFullUrl());
 					if (deletion != null
@@ -517,14 +710,59 @@ public class FhirCrawlClient {
 							&& seenKeys.add(serverKey + "|" + deletion.resourceType() + "/" + deletion.id())) {
 						deletions.add(deletion);
 					}
+					continue;
 				}
+				Resource resource = entry.getResource();
+				if (resource == null
+						|| resource.getIdElement() == null
+						|| resource.getIdElement().getIdPart() == null) {
+					continue;
+				}
+				String type = resource.fhirType();
+				if (!PLAN_NET_TYPES.contains(type)) {
+					continue;
+				}
+				String key =
+						serverKey + "|" + type + "/" + resource.getIdElement().getIdPart();
+				if (!seenKeys.add(key)) {
+					continue;
+				}
+				String json = parser.encodeResourceToString(resource);
+				bytes += json.length();
+				String versionId = resource.getMeta() != null
+						? emptyToNull(resource.getMeta().getVersionId())
+						: null;
+				String lastUpdated =
+						resource.getMeta() != null && resource.getMeta().hasLastUpdated()
+								? resource.getMeta().getLastUpdatedElement().getValueAsString()
+								: null;
+				current.put(
+						key,
+						new FetchedResource(
+								key,
+								type,
+								resource.getIdElement().getIdPart(),
+								versionId,
+								lastUpdated,
+								json,
+								json.length()));
 			}
 			Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
 			if (next == null || next.getUrl() == null || seenUrls.contains(next.getUrl())) {
 				break;
 			}
 			seenUrls.add(next.getUrl());
-			bundle = client.loadPage().next(bundle).execute();
+			pauseBetweenPages();
+			steps.accept(StepEvent.progress("HISTORY", "Fetching history page " + (pages + 1) + "..."));
+			Bundle page = bundle;
+			try {
+				bundle = withRetryUnchecked("HISTORY", "history page fetch", steps, () -> client.loadPage()
+						.next(page)
+						.execute());
+			} catch (BaseServerResponseException e) {
+				steps.accept(serverError("HISTORY", "System _history page fetch failed", next.getUrl(), startNanos, e));
+				throw e;
+			}
 		}
 
 		steps.accept(StepEvent.request(
@@ -549,11 +787,14 @@ public class FhirCrawlClient {
 			}
 			String type = resource.fhirType();
 			String id = resource.getIdElement().getIdPart();
-			String versionId = resource.getMeta() != null ? emptyToNull(resource.getMeta().getVersionId()) : null;
-			String lastUpdated = resource.getMeta() != null && resource.getMeta().hasLastUpdated()
-					? resource.getMeta().getLastUpdatedElement().getValueAsString()
-					: null;
-			return new FetchedResource(serverKey + "|" + type + "/" + id, type, id, versionId, lastUpdated, json, json.length());
+			String versionId =
+					resource.getMeta() != null ? emptyToNull(resource.getMeta().getVersionId()) : null;
+			String lastUpdated =
+					resource.getMeta() != null && resource.getMeta().hasLastUpdated()
+							? resource.getMeta().getLastUpdatedElement().getValueAsString()
+							: null;
+			return new FetchedResource(
+					serverKey + "|" + type + "/" + id, type, id, versionId, lastUpdated, json, json.length());
 		} catch (Exception e) {
 			return null;
 		}
@@ -569,7 +810,8 @@ public class FhirCrawlClient {
 		}
 		try {
 			Instant when = Instant.from(DateTimeFormatter.RFC_1123_DATE_TIME.parse(trimmed));
-			return (int) Math.max(1, Math.min(Duration.between(Instant.now(), when).getSeconds(), 60));
+			return (int)
+					Math.max(1, Math.min(Duration.between(Instant.now(), when).getSeconds(), 60));
 		} catch (Exception e) {
 			return POLL_DEFAULT_WAIT_SECONDS;
 		}

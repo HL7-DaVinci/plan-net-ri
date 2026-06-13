@@ -63,10 +63,11 @@ export const JsonViewerDialog = memo(function JsonViewerDialog({
   const [copied, setCopied] = useState(false);
   const copyTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const jsonString = useMemo(
-    () => (data ? JSON.stringify(data, null, 2) : ""),
-    [data],
-  );
+  // Strings are shown verbatim so non-JSON payloads (e.g. HTML error pages) stay readable.
+  const jsonString = useMemo(() => {
+    if (typeof data === "string") return data;
+    return data ? JSON.stringify(data, null, 2) : "";
+  }, [data]);
 
   // Derive title from FHIR resource if not provided
   const displayTitle = useMemo(() => {

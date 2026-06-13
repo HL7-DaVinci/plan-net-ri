@@ -2,7 +2,6 @@ package org.hl7.davinci.api;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
@@ -13,7 +12,7 @@ import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.repository.CrawlStepRepository;
-import org.hl7.davinci.api.service.JobAlreadyRunningException;
+import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.JobDeletionService;
 import org.hl7.davinci.api.service.ManifestService;
 import org.junit.jupiter.api.Test;
@@ -27,7 +26,8 @@ class JobDeletionServiceTest {
 				jobRepo(job("job-1", false), rec),
 				runRepo(List.of("batch-1", "batch-2"), rec),
 				stepRepo(rec),
-				manifestService(rec));
+				manifestService(rec),
+				crawlService(rec));
 
 		service.deleteJob("job-1");
 
@@ -38,30 +38,33 @@ class JobDeletionServiceTest {
 	}
 
 	@Test
-	void throwsAndTouchesNothingWhenTheJobIsRunning() {
+	void cancelsTheActiveRunAndStillCascadesWhenRunning() {
 		Recorder rec = new Recorder();
 		JobDeletionService service = new JobDeletionService(
 				jobRepo(job("job-1", true), rec),
 				runRepo(List.of("batch-1"), rec),
 				stepRepo(rec),
-				manifestService(rec));
+				manifestService(rec),
+				crawlService(rec));
 
-		assertThrows(JobAlreadyRunningException.class, () -> service.deleteJob("job-1"));
+		service.deleteJob("job-1");
 
-		assertNull(rec.manifestsClearedFor);
-		assertNull(rec.stepsDeletedForBatchIds);
-		assertNull(rec.runsDeletedForJob);
-		assertNull(rec.jobDeleted);
+		assertEquals("job-1", rec.cancelledJob, "the in-flight run must be cancelled before the cascade");
+		assertEquals("job-1", rec.manifestsClearedFor);
+		assertEquals(List.of("batch-1"), rec.stepsDeletedForBatchIds);
+		assertEquals("job-1", rec.runsDeletedForJob);
+		assertEquals("job-1", rec.jobDeleted);
 	}
 
 	@Test
 	void doesNothingWhenTheJobDoesNotExist() {
 		Recorder rec = new Recorder();
 		JobDeletionService service = new JobDeletionService(
-				jobRepo(null, rec), runRepo(List.of(), rec), stepRepo(rec), manifestService(rec));
+				jobRepo(null, rec), runRepo(List.of(), rec), stepRepo(rec), manifestService(rec), crawlService(rec));
 
 		service.deleteJob("missing");
 
+		assertNull(rec.cancelledJob);
 		assertNull(rec.manifestsClearedFor);
 		assertNull(rec.runsDeletedForJob);
 		assertNull(rec.jobDeleted);
@@ -71,7 +74,11 @@ class JobDeletionServiceTest {
 	void skipsStepDeletionWhenTheJobHasNoRuns() {
 		Recorder rec = new Recorder();
 		JobDeletionService service = new JobDeletionService(
-				jobRepo(job("job-1", false), rec), runRepo(List.of(), rec), stepRepo(rec), manifestService(rec));
+				jobRepo(job("job-1", false), rec),
+				runRepo(List.of(), rec),
+				stepRepo(rec),
+				manifestService(rec),
+				crawlService(rec));
 
 		service.deleteJob("job-1");
 
@@ -81,10 +88,20 @@ class JobDeletionServiceTest {
 	}
 
 	private static final class Recorder {
+		String cancelledJob;
 		String manifestsClearedFor;
 		List<String> stepsDeletedForBatchIds;
 		String runsDeletedForJob;
 		String jobDeleted;
+	}
+
+	private static CrawlService crawlService(Recorder rec) {
+		return new CrawlService(null, null, null, null, null, null, null, null) {
+			@Override
+			public void cancelJob(String jobId) {
+				rec.cancelledJob = jobId;
+			}
+		};
 	}
 
 	private static CrawlJob job(String id, boolean running) {

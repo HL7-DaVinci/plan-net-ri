@@ -3,6 +3,8 @@ package org.hl7.davinci.api.service;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
+import org.springframework.stereotype.Service;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -11,7 +13,6 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.springframework.stereotype.Service;
 
 /** Writes one {Type}.ndjson per resource type from the aggregate store. */
 @Service
@@ -37,7 +38,7 @@ public class NdjsonExportService {
 			for (String serverKey : serverKeys) {
 				for (CrawlResource resource : resourceRepo.findByServerKey(serverKey)) {
 					BufferedWriter writer = writerFor(writers, dir, resource.getResourceType());
-					writer.write(resource.getResourceJson());
+					writer.write(ResourceJsonCodec.decode(resource.getResourceJson()));
 					writer.write("\n");
 					total++;
 				}

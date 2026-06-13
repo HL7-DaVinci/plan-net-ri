@@ -92,7 +92,18 @@ function RunHistoryContent({ jobId }: RunHistoryProps) {
               <th className="py-2 pr-3 font-medium">Mode</th>
               <th className="py-2 pr-3 font-medium">Status</th>
               <th className="py-2 pr-3 font-medium text-right">+ / ~ / -</th>
-              <th className="py-2 pr-3 font-medium text-right">Records</th>
+              <th
+                className="py-2 pr-3 font-medium text-right"
+                title="Resources fetched by this run; full crawls fetch the whole directory, incremental runs fetch only the changed window"
+              >
+                Fetched
+              </th>
+              <th
+                className="py-2 pr-3 font-medium text-right"
+                title="Resources in the stored directory snapshot after this run was applied"
+              >
+                Total
+              </th>
               <th className="py-2 pr-3 font-medium text-right">Duration</th>
               <th className="py-2 pr-3 font-medium">History</th>
             </tr>
@@ -127,6 +138,11 @@ function RunHistoryContent({ jobId }: RunHistoryProps) {
                     </td>
                     <td className="py-2 pr-3 text-right tabular-nums">
                       {run.records.toLocaleString()}
+                    </td>
+                    <td className="py-2 pr-3 text-right tabular-nums">
+                      {run.totalAfter != null
+                        ? run.totalAfter.toLocaleString()
+                        : "n/a"}
                     </td>
                     <td className="py-2 pr-3 text-right tabular-nums">
                       {formatDuration(run.durationMs)}

@@ -71,6 +71,7 @@ interface FormState {
   strategy: CrawlStrategy;
   cronExpression: string;
   enabled: boolean;
+  runNow: boolean;
 }
 
 const EMPTY_FORM: FormState = {
@@ -80,6 +81,7 @@ const EMPTY_FORM: FormState = {
   strategy: "SEARCH",
   cronExpression: "",
   enabled: true,
+  runNow: true,
 };
 
 function hostLabel(url: string): string {
@@ -105,14 +107,9 @@ function serversToText(servers: ServerScope[]): string {
 interface JobsPanelProps {
   selectedJobId: string | null;
   onSelectJob: (jobId: string) => void;
-  onRunTriggered?: (batchId: string) => void;
 }
 
-export function JobsPanel({
-  selectedJobId,
-  onSelectJob,
-  onRunTriggered,
-}: JobsPanelProps) {
+export function JobsPanel({ selectedJobId, onSelectJob }: JobsPanelProps) {
   const { data: jobs, isLoading } = useJobs();
   const createJob = useCreateJob();
   const updateJob = useUpdateJob();
@@ -135,18 +132,21 @@ export function JobsPanel({
       strategy: job.strategy,
       cronExpression: job.cronExpression ?? "",
       enabled: job.enabled,
+      runNow: false,
     });
 
   const submit = () => {
     if (!form) return;
     const servers = parseServers(form.serversText);
     if (!form.name.trim() || servers.length === 0) return;
+    const cronExpression = form.cronExpression.trim() || null;
     const body: JobRequest = {
       name: form.name.trim(),
       servers,
       strategy: form.strategy,
-      cronExpression: form.cronExpression.trim() || null,
-      enabled: form.enabled,
+      cronExpression,
+      // Enabled only gates the scheduler, so a manual-only job is always submitted enabled.
+      enabled: cronExpression ? form.enabled : true,
     };
     if (form.id) {
       updateJob.mutate(
@@ -154,7 +154,17 @@ export function JobsPanel({
         { onSuccess: () => setForm(null) },
       );
     } else {
-      createJob.mutate(body, { onSuccess: () => setForm(null) });
+      const runNow = !body.cronExpression && form.runNow;
+      createJob.mutate(body, {
+        onSuccess: (created) => {
+          setForm(null);
+          if (runNow) {
+            // Select the new job so the live play-by-play panel follows its run.
+            onSelectJob(created.id);
+            runJob.mutate(created.id);
+          }
+        },
+      });
     }
   };
 
@@ -280,18 +290,35 @@ export function JobsPanel({
 
           <StrategyInfo strategy={form.strategy} />
 
-          <div className="flex items-center gap-2">
-            <Checkbox
-              id="job-enabled"
-              checked={form.enabled}
-              onCheckedChange={(checked) =>
-                setForm({ ...form, enabled: checked === true })
-              }
-            />
-            <Label htmlFor="job-enabled" className="cursor-pointer">
-              Enabled (scheduled when a cron is set)
-            </Label>
-          </div>
+          {form.cronExpression.trim() !== "" && (
+            <div className="flex items-center gap-2">
+              <Checkbox
+                id="job-enabled"
+                checked={form.enabled}
+                onCheckedChange={(checked) =>
+                  setForm({ ...form, enabled: checked === true })
+                }
+              />
+              <Label htmlFor="job-enabled" className="cursor-pointer">
+                Enabled (runs on the schedule)
+              </Label>
+            </div>
+          )}
+
+          {!form.id && !form.cronExpression.trim() && (
+            <div className="flex items-center gap-2">
+              <Checkbox
+                id="job-run-now"
+                checked={form.runNow}
+                onCheckedChange={(checked) =>
+                  setForm({ ...form, runNow: checked === true })
+                }
+              />
+              <Label htmlFor="job-run-now" className="cursor-pointer">
+                Run immediately after creating
+              </Label>
+            </div>
+          )}
 
           <div className="flex justify-end gap-2">
             <Button
@@ -340,7 +367,9 @@ export function JobsPanel({
                         running
                       </Badge>
                     )}
-                    {!job.enabled && <Badge variant="secondary">paused</Badge>}
+                    {!job.enabled && job.cronExpression && (
+                      <Badge variant="secondary">paused</Badge>
+                    )}
                   </div>
                   <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                     <Badge variant="outline">
@@ -350,8 +379,15 @@ export function JobsPanel({
                       {job.servers.length} server
                       {job.servers.length === 1 ? "" : "s"}
                     </span>
-                    {job.cronExpression && (
+                    {job.cronExpression ? (
                       <span>cron: {job.cronExpression}</span>
+                    ) : (
+                      <Badge
+                        variant="outline"
+                        title="No schedule; runs only when triggered with the Run button"
+                      >
+                        manual only
+                      </Badge>
                     )}
                   </div>
                 </button>
@@ -359,47 +395,51 @@ export function JobsPanel({
                   <Button
                     variant="ghost"
                     size="icon"
-                    title="Run now"
-                    disabled={runJob.isPending}
+                    title={
+                      job.running ? "A crawl is already running" : "Run now"
+                    }
+                    disabled={runJob.isPending || job.running}
                     onClick={(e) => {
                       e.stopPropagation();
-                      runJob.mutate(job.id, {
-                        onSuccess: (data) => onRunTriggered?.(data.batchId),
-                      });
+                      // Select the job so the live play-by-play panel follows its run.
+                      onSelectJob(job.id);
+                      runJob.mutate(job.id);
                     }}
                     className="cursor-pointer"
                   >
                     <Play className="h-4 w-4" />
                   </Button>
-                  {job.enabled ? (
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      title="Pause schedule"
-                      disabled={pauseJob.isPending}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        pauseJob.mutate(job.id);
-                      }}
-                      className="cursor-pointer"
-                    >
-                      <Pause className="h-4 w-4" />
-                    </Button>
-                  ) : (
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      title="Resume schedule"
-                      disabled={resumeJob.isPending}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        resumeJob.mutate(job.id);
-                      }}
-                      className="cursor-pointer"
-                    >
-                      <CirclePlay className="h-4 w-4" />
-                    </Button>
-                  )}
+                  {/* Pause and resume only make sense for jobs with a schedule. */}
+                  {job.cronExpression &&
+                    (job.enabled ? (
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        title="Pause schedule"
+                        disabled={pauseJob.isPending}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          pauseJob.mutate(job.id);
+                        }}
+                        className="cursor-pointer"
+                      >
+                        <Pause className="h-4 w-4" />
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        title="Resume schedule"
+                        disabled={resumeJob.isPending}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          resumeJob.mutate(job.id);
+                        }}
+                        className="cursor-pointer"
+                      >
+                        <CirclePlay className="h-4 w-4" />
+                      </Button>
+                    ))}
                   <Button
                     variant="ghost"
                     size="icon"
@@ -415,12 +455,7 @@ export function JobsPanel({
                   <Button
                     variant="ghost"
                     size="icon"
-                    title={
-                      job.running
-                        ? "Stop the running crawl before deleting"
-                        : "Delete"
-                    }
-                    disabled={job.running}
+                    title="Delete"
                     onClick={(e) => {
                       e.stopPropagation();
                       setJobToDelete(job);
@@ -456,7 +491,8 @@ export function JobsPanel({
           </DialogHeader>
           {pendingDeleteJob?.running && (
             <p className="text-sm text-destructive">
-              This job is currently running. Stop the crawl before deleting it.
+              This job is currently running. Deleting it will stop the active
+              crawl.
             </p>
           )}
           <DialogFooter>
@@ -469,7 +505,7 @@ export function JobsPanel({
             </Button>
             <Button
               variant="destructive"
-              disabled={deleteJob.isPending || pendingDeleteJob?.running}
+              disabled={deleteJob.isPending}
               onClick={() => {
                 if (!pendingDeleteJob) return;
                 deleteJob.mutate(pendingDeleteJob.id, {

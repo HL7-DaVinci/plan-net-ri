@@ -11,5 +11,6 @@ public record CrawlStepResponse(
 		Long ms,
 		Long bytes,
 		Integer count,
+		String errorBody,
 		String serverKey,
 		String at) {}

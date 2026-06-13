@@ -22,6 +22,7 @@ export interface JobResponse {
   cronExpression: string | null;
   enabled: boolean;
   running: boolean;
+  currentBatchId: string | null;
   lastRunAt: string | null;
   nextRunAt: string | null;
   createdAt: string | null;
@@ -42,6 +43,7 @@ export interface RunResponse {
   updated: number;
   deleted: number;
   records: number;
+  totalAfter: number | null;
   bytes: number;
   requests: number;
   pages: number;
@@ -113,6 +115,7 @@ export interface CrawlStep {
   ms: number | null;
   bytes: number | null;
   count: number | null;
+  errorBody: string | null;
   serverKey: string | null;
   at: string;
 }

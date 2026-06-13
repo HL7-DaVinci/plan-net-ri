@@ -16,6 +16,7 @@ public record RunResponse(
 		int updated,
 		int deleted,
 		long records,
+		Integer totalAfter,
 		long bytes,
 		int requests,
 		int pages,

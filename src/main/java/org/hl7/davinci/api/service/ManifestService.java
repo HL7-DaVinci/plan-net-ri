@@ -7,6 +7,10 @@ import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
 import org.hl7.davinci.api.repository.ManifestRepository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.support.TransactionSynchronization;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
+
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.net.URLEncoder;
@@ -19,9 +23,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Stream;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.support.TransactionSynchronization;
-import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 /** Creates retained snapshots and renders the served manifest. */
 @Service

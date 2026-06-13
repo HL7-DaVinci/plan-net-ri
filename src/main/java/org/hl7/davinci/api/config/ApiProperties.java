@@ -1,8 +1,10 @@
 package org.hl7.davinci.api.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /** Bound from the {@code api.*} section of application.yaml. */
+@Component
 @ConfigurationProperties(prefix = "api")
 public class ApiProperties {
 
@@ -16,10 +18,16 @@ public class ApiProperties {
 
 	private int pageSize = 200;
 
-	private int requestTimeoutMs = 60_000;
+	private int requestTimeoutMs = 180_000;
+
+	/** Politeness pause between page fetches against a crawled server; 0 = none. */
+	private long pageDelayMs = 0;
 
 	/** Base URL for manifest output[].url; inbound request URL is used when null. */
 	private String publicBaseUrl;
+
+	/** JSON array of {name, url} FHIR servers exposed to the UI via /crawler/config.js. */
+	private String fhirServers;
 
 	/** Manifests retained per job; 0 = unlimited. */
 	private int retentionPerJob = 5;
@@ -64,12 +72,28 @@ public class ApiProperties {
 		this.requestTimeoutMs = requestTimeoutMs;
 	}
 
+	public long getPageDelayMs() {
+		return pageDelayMs;
+	}
+
+	public void setPageDelayMs(long pageDelayMs) {
+		this.pageDelayMs = pageDelayMs;
+	}
+
 	public String getPublicBaseUrl() {
 		return publicBaseUrl;
 	}
 
 	public void setPublicBaseUrl(String publicBaseUrl) {
 		this.publicBaseUrl = publicBaseUrl;
+	}
+
+	public String getFhirServers() {
+		return fhirServers;
+	}
+
+	public void setFhirServers(String fhirServers) {
+		this.fhirServers = fhirServers;
 	}
 
 	public int getRetentionPerJob() {

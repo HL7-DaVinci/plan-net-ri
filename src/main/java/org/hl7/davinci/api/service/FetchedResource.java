@@ -6,10 +6,4 @@ package org.hl7.davinci.api.service;
  * {@code resourceKey}). {@code json} is the encoded FHIR resource body.
  */
 public record FetchedResource(
-		String key,
-		String resourceType,
-		String id,
-		String versionId,
-		String lastUpdated,
-		String json,
-		long bytes) {}
+		String key, String resourceType, String id, String versionId, String lastUpdated, String json, long bytes) {}

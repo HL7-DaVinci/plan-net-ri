@@ -1,11 +1,11 @@
 package org.hl7.davinci.api.repository;
 
 import org.hl7.davinci.api.entity.CrawlResource;
-import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+
+import java.util.List;
 
 public interface CrawlResourceRepository extends JpaRepository<CrawlResource, String> {
 
@@ -15,13 +15,9 @@ public interface CrawlResourceRepository extends JpaRepository<CrawlResource, St
 
 	long countByServerKey(String serverKey);
 
-	@Modifying
-	void deleteByServerKey(String serverKey);
-
 	/** Lightweight projection of the diff keys (version/lastUpdated) without loading bodies. */
-	@Query(
-			"select r.key as key, r.versionId as versionId, r.lastUpdated as lastUpdated "
-					+ "from CrawlResource r where r.serverKey = :serverKey")
+	@Query("select r.key as key, r.versionId as versionId, r.lastUpdated as lastUpdated "
+			+ "from CrawlResource r where r.serverKey = :serverKey")
 	List<ResourceVersionView> findVersionViewByServerKey(@Param("serverKey") String serverKey);
 
 	/** Spring Data projection: just the fields the diff needs. */

@@ -2,14 +2,15 @@ package org.hl7.davinci.api.service;
 
 import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * The single writer of {@code crawl_resource}. Methods must name {@code crawlerTransactionManager};
@@ -24,9 +25,10 @@ public class CrawlPersistenceService {
 		this.resourceRepo = resourceRepo;
 	}
 
-	public record PersistCounts(int added, int updated, int deleted) {}
+	/** Change counts plus the server's aggregate size after the run was applied. */
+	public record PersistCounts(int added, int updated, int deleted, int total) {}
 
-	/** Replace a server's aggregate with the fresh snapshot; returns the change counts. */
+	/** Apply the fresh snapshot to the server's aggregate; keys absent from the fetch are deletions. */
 	@Transactional("crawlerTransactionManager")
 	public PersistCounts persistFullSnapshot(String serverKey, String serverLabel, List<FetchedResource> fetched) {
 		Map<String, DiffUtil.VersionInfo> existing = loadIndex(serverKey);
@@ -34,10 +36,19 @@ public class CrawlPersistenceService {
 		Set<String> fetchedKeys = fetched.stream().map(FetchedResource::key).collect(Collectors.toSet());
 		List<String> deletedKeys = DiffUtil.computeDeletedKeys(existing.keySet(), fetchedKeys);
 
-		resourceRepo.deleteByServerKey(serverKey);
-		resourceRepo.saveAll(toEntities(serverKey, serverLabel, fetched));
+		// Upsert only what changed; rewriting unchanged rows bloats the append-oriented MVStore.
+		List<FetchedResource> changed = new ArrayList<>(diff.added());
+		changed.addAll(diff.updated());
+		resourceRepo.saveAll(toEntities(serverKey, serverLabel, changed));
+		if (!deletedKeys.isEmpty()) {
+			resourceRepo.deleteAllById(deletedKeys);
+		}
 
-		return new PersistCounts(diff.added().size(), diff.updated().size(), deletedKeys.size());
+		return new PersistCounts(
+				diff.added().size(),
+				diff.updated().size(),
+				deletedKeys.size(),
+				existing.size() + diff.added().size() - deletedKeys.size());
 	}
 
 	/** Upsert the changed resources and delete the resolved deletion keys. */
@@ -57,7 +68,11 @@ public class CrawlPersistenceService {
 			resourceRepo.deleteAllById(deletedKeys);
 		}
 
-		return new PersistCounts(diff.added().size(), diff.updated().size(), deletedKeys.size());
+		return new PersistCounts(
+				diff.added().size(),
+				diff.updated().size(),
+				deletedKeys.size(),
+				existing.size() + diff.added().size() - deletedKeys.size());
 	}
 
 	private Map<String, DiffUtil.VersionInfo> loadIndex(String serverKey) {
@@ -79,7 +94,7 @@ public class CrawlPersistenceService {
 			e.setResId(fr.id());
 			e.setVersionId(fr.versionId());
 			e.setLastUpdated(fr.lastUpdated());
-			e.setResourceJson(fr.json());
+			e.setResourceJson(ResourceJsonCodec.encode(fr.json()));
 			entities.add(e);
 		}
 		return entities;
