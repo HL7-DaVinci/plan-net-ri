@@ -12,4 +12,7 @@ public interface CrawlJobRepository extends JpaRepository<CrawlJob, String> {
 	List<CrawlJob> findByEnabledTrueAndNextRunAtLessThanEqual(Instant now);
 
 	List<CrawlJob> findByEnabledTrue();
+
+	/** Jobs still flagged running; after a restart these are stale (no live worker backs them). */
+	List<CrawlJob> findByRunningTrue();
 }

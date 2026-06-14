@@ -4,9 +4,13 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Index;
+import jakarta.persistence.PostLoad;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
+import org.springframework.data.domain.Persistable;
 
 /** Current aggregated state of one resource for one server; the source for diffing and NDJSON. */
 @Entity
@@ -16,12 +20,20 @@ import org.hibernate.type.SqlTypes;
 			@Index(name = "idx_crawl_resource_server", columnList = "serverKey"),
 			@Index(name = "idx_crawl_resource_server_type", columnList = "serverKey,resourceType")
 		})
-public class CrawlResource {
+public class CrawlResource implements Persistable<String> {
 
 	/** {@code serverKey|resourceType/id}. */
 	@Id
 	@Column(name = "resource_key", length = 512)
 	private String key;
+
+	/**
+	 * Assigned-id entities are otherwise treated as detached, forcing a SELECT before every write
+	 * (saveAll -> merge). The crawl diff already knows which rows are new, so it sets this flag to
+	 * route added rows through persist() (a plain INSERT, no SELECT).
+	 */
+	@Transient
+	private boolean isNew = true;
 
 	private String serverKey;
 
@@ -45,6 +57,27 @@ public class CrawlResource {
 
 	public void setKey(String key) {
 		this.key = key;
+	}
+
+	@Override
+	public String getId() {
+		return key;
+	}
+
+	@Override
+	public boolean isNew() {
+		return isNew;
+	}
+
+	/** Mark a row as a new insert (true) or an existing-row update (false) before saving. */
+	public void setNew(boolean isNew) {
+		this.isNew = isNew;
+	}
+
+	@PrePersist
+	@PostLoad
+	void markNotNew() {
+		this.isNew = false;
 	}
 
 	public String getServerKey() {

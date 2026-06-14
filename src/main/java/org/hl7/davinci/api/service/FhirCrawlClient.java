@@ -35,7 +35,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -61,6 +60,12 @@ public class FhirCrawlClient {
 
 	/** Hard cap on pages per type to guard against pagination loops. */
 	static final int MAX_PAGES_PER_TYPE = 1000;
+
+	/** Resources buffered before a batch is pushed to the persistence sink. */
+	private static final int EMIT_BATCH = 1000;
+
+	/** Emit an INFO fetch heartbeat every this many pages within a single type/stream. */
+	private static final int PAGE_LOG_EVERY = 20;
 
 	private static final int POLL_MAX_ATTEMPTS = 120;
 	private static final int POLL_DEFAULT_WAIT_SECONDS = 2;
@@ -94,7 +99,7 @@ public class FhirCrawlClient {
 
 	public record ServerTime(String iso, String source) {}
 
-	public record SearchResult(List<FetchedResource> fetched, long bytes, int requests, int pages) {}
+	public record SearchResult(int records, long bytes, int requests, int pages) {}
 
 	IGenericClient newClient(String serverUrl) {
 		return fhirContext.newRestfulGenericClient(serverUrl);
@@ -258,9 +263,14 @@ public class FhirCrawlClient {
 	 * ({@code _lastUpdated=gt{since}}); otherwise a full snapshot.
 	 */
 	public SearchResult searchTypes(
-			String serverUrl, String serverKey, int pageSize, String since, Consumer<StepEvent> steps) {
+			String serverUrl,
+			String serverKey,
+			int pageSize,
+			String since,
+			Consumer<StepEvent> steps,
+			Consumer<List<FetchedResource>> resourceSink) {
 		IGenericClient client = newClient(serverUrl);
-		List<FetchedResource> fetched = new ArrayList<>();
+		BatchEmitter emitter = new BatchEmitter(resourceSink);
 		long[] bytes = {0};
 		int requests = 0;
 		int pages = 0;
@@ -278,7 +288,7 @@ public class FhirCrawlClient {
 			}
 
 			long typeStartNanos = System.nanoTime();
-			int beforeCount = fetched.size();
+			int beforeCount = emitter.count();
 			long beforeBytes = bytes[0];
 
 			steps.accept(StepEvent.progress(
@@ -295,7 +305,11 @@ public class FhirCrawlClient {
 					requests++;
 					pages++;
 					typePages++;
-					collectEntries(bundle, serverKey, parser, fetched, bytes);
+					collectEntries(bundle, serverKey, parser, emitter, bytes);
+					if (typePages % PAGE_LOG_EVERY == 0) {
+						ourLog.info(
+								"SEARCH {}: {} pages fetched, {} resources so far", type, typePages, emitter.count());
+					}
 
 					Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
 					if (next == null || next.getUrl() == null || seen.contains(next.getUrl())) {
@@ -319,7 +333,7 @@ public class FhirCrawlClient {
 				throw e;
 			}
 
-			int typeCount = fetched.size() - beforeCount;
+			int typeCount = emitter.count() - beforeCount;
 			steps.accept(StepEvent.request(
 					"SEARCH",
 					(since != null ? "Searched " + type + " changed since the anchor" : "Searched all " + type) + " ("
@@ -332,11 +346,11 @@ public class FhirCrawlClient {
 					typeCount));
 		}
 
-		return new SearchResult(fetched, bytes[0], requests, pages);
+		emitter.flush();
+		return new SearchResult(emitter.count(), bytes[0], requests, pages);
 	}
 
-	private void collectEntries(
-			Bundle bundle, String serverKey, IParser parser, List<FetchedResource> out, long[] bytes) {
+	private void collectEntries(Bundle bundle, String serverKey, IParser parser, BatchEmitter emitter, long[] bytes) {
 		for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
 			Resource resource = entry.getResource();
 			if (resource == null
@@ -354,13 +368,43 @@ public class FhirCrawlClient {
 							: null;
 			String json = parser.encodeResourceToString(resource);
 			bytes[0] += json.length();
-			out.add(new FetchedResource(
+			emitter.add(new FetchedResource(
 					serverKey + "|" + type + "/" + id, type, id, versionId, lastUpdated, json, json.length()));
 		}
 	}
 
 	private static String emptyToNull(String value) {
 		return (value == null || value.isEmpty()) ? null : value;
+	}
+
+	/** Buffers fetched resources and pushes them to the persistence sink in batches. */
+	private static final class BatchEmitter {
+		private final Consumer<List<FetchedResource>> sink;
+		private final List<FetchedResource> buffer = new ArrayList<>();
+		private int count;
+
+		BatchEmitter(Consumer<List<FetchedResource>> sink) {
+			this.sink = sink;
+		}
+
+		void add(FetchedResource fr) {
+			buffer.add(fr);
+			count++;
+			if (buffer.size() >= EMIT_BATCH) {
+				flush();
+			}
+		}
+
+		void flush() {
+			if (!buffer.isEmpty()) {
+				sink.accept(new ArrayList<>(buffer));
+				buffer.clear();
+			}
+		}
+
+		int count() {
+			return count;
+		}
 	}
 
 	public record DeletionScanResult(List<DeletionEntry> deletions, int requests, int pages, long bytes) {}
@@ -489,7 +533,11 @@ public class FhirCrawlClient {
 	 * Acquire a full snapshot via async Bulk Data $export: kick off, poll Content-Location
 	 * honoring Retry-After, then download and parse each NDJSON output file.
 	 */
-	public SearchResult bulkExport(String serverUrl, String serverKey, Consumer<StepEvent> steps) {
+	public SearchResult bulkExport(
+			String serverUrl,
+			String serverKey,
+			Consumer<StepEvent> steps,
+			Consumer<List<FetchedResource>> resourceSink) {
 		HttpClient http = newBulkHttpClient();
 		IParser parser = fhirContext.newJsonParser();
 		int requests = 0;
@@ -593,7 +641,7 @@ public class FhirCrawlClient {
 			steps.accept(StepEvent.info(
 					"EXPORT", "Server export complete: " + fileCount + " output file" + (fileCount == 1 ? "" : "s")));
 
-			List<FetchedResource> fetched = new ArrayList<>();
+			BatchEmitter emitter = new BatchEmitter(resourceSink);
 			for (JsonNode output : manifest.path("output")) {
 				String fileUrl = output.path("url").asText(null);
 				if (fileUrl == null) {
@@ -631,14 +679,14 @@ public class FhirCrawlClient {
 							"Failed to download export file " + fileUrl + ": HTTP " + fileStatus);
 				}
 				bytes += fileBytes;
-				int before = fetched.size();
+				int before = emitter.count();
 				for (String line : file.body().split("\n")) {
 					if (line.isBlank()) {
 						continue;
 					}
 					FetchedResource resource = toFetched(line.trim(), serverKey, parser);
 					if (resource != null) {
-						fetched.add(resource);
+						emitter.add(resource);
 					}
 				}
 				steps.accept(StepEvent.request(
@@ -649,9 +697,10 @@ public class FhirCrawlClient {
 						fileStatus,
 						(System.nanoTime() - fileStart) / 1_000_000,
 						fileBytes,
-						fetched.size() - before));
+						emitter.count() - before));
 			}
-			return new SearchResult(fetched, bytes, requests, 0);
+			emitter.flush();
+			return new SearchResult(emitter.count(), bytes, requests, 0);
 		} catch (IOException e) {
 			throw new UncheckedIOException("Bulk export failed for " + serverUrl, e);
 		} catch (InterruptedException e) {
@@ -661,8 +710,7 @@ public class FhirCrawlClient {
 	}
 
 	/** Current-state resources plus deletions discovered while paging _history. */
-	public record HistoryResult(
-			List<FetchedResource> fetched, List<DeletionEntry> deletions, long bytes, int requests, int pages) {}
+	public record HistoryResult(int records, List<DeletionEntry> deletions, long bytes, int requests, int pages) {}
 
 	/**
 	 * Page system _history and collapse each resource to its latest state. When {@code since}
@@ -670,10 +718,15 @@ public class FhirCrawlClient {
 	 * yielding an incremental delta (upserts + deletions). History is returned newest-first,
 	 * so the first entry seen per key wins; an entry with no resource body is a deletion.
 	 */
-	public HistoryResult historyExport(String serverUrl, String serverKey, String since, Consumer<StepEvent> steps) {
+	public HistoryResult historyExport(
+			String serverUrl,
+			String serverKey,
+			String since,
+			Consumer<StepEvent> steps,
+			Consumer<List<FetchedResource>> resourceSink) {
 		IGenericClient client = newClient(serverUrl);
 		IParser parser = fhirContext.newJsonParser();
-		Map<String, FetchedResource> current = new LinkedHashMap<>();
+		BatchEmitter emitter = new BatchEmitter(resourceSink);
 		List<DeletionEntry> deletions = new ArrayList<>();
 		Set<String> seenKeys = new HashSet<>();
 		Set<String> seenUrls = new HashSet<>();
@@ -701,6 +754,9 @@ public class FhirCrawlClient {
 		while (bundle != null) {
 			requests++;
 			pages++;
+			if (pages % PAGE_LOG_EVERY == 0) {
+				ourLog.info("HISTORY: {} pages fetched, {} resources so far", pages, emitter.count());
+			}
 			for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
 				if (isDeletion(entry)) {
 					DeletionEntry deletion = parseReference(
@@ -736,16 +792,8 @@ public class FhirCrawlClient {
 						resource.getMeta() != null && resource.getMeta().hasLastUpdated()
 								? resource.getMeta().getLastUpdatedElement().getValueAsString()
 								: null;
-				current.put(
-						key,
-						new FetchedResource(
-								key,
-								type,
-								resource.getIdElement().getIdPart(),
-								versionId,
-								lastUpdated,
-								json,
-								json.length()));
+				emitter.add(new FetchedResource(
+						key, type, resource.getIdElement().getIdPart(), versionId, lastUpdated, json, json.length()));
 			}
 			Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
 			if (next == null || next.getUrl() == null || seenUrls.contains(next.getUrl())) {
@@ -765,18 +813,19 @@ public class FhirCrawlClient {
 			}
 		}
 
+		emitter.flush();
 		steps.accept(StepEvent.request(
 				"HISTORY",
 				(since != null ? "Paged system _history since the anchor" : "Paged full system _history")
 						+ " (" + pages + " page" + (pages == 1 ? "" : "s") + "): "
-						+ current.size() + " current, " + deletions.size() + " deleted",
+						+ emitter.count() + " current, " + deletions.size() + " deleted",
 				"GET",
 				serverUrl + "/_history?_count=500" + (since != null ? "&_since=" + since : ""),
 				200,
 				(System.nanoTime() - startNanos) / 1_000_000,
 				bytes,
-				current.size()));
-		return new HistoryResult(new ArrayList<>(current.values()), deletions, bytes, requests, pages);
+				emitter.count()));
+		return new HistoryResult(emitter.count(), deletions, bytes, requests, pages);
 	}
 
 	private FetchedResource toFetched(String json, String serverKey, IParser parser) {

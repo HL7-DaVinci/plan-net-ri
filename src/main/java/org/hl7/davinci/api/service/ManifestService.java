@@ -11,7 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.UncheckedIOException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
@@ -23,12 +25,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Stream;
+import java.util.zip.GZIPInputStream;
 
 /** Creates retained snapshots and renders the served manifest. */
 @Service
 public class ManifestService {
 
 	private static final String NDJSON_SUFFIX = ".ndjson";
+	private static final String GZ_SUFFIX = ".ndjson.gz";
 
 	private final NdjsonExportService ndjson;
 	private final ManifestRepository manifestRepo;
@@ -186,13 +190,19 @@ public class ManifestService {
 		Path dir = Path.of(manifest.getStorageDir());
 		if (Files.isDirectory(dir)) {
 			try (Stream<Path> files = Files.list(dir)) {
-				List<Path> ndjsonFiles = files.filter(p -> p.toString().endsWith(NDJSON_SUFFIX))
+				List<Path> snapshotFiles = files.filter(p -> {
+							String name = p.toString();
+							return name.endsWith(GZ_SUFFIX) || name.endsWith(NDJSON_SUFFIX);
+						})
 						.sorted()
 						.toList();
-				for (Path file : ndjsonFiles) {
+				for (Path file : snapshotFiles) {
 					String fileName = file.getFileName().toString();
-					String type = fileName.substring(0, fileName.length() - NDJSON_SUFFIX.length());
-					String url = baseUrl + "/api/manifests/" + manifest.getId() + "/files/" + fileName;
+					String type = fileName.endsWith(GZ_SUFFIX)
+							? fileName.substring(0, fileName.length() - GZ_SUFFIX.length())
+							: fileName.substring(0, fileName.length() - NDJSON_SUFFIX.length());
+					// The served name is always the logical .ndjson; the .gz is transparent to clients.
+					String url = baseUrl + "/api/manifests/" + manifest.getId() + "/files/" + type + NDJSON_SUFFIX;
 					output.add(new ManifestJson.OutputEntry(type, url, countLines(file)));
 				}
 			} catch (IOException e) {
@@ -208,8 +218,16 @@ public class ManifestService {
 	}
 
 	private long countLines(Path file) throws IOException {
-		try (Stream<String> lines = Files.lines(file)) {
-			return lines.count();
+		try (BufferedReader reader = openReader(file)) {
+			return reader.lines().count();
 		}
+	}
+
+	private static BufferedReader openReader(Path file) throws IOException {
+		if (file.toString().endsWith(GZ_SUFFIX)) {
+			return new BufferedReader(
+					new InputStreamReader(new GZIPInputStream(Files.newInputStream(file)), StandardCharsets.UTF_8));
+		}
+		return Files.newBufferedReader(file);
 	}
 }

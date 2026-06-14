@@ -528,6 +528,7 @@ api:
   request-timeout-ms: 180000
   page-delay-ms: 0
   retention-per-job: 5
+  resume-crawls-on-startup: ${API_RESUME_CRAWLS_ON_STARTUP:false}
   # public-base-url: https://directory.example.org   # override for reverse-proxy deployments
   # UI server picker, served via /crawler/config.js. Set APP_FHIR_SERVERS to a JSON array
   # such as '[{"name":"Local Server","url":"http://localhost:8080/fhir"}]'.

@@ -14,6 +14,7 @@ import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -24,6 +25,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
+import java.util.concurrent.CancellationException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -101,6 +103,7 @@ public class CrawlService {
 		}
 		// Mark running synchronously so the flag is set before this call returns.
 		markRunning(job.getId(), true);
+		ourLog.info("Crawl {} queued for job {} ({})", batchId, job.getId(), job.getName());
 		FutureTask<Void> task = new FutureTask<>(
 				() -> {
 					try {
@@ -170,6 +173,8 @@ public class CrawlService {
 	public List<CrawlRun> crawlJob(CrawlJob job, String batchId) {
 		long operationStartNanos = System.nanoTime();
 		events.start(batchId);
+		MDC.put("batchId", batchId);
+		MDC.put("jobId", job.getId());
 		AtomicInteger seq = new AtomicInteger();
 		try {
 			List<ServerScope> servers = parseServers(job.getServers());
@@ -185,6 +190,8 @@ public class CrawlService {
 							"Crawl started: " + job.getStrategy() + " strategy across " + servers.size()
 									+ " server(s)"));
 
+			ourLog.info("Crawl started: {} strategy across {} server(s)", job.getStrategy(), servers.size());
+
 			List<ServerCrawlOutcome> outcomes = new ArrayList<>();
 			for (ServerScope server : servers) {
 				if (cancelled.contains(job.getId())) {
@@ -192,6 +199,7 @@ public class CrawlService {
 				}
 				outcomes.add(crawlServer(job, server, batchId, seq));
 			}
+			MDC.remove("serverKey"); // job-level steps below are not server-scoped
 
 			boolean allCompleted = !outcomes.isEmpty()
 					&& !cancelled.contains(job.getId())
@@ -213,13 +221,21 @@ public class CrawlService {
 								"MANIFEST",
 								"Published manifest: " + manifest.getTotalResources() + " resources, built in "
 										+ manifest.getBuildDurationMs() + " ms"));
+				ourLog.info(
+						"Published manifest: {} resources, built in {} ms",
+						manifest.getTotalResources(),
+						manifest.getBuildDurationMs());
 			}
 			if (!cancelled.contains(job.getId())) {
 				events.publish(batchId, null, null, seq.incrementAndGet(), StepEvent.info("DONE", "Crawl complete"));
+				ourLog.info("Crawl complete");
 			}
 			return outcomes.stream().map(ServerCrawlOutcome::run).toList();
 		} finally {
 			events.complete(batchId);
+			MDC.remove("batchId");
+			MDC.remove("jobId");
+			MDC.remove("serverKey");
 		}
 	}
 
@@ -228,10 +244,12 @@ public class CrawlService {
 	private ServerCrawlOutcome crawlServer(CrawlJob job, ServerScope server, String batchId, AtomicInteger seq) {
 		String serverKey = normalizeServerKey(server.url());
 		String serverLabel = server.serverLabel() != null ? server.serverLabel() : serverKey;
+		MDC.put("serverKey", serverKey);
 		long startNanos = System.nanoTime();
 
 		String since = incrementalSince(job, serverKey);
 		CrawlMode mode = since != null ? CrawlMode.INCREMENTAL : CrawlMode.FULL;
+		ourLog.info("Server {}: {} crawl starting", serverLabel, mode);
 
 		CrawlRun run = new CrawlRun();
 		run.setId(UUID.randomUUID().toString());
@@ -246,6 +264,7 @@ public class CrawlService {
 		// Transient progress markers do not consume a sequence number, keeping the persisted
 		// timeline contiguous.
 		Consumer<StepEvent> sink = ev -> {
+			logStep(ev);
 			if (!cancelled.contains(job.getId())) {
 				events.publish(batchId, run.getId(), serverKey, ev.progress() ? 0 : seq.incrementAndGet(), ev);
 			}
@@ -264,6 +283,8 @@ public class CrawlService {
 				case HISTORY -> crawlHistory(server, serverKey, serverLabel, since, run, sink);
 			}
 			run.setStatus(RunStatus.COMPLETED);
+		} catch (CancellationException e) {
+			run.setStatus(RunStatus.ABORTED);
 		} catch (Exception e) {
 			ourLog.error("Crawl failed for job {} server {}: {}", job.getId(), serverKey, e.getMessage(), e);
 			run.setStatus(RunStatus.ERROR);
@@ -288,10 +309,37 @@ public class CrawlService {
 		}
 
 		run.setDurationMs((System.nanoTime() - startNanos) / 1_000_000);
+		ourLog.info(
+				"Server {}: {} in {} ms (+{} ~{} -{}, total {})",
+				serverLabel,
+				run.getStatus(),
+				run.getDurationMs(),
+				run.getAdded(),
+				run.getUpdated(),
+				run.getDeleted(),
+				run.getTotalAfter());
 		if (!cancelled.contains(job.getId())) {
 			runRepo.save(run);
 		}
 		return new ServerCrawlOutcome(run, mode == CrawlMode.INCREMENTAL ? since : null);
+	}
+
+	/** Mirror a step to the application log: failures at ERROR, transient progress at DEBUG, else INFO. */
+	private static void logStep(StepEvent ev) {
+		boolean isError = ev.errorBody() != null
+				|| (ev.status() != null && ev.status() >= 400)
+				|| "ERROR".equalsIgnoreCase(ev.phase())
+				|| "FAILURE".equalsIgnoreCase(ev.phase());
+		if (isError) {
+			ourLog.error("[{}] {}", ev.phase(), ev.message());
+			if (ev.errorBody() != null) {
+				ourLog.debug("[{}] response body: {}", ev.phase(), ev.errorBody());
+			}
+		} else if (ev.progress()) {
+			ourLog.debug("[{}] {}", ev.phase(), ev.message());
+		} else {
+			ourLog.info("[{}] {}", ev.phase(), ev.message());
+		}
 	}
 
 	/**
@@ -312,11 +360,11 @@ public class CrawlService {
 			ServerScope server, String serverKey, String serverLabel, CrawlRun run, Consumer<StepEvent> sink) {
 		captureServerTime(server, run, sink);
 
-		FhirCrawlClient.SearchResult result =
-				client.searchTypes(server.url(), serverKey, props.getPageSize(), null, sink);
-
-		CrawlPersistenceService.PersistCounts counts =
-				persistence.persistFullSnapshot(serverKey, serverLabel, result.fetched());
+		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
+		FhirCrawlClient.SearchResult result = client.searchTypes(
+				server.url(), serverKey, props.getPageSize(), null, sink, resourceSink(run, session));
+		throwIfCancelled(run);
+		CrawlPersistenceService.PersistCounts counts = session.finishFullSnapshot();
 
 		applyCounts(run, counts, result, 0, 0, 0);
 		run.setHistorySupported(null);
@@ -332,8 +380,10 @@ public class CrawlService {
 			Consumer<StepEvent> sink) {
 		captureServerTime(server, run, sink);
 
-		FhirCrawlClient.SearchResult result =
-				client.searchTypes(server.url(), serverKey, props.getPageSize(), since, sink);
+		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
+		FhirCrawlClient.SearchResult result = client.searchTypes(
+				server.url(), serverKey, props.getPageSize(), since, sink, resourceSink(run, session));
+		throwIfCancelled(run);
 
 		List<DeletionEntry> deletions = List.of();
 		boolean historySupported = true;
@@ -351,9 +401,9 @@ public class CrawlService {
 			historySupported = false;
 			sink.accept(StepEvent.info("HISTORY", "Server does not support system _history; deletions not detected"));
 		}
+		throwIfCancelled(run);
 
-		CrawlPersistenceService.PersistCounts counts =
-				persistence.persistIncremental(serverKey, serverLabel, result.fetched(), deletions);
+		CrawlPersistenceService.PersistCounts counts = session.finishIncremental(deletions);
 
 		applyCounts(run, counts, result, delRequests, delPages, delBytes);
 		run.setHistorySupported(historySupported);
@@ -364,9 +414,11 @@ public class CrawlService {
 			ServerScope server, String serverKey, String serverLabel, CrawlRun run, Consumer<StepEvent> sink) {
 		captureServerTime(server, run, sink);
 
-		FhirCrawlClient.SearchResult result = client.bulkExport(server.url(), serverKey, sink);
-		CrawlPersistenceService.PersistCounts counts =
-				persistence.persistFullSnapshot(serverKey, serverLabel, result.fetched());
+		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
+		FhirCrawlClient.SearchResult result =
+				client.bulkExport(server.url(), serverKey, sink, resourceSink(run, session));
+		throwIfCancelled(run);
+		CrawlPersistenceService.PersistCounts counts = session.finishFullSnapshot();
 
 		applyCounts(run, counts, result, 0, 0, 0);
 		run.setHistorySupported(null);
@@ -382,25 +434,42 @@ public class CrawlService {
 			Consumer<StepEvent> sink) {
 		captureServerTime(server, run, sink);
 
-		FhirCrawlClient.HistoryResult result = client.historyExport(server.url(), serverKey, since, sink);
+		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
+		FhirCrawlClient.HistoryResult result =
+				client.historyExport(server.url(), serverKey, since, sink, resourceSink(run, session));
+		throwIfCancelled(run);
 		CrawlPersistenceService.PersistCounts counts;
 		if (since == null) {
-			counts = persistence.persistFullSnapshot(serverKey, serverLabel, result.fetched());
+			counts = session.finishFullSnapshot();
 			run.setHistorySupported(null);
 		} else {
-			counts = persistence.persistIncremental(serverKey, serverLabel, result.fetched(), result.deletions());
+			counts = session.finishIncremental(result.deletions());
 			run.setHistorySupported(true);
 		}
 
 		run.setAdded(counts.added());
 		run.setUpdated(counts.updated());
 		run.setDeleted(counts.deleted());
-		run.setRecords(result.fetched().size());
+		run.setRecords(result.records());
 		run.setTotalAfter(counts.total());
 		run.setBytes(result.bytes());
 		run.setRequests(result.requests() + 1); // + the metadata call
 		run.setPages(result.pages());
 		emitPersistStep(sink, counts);
+	}
+
+	private Consumer<List<FetchedResource>> resourceSink(
+			CrawlRun run, CrawlPersistenceService.SnapshotSession session) {
+		return batch -> {
+			throwIfCancelled(run);
+			session.accept(batch);
+		};
+	}
+
+	private void throwIfCancelled(CrawlRun run) {
+		if (cancelled.contains(run.getJobId())) {
+			throw new CancellationException();
+		}
 	}
 
 	private FhirCrawlClient.ServerTime captureServerTime(ServerScope server, CrawlRun run, Consumer<StepEvent> sink) {
@@ -430,7 +499,7 @@ public class CrawlService {
 		run.setAdded(counts.added());
 		run.setUpdated(counts.updated());
 		run.setDeleted(counts.deleted());
-		run.setRecords(result.fetched().size());
+		run.setRecords(result.records());
 		run.setTotalAfter(counts.total());
 		run.setBytes(result.bytes() + extraBytes);
 		run.setRequests(result.requests() + extraRequests + 1); // + the metadata call

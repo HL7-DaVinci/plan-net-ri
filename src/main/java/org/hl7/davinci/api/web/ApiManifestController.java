@@ -6,8 +6,6 @@ import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
 import org.hl7.davinci.api.repository.ManifestRepository;
 import org.hl7.davinci.api.service.ManifestService;
-import org.springframework.core.io.FileSystemResource;
-import org.springframework.core.io.Resource;
 import org.springframework.http.ContentDisposition;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -20,12 +18,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.regex.Pattern;
+import java.util.zip.GZIPInputStream;
 
 /** Lists snapshots and serves each manifest and its NDJSON files. */
 @RestController
@@ -65,22 +66,32 @@ public class ApiManifestController {
 	}
 
 	@GetMapping("/manifests/{id}/files/{fileName}")
-	public ResponseEntity<Resource> file(@PathVariable("id") String id, @PathVariable("fileName") String fileName) {
+	public ResponseEntity<StreamingResponseBody> file(
+			@PathVariable("id") String id, @PathVariable("fileName") String fileName) {
 		if (!SAFE_FILE.matcher(fileName).matches()) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid file name");
 		}
 		ManifestRecord manifest = requireManifest(id);
-		Path file = Path.of(manifest.getStorageDir(), fileName);
+		// Snapshots are gzipped on disk; decompress on serve so the wire stays plain NDJSON.
+		Path gz = Path.of(manifest.getStorageDir(), fileName + ".gz");
+		boolean gzipped = Files.exists(gz);
+		Path file = gzipped ? gz : Path.of(manifest.getStorageDir(), fileName);
 		if (!Files.exists(file)) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "File not found");
 		}
 		// Serve inline with the real type name so the browser does not save it as "f.txt".
 		ContentDisposition disposition =
 				ContentDisposition.inline().filename(fileName).build();
+		StreamingResponseBody body = out -> {
+			try (InputStream in =
+					gzipped ? new GZIPInputStream(Files.newInputStream(file)) : Files.newInputStream(file)) {
+				in.transferTo(out);
+			}
+		};
 		return ResponseEntity.ok()
 				.contentType(NDJSON)
 				.header(HttpHeaders.CONTENT_DISPOSITION, disposition.toString())
-				.body(new FileSystemResource(file));
+				.body(body);
 	}
 
 	private ManifestRecord requireManifest(String id) {

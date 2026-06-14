@@ -1,6 +1,7 @@
 package org.hl7.davinci.api.repository;
 
 import org.hl7.davinci.api.entity.CrawlResource;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -12,6 +13,15 @@ public interface CrawlResourceRepository extends JpaRepository<CrawlResource, St
 	List<CrawlResource> findByServerKey(String serverKey);
 
 	List<CrawlResource> findByServerKeyAndResourceType(String serverKey, String resourceType);
+
+	/**
+	 * One keyset page ordered by primary key, used to stream the manifest snapshot without
+	 * materializing the whole aggregate. Filtering on the primary key alone (no serverKey equality)
+	 * forces H2 to range-scan the primary key index, which never sorts; adding a serverKey equality
+	 * predicate lets the optimizer pick the serverKey index and re-sort every page. Keys are
+	 * {@code serverKey|Type/id}, so the caller bounds one server by its {@code serverKey|} prefix.
+	 */
+	List<CrawlResource> findByKeyGreaterThanOrderByKeyAsc(String afterKey, Pageable pageable);
 
 	long countByServerKey(String serverKey);
 

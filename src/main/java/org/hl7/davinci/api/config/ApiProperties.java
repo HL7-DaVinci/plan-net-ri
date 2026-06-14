@@ -32,12 +32,26 @@ public class ApiProperties {
 	/** Manifests retained per job; 0 = unlimited. */
 	private int retentionPerJob = 5;
 
+	/**
+	 * On startup, clear the stale {@code running} flag on jobs left mid-crawl by a crash so they can
+	 * run again. Default false; only meaningful where the database persists across restarts (dev).
+	 */
+	private boolean resumeCrawlsOnStartup = false;
+
 	public boolean isEnabled() {
 		return enabled;
 	}
 
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
+	}
+
+	public boolean isResumeCrawlsOnStartup() {
+		return resumeCrawlsOnStartup;
+	}
+
+	public void setResumeCrawlsOnStartup(boolean resumeCrawlsOnStartup) {
+		this.resumeCrawlsOnStartup = resumeCrawlsOnStartup;
 	}
 
 	public String getStoragePath() {

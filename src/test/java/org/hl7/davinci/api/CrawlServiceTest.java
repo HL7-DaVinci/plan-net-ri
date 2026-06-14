@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 import org.junit.jupiter.api.Test;
 
 class CrawlServiceTest {
@@ -167,6 +168,41 @@ class CrawlServiceTest {
 	}
 
 	@Test
+	void cancelJobStopsStreamedResourceBatches() throws Exception {
+		String server = "http://good.example/fhir";
+		FetchedResource first = new FetchedResource(server + "|Organization/a", "Organization", "a", "1", null, "{}", 2);
+		FetchedResource second = new FetchedResource(server + "|Organization/b", "Organization", "b", "1", null, "{}", 2);
+		EmittingAfterCancelFhirCrawlClient client = new EmittingAfterCancelFhirCrawlClient(first, second);
+		RecordingPersistence persistence = new RecordingPersistence();
+		CompletionAwareEvents events = new CompletionAwareEvents();
+		CrawlService service = new CrawlService(
+				client,
+				persistence,
+				new RecordingManifestService(),
+				events,
+				idleJobRepo(),
+				runRepo(),
+				new ObjectMapper(),
+				new ApiProperties());
+		CrawlJob job = new CrawlJob();
+		job.setId("cancel-stream-job");
+		job.setName("Cancelled stream job");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"good\",\"url\":\"" + server + "\"}]");
+
+		service.triggerAsync(job);
+		assertTrue(client.firstEmitted.await(5, TimeUnit.SECONDS), "the first streamed batch should be persisted");
+
+		service.cancelJob("cancel-stream-job");
+		client.releaseSecond.countDown();
+
+		assertTrue(client.secondAttempted.await(5, TimeUnit.SECONDS), "the client should try to emit after cancel");
+		assertTrue(events.completed.await(5, TimeUnit.SECONDS), "the cancelled worker should finish");
+		assertEquals(1, persistence.accepted.get(), "post-cancel streamed batches must not be persisted");
+	}
+
+	@Test
 	void triggerAsyncExposesTheActiveBatchUntilTheRunCompletes() throws Exception {
 		String server = "http://good.example/fhir";
 		FetchedResource fetched = new FetchedResource(
@@ -233,11 +269,13 @@ class CrawlServiceTest {
 				String serverKey,
 				int pageSize,
 				String since,
-				java.util.function.Consumer<StepEvent> steps) {
+				java.util.function.Consumer<StepEvent> steps,
+				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
 			if (!good.equals(serverUrl)) {
 				throw new IllegalStateException("unexpected server " + serverUrl);
 			}
-			return new SearchResult(List.of(fetched), 40, 1, 1);
+			resourceSink.accept(List.of(fetched));
+			return new SearchResult(1, 40, 1, 1);
 		}
 	}
 
@@ -273,8 +311,10 @@ class CrawlServiceTest {
 				String serverKey,
 				int pageSize,
 				String since,
-				java.util.function.Consumer<StepEvent> steps) {
-			return new SearchResult(List.of(fetched), 40, 1, 1);
+				java.util.function.Consumer<StepEvent> steps,
+				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+			resourceSink.accept(List.of(fetched));
+			return new SearchResult(1, 40, 1, 1);
 		}
 	}
 
@@ -284,8 +324,88 @@ class CrawlServiceTest {
 		}
 
 		@Override
-		public PersistCounts persistFullSnapshot(String serverKey, String serverLabel, List<FetchedResource> fetched) {
-			return new PersistCounts(1, 0, 0, 1);
+		public SnapshotSession openSession(String serverKey, String serverLabel) {
+			return new SnapshotSession() {
+				@Override
+				public void accept(List<FetchedResource> batch) {}
+
+				@Override
+				public PersistCounts finishFullSnapshot() {
+					return new PersistCounts(1, 0, 0, 1);
+				}
+
+				@Override
+				public PersistCounts finishIncremental(List<org.hl7.davinci.api.service.DeletionEntry> deletions) {
+					return new PersistCounts(1, 0, 0, 1);
+				}
+			};
+		}
+	}
+
+	private static class RecordingPersistence extends CrawlPersistenceService {
+		final AtomicInteger accepted = new AtomicInteger();
+
+		RecordingPersistence() {
+			super(resourceRepo());
+		}
+
+		@Override
+		public SnapshotSession openSession(String serverKey, String serverLabel) {
+			return new SnapshotSession() {
+				@Override
+				public void accept(List<FetchedResource> batch) {
+					accepted.addAndGet(batch.size());
+				}
+
+				@Override
+				public PersistCounts finishFullSnapshot() {
+					return new PersistCounts(accepted.get(), 0, 0, accepted.get());
+				}
+
+				@Override
+				public PersistCounts finishIncremental(List<org.hl7.davinci.api.service.DeletionEntry> deletions) {
+					return finishFullSnapshot();
+				}
+			};
+		}
+	}
+
+	private static class EmittingAfterCancelFhirCrawlClient extends FhirCrawlClient {
+		private final FetchedResource first;
+		private final FetchedResource second;
+		final CountDownLatch firstEmitted = new CountDownLatch(1);
+		final CountDownLatch releaseSecond = new CountDownLatch(1);
+		final CountDownLatch secondAttempted = new CountDownLatch(1);
+
+		EmittingAfterCancelFhirCrawlClient(FetchedResource first, FetchedResource second) {
+			super(FhirContext.forR4(), new ObjectMapper(), new ApiProperties());
+			this.first = first;
+			this.second = second;
+		}
+
+		@Override
+		public ServerTime getServerTime(String serverUrl) {
+			return new ServerTime("2026-01-01T00:00:00Z", "test");
+		}
+
+		@Override
+		public SearchResult searchTypes(
+				String serverUrl,
+				String serverKey,
+				int pageSize,
+				String since,
+				java.util.function.Consumer<StepEvent> steps,
+				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+			resourceSink.accept(List.of(first));
+			firstEmitted.countDown();
+			try {
+				releaseSecond.await(5, TimeUnit.SECONDS);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+			}
+			secondAttempted.countDown();
+			resourceSink.accept(List.of(second));
+			return new SearchResult(2, 4, 1, 1);
 		}
 	}
 

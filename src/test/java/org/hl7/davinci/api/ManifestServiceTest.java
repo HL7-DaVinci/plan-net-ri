@@ -71,6 +71,18 @@ class ManifestServiceTest {
 		}
 	}
 
+	@Test
+	void renderCountsLinesForEachSnapshotFile(@TempDir Path tmp) throws Exception {
+		Path dir = Files.createDirectories(tmp.resolve("snap"));
+		Files.writeString(dir.resolve("Practitioner.ndjson"), "{}\n{}\n{}\n");
+		ManifestService service = new ManifestService(null, null, null);
+
+		var output = service.render(manifest("m", "job", dir), "http://x").output();
+
+		assertEquals(1, output.size());
+		assertEquals(3, output.get(0).count(), "render counts the resource lines per type");
+	}
+
 	private static Path snapshotDir(Path base, String name) throws Exception {
 		Path dir = Files.createDirectories(base.resolve(name));
 		Files.writeString(dir.resolve("Organization.ndjson"), "{}\n");

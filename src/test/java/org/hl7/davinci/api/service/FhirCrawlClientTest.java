@@ -52,7 +52,7 @@ class FhirCrawlClientTest {
 
 		IllegalStateException error = assertThrows(
 				IllegalStateException.class,
-				() -> client.bulkExport("http://example.test/fhir", "server", steps::add));
+				() -> client.bulkExport("http://example.test/fhir", "server", steps::add, batch -> {}));
 
 		assertTrue(error.getMessage().contains("HTTP 410"));
 		assertTrue(
@@ -115,9 +115,9 @@ class FhirCrawlClientTest {
 		};
 		List<StepEvent> steps = new ArrayList<>();
 
-		FhirCrawlClient.SearchResult result = client.bulkExport("http://example.test/fhir", "server", steps::add);
+		FhirCrawlClient.SearchResult result = client.bulkExport("http://example.test/fhir", "server", steps::add, batch -> {});
 
-		assertEquals(1, result.fetched().size(), "the export should succeed after the retried kick-off");
+		assertEquals(1, result.records(), "the export should succeed after the retried kick-off");
 		assertTrue(
 				steps.stream().anyMatch(step -> step.message().contains("retrying in")),
 				"the retry should be narrated into the play-by-play");

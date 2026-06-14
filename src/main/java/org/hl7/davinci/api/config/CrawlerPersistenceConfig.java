@@ -41,6 +41,10 @@ public class CrawlerPersistenceConfig {
 		properties.put("hibernate.hbm2ddl.auto", "update");
 		properties.put("hibernate.format_sql", "false");
 		properties.put("hibernate.show_sql", "false");
+		// Batched/ordered DML for the large per-server upserts.
+		properties.put("hibernate.jdbc.batch_size", "500");
+		properties.put("hibernate.order_inserts", "true");
+		properties.put("hibernate.order_updates", "true");
 		emf.setJpaPropertyMap(properties);
 
 		return emf;
