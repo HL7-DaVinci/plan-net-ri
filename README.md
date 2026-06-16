@@ -135,3 +135,5 @@ For local frontend builds, the `VITE_FHIR_SERVERS` and `VITE_API_BASE_URL` value
 Questions can be asked in the [Da Vinci Plan-Net stream on the FHIR Zulip Chat](https://chat.fhir.org/#narrow/stream/229922-Da.2BVinci.2BPDex.2BPlan-Net). Issues should be submitted via the [GitHub issue tracker](https://github.com/HL7-DaVinci/plan-net-ri/issues).
 
 As of October 1, 2022, the Lantana Consulting Group is responsible for the management and maintenance of this Reference Implementation. You can also contact [Corey Spears](mailto:corey.spears@lantanagroup.com).
+
+
