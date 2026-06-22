@@ -119,7 +119,10 @@ public class FhirCrawlClient {
 	}
 
 	HttpClient newBulkHttpClient() {
-		return HttpClient.newBuilder().connectTimeout(httpTimeout).build();
+		return HttpClient.newBuilder()
+				.connectTimeout(httpTimeout)
+				.followRedirects(HttpClient.Redirect.NORMAL)
+				.build();
 	}
 
 	@FunctionalInterface

@@ -3,6 +3,7 @@ package org.hl7.davinci.api.service;
 import org.hl7.davinci.api.entity.CrawlStep;
 import org.hl7.davinci.api.model.CrawlStepResponse;
 import org.hl7.davinci.api.repository.CrawlStepRepository;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
@@ -21,7 +22,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 @Service
 public class CrawlEventService {
 
-	private static final long SSE_TIMEOUT_MS = 5 * 60 * 1000L;
+	/** Heartbeat interval; keeps idle SSE connections (and any reverse proxy) warm during quiet phases. */
+	private static final long HEARTBEAT_MS = 15_000L;
 
 	private final CrawlStepRepository stepRepo;
 	private final Map<String, List<SseEmitter>> emitters = new ConcurrentHashMap<>();
@@ -117,7 +119,8 @@ public class CrawlEventService {
 
 	/** Subscribe to a batch: replay recorded steps, then stream live ones (or close if finished). */
 	public SseEmitter subscribe(String batchId) {
-		SseEmitter emitter = new SseEmitter(SSE_TIMEOUT_MS);
+		// 0 = no servlet async idle timeout; the scheduled heartbeat keeps the connection warm instead.
+		SseEmitter emitter = new SseEmitter(0L);
 		try {
 			for (CrawlStep step : stepRepo.findByBatchIdOrderBySeqAsc(batchId)) {
 				emitter.send(SseEmitter.event().name("step").data(toDto(step)));
@@ -160,9 +163,33 @@ public class CrawlEventService {
 		}
 	}
 
+	/**
+	 * Send a no-op comment to every live connection so an idle stream (a long fetch/persist with no
+	 * persisted step) is not cut by the servlet container or a reverse proxy. A failed send means the
+	 * client is gone, so drop it.
+	 */
+	@Scheduled(fixedRate = HEARTBEAT_MS)
+	void heartbeat() {
+		emitters.forEach((batchId, subscribers) -> {
+			for (SseEmitter emitter : subscribers) {
+				try {
+					synchronized (emitter) {
+						emitter.send(SseEmitter.event().comment("hb"));
+					}
+				} catch (Exception e) {
+					remove(batchId, emitter);
+				}
+			}
+		});
+	}
+
+	// Sends are serialized per emitter because the heartbeat thread can write at the same time as the
+	// crawl worker; interleaving two writes would corrupt the SSE framing.
 	private void trySend(String batchId, SseEmitter emitter, String name, CrawlStepResponse dto) {
 		try {
-			emitter.send(SseEmitter.event().name(name).data(dto));
+			synchronized (emitter) {
+				emitter.send(SseEmitter.event().name(name).data(dto));
+			}
 		} catch (Exception e) {
 			remove(batchId, emitter);
 		}
@@ -170,7 +197,9 @@ public class CrawlEventService {
 
 	private void sendComplete(SseEmitter emitter) {
 		try {
-			emitter.send(SseEmitter.event().name("complete").data("done"));
+			synchronized (emitter) {
+				emitter.send(SseEmitter.event().name("complete").data("done"));
+			}
 		} catch (Exception ignored) {
 			// client gone; nothing to do
 		}

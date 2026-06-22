@@ -35,6 +35,13 @@ import org.junit.jupiter.api.Test;
 class FhirCrawlClientTest {
 
 	@Test
+	void bulkHttpClientFollowsRedirects() {
+		// A Content-Location poll URL can 301 http->https behind a TLS-terminating proxy.
+		FhirCrawlClient client = new FhirCrawlClient(FhirContext.forR4(), new ObjectMapper(), new ApiProperties());
+		assertEquals(HttpClient.Redirect.NORMAL, client.newBulkHttpClient().followRedirects());
+	}
+
+	@Test
 	void bulkExportFailsWhenOutputFileDownloadIsNotSuccessful() {
 		FakeHttpClient http = new FakeHttpClient(List.of(
 				response(202, "", "Content-Location", "http://example.test/export-status"),

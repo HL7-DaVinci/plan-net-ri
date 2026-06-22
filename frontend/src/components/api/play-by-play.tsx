@@ -56,12 +56,6 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
       setCurrent(null);
       source.close();
     });
-    source.onerror = () => {
-      // Stream closed (or server gone); stop listening.
-      setDone(true);
-      setCurrent(null);
-      source.close();
-    };
 
     return () => source.close();
   }, [batchId]);
