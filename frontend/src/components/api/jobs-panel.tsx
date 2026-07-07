@@ -49,7 +49,8 @@ import type {
 import { getStoredServerUrl } from "@/lib/fhir-config";
 
 const STRATEGY_LABELS: Record<CrawlStrategy, string> = {
-  SEARCH: "Incremental search",
+  SEARCH: "Search (paging)",
+  SEARCH_LAST_UPDATED: "Search (by last updated)",
   BULK_EXPORT: "Bulk $export",
   HISTORY: "History paging",
 };

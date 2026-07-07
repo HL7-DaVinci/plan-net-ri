@@ -11,7 +11,7 @@ interface StrategyDoc {
 
 const STRATEGY_DOCS: Record<CrawlStrategy, StrategyDoc> = {
   SEARCH: {
-    title: "Incremental search",
+    title: "Search (paging)",
     summary:
       "Pulls only what changed since the last run by searching each type and detecting deletions via system history.",
     steps: [
@@ -27,6 +27,27 @@ const STRATEGY_DOCS: Record<CrawlStrategy, StrategyDoc> = {
     bestFor: "Keeping a directory in sync with minimal data transfer.",
     tradeoffs:
       "Many small requests; the first run is a full baseline; needs system _history for deletion detection.",
+  },
+  SEARCH_LAST_UPDATED: {
+    title: "Search (by last updated)",
+    summary:
+      "Walks each type in last-updated order, advancing a date cursor instead of following the server's page links. Better for very large directories where standard paging eventually times out.",
+    steps: [
+      "Capture a server-time anchor from the HTTP Date header.",
+      "For each of the 8 Plan-Net types, search ordered by _lastUpdated (from the anchor on incremental runs).",
+      "Advance the cursor to the newest _lastUpdated on each page and re-query from there, so every request is a fresh shallow query.",
+      "If more resources share one _lastUpdated instant than fit on a page, follow that page's next links to read the whole cluster before advancing the cursor.",
+      "Diff against the retained snapshot: added / updated / deleted.",
+    ],
+    requests: [
+      "GET /{Type}?_lastUpdated=ge{cursor}&_sort=_lastUpdated&_count=N&_total=none",
+      "GET {next-link}  (only to traverse a same-instant cluster)",
+      "GET /_history?_since={anchor}  (incremental deletions)",
+    ],
+    bestFor:
+      "Very large directories where standard search paging times out partway through.",
+    tradeoffs:
+      "Primarily shallow date-windowed queries, but a _lastUpdated instant shared by more resources than fit on a page falls back to page-link paging to read that cluster; re-queries cause small boundary overlaps that the diff dedupes.",
   },
   BULK_EXPORT: {
     title: "Bulk $export",

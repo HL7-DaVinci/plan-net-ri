@@ -45,6 +45,9 @@ public class CrawlerPersistenceConfig {
 		properties.put("hibernate.jdbc.batch_size", "500");
 		properties.put("hibernate.order_inserts", "true");
 		properties.put("hibernate.order_updates", "true");
+		// The crawler runs a small fixed set of query shapes; the default plan cache (2048) is heap waste.
+		properties.put("hibernate.query.plan_cache_max_size", "256");
+		properties.put("hibernate.query.plan_parameter_metadata_max_size", "32");
 		emf.setJpaPropertyMap(properties);
 
 		return emf;

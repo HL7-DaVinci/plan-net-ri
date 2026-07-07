@@ -44,6 +44,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ContentDisposition;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -96,6 +97,12 @@ class DirectoryCrawlerSelfCrawlIT {
 
 	@Autowired
 	private TestRestTemplate rest;
+
+	@Autowired
+	private org.hl7.davinci.api.config.ApiProperties apiProperties;
+
+	@Autowired
+	private org.hl7.davinci.api.service.JobDeletionService jobDeletionService;
 
 	@Test
 	void jobCrudOverHttp() {
@@ -375,7 +382,7 @@ class DirectoryCrawlerSelfCrawlIT {
 	}
 
 	@Test
-	void retentionKeepsNewestFivePerJob() {
+	void retentionKeepsNewestPerJob() {
 		CrawlJob job = new CrawlJob();
 		job.setId("retention-job");
 		job.setName("Retention job");
@@ -385,14 +392,54 @@ class DirectoryCrawlerSelfCrawlIT {
 		job.setServers("[]");
 		jobRepo.save(job);
 
-		for (int i = 0; i < 8; i++) {
+		int retention = apiProperties.getRetentionPerJob();
+		for (int i = 0; i < retention + 6; i++) {
 			manifestService.createManifest(job, "batch-" + i, null, List.of(), System.nanoTime());
 		}
 
 		assertEquals(
-				5,
+				retention,
 				manifestRepo.findByJobIdOrderByGeneratedAtDescIdDesc("retention-job").size(),
-				"default retention should keep only the newest five manifests per job");
+				"retention should keep only the newest api.retention-per-job manifests per job");
+	}
+
+	@Test
+	void deletingTheLastJobForAServerClearsItsResources() {
+		String base = "http://localhost:" + port + "/fhir";
+
+		CrawlJob job = new CrawlJob();
+		job.setId("orphan-cleanup");
+		job.setName("Orphan cleanup");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setEnabled(true);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverKey\":\"" + base + "\",\"serverLabel\":\"self\",\"url\":\"" + base + "\"}]");
+		jobRepo.save(job);
+
+		crawlService.crawlJob(job);
+		assertTrue(resourceRepo.countByServerKey(base) > 0, "the crawl should have populated the server's resources");
+		assertEquals(
+				1,
+				resourceRepo.countDistinctServers(),
+				"the distinct-server count derived from the key prefix should see exactly this server");
+
+		// Every job in this class targets the same self URL; remove leftovers from sibling tests so
+		// this job is genuinely the last one referencing the server.
+		for (CrawlJob other : jobRepo.findAll()) {
+			if (!other.getId().equals("orphan-cleanup")) {
+				jobDeletionService.deleteJob(other.getId());
+			}
+		}
+		assertTrue(
+				resourceRepo.countByServerKey(base) > 0,
+				"deleting other jobs must not clear resources while this job still references the server");
+
+		jobDeletionService.deleteJob("orphan-cleanup");
+
+		assertEquals(
+				0,
+				resourceRepo.countByServerKey(base),
+				"no remaining job targets the server, so its resources are cleared");
 	}
 
 	@Test
@@ -467,8 +514,10 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(CrawlMode.FULL, run.getMode());
 
 		// Capture the aggregate before the next strategy clears and reloads this server's rows.
-		return resourceRepo.findByServerKey(base).stream()
-				.map(r -> r.getResourceType() + "/" + r.getResId())
+		String prefix = base + "|";
+		return resourceRepo.findKeysByKeyGreaterThanOrderByKeyAsc(prefix, PageRequest.ofSize(100_000)).stream()
+				.filter(key -> key.startsWith(prefix))
+				.map(key -> key.substring(prefix.length()))
 				.collect(Collectors.toSet());
 	}
 }

@@ -13,17 +13,11 @@ class ResourceJsonCodecTest {
 		String json = "{\"resourceType\":\"Organization\",\"id\":\"a\",\"name\":\""
 				+ "x".repeat(2_000) + "\"}";
 
-		String stored = ResourceJsonCodec.encode(json);
+		byte[] stored = ResourceJsonCodec.encode(json);
 
-		assertTrue(stored.startsWith("gz:"), "encoded values carry the marker prefix");
-		assertTrue(stored.length() < json.length(), "encoding should shrink repetitive FHIR JSON");
+		assertTrue(stored[0] == (byte) 0x1f && stored[1] == (byte) 0x8b, "encoded body is raw gzip");
+		assertTrue(stored.length < json.length(), "encoding should shrink repetitive FHIR JSON");
 		assertEquals(json, ResourceJsonCodec.decode(stored));
-	}
-
-	@Test
-	void legacyPlaintextRowsAreReadInPlace() {
-		String legacy = "{\"resourceType\":\"Organization\",\"id\":\"a\"}";
-		assertEquals(legacy, ResourceJsonCodec.decode(legacy), "pre-compression rows must pass through unchanged");
 	}
 
 	@Test

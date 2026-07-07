@@ -3,7 +3,6 @@ package org.hl7.davinci.api.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Index;
 import jakarta.persistence.PostLoad;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
@@ -12,14 +11,13 @@ import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 import org.springframework.data.domain.Persistable;
 
-/** Current aggregated state of one resource for one server; the source for diffing and NDJSON. */
+/**
+ * Current aggregated state of one resource for one server; the source for diffing and NDJSON.
+ * The key embeds the server and identity, so every per-server access is a primary-key range scan
+ * over the {@code serverKey|} prefix; no secondary columns or indexes duplicate it.
+ */
 @Entity
-@Table(
-		name = "crawl_resource",
-		indexes = {
-			@Index(name = "idx_crawl_resource_server", columnList = "serverKey"),
-			@Index(name = "idx_crawl_resource_server_type", columnList = "serverKey,resourceType")
-		})
+@Table(name = "crawl_resource")
 public class CrawlResource implements Persistable<String> {
 
 	/** {@code serverKey|resourceType/id}. */
@@ -35,21 +33,15 @@ public class CrawlResource implements Persistable<String> {
 	@Transient
 	private boolean isNew = true;
 
-	private String serverKey;
-
-	private String serverLabel;
-
 	private String resourceType;
-
-	private String resId;
 
 	private String versionId;
 
 	private String lastUpdated;
 
-	@JdbcTypeCode(SqlTypes.LONGVARCHAR)
+	@JdbcTypeCode(SqlTypes.LONGVARBINARY)
 	@Column(name = "resource_json")
-	private String resourceJson;
+	private byte[] resourceJson;
 
 	public String getKey() {
 		return key;
@@ -80,36 +72,12 @@ public class CrawlResource implements Persistable<String> {
 		this.isNew = false;
 	}
 
-	public String getServerKey() {
-		return serverKey;
-	}
-
-	public void setServerKey(String serverKey) {
-		this.serverKey = serverKey;
-	}
-
-	public String getServerLabel() {
-		return serverLabel;
-	}
-
-	public void setServerLabel(String serverLabel) {
-		this.serverLabel = serverLabel;
-	}
-
 	public String getResourceType() {
 		return resourceType;
 	}
 
 	public void setResourceType(String resourceType) {
 		this.resourceType = resourceType;
-	}
-
-	public String getResId() {
-		return resId;
-	}
-
-	public void setResId(String resId) {
-		this.resId = resId;
 	}
 
 	public String getVersionId() {
@@ -128,11 +96,11 @@ public class CrawlResource implements Persistable<String> {
 		this.lastUpdated = lastUpdated;
 	}
 
-	public String getResourceJson() {
+	public byte[] getResourceJson() {
 		return resourceJson;
 	}
 
-	public void setResourceJson(String resourceJson) {
+	public void setResourceJson(byte[] resourceJson) {
 		this.resourceJson = resourceJson;
 	}
 }

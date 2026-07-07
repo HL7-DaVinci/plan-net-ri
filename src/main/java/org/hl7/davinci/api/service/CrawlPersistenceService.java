@@ -4,11 +4,14 @@ import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -30,6 +33,12 @@ public class CrawlPersistenceService {
 
 	/** Emit a persist heartbeat at most every this many processed records. */
 	private static final int LOG_EVERY = 50_000;
+
+	/** Bounded recent-key window for deduping a first crawl's re-fetched keys. */
+	private static final int DEDUP_WINDOW = 50_000;
+
+	/** Keys per page when streaming the aggregate to find full-snapshot deletions. */
+	private static final int DELETE_SCAN_PAGE = 1000;
 
 	private final CrawlResourceRepository resourceRepo;
 
@@ -73,30 +82,45 @@ public class CrawlPersistenceService {
 	private final class DefaultSession implements SnapshotSession {
 		private final String serverKey;
 		private final String serverLabel;
-		private final Map<String, DiffUtil.VersionInfo> existing;
+		private final long startCount;
+		private final boolean firstCrawl;
 		private final Set<String> seenKeys = new HashSet<>();
 		private final Set<String> updatedKeys = new HashSet<>();
+		private final Set<String> recentKeys;
 		private int added;
 		private int updated;
+		private int processed;
 		private int lastLoggedAt;
 
 		private DefaultSession(String serverKey, String serverLabel) {
 			this.serverKey = serverKey;
 			this.serverLabel = serverLabel;
-			this.existing = loadIndex(serverKey);
-			ourLog.info("Persist session for server {}: existing aggregate {} rows", serverLabel, existing.size());
+			this.startCount = resourceRepo.countByServerKey(serverKey);
+			this.firstCrawl = startCount == 0;
+			this.recentKeys = firstCrawl ? boundedKeySet() : null;
+			ourLog.info("Persist session for server {}: existing aggregate {} rows", serverLabel, startCount);
 		}
 
 		@Override
 		public void accept(List<FetchedResource> batch) {
-			DiffUtil.DiffResult diff = DiffUtil.computeDiff(batch, existing);
+			// Skip the DB lookup for keys already handled this run: the stored row may hold this run's own
+			// write, so re-reading it would misclassify the re-fetch.
+			Set<String> handled = firstCrawl ? recentKeys : seenKeys;
+			List<String> queryKeys = new ArrayList<>();
+			for (FetchedResource fr : batch) {
+				if (!handled.contains(fr.key())) {
+					queryKeys.add(fr.key());
+				}
+			}
+			Map<String, DiffUtil.VersionInfo> prior = queryKeys.isEmpty() ? Map.of() : loadVersions(queryKeys);
+
+			DiffUtil.DiffResult diff = DiffUtil.computeDiff(batch, prior);
 			List<FetchedResource> inserts = new ArrayList<>();
 			List<FetchedResource> updates = new ArrayList<>(diff.updated());
 			int newInserts = 0;
 			int newUpdates = 0;
 			for (FetchedResource fr : diff.added()) {
-				// A key already inserted earlier in this session must update, not insert again.
-				if (seenKeys.add(fr.key())) {
+				if (handled.add(fr.key())) {
 					inserts.add(fr);
 					newInserts++;
 				} else {
@@ -108,19 +132,23 @@ public class CrawlPersistenceService {
 					newUpdates++;
 				}
 			}
-			upsertInChunks(serverKey, serverLabel, inserts, true);
-			upsertInChunks(serverKey, serverLabel, updates, false);
+			upsertInChunks(inserts, true);
+			upsertInChunks(updates, false);
 			added += newInserts;
 			updated += newUpdates;
-			for (FetchedResource fr : batch) {
-				seenKeys.add(fr.key());
+			if (!firstCrawl) {
+				// Full-snapshot deletion needs every fetched key; a first crawl has no prior rows to delete.
+				for (FetchedResource fr : batch) {
+					seenKeys.add(fr.key());
+				}
 			}
-			if (seenKeys.size() - lastLoggedAt >= LOG_EVERY) {
-				lastLoggedAt = seenKeys.size();
+			processed += batch.size();
+			if (processed - lastLoggedAt >= LOG_EVERY) {
+				lastLoggedAt = processed;
 				ourLog.info(
 						"Persist progress for server {}: {} processed (+{} ~{})",
 						serverLabel,
-						seenKeys.size(),
+						processed,
 						added,
 						updated);
 			}
@@ -128,33 +156,72 @@ public class CrawlPersistenceService {
 
 		@Override
 		public PersistCounts finishFullSnapshot() {
-			List<String> deletedKeys = new ArrayList<>();
-			for (String key : existing.keySet()) {
-				if (!seenKeys.contains(key)) {
-					deletedKeys.add(key);
-				}
-			}
+			// A first crawl has no prior rows, so nothing can be deleted.
+			List<String> deletedKeys = startCount > 0 ? scanDeletedKeys() : new ArrayList<>();
 			return finish(deletedKeys);
 		}
 
 		@Override
 		public PersistCounts finishIncremental(List<DeletionEntry> deletions) {
-			List<String> deletedKeys = DiffUtil.applyDeletions(deletions, serverKey, existing.keySet());
+			List<String> deletedKeys = DiffUtil.applyDeletions(deletions, serverKey, existingDeletionKeys(deletions));
 			deletedKeys.removeIf(seenKeys::contains);
 			return finish(deletedKeys);
 		}
 
 		private PersistCounts finish(List<String> deletedKeys) {
 			deleteInChunks(deletedKeys);
-			return new PersistCounts(added, updated, deletedKeys.size(), existing.size() + added - deletedKeys.size());
+			return new PersistCounts(added, updated, deletedKeys.size(), (int) startCount + added - deletedKeys.size());
+		}
+
+		/** Keys of this server not re-seen this run. */
+		private List<String> scanDeletedKeys() {
+			List<String> deleted = new ArrayList<>();
+			String prefix = serverKey + "|";
+			String afterKey = prefix;
+			while (true) {
+				List<String> keys = resourceRepo.findKeysByKeyGreaterThanOrderByKeyAsc(
+						afterKey, PageRequest.ofSize(DELETE_SCAN_PAGE));
+				if (keys.isEmpty()) {
+					break;
+				}
+				for (String key : keys) {
+					if (!key.startsWith(prefix)) {
+						return deleted; // reached the next server's keys
+					}
+					if (!seenKeys.contains(key)) {
+						deleted.add(key);
+					}
+					afterKey = key;
+				}
+				if (keys.size() < DELETE_SCAN_PAGE) {
+					break;
+				}
+			}
+			return deleted;
+		}
+
+		/** The explicit deletion keys that currently exist. */
+		private Set<String> existingDeletionKeys(List<DeletionEntry> deletions) {
+			if (deletions.isEmpty()) {
+				return Set.of();
+			}
+			List<String> candidates = new ArrayList<>(deletions.size());
+			for (DeletionEntry d : deletions) {
+				candidates.add(serverKey + "|" + d.resourceType() + "/" + d.id());
+			}
+			Set<String> present = new HashSet<>();
+			for (CrawlResourceRepository.ResourceVersionView view : resourceRepo.findVersionViewByKeys(candidates)) {
+				present.add(view.getKey());
+			}
+			return present;
 		}
 	}
 
 	/** Rewriting unchanged rows bloats the append-oriented MVStore, so only the changed set is saved. */
-	private void upsertInChunks(String serverKey, String serverLabel, List<FetchedResource> changed, boolean isNew) {
+	private void upsertInChunks(List<FetchedResource> changed, boolean isNew) {
 		for (int i = 0; i < changed.size(); i += CHUNK) {
 			List<FetchedResource> chunk = changed.subList(i, Math.min(i + CHUNK, changed.size()));
-			resourceRepo.saveAll(toEntities(serverKey, serverLabel, chunk, isNew));
+			resourceRepo.saveAll(toEntities(chunk, isNew));
 		}
 	}
 
@@ -164,24 +231,32 @@ public class CrawlPersistenceService {
 		}
 	}
 
-	private Map<String, DiffUtil.VersionInfo> loadIndex(String serverKey) {
+	/** A set that retains only the most recent {@link #DEDUP_WINDOW} keys, evicting the oldest. */
+	@SuppressWarnings("serial")
+	private static Set<String> boundedKeySet() {
+		return Collections.newSetFromMap(new LinkedHashMap<>(1024, 0.75f, false) {
+			@Override
+			protected boolean removeEldestEntry(Map.Entry<String, Boolean> eldest) {
+				return size() > DEDUP_WINDOW;
+			}
+		});
+	}
+
+	/** Prior versions for the given keys. */
+	private Map<String, DiffUtil.VersionInfo> loadVersions(List<String> keys) {
 		Map<String, DiffUtil.VersionInfo> index = new HashMap<>();
-		for (CrawlResourceRepository.ResourceVersionView view : resourceRepo.findVersionViewByServerKey(serverKey)) {
+		for (CrawlResourceRepository.ResourceVersionView view : resourceRepo.findVersionViewByKeys(keys)) {
 			index.put(view.getKey(), new DiffUtil.VersionInfo(view.getVersionId(), view.getLastUpdated()));
 		}
 		return index;
 	}
 
-	private List<CrawlResource> toEntities(
-			String serverKey, String serverLabel, List<FetchedResource> fetched, boolean isNew) {
+	private List<CrawlResource> toEntities(List<FetchedResource> fetched, boolean isNew) {
 		List<CrawlResource> entities = new ArrayList<>(fetched.size());
 		for (FetchedResource fr : fetched) {
 			CrawlResource e = new CrawlResource();
 			e.setKey(fr.key());
-			e.setServerKey(serverKey);
-			e.setServerLabel(serverLabel);
 			e.setResourceType(fr.resourceType());
-			e.setResId(fr.id());
 			e.setVersionId(fr.versionId());
 			e.setLastUpdated(fr.lastUpdated());
 			e.setResourceJson(ResourceJsonCodec.encode(fr.json()));

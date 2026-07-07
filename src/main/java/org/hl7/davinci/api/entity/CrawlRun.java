@@ -16,10 +16,7 @@ import java.time.Instant;
 @Entity
 @Table(
 		name = "crawl_run",
-		indexes = {
-			@Index(name = "idx_crawl_run_job", columnList = "jobId"),
-			@Index(name = "idx_crawl_run_job_server", columnList = "jobId,serverKey")
-		})
+		indexes = {@Index(name = "idx_crawl_run_job_server", columnList = "jobId,serverKey")})
 public class CrawlRun {
 
 	@Id

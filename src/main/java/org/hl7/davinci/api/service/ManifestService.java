@@ -7,6 +7,10 @@ import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
 import org.hl7.davinci.api.repository.ManifestRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
@@ -22,7 +26,9 @@ import java.nio.file.Path;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Stream;
 import java.util.zip.GZIPInputStream;
@@ -30,6 +36,8 @@ import java.util.zip.GZIPInputStream;
 /** Creates retained snapshots and renders the served manifest. */
 @Service
 public class ManifestService {
+
+	private static final Logger ourLog = LoggerFactory.getLogger(ManifestService.class);
 
 	private static final String NDJSON_SUFFIX = ".ndjson";
 	private static final String GZ_SUFFIX = ".ndjson.gz";
@@ -68,6 +76,32 @@ public class ManifestService {
 		ManifestRecord saved = manifestRepo.save(manifest);
 		pruneOldManifests(job.getId());
 		return saved;
+	}
+
+	/**
+	 * Snapshot files are written before the manifest row is saved, so a crash in between strands
+	 * a directory no row points at; those orphans are reclaimed here on startup.
+	 */
+	@EventListener(ApplicationReadyEvent.class)
+	public void sweepOrphanedSnapshots() {
+		Path root = Path.of(props.getStoragePath());
+		if (!Files.isDirectory(root)) {
+			return;
+		}
+		Set<String> knownIds = new HashSet<>();
+		for (ManifestRecord manifest : manifestRepo.findAll()) {
+			knownIds.add(manifest.getId());
+		}
+		try (Stream<Path> children = Files.list(root)) {
+			children.filter(Files::isDirectory)
+					.filter(dir -> !knownIds.contains(dir.getFileName().toString()))
+					.forEach(dir -> {
+						ourLog.warn("Deleting orphaned snapshot directory {}", dir);
+						deleteDirectory(dir.toString());
+					});
+		} catch (IOException ignored) {
+			// best-effort cleanup
+		}
 	}
 
 	/** Delete every retained snapshot for a job: its NDJSON files and rows. Returns the count removed. */
@@ -118,8 +152,8 @@ public class ManifestService {
 	/**
 	 * The deprecated Bulk Data kick-off URL, populated only where there is a genuine single
 	 * request: $export for BULK_EXPORT and _history (with _since for an incremental run) for
-	 * HISTORY. SEARCH issues per-type searches with no single kick-off URL, so it returns null
-	 * and the field is omitted from the manifest.
+	 * HISTORY. SEARCH and SEARCH_LAST_UPDATED issue per-type searches with no single kick-off URL,
+	 * so they return null and the field is omitted from the manifest.
 	 */
 	private static String buildRequestUrl(CrawlStrategy strategy, List<String> serverKeys, String windowSince) {
 		String base = serverKeys.isEmpty() ? "" : serverKeys.get(0);
@@ -128,7 +162,7 @@ public class ManifestService {
 			case HISTORY -> windowSince != null
 					? base + "/_history?_since=" + URLEncoder.encode(windowSince, StandardCharsets.UTF_8)
 					: base + "/_history";
-			case SEARCH -> null;
+			case SEARCH, SEARCH_LAST_UPDATED -> null;
 		};
 	}
 

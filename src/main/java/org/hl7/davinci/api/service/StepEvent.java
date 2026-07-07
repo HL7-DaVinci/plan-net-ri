@@ -19,6 +19,17 @@ public record StepEvent(
 	/** Cap stored error bodies; a broken server can return arbitrarily large pages. */
 	static final int MAX_ERROR_BODY_CHARS = 100_000;
 
+	/** Cap for other persisted text (messages, urls, run errors), which can embed response bodies. */
+	static final int MAX_TEXT_CHARS = 10_000;
+
+	/** Truncate a persisted text value; exception messages and urls can embed whole response bodies. */
+	static String clip(String value, int maxChars) {
+		if (value == null || value.length() <= maxChars) {
+			return value;
+		}
+		return value.substring(0, maxChars) + "... [truncated]";
+	}
+
 	/** A narrative step with no HTTP details. */
 	public static StepEvent info(String phase, String message) {
 		return new StepEvent(phase, message, null, null, null, null, null, null, null, false);
@@ -48,12 +59,15 @@ public record StepEvent(
 		return new StepEvent(phase, message, null, null, null, null, null, null, null, true);
 	}
 
+	/** An in-progress marker that also carries the request being issued right now. */
+	public static StepEvent progress(String phase, String message, String method, String url) {
+		return new StepEvent(phase, message, method, url, null, null, null, null, null, true);
+	}
+
 	private static String truncate(String body) {
 		if (body == null || body.isBlank()) {
 			return null;
 		}
-		return body.length() <= MAX_ERROR_BODY_CHARS
-				? body
-				: body.substring(0, MAX_ERROR_BODY_CHARS) + "\n... [truncated]";
+		return clip(body, MAX_ERROR_BODY_CHARS);
 	}
 }

@@ -1,4 +1,16 @@
-export type CrawlStrategy = "BULK_EXPORT" | "HISTORY" | "SEARCH";
+export type CrawlStrategy =
+  | "BULK_EXPORT"
+  | "HISTORY"
+  | "SEARCH"
+  | "SEARCH_LAST_UPDATED";
+
+export interface OverallStats {
+  totalResources: number;
+  serverCount: number;
+  jobCount: number;
+  manifestCount: number;
+  byType: { type: string; count: number }[];
+}
 
 export interface ServerScope {
   serverKey?: string | null;

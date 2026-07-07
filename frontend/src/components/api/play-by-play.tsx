@@ -28,6 +28,8 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
   const [current, setCurrent] = useState<{
     phase: string;
     message: string;
+    method?: string | null;
+    url?: string | null;
     at: number;
   } | null>(null);
   const [now, setNow] = useState(() => Date.now());
@@ -48,7 +50,13 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
     });
     source.addEventListener("progress", (event) => {
       const step = JSON.parse((event as MessageEvent).data) as CrawlStep;
-      setCurrent({ phase: step.phase, message: step.message, at: Date.now() });
+      setCurrent({
+        phase: step.phase,
+        message: step.message,
+        method: step.method,
+        url: step.url,
+        at: Date.now(),
+      });
       setNow(Date.now());
     });
     source.addEventListener("complete", () => {
@@ -129,17 +137,24 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
       )}
 
       {current && !done && (
-        <div className="flex items-center gap-2 rounded-md border-l-2 border-primary/50 py-1 pl-2 text-sm">
+        <div className="flex items-start gap-2 rounded-md border-l-2 border-primary/50 py-1 pl-2 text-sm">
           <span className="w-6 shrink-0" />
           <Badge variant="secondary" className="shrink-0">
             {current.phase}
           </Badge>
-          <span className="min-w-0 text-muted-foreground">
-            {current.message}
-          </span>
-          <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" />
-          <span className="text-xs tabular-nums text-muted-foreground">
-            {Math.max(0, Math.round((now - current.at) / 1000))}s
+          <span className="min-w-0">
+            <span className="flex items-center gap-2">
+              <span className="text-muted-foreground">{current.message}</span>
+              <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" />
+              <span className="text-xs tabular-nums text-muted-foreground">
+                {Math.max(0, Math.round((now - current.at) / 1000))}s
+              </span>
+            </span>
+            {current.url && (
+              <code className="block break-all text-xs text-muted-foreground">
+                {current.method} {current.url}
+              </code>
+            )}
           </span>
         </div>
       )}

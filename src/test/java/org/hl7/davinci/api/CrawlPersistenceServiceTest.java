@@ -73,7 +73,7 @@ class CrawlPersistenceServiceTest {
 				saved.get().stream().map(CrawlResource::getKey).toList(),
 				"unchanged rows must not be rewritten");
 		assertEquals(List.of("s|Organization/b"), deletedIds.get(), "keys absent from the fetch are deletions");
-		assertTrue(saved.get().get(0).getResourceJson().startsWith("gz:"), "bodies are stored compressed");
+		assertTrue(saved.get().get(0).getResourceJson()[0] == (byte) 0x1f, "bodies are stored gzip-compressed");
 		assertEquals(json, ResourceJsonCodec.decode(saved.get().get(0).getResourceJson()));
 	}
 
@@ -130,7 +130,8 @@ class CrawlPersistenceServiceTest {
 				CrawlResourceRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlResourceRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-					case "findVersionViewByServerKey" -> List.of();
+						case "countByServerKey" -> 0L;
+						case "findVersionViewByKeys" -> List.of();
 					case "saveAll" -> {
 						saveAllCalls[0]++;
 						List<CrawlResource> acc = new ArrayList<>(saved.get());
@@ -157,6 +158,45 @@ class CrawlPersistenceServiceTest {
 		assertEquals(2, saveAllCalls[0], "1500 rows should commit in two chunks");
 	}
 
+	@Test
+	void incrementalDeletionOfAnAbsentKeyIsDropped() {
+		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		CrawlResourceRepository resourceRepo =
+				repo(List.of(version("s|Organization/a", "1", "2026-01-01T00:00:00Z")), deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+
+		// A history-scan deletion for a key the DB never held must not be reported as a delete.
+		CrawlPersistenceService.PersistCounts counts =
+				service.persistIncremental("s", "server", List.of(), List.of(new DeletionEntry("Organization", "ghost")));
+
+		assertEquals(0, counts.deleted());
+		assertEquals(List.of(), deletedIds.get());
+	}
+
+	@Test
+	void fullSnapshotDeletesOnlyTheTargetServersUnfetchedKeys() {
+		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		AtomicReference<List<CrawlResource>> saved = new AtomicReference<>(List.of());
+		// Two servers share the table; crawling s1 must never touch s2's keys (PK-stream prefix bound).
+		CrawlResourceRepository resourceRepo = repo(
+				List.of(
+						version("s1|Organization/a", "1", "2026-01-01T00:00:00Z"),
+						version("s1|Organization/b", "1", "2026-01-01T00:00:00Z"),
+						version("s2|Organization/c", "1", "2026-01-01T00:00:00Z")),
+				deletedIds,
+				saved);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+
+		FetchedResource a =
+				new FetchedResource("s1|Organization/a", "Organization", "a", "1", "2026-01-01T00:00:00Z", "{}", 2);
+
+		CrawlPersistenceService.PersistCounts counts = service.persistFullSnapshot("s1", "server", List.of(a));
+
+		assertEquals(1, counts.deleted(), "only s1's un-fetched key b is deleted");
+		assertEquals(List.of("s1|Organization/b"), deletedIds.get());
+		assertEquals(1, counts.total(), "s1 had 2 rows; a kept, b deleted, 0 added");
+	}
+
 	private static CrawlResourceRepository repo(
 			List<CrawlResourceRepository.ResourceVersionView> versions, AtomicReference<List<String>> deletedIds) {
 		return repo(versions, deletedIds, new AtomicReference<>(List.of()));
@@ -170,7 +210,22 @@ class CrawlPersistenceServiceTest {
 				CrawlResourceRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlResourceRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-					case "findVersionViewByServerKey" -> versions;
+					case "countByServerKey" -> versions.stream()
+							.filter(v -> v.getKey().startsWith((String) args[0] + "|"))
+							.count();
+					case "findVersionViewByKeys" -> {
+						@SuppressWarnings("unchecked")
+						java.util.Collection<String> keys = (java.util.Collection<String>) args[0];
+						yield versions.stream().filter(v -> keys.contains(v.getKey())).toList();
+					}
+					case "findKeysByKeyGreaterThanOrderByKeyAsc" -> {
+						String afterKey = (String) args[0];
+						int pageSize = ((org.springframework.data.domain.Pageable) args[1]).getPageSize();
+						java.util.TreeSet<String> all = new java.util.TreeSet<>();
+						versions.forEach(v -> all.add(v.getKey()));
+						saved.get().forEach(e -> all.add(e.getKey()));
+						yield all.stream().filter(k -> k.compareTo(afterKey) > 0).limit(pageSize).toList();
+					}
 					case "saveAll" -> {
 						List<CrawlResource> entities = new ArrayList<>(saved.get());
 						for (Object entity : (Iterable<?>) args[0]) {

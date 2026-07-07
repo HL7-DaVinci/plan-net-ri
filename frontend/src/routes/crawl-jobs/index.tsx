@@ -4,6 +4,7 @@ import {
   CalendarClock,
   ChevronDown,
   ChevronRight,
+  Database,
   Folders,
   History,
   Radio,
@@ -12,6 +13,7 @@ import { useEffect, useState } from "react";
 import { JobStats } from "@/components/api/job-stats";
 import { JobsPanel } from "@/components/api/jobs-panel";
 import { ManifestBrowser } from "@/components/api/manifest-browser";
+import { OverallStats } from "@/components/api/overall-stats";
 import { PlayByPlay } from "@/components/api/play-by-play";
 import { RunHistory } from "@/components/api/run-history";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -137,17 +139,31 @@ function CrawlJobs() {
             </Card>
           </div>
 
-          <Card>
-            <CardHeader className="pb-3">
-              <CardTitle className="text-base flex items-center gap-2">
-                <Folders className="h-4 w-4" />
-                Published manifests
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ManifestBrowser />
-            </CardContent>
-          </Card>
+          <div className="space-y-6">
+            <Card>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base flex items-center gap-2">
+                  <Database className="h-4 w-4" />
+                  Overall statistics
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <OverallStats />
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base flex items-center gap-2">
+                  <Folders className="h-4 w-4" />
+                  Published manifests
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ManifestBrowser />
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>

@@ -51,8 +51,8 @@ public class CrawlEventService {
 					seq,
 					event.phase(),
 					event.message(),
-					null,
-					null,
+					event.method(),
+					event.url(),
 					null,
 					null,
 					null,
@@ -72,9 +72,9 @@ public class CrawlEventService {
 		step.setServerKey(serverKey);
 		step.setSeq(seq);
 		step.setPhase(event.phase());
-		step.setMessage(event.message());
+		step.setMessage(StepEvent.clip(event.message(), StepEvent.MAX_TEXT_CHARS));
 		step.setMethod(event.method());
-		step.setUrl(event.url());
+		step.setUrl(StepEvent.clip(event.url(), StepEvent.MAX_TEXT_CHARS));
 		step.setStatus(event.status());
 		step.setMs(event.ms());
 		step.setBytes(event.bytes());

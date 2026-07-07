@@ -4,6 +4,9 @@ import org.hl7.davinci.api.entity.CrawlRun;
 import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.entity.RunStatus;
 import org.hl7.davinci.api.model.JobStatsResponse;
+import org.hl7.davinci.api.model.OverallStatsResponse;
+import org.hl7.davinci.api.repository.CrawlJobRepository;
+import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.repository.ManifestRepository;
 import org.springframework.stereotype.Service;
@@ -16,10 +19,18 @@ public class StatsService {
 
 	private final ManifestRepository manifestRepo;
 	private final CrawlRunRepository runRepo;
+	private final CrawlResourceRepository resourceRepo;
+	private final CrawlJobRepository jobRepo;
 
-	public StatsService(ManifestRepository manifestRepo, CrawlRunRepository runRepo) {
+	public StatsService(
+			ManifestRepository manifestRepo,
+			CrawlRunRepository runRepo,
+			CrawlResourceRepository resourceRepo,
+			CrawlJobRepository jobRepo) {
 		this.manifestRepo = manifestRepo;
 		this.runRepo = runRepo;
+		this.resourceRepo = resourceRepo;
+		this.jobRepo = jobRepo;
 	}
 
 	public JobStatsResponse computeStats(String jobId) {
@@ -54,5 +65,17 @@ public class StatsService {
 				totalBytes,
 				lastRunAt,
 				latestTotalResources);
+	}
+
+	public OverallStatsResponse computeOverall() {
+		List<OverallStatsResponse.TypeCount> byType = resourceRepo.countByResourceType().stream()
+				.map(v -> new OverallStatsResponse.TypeCount(v.getResourceType(), v.getTotal()))
+				.toList();
+		return new OverallStatsResponse(
+				resourceRepo.count(),
+				resourceRepo.countDistinctServers(),
+				jobRepo.count(),
+				manifestRepo.count(),
+				byType);
 	}
 }

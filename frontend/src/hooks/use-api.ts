@@ -57,6 +57,14 @@ export function useJobStats(jobId: string | undefined) {
   });
 }
 
+export function useOverallStats() {
+  return useQuery({
+    queryKey: ["api", "stats", "overall"],
+    queryFn: api.getOverallStats,
+    refetchInterval: 15000,
+  });
+}
+
 export function useDeleteManifest() {
   const queryClient = useQueryClient();
   return useMutation({

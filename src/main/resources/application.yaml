@@ -106,7 +106,7 @@ spring:
     fail-on-missing-locations: false
 
   datasource:
-    url: "jdbc:h2:file:./target/database/h2"
+    url: "jdbc:h2:file:./target/database/h2;RETENTION_TIME=0;CACHE_SIZE=32768"
     # url: jdbc:h2:mem:test_mem
     username: sa
     password: null
@@ -415,9 +415,9 @@ hapi:
     # -------------------------------------------------------------------------------
     # L. Search Orchestration
     # -------------------------------------------------------------------------------
-    search-coord-core-pool-size: 20
-    search-coord-max-pool-size: 100
-    search-coord-queue-capacity: 200
+    search-coord-core-pool-size: 2
+    search-coord-max-pool-size: 8
+    search-coord-queue-capacity: 50
     # Search Prefetch Thresholds.
     # This setting sets the number of search results to prefetch. For example, if this list
     # is set to [100, 1000, -1] then the server will initially load 100 results and not
@@ -527,7 +527,7 @@ api:
   page-size: 500
   request-timeout-ms: 180000
   page-delay-ms: 0
-  retention-per-job: 5
+  retention-per-job: 2
   resume-crawls-on-startup: ${API_RESUME_CRAWLS_ON_STARTUP:false}
   # public-base-url: https://directory.example.org   # override for reverse-proxy deployments
   # UI server picker, served via /crawler/config.js. Set APP_FHIR_SERVERS to a JSON array

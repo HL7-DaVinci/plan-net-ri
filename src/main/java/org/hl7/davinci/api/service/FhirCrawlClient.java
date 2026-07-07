@@ -17,7 +17,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.UncheckedIOException;
 import java.net.ConnectException;
 import java.net.SocketException;
@@ -58,8 +61,8 @@ public class FhirCrawlClient {
 			"Practitioner",
 			"PractitionerRole");
 
-	/** Hard cap on pages per type to guard against pagination loops. */
-	static final int MAX_PAGES_PER_TYPE = 1000;
+	/** Hard cap on pages per type; a backstop against pagination loops, set high enough not to drop large types. */
+	static final int MAX_PAGES_PER_TYPE = 100_000;
 
 	/** Resources buffered before a batch is pushed to the persistence sink. */
 	private static final int EMIT_BATCH = 1000;
@@ -103,6 +106,16 @@ public class FhirCrawlClient {
 
 	IGenericClient newClient(String serverUrl) {
 		return fhirContext.newRestfulGenericClient(serverUrl);
+	}
+
+	/** Execute a search by raw URL. Overridable so tests can script paging. */
+	Bundle searchByUrl(IGenericClient client, String url) {
+		return client.search().byUrl(url).returnBundle(Bundle.class).execute();
+	}
+
+	/** Follow a bundle's next link. Overridable so tests can script paging. */
+	Bundle loadNextPage(IGenericClient client, Bundle bundle) {
+		return client.loadPage().next(bundle).execute();
 	}
 
 	/** A failure step for a HAPI client error, retaining its status and raw response body. */
@@ -297,7 +310,9 @@ public class FhirCrawlClient {
 			steps.accept(StepEvent.progress(
 					"SEARCH",
 					(since != null ? "Searching " + type + " changes since the anchor" : "Searching all " + type)
-							+ "..."));
+							+ "...",
+					"GET",
+					serverUrl + "/" + query));
 			int typePages = 0;
 			try {
 				Bundle bundle = withRetryUnchecked("SEARCH", type + " search", steps, () -> client.search()
@@ -324,16 +339,23 @@ public class FhirCrawlClient {
 					}
 					seen.add(next.getUrl());
 					pauseBetweenPages();
-					steps.accept(StepEvent.progress("SEARCH", "Fetching " + type + " page " + (typePages + 1) + "..."));
+					steps.accept(StepEvent.progress(
+							"SEARCH", "Fetching " + type + " page " + (typePages + 1), "GET", next.getUrl()));
 					Bundle current = bundle;
 					bundle = withRetryUnchecked("SEARCH", type + " page fetch", steps, () -> client.loadPage()
 							.next(current)
 							.execute());
 				}
 			} catch (BaseServerResponseException e) {
-				steps.accept(
-						serverError("SEARCH", "Search failed for " + type, serverUrl + "/" + query, typeStartNanos, e));
-				throw e;
+				// Degrade gracefully: surface the failure as a step and keep crawling the remaining types.
+				steps.accept(serverError(
+						"SEARCH",
+						"Search failed for " + type + " after " + typePages
+								+ " page(s); skipping the rest of this type",
+						serverUrl + "/" + query,
+						typeStartNanos,
+						e));
+				continue;
 			}
 
 			int typeCount = emitter.count() - beforeCount;
@@ -351,6 +373,171 @@ public class FhirCrawlClient {
 
 		emitter.flush();
 		return new SearchResult(emitter.count(), bytes[0], requests, pages);
+	}
+
+	/**
+	 * Search every Plan-Net type, paging by an advancing {@code _lastUpdated} watermark instead of
+	 * page links. {@code since} sets the starting watermark; null is a full snapshot.
+	 */
+	public SearchResult searchTypesByLastUpdated(
+			String serverUrl,
+			String serverKey,
+			int pageSize,
+			String since,
+			Consumer<StepEvent> steps,
+			Consumer<List<FetchedResource>> resourceSink) {
+		IGenericClient client = newClient(serverUrl);
+		BatchEmitter emitter = new BatchEmitter(resourceSink);
+		long[] bytes = {0};
+		int requests = 0;
+		int pages = 0;
+
+		IParser parser = fhirContext.newJsonParser();
+
+		for (String type : PLAN_NET_TYPES) {
+			long typeStartNanos = System.nanoTime();
+			int beforeCount = emitter.count();
+			long beforeBytes = bytes[0];
+			steps.accept(StepEvent.progress(
+					"SEARCH",
+					(since != null ? "Searching " + type + " changes since the anchor" : "Searching all " + type)
+							+ " by last updated..."));
+
+			String watermark = since;
+			Date watermarkInstant = since != null ? Date.from(parseInstant(since)) : null;
+			int typePages = 0;
+			try {
+				String url = lastUpdatedQuery(type, pageSize, watermark);
+				steps.accept(StepEvent.progress(
+						"SEARCH", "Searching " + type + " by last updated", "GET", serverUrl + "/" + url));
+				Bundle bundle = withRetryUnchecked("SEARCH", type + " search", steps, () -> searchByUrl(client, url));
+				Set<String> seenNext = new HashSet<>();
+				int maxPageRows = 0;
+				while (bundle != null) {
+					int pageRows = bundle.getEntry().size();
+					if (pageRows == 0) {
+						break;
+					}
+					requests++;
+					pages++;
+					typePages++;
+					maxPageRows = Math.max(maxPageRows, pageRows);
+					collectEntries(bundle, serverKey, parser, emitter, bytes);
+					if (typePages % PAGE_LOG_EVERY == 0) {
+						ourLog.info(
+								"SEARCH {}: {} pages by last updated, {} resources so far",
+								type,
+								typePages,
+								emitter.count());
+					}
+					if (typePages >= MAX_PAGES_PER_TYPE) {
+						ourLog.warn("Hit page cap for {} on {}", type, serverKey);
+						break;
+					}
+					// Terminate on the keyset logic, never on page size: a server may cap pages below the
+					// requested _count, so a short page is not the end of the data.
+					LastUpdated pageMax = maxLastUpdated(bundle);
+					pauseBetweenPages();
+					// Compare parsed instants, not the verbatim strings: one instant rendered with different
+					// offsets/precision across rows would otherwise stall the watermark.
+					if (pageMax != null
+							&& (watermarkInstant == null || pageMax.instant().after(watermarkInstant))) {
+						watermark = pageMax.value();
+						watermarkInstant = pageMax.instant();
+						String reUrl = lastUpdatedQuery(type, pageSize, watermark);
+						steps.accept(StepEvent.progress(
+								"SEARCH", "Searching " + type + " by last updated", "GET", serverUrl + "/" + reUrl));
+						bundle =
+								withRetryUnchecked("SEARCH", type + " search", steps, () -> searchByUrl(client, reUrl));
+					} else {
+						// The whole page sits at one _lastUpdated instant the keyset window cannot pass, so
+						// follow link[next] through the cluster instead of dropping the rest of the type.
+						Bundle.BundleLinkComponent next = bundle.getLink(Bundle.LINK_NEXT);
+						if (next == null || next.getUrl() == null || !seenNext.add(next.getUrl())) {
+							if (typePages > 1 && pageRows >= maxPageRows) {
+								// A full page entirely at one instant with no next link: the server has more rows
+								// at this instant it will not page to. Surface it rather than dropping silently.
+								ourLog.warn(
+										"Possible truncation: a full page of {} {} resources shares one _lastUpdated"
+												+ " instant on {} with no next link",
+										pageRows,
+										type,
+										serverKey);
+								steps.accept(StepEvent.info(
+										"SEARCH",
+										"Possible truncation in " + type + ": more than a page of resources share one"
+												+ " _lastUpdated instant and the server returned no paging link;"
+												+ " some resources at that instant may be missing"));
+							}
+							break;
+						}
+						steps.accept(StepEvent.progress(
+								"SEARCH", "Paging " + type + " _lastUpdated cluster", "GET", next.getUrl()));
+						Bundle current = bundle;
+						bundle = withRetryUnchecked(
+								"SEARCH", type + " page fetch", steps, () -> loadNextPage(client, current));
+					}
+				}
+			} catch (BaseServerResponseException e) {
+				// Degrade gracefully: surface the failure as a step and keep crawling the remaining types.
+				steps.accept(serverError(
+						"SEARCH",
+						"Search failed for " + type + " after " + typePages
+								+ " page(s); skipping the rest of this type",
+						serverUrl + "/" + type,
+						typeStartNanos,
+						e));
+				continue;
+			}
+
+			int typeCount = emitter.count() - beforeCount;
+			steps.accept(StepEvent.request(
+					"SEARCH",
+					(since != null ? "Searched " + type + " changed since the anchor" : "Searched all " + type)
+							+ " by last updated (" + typePages + " page" + (typePages == 1 ? "" : "s") + ")",
+					"GET",
+					serverUrl + "/" + type,
+					200,
+					(System.nanoTime() - typeStartNanos) / 1_000_000,
+					bytes[0] - beforeBytes,
+					typeCount));
+		}
+
+		emitter.flush();
+		return new SearchResult(emitter.count(), bytes[0], requests, pages);
+	}
+
+	/**
+	 * A keyset page query. The {@code _lastUpdated} value is URL-encoded; a raw {@code +} offset is
+	 * otherwise decoded by the server as a space and rejected as an invalid date.
+	 */
+	static String lastUpdatedQuery(String type, int pageSize, String watermark) {
+		String query = type + "?_count=" + pageSize + "&_sort=_lastUpdated&_total=none";
+		if (watermark != null) {
+			query += "&_lastUpdated=ge" + URLEncoder.encode(watermark, StandardCharsets.UTF_8);
+		}
+		return query;
+	}
+
+	/** A page's newest {@code meta.lastUpdated}: the verbatim wire value plus its parsed instant. */
+	record LastUpdated(String value, Date instant) {}
+
+	/** The newest {@code meta.lastUpdated} on a page, by parsed instant; null if none. */
+	static LastUpdated maxLastUpdated(Bundle bundle) {
+		LastUpdated max = null;
+		for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
+			Resource resource = entry.getResource();
+			if (resource == null
+					|| resource.getMeta() == null
+					|| !resource.getMeta().hasLastUpdated()) {
+				continue;
+			}
+			Date date = resource.getMeta().getLastUpdated();
+			if (max == null || date.after(max.instant())) {
+				max = new LastUpdated(resource.getMeta().getLastUpdatedElement().getValueAsString(), date);
+			}
+		}
+		return max;
 	}
 
 	private void collectEntries(Bundle bundle, String serverKey, IParser parser, BatchEmitter emitter, long[] bytes) {
@@ -455,7 +642,8 @@ public class FhirCrawlClient {
 				}
 				seen.add(next.getUrl());
 				pauseBetweenPages();
-				steps.accept(StepEvent.progress("HISTORY", "Fetching deletion scan page " + (pages + 1) + "..."));
+				steps.accept(StepEvent.progress(
+						"HISTORY", "Fetching deletion scan page " + (pages + 1), "GET", next.getUrl()));
 				Bundle current = bundle;
 				bundle = withRetryUnchecked("HISTORY", "deletion scan page fetch", steps, () -> client.loadPage()
 						.next(current)
@@ -652,52 +840,25 @@ public class FhirCrawlClient {
 				}
 				String fileType = output.path("type").asText(null);
 				steps.accept(StepEvent.progress(
-						"EXPORT", "Downloading export file" + (fileType != null ? " (" + fileType + ")" : "") + "..."));
+						"EXPORT",
+						"Downloading export file" + (fileType != null ? " (" + fileType + ")" : "") + "...",
+						"GET",
+						fileUrl));
 				long fileStart = System.nanoTime();
-				HttpResponse<String> file = withRetry(
+				int before = emitter.count();
+				long fileBytes = withRetry(
 						"EXPORT",
 						"export file download",
 						steps,
-						() -> http.send(
-								HttpRequest.newBuilder(URI.create(fileUrl))
-										.timeout(httpTimeout)
-										.header("Accept", "application/fhir+ndjson")
-										.GET()
-										.build(),
-								HttpResponse.BodyHandlers.ofString()));
+						() -> streamExportFile(http, fileUrl, fileType, serverKey, parser, emitter, steps, fileStart));
 				requests++;
-				int fileStatus = file.statusCode();
-				long fileBytes = file.body().length();
-				if (fileStatus < 200 || fileStatus >= 300) {
-					steps.accept(StepEvent.failure(
-							"EXPORT",
-							"Export file download failed" + (fileType != null ? " (" + fileType + ")" : "") + ": HTTP "
-									+ fileStatus,
-							"GET",
-							fileUrl,
-							fileStatus,
-							(System.nanoTime() - fileStart) / 1_000_000,
-							file.body()));
-					throw new IllegalStateException(
-							"Failed to download export file " + fileUrl + ": HTTP " + fileStatus);
-				}
 				bytes += fileBytes;
-				int before = emitter.count();
-				for (String line : file.body().split("\n")) {
-					if (line.isBlank()) {
-						continue;
-					}
-					FetchedResource resource = toFetched(line.trim(), serverKey, parser);
-					if (resource != null) {
-						emitter.add(resource);
-					}
-				}
 				steps.accept(StepEvent.request(
 						"EXPORT",
 						"Downloaded export file" + (fileType != null ? " (" + fileType + ")" : ""),
 						"GET",
 						fileUrl,
-						fileStatus,
+						200,
 						(System.nanoTime() - fileStart) / 1_000_000,
 						fileBytes,
 						emitter.count() - before));
@@ -745,7 +906,9 @@ public class FhirCrawlClient {
 		String historyUrl = serverUrl + "/_history?_count=500" + (since != null ? "&_since=" + since : "");
 		steps.accept(StepEvent.progress(
 				"HISTORY",
-				since != null ? "Paging system _history since the anchor..." : "Paging full system _history..."));
+				since != null ? "Paging system _history since the anchor..." : "Paging full system _history...",
+				"GET",
+				historyUrl));
 		var pagedHistory = history;
 		Bundle bundle;
 		try {
@@ -804,7 +967,7 @@ public class FhirCrawlClient {
 			}
 			seenUrls.add(next.getUrl());
 			pauseBetweenPages();
-			steps.accept(StepEvent.progress("HISTORY", "Fetching history page " + (pages + 1) + "..."));
+			steps.accept(StepEvent.progress("HISTORY", "Fetching history page " + (pages + 1), "GET", next.getUrl()));
 			Bundle page = bundle;
 			try {
 				bundle = withRetryUnchecked("HISTORY", "history page fetch", steps, () -> client.loadPage()
@@ -829,6 +992,62 @@ public class FhirCrawlClient {
 				bytes,
 				emitter.count()));
 		return new HistoryResult(emitter.count(), deletions, bytes, requests, pages);
+	}
+
+	/**
+	 * Stream one NDJSON export file line-by-line into the emitter, so a multi-million-row file
+	 * never sits in heap. Returns the approximate byte count read.
+	 */
+	private long streamExportFile(
+			HttpClient http,
+			String fileUrl,
+			String fileType,
+			String serverKey,
+			IParser parser,
+			BatchEmitter emitter,
+			Consumer<StepEvent> steps,
+			long startNanos)
+			throws IOException, InterruptedException {
+		HttpResponse<InputStream> response = http.send(
+				HttpRequest.newBuilder(URI.create(fileUrl))
+						.timeout(httpTimeout)
+						.header("Accept", "application/fhir+ndjson")
+						.GET()
+						.build(),
+				HttpResponse.BodyHandlers.ofInputStream());
+		int status = response.statusCode();
+		if (status < 200 || status >= 300) {
+			String errorBody;
+			try (InputStream in = response.body()) {
+				errorBody = new String(in.readNBytes(StepEvent.MAX_ERROR_BODY_CHARS), StandardCharsets.UTF_8);
+			}
+			steps.accept(StepEvent.failure(
+					"EXPORT",
+					"Export file download failed" + (fileType != null ? " (" + fileType + ")" : "") + ": HTTP "
+							+ status,
+					"GET",
+					fileUrl,
+					status,
+					(System.nanoTime() - startNanos) / 1_000_000,
+					errorBody));
+			throw new IllegalStateException("Failed to download export file " + fileUrl + ": HTTP " + status);
+		}
+		long fileBytes = 0;
+		try (BufferedReader reader =
+				new BufferedReader(new InputStreamReader(response.body(), StandardCharsets.UTF_8))) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				fileBytes += line.length() + 1;
+				if (line.isBlank()) {
+					continue;
+				}
+				FetchedResource resource = toFetched(line.trim(), serverKey, parser);
+				if (resource != null) {
+					emitter.add(resource);
+				}
+			}
+		}
+		return fileBytes;
 	}
 
 	private FetchedResource toFetched(String json, String serverKey, IParser parser) {

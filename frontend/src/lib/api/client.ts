@@ -5,6 +5,7 @@ import type {
   JobStats,
   ManifestJson,
   ManifestSummary,
+  OverallStats,
   RunPage,
   RunTriggerResponse,
 } from "./types";
@@ -63,6 +64,7 @@ export const api = {
       `/api/runs?jobId=${encodeURIComponent(jobId)}&page=${page}&size=${size}`,
     ),
   getJobStats: (id: string) => request<JobStats>(`/api/jobs/${id}/stats`),
+  getOverallStats: () => request<OverallStats>("/api/stats"),
   listManifests: () => request<ManifestSummary[]>("/api/manifests"),
   getManifest: (id: string) =>
     request<ManifestJson>(`/api/manifests/${id}/manifest.json`),

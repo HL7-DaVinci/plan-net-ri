@@ -3,16 +3,14 @@ package org.hl7.davinci.api.repository;
 import org.hl7.davinci.api.entity.CrawlResource;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface CrawlResourceRepository extends JpaRepository<CrawlResource, String> {
-
-	List<CrawlResource> findByServerKey(String serverKey);
-
-	List<CrawlResource> findByServerKeyAndResourceType(String serverKey, String resourceType);
 
 	/**
 	 * One keyset page ordered by primary key, used to stream the manifest snapshot without
@@ -23,12 +21,48 @@ public interface CrawlResourceRepository extends JpaRepository<CrawlResource, St
 	 */
 	List<CrawlResource> findByKeyGreaterThanOrderByKeyAsc(String afterKey, Pageable pageable);
 
-	long countByServerKey(String serverKey);
+	/**
+	 * One server's rows occupy an exclusive primary-key range: keys are {@code serverKey|Type/id},
+	 * '}' is the character after '|', and server keys never contain '|'.
+	 */
+	@Query("select count(r) from CrawlResource r where r.key > :from and r.key < :to")
+	long countByKeyRange(@Param("from") String from, @Param("to") String to);
 
-	/** Lightweight projection of the diff keys (version/lastUpdated) without loading bodies. */
+	default long countByServerKey(String serverKey) {
+		return countByKeyRange(serverKey + "|", serverKey + "}");
+	}
+
+	@Modifying
+	@Query("delete from CrawlResource r where r.key > :from and r.key < :to")
+	int deleteByKeyRange(@Param("from") String from, @Param("to") String to);
+
+	/** A bulk SQL delete (no entity loading) of a whole server's aggregate. Needs an ambient transaction. */
+	default int deleteByServerKey(String serverKey) {
+		return deleteByKeyRange(serverKey + "|", serverKey + "}");
+	}
+
+	@Query("select count(distinct substring(r.key, 1, locate('|', r.key) - 1)) from CrawlResource r")
+	long countDistinctServers();
+
+	@Query("select r.resourceType as resourceType, count(r) as total from CrawlResource r "
+			+ "group by r.resourceType order by r.resourceType")
+	List<TypeCountView> countByResourceType();
+
+	/** Spring Data projection: a resource type and how many of it are tracked. */
+	interface TypeCountView {
+		String getResourceType();
+
+		long getTotal();
+	}
+
+	/** Diff-key projection for the given keys. */
 	@Query("select r.key as key, r.versionId as versionId, r.lastUpdated as lastUpdated "
-			+ "from CrawlResource r where r.serverKey = :serverKey")
-	List<ResourceVersionView> findVersionViewByServerKey(@Param("serverKey") String serverKey);
+			+ "from CrawlResource r where r.key in :keys")
+	List<ResourceVersionView> findVersionViewByKeys(@Param("keys") Collection<String> keys);
+
+	/** A keyset page of bare primary keys, ordered by key; the caller bounds one server by its {@code serverKey|} prefix. */
+	@Query("select r.key from CrawlResource r where r.key > :afterKey order by r.key asc")
+	List<String> findKeysByKeyGreaterThanOrderByKeyAsc(@Param("afterKey") String afterKey, Pageable pageable);
 
 	/** Spring Data projection: just the fields the diff needs. */
 	interface ResourceVersionView {

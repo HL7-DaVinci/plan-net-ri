@@ -30,7 +30,7 @@ public class ApiProperties {
 	private String fhirServers;
 
 	/** Manifests retained per job; 0 = unlimited. */
-	private int retentionPerJob = 5;
+	private int retentionPerJob = 2;
 
 	/**
 	 * On startup, clear the stale {@code running} flag on jobs left mid-crawl by a crash so they can

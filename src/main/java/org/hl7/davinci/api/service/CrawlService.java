@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -272,13 +273,9 @@ public class CrawlService {
 
 		try {
 			switch (job.getStrategy()) {
-				case SEARCH -> {
-					if (mode == CrawlMode.INCREMENTAL) {
-						crawlSearchIncremental(server, serverKey, serverLabel, since, run, sink);
-					} else {
-						crawlSearchFull(server, serverKey, serverLabel, run, sink);
-					}
-				}
+				case SEARCH -> crawlSearch(client::searchTypes, mode, server, serverKey, serverLabel, since, run, sink);
+				case SEARCH_LAST_UPDATED -> crawlSearch(
+						client::searchTypesByLastUpdated, mode, server, serverKey, serverLabel, since, run, sink);
 				case BULK_EXPORT -> crawlBulkExport(server, serverKey, serverLabel, run, sink);
 				case HISTORY -> crawlHistory(server, serverKey, serverLabel, since, run, sink);
 			}
@@ -288,7 +285,7 @@ public class CrawlService {
 		} catch (Exception e) {
 			ourLog.error("Crawl failed for job {} server {}: {}", job.getId(), serverKey, e.getMessage(), e);
 			run.setStatus(RunStatus.ERROR);
-			run.setError(e.getMessage());
+			run.setError(StepEvent.clip(e.getMessage(), StepEvent.MAX_TEXT_CHARS));
 			if (run.getServerTimeAtStart() == null) {
 				run.setServerTimeAtStart(Instant.now().toString());
 			}
@@ -343,8 +340,8 @@ public class CrawlService {
 	}
 
 	/**
-	 * SEARCH and HISTORY crawl incrementally (using the prior run's anchor as _since) once a
-	 * completed run for this server exists. BULK_EXPORT always pulls a full snapshot.
+	 * Every strategy except BULK_EXPORT crawls incrementally (using the prior run's anchor as _since)
+	 * once a completed run for this server exists. BULK_EXPORT always pulls a full snapshot.
 	 */
 	private String incrementalSince(CrawlJob job, String serverKey) {
 		if (job.getStrategy() == CrawlStrategy.BULK_EXPORT) {
@@ -356,13 +353,46 @@ public class CrawlService {
 				.orElse(null);
 	}
 
+	/** Either search strategy's per-type fetch (link paging or _lastUpdated watermark). */
+	@FunctionalInterface
+	private interface TypeSearch {
+		FhirCrawlClient.SearchResult run(
+				String serverUrl,
+				String serverKey,
+				int pageSize,
+				String since,
+				Consumer<StepEvent> steps,
+				Consumer<List<FetchedResource>> resourceSink);
+	}
+
+	private void crawlSearch(
+			TypeSearch search,
+			CrawlMode mode,
+			ServerScope server,
+			String serverKey,
+			String serverLabel,
+			String since,
+			CrawlRun run,
+			Consumer<StepEvent> sink) {
+		if (mode == CrawlMode.INCREMENTAL) {
+			crawlSearchIncremental(search, server, serverKey, serverLabel, since, run, sink);
+		} else {
+			crawlSearchFull(search, server, serverKey, serverLabel, run, sink);
+		}
+	}
+
 	private void crawlSearchFull(
-			ServerScope server, String serverKey, String serverLabel, CrawlRun run, Consumer<StepEvent> sink) {
+			TypeSearch search,
+			ServerScope server,
+			String serverKey,
+			String serverLabel,
+			CrawlRun run,
+			Consumer<StepEvent> sink) {
 		captureServerTime(server, run, sink);
 
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
-		FhirCrawlClient.SearchResult result = client.searchTypes(
-				server.url(), serverKey, props.getPageSize(), null, sink, resourceSink(run, session));
+		FhirCrawlClient.SearchResult result =
+				search.run(server.url(), serverKey, props.getPageSize(), null, sink, resourceSink(run, session));
 		throwIfCancelled(run);
 		CrawlPersistenceService.PersistCounts counts = session.finishFullSnapshot();
 
@@ -372,6 +402,7 @@ public class CrawlService {
 	}
 
 	private void crawlSearchIncremental(
+			TypeSearch search,
 			ServerScope server,
 			String serverKey,
 			String serverLabel,
@@ -381,8 +412,8 @@ public class CrawlService {
 		captureServerTime(server, run, sink);
 
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
-		FhirCrawlClient.SearchResult result = client.searchTypes(
-				server.url(), serverKey, props.getPageSize(), since, sink, resourceSink(run, session));
+		FhirCrawlClient.SearchResult result =
+				search.run(server.url(), serverKey, props.getPageSize(), since, sink, resourceSink(run, session));
 		throwIfCancelled(run);
 
 		List<DeletionEntry> deletions = List.of();
@@ -520,5 +551,14 @@ public class CrawlService {
 
 	static String normalizeServerKey(String url) {
 		return url.trim().replaceAll("/+$", "");
+	}
+
+	/** The normalized server keys this job targets (the {@code serverKey} prefix used in crawl_resource). */
+	public Set<String> serverKeys(CrawlJob job) {
+		Set<String> keys = new HashSet<>();
+		for (ServerScope server : parseServers(job.getServers())) {
+			keys.add(normalizeServerKey(server.url()));
+		}
+		return keys;
 	}
 }
