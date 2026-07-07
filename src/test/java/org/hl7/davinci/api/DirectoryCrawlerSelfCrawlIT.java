@@ -15,10 +15,12 @@ import java.nio.file.Path;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlMode;
+import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.entity.CrawlRun;
 import org.hl7.davinci.api.entity.CrawlStrategy;
 import org.hl7.davinci.api.entity.ManifestRecord;
@@ -36,6 +38,7 @@ import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.repository.ManifestRepository;
 import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.ManifestService;
+import org.hl7.davinci.api.service.ResourceJsonCodec;
 import org.hl7.davinci.api.service.ServerScope;
 import org.hl7.fhir.r4.model.Organization;
 import org.junit.jupiter.api.Test;
@@ -103,6 +106,47 @@ class DirectoryCrawlerSelfCrawlIT {
 
 	@Autowired
 	private org.hl7.davinci.api.service.JobDeletionService jobDeletionService;
+
+	@Test
+	void persistsGzipBodiesLargerThanTheDefaultVarbinaryColumn() {
+		String base = "http://localhost:" + port + "/fhir";
+		IGenericClient client = fhirContext.newRestfulGenericClient(base);
+
+		// Random hex is mostly incompressible, so the gzip body stays far above the
+		// 32600 bytes Hibernate gives a LONGVARBINARY column with no explicit length.
+		StringBuilder highEntropy = new StringBuilder();
+		Random random = new Random(42);
+		while (highEntropy.length() < 400_000) {
+			highEntropy.append(Long.toHexString(random.nextLong()));
+		}
+		Organization org = new Organization();
+		org.setName("Large Body Org");
+		org.addAlias(highEntropy.toString());
+		String orgId = client.create().resource(org).execute().getId().getIdPart();
+		String key = base + "|Organization/" + orgId;
+
+		CrawlJob job = new CrawlJob();
+		job.setId("large-body");
+		job.setName("Large body");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setEnabled(true);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverKey\":\"" + base + "\",\"serverLabel\":\"self\",\"url\":\"" + base + "\"}]");
+		jobRepo.save(job);
+
+		CrawlRun run = crawlService.crawlJob(job).get(0);
+		assertEquals(RunStatus.COMPLETED, run.getStatus());
+		CrawlResource stored = resourceRepo.findById(key).orElseThrow();
+		assertTrue(
+				stored.getResourceJson().length > 32_600,
+				"expected a gzip body above the old column limit, was " + stored.getResourceJson().length);
+		assertTrue(ResourceJsonCodec.decode(stored.getResourceJson()).contains("Large Body Org"));
+
+		// Remove the oversized org so other tests crawl only the ordinary seed data.
+		client.delete().resourceById("Organization", orgId).execute();
+		crawlService.crawlJob(job);
+		assertTrue(resourceRepo.findById(key).isEmpty());
+	}
 
 	@Test
 	void jobCrudOverHttp() {

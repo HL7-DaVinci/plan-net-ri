@@ -7,6 +7,7 @@ import jakarta.persistence.PostLoad;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
+import org.hibernate.Length;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 import org.springframework.data.domain.Persistable;
@@ -39,8 +40,13 @@ public class CrawlResource implements Persistable<String> {
 
 	private String lastUpdated;
 
+	/**
+	 * Length.LONG32 forces a BINARY LARGE OBJECT column; without an explicit length,
+	 * Hibernate defaults LONGVARBINARY to Length.LONG (32600 bytes), which large gzipped
+	 * resource bodies overflow.
+	 */
 	@JdbcTypeCode(SqlTypes.LONGVARBINARY)
-	@Column(name = "resource_json")
+	@Column(name = "resource_json", length = Length.LONG32)
 	private byte[] resourceJson;
 
 	public String getKey() {

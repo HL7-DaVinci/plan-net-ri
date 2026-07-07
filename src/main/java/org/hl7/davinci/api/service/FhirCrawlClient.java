@@ -179,8 +179,11 @@ public class FhirCrawlClient {
 	}
 
 	/**
-	 * Timeouts, dropped connections, rate limiting (429), and gateway-style 5xx are worth
-	 * retrying; the rest fail fast.
+	 * Timeouts, dropped connections, rate limiting (429), and any 5xx are worth retrying;
+	 * the rest fail fast. All crawl requests are idempotent GETs, so retrying a 500 is safe;
+	 * servers commonly return 500 for internal timeouts that resolve on a later attempt
+	 * (e.g. HAPI's 60s search coordinator limit, where the search keeps building in the
+	 * background and a re-request of the same page succeeds).
 	 */
 	static boolean isTransient(Exception e) {
 		if (e instanceof FhirClientConnectionException) {
@@ -188,7 +191,7 @@ public class FhirCrawlClient {
 		}
 		if (e instanceof BaseServerResponseException serverError) {
 			int status = serverError.getStatusCode();
-			return status == 429 || status == 502 || status == 503 || status == 504;
+			return status == 429 || status >= 500;
 		}
 		return e instanceof HttpTimeoutException || e instanceof ConnectException || e instanceof SocketException;
 	}

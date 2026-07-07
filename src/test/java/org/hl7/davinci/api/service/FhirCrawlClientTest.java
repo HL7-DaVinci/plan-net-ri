@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.exceptions.FhirClientConnectionException;
 import ca.uhn.fhir.rest.server.exceptions.InternalErrorException;
+import ca.uhn.fhir.rest.server.exceptions.InvalidRequestException;
 import ca.uhn.fhir.rest.server.exceptions.UnclassifiedServerFailureException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
@@ -149,11 +150,16 @@ class FhirCrawlClientTest {
 		assertTrue(steps.get(0).message().contains("retrying in"));
 
 		int[] permanentCalls = {0};
-		assertThrows(InternalErrorException.class, () -> client.withRetry("SEARCH", "test call", steps::add, () -> {
+		assertThrows(InvalidRequestException.class, () -> client.withRetry("SEARCH", "test call", steps::add, () -> {
 			permanentCalls[0]++;
-			throw new InternalErrorException("HTTP 500");
+			throw new InvalidRequestException("HTTP 400");
 		}));
-		assertEquals(1, permanentCalls[0], "a plain 500 must fail fast without retries");
+		assertEquals(1, permanentCalls[0], "a 4xx must fail fast without retries");
+
+		assertTrue(
+				FhirCrawlClient.isTransient(new InternalErrorException("HTTP 500")),
+				"a 500 is retried; servers use it for internal timeouts that resolve on a later attempt");
+		assertTrue(FhirCrawlClient.isTransient(new UnclassifiedServerFailureException(503, "Service Unavailable")));
 	}
 
 	@Test
