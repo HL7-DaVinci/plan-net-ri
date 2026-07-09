@@ -14,6 +14,26 @@ interface FhirError extends Error {
   operationOutcome?: OperationOutcome;
 }
 
+async function toFhirError(response: Response): Promise<FhirError> {
+  const error: FhirError = new Error(
+    `FHIR request failed: ${response.status} ${response.statusText}`,
+  );
+  error.status = response.status;
+  try {
+    const body = await response.json();
+    if (isOperationOutcome(body)) {
+      error.operationOutcome = body;
+      error.message =
+        body.issue[0]?.diagnostics ||
+        body.issue[0]?.details?.text ||
+        error.message;
+    }
+  } catch {
+    // Ignore JSON parse errors
+  }
+  return error;
+}
+
 export async function fhirFetch<T>(url: string): Promise<T> {
   const response = await fetch(url, {
     headers: {
@@ -22,26 +42,38 @@ export async function fhirFetch<T>(url: string): Promise<T> {
   });
 
   if (!response.ok) {
-    const error: FhirError = new Error(
-      `FHIR request failed: ${response.status} ${response.statusText}`,
-    );
-    error.status = response.status;
-    try {
-      const body = await response.json();
-      if (isOperationOutcome(body)) {
-        error.operationOutcome = body;
-        error.message =
-          body.issue[0]?.diagnostics ||
-          body.issue[0]?.details?.text ||
-          error.message;
-      }
-    } catch {
-      // Ignore JSON parse errors
-    }
-    throw error;
+    throw await toFhirError(response);
   }
 
   return response.json();
+}
+
+/** Write to a FHIR server; returns the response resource, or null for empty bodies. */
+export async function fhirSend<T>(
+  url: string,
+  method: "POST" | "PUT" | "DELETE",
+  body?: unknown,
+): Promise<T | null> {
+  const response = await fetch(url, {
+    method,
+    headers: {
+      Accept: "application/fhir+json",
+      ...(body !== undefined
+        ? { "Content-Type": "application/fhir+json" }
+        : {}),
+    },
+    body: body !== undefined ? JSON.stringify(body) : undefined,
+  });
+
+  if (!response.ok) {
+    throw await toFhirError(response);
+  }
+
+  if (response.status === 204) {
+    return null;
+  }
+  const text = await response.text();
+  return text ? (JSON.parse(text) as T) : null;
 }
 
 export function useCapabilityStatement(serverUrl: string) {

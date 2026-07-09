@@ -391,18 +391,18 @@ hapi:
         - "*"
       # If you enable allow_Credentials=true, use explicit origins instead of "*".
       # Optional overrides. If omitted, built-in defaults are used.
-      # allowed_headers:
-      #   - Origin
-      #   - Accept
-      #   - Content-Type
-      #   - Authorization
-      #   - Cache-Control
-      #   - If-Match
-      #   - If-None-Match
-      # exposed_headers:
-      #   - Location
-      #   - Content-Location
-      #   - ETag
+      allowed_headers:
+        - Origin
+        - Accept
+        - Content-Type
+        - Authorization
+        - Cache-Control
+        - If-Match
+        - If-None-Match
+      exposed_headers:
+        - Location
+        - Content-Location
+        - ETag
       # allowed_methods:
       #   - GET
       #   - POST

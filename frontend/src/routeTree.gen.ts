@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ResourcesIndexRouteImport } from './routes/resources/index'
 import { Route as DirectoryCrawlerIndexRouteImport } from './routes/directory-crawler/index'
 import { Route as CrawlJobsIndexRouteImport } from './routes/crawl-jobs/index'
+import { Route as BulkPublishIndexRouteImport } from './routes/bulk-publish/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,15 +35,22 @@ const CrawlJobsIndexRoute = CrawlJobsIndexRouteImport.update({
   path: '/crawl-jobs/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BulkPublishIndexRoute = BulkPublishIndexRouteImport.update({
+  id: '/bulk-publish/',
+  path: '/bulk-publish/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bulk-publish/': typeof BulkPublishIndexRoute
   '/crawl-jobs/': typeof CrawlJobsIndexRoute
   '/directory-crawler/': typeof DirectoryCrawlerIndexRoute
   '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bulk-publish': typeof BulkPublishIndexRoute
   '/crawl-jobs': typeof CrawlJobsIndexRoute
   '/directory-crawler': typeof DirectoryCrawlerIndexRoute
   '/resources': typeof ResourcesIndexRoute
@@ -50,20 +58,38 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bulk-publish/': typeof BulkPublishIndexRoute
   '/crawl-jobs/': typeof CrawlJobsIndexRoute
   '/directory-crawler/': typeof DirectoryCrawlerIndexRoute
   '/resources/': typeof ResourcesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/crawl-jobs/' | '/directory-crawler/' | '/resources/'
+  fullPaths:
+    | '/'
+    | '/bulk-publish/'
+    | '/crawl-jobs/'
+    | '/directory-crawler/'
+    | '/resources/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/crawl-jobs' | '/directory-crawler' | '/resources'
-  id: '__root__' | '/' | '/crawl-jobs/' | '/directory-crawler/' | '/resources/'
+  to:
+    | '/'
+    | '/bulk-publish'
+    | '/crawl-jobs'
+    | '/directory-crawler'
+    | '/resources'
+  id:
+    | '__root__'
+    | '/'
+    | '/bulk-publish/'
+    | '/crawl-jobs/'
+    | '/directory-crawler/'
+    | '/resources/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BulkPublishIndexRoute: typeof BulkPublishIndexRoute
   CrawlJobsIndexRoute: typeof CrawlJobsIndexRoute
   DirectoryCrawlerIndexRoute: typeof DirectoryCrawlerIndexRoute
   ResourcesIndexRoute: typeof ResourcesIndexRoute
@@ -99,11 +125,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CrawlJobsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bulk-publish/': {
+      id: '/bulk-publish/'
+      path: '/bulk-publish'
+      fullPath: '/bulk-publish/'
+      preLoaderRoute: typeof BulkPublishIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BulkPublishIndexRoute: BulkPublishIndexRoute,
   CrawlJobsIndexRoute: CrawlJobsIndexRoute,
   DirectoryCrawlerIndexRoute: DirectoryCrawlerIndexRoute,
   ResourcesIndexRoute: ResourcesIndexRoute,

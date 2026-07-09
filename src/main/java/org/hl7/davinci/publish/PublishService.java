@@ -33,6 +33,7 @@ import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -84,6 +85,9 @@ public class PublishService {
 
 	/** The currently active snapshot: its id (also the ETag) and metadata. */
 	public record CurrentSnapshot(String snapshotId, SnapshotMeta meta) {}
+
+	/** One retained snapshot directory on disk: its metadata plus whether it is the active one. */
+	public record SnapshotListing(String id, String transactionTime, boolean current, List<FileMeta> files) {}
 
 	/**
 	 * The hosted DB is ephemeral, so by default a snapshot left over from a prior boot would
@@ -364,15 +368,7 @@ public class PublishService {
 	private void prune(String currentId) {
 		int retention = publishProps.getRetention();
 		Path root = publishRoot();
-		Map<String, SnapshotMeta> idToMeta = new HashMap<>();
-		try (Stream<Path> children = Files.list(root)) {
-			for (Path child : children.filter(Files::isDirectory).toList()) {
-				String id = child.getFileName().toString();
-				readMeta(id).ifPresent(meta -> idToMeta.put(id, meta));
-			}
-		} catch (IOException ignored) {
-			// best-effort; a listing failure just skips this prune pass
-		}
+		Map<String, SnapshotMeta> idToMeta = readAllMetas();
 		Map<String, Instant> idToTransactionTime = new HashMap<>();
 		idToMeta.forEach((id, meta) -> idToTransactionTime.put(id, Instant.parse(meta.transactionTime())));
 
@@ -424,6 +420,43 @@ public class PublishService {
 	/** The active snapshot's id and metadata, or empty when no snapshot has been published yet. */
 	public Optional<CurrentSnapshot> currentSnapshot() {
 		return currentSnapshotId().flatMap(id -> readMeta(id).map(meta -> new CurrentSnapshot(id, meta)));
+	}
+
+	/** Retained snapshots on disk, newest first; directories with unreadable meta are skipped. */
+	public List<SnapshotListing> listSnapshots() {
+		String currentId = currentSnapshotId().orElse(null);
+		return readAllMetas().entrySet().stream()
+				.sorted(Map.Entry.<String, SnapshotMeta>comparingByValue(
+								Comparator.comparing(meta -> Instant.parse(meta.transactionTime())))
+						.reversed())
+				.map(e -> new SnapshotListing(
+						e.getKey(),
+						e.getValue().transactionTime(),
+						e.getKey().equals(currentId),
+						e.getValue().files()))
+				.toList();
+	}
+
+	/** Metadata for every snapshot directory under the publish root; unreadable metas are skipped. */
+	private Map<String, SnapshotMeta> readAllMetas() {
+		Map<String, SnapshotMeta> idToMeta = new HashMap<>();
+		Path root = publishRoot();
+		if (!Files.isDirectory(root)) {
+			return idToMeta;
+		}
+		try (Stream<Path> children = Files.list(root)) {
+			for (Path child : children.filter(Files::isDirectory).toList()) {
+				String id = child.getFileName().toString();
+				try {
+					readMeta(id).ifPresent(meta -> idToMeta.put(id, meta));
+				} catch (UncheckedIOException ignored) {
+					// a corrupt meta.json must not block listing or pruning the others
+				}
+			}
+		} catch (IOException ignored) {
+			// best-effort; a listing failure yields an empty map
+		}
+		return idToMeta;
 	}
 
 	/**

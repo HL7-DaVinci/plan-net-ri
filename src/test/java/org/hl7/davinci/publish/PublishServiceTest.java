@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
@@ -13,6 +16,7 @@ import org.hl7.davinci.common.PlanNetTypes;
 import org.hl7.davinci.publish.BulkPublishManifestJson;
 import org.hl7.davinci.publish.PublishService;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 class PublishServiceTest {
 
@@ -196,5 +200,87 @@ class PublishServiceTest {
 		PublishService.PageBoundary boundary = PublishService.pageBoundary(List.of(t1, t2), 2);
 
 		assertFalse(boundary.isFinalPage(), "a page exactly at the page size must be followed by another query");
+	}
+
+	@Test
+	void listSnapshotsReturnsNewestFirstWithCurrentFlag(@TempDir Path tmp) throws Exception {
+		PublishProperties props = new PublishProperties();
+		props.setStoragePath(tmp.toString());
+		ObjectMapper mapper = new ObjectMapper();
+		PublishService service = new PublishService(null, null, mapper, props);
+
+		writeSnapshotDir(
+				tmp,
+				mapper,
+				"11111111-1111-1111-1111-111111111111",
+				"2026-07-01T00:00:00Z",
+				List.of(new PublishService.FileMeta(
+						"Organization", 1, 100, "11111111-1111-1111-1111-111111111111")));
+		writeSnapshotDir(
+				tmp,
+				mapper,
+				"22222222-2222-2222-2222-222222222222",
+				"2026-07-02T00:00:00Z",
+				List.of(
+						new PublishService.FileMeta(
+								"Organization", 2, 200, "22222222-2222-2222-2222-222222222222"),
+						new PublishService.FileMeta("Location", 1, 50, "11111111-1111-1111-1111-111111111111")));
+		Files.writeString(tmp.resolve("current"), "22222222-2222-2222-2222-222222222222");
+
+		List<PublishService.SnapshotListing> listings = service.listSnapshots();
+
+		assertEquals(2, listings.size());
+		assertEquals("22222222-2222-2222-2222-222222222222", listings.get(0).id());
+		assertTrue(listings.get(0).current());
+		assertEquals("2026-07-02T00:00:00Z", listings.get(0).transactionTime());
+		assertEquals(2, listings.get(0).files().size());
+		assertFalse(listings.get(1).current());
+	}
+
+	@Test
+	void listSnapshotsSkipsDirectoriesWithUnreadableMeta(@TempDir Path tmp) throws Exception {
+		PublishProperties props = new PublishProperties();
+		props.setStoragePath(tmp.toString());
+		ObjectMapper mapper = new ObjectMapper();
+		PublishService service = new PublishService(null, null, mapper, props);
+
+		writeSnapshotDir(
+				tmp,
+				mapper,
+				"11111111-1111-1111-1111-111111111111",
+				"2026-07-01T00:00:00Z",
+				List.of());
+		Path corrupt = tmp.resolve("33333333-3333-3333-3333-333333333333");
+		Files.createDirectories(corrupt);
+		Files.writeString(corrupt.resolve("meta.json"), "not json");
+		Path noMeta = tmp.resolve("44444444-4444-4444-4444-444444444444");
+		Files.createDirectories(noMeta);
+
+		List<PublishService.SnapshotListing> listings = service.listSnapshots();
+
+		assertEquals(1, listings.size());
+		assertEquals("11111111-1111-1111-1111-111111111111", listings.get(0).id());
+	}
+
+	@Test
+	void listSnapshotsIsEmptyBeforeFirstPublish(@TempDir Path tmp) {
+		PublishProperties props = new PublishProperties();
+		props.setStoragePath(tmp.resolve("never-created").toString());
+		PublishService service = new PublishService(null, null, new ObjectMapper(), props);
+
+		assertTrue(service.listSnapshots().isEmpty());
+	}
+
+	private static void writeSnapshotDir(
+			Path root,
+			ObjectMapper mapper,
+			String id,
+			String transactionTime,
+			List<PublishService.FileMeta> files)
+			throws Exception {
+		Path dir = root.resolve(id);
+		Files.createDirectories(dir);
+		mapper.writeValue(
+				dir.resolve("meta.json").toFile(), new PublishService.SnapshotMeta(transactionTime, files));
 	}
 }

@@ -5,6 +5,7 @@ import {
   FlameIcon,
   LayoutDashboard,
   Radar,
+  Rss,
 } from "lucide-react";
 import type * as React from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -47,6 +48,11 @@ const data = {
           url: "/directory-crawler",
           icon: Radar,
         },
+        {
+          title: "Bulk Publish",
+          url: "/bulk-publish",
+          icon: Rss,
+        },
       ],
     },
   ],
@@ -61,7 +67,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </div>
         <div className="flex flex-col group-data-[collapsible=icon]:hidden">
           <span className="text-sm font-semibold leading-tight">
-            Plan Net Browser
+            Da Vinci Plan Net
           </span>
         </div>
       </SidebarHeader>
