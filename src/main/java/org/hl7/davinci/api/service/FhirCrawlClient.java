@@ -10,6 +10,7 @@ import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hl7.davinci.api.config.ApiProperties;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.CapabilityStatement;
 import org.hl7.fhir.r4.model.Resource;
@@ -49,17 +50,6 @@ import java.util.function.Supplier;
 public class FhirCrawlClient {
 
 	private static final Logger ourLog = LoggerFactory.getLogger(FhirCrawlClient.class);
-
-	/** The 8 Plan-Net resource types crawled by every strategy. No Bundle. */
-	public static final List<String> PLAN_NET_TYPES = List.of(
-			"Endpoint",
-			"HealthcareService",
-			"InsurancePlan",
-			"Location",
-			"Organization",
-			"OrganizationAffiliation",
-			"Practitioner",
-			"PractitionerRole");
 
 	/** Hard cap on pages per type; a backstop against pagination loops, set high enough not to drop large types. */
 	static final int MAX_PAGES_PER_TYPE = 100_000;
@@ -296,7 +286,7 @@ public class FhirCrawlClient {
 
 		IParser parser = fhirContext.newJsonParser();
 
-		for (String type : PLAN_NET_TYPES) {
+		for (String type : PlanNetTypes.TYPES) {
 			Set<String> seen = new HashSet<>();
 			StringBuilder query =
 					new StringBuilder(type).append("?_count=").append(pageSize).append("&_sort=_lastUpdated");
@@ -397,7 +387,7 @@ public class FhirCrawlClient {
 
 		IParser parser = fhirContext.newJsonParser();
 
-		for (String type : PLAN_NET_TYPES) {
+		for (String type : PlanNetTypes.TYPES) {
 			long typeStartNanos = System.nanoTime();
 			int beforeCount = emitter.count();
 			long beforeBytes = bytes[0];
@@ -737,7 +727,7 @@ public class FhirCrawlClient {
 		int requests = 0;
 		long bytes = 0;
 		try {
-			String typeParam = URLEncoder.encode(String.join(",", PLAN_NET_TYPES), StandardCharsets.UTF_8);
+			String typeParam = URLEncoder.encode(String.join(",", PlanNetTypes.TYPES), StandardCharsets.UTF_8);
 			String kickoffUrl = serverUrl + "/$export?_type=" + typeParam;
 			steps.accept(StepEvent.progress("EXPORT", "Kicking off system $export..."));
 			long kickStart = System.nanoTime();
@@ -931,7 +921,7 @@ public class FhirCrawlClient {
 					DeletionEntry deletion = parseReference(
 							entry.getRequest() != null ? entry.getRequest().getUrl() : entry.getFullUrl());
 					if (deletion != null
-							&& PLAN_NET_TYPES.contains(deletion.resourceType())
+							&& PlanNetTypes.TYPES.contains(deletion.resourceType())
 							&& seenKeys.add(serverKey + "|" + deletion.resourceType() + "/" + deletion.id())) {
 						deletions.add(deletion);
 					}
@@ -944,7 +934,7 @@ public class FhirCrawlClient {
 					continue;
 				}
 				String type = resource.fhirType();
-				if (!PLAN_NET_TYPES.contains(type)) {
+				if (!PlanNetTypes.TYPES.contains(type)) {
 					continue;
 				}
 				String key =

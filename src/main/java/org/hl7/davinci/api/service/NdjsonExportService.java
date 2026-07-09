@@ -3,25 +3,21 @@ package org.hl7.davinci.api.service;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
+import org.hl7.davinci.common.NdjsonFiles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.UncheckedIOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.zip.GZIPOutputStream;
 
 /** Writes one {Type}.ndjson per resource type from the aggregate store. */
 @Service
@@ -37,9 +33,6 @@ public class NdjsonExportService {
 
 	/** I/O and gzip buffer size; large buffers cut syscall and compression overhead on big snapshots. */
 	private static final int BUFFER = 1 << 16;
-
-	/** Export gzip level (0-9). */
-	private static final int GZIP_LEVEL = 3;
 
 	private final CrawlResourceRepository resourceRepo;
 	private final ApiProperties props;
@@ -113,13 +106,7 @@ public class NdjsonExportService {
 		if (existing != null) {
 			return existing;
 		}
-		OutputStream file = new BufferedOutputStream(Files.newOutputStream(dir.resolve(type + ".ndjson.gz")), BUFFER);
-		OutputStream gz = new GZIPOutputStream(file, BUFFER) {
-			{
-				def.setLevel(GZIP_LEVEL);
-			}
-		};
-		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(gz, StandardCharsets.UTF_8), BUFFER);
+		BufferedWriter writer = new BufferedWriter(NdjsonFiles.gzipWriter(dir.resolve(type + ".ndjson.gz")), BUFFER);
 		writers.put(type, writer);
 		return writer;
 	}

@@ -7,6 +7,8 @@ import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
 import org.hl7.davinci.api.repository.ManifestRepository;
+import org.hl7.davinci.common.PathUtils;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -25,7 +27,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -158,7 +159,7 @@ public class ManifestService {
 	private static String buildRequestUrl(CrawlStrategy strategy, List<String> serverKeys, String windowSince) {
 		String base = serverKeys.isEmpty() ? "" : serverKeys.get(0);
 		return switch (strategy) {
-			case BULK_EXPORT -> base + "/$export?_type=" + String.join("%2C", FhirCrawlClient.PLAN_NET_TYPES);
+			case BULK_EXPORT -> base + "/$export?_type=" + String.join("%2C", PlanNetTypes.TYPES);
 			case HISTORY -> windowSince != null
 					? base + "/_history?_since=" + URLEncoder.encode(windowSince, StandardCharsets.UTF_8)
 					: base + "/_history";
@@ -184,21 +185,7 @@ public class ManifestService {
 		if (dir == null) {
 			return;
 		}
-		Path path = Path.of(dir);
-		if (!Files.exists(path)) {
-			return;
-		}
-		try (Stream<Path> walk = Files.walk(path)) {
-			walk.sorted(Comparator.reverseOrder()).forEach(p -> {
-				try {
-					Files.delete(p);
-				} catch (IOException ignored) {
-					// best-effort cleanup
-				}
-			});
-		} catch (IOException ignored) {
-			// best-effort cleanup
-		}
+		PathUtils.deleteRecursively(Path.of(dir));
 	}
 
 	public List<ManifestSummary> listManifests() {

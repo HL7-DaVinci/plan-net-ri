@@ -6,6 +6,7 @@ import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
 import org.hl7.davinci.api.repository.ManifestRepository;
 import org.hl7.davinci.api.service.ManifestService;
+import org.hl7.davinci.common.NdjsonFiles;
 import org.springframework.http.ContentDisposition;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -25,7 +26,6 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.regex.Pattern;
 import java.util.zip.GZIPInputStream;
 
 /** Lists snapshots and serves each manifest and its NDJSON files. */
@@ -34,7 +34,6 @@ import java.util.zip.GZIPInputStream;
 public class ApiManifestController {
 
 	private static final MediaType NDJSON = MediaType.parseMediaType("application/fhir+ndjson");
-	private static final Pattern SAFE_FILE = Pattern.compile("[A-Za-z0-9]+\\.ndjson");
 
 	private final ManifestService manifestService;
 	private final ManifestRepository manifestRepo;
@@ -68,7 +67,7 @@ public class ApiManifestController {
 	@GetMapping("/manifests/{id}/files/{fileName}")
 	public ResponseEntity<StreamingResponseBody> file(
 			@PathVariable("id") String id, @PathVariable("fileName") String fileName) {
-		if (!SAFE_FILE.matcher(fileName).matches()) {
+		if (!NdjsonFiles.SAFE_FILE.matcher(fileName).matches()) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid file name");
 		}
 		ManifestRecord manifest = requireManifest(id);

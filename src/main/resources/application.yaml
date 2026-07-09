@@ -533,3 +533,13 @@ api:
   # UI server picker, served via /crawler/config.js. Set APP_FHIR_SERVERS to a JSON array
   # such as '[{"name":"Local Server","url":"http://localhost:8080/fhir"}]'.
   fhir-servers: ${APP_FHIR_SERVERS:}
+
+# Bulk Data $bulk-publish: periodic self-publish of this server's own Plan-Net data,
+# separate from the crawler manifests under api.
+publish:
+  enabled: true
+  interval-ms: 60000     # publish tick; also drives updateCadence
+  retention: 3           # snapshot dirs kept on disk (grace period)
+  export-page-size: 1000 # resources read per page during a type's streaming export
+  storage-path: ${PUBLISH_STORAGE_PATH:./target/publish-data}
+  reset-on-startup: ${PUBLISH_RESET_ON_STARTUP:true} # wipe storage-path before the first publish
