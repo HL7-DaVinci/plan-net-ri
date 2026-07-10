@@ -14,6 +14,9 @@ import org.hl7.fhir.r4.model.OperationOutcome;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.HexFormat;
 import java.util.Optional;
 
 /**
@@ -46,7 +49,10 @@ public class BulkPublishProvider extends BaseProvider {
 			return;
 		}
 
-		String etag = snapshot.get().snapshotId();
+		BulkPublishManifestJson manifest = publishService.render(snapshot.get().meta(), baseUrl(theServletRequest));
+		byte[] body = objectMapper.writeValueAsBytes(manifest);
+		String etag = sha256Hex(body);
+
 		String ifNoneMatch = theServletRequest.getHeader(Constants.HEADER_IF_NONE_MATCH);
 		if (matchesEtag(ifNoneMatch, etag)) {
 			theServletResponse.setStatus(HttpServletResponse.SC_NOT_MODIFIED);
@@ -55,12 +61,21 @@ public class BulkPublishProvider extends BaseProvider {
 			return;
 		}
 
-		BulkPublishManifestJson manifest = publishService.render(snapshot.get().meta(), baseUrl(theServletRequest));
 		theServletResponse.setStatus(HttpServletResponse.SC_OK);
 		theServletResponse.setContentType(Constants.CT_JSON);
 		theServletResponse.setHeader(Constants.HEADER_ETAG, quote(etag));
 		theServletResponse.setHeader(Constants.HEADER_CACHE_CONTROL, CACHE_CONTROL);
-		objectMapper.writeValue(theServletResponse.getOutputStream(), manifest);
+		theServletResponse.getOutputStream().write(body);
+	}
+
+	/** Content hash so the ETag changes only when the manifest body actually would. */
+	private static String sha256Hex(byte[] body) {
+		try {
+			MessageDigest digest = MessageDigest.getInstance("SHA-256");
+			return HexFormat.of().formatHex(digest.digest(body));
+		} catch (NoSuchAlgorithmException e) {
+			throw new IllegalStateException(e);
+		}
 	}
 
 	private void writeUnavailable(HttpServletResponse response) throws IOException {

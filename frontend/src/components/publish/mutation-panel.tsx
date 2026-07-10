@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { fhirFetch, fhirSend } from "@/hooks/use-fhir-api";
+import { isOperationOutcome } from "@/lib/fhir-types";
 import {
   PLAN_NET_RESOURCE_TYPES,
   type PlanNetResourceType,
@@ -26,6 +27,36 @@ interface CreatedResource {
   id?: string;
 }
 
+const HAPI_STORAGE_RESPONSE_SYSTEM =
+  "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code";
+
+const DELETE_NOOP_CODES = new Set([
+  "SUCCESSFUL_DELETE_NOT_FOUND",
+  "SUCCESSFUL_DELETE_ALREADY_DELETED",
+]);
+
+/**
+ * HAPI returns 200 with one of these outcome codes when a delete took no
+ * action (target never existed or was already deleted). Returns the issue's
+ * diagnostics for display, or null when the delete actually happened.
+ */
+function deleteNoOpMessage(outcome: unknown): string | null {
+  if (!isOperationOutcome(outcome) || !Array.isArray(outcome.issue)) {
+    return null;
+  }
+  for (const issue of outcome.issue) {
+    const noOp = issue.details?.coding?.find(
+      (coding) =>
+        coding.system === HAPI_STORAGE_RESPONSE_SYSTEM &&
+        DELETE_NOOP_CODES.has(coding.code ?? ""),
+    );
+    if (noOp) {
+      return issue.diagnostics ?? noOp.display ?? "Nothing was deleted";
+    }
+  }
+  return null;
+}
+
 export function PublishMutationPanel({ serverUrl }: { serverUrl: string }) {
   const [type, setType] = useState<PlanNetResourceType>("Organization");
   const [resourceId, setResourceId] = useState("");
@@ -34,7 +65,7 @@ export function PublishMutationPanel({ serverUrl }: { serverUrl: string }) {
 
   const afterMutation = (action: string, id: string | undefined) => {
     setHint(
-      `${action} ${type}/${id ?? "?"}. Watch the live watcher: the next publish should re-export only ${type}, and other types should keep their file URLs.`,
+      `${action} ${type}/${id ?? "?"}. Watch the live watcher: the next publish should indicate the ${type} type has been re-exported.`,
     );
   };
 
@@ -98,7 +129,12 @@ export function PublishMutationPanel({ serverUrl }: { serverUrl: string }) {
       return;
     }
     try {
-      await fhirSend(`${serverUrl}/${type}/${id}`, "DELETE");
+      const outcome = await fhirSend(`${serverUrl}/${type}/${id}`, "DELETE");
+      const noOpMessage = deleteNoOpMessage(outcome);
+      if (noOpMessage) {
+        toast.error(noOpMessage);
+        return;
+      }
       afterMutation("Deleted", id);
       setResourceId("");
     } catch (e) {

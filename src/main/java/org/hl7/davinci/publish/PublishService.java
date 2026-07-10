@@ -11,11 +11,18 @@ import ca.uhn.fhir.rest.api.SortSpec;
 import ca.uhn.fhir.rest.api.server.IBundleProvider;
 import ca.uhn.fhir.rest.api.server.SystemRequestDetails;
 import ca.uhn.fhir.rest.param.DateRangeParam;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hl7.davinci.common.NdjsonFiles;
 import org.hl7.davinci.common.PathUtils;
 import org.hl7.davinci.common.PlanNetTypes;
+import org.hl7.davinci.publish.feed.ChangeEntry;
+import org.hl7.davinci.publish.feed.ChangeFeedReader;
+import org.hl7.davinci.publish.feed.StorageSettingsGuard;
+import org.hl7.davinci.publish.feed.WriteFrontier;
+import org.hl7.davinci.publish.store.SnapshotFileMerger;
 import org.hl7.fhir.instance.model.api.IBaseResource;
+import org.hl7.fhir.r4.model.IdType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -42,6 +49,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -60,27 +68,45 @@ public class PublishService {
 
 	private static final String CURRENT_FILE = "current";
 	private static final String META_FILE = "meta.json";
+	private static final long FRONTIER_WAIT_WARN_MS = 60_000;
+	private static final long FRONTIER_WAIT_POLL_MS = 100;
 
 	private final FhirContext fhirContext;
 	private final DaoRegistry daoRegistry;
 	private final ObjectMapper objectMapper;
 	private final PublishProperties publishProps;
+	private final WriteFrontier writeFrontier;
+	private final ChangeFeedReader changeFeedReader;
+	private final StorageSettingsGuard storageSettingsGuard;
+
+	private final AtomicReference<String> lastLoggedGuardViolation = new AtomicReference<>();
 
 	public PublishService(
 			FhirContext fhirContext,
 			DaoRegistry daoRegistry,
 			ObjectMapper objectMapper,
-			PublishProperties publishProps) {
+			PublishProperties publishProps,
+			WriteFrontier writeFrontier,
+			ChangeFeedReader changeFeedReader,
+			StorageSettingsGuard storageSettingsGuard) {
 		this.fhirContext = fhirContext;
 		this.daoRegistry = daoRegistry;
 		this.objectMapper = objectMapper;
 		this.publishProps = publishProps;
+		this.writeFrontier = writeFrontier;
+		this.changeFeedReader = changeFeedReader;
+		this.storageSettingsGuard = storageSettingsGuard;
 	}
 
 	/** One published file's stats, captured at export time; {@code snapshotId} is the dir that physically holds it. */
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record FileMeta(String type, long count, long fileSize, String snapshotId) {}
 
-	/** The contents of a snapshot's {@code meta.json}. */
+	/**
+	 * The contents of a snapshot's {@code meta.json}. Unknown fields are ignored on read so a future
+	 * field added to this record does not break deserialization of metas written by an older build.
+	 */
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record SnapshotMeta(String transactionTime, List<FileMeta> files) {}
 
 	/** The currently active snapshot: its id (also the ETag) and metadata. */
@@ -88,6 +114,9 @@ public class PublishService {
 
 	/** One retained snapshot directory on disk: its metadata plus whether it is the active one. */
 	public record SnapshotListing(String id, String transactionTime, boolean current, List<FileMeta> files) {}
+
+	/** A merge outcome: whether the content changed, and the FileMeta to keep, if any. */
+	private record TypeMergeOutcome(boolean changed, Optional<FileMeta> fileMeta) {}
 
 	/**
 	 * The hosted DB is ephemeral, so by default a snapshot left over from a prior boot would
@@ -105,7 +134,9 @@ public class PublishService {
 			return;
 		}
 		if (resetOnStartup) {
-			publish(Set.copyOf(PlanNetTypes.TYPES), null);
+			if (checkGuardOrSkip()) {
+				bootstrap();
+			}
 		} else {
 			publishIfChanged();
 		}
@@ -121,90 +152,224 @@ public class PublishService {
 		publishIfChanged();
 	}
 
-	/** Publish only when some type changed since the current snapshot; always publish on the first run. */
+	/** Bootstraps if no snapshot exists yet; otherwise runs a steady-state tick. */
 	void publishIfChanged() {
-		Optional<SnapshotMeta> current = currentSnapshotId().flatMap(this::readMeta);
-		boolean firstRun = current.isEmpty();
-		Map<String, Boolean> hasHistoryByType =
-				firstRun ? Map.of() : hasHistoryPerType(current.get().transactionTime());
-		Set<String> changed = changedTypes(firstRun, hasHistoryByType);
-		if (changed.isEmpty()) {
+		if (!checkGuardOrSkip()) {
 			return;
 		}
-		publish(changed, current.orElse(null));
+		Optional<SnapshotMeta> current = currentSnapshotId().flatMap(this::readMeta);
+		if (current.isEmpty()) {
+			bootstrap();
+		} else {
+			steadyTick(current.get());
+		}
 	}
 
-	/** Pure change-detection decision, kept separate from the DAO calls so it is directly testable. */
-	public static Set<String> changedTypes(boolean firstRun, Map<String, Boolean> hasHistoryByType) {
-		if (firstRun) {
-			return Set.copyOf(PlanNetTypes.TYPES);
+	/** Returns true if the tick may proceed. Logs a guard violation at ERROR only when its message changes. */
+	private boolean checkGuardOrSkip() {
+		Optional<String> violation = storageSettingsGuard.firstViolation();
+		if (violation.isEmpty()) {
+			lastLoggedGuardViolation.set(null);
+			return true;
 		}
-		Set<String> changed = new HashSet<>();
-		for (String type : PlanNetTypes.TYPES) {
-			// A history provider that cannot report a definite answer counts the type as changed.
-			if (hasHistoryByType.getOrDefault(type, true)) {
-				changed.add(type);
+		String message = violation.get();
+		if (!message.equals(lastLoggedGuardViolation.getAndSet(message))) {
+			ourLog.error("Skipping bulk-publish tick: {}", message);
+		}
+		return false;
+	}
+
+	/**
+	 * Publishes a new snapshot if the write frontier has advanced and any type changed within the
+	 * window. Synchronized with {@link #bootstrap}.
+	 */
+	private synchronized void steadyTick(SnapshotMeta previousMeta) {
+		long previousMillis = Instant.parse(previousMeta.transactionTime()).toEpochMilli();
+		long frontierMillis = writeFrontier.frontierMillis();
+		if (frontierMillis <= previousMillis) {
+			return;
+		}
+
+		Map<String, Map<String, ChangeEntry>> winnersByType =
+				readWindowForEveryType(previousMillis - publishProps.getOverlapMs(), frontierMillis);
+		if (winnersByType.values().stream().allMatch(Map::isEmpty)) {
+			return;
+		}
+
+		long startNanos = System.nanoTime();
+		String snapshotId = UUID.randomUUID().toString();
+		Path dir = publishRoot().resolve(snapshotId);
+		boolean published = false;
+		try {
+			Files.createDirectories(dir);
+			List<FileMeta> files = new ArrayList<>();
+			boolean anyChanged = false;
+			for (String type : PlanNetTypes.TYPES) {
+				Map<String, ChangeEntry> winners = winnersByType.get(type);
+				Optional<FileMeta> previousFile = reusedFileMeta(previousMeta, type);
+				if (winners.isEmpty()) {
+					previousFile.ifPresent(files::add);
+					continue;
+				}
+				Path oldFile = previousFile.map(this::fileFor).orElse(null);
+				TypeMergeOutcome outcome = mergeType(dir, snapshotId, type, oldFile, winners);
+				anyChanged |= outcome.changed();
+				if (outcome.fileMeta().isPresent()) {
+					files.add(outcome.fileMeta().get());
+				} else if (!outcome.changed()) {
+					previousFile.ifPresent(files::add);
+				}
+			}
+			if (!anyChanged) {
+				return;
+			}
+			writeMeta(dir, new SnapshotMeta(Instant.ofEpochMilli(frontierMillis).toString(), files));
+			swapCurrent(snapshotId);
+			writeFrontier.noteLastPublished(frontierMillis);
+			published = true;
+		} catch (IOException e) {
+			throw new UncheckedIOException("Failed to publish bulk-publish snapshot " + snapshotId, e);
+		} finally {
+			if (!published) {
+				PathUtils.deleteRecursively(dir);
 			}
 		}
-		return changed;
+		prune(snapshotId);
+		ourLog.info(
+				"Bulk publish snapshot {} created via steady tick in {} ms",
+				snapshotId,
+				(System.nanoTime() - startNanos) / 1_000_000);
 	}
 
 	/**
-	 * A type's history {@code size()} is null under HAPI's default cached history-count mode whenever
-	 * a since/until bound is applied (the count cache only covers the unbounded case), so a boolean
-	 * existence check is used instead of a count; it runs the same bounded query and is unaffected by
-	 * that caching.
+	 * Publishes the first snapshot by scanning every type, then repairs it against any writes that
+	 * landed during the scan. Synchronized with {@link #steadyTick}.
 	 */
-	@SuppressWarnings({"rawtypes"})
-	private Map<String, Boolean> hasHistoryPerType(String transactionTimeIso) {
-		// History's since bound is inclusive; add 1ms to exclude entries at the prior transactionTime.
-		Date since = Date.from(Instant.parse(transactionTimeIso).plusMillis(1));
-		SystemRequestDetails details = new SystemRequestDetails();
-		Map<String, Boolean> hasHistoryByType = new HashMap<>();
-		for (String type : PlanNetTypes.TYPES) {
-			IFhirResourceDao dao = daoRegistry.getResourceDao(type);
-			IBundleProvider history = dao.history(since, null, null, details);
-			hasHistoryByType.put(type, !history.isEmpty());
-		}
-		return hasHistoryByType;
-	}
-
-	/**
-	 * Synchronized: the startup publish and a scheduled tick must never overlap, or the
-	 * current-pointer swap and retention prune can corrupt each other. Types in {@code typesToExport}
-	 * are freshly exported into the new snapshot; every other type carries its {@link FileMeta}
-	 * forward from {@code previousMeta} unchanged, including its owning snapshotId, so its file URL
-	 * stays byte-identical.
-	 */
-	private synchronized void publish(Set<String> typesToExport, SnapshotMeta previousMeta) {
+	private synchronized void bootstrap() {
 		long startNanos = System.nanoTime();
-		Instant transactionTime = Instant.now();
+		long f0Millis = writeFrontier.frontierMillis();
+		Instant scanUpperBound = Instant.now();
 		String snapshotId = UUID.randomUUID().toString();
 		Path dir = publishRoot().resolve(snapshotId);
 		SystemRequestDetails details = new SystemRequestDetails();
-		List<FileMeta> files = new ArrayList<>();
+		boolean published = false;
 		try {
 			Files.createDirectories(dir);
+			Map<String, FileMeta> scannedByType = new HashMap<>();
 			for (String type : PlanNetTypes.TYPES) {
-				if (typesToExport.contains(type)) {
-					exportType(dir, snapshotId, type, transactionTime, details).ifPresent(files::add);
-				} else {
-					reusedFileMeta(previousMeta, type).ifPresent(files::add);
+				exportType(dir, snapshotId, type, scanUpperBound, details).ifPresent(fm -> scannedByType.put(type, fm));
+			}
+
+			long scanEndMillis = System.currentTimeMillis();
+			awaitFrontierPast(scanEndMillis);
+			long f1Millis = writeFrontier.frontierMillis();
+
+			Map<String, Map<String, ChangeEntry>> winnersByType = readWindowForEveryType(f0Millis, f1Millis);
+			List<FileMeta> files = new ArrayList<>();
+			for (String type : PlanNetTypes.TYPES) {
+				Map<String, ChangeEntry> winners = winnersByType.get(type);
+				FileMeta scanned = scannedByType.get(type);
+				if (winners.isEmpty()) {
+					if (scanned != null) {
+						files.add(scanned);
+					}
+					continue;
+				}
+				Path scannedFile = scanned != null ? dir.resolve(type + ".ndjson.gz") : null;
+				TypeMergeOutcome outcome = mergeType(dir, snapshotId, type, scannedFile, winners);
+				if (outcome.fileMeta().isPresent()) {
+					files.add(outcome.fileMeta().get());
+				} else if (!outcome.changed() && scanned != null) {
+					files.add(scanned);
 				}
 			}
-			writeMeta(dir, new SnapshotMeta(transactionTime.toString(), files));
+
+			writeMeta(dir, new SnapshotMeta(Instant.ofEpochMilli(f1Millis).toString(), files));
 			swapCurrent(snapshotId);
+			writeFrontier.noteLastPublished(f1Millis);
+			published = true;
 		} catch (IOException e) {
-			throw new UncheckedIOException("Failed to publish bulk-publish snapshot " + snapshotId, e);
+			throw new UncheckedIOException("Failed to bootstrap bulk-publish snapshot " + snapshotId, e);
+		} finally {
+			if (!published) {
+				PathUtils.deleteRecursively(dir);
+			}
 		}
 		prune(snapshotId);
-		long totalResources = files.stream().mapToLong(FileMeta::count).sum();
 		ourLog.info(
-				"Bulk publish snapshot {} created: {} resources across {} types in {} ms",
+				"Bulk publish snapshot {} created via bootstrap in {} ms",
 				snapshotId,
-				totalResources,
-				files.size(),
 				(System.nanoTime() - startNanos) / 1_000_000);
+	}
+
+	/** Blocks until the write frontier reaches {@code scanEndMillis}, warning once past 60 seconds. */
+	private void awaitFrontierPast(long scanEndMillis) {
+		long waitStart = System.currentTimeMillis();
+		boolean warned = false;
+		while (writeFrontier.frontierMillis() < scanEndMillis) {
+			if (!warned && System.currentTimeMillis() - waitStart > FRONTIER_WAIT_WARN_MS) {
+				ourLog.warn(
+						"Bootstrap publish has waited over {} ms for the write frontier to reach the scan end; "
+								+ "a long-running write may be pinning it",
+						FRONTIER_WAIT_WARN_MS);
+				warned = true;
+			}
+			try {
+				Thread.sleep(FRONTIER_WAIT_POLL_MS);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+				throw new IllegalStateException("Interrupted while waiting for the write frontier during bootstrap", e);
+			}
+		}
+	}
+
+	private Map<String, Map<String, ChangeEntry>> readWindowForEveryType(
+			long sinceExclusiveMillis, long untilInclusiveMillis) {
+		Map<String, Map<String, ChangeEntry>> result = new HashMap<>();
+		for (String type : PlanNetTypes.TYPES) {
+			result.put(type, changeFeedReader.readWindow(type, sinceExclusiveMillis, untilInclusiveMillis));
+		}
+		return result;
+	}
+
+	/** Merges {@code winners} onto {@code oldFileGz} (nullable) into {@code dir}/{@code type}.ndjson.gz via a temp file. */
+	private TypeMergeOutcome mergeType(
+			Path dir, String snapshotId, String type, Path oldFileGz, Map<String, ChangeEntry> winners) {
+		Path finalFile = dir.resolve(type + ".ndjson.gz");
+		Path tempFile = dir.resolve(type + ".ndjson.gz.merge-tmp");
+		SnapshotFileMerger.MergeResult result =
+				SnapshotFileMerger.merge(oldFileGz, winners, this::loadPinnedBody, tempFile);
+		if (!result.changed()) {
+			deleteQuietly(tempFile);
+			return new TypeMergeOutcome(false, Optional.empty());
+		}
+		if (result.count() == 0) {
+			deleteQuietly(tempFile);
+			return new TypeMergeOutcome(true, Optional.empty());
+		}
+		try {
+			Files.move(tempFile, finalFile, StandardCopyOption.REPLACE_EXISTING);
+		} catch (IOException e) {
+			throw new UncheckedIOException("Failed to finalize merged snapshot file " + finalFile, e);
+		}
+		return new TypeMergeOutcome(
+				true, Optional.of(new FileMeta(type, result.count(), result.uncompressedBytes(), snapshotId)));
+	}
+
+	/**
+	 * Reads one winner's exact version. Throws if the read fails; never falls back to the current version.
+	 * Passes deletedOk=true: the pinned version can be non-deleted even if the resource is now deleted.
+	 */
+	@SuppressWarnings("rawtypes")
+	private String loadPinnedBody(ChangeEntry entry) {
+		IFhirResourceDao dao = daoRegistry.getResourceDao(entry.type());
+		IdType id = new IdType(entry.type(), entry.id(), Long.toString(entry.versionId()));
+		IBaseResource resource = dao.read(id, new SystemRequestDetails(), true);
+		return fhirContext.newJsonParser().setPrettyPrint(false).encodeResourceToString(resource);
+	}
+
+	private Path fileFor(FileMeta fileMeta) {
+		return publishRoot().resolve(fileMeta.snapshotId()).resolve(fileMeta.type() + ".ndjson.gz");
 	}
 
 	/** The prior snapshot's {@link FileMeta} for {@code type}, if it had one; absent stays absent. */
@@ -372,7 +537,8 @@ public class PublishService {
 		Map<String, Instant> idToTransactionTime = new HashMap<>();
 		idToMeta.forEach((id, meta) -> idToTransactionTime.put(id, Instant.parse(meta.transactionTime())));
 
-		Set<String> byCount = idsToDelete(idToTransactionTime, currentId, retention);
+		Set<String> byCount = idsToDelete(
+				idToTransactionTime, currentId, retention, System.currentTimeMillis(), publishProps.getGracePeriodMs());
 		Map<String, SnapshotMeta> retainedMetas = new HashMap<>(idToMeta);
 		byCount.forEach(retainedMetas::remove);
 
@@ -384,8 +550,15 @@ public class PublishService {
 	/**
 	 * Pure retention decision: keep the newest {@code retention} snapshots by transaction time, and
 	 * always keep {@code currentId} regardless of its position. {@code retention <= 0} means unlimited.
+	 * A snapshot younger than {@code nowMillis - gracePeriodMs} is never nominated for deletion even
+	 * if it falls outside the count window, giving in-flight file URLs time to age out of use.
 	 */
-	public static Set<String> idsToDelete(Map<String, Instant> idToTransactionTime, String currentId, int retention) {
+	public static Set<String> idsToDelete(
+			Map<String, Instant> idToTransactionTime,
+			String currentId,
+			int retention,
+			long nowMillis,
+			long gracePeriodMs) {
 		if (retention <= 0) {
 			return Set.of();
 		}
@@ -397,8 +570,13 @@ public class PublishService {
 		if (currentId != null) {
 			keep.add(currentId);
 		}
-		Set<String> toDelete = new HashSet<>(idToTransactionTime.keySet());
-		toDelete.removeAll(keep);
+		long floor = nowMillis - gracePeriodMs;
+		Set<String> toDelete = new HashSet<>();
+		idToTransactionTime.forEach((id, transactionTime) -> {
+			if (!keep.contains(id) && transactionTime.toEpochMilli() < floor) {
+				toDelete.add(id);
+			}
+		});
 		return toDelete;
 	}
 

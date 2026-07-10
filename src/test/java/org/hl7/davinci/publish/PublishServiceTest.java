@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.hl7.davinci.common.PlanNetTypes;
 import org.hl7.davinci.publish.BulkPublishManifestJson;
 import org.hl7.davinci.publish.PublishService;
 import org.junit.jupiter.api.Test;
@@ -20,11 +19,17 @@ import org.junit.jupiter.api.io.TempDir;
 
 class PublishServiceTest {
 
+	/** Far past every fixture date below, so the retention grace-period floor never interferes with
+	 * the count-window assertions in the pre-existing retention tests. */
+	private static final long FAR_FUTURE_NOW = Instant.parse("2027-01-01T00:00:00Z").toEpochMilli();
+
+	private static final long DEFAULT_GRACE_PERIOD_MS = 21_600_000;
+
 	@Test
 	void rendersManifestFromSnapshotMeta() {
 		PublishProperties publishProps = new PublishProperties();
 		publishProps.setIntervalMs(5000);
-		PublishService service = new PublishService(null, null, null, publishProps);
+		PublishService service = new PublishService(null, null, null, publishProps, null, null, null);
 
 		PublishService.SnapshotMeta meta = new PublishService.SnapshotMeta(
 				"2026-07-07T15:00:00Z", List.of(new PublishService.FileMeta("Organization", 3, 456, "snap-1")));
@@ -45,7 +50,7 @@ class PublishServiceTest {
 
 	@Test
 	void omitsOutputEntriesForTypesWithNoResources() {
-		PublishService service = new PublishService(null, null, null, new PublishProperties());
+		PublishService service = new PublishService(null, null, null, new PublishProperties(), null, null, null);
 
 		PublishService.SnapshotMeta meta = new PublishService.SnapshotMeta("2026-07-07T15:00:00Z", List.of());
 
@@ -56,7 +61,7 @@ class PublishServiceTest {
 
 	@Test
 	void reusedTypeUrlUsesItsOwningSnapshotIdWhileAReExportedTypeUsesTheNewOne() {
-		PublishService service = new PublishService(null, null, null, new PublishProperties());
+		PublishService service = new PublishService(null, null, null, new PublishProperties(), null, null, null);
 
 		PublishService.SnapshotMeta meta = new PublishService.SnapshotMeta(
 				"2026-07-07T15:00:00Z",
@@ -85,7 +90,8 @@ class PublishServiceTest {
 				"middle", Instant.parse("2026-07-02T00:00:00Z"),
 				"newest", Instant.parse("2026-07-03T00:00:00Z"));
 
-		Set<String> toDelete = PublishService.idsToDelete(idToTransactionTime, "newest", 2);
+		Set<String> toDelete = PublishService.idsToDelete(
+				idToTransactionTime, "newest", 2, FAR_FUTURE_NOW, DEFAULT_GRACE_PERIOD_MS);
 
 		assertEquals(Set.of("oldest"), toDelete);
 	}
@@ -98,7 +104,8 @@ class PublishServiceTest {
 				"b", Instant.parse("2026-07-03T00:00:00Z"),
 				"c", Instant.parse("2026-07-02T00:00:00Z"));
 
-		Set<String> toDelete = PublishService.idsToDelete(idToTransactionTime, "stale-current", 2);
+		Set<String> toDelete = PublishService.idsToDelete(
+				idToTransactionTime, "stale-current", 2, FAR_FUTURE_NOW, DEFAULT_GRACE_PERIOD_MS);
 
 		assertEquals(Set.of("c"), toDelete, "the two newest (a, b) are kept by the window; stale-current survives"
 				+ " only because it is current; c falls outside both");
@@ -109,7 +116,27 @@ class PublishServiceTest {
 		Map<String, Instant> idToTransactionTime =
 				Map.of("a", Instant.parse("2026-07-03T00:00:00Z"), "b", Instant.parse("2026-07-02T00:00:00Z"));
 
-		assertTrue(PublishService.idsToDelete(idToTransactionTime, "a", 0).isEmpty());
+		assertTrue(PublishService.idsToDelete(idToTransactionTime, "a", 0, FAR_FUTURE_NOW, DEFAULT_GRACE_PERIOD_MS)
+				.isEmpty());
+	}
+
+	@Test
+	void retentionFloorSparesASnapshotYoungerThanTheGracePeriodEvenOutsideTheCountWindow() {
+		Map<String, Instant> idToTransactionTime = Map.of(
+				"ancient", Instant.parse("2026-06-09T12:00:00Z"),
+				"recent-outside-window", Instant.parse("2026-07-09T11:00:00Z"),
+				"b", Instant.parse("2026-07-09T11:59:58Z"),
+				"c", Instant.parse("2026-07-09T11:59:59Z"));
+		long now = Instant.parse("2026-07-09T12:00:00Z").toEpochMilli();
+
+		Set<String> toDelete = PublishService.idsToDelete(idToTransactionTime, "c", 2, now, DEFAULT_GRACE_PERIOD_MS);
+
+		assertEquals(
+				Set.of("ancient"),
+				toDelete,
+				"recent-outside-window falls outside the retention=2 count window (b and c are newer) but is"
+						+ " only 1 hour old, inside the 6-hour grace period, so it survives; ancient is old enough"
+						+ " to be pruned");
 	}
 
 	@Test
@@ -134,38 +161,6 @@ class PublishServiceTest {
 						"2026-07-03T00:00:00Z", List.of(new PublishService.FileMeta("Organization", 5, 900, "kept"))));
 
 		assertEquals(Set.of("old"), PublishService.subtractReferencedIds(byCount, retainedMetas));
-	}
-
-	@Test
-	void firstRunTreatsAllTypesAsChanged() {
-		assertEquals(Set.copyOf(PlanNetTypes.TYPES), PublishService.changedTypes(true, Map.of()));
-	}
-
-	@Test
-	void noHistoryForAnyTypeYieldsNoChanges() {
-		Map<String, Boolean> none = new HashMap<>();
-		for (String type : PlanNetTypes.TYPES) {
-			none.put(type, false);
-		}
-
-		assertTrue(PublishService.changedTypes(false, none).isEmpty());
-	}
-
-	@Test
-	void mixedHistoryResultsYieldOnlyTheChangedTypes() {
-		Map<String, Boolean> hasHistory = new HashMap<>();
-		for (String type : PlanNetTypes.TYPES) {
-			hasHistory.put(type, false);
-		}
-		hasHistory.put("Organization", true);
-		hasHistory.remove("Endpoint");
-
-		Set<String> changed = PublishService.changedTypes(false, hasHistory);
-
-		assertEquals(
-				Set.of("Organization", "Endpoint"),
-				changed,
-				"a type with history and a type missing an answer both mark as changed; no-history types do not");
 	}
 
 	@Test
@@ -207,7 +202,7 @@ class PublishServiceTest {
 		PublishProperties props = new PublishProperties();
 		props.setStoragePath(tmp.toString());
 		ObjectMapper mapper = new ObjectMapper();
-		PublishService service = new PublishService(null, null, mapper, props);
+		PublishService service = new PublishService(null, null, mapper, props, null, null, null);
 
 		writeSnapshotDir(
 				tmp,
@@ -242,7 +237,7 @@ class PublishServiceTest {
 		PublishProperties props = new PublishProperties();
 		props.setStoragePath(tmp.toString());
 		ObjectMapper mapper = new ObjectMapper();
-		PublishService service = new PublishService(null, null, mapper, props);
+		PublishService service = new PublishService(null, null, mapper, props, null, null, null);
 
 		writeSnapshotDir(
 				tmp,
@@ -266,7 +261,7 @@ class PublishServiceTest {
 	void listSnapshotsIsEmptyBeforeFirstPublish(@TempDir Path tmp) {
 		PublishProperties props = new PublishProperties();
 		props.setStoragePath(tmp.resolve("never-created").toString());
-		PublishService service = new PublishService(null, null, new ObjectMapper(), props);
+		PublishService service = new PublishService(null, null, new ObjectMapper(), props, null, null, null);
 
 		assertTrue(service.listSnapshots().isEmpty());
 	}

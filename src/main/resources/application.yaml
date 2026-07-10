@@ -327,6 +327,7 @@ hapi:
     # enforce_referential_integrity_on_write: false
     # etag_support_enabled: true
     # expunge_enabled: true
+    expunge_enabled: false  # the publish feed requires an append-only version log
     # fhirpath_interceptor_enabled: false
     # filter_search_enabled: true
     # graphql_enabled: true
@@ -538,8 +539,11 @@ api:
 # separate from the crawler manifests under api.
 publish:
   enabled: true
-  interval-ms: 60000     # publish tick; also drives updateCadence
-  retention: 3           # snapshot dirs kept on disk (grace period)
-  export-page-size: 1000 # resources read per page during a type's streaming export
+  interval-ms: 60000         # publish tick; also drives updateCadence
+  frontier-grace-ms: 5000    # publish boundary always trails the clock by at least this, covering writes that have started but are not yet tracked
+  overlap-ms: 60000          # window re-read backstop
+  grace-period-ms: 3600000   # a snapshot younger than this (1h) is never pruned even when the retention count is exceeded, so consumers mid-download keep working file URLs
+  retention: 3               # newest snapshot dirs kept on disk; older ones are pruned unless still within grace-period-ms or referenced by a retained manifest
+  export-page-size: 1000     # resources read per page during a type's streaming export
   storage-path: ${PUBLISH_STORAGE_PATH:./target/publish-data}
   reset-on-startup: ${PUBLISH_RESET_ON_STARTUP:true} # wipe storage-path before the first publish

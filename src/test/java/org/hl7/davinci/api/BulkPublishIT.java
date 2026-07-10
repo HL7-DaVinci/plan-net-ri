@@ -1,5 +1,6 @@
 package org.hl7.davinci.api;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -63,6 +64,8 @@ import org.springframework.test.context.ActiveProfiles;
 			"api.enabled=false",
 			"publish.enabled=true",
 			"publish.interval-ms=2000",
+			"publish.frontier-grace-ms=250",
+			"publish.overlap-ms=60000",
 			"publish.export-page-size=2",
 			"publish.storage-path=./target/bulkpublishit-data",
 			"spring.ai.mcp.server.enabled=false",
@@ -322,6 +325,106 @@ class BulkPublishIT {
 				});
 	}
 
+	/** Accept header content negotiation on file downloads: only application/fhir+ndjson (or a wildcard) is served. */
+	@Test
+	void fileDownloadRejectsUnsupportedAcceptHeader() throws Exception {
+		String fhirBase = "http://localhost:" + port + "/fhir";
+		String bulkPublishUrl = fhirBase + "/$bulk-publish";
+		IGenericClient client = fhirContext.newRestfulGenericClient(fhirBase);
+
+		String marker = "BulkPublishIT-accept-" + UUID.randomUUID();
+		Organization org = new Organization();
+		org.setName(marker);
+		client.create().resource(org).execute();
+
+		AtomicReference<String> orgFileUrlRef = new AtomicReference<>();
+		Awaitility.await("a published snapshot whose Organization file includes the new record")
+				.atMost(Duration.ofSeconds(30))
+				.pollInterval(Duration.ofMillis(300))
+				.ignoreExceptions()
+				.untilAsserted(() -> {
+					ResponseEntity<BulkPublishManifestJson> response =
+							rest.getForEntity(bulkPublishUrl, BulkPublishManifestJson.class);
+					assertEquals(HttpStatus.OK, response.getStatusCode());
+					String orgFileUrl = organizationFileUrl(response.getBody());
+					assertNotNull(orgFileUrl);
+					String ndjson = new String(downloadPlain(orgFileUrl), StandardCharsets.UTF_8);
+					assertTrue(ndjson.contains(marker));
+					orgFileUrlRef.set(orgFileUrl);
+				});
+		String orgFileUrl = orgFileUrlRef.get();
+
+		HttpResponse<byte[]> rejected = httpClient.send(
+				HttpRequest.newBuilder(URI.create(orgFileUrl))
+						.header("Accept", "text/csv")
+						.GET()
+						.build(),
+				HttpResponse.BodyHandlers.ofByteArray());
+		assertEquals(406, rejected.statusCode());
+		assertTrue(
+				rejected.headers().firstValue("Content-Type").orElse("").startsWith("application/fhir+json"),
+				"an unsupported Accept header should get an OperationOutcome as application/fhir+json");
+
+		HttpResponse<byte[]> accepted = httpClient.send(
+				HttpRequest.newBuilder(URI.create(orgFileUrl))
+						.header("Accept", "application/fhir+ndjson")
+						.GET()
+						.build(),
+				HttpResponse.BodyHandlers.ofByteArray());
+		assertEquals(200, accepted.statusCode());
+	}
+
+	/**
+	 * The manifest ETag is a content hash: it stays identical across repeated GETs with no writes in
+	 * between, and differs when the request's Host changes, since the manifest embeds request-derived
+	 * absolute file URLs and public-base-url is unset in this test's properties.
+	 */
+	@Test
+	void manifestEtagIsAStableContentHashThatVariesByHost() throws Exception {
+		String fhirBase = "http://localhost:" + port + "/fhir";
+		String bulkPublishUrl = fhirBase + "/$bulk-publish";
+		IGenericClient client = fhirContext.newRestfulGenericClient(fhirBase);
+
+		String marker = "BulkPublishIT-etag-" + UUID.randomUUID();
+		Organization org = new Organization();
+		org.setName(marker);
+		client.create().resource(org).execute();
+
+		Awaitility.await("a published snapshot including the new Organization")
+				.atMost(Duration.ofSeconds(30))
+				.pollInterval(Duration.ofMillis(300))
+				.ignoreExceptions()
+				.untilAsserted(() -> {
+					ResponseEntity<BulkPublishManifestJson> response =
+							rest.getForEntity(bulkPublishUrl, BulkPublishManifestJson.class);
+					assertEquals(HttpStatus.OK, response.getStatusCode());
+					String orgFileUrl = organizationFileUrl(response.getBody());
+					assertNotNull(orgFileUrl);
+					String ndjson = new String(downloadPlain(orgFileUrl), StandardCharsets.UTF_8);
+					assertTrue(ndjson.contains(marker));
+				});
+
+		ResponseEntity<byte[]> first = rest.getForEntity(bulkPublishUrl, byte[].class);
+		ResponseEntity<byte[]> second = rest.getForEntity(bulkPublishUrl, byte[].class);
+		String firstEtag = first.getHeaders().getFirst(HttpHeaders.ETAG);
+		String secondEtag = second.getHeaders().getFirst(HttpHeaders.ETAG);
+		assertNotNull(firstEtag);
+		assertEquals(firstEtag, secondEtag, "repeated GETs with no writes between them should carry the same ETag");
+		assertArrayEquals(
+				first.getBody(), second.getBody(), "repeated GETs with no writes between them should be byte-identical");
+		assertTrue(
+				firstEtag.matches("\"[0-9a-f]{64}\""),
+				"ETag should be a quoted 64-character lowercase hex SHA-256 digest: " + firstEtag);
+
+		String loopbackUrl = "http://127.0.0.1:" + port + "/fhir/$bulk-publish";
+		ResponseEntity<byte[]> viaLoopback = rest.getForEntity(loopbackUrl, byte[].class);
+		String loopbackEtag = viaLoopback.getHeaders().getFirst(HttpHeaders.ETAG);
+		assertNotNull(loopbackEtag);
+		assertFalse(
+				firstEtag.equals(loopbackEtag),
+				"a different Host should embed a different absolute base URL and yield a different ETag");
+	}
+
 	private static String organizationFileUrl(BulkPublishManifestJson manifest) {
 		return fileUrl(manifest, "Organization");
 	}
@@ -344,6 +447,9 @@ class BulkPublishIT {
 		assertTrue(
 				response.headers().firstValue("Content-Encoding").isEmpty(),
 				"a request without Accept-Encoding should not receive a Content-Encoding header");
+		assertTrue(
+				response.headers().allValues("Vary").stream().anyMatch(v -> v.contains("Accept-Encoding")),
+				"file responses should declare Vary: Accept-Encoding");
 		return response.body();
 	}
 
@@ -365,6 +471,9 @@ class BulkPublishIT {
 				"gzip",
 				response.headers().firstValue("Content-Encoding").orElse(null),
 				"requesting gzip should receive a Content-Encoding: gzip response");
+		assertTrue(
+				response.headers().allValues("Vary").stream().anyMatch(v -> v.contains("Accept-Encoding")),
+				"file responses should declare Vary: Accept-Encoding");
 		try (GZIPInputStream gzip = new GZIPInputStream(new ByteArrayInputStream(response.body()))) {
 			return gzip.readAllBytes();
 		}
