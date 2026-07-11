@@ -33,6 +33,10 @@ public class CrawlRun {
 	@Enumerated(EnumType.STRING)
 	private CrawlMode mode;
 
+	/** The concrete strategy that executed (an AUTO job records what it resolved to). Null on legacy rows. */
+	@Enumerated(EnumType.STRING)
+	private CrawlStrategy strategy;
+
 	private Instant startedAt;
 
 	/** Server-time anchor at crawl start; the next incremental crawl uses it as _since. */
@@ -108,6 +112,14 @@ public class CrawlRun {
 
 	public void setMode(CrawlMode mode) {
 		this.mode = mode;
+	}
+
+	public CrawlStrategy getStrategy() {
+		return strategy;
+	}
+
+	public void setStrategy(CrawlStrategy strategy) {
+		this.strategy = strategy;
 	}
 
 	public Instant getStartedAt() {

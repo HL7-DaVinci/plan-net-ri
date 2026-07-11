@@ -153,8 +153,10 @@ public class ManifestService {
 	/**
 	 * The deprecated Bulk Data kick-off URL, populated only where there is a genuine single
 	 * request: $export for BULK_EXPORT and _history (with _since for an incremental run) for
-	 * HISTORY. SEARCH and SEARCH_LAST_UPDATED issue per-type searches with no single kick-off URL,
-	 * so they return null and the field is omitted from the manifest.
+	 * HISTORY. SEARCH, SEARCH_LAST_UPDATED, and SEARCH_LAST_UPDATED_PARTITIONED issue per-type
+	 * searches with no single kick-off URL, so they return null and the field is omitted from the
+	 * manifest. AUTO also returns null: each server resolves its own concrete strategy per run,
+	 * so the batch has no single knowable request.
 	 */
 	private static String buildRequestUrl(CrawlStrategy strategy, List<String> serverKeys, String windowSince) {
 		String base = serverKeys.isEmpty() ? "" : serverKeys.get(0);
@@ -163,7 +165,7 @@ public class ManifestService {
 			case HISTORY -> windowSince != null
 					? base + "/_history?_since=" + URLEncoder.encode(windowSince, StandardCharsets.UTF_8)
 					: base + "/_history";
-			case SEARCH, SEARCH_LAST_UPDATED -> null;
+			case AUTO, SEARCH, SEARCH_LAST_UPDATED, SEARCH_LAST_UPDATED_PARTITIONED -> null;
 		};
 	}
 

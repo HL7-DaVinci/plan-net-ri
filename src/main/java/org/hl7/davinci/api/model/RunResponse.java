@@ -8,6 +8,7 @@ public record RunResponse(
 		String serverKey,
 		String serverLabel,
 		String mode,
+		String strategy,
 		String startedAt,
 		String serverTimeAtStart,
 		long durationMs,

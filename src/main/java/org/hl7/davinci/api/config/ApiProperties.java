@@ -23,6 +23,9 @@ public class ApiProperties {
 	/** Politeness pause between page fetches against a crawled server; 0 = none. */
 	private long pageDelayMs = 0;
 
+	/** Parallel per-type paging chains per crawl; 1 disables parallelism. */
+	private int crawlConcurrency = 4;
+
 	/** Base URL for manifest output[].url; inbound request URL is used when null. */
 	private String publicBaseUrl;
 
@@ -92,6 +95,14 @@ public class ApiProperties {
 
 	public void setPageDelayMs(long pageDelayMs) {
 		this.pageDelayMs = pageDelayMs;
+	}
+
+	public int getCrawlConcurrency() {
+		return crawlConcurrency;
+	}
+
+	public void setCrawlConcurrency(int crawlConcurrency) {
+		this.crawlConcurrency = crawlConcurrency;
 	}
 
 	public String getPublicBaseUrl() {

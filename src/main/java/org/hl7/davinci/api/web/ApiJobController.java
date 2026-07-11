@@ -214,6 +214,7 @@ public class ApiJobController {
 				run.getServerKey(),
 				run.getServerLabel(),
 				run.getMode() != null ? run.getMode().name() : null,
+				run.getStrategy() != null ? run.getStrategy().name() : null,
 				str(run.getStartedAt()),
 				run.getServerTimeAtStart(),
 				run.getDurationMs(),

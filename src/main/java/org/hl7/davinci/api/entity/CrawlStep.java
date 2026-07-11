@@ -31,6 +31,10 @@ public class CrawlStep {
 	/** Coarse phase label, e.g. SERVER_TIME, SEARCH, HISTORY, EXPORT, PERSIST, MANIFEST, DONE. */
 	private String phase;
 
+	/** Label of the parallel chain that emitted this step (e.g. a resource type); null for job-level steps. */
+	@Column(length = 100)
+	private String track;
+
 	@JdbcTypeCode(SqlTypes.LONGVARCHAR)
 	@Column(name = "message")
 	private String message;
@@ -102,6 +106,14 @@ public class CrawlStep {
 
 	public void setPhase(String phase) {
 		this.phase = phase;
+	}
+
+	public String getTrack() {
+		return track;
+	}
+
+	public void setTrack(String track) {
+		this.track = track;
 	}
 
 	public String getMessage() {

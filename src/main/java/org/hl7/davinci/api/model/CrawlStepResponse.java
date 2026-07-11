@@ -13,4 +13,5 @@ public record CrawlStepResponse(
 		Integer count,
 		String errorBody,
 		String serverKey,
+		String track,
 		String at) {}

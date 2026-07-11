@@ -101,8 +101,10 @@ public class CrawlPersistenceService {
 			ourLog.info("Persist session for server {}: existing aggregate {} rows", serverLabel, startCount);
 		}
 
+		// accept may be called concurrently from parallel fetch workers; the finish methods run
+		// single-threaded afterwards, once every worker has returned.
 		@Override
-		public void accept(List<FetchedResource> batch) {
+		public synchronized void accept(List<FetchedResource> batch) {
 			// Skip the DB lookup for keys already handled this run: the stored row may hold this run's own
 			// write, so re-reading it would misclassify the re-fetch.
 			Set<String> handled = firstCrawl ? recentKeys : seenKeys;

@@ -1,26 +1,26 @@
-version: "3"
 services:
-  hapi-fhir-jpaserver-start:
+  plan-net-ri:
     build: .
-    container_name: hapi-fhir-jpaserver-start
+    container_name: plan-net-ri
+    # image: hlseven/davinci-plan-net-ri:latest
     restart: on-failure
     environment:
-      SPRING_DATASOURCE_URL: "jdbc:postgresql://hapi-fhir-postgres:5432/hapi"
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://plan-net-pg:5432/hapi"
       SPRING_DATASOURCE_USERNAME: "admin"
       SPRING_DATASOURCE_PASSWORD: "admin"
       SPRING_DATASOURCE_DRIVERCLASSNAME: "org.postgresql.Driver"
       SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: "ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgresDialect"
     ports:
       - "8080:8080"
-  hapi-fhir-postgres:
+  plan-net-pg:
     image: postgres:15-alpine
-    container_name: hapi-fhir-postgres
-    restart: always
+    container_name: plan-net-pg
+    restart: on-failure
     environment:
       POSTGRES_DB: "hapi"
       POSTGRES_USER: "admin"
       POSTGRES_PASSWORD: "admin"
     volumes:
-      - hapi-fhir-postgres:/var/lib/postgresql/data
+      - plan-net-pg:/var/lib/postgresql/data
 volumes:
-  hapi-fhir-postgres:
+  plan-net-pg:

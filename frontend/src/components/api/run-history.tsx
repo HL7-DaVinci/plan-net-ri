@@ -1,5 +1,6 @@
 import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { Fragment, useEffect, useState } from "react";
+import { STRATEGY_LABELS } from "@/components/api/jobs-panel";
 import { PlayByPlay } from "@/components/api/play-by-play";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -127,7 +128,14 @@ function RunHistoryContent({ jobId }: RunHistoryProps) {
                         {formatTime(run.startedAt)}
                       </span>
                     </td>
-                    <td className="py-2 pr-3">{run.mode}</td>
+                    <td className="py-2 pr-3">
+                      {run.mode}
+                      {run.strategy && (
+                        <span className="block text-xs text-muted-foreground">
+                          {STRATEGY_LABELS[run.strategy]}
+                        </span>
+                      )}
+                    </td>
                     <td className="py-2 pr-3">
                       <Badge variant={statusVariant(run.status)}>
                         {run.status}

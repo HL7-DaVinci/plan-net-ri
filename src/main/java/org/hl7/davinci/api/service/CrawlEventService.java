@@ -11,6 +11,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -29,8 +30,14 @@ public class CrawlEventService {
 	private final Map<String, List<SseEmitter>> emitters = new ConcurrentHashMap<>();
 	private final Set<String> activeBatches = ConcurrentHashMap.newKeySet();
 
-	/** The latest transient progress marker per active batch, replayed to late subscribers. */
-	private final Map<String, CrawlStepResponse> lastProgress = new ConcurrentHashMap<>();
+	/**
+	 * The latest transient progress marker per active batch, keyed by track (empty string for
+	 * job-level, untracked steps), replayed to late subscribers. Both map levels are
+	 * ConcurrentHashMap so parallel workers on different tracks never lose an update to each
+	 * other, and every structural change goes through compute() on the outer map so a track
+	 * removal that empties the inner map can't race a sibling's insert into that same map.
+	 */
+	private final Map<String, Map<String, CrawlStepResponse>> lastProgress = new ConcurrentHashMap<>();
 
 	public CrawlEventService(CrawlStepRepository stepRepo) {
 		this.stepRepo = stepRepo;
@@ -46,6 +53,8 @@ public class CrawlEventService {
 	 * broadcast only, never persisted, so the recorded timeline stays one row per completed step.
 	 */
 	public void publish(String batchId, String runId, String serverKey, int seq, StepEvent event) {
+		String trackKey = event.track() == null ? "" : event.track();
+
 		if (event.progress()) {
 			CrawlStepResponse dto = new CrawlStepResponse(
 					seq,
@@ -59,8 +68,9 @@ public class CrawlEventService {
 					null,
 					null,
 					serverKey,
+					event.track(),
 					String.valueOf(Instant.now()));
-			lastProgress.put(batchId, dto);
+			upsertProgress(batchId, trackKey, dto);
 			broadcast(batchId, "progress", dto);
 			return;
 		}
@@ -80,12 +90,36 @@ public class CrawlEventService {
 		step.setBytes(event.bytes());
 		step.setCount(event.count());
 		step.setErrorBody(event.errorBody());
+		step.setTrack(event.track());
 		step.setAt(Instant.now());
 		stepRepo.save(step);
 
-		// A persisted step means the in-progress operation finished.
-		lastProgress.remove(batchId);
+		// A persisted step means the in-progress operation it belongs to finished: a null track
+		// is a job-level step and clears every track's marker, a set track clears only that one.
+		if (event.track() == null) {
+			lastProgress.remove(batchId);
+		} else {
+			clearProgress(batchId, trackKey);
+		}
 		broadcast(batchId, "step", toDto(step));
+	}
+
+	private void upsertProgress(String batchId, String trackKey, CrawlStepResponse dto) {
+		lastProgress.compute(batchId, (k, tracks) -> {
+			Map<String, CrawlStepResponse> map = tracks != null ? tracks : new ConcurrentHashMap<>();
+			map.put(trackKey, dto);
+			return map;
+		});
+	}
+
+	private void clearProgress(String batchId, String trackKey) {
+		lastProgress.compute(batchId, (k, tracks) -> {
+			if (tracks == null) {
+				return null;
+			}
+			tracks.remove(trackKey);
+			return tracks.isEmpty() ? null : tracks;
+		});
 	}
 
 	private void broadcast(String batchId, String name, CrawlStepResponse dto) {
@@ -125,10 +159,13 @@ public class CrawlEventService {
 			for (CrawlStep step : stepRepo.findByBatchIdOrderBySeqAsc(batchId)) {
 				emitter.send(SseEmitter.event().name("step").data(toDto(step)));
 			}
-			// Show a late subscriber what is currently executing (e.g. a slow page fetch).
-			CrawlStepResponse current = lastProgress.get(batchId);
-			if (current != null) {
-				emitter.send(SseEmitter.event().name("progress").data(current));
+			// Show a late subscriber what is currently executing (e.g. a slow page fetch), one
+			// line per active track, in a stable order.
+			Map<String, CrawlStepResponse> tracks = lastProgress.get(batchId);
+			if (tracks != null) {
+				for (String trackKey : new TreeSet<>(tracks.keySet())) {
+					emitter.send(SseEmitter.event().name("progress").data(tracks.get(trackKey)));
+				}
 			}
 		} catch (Exception e) {
 			emitter.completeWithError(e);
@@ -218,6 +255,7 @@ public class CrawlEventService {
 				s.getCount(),
 				s.getErrorBody(),
 				s.getServerKey(),
+				s.getTrack(),
 				String.valueOf(s.getAt()));
 	}
 }

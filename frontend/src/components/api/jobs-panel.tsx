@@ -48,9 +48,11 @@ import type {
 } from "@/lib/api/types";
 import { getStoredServerUrl } from "@/lib/fhir-config";
 
-const STRATEGY_LABELS: Record<CrawlStrategy, string> = {
+export const STRATEGY_LABELS: Record<CrawlStrategy, string> = {
+  AUTO: "Auto (best available)",
   SEARCH: "Search (paging)",
   SEARCH_LAST_UPDATED: "Search (by last updated)",
+  SEARCH_LAST_UPDATED_PARTITIONED: "Search (last updated - partitioned)",
   BULK_EXPORT: "Bulk $export",
   HISTORY: "History paging",
 };
@@ -79,7 +81,7 @@ const EMPTY_FORM: FormState = {
   id: null,
   name: "",
   serversText: "",
-  strategy: "SEARCH",
+  strategy: "AUTO",
   cronExpression: "",
   enabled: true,
   runNow: true,

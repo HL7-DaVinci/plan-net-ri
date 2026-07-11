@@ -4,6 +4,11 @@ import { JsonViewerDialog } from "@/components/json-viewer-dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { CrawlStep } from "@/lib/api/types";
+import {
+  applyProgressEvent,
+  isSettled,
+  type ProgressLines,
+} from "@/lib/crawler/progress-lines";
 import { getApiBaseUrl } from "@/lib/fhir-config";
 
 function phaseVariant(phase: string): "default" | "secondary" | "destructive" {
@@ -25,19 +30,13 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
   const [steps, setSteps] = useState<CrawlStep[]>([]);
   const [done, setDone] = useState(false);
   const [viewing, setViewing] = useState<CrawlStep | null>(null);
-  const [current, setCurrent] = useState<{
-    phase: string;
-    message: string;
-    method?: string | null;
-    url?: string | null;
-    at: number;
-  } | null>(null);
+  const [lines, setLines] = useState<ProgressLines>(new Map());
   const [now, setNow] = useState(() => Date.now());
 
   useEffect(() => {
     setSteps([]);
     setDone(false);
-    setCurrent(null);
+    setLines(new Map());
     const source = new EventSource(
       `${getApiBaseUrl()}/api/crawl/${batchId}/stream`,
     );
@@ -46,22 +45,19 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
       const step = JSON.parse((event as MessageEvent).data) as CrawlStep;
       setSteps((prev) => [...prev, step]);
       // A persisted step means the previously announced operation finished.
-      setCurrent(null);
+      setLines((prev) => applyProgressEvent(prev, { kind: "step", step }));
     });
     source.addEventListener("progress", (event) => {
       const step = JSON.parse((event as MessageEvent).data) as CrawlStep;
-      setCurrent({
-        phase: step.phase,
-        message: step.message,
-        method: step.method,
-        url: step.url,
-        at: Date.now(),
-      });
-      setNow(Date.now());
+      const nowMs = Date.now();
+      setLines((prev) =>
+        applyProgressEvent(prev, { kind: "progress", step, now: nowMs }),
+      );
+      setNow(nowMs);
     });
     source.addEventListener("complete", () => {
       setDone(true);
-      setCurrent(null);
+      setLines((prev) => applyProgressEvent(prev, { kind: "complete" }));
       source.close();
     });
 
@@ -70,10 +66,10 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
 
   // Tick once a second while an operation is in flight so its elapsed time updates.
   useEffect(() => {
-    if (!current) return;
+    if (![...lines.values()].some((line) => !isSettled(line))) return;
     const timer = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(timer);
-  }, [current]);
+  }, [lines]);
 
   return (
     <div className="space-y-1.5">
@@ -90,14 +86,14 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
         <span>({steps.length} steps)</span>
       </div>
 
-      {steps.length === 0 && !current ? (
+      {steps.length === 0 && lines.size === 0 ? (
         <p className="text-sm text-muted-foreground">Waiting for steps...</p>
       ) : (
         <ol className="space-y-1">
           {steps.map((step) => (
             <li
               key={step.seq}
-              className="flex items-start gap-2 rounded-md border-l-2 border-muted py-1 pl-2 text-sm"
+              className="flex items-start gap-2 py-1 pl-2 text-sm odd:bg-muted/30"
             >
               <span className="w-6 shrink-0 text-right tabular-nums text-xs text-muted-foreground">
                 {step.seq}
@@ -136,26 +132,58 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
         </ol>
       )}
 
-      {current && !done && (
-        <div className="flex items-start gap-2 rounded-md border-l-2 border-primary/50 py-1 pl-2 text-sm">
-          <span className="w-6 shrink-0" />
-          <Badge variant="secondary" className="shrink-0">
-            {current.phase}
-          </Badge>
-          <span className="min-w-0">
-            <span className="flex items-center gap-2">
-              <span className="text-muted-foreground">{current.message}</span>
-              <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" />
-              <span className="text-xs tabular-nums text-muted-foreground">
-                {Math.max(0, Math.round((now - current.at) / 1000))}s
-              </span>
-            </span>
-            {current.url && (
-              <code className="block break-all text-xs text-muted-foreground">
-                {current.method} {current.url}
-              </code>
-            )}
-          </span>
+      {lines.size > 0 && !done && (
+        <div className="divide-y divide-border rounded-md border bg-muted/30">
+          {Array.from(lines.values())
+            .sort((a, b) => a.track.localeCompare(b.track))
+            .map((line) => (
+              <div
+                key={line.track}
+                className="flex items-start gap-2 py-1 pl-2 text-sm"
+              >
+                <span className="w-6 shrink-0" />
+                <Badge variant="secondary" className="shrink-0">
+                  {line.phase}
+                </Badge>
+                <span className="min-w-0">
+                  <span className="flex items-center gap-2">
+                    {/* Track labels only add value once more than one line is active;
+                        a single active line always renders untracked, even if the
+                        backend stamped it with a type track. */}
+                    {lines.size > 1 && line.track && (
+                      <span className="shrink-0 text-xs font-medium text-muted-foreground">
+                        {line.track}
+                      </span>
+                    )}
+                    <span className="text-muted-foreground">
+                      {line.message}
+                    </span>
+                    {isSettled(line) ? (
+                      <>
+                        <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-success" />
+                        <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
+                          {line.ms != null && `${line.ms} ms`}
+                          {line.count != null &&
+                            ` · ${line.count.toLocaleString()} resources`}
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" />
+                        <span className="text-xs tabular-nums text-muted-foreground">
+                          {Math.max(0, Math.round((now - line.at) / 1000))}s
+                        </span>
+                      </>
+                    )}
+                  </span>
+                  {line.url && (
+                    <code className="block break-all text-xs text-muted-foreground">
+                      {line.method} {line.url}
+                    </code>
+                  )}
+                </span>
+              </div>
+            ))}
         </div>
       )}
 

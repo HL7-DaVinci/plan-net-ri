@@ -264,20 +264,75 @@ public class CrawlService {
 		// A cancelled run stops publishing so it cannot repopulate steps the delete just removed.
 		// Transient progress markers do not consume a sequence number, keeping the persisted
 		// timeline contiguous.
+		// Parallel type/file tasks share this sink; seq assignment, the persisted-step save, and the
+		// SSE broadcast must be one atomic unit or two workers can take adjacent sequence numbers but
+		// save/broadcast out of order.
 		Consumer<StepEvent> sink = ev -> {
 			logStep(ev);
 			if (!cancelled.contains(job.getId())) {
-				events.publish(batchId, run.getId(), serverKey, ev.progress() ? 0 : seq.incrementAndGet(), ev);
+				synchronized (seq) {
+					events.publish(batchId, run.getId(), serverKey, ev.progress() ? 0 : seq.incrementAndGet(), ev);
+				}
 			}
 		};
 
 		try {
-			switch (job.getStrategy()) {
-				case SEARCH -> crawlSearch(client::searchTypes, mode, server, serverKey, serverLabel, since, run, sink);
-				case SEARCH_LAST_UPDATED -> crawlSearch(
-						client::searchTypesByLastUpdated, mode, server, serverKey, serverLabel, since, run, sink);
-				case BULK_EXPORT -> crawlBulkExport(server, serverKey, serverLabel, run, sink);
-				case HISTORY -> crawlHistory(server, serverKey, serverLabel, since, run, sink);
+			FhirCrawlClient.ServerTime anchor = captureServerTime(server, run, sink);
+
+			CrawlStrategy strategy = job.getStrategy();
+			boolean crawled = false;
+			if (strategy == CrawlStrategy.AUTO) {
+				// The $export kick-off is its own entry-phase probe: a 202 commits us to the
+				// export already running server-side, so the bulk attempt IS the crawl.
+				sink.accept(StepEvent.info("STRATEGY", "Auto strategy: attempting Bulk Data $export"));
+				try {
+					crawlBulkExport(server, serverKey, serverLabel, since, run, sink);
+					strategy = CrawlStrategy.BULK_EXPORT;
+					crawled = true;
+				} catch (StrategyUnsupportedException e) {
+					sink.accept(StepEvent.info("STRATEGY", e.getMessage() + "; probing search support"));
+					strategy = resolveSearchStrategy(server, sink);
+					sink.accept(StepEvent.info("STRATEGY", "Resolved strategy: " + strategy));
+				}
+			}
+			run.setStrategy(strategy);
+
+			if (!crawled) {
+				switch (strategy) {
+					case SEARCH -> crawlSearch(
+							(u, k, ps, snc, anc, st, rs) -> client.searchTypes(u, k, ps, snc, st, rs),
+							mode,
+							server,
+							serverKey,
+							serverLabel,
+							since,
+							anchor,
+							run,
+							sink);
+					case SEARCH_LAST_UPDATED -> crawlSearch(
+							(u, k, ps, snc, anc, st, rs) -> client.searchTypesByLastUpdated(u, k, ps, snc, st, rs),
+							mode,
+							server,
+							serverKey,
+							serverLabel,
+							since,
+							anchor,
+							run,
+							sink);
+					case SEARCH_LAST_UPDATED_PARTITIONED -> crawlSearch(
+							client::searchTypesPartitioned,
+							mode,
+							server,
+							serverKey,
+							serverLabel,
+							since,
+							anchor,
+							run,
+							sink);
+					case BULK_EXPORT -> crawlBulkExport(server, serverKey, serverLabel, since, run, sink);
+					case HISTORY -> crawlHistory(server, serverKey, serverLabel, since, run, sink);
+					case AUTO -> throw new IllegalStateException("AUTO must resolve to a concrete strategy");
+				}
 			}
 			run.setStatus(RunStatus.COMPLETED);
 		} catch (CancellationException e) {
@@ -318,7 +373,8 @@ public class CrawlService {
 		if (!cancelled.contains(job.getId())) {
 			runRepo.save(run);
 		}
-		return new ServerCrawlOutcome(run, mode == CrawlMode.INCREMENTAL ? since : null);
+		// run.getMode(), not the local mode: a bulk run whose _since was rejected flipped to FULL.
+		return new ServerCrawlOutcome(run, run.getMode() == CrawlMode.INCREMENTAL ? since : null);
 	}
 
 	/** Mirror a step to the application log: failures at ERROR, transient progress at DEBUG, else INFO. */
@@ -340,20 +396,38 @@ public class CrawlService {
 	}
 
 	/**
-	 * Every strategy except BULK_EXPORT crawls incrementally (using the prior run's anchor as _since)
-	 * once a completed run for this server exists. BULK_EXPORT always pulls a full snapshot.
+	 * Every strategy crawls incrementally (using the prior run's anchor as _since) once a
+	 * completed run for this server exists; BULK_EXPORT passes it as the kick-off's _since.
 	 */
 	private String incrementalSince(CrawlJob job, String serverKey) {
-		if (job.getStrategy() == CrawlStrategy.BULK_EXPORT) {
-			return null;
-		}
 		return runRepo.findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc(
 						job.getId(), serverKey, RunStatus.COMPLETED)
 				.map(CrawlRun::getServerTimeAtStart)
 				.orElse(null);
 	}
 
-	/** Either search strategy's per-type fetch (link paging or _lastUpdated watermark). */
+	/**
+	 * The search half of the AUTO pecking order, probed in decreasing preference. Falls back
+	 * only on unsupported-class rejections; a transient probe failure propagates and fails
+	 * the run. HISTORY is the unprobed last resort: if it fails too, the run fails.
+	 */
+	private CrawlStrategy resolveSearchStrategy(ServerScope server, Consumer<StepEvent> sink) {
+		if (client.probePartitionedSearch(server.url(), sink)) {
+			return CrawlStrategy.SEARCH_LAST_UPDATED_PARTITIONED;
+		}
+		sink.accept(StepEvent.info("STRATEGY", "_lastUpdated search rejected for every type; probing basic search"));
+		if (client.probePlainSearch(server.url(), sink)) {
+			return CrawlStrategy.SEARCH;
+		}
+		sink.accept(StepEvent.info("STRATEGY", "Search rejected for every type; falling back to history paging"));
+		return CrawlStrategy.HISTORY;
+	}
+
+	/**
+	 * Any search strategy's per-type fetch (link paging, a plain _lastUpdated watermark, or
+	 * census-partitioned watermark windows). The anchor is only consumed by the partitioned
+	 * strategy; the other two arms ignore it via a lambda adapter.
+	 */
 	@FunctionalInterface
 	private interface TypeSearch {
 		FhirCrawlClient.SearchResult run(
@@ -361,6 +435,7 @@ public class CrawlService {
 				String serverKey,
 				int pageSize,
 				String since,
+				FhirCrawlClient.ServerTime anchor,
 				Consumer<StepEvent> steps,
 				Consumer<List<FetchedResource>> resourceSink);
 	}
@@ -372,12 +447,13 @@ public class CrawlService {
 			String serverKey,
 			String serverLabel,
 			String since,
+			FhirCrawlClient.ServerTime anchor,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
 		if (mode == CrawlMode.INCREMENTAL) {
-			crawlSearchIncremental(search, server, serverKey, serverLabel, since, run, sink);
+			crawlSearchIncremental(search, server, serverKey, serverLabel, since, anchor, run, sink);
 		} else {
-			crawlSearchFull(search, server, serverKey, serverLabel, run, sink);
+			crawlSearchFull(search, server, serverKey, serverLabel, anchor, run, sink);
 		}
 	}
 
@@ -386,13 +462,12 @@ public class CrawlService {
 			ServerScope server,
 			String serverKey,
 			String serverLabel,
+			FhirCrawlClient.ServerTime anchor,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
-		captureServerTime(server, run, sink);
-
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
-		FhirCrawlClient.SearchResult result =
-				search.run(server.url(), serverKey, props.getPageSize(), null, sink, resourceSink(run, session));
+		FhirCrawlClient.SearchResult result = search.run(
+				server.url(), serverKey, props.getPageSize(), null, anchor, sink, resourceSink(run, session));
 		throwIfCancelled(run);
 		CrawlPersistenceService.PersistCounts counts = session.finishFullSnapshot();
 
@@ -407,52 +482,90 @@ public class CrawlService {
 			String serverKey,
 			String serverLabel,
 			String since,
+			FhirCrawlClient.ServerTime anchor,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
-		captureServerTime(server, run, sink);
-
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
-		FhirCrawlClient.SearchResult result =
-				search.run(server.url(), serverKey, props.getPageSize(), since, sink, resourceSink(run, session));
+		FhirCrawlClient.SearchResult result = search.run(
+				server.url(), serverKey, props.getPageSize(), since, anchor, sink, resourceSink(run, session));
 		throwIfCancelled(run);
 
-		List<DeletionEntry> deletions = List.of();
-		boolean historySupported = true;
-		int delRequests = 0;
-		int delPages = 0;
-		long delBytes = 0;
-		try {
-			FhirCrawlClient.DeletionScanResult scan =
-					client.scanDeletions(server.url(), since, props.getPageSize(), sink);
-			deletions = scan.deletions();
-			delRequests = scan.requests();
-			delPages = scan.pages();
-			delBytes = scan.bytes();
-		} catch (HistoryUnsupportedException e) {
-			historySupported = false;
-			sink.accept(StepEvent.info("HISTORY", "Server does not support system _history; deletions not detected"));
-		}
+		DeletionScan scan = scanIncrementalDeletions(server, since, sink);
 		throwIfCancelled(run);
 
-		CrawlPersistenceService.PersistCounts counts = session.finishIncremental(deletions);
+		CrawlPersistenceService.PersistCounts counts = session.finishIncremental(scan.deletions());
 
-		applyCounts(run, counts, result, delRequests, delPages, delBytes);
-		run.setHistorySupported(historySupported);
+		applyCounts(run, counts, result, scan.requests(), scan.pages(), scan.bytes());
+		run.setHistorySupported(scan.historySupported());
 		emitPersistStep(sink, counts);
 	}
 
-	private void crawlBulkExport(
-			ServerScope server, String serverKey, String serverLabel, CrawlRun run, Consumer<StepEvent> sink) {
-		captureServerTime(server, run, sink);
+	/** An incremental run's _history deletion scan, degrading gracefully when unsupported. */
+	private record DeletionScan(
+			List<DeletionEntry> deletions, boolean historySupported, int requests, int pages, long bytes) {}
 
+	private DeletionScan scanIncrementalDeletions(ServerScope server, String since, Consumer<StepEvent> sink) {
+		try {
+			FhirCrawlClient.DeletionScanResult scan =
+					client.scanDeletions(server.url(), since, props.getPageSize(), sink);
+			return new DeletionScan(scan.deletions(), true, scan.requests(), scan.pages(), scan.bytes());
+		} catch (HistoryUnsupportedException e) {
+			sink.accept(StepEvent.info("HISTORY", "Server does not support system _history; deletions not detected"));
+			return new DeletionScan(List.of(), false, 0, 0, 0);
+		}
+	}
+
+	private void crawlBulkExport(
+			ServerScope server,
+			String serverKey,
+			String serverLabel,
+			String since,
+			CrawlRun run,
+			Consumer<StepEvent> sink) {
+		if (since != null) {
+			try {
+				crawlBulkExportIncremental(server, serverKey, serverLabel, since, run, sink);
+				return;
+			} catch (SinceUnsupportedException e) {
+				sink.accept(
+						StepEvent.info("EXPORT", "Server rejected the _since parameter; retrying as a full export"));
+				run.setMode(CrawlMode.FULL);
+			}
+		}
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
 		FhirCrawlClient.SearchResult result =
-				client.bulkExport(server.url(), serverKey, sink, resourceSink(run, session));
+				client.bulkExport(server.url(), serverKey, null, sink, resourceSink(run, session));
 		throwIfCancelled(run);
 		CrawlPersistenceService.PersistCounts counts = session.finishFullSnapshot();
 
 		applyCounts(run, counts, result, 0, 0, 0);
 		run.setHistorySupported(null);
+		emitPersistStep(sink, counts);
+	}
+
+	/**
+	 * An incremental export conveys no deletions by absence (only what changed is present),
+	 * so deletions come from the same _history scan the incremental search strategies use.
+	 */
+	private void crawlBulkExportIncremental(
+			ServerScope server,
+			String serverKey,
+			String serverLabel,
+			String since,
+			CrawlRun run,
+			Consumer<StepEvent> sink) {
+		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
+		FhirCrawlClient.SearchResult result =
+				client.bulkExport(server.url(), serverKey, since, sink, resourceSink(run, session));
+		throwIfCancelled(run);
+
+		DeletionScan scan = scanIncrementalDeletions(server, since, sink);
+		throwIfCancelled(run);
+
+		CrawlPersistenceService.PersistCounts counts = session.finishIncremental(scan.deletions());
+
+		applyCounts(run, counts, result, scan.requests(), scan.pages(), scan.bytes());
+		run.setHistorySupported(scan.historySupported());
 		emitPersistStep(sink, counts);
 	}
 
@@ -463,8 +576,6 @@ public class CrawlService {
 			String since,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
-		captureServerTime(server, run, sink);
-
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
 		FhirCrawlClient.HistoryResult result =
 				client.historyExport(server.url(), serverKey, since, sink, resourceSink(run, session));
@@ -492,8 +603,13 @@ public class CrawlService {
 	private Consumer<List<FetchedResource>> resourceSink(
 			CrawlRun run, CrawlPersistenceService.SnapshotSession session) {
 		return batch -> {
-			throwIfCancelled(run);
-			session.accept(batch);
+			// The cancellation check and the write must be atomic, or a worker can pass the check,
+			// block on the session monitor, and persist after a force-delete's row cleanup. accept()
+			// is synchronized on the same session instance, so this lock is reentrant.
+			synchronized (session) {
+				throwIfCancelled(run);
+				session.accept(batch);
+			}
 		};
 	}
 
@@ -503,9 +619,10 @@ public class CrawlService {
 		}
 	}
 
+	/** Captures the server-time anchor onto the run and returns it for strategies that need it (e.g. partitioning). */
 	private FhirCrawlClient.ServerTime captureServerTime(ServerScope server, CrawlRun run, Consumer<StepEvent> sink) {
 		sink.accept(StepEvent.progress("SERVER_TIME", "Reading the server-time anchor..."));
-		FhirCrawlClient.ServerTime serverTime = client.getServerTime(server.url());
+		FhirCrawlClient.ServerTime serverTime = client.getServerTime(server.url(), sink);
 		run.setServerTimeAtStart(serverTime.iso());
 		sink.accept(StepEvent.info(
 				"SERVER_TIME",

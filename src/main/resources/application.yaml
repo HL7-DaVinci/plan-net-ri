@@ -528,6 +528,7 @@ api:
   page-size: 500
   request-timeout-ms: 180000
   page-delay-ms: 0
+  crawl-concurrency: 4  # parallel paging chains per crawl; 1 disables
   retention-per-job: 2
   resume-crawls-on-startup: ${API_RESUME_CRAWLS_ON_STARTUP:false}
   # public-base-url: https://directory.example.org   # override for reverse-proxy deployments

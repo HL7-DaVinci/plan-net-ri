@@ -14,6 +14,7 @@ public record StepEvent(
 		Long bytes,
 		Integer count,
 		String errorBody,
+		String track,
 		boolean progress) {
 
 	/** Cap stored error bodies; a broken server can return arbitrarily large pages. */
@@ -32,7 +33,7 @@ public record StepEvent(
 
 	/** A narrative step with no HTTP details. */
 	public static StepEvent info(String phase, String message) {
-		return new StepEvent(phase, message, null, null, null, null, null, null, null, false);
+		return new StepEvent(phase, message, null, null, null, null, null, null, null, null, false);
 	}
 
 	/** A step describing one HTTP interaction. */
@@ -45,23 +46,33 @@ public record StepEvent(
 			Long ms,
 			Long bytes,
 			Integer count) {
-		return new StepEvent(phase, message, method, url, status, ms, bytes, count, null, false);
+		return new StepEvent(phase, message, method, url, status, ms, bytes, count, null, null, false);
 	}
 
 	/** A failed interaction, retaining the raw (truncated) response body for diagnosis. */
 	public static StepEvent failure(
 			String phase, String message, String method, String url, Integer status, Long ms, String errorBody) {
-		return new StepEvent(phase, message, method, url, status, ms, null, null, truncate(errorBody), false);
+		return new StepEvent(phase, message, method, url, status, ms, null, null, truncate(errorBody), null, false);
 	}
 
 	/** A transient in-progress marker: broadcast to live subscribers but never persisted. */
 	public static StepEvent progress(String phase, String message) {
-		return new StepEvent(phase, message, null, null, null, null, null, null, null, true);
+		return new StepEvent(phase, message, null, null, null, null, null, null, null, null, true);
 	}
 
 	/** An in-progress marker that also carries the request being issued right now. */
 	public static StepEvent progress(String phase, String message, String method, String url) {
-		return new StepEvent(phase, message, method, url, null, null, null, null, null, true);
+		return new StepEvent(phase, message, method, url, null, null, null, null, null, null, true);
+	}
+
+	/** A copy of this event with the given track label, for stamping tasks that emit steps for a specific chain. */
+	public StepEvent withTrack(String track) {
+		return new StepEvent(phase, message, method, url, status, ms, bytes, count, errorBody, track, progress);
+	}
+
+	/** A transient copy of this event: broadcast to live subscribers but never persisted. */
+	public StepEvent asProgress() {
+		return new StepEvent(phase, message, method, url, status, ms, bytes, count, errorBody, track, true);
 	}
 
 	private static String truncate(String body) {

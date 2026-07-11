@@ -1,8 +1,10 @@
 export type CrawlStrategy =
+  | "AUTO"
   | "BULK_EXPORT"
   | "HISTORY"
   | "SEARCH"
-  | "SEARCH_LAST_UPDATED";
+  | "SEARCH_LAST_UPDATED"
+  | "SEARCH_LAST_UPDATED_PARTITIONED";
 
 export interface OverallStats {
   totalResources: number;
@@ -47,6 +49,7 @@ export interface RunResponse {
   serverKey: string;
   serverLabel: string;
   mode: string;
+  strategy: CrawlStrategy | null;
   startedAt: string;
   serverTimeAtStart: string | null;
   durationMs: number;
@@ -129,5 +132,6 @@ export interface CrawlStep {
   count: number | null;
   errorBody: string | null;
   serverKey: string | null;
+  track: string | null;
   at: string;
 }

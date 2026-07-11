@@ -26,7 +26,9 @@ import org.hl7.davinci.api.service.JobAlreadyRunningException;
 import org.hl7.davinci.api.service.FetchedResource;
 import org.hl7.davinci.api.service.FhirCrawlClient;
 import org.hl7.davinci.api.service.ManifestService;
+import org.hl7.davinci.api.service.SinceUnsupportedException;
 import org.hl7.davinci.api.service.StepEvent;
+import org.hl7.davinci.api.service.StrategyUnsupportedException;
 import java.lang.reflect.Proxy;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -243,6 +245,241 @@ class CrawlServiceTest {
 		assertNull(service.getActiveBatchId("live-job"), "the guard should clear when the run completes");
 	}
 
+	@Test
+	void autoResolvesToBulkExportWhenTheKickoffSucceeds() {
+		AutoFhirCrawlClient client = new AutoFhirCrawlClient();
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlService service = service(client, new FakePersistence(), recordingRunRepo(savedRuns));
+
+		service.crawlJob(job("auto-bulk", CrawlStrategy.AUTO), "batch-auto-bulk");
+
+		assertEquals(RunStatus.COMPLETED, savedRuns.get(0).getStatus());
+		assertEquals(CrawlStrategy.BULK_EXPORT, savedRuns.get(0).getStrategy());
+		assertEquals(0, client.partitionedProbes, "a committed export needs no search probing");
+	}
+
+	@Test
+	void autoFallsBackToPartitionedSearchWhenExportIsUnsupported() {
+		AutoFhirCrawlClient client = new AutoFhirCrawlClient();
+		client.bulkSupported = false;
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlService service = service(client, new FakePersistence(), recordingRunRepo(savedRuns));
+
+		service.crawlJob(job("auto-part", CrawlStrategy.AUTO), "batch-auto-part");
+
+		assertEquals(RunStatus.COMPLETED, savedRuns.get(0).getStatus());
+		assertEquals(CrawlStrategy.SEARCH_LAST_UPDATED_PARTITIONED, savedRuns.get(0).getStrategy());
+		assertEquals("partitioned", client.dispatched);
+		assertEquals(0, client.plainProbes, "a viable partitioned probe should skip the basic-search probe");
+	}
+
+	@Test
+	void autoFallsBackToHistoryWhenNoSearchProbeSucceeds() {
+		AutoFhirCrawlClient client = new AutoFhirCrawlClient();
+		client.bulkSupported = false;
+		client.partitionedViable = false;
+		client.plainViable = false;
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlService service = service(client, new FakePersistence(), recordingRunRepo(savedRuns));
+
+		service.crawlJob(job("auto-hist", CrawlStrategy.AUTO), "batch-auto-hist");
+
+		assertEquals(RunStatus.COMPLETED, savedRuns.get(0).getStatus());
+		assertEquals(CrawlStrategy.HISTORY, savedRuns.get(0).getStrategy());
+		assertEquals("history", client.dispatched);
+	}
+
+	@Test
+	void autoDoesNotFallBackOnATransientBulkFailure() {
+		AutoFhirCrawlClient client = new AutoFhirCrawlClient() {
+			@Override
+			public SearchResult bulkExport(
+					String serverUrl,
+					String serverKey,
+					String since,
+					java.util.function.Consumer<StepEvent> steps,
+					java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+				throw new IllegalStateException("Expected 202 from $export, got 503");
+			}
+		};
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlService service = service(client, new FakePersistence(), recordingRunRepo(savedRuns));
+
+		service.crawlJob(job("auto-503", CrawlStrategy.AUTO), "batch-auto-503");
+
+		assertEquals(RunStatus.ERROR, savedRuns.get(0).getStatus());
+		assertEquals(0, client.partitionedProbes, "a transient failure must not demote the server to search");
+	}
+
+	@Test
+	void bulkExportCrawlsIncrementallyWithSinceAndTheHistoryScan() {
+		AutoFhirCrawlClient client = new AutoFhirCrawlClient();
+		FinishRecordingPersistence persistence = new FinishRecordingPersistence();
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlService service =
+				service(client, persistence, runRepoWithPriorRun(savedRuns, "2026-06-01T00:00:00Z"));
+
+		service.crawlJob(job("bulk-inc", CrawlStrategy.BULK_EXPORT), "batch-bulk-inc");
+
+		assertEquals(RunStatus.COMPLETED, savedRuns.get(0).getStatus());
+		assertEquals("2026-06-01T00:00:00Z", client.bulkSinceSeen, "the kick-off should receive the prior anchor");
+		assertEquals(List.of("incremental"), persistence.finishes);
+		assertEquals(Boolean.TRUE, savedRuns.get(0).getHistorySupported());
+		assertEquals("INCREMENTAL", savedRuns.get(0).getMode().name());
+	}
+
+	@Test
+	void bulkExportRetriesAsAFullExportWhenSinceIsRejected() {
+		AutoFhirCrawlClient client = new AutoFhirCrawlClient();
+		client.sinceSupported = false;
+		FinishRecordingPersistence persistence = new FinishRecordingPersistence();
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlService service =
+				service(client, persistence, runRepoWithPriorRun(savedRuns, "2026-06-01T00:00:00Z"));
+
+		service.crawlJob(job("bulk-since-rej", CrawlStrategy.BULK_EXPORT), "batch-bulk-since-rej");
+
+		assertEquals(RunStatus.COMPLETED, savedRuns.get(0).getStatus());
+		assertEquals(2, client.bulkCalls, "the rejected _since kick-off should be retried bare");
+		assertNull(client.bulkSinceSeen, "the retry must not carry _since");
+		assertEquals(List.of("full"), persistence.finishes, "a full export must persist as a full snapshot");
+		assertEquals("FULL", savedRuns.get(0).getMode().name(), "the run should record what actually happened");
+	}
+
+	private static CrawlService service(
+			FhirCrawlClient client, CrawlPersistenceService persistence, CrawlRunRepository runRepo) {
+		return new CrawlService(
+				client,
+				persistence,
+				new RecordingManifestService(),
+				new NoopEvents(),
+				jobRepo(),
+				runRepo,
+				new ObjectMapper(),
+				new ApiProperties());
+	}
+
+	private static CrawlJob job(String id, CrawlStrategy strategy) {
+		CrawlJob job = new CrawlJob();
+		job.setId(id);
+		job.setName(id);
+		job.setStrategy(strategy);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"srv\",\"url\":\"http://auto.example/fhir\"}]");
+		return job;
+	}
+
+	/** Scriptable client for AUTO resolution: each strategy entry point records what ran. */
+	private static class AutoFhirCrawlClient extends FhirCrawlClient {
+		boolean bulkSupported = true;
+		boolean sinceSupported = true;
+		boolean partitionedViable = true;
+		boolean plainViable = true;
+		String bulkSinceSeen;
+		int bulkCalls;
+		int partitionedProbes;
+		int plainProbes;
+		String dispatched;
+
+		AutoFhirCrawlClient() {
+			super(FhirContext.forR4(), new ObjectMapper(), new ApiProperties());
+		}
+
+		@Override
+		public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
+			return new ServerTime("2026-01-01T00:00:00Z", "test");
+		}
+
+		@Override
+		public SearchResult bulkExport(
+				String serverUrl,
+				String serverKey,
+				String since,
+				java.util.function.Consumer<StepEvent> steps,
+				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+			bulkCalls++;
+			bulkSinceSeen = since;
+			if (!bulkSupported) {
+				throw new StrategyUnsupportedException("Server does not support $export: HTTP 404");
+			}
+			if (since != null && !sinceSupported) {
+				throw new SinceUnsupportedException("$export kick-off with _since rejected: HTTP 400");
+			}
+			return new SearchResult(1, 40, 1, 0);
+		}
+
+		@Override
+		public boolean probePartitionedSearch(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
+			partitionedProbes++;
+			return partitionedViable;
+		}
+
+		@Override
+		public boolean probePlainSearch(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
+			plainProbes++;
+			return plainViable;
+		}
+
+		@Override
+		public SearchResult searchTypesPartitioned(
+				String serverUrl,
+				String serverKey,
+				int pageSize,
+				String since,
+				ServerTime anchor,
+				java.util.function.Consumer<StepEvent> steps,
+				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+			dispatched = "partitioned";
+			return new SearchResult(1, 40, 1, 1);
+		}
+
+		@Override
+		public HistoryResult historyExport(
+				String serverUrl,
+				String serverKey,
+				String since,
+				java.util.function.Consumer<StepEvent> steps,
+				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+			dispatched = "history";
+			return new HistoryResult(1, List.of(), 40, 1, 1);
+		}
+
+		@Override
+		public DeletionScanResult scanDeletions(
+				String serverUrl, String since, int pageSize, java.util.function.Consumer<StepEvent> steps) {
+			return new DeletionScanResult(List.of(), 1, 1, 10);
+		}
+	}
+
+	/** Records which finish path each session took, so full-vs-incremental persistence is observable. */
+	private static class FinishRecordingPersistence extends CrawlPersistenceService {
+		final List<String> finishes = new ArrayList<>();
+
+		FinishRecordingPersistence() {
+			super(resourceRepo());
+		}
+
+		@Override
+		public SnapshotSession openSession(String serverKey, String serverLabel) {
+			return new SnapshotSession() {
+				@Override
+				public void accept(List<FetchedResource> batch) {}
+
+				@Override
+				public PersistCounts finishFullSnapshot() {
+					finishes.add("full");
+					return new PersistCounts(1, 0, 0, 1);
+				}
+
+				@Override
+				public PersistCounts finishIncremental(List<org.hl7.davinci.api.service.DeletionEntry> deletions) {
+					finishes.add("incremental");
+					return new PersistCounts(1, 0, 0, 1);
+				}
+			};
+		}
+	}
+
 	private static class FakeFhirCrawlClient extends FhirCrawlClient {
 		private final String good;
 		private final String bad;
@@ -256,7 +493,7 @@ class CrawlServiceTest {
 		}
 
 		@Override
-		public ServerTime getServerTime(String serverUrl) {
+		public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
 			if (bad.equals(serverUrl)) {
 				throw new IllegalStateException("server unavailable");
 			}
@@ -294,7 +531,7 @@ class CrawlServiceTest {
 		}
 
 		@Override
-		public ServerTime getServerTime(String serverUrl) {
+		public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
 			entered.countDown();
 			try {
 				release.await();
@@ -384,7 +621,7 @@ class CrawlServiceTest {
 		}
 
 		@Override
-		public ServerTime getServerTime(String serverUrl) {
+		public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
 			return new ServerTime("2026-01-01T00:00:00Z", "test");
 		}
 
@@ -471,7 +708,7 @@ class CrawlServiceTest {
 		}
 
 		@Override
-		public ServerTime getServerTime(String serverUrl) {
+		public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
 			throw failure;
 		}
 	}
@@ -487,6 +724,25 @@ class CrawlServiceTest {
 				new Class<?>[] {CrawlRunRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
 					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> Optional.empty();
+					case "save" -> {
+						saved.add((CrawlRun) args[0]);
+						yield args[0];
+					}
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+	}
+
+	/** Records saved runs and reports a prior completed run, so incremental paths engage. */
+	private static CrawlRunRepository runRepoWithPriorRun(List<CrawlRun> saved, String serverTimeAtStart) {
+		return (CrawlRunRepository) Proxy.newProxyInstance(
+				CrawlRunRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlRunRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> {
+						CrawlRun prior = new CrawlRun();
+						prior.setServerTimeAtStart(serverTimeAtStart);
+						yield Optional.of(prior);
+					}
 					case "save" -> {
 						saved.add((CrawlRun) args[0]);
 						yield args[0];

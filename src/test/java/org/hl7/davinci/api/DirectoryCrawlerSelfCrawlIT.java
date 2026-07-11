@@ -70,7 +70,9 @@ import org.springframework.test.context.ActiveProfiles;
 			"hapi.fhir.fhir_version=r4",
 			"spring.main.allow-bean-definition-overriding=true",
 			"management.health.elasticsearch.enabled=false",
-			"spring.jpa.properties.hibernate.search.backend.directory.type=local-heap"
+			"spring.jpa.properties.hibernate.search.backend.directory.type=local-heap",
+			// crawls re-issue identical search URLs; a reused cached search would hide same-boot writes
+			"hapi.fhir.reuse_cached_search_results_millis=0"
 		})
 class DirectoryCrawlerSelfCrawlIT {
 
@@ -388,6 +390,39 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertFalse(searchKeys.isEmpty(), "SEARCH should find seeded resources");
 		assertEquals(searchKeys, historyKeys, "HISTORY should fetch the same resource set as SEARCH");
 		assertEquals(searchKeys, bulkKeys, "BULK_EXPORT should fetch the same resource set as SEARCH");
+	}
+
+	@Test
+	void partitionedStrategyProducesEquivalentSnapshot() {
+		String base = "http://localhost:" + port + "/fhir";
+
+		Set<String> lastUpdatedKeys = runFullStrategy("eq-part-baseline", CrawlStrategy.SEARCH_LAST_UPDATED, base);
+		assertFalse(lastUpdatedKeys.isEmpty(), "SEARCH_LAST_UPDATED should find seeded resources");
+
+		CrawlJob job = new CrawlJob();
+		job.setId("eq-partitioned");
+		job.setName("eq-partitioned");
+		job.setStrategy(CrawlStrategy.SEARCH_LAST_UPDATED_PARTITIONED);
+		job.setEnabled(true);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverKey\":\"" + base + "\",\"serverLabel\":\"self\",\"url\":\"" + base + "\"}]");
+		jobRepo.save(job);
+
+		CrawlRun run = crawlService.crawlJob(job).get(0);
+		assertEquals(RunStatus.COMPLETED, run.getStatus(), "partitioned crawl errored: " + run.getError());
+		assertTrue(run.getRecords() > 0, "expected the seeded directory to yield resources");
+
+		String prefix = base + "|";
+		Set<String> partitionedKeys =
+				resourceRepo.findKeysByKeyGreaterThanOrderByKeyAsc(prefix, PageRequest.ofSize(100_000)).stream()
+						.filter(key -> key.startsWith(prefix))
+						.map(key -> key.substring(prefix.length()))
+						.collect(Collectors.toSet());
+
+		assertEquals(
+				lastUpdatedKeys,
+				partitionedKeys,
+				"SEARCH_LAST_UPDATED_PARTITIONED should fetch the same resource set as SEARCH_LAST_UPDATED");
 	}
 
 	@Test

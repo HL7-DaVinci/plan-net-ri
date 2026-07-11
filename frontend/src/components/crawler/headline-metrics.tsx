@@ -42,7 +42,7 @@ export function HeadlineMetrics({
   return (
     <div className="grid gap-4 md:grid-cols-2">
       {/* Efficiency */}
-      <Card className="border-l-4 border-l-primary/40">
+      <Card>
         <CardHeader className="pb-2">
           <CardTitle className="text-base flex items-center gap-2">
             <TrendingDown className="h-4 w-4 text-primary" />
@@ -106,7 +106,7 @@ export function HeadlineMetrics({
       </Card>
 
       {/* Accuracy */}
-      <Card className="border-l-4 border-l-success/50">
+      <Card>
         <CardHeader className="pb-2">
           <CardTitle className="text-base flex items-center gap-2">
             <ShieldCheck className="h-4 w-4 text-success" />
