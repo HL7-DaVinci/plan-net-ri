@@ -1,6 +1,7 @@
 package org.hl7.davinci.api;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -11,11 +12,13 @@ import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import ca.uhn.fhir.rest.server.exceptions.InternalErrorException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hl7.davinci.api.config.ApiProperties;
+import org.hl7.davinci.api.entity.CrawlCheckpoint;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlRun;
 import org.hl7.davinci.api.entity.CrawlStrategy;
 import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.entity.RunStatus;
+import org.hl7.davinci.api.repository.CrawlCheckpointRepository;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
@@ -62,6 +65,7 @@ class CrawlServiceTest {
 				new NoopEvents(),
 				jobRepo(),
 				runRepo(),
+				checkpointRepo(),
 				new ObjectMapper(),
 				props);
 		CrawlJob job = new CrawlJob();
@@ -96,6 +100,7 @@ class CrawlServiceTest {
 				events,
 				jobRepo(),
 				runRepo(),
+				checkpointRepo(),
 				new ObjectMapper(),
 				new ApiProperties());
 		CrawlJob job = new CrawlJob();
@@ -148,6 +153,7 @@ class CrawlServiceTest {
 				events,
 				idleJobRepo(),
 				recordingRunRepo(savedRuns),
+				checkpointRepo(),
 				new ObjectMapper(),
 				new ApiProperties());
 		CrawlJob job = new CrawlJob();
@@ -165,7 +171,10 @@ class CrawlServiceTest {
 
 		assertNull(service.getActiveBatchId("cancel-job"), "cancel must release the guard immediately");
 		assertTrue(events.completed.await(5, TimeUnit.SECONDS), "the interrupted worker should finish promptly");
-		assertEquals(List.of(), savedRuns, "a cancelled run must not be persisted");
+		assertEquals(
+				1,
+				savedRuns.size(),
+				"only the start-of-run RUNNING row is written; the cancelled terminal save is suppressed");
 		assertEquals(0, manifestService.createCalls, "a cancelled run must not publish a manifest");
 	}
 
@@ -184,6 +193,7 @@ class CrawlServiceTest {
 				events,
 				idleJobRepo(),
 				runRepo(),
+				checkpointRepo(),
 				new ObjectMapper(),
 				new ApiProperties());
 		CrawlJob job = new CrawlJob();
@@ -205,6 +215,206 @@ class CrawlServiceTest {
 	}
 
 	@Test
+	void serverShutdownRecordsInFlightRunsAsPausedAndKeepsTheRunningFlagForStartupResume() throws Exception {
+		String server = "http://good.example/fhir";
+		FetchedResource fetched = new FetchedResource(
+				server + "|Organization/a",
+				"Organization",
+				"a",
+				"1",
+				"2026-01-01T00:00:00Z",
+				"{\"resourceType\":\"Organization\",\"id\":\"a\"}",
+				40);
+		CountDownLatch release = new CountDownLatch(1);
+		BlockingFhirCrawlClient client = new BlockingFhirCrawlClient(fetched, release);
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		List<String> checkpointClears = new ArrayList<>();
+		CrawlCheckpointRepository checkpoints = (CrawlCheckpointRepository) Proxy.newProxyInstance(
+				CrawlCheckpointRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlCheckpointRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findByJobIdAndServerKey" -> List.of();
+					case "save" -> null;
+					case "deleteByJobIdAndServerKey" -> {
+						checkpointClears.add((String) args[0]);
+						yield null;
+					}
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+		RecordingManifestService manifestService = new RecordingManifestService();
+		CompletionAwareEvents events = new CompletionAwareEvents();
+		CrawlJob job = new CrawlJob();
+		job.setId("shutdown-job");
+		job.setName("Shutdown job");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"good\",\"url\":\"" + server + "\"}]");
+		CrawlJobRepository jobRepo = (CrawlJobRepository) Proxy.newProxyInstance(
+				CrawlJobRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlJobRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findById" -> Optional.of(job);
+					case "save" -> args[0];
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+		CrawlService service = new CrawlService(
+				client,
+				new FakePersistence(),
+				manifestService,
+				events,
+				jobRepo,
+				recordingRunRepo(savedRuns),
+				checkpoints,
+				new ObjectMapper(),
+				new ApiProperties());
+
+		service.triggerAsync(job);
+		assertTrue(client.entered.await(5, TimeUnit.SECONDS), "the worker should start crawling");
+		assertTrue(job.isRunning(), "the running flag is set while the crawl is in flight");
+
+		service.shutdown();
+
+		assertTrue(events.completed.await(5, TimeUnit.SECONDS), "the interrupted worker should finish promptly");
+		assertEquals(RunStatus.PAUSED, savedRuns.get(0).getStatus(), "a shutdown-interrupted run records as paused");
+		assertTrue(job.isRunning(), "the running flag stays set so startup recovery re-triggers the job");
+		assertEquals(List.of(), checkpointClears, "shutdown must keep the checkpoints for the resumed run");
+		assertEquals(0, manifestService.createCalls, "an interrupted run must not publish a manifest");
+	}
+
+	@Test
+	void pauseJobRecordsAPausedRunAndKeepsItsCheckpoints() throws Exception {
+		String server = "http://good.example/fhir";
+		FetchedResource fetched = new FetchedResource(
+				server + "|Organization/a",
+				"Organization",
+				"a",
+				"1",
+				"2026-01-01T00:00:00Z",
+				"{\"resourceType\":\"Organization\",\"id\":\"a\"}",
+				40);
+		CountDownLatch release = new CountDownLatch(1);
+		BlockingFhirCrawlClient client = new BlockingFhirCrawlClient(fetched, release);
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		List<String> checkpointClears = new ArrayList<>();
+		CrawlCheckpointRepository checkpoints = (CrawlCheckpointRepository) Proxy.newProxyInstance(
+				CrawlCheckpointRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlCheckpointRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findByJobIdAndServerKey" -> List.of();
+					case "save" -> null;
+					case "deleteByJobIdAndServerKey" -> {
+						checkpointClears.add((String) args[0]);
+						yield null;
+					}
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+		RecordingManifestService manifestService = new RecordingManifestService();
+		CompletionAwareEvents events = new CompletionAwareEvents();
+		CrawlService service = new CrawlService(
+				client,
+				new FakePersistence(),
+				manifestService,
+				events,
+				idleJobRepo(),
+				recordingRunRepo(savedRuns),
+				checkpoints,
+				new ObjectMapper(),
+				new ApiProperties());
+		CrawlJob job = new CrawlJob();
+		job.setId("pause-job");
+		job.setName("Paused job");
+		job.setStrategy(CrawlStrategy.SEARCH);
+		job.setCreatedAt(Instant.now());
+		job.setServers("[{\"serverLabel\":\"good\",\"url\":\"" + server + "\"}]");
+
+		service.triggerAsync(job);
+		assertTrue(client.entered.await(5, TimeUnit.SECONDS), "the worker should start crawling");
+
+		assertTrue(service.pauseJob("pause-job"), "an in-flight run can be paused");
+
+		assertTrue(events.completed.await(5, TimeUnit.SECONDS), "the paused worker should finish promptly");
+		assertEquals(2, savedRuns.size(), "the start-of-run row plus the paused terminal row are recorded");
+		assertEquals(RunStatus.PAUSED, savedRuns.get(0).getStatus());
+		assertEquals(0, manifestService.createCalls, "a paused run must not publish a manifest");
+		assertEquals(List.of(), checkpointClears, "pause must keep the checkpoints for resume");
+		assertFalse(service.pauseJob("pause-job"), "an idle job has nothing to pause");
+	}
+
+	@Test
+	void aResumedRunAbsorbsThePausedSegmentsDurationAndCounts() {
+		CrawlRun segment = new CrawlRun();
+		segment.setStatus(RunStatus.PAUSED);
+		segment.setDurationMs(60_000);
+		segment.setAdded(5);
+		segment.setUpdated(2);
+		segment.setDeleted(1);
+		segment.setRecords(700);
+		segment.setBytes(12_345);
+		segment.setRequests(9);
+		segment.setPages(8);
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		CrawlRunRepository runRepo = (CrawlRunRepository) Proxy.newProxyInstance(
+				CrawlRunRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlRunRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> Optional.empty();
+					case "findTop1ByJobIdAndServerKeyOrderByStartedAtDesc" -> Optional.of(segment);
+					case "save" -> {
+						savedRuns.add((CrawlRun) args[0]);
+						yield args[0];
+					}
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+
+		FhirCrawlClient client = new FhirCrawlClient(FhirContext.forR4(), new ObjectMapper(), new ApiProperties()) {
+			@Override
+			public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
+				return new ServerTime("2026-07-01T00:00:00Z", "date-header");
+			}
+
+			@Override
+			public SearchResult searchTypesByLastUpdated(
+					String serverUrl,
+					String serverKey,
+					int pageSize,
+					String since,
+					ResumeContext resume,
+					java.util.function.Consumer<StepEvent> steps,
+					java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+				return new SearchResult(1, 40, 1, 1);
+			}
+		};
+		RecordingManifestService manifestService = new RecordingManifestService();
+		CrawlService service = new CrawlService(
+				client,
+				new FakePersistence(),
+				manifestService,
+				new NoopEvents(),
+				jobRepo(),
+				runRepo,
+				checkpointRepo(),
+				new ObjectMapper(),
+				new ApiProperties());
+
+		service.crawlJob(job("resume-stats", CrawlStrategy.SEARCH_LAST_UPDATED), "batch-resume-stats");
+
+		assertEquals(
+				60_000,
+				manifestService.lastCarryoverMs,
+				"the manifest's build time must absorb the paused segment too");
+		CrawlRun run = savedRuns.get(0);
+		assertEquals(RunStatus.COMPLETED, run.getStatus());
+		assertTrue(run.getDurationMs() >= 60_000, "the paused segment's time counts toward the finished run");
+		assertEquals(6, run.getAdded(), "5 carried + 1 from this segment");
+		assertEquals(2, run.getUpdated());
+		assertEquals(1, run.getDeleted());
+		assertEquals(701, run.getRecords());
+		assertEquals(12_385, run.getBytes());
+		assertEquals(11, run.getRequests(), "9 carried + 1 search + 1 metadata");
+		assertEquals(9, run.getPages());
+	}
+
+	@Test
 	void triggerAsyncExposesTheActiveBatchUntilTheRunCompletes() throws Exception {
 		String server = "http://good.example/fhir";
 		FetchedResource fetched = new FetchedResource(
@@ -223,6 +433,7 @@ class CrawlServiceTest {
 				new NoopEvents(),
 				idleJobRepo(),
 				runRepo(),
+				checkpointRepo(),
 				new ObjectMapper(),
 				new ApiProperties());
 		CrawlJob job = new CrawlJob();
@@ -346,6 +557,100 @@ class CrawlServiceTest {
 		assertEquals("FULL", savedRuns.get(0).getMode().name(), "the run should record what actually happened");
 	}
 
+	@Test
+	void resumedFullCrawlUsesFloorsSkipsTheDeletionScanAndClearsCheckpointsOnCompletion() {
+		String floor = "2026-03-01T00:00:00Z";
+		List<CrawlRun> savedRuns = new ArrayList<>();
+		List<String> clears = new ArrayList<>();
+		java.util.Map<String, String> floorsSeen = new java.util.HashMap<>();
+		List<String> finishes = new ArrayList<>();
+
+		CrawlCheckpoint checkpoint = new CrawlCheckpoint();
+		checkpoint.setKey(CrawlCheckpoint.key("job-resume", "http://auto.example/fhir", "Organization"));
+		checkpoint.setJobId("job-resume");
+		checkpoint.setServerKey("http://auto.example/fhir");
+		checkpoint.setResourceType("Organization");
+		checkpoint.setWatermark(floor);
+		CrawlCheckpointRepository checkpoints = (CrawlCheckpointRepository) Proxy.newProxyInstance(
+				CrawlCheckpointRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlCheckpointRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findByJobIdAndServerKey" -> List.of(checkpoint);
+					case "deleteByJobIdAndServerKey" -> {
+						clears.add(args[0] + "|" + args[1]);
+						yield null;
+					}
+					case "save" -> null;
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+
+		CrawlPersistenceService persistence = new CrawlPersistenceService(resourceRepo()) {
+			@Override
+			public SnapshotSession openSession(String serverKey, String serverLabel) {
+				throw new AssertionError("a resumed full crawl must open the resumed session");
+			}
+
+			@Override
+			public SnapshotSession openResumedFullSession(String serverKey, String serverLabel) {
+				return new SnapshotSession() {
+					@Override
+					public void accept(List<FetchedResource> batch) {}
+
+					@Override
+					public PersistCounts finishFullSnapshot() {
+						throw new AssertionError("the full-snapshot deletion scan must not run on a resumed crawl");
+					}
+
+					@Override
+					public PersistCounts finishIncremental(
+							List<org.hl7.davinci.api.service.DeletionEntry> deletions) {
+						finishes.add("incremental:" + deletions.size());
+						return new PersistCounts(1, 0, 0, 1);
+					}
+				};
+			}
+		};
+
+		FhirCrawlClient client = new FhirCrawlClient(FhirContext.forR4(), new ObjectMapper(), new ApiProperties()) {
+			@Override
+			public ServerTime getServerTime(String serverUrl, java.util.function.Consumer<StepEvent> steps) {
+				return new ServerTime("2026-07-01T00:00:00Z", "date-header");
+			}
+
+			@Override
+			public SearchResult searchTypesByLastUpdated(
+					String serverUrl,
+					String serverKey,
+					int pageSize,
+					String since,
+					ResumeContext resume,
+					java.util.function.Consumer<StepEvent> steps,
+					java.util.function.Consumer<List<FetchedResource>> resourceSink) {
+				floorsSeen.putAll(resume.floors());
+				return new SearchResult(1, 40, 1, 1);
+			}
+		};
+
+		CrawlService service = new CrawlService(
+				client,
+				persistence,
+				new RecordingManifestService(),
+				new NoopEvents(),
+				jobRepo(),
+				recordingRunRepo(savedRuns),
+				checkpoints,
+				new ObjectMapper(),
+				new ApiProperties());
+
+		service.crawlJob(job("job-resume", CrawlStrategy.SEARCH_LAST_UPDATED), "batch-resume");
+
+		assertEquals(RunStatus.COMPLETED, savedRuns.get(0).getStatus());
+		assertEquals(floor, floorsSeen.get("Organization"), "the checkpoint floor reaches the search strategy");
+		assertEquals(List.of("incremental:0"), finishes, "a resumed full crawl finishes with no-deletion semantics");
+		assertEquals(
+				List.of("job-resume|http://auto.example/fhir"), clears, "completing the server clears its checkpoints");
+	}
+
 	private static CrawlService service(
 			FhirCrawlClient client, CrawlPersistenceService persistence, CrawlRunRepository runRepo) {
 		return new CrawlService(
@@ -355,6 +660,7 @@ class CrawlServiceTest {
 				new NoopEvents(),
 				jobRepo(),
 				runRepo,
+				checkpointRepo(),
 				new ObjectMapper(),
 				new ApiProperties());
 	}
@@ -427,6 +733,7 @@ class CrawlServiceTest {
 				int pageSize,
 				String since,
 				ServerTime anchor,
+				ResumeContext resume,
 				java.util.function.Consumer<StepEvent> steps,
 				java.util.function.Consumer<List<FetchedResource>> resourceSink) {
 			dispatched = "partitioned";
@@ -648,15 +955,22 @@ class CrawlServiceTest {
 
 	private static class RecordingManifestService extends ManifestService {
 		int createCalls;
+		long lastCarryoverMs;
 
 		RecordingManifestService() {
-			super(null, null, null);
+			super(null, null, null, null);
 		}
 
 		@Override
 		public ManifestRecord createManifest(
-				CrawlJob job, String batchId, String windowSince, List<String> serverKeys, long operationStartNanos) {
+				CrawlJob job,
+				String batchId,
+				String windowSince,
+				List<String> serverKeys,
+				long operationStartNanos,
+				long carryoverMs) {
 			createCalls++;
+			lastCarryoverMs = carryoverMs;
 			return new ManifestRecord();
 		}
 	}
@@ -717,13 +1031,26 @@ class CrawlServiceTest {
 		return proxy(CrawlJobRepository.class);
 	}
 
+	/** No checkpoints exist and writes are ignored: crawls behave as never-interrupted. */
+	private static CrawlCheckpointRepository checkpointRepo() {
+		return (CrawlCheckpointRepository) Proxy.newProxyInstance(
+				CrawlCheckpointRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlCheckpointRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "findByJobIdAndServerKey" -> List.of();
+					case "deleteByJobIdAndServerKey", "save" -> null;
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+	}
+
 	/** Records saved runs so write suppression is observable. */
 	private static CrawlRunRepository recordingRunRepo(List<CrawlRun> saved) {
 		return (CrawlRunRepository) Proxy.newProxyInstance(
 				CrawlRunRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlRunRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> Optional.empty();
+					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc",
+							"findTop1ByJobIdAndServerKeyOrderByStartedAtDesc" -> Optional.empty();
 					case "save" -> {
 						saved.add((CrawlRun) args[0]);
 						yield args[0];
@@ -738,6 +1065,7 @@ class CrawlServiceTest {
 				CrawlRunRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlRunRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
+					case "findTop1ByJobIdAndServerKeyOrderByStartedAtDesc" -> Optional.empty();
 					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> {
 						CrawlRun prior = new CrawlRun();
 						prior.setServerTimeAtStart(serverTimeAtStart);
@@ -767,7 +1095,8 @@ class CrawlServiceTest {
 				CrawlRunRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlRunRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc" -> Optional.empty();
+					case "findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc",
+							"findTop1ByJobIdAndServerKeyOrderByStartedAtDesc" -> Optional.empty();
 					case "save" -> args[0];
 					default -> throw new UnsupportedOperationException(method.getName());
 				});

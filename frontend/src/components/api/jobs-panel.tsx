@@ -370,7 +370,7 @@ export function JobsPanel({ selectedJobId, onSelectJob }: JobsPanelProps) {
                         running
                       </Badge>
                     )}
-                    {!job.enabled && job.cronExpression && (
+                    {!job.enabled && (job.cronExpression || job.resumable) && (
                       <Badge variant="secondary">paused</Badge>
                     )}
                   </div>
@@ -399,7 +399,11 @@ export function JobsPanel({ selectedJobId, onSelectJob }: JobsPanelProps) {
                     variant="ghost"
                     size="icon"
                     title={
-                      job.running ? "A crawl is already running" : "Run now"
+                      job.running
+                        ? "A crawl is already running"
+                        : job.resumable
+                          ? "Resume the interrupted crawl"
+                          : "Run now"
                     }
                     disabled={runJob.isPending || job.running}
                     onClick={(e) => {
@@ -412,13 +416,18 @@ export function JobsPanel({ selectedJobId, onSelectJob }: JobsPanelProps) {
                   >
                     <Play className="h-4 w-4" />
                   </Button>
-                  {/* Pause and resume only make sense for jobs with a schedule. */}
-                  {job.cronExpression &&
-                    (job.enabled ? (
+                  {/* Pause stops a running crawl (checkpointed) and the schedule; resume
+                      re-enables the schedule and continues a checkpointed crawl. An idle,
+                      still-enabled job shows neither: there is nothing to pause, and for an
+                      interrupted crawl the Run button already offers the resume. */}
+                  {(job.running ||
+                    (job.enabled && job.cronExpression) ||
+                    (!job.enabled && (job.cronExpression || job.resumable))) &&
+                    (job.enabled || job.running ? (
                       <Button
                         variant="ghost"
                         size="icon"
-                        title="Pause schedule"
+                        title={job.running ? "Pause crawl" : "Pause schedule"}
                         disabled={pauseJob.isPending}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -432,7 +441,9 @@ export function JobsPanel({ selectedJobId, onSelectJob }: JobsPanelProps) {
                       <Button
                         variant="ghost"
                         size="icon"
-                        title="Resume schedule"
+                        title={
+                          job.resumable ? "Resume crawl" : "Resume schedule"
+                        }
                         disabled={resumeJob.isPending}
                         onClick={(e) => {
                           e.stopPropagation();

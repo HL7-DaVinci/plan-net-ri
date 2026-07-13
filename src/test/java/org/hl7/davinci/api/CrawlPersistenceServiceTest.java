@@ -2,6 +2,7 @@ package org.hl7.davinci.api;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.hl7.davinci.api.entity.CrawlResource;
@@ -195,6 +196,44 @@ class CrawlPersistenceServiceTest {
 		assertEquals(1, counts.deleted(), "only s1's un-fetched key b is deleted");
 		assertEquals(List.of("s1|Organization/b"), deletedIds.get());
 		assertEquals(1, counts.total(), "s1 had 2 rows; a kept, b deleted, 0 added");
+	}
+
+	@Test
+	void resumedFullSessionDoesNotDeleteRowsBelowTheFloors() {
+		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		CrawlResourceRepository resourceRepo = repo(
+				List.of(
+						version("s|Organization/a", "1", "2026-01-01T00:00:00Z"),
+						version("s|Organization/b", "1", "2026-01-01T00:00:00Z")),
+				deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+
+		FetchedResource refetched = new FetchedResource(
+				"s|Organization/a", "Organization", "a", "2", "2026-02-01T00:00:00Z", "{}", 2);
+		CrawlPersistenceService.SnapshotSession session = service.openResumedFullSession("s", "server");
+		session.accept(List.of(refetched));
+		CrawlPersistenceService.PersistCounts counts = session.finishIncremental(List.of());
+
+		assertEquals(0, counts.added());
+		assertEquals(1, counts.updated());
+		assertEquals(0, counts.deleted());
+		assertEquals(2, counts.total(), "rows below the resume floors survive even though never re-fetched");
+		assertEquals(List.of(), deletedIds.get());
+	}
+
+	@Test
+	void resumedFullSessionRefusesTheFullSnapshotFinish() {
+		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		CrawlResourceRepository resourceRepo =
+				repo(List.of(version("s|Organization/a", "1", "2026-01-01T00:00:00Z")), deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+
+		CrawlPersistenceService.SnapshotSession session = service.openResumedFullSession("s", "server");
+
+		assertThrows(
+				IllegalStateException.class,
+				session::finishFullSnapshot,
+				"the absent-key scan would misclassify everything below the floors as deleted");
 	}
 
 	private static CrawlResourceRepository repo(

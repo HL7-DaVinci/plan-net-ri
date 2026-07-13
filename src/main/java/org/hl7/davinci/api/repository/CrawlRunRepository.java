@@ -31,4 +31,12 @@ public interface CrawlRunRepository extends JpaRepository<CrawlRun, String> {
 	 */
 	Optional<CrawlRun> findTop1ByJobIdAndServerKeyAndStatusOrderByStartedAtDesc(
 			String jobId, String serverKey, RunStatus status);
+
+	/** The latest run row regardless of status; a PAUSED head means the next run continues it. */
+	Optional<CrawlRun> findTop1ByJobIdAndServerKeyOrderByStartedAtDesc(String jobId, String serverKey);
+
+	/** The latest run for a server across ALL jobs, since crawl_resource is server-scoped. */
+	Optional<CrawlRun> findTop1ByServerKeyAndStatusOrderByStartedAtDesc(String serverKey, RunStatus status);
+
+	List<CrawlRun> findByStatus(RunStatus status);
 }

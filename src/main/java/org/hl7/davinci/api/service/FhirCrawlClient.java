@@ -55,6 +55,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
@@ -116,6 +117,94 @@ public class FhirCrawlClient {
 
 	/** One type's (or one file's) fetch outcome, merged into a {@link SearchResult} by the task driver. */
 	private record TypeCrawl(int records, long bytes, int requests, int pages) {}
+
+	/**
+	 * Mid-crawl resume state for the watermark strategies: per-type lower bounds recovered from a
+	 * prior interrupted run, and a sink that persists the advancing per-type frontier so the next
+	 * run can resume. A null sink disables checkpointing; {@link #NONE} disables both.
+	 */
+	public record ResumeContext(Map<String, String> floors, BiConsumer<String, String> checkpointSink) {
+		public static final ResumeContext NONE = new ResumeContext(Map.of(), null);
+
+		String floor(String type, String since) {
+			return floors.getOrDefault(type, since);
+		}
+	}
+
+	/** Per-window progress callbacks from a watermark chain; null when checkpointing is disabled. */
+	interface WindowProgress {
+		/** The page's resources were flushed to the persistence sink; watermark is the inclusive re-query point. */
+		void page(String watermark);
+
+		/** The window's chain finished cleanly. A failed window never reports done, pinning the frontier. */
+		void done();
+	}
+
+	/**
+	 * Tracks the contiguous completed frontier across one type's ordered windows: the instant below
+	 * which every window has been fully crawled and flushed. Windows run in parallel, so the
+	 * frontier is the lowest incomplete window's watermark; higher windows' progress is not claimed
+	 * (their refetch on resume is bounded by the worker pool), and a failed window pins the frontier
+	 * so a resumed crawl re-covers its unfetched range.
+	 */
+	static final class WindowFrontier {
+		private final String[] watermarks;
+		private final boolean[] done;
+		private String reported;
+
+		WindowFrontier(List<Window> windows) {
+			watermarks = new String[windows.size()];
+			done = new boolean[windows.size()];
+			for (int i = 0; i < windows.size(); i++) {
+				watermarks[i] = windows.get(i).lo();
+			}
+		}
+
+		/** Applies one window's progress; returns the new frontier when it advanced, else null. */
+		synchronized String advance(int window, String watermark, boolean windowDone) {
+			if (watermark != null) {
+				watermarks[window] = watermark;
+			}
+			if (windowDone) {
+				done[window] = true;
+			}
+			int lowestIncomplete = 0;
+			while (lowestIncomplete < done.length && done[lowestIncomplete]) {
+				lowestIncomplete++;
+			}
+			String frontier =
+					lowestIncomplete < done.length ? watermarks[lowestIncomplete] : watermarks[done.length - 1];
+			if (frontier == null || frontier.equals(reported)) {
+				return null;
+			}
+			reported = frontier;
+			return frontier;
+		}
+	}
+
+	private static WindowProgress windowProgress(
+			WindowFrontier frontier, int window, String type, ResumeContext resume) {
+		if (resume.checkpointSink() == null) {
+			return null;
+		}
+		return new WindowProgress() {
+			@Override
+			public void page(String watermark) {
+				report(frontier.advance(window, watermark, false));
+			}
+
+			@Override
+			public void done() {
+				report(frontier.advance(window, null, true));
+			}
+
+			private void report(String newFrontier) {
+				if (newFrontier != null) {
+					resume.checkpointSink().accept(type, newFrontier);
+				}
+			}
+		};
+	}
 
 	/** Package-private test seam: verifies the registry reuses one gate per normalized server. */
 	RateGate gateFor(String serverUrl) {
@@ -584,6 +673,7 @@ public class FhirCrawlClient {
 	 * Search every Plan-Net type, paging by an advancing {@code _lastUpdated} watermark instead of
 	 * page links. {@code since} sets the starting watermark; null is a full snapshot.
 	 */
+	/** Convenience overload without resume state (checkpointing disabled). */
 	public SearchResult searchTypesByLastUpdated(
 			String serverUrl,
 			String serverKey,
@@ -591,11 +681,36 @@ public class FhirCrawlClient {
 			String since,
 			Consumer<StepEvent> steps,
 			Consumer<List<FetchedResource>> resourceSink) {
+		return searchTypesByLastUpdated(serverUrl, serverKey, pageSize, since, ResumeContext.NONE, steps, resourceSink);
+	}
+
+	public SearchResult searchTypesByLastUpdated(
+			String serverUrl,
+			String serverKey,
+			int pageSize,
+			String since,
+			ResumeContext resume,
+			Consumer<StepEvent> steps,
+			Consumer<List<FetchedResource>> resourceSink) {
 		RateGate gate = gateFor(serverUrl);
 		List<Callable<TypeCrawl>> tasks = new ArrayList<>();
 		for (String type : PlanNetTypes.TYPES) {
+			String floor = resume.floor(type, since);
+			WindowProgress progress =
+					windowProgress(new WindowFrontier(List.of(new Window(floor, null))), 0, type, resume);
 			tasks.add(() -> runSearchTypeByLastUpdated(
-					type, serverUrl, serverKey, pageSize, since, null, type, true, gate, steps, resourceSink));
+					type,
+					serverUrl,
+					serverKey,
+					pageSize,
+					floor,
+					null,
+					type,
+					true,
+					progress,
+					gate,
+					steps,
+					resourceSink));
 		}
 		return runTypeTasks(tasks);
 	}
@@ -618,6 +733,7 @@ public class FhirCrawlClient {
 			String upperBound,
 			String track,
 			boolean persistSummary,
+			WindowProgress progress,
 			RateGate gate,
 			Consumer<StepEvent> steps,
 			Consumer<List<FetchedResource>> resourceSink) {
@@ -747,6 +863,11 @@ public class FhirCrawlClient {
 						}
 
 						collectEntries(bundle, serverKey, parser, emitter, bytes);
+						if (progress != null) {
+							// The checkpoint may only claim what is persisted, so flush the page first.
+							emitter.flush();
+							progress.page(watermark);
+						}
 						if (typePages % PAGE_LOG_EVERY == 0) {
 							ourLog.info(
 									"SEARCH {}: {} pages by last updated, {} resources so far",
@@ -782,6 +903,9 @@ public class FhirCrawlClient {
 					bytes[0],
 					emitter.count());
 			trackSteps.accept(persistSummary ? resolution : resolution.asProgress());
+			if (progress != null) {
+				progress.done();
+			}
 			return new TypeCrawl(emitter.count(), bytes[0], requests, pages);
 		} finally {
 			// A per-type failure or an early return must not strand a partial buffered page.
@@ -801,12 +925,26 @@ public class FhirCrawlClient {
 	 * left open-ended, matching the unbounded coverage of the other search strategies. Anything a
 	 * bounded run misses is caught by the next incremental crawl.
 	 */
+	/** Convenience overload without resume state (checkpointing disabled). */
 	public SearchResult searchTypesPartitioned(
 			String serverUrl,
 			String serverKey,
 			int pageSize,
 			String since,
 			ServerTime anchor,
+			Consumer<StepEvent> steps,
+			Consumer<List<FetchedResource>> resourceSink) {
+		return searchTypesPartitioned(
+				serverUrl, serverKey, pageSize, since, anchor, ResumeContext.NONE, steps, resourceSink);
+	}
+
+	public SearchResult searchTypesPartitioned(
+			String serverUrl,
+			String serverKey,
+			int pageSize,
+			String since,
+			ServerTime anchor,
+			ResumeContext resume,
 			Consumer<StepEvent> steps,
 			Consumer<List<FetchedResource>> resourceSink) {
 		RateGate gate = gateFor(serverUrl);
@@ -818,8 +956,9 @@ public class FhirCrawlClient {
 		AtomicInteger planningRequests = new AtomicInteger();
 		List<Callable<TypeCrawl>> tasks = new ArrayList<>();
 		for (String type : PlanNetTypes.TYPES) {
+			String floor = resume.floor(type, since);
 			List<Window> windows = planTypeWindows(
-					planningClient, serverUrl, type, since, hi, openTail, gate, steps, planningRequests);
+					planningClient, serverUrl, type, floor, hi, openTail, gate, steps, planningRequests);
 			int windowCount = windows.size();
 			if (windowCount == 0) {
 				continue;
@@ -831,8 +970,10 @@ public class FhirCrawlClient {
 			AtomicLong typeBytes = new AtomicLong();
 			AtomicLong typePages = new AtomicLong();
 			AtomicLong typeStartNanos = new AtomicLong();
+			WindowFrontier frontier = new WindowFrontier(windows);
 			for (int i = 0; i < windowCount; i++) {
 				Window window = windows.get(i);
+				WindowProgress progress = windowProgress(frontier, i, type, resume);
 				String track = windowCount == 1 ? type : type + " [" + (i + 1) + "/" + windowCount + "]";
 				tasks.add(() -> {
 					typeStartNanos.compareAndSet(0, System.nanoTime());
@@ -845,6 +986,7 @@ public class FhirCrawlClient {
 							window.hi(),
 							track,
 							false,
+							progress,
 							gate,
 							steps,
 							resourceSink);

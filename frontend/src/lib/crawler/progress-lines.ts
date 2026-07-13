@@ -6,15 +6,7 @@ export interface ProgressLine {
   message: string;
   method: string | null;
   url: string | null;
-  status: number | null;
-  ms: number | null;
-  count: number | null;
   at: number;
-}
-
-/** A resolution marker carries its HTTP result; the operation is finished, not in flight. */
-export function isSettled(line: ProgressLine): boolean {
-  return line.status != null;
 }
 
 export type ProgressLines = Map<string, ProgressLine>;
@@ -37,6 +29,14 @@ export function applyProgressEvent(
   switch (event.kind) {
     case "progress": {
       const track = event.step.track ?? "";
+      // A marker carrying its HTTP result is a settled resolution: the track's work just
+      // finished, so its line comes down instead of lingering for the rest of the crawl.
+      if (event.step.status != null) {
+        if (!lines.has(track)) return lines;
+        const next = new Map(lines);
+        next.delete(track);
+        return next;
+      }
       const next = new Map(lines);
       next.set(track, {
         track,
@@ -44,9 +44,6 @@ export function applyProgressEvent(
         message: event.step.message,
         method: event.step.method,
         url: event.step.url,
-        status: event.step.status,
-        ms: event.step.ms,
-        count: event.step.count,
         at: event.now,
       });
       return next;

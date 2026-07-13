@@ -37,6 +37,7 @@ export interface JobResponse {
   enabled: boolean;
   running: boolean;
   currentBatchId: string | null;
+  resumable: boolean;
   lastRunAt: string | null;
   nextRunAt: string | null;
   createdAt: string | null;
@@ -84,6 +85,7 @@ export interface ManifestSummary {
   totalResources: number;
   windowSince: string | null;
   buildDurationMs: number;
+  regenerating: boolean;
 }
 
 export interface JobStats {

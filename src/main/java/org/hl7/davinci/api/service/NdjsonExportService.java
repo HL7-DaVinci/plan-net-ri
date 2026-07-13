@@ -1,5 +1,6 @@
 package org.hl7.davinci.api.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
@@ -18,6 +19,7 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /** Writes one {Type}.ndjson per resource type from the aggregate store. */
 @Service
@@ -34,6 +36,14 @@ public class NdjsonExportService {
 	/** I/O and gzip buffer size; large buffers cut syscall and compression overhead on big snapshots. */
 	private static final int BUFFER = 1 << 16;
 
+	/**
+	 * Per-type line counts recorded at write time, so rendering the manifest never has to
+	 * decompress the snapshot files just to count them.
+	 */
+	public static final String COUNTS_FILE = "counts.json";
+
+	private static final ObjectMapper MAPPER = new ObjectMapper();
+
 	private final CrawlResourceRepository resourceRepo;
 	private final ApiProperties props;
 
@@ -48,6 +58,7 @@ public class NdjsonExportService {
 	public SnapshotResult writeSnapshot(String manifestId, List<String> serverKeys) {
 		Path dir = Path.of(props.getStoragePath(), manifestId);
 		Map<String, BufferedWriter> writers = new HashMap<>();
+		Map<String, Long> typeCounts = new TreeMap<>();
 		Pageable page = PageRequest.ofSize(EXPORT_PAGE_SIZE);
 		long total = 0;
 		long lastLoggedAt = 0;
@@ -74,6 +85,7 @@ public class NdjsonExportService {
 						BufferedWriter writer = writerFor(writers, dir, resource.getResourceType());
 						writer.write(ResourceJsonCodec.decode(resource.getResourceJson()));
 						writer.write("\n");
+						typeCounts.merge(resource.getResourceType(), 1L, Long::sum);
 						total++;
 						afterKey = resource.getKey();
 					}
@@ -89,6 +101,7 @@ public class NdjsonExportService {
 					}
 				}
 			}
+			Files.writeString(dir.resolve(COUNTS_FILE), MAPPER.writeValueAsString(typeCounts));
 			ourLog.info(
 					"NDJSON export complete: {} resources in {} ms",
 					total,

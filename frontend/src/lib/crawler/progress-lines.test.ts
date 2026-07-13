@@ -1,10 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { CrawlStep } from "@/lib/api/types";
-import {
-  applyProgressEvent,
-  isSettled,
-  type ProgressLines,
-} from "./progress-lines";
+import { applyProgressEvent, type ProgressLines } from "./progress-lines";
 
 function step(overrides: Partial<CrawlStep>): CrawlStep {
   return {
@@ -38,32 +34,44 @@ describe("applyProgressEvent", () => {
       message: "Fetching page 1",
       method: null,
       url: null,
-      status: null,
-      ms: null,
-      count: null,
       at: 1000,
     });
   });
 
-  it("marks a marker carrying an HTTP result as settled", () => {
-    const settled = applyProgressEvent(new Map(), {
+  it("a marker carrying an HTTP result removes its track's line", () => {
+    let lines: ProgressLines = new Map();
+    lines = applyProgressEvent(lines, {
+      kind: "progress",
+      step: step({ track: "Location [1/25]", message: "Searching..." }),
+      now: 1000,
+    });
+    lines = applyProgressEvent(lines, {
+      kind: "progress",
+      step: step({ track: "Location [2/25]", message: "Searching..." }),
+      now: 1000,
+    });
+    lines = applyProgressEvent(lines, {
       kind: "progress",
       step: step({
         track: "Location [1/25]",
+        message: "Searched Location window (288 pages)",
         status: 200,
         ms: 1234,
         count: 500,
       }),
-      now: 1000,
-    }).get("Location [1/25]");
-    const inFlight = applyProgressEvent(new Map(), {
-      kind: "progress",
-      step: step({ track: "Location [2/25]" }),
-      now: 1000,
-    }).get("Location [2/25]");
+      now: 2000,
+    });
+    expect(Array.from(lines.keys())).toEqual(["Location [2/25]"]);
+  });
 
-    expect(settled && isSettled(settled)).toBe(true);
-    expect(inFlight && isSettled(inFlight)).toBe(false);
+  it("a resolution for a track with no active line is a no-op", () => {
+    const empty: ProgressLines = new Map();
+    const lines = applyProgressEvent(empty, {
+      kind: "progress",
+      step: step({ track: "Location [1/25]", status: 200 }),
+      now: 1000,
+    });
+    expect(lines).toBe(empty);
   });
 
   it("keys an untracked progress line by the empty string", () => {

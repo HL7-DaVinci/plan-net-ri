@@ -70,6 +70,8 @@ export const api = {
     request<ManifestJson>(`/api/manifests/${id}/manifest.json`),
   deleteManifest: (id: string) =>
     request<void>(`/api/manifests/${id}`, { method: "DELETE" }),
+  regenerateManifest: (id: string) =>
+    request<void>(`/api/manifests/${id}/regenerate`, { method: "POST" }),
   manifestUrl: (id: string) =>
     `${getApiBaseUrl()}/api/manifests/${id}/manifest.json`,
 };

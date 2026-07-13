@@ -6,11 +6,16 @@ import {
   Copy,
   Download,
   ExternalLink,
+  RefreshCw,
   Trash2,
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { useDeleteManifest, useManifests } from "@/hooks/use-api";
+import {
+  useDeleteManifest,
+  useManifests,
+  useRegenerateManifest,
+} from "@/hooks/use-api";
 import { api } from "@/lib/api/client";
 
 function formatTime(iso: string | null): string {
@@ -73,6 +78,7 @@ function ManifestDetail({ manifestId }: { manifestId: string }) {
 export function ManifestBrowser() {
   const { data: manifests, isLoading } = useManifests();
   const deleteManifest = useDeleteManifest();
+  const regenerateManifest = useRegenerateManifest();
   const [expanded, setExpanded] = useState<string | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
 
@@ -160,8 +166,26 @@ export function ManifestBrowser() {
                 <Button
                   variant="ghost"
                   size="icon"
+                  onClick={() => regenerateManifest.mutate(manifest.id)}
+                  disabled={
+                    regenerateManifest.isPending || manifest.regenerating
+                  }
+                  className="cursor-pointer"
+                  title={
+                    manifest.regenerating
+                      ? "Regenerating files from the tracked data..."
+                      : "Regenerate files from the tracked data (reflects its current state)"
+                  }
+                >
+                  <RefreshCw
+                    className={`h-4 w-4 ${manifest.regenerating ? "animate-spin" : ""}`}
+                  />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
                   onClick={() => deleteManifest.mutate(manifest.id)}
-                  disabled={deleteManifest.isPending}
+                  disabled={deleteManifest.isPending || manifest.regenerating}
                   className="cursor-pointer text-destructive"
                   title="Delete manifest"
                 >

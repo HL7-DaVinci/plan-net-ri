@@ -65,6 +65,22 @@ export function useOverallStats() {
   });
 }
 
+export function useRegenerateManifest() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: (id: string) => api.regenerateManifest(id),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: MANIFESTS_KEY });
+      toast.success("Regeneration started", {
+        description:
+          "Files are re-exported from the tracked data in the background.",
+      });
+    },
+    onError: (error) =>
+      toast.error("Regeneration failed", { description: describe(error) }),
+  });
+}
+
 export function useDeleteManifest() {
   const queryClient = useQueryClient();
   return useMutation({

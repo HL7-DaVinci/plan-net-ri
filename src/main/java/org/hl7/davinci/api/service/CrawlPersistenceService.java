@@ -61,7 +61,19 @@ public class CrawlPersistenceService {
 	}
 
 	public SnapshotSession openSession(String serverKey, String serverLabel) {
-		return new DefaultSession(serverKey, serverLabel);
+		return new DefaultSession(serverKey, serverLabel, false);
+	}
+
+	/**
+	 * A session for a full crawl resumed from checkpoints: rows below the resume floors are not
+	 * re-fetched, so the stream never covers the whole server. It dedupes with the same bounded
+	 * window as a first crawl (an unbounded seen-key set over millions of rows is a memory hazard)
+	 * and refuses {@link SnapshotSession#finishFullSnapshot()}, whose absent-key scan would
+	 * misclassify everything below the floors as deleted; finish with
+	 * {@code finishIncremental(List.of())}, matching a first crawl's no-deletion semantics.
+	 */
+	public SnapshotSession openResumedFullSession(String serverKey, String serverLabel) {
+		return new DefaultSession(serverKey, serverLabel, true);
 	}
 
 	/** Convenience for callers with the whole set already in memory (tests, small jobs). */
@@ -83,7 +95,8 @@ public class CrawlPersistenceService {
 		private final String serverKey;
 		private final String serverLabel;
 		private final long startCount;
-		private final boolean firstCrawl;
+		private final boolean resumed;
+		private final boolean dedupOnly;
 		private final Set<String> seenKeys = new HashSet<>();
 		private final Set<String> updatedKeys = new HashSet<>();
 		private final Set<String> recentKeys;
@@ -92,12 +105,15 @@ public class CrawlPersistenceService {
 		private int processed;
 		private int lastLoggedAt;
 
-		private DefaultSession(String serverKey, String serverLabel) {
+		private DefaultSession(String serverKey, String serverLabel, boolean resumed) {
 			this.serverKey = serverKey;
 			this.serverLabel = serverLabel;
 			this.startCount = resourceRepo.countByServerKey(serverKey);
-			this.firstCrawl = startCount == 0;
-			this.recentKeys = firstCrawl ? boundedKeySet() : null;
+			this.resumed = resumed;
+			// A first crawl has no prior rows to delete and a resumed full crawl must not delete,
+			// so neither tracks the full seen-key set; a bounded recent window dedupes re-fetches.
+			this.dedupOnly = startCount == 0 || resumed;
+			this.recentKeys = dedupOnly ? boundedKeySet() : null;
 			ourLog.info("Persist session for server {}: existing aggregate {} rows", serverLabel, startCount);
 		}
 
@@ -107,7 +123,7 @@ public class CrawlPersistenceService {
 		public synchronized void accept(List<FetchedResource> batch) {
 			// Skip the DB lookup for keys already handled this run: the stored row may hold this run's own
 			// write, so re-reading it would misclassify the re-fetch.
-			Set<String> handled = firstCrawl ? recentKeys : seenKeys;
+			Set<String> handled = dedupOnly ? recentKeys : seenKeys;
 			List<String> queryKeys = new ArrayList<>();
 			for (FetchedResource fr : batch) {
 				if (!handled.contains(fr.key())) {
@@ -138,8 +154,9 @@ public class CrawlPersistenceService {
 			upsertInChunks(updates, false);
 			added += newInserts;
 			updated += newUpdates;
-			if (!firstCrawl) {
-				// Full-snapshot deletion needs every fetched key; a first crawl has no prior rows to delete.
+			if (!dedupOnly) {
+				// Full-snapshot deletion needs every fetched key; a first crawl has no prior rows to
+				// delete and a resumed full crawl never runs the deletion scan.
 				for (FetchedResource fr : batch) {
 					seenKeys.add(fr.key());
 				}
@@ -158,6 +175,10 @@ public class CrawlPersistenceService {
 
 		@Override
 		public PersistCounts finishFullSnapshot() {
+			if (resumed) {
+				throw new IllegalStateException(
+						"A resumed session cannot detect full-snapshot deletions; finish with finishIncremental");
+			}
 			// A first crawl has no prior rows, so nothing can be deleted.
 			List<String> deletedKeys = startCount > 0 ? scanDeletedKeys() : new ArrayList<>();
 			return finish(deletedKeys);

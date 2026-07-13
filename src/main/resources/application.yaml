@@ -530,7 +530,7 @@ api:
   page-delay-ms: 0
   crawl-concurrency: 4  # parallel paging chains per crawl; 1 disables
   retention-per-job: 2
-  resume-crawls-on-startup: ${API_RESUME_CRAWLS_ON_STARTUP:false}
+  resume-crawls-on-startup: ${API_RESUME_CRAWLS_ON_STARTUP:true}
   # public-base-url: https://directory.example.org   # override for reverse-proxy deployments
   # UI server picker, served via /crawler/config.js. Set APP_FHIR_SERVERS to a JSON array
   # such as '[{"name":"Local Server","url":"http://localhost:8080/fhir"}]'.

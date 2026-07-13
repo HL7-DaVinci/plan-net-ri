@@ -82,6 +82,42 @@ class CrawlEventServiceTest {
 	}
 
 	@Test
+	void settledProgressMarkerClearsItsTrackInsteadOfLingering() {
+		List<CrawlStep> saved = new ArrayList<>();
+		CrawlEventService events = new CrawlEventService(stepRepo(saved));
+		events.start("batch-1");
+
+		events.publish(
+				"batch-1",
+				null,
+				null,
+				1,
+				StepEvent.progress("SEARCH", "Searching Location window...").withTrack("Location [1/7]"));
+		events.publish(
+				"batch-1",
+				null,
+				null,
+				2,
+				StepEvent.progress("SEARCH", "Searching Location window...").withTrack("Location [2/7]"));
+
+		// A finished window's resolution is broadcast-only (asProgress) but carries its HTTP
+		// result; it must end the track rather than replay to late subscribers forever.
+		events.publish(
+				"batch-1",
+				null,
+				null,
+				3,
+				StepEvent.request("SEARCH", "Searched Location window (288 pages)", "GET", "http://x", 200, 5L, 1L, 10)
+						.withTrack("Location [1/7]")
+						.asProgress());
+
+		assertTrue(saved.isEmpty(), "a settled marker is still never persisted");
+		Map<String, CrawlStepResponse> tracks = lastProgress(events, "batch-1");
+		assertEquals(1, tracks.size());
+		assertTrue(tracks.containsKey("Location [2/7]"), "only the still-running window's marker survives");
+	}
+
+	@Test
 	void persistedStepWithNullTrackClearsEveryTrack() {
 		List<CrawlStep> saved = new ArrayList<>();
 		CrawlEventService events = new CrawlEventService(stepRepo(saved));

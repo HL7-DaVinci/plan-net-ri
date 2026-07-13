@@ -1,11 +1,16 @@
 package org.hl7.davinci.api.service;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlJob;
+import org.hl7.davinci.api.entity.CrawlRun;
 import org.hl7.davinci.api.entity.CrawlStrategy;
 import org.hl7.davinci.api.entity.ManifestRecord;
+import org.hl7.davinci.api.entity.RunStatus;
 import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
+import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.repository.ManifestRepository;
 import org.hl7.davinci.common.PathUtils;
 import org.hl7.davinci.common.PlanNetTypes;
@@ -27,10 +32,16 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Stream;
 import java.util.zip.GZIPInputStream;
 
@@ -43,19 +54,45 @@ public class ManifestService {
 	private static final String NDJSON_SUFFIX = ".ndjson";
 	private static final String GZ_SUFFIX = ".ndjson.gz";
 
+	private static final ObjectMapper MAPPER = new ObjectMapper();
+
+	/** Manifest ids whose snapshot files are being re-exported; single-flight per manifest. */
+	private final Set<String> regenerating = ConcurrentHashMap.newKeySet();
+
 	private final NdjsonExportService ndjson;
 	private final ManifestRepository manifestRepo;
+	private final CrawlRunRepository runRepo;
 	private final ApiProperties props;
 
-	public ManifestService(NdjsonExportService ndjson, ManifestRepository manifestRepo, ApiProperties props) {
+	public ManifestService(
+			NdjsonExportService ndjson,
+			ManifestRepository manifestRepo,
+			CrawlRunRepository runRepo,
+			ApiProperties props) {
 		this.ndjson = ndjson;
 		this.manifestRepo = manifestRepo;
+		this.runRepo = runRepo;
 		this.props = props;
 	}
 
 	/** Write the NDJSON snapshot and persist a manifest row for it. */
 	public ManifestRecord createManifest(
 			CrawlJob job, String batchId, String windowSince, List<String> serverKeys, long operationStartNanos) {
+		return createManifest(job, batchId, windowSince, serverKeys, operationStartNanos, 0);
+	}
+
+	/**
+	 * As above; {@code carryoverMs} is crawl time absorbed from paused or crash-interrupted
+	 * segments of this crawl, so the recorded build time covers the whole effort, matching the
+	 * completed run's duration.
+	 */
+	public ManifestRecord createManifest(
+			CrawlJob job,
+			String batchId,
+			String windowSince,
+			List<String> serverKeys,
+			long operationStartNanos,
+			long carryoverMs) {
 		String manifestId = UUID.randomUUID().toString();
 		NdjsonExportService.SnapshotResult snapshot = ndjson.writeSnapshot(manifestId, serverKeys);
 
@@ -72,11 +109,82 @@ public class ManifestService {
 		manifest.setTotalResources(snapshot.totalResources());
 		manifest.setStorageDir(snapshot.storageDir());
 		manifest.setWindowSince(windowSince);
-		manifest.setBuildDurationMs((System.nanoTime() - operationStartNanos) / 1_000_000);
+		manifest.setBuildDurationMs((System.nanoTime() - operationStartNanos) / 1_000_000 + carryoverMs);
 
 		ManifestRecord saved = manifestRepo.save(manifest);
 		pruneOldManifests(job.getId());
 		return saved;
+	}
+
+	/**
+	 * Re-export a manifest's snapshot files from the current aggregate on a background worker;
+	 * returns false when a regeneration for it is already in flight. Meant for recovering a
+	 * manifest whose files were lost (e.g. non-persistent storage across a restart).
+	 */
+	public boolean startRegeneration(ManifestRecord manifest, List<String> serverKeys) {
+		if (!regenerating.add(manifest.getId())) {
+			return false;
+		}
+		Thread worker = new Thread(
+				() -> {
+					try {
+						regenerate(manifest, serverKeys);
+					} catch (Exception e) {
+						ourLog.error("Regeneration of manifest {} failed: {}", manifest.getId(), e.getMessage(), e);
+					} finally {
+						regenerating.remove(manifest.getId());
+					}
+				},
+				"manifest-regen");
+		worker.setDaemon(true);
+		worker.start();
+		return true;
+	}
+
+	public boolean isRegenerating(String manifestId) {
+		return regenerating.contains(manifestId);
+	}
+
+	/**
+	 * The re-export reflects the aggregate as it is NOW, which may have advanced past what the
+	 * manifest originally snapshotted, so totalResources is updated to match and
+	 * transactionTime becomes the time that data was actually acquired (the latest completed
+	 * run across the servers), never the regeneration time. Files build in a temp directory
+	 * and move into place at the end: the manifest row
+	 * exists throughout, and a render must never see half-written gzip files (a truncated
+	 * gzip fails the line-count fallback). A crash strands only the temp directory, which the
+	 * startup orphan sweep reclaims like any other row-less directory.
+	 */
+	public ManifestRecord regenerate(ManifestRecord manifest, List<String> serverKeys) throws IOException {
+		ourLog.info("Regenerating snapshot files for manifest {} from the aggregate", manifest.getId());
+		Path tempDir = Path.of(props.getStoragePath(), manifest.getId() + ".regen");
+		PathUtils.deleteRecursively(tempDir);
+		NdjsonExportService.SnapshotResult snapshot = ndjson.writeSnapshot(manifest.getId() + ".regen", serverKeys);
+		Path finalDir = Path.of(props.getStoragePath(), manifest.getId());
+		PathUtils.deleteRecursively(finalDir);
+		Files.move(Path.of(snapshot.storageDir()), finalDir);
+		manifest.setStorageDir(finalDir.toString());
+		manifest.setTotalResources(snapshot.totalResources());
+		latestAcquisitionTime(serverKeys).ifPresent(manifest::setTransactionTime);
+		ManifestRecord saved = manifestRepo.save(manifest);
+		ourLog.info(
+				"Regenerated manifest {}: {} resources in {}", manifest.getId(), snapshot.totalResources(), finalDir);
+		return saved;
+	}
+
+	/**
+	 * When the aggregate's data for these servers was last acquired: the most recent completed
+	 * run start across them, from any job since crawl_resource is server-scoped. Run start is
+	 * the aggregate's completeness frontier, the same anchor the incremental _since uses.
+	 * Empty when no completed run survives, in which case the caller keeps the existing time.
+	 */
+	private Optional<Instant> latestAcquisitionTime(List<String> serverKeys) {
+		return serverKeys.stream()
+				.map(key -> runRepo.findTop1ByServerKeyAndStatusOrderByStartedAtDesc(key, RunStatus.COMPLETED))
+				.flatMap(Optional::stream)
+				.map(CrawlRun::getStartedAt)
+				.filter(Objects::nonNull)
+				.max(Comparator.naturalOrder());
 	}
 
 	/**
@@ -202,7 +310,8 @@ public class ManifestService {
 					String.valueOf(m.getGeneratedAt()),
 					m.getTotalResources(),
 					m.getWindowSince(),
-					m.getBuildDurationMs()));
+					m.getBuildDurationMs(),
+					isRegenerating(m.getId())));
 		}
 		return summaries;
 	}
@@ -212,6 +321,8 @@ public class ManifestService {
 		List<ManifestJson.OutputEntry> output = new ArrayList<>();
 		Path dir = Path.of(manifest.getStorageDir());
 		if (Files.isDirectory(dir)) {
+			Map<String, Long> counts = readCounts(dir);
+			boolean countedByHand = false;
 			try (Stream<Path> files = Files.list(dir)) {
 				List<Path> snapshotFiles = files.filter(p -> {
 							String name = p.toString();
@@ -224,12 +335,21 @@ public class ManifestService {
 					String type = fileName.endsWith(GZ_SUFFIX)
 							? fileName.substring(0, fileName.length() - GZ_SUFFIX.length())
 							: fileName.substring(0, fileName.length() - NDJSON_SUFFIX.length());
+					Long count = counts.get(type);
+					if (count == null) {
+						count = countLines(file);
+						counts.put(type, count);
+						countedByHand = true;
+					}
 					// The served name is always the logical .ndjson; the .gz is transparent to clients.
 					String url = baseUrl + "/api/manifests/" + manifest.getId() + "/files/" + type + NDJSON_SUFFIX;
-					output.add(new ManifestJson.OutputEntry(type, url, countLines(file)));
+					output.add(new ManifestJson.OutputEntry(type, url, count));
 				}
 			} catch (IOException e) {
 				throw new UncheckedIOException("Failed to read snapshot " + manifest.getId(), e);
+			}
+			if (countedByHand) {
+				writeCounts(dir, counts);
 			}
 		}
 		return new ManifestJson(
@@ -238,6 +358,32 @@ public class ManifestService {
 				manifest.isRequiresAccessToken(),
 				output,
 				List.of());
+	}
+
+	/** The per-type counts recorded at export time; empty when missing or unreadable. */
+	private Map<String, Long> readCounts(Path dir) {
+		Path file = dir.resolve(NdjsonExportService.COUNTS_FILE);
+		if (Files.isRegularFile(file)) {
+			try {
+				return MAPPER.readValue(file.toFile(), new TypeReference<TreeMap<String, Long>>() {});
+			} catch (IOException e) {
+				ourLog.warn("Unreadable {} in snapshot {}: {}", NdjsonExportService.COUNTS_FILE, dir, e.getMessage());
+			}
+		}
+		return new TreeMap<>();
+	}
+
+	/**
+	 * Self-heal a snapshot written before counts were recorded, so counting its lines by
+	 * decompressing every file happens at most once. Best-effort: failing to write only means
+	 * the next render counts again.
+	 */
+	private void writeCounts(Path dir, Map<String, Long> counts) {
+		try {
+			Files.writeString(dir.resolve(NdjsonExportService.COUNTS_FILE), MAPPER.writeValueAsString(counts));
+		} catch (IOException e) {
+			ourLog.warn("Failed to write {} in snapshot {}: {}", NdjsonExportService.COUNTS_FILE, dir, e.getMessage());
+		}
 	}
 
 	private long countLines(Path file) throws IOException {

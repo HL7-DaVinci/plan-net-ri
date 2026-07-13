@@ -15,6 +15,7 @@ public record JobResponse(
 		boolean enabled,
 		boolean running,
 		String currentBatchId,
+		boolean resumable,
 		String lastRunAt,
 		String nextRunAt,
 		String createdAt) {}

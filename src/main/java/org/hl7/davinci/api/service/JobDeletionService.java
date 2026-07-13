@@ -1,6 +1,7 @@
 package org.hl7.davinci.api.service;
 
 import org.hl7.davinci.api.entity.CrawlJob;
+import org.hl7.davinci.api.repository.CrawlCheckpointRepository;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
@@ -24,6 +25,7 @@ public class JobDeletionService {
 	private final CrawlRunRepository runRepo;
 	private final CrawlStepRepository stepRepo;
 	private final CrawlResourceRepository resourceRepo;
+	private final CrawlCheckpointRepository checkpointRepo;
 	private final ManifestService manifestService;
 	private final CrawlService crawlService;
 
@@ -32,12 +34,14 @@ public class JobDeletionService {
 			CrawlRunRepository runRepo,
 			CrawlStepRepository stepRepo,
 			CrawlResourceRepository resourceRepo,
+			CrawlCheckpointRepository checkpointRepo,
 			ManifestService manifestService,
 			CrawlService crawlService) {
 		this.jobRepo = jobRepo;
 		this.runRepo = runRepo;
 		this.stepRepo = stepRepo;
 		this.resourceRepo = resourceRepo;
+		this.checkpointRepo = checkpointRepo;
 		this.manifestService = manifestService;
 		this.crawlService = crawlService;
 	}
@@ -62,6 +66,7 @@ public class JobDeletionService {
 			stepRepo.deleteByBatchIdIn(batchIds);
 		}
 		runRepo.deleteByJobId(jobId);
+		checkpointRepo.deleteByJobId(jobId);
 		jobRepo.deleteById(jobId);
 		deleteOrphanedServerResources(jobId, serversOfJob);
 	}

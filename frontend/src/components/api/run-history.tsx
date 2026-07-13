@@ -153,7 +153,9 @@ function RunHistoryContent({ jobId }: RunHistoryProps) {
                         : "n/a"}
                     </td>
                     <td className="py-2 pr-3 text-right tabular-nums">
-                      {formatDuration(run.durationMs)}
+                      {run.status === "RUNNING"
+                        ? "in progress"
+                        : formatDuration(run.durationMs)}
                     </td>
                     <td className="py-2 pr-3">
                       {run.historySupported === null

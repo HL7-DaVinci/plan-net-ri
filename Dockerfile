@@ -52,6 +52,7 @@ RUN mvn clean install -DskipTests -Djdk.lang.Process.launchMechanism=vfork
 FROM build-hapi AS build-distroless
 RUN mvn package -DskipTests spring-boot:repackage -Pboot
 RUN mkdir /app && cp /tmp/hapi-fhir-jpaserver-starter/target/ROOT.war /app/main.war
+RUN mkdir -p /data/crawler /data/publish
 
 COPY src/main/java/HealthCheck.java /app/HealthCheck.java
 RUN javac /app/HealthCheck.java
@@ -67,11 +68,15 @@ FROM gcr.io/distroless/java21-debian13:nonroot AS default
 USER 65532:65532
 
 COPY --chown=nonroot:nonroot --from=build-distroless /app /app
+COPY --chown=nonroot:nonroot --from=build-distroless /data /data
 COPY --chown=nonroot:nonroot --from=build-hapi /tmp/hapi-fhir-jpaserver-starter/opentelemetry-javaagent.jar /app
 
 WORKDIR /app
 
 # Raise the heap ceiling above the 25% default; exit on OOM. Override with -e JAVA_TOOL_OPTIONS.
 ENV JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=75.0 -XX:+ExitOnOutOfMemoryError"
+
+ENV API_STORAGE_PATH="/data/crawler" \
+    PUBLISH_STORAGE_PATH="/data/publish"
 
 ENTRYPOINT ["java", "--class-path", "/app/main.war", "-Dloader.path=main.war!/WEB-INF/classes/,main.war!/WEB-INF/,/app/extra-classes", "org.springframework.boot.loader.PropertiesLauncher"]

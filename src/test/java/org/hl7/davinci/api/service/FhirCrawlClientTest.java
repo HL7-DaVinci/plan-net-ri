@@ -1639,6 +1639,93 @@ class FhirCrawlClientTest {
 		}
 	}
 
+	@Test
+	void checkpointSinkReceivesTheFlushedWatermarkAndFloorsShiftTheStart() {
+		String floor = "2026-02-01T00:00:00Z";
+		String t2 = "2026-03-01T00:00:00.000Z";
+		java.util.List<String> urls = java.util.Collections.synchronizedList(new ArrayList<>());
+		java.util.Deque<org.hl7.fhir.r4.model.Bundle> pages =
+				new java.util.ArrayDeque<>(List.of(pageOf(false, "a", t2)));
+
+		FhirCrawlClient client = new FhirCrawlClient(FhirContext.forR4(), new ObjectMapper(), props()) {
+			@Override
+			ca.uhn.fhir.rest.client.api.IGenericClient newClient(String serverUrl) {
+				return null;
+			}
+
+			@Override
+			org.hl7.fhir.r4.model.Bundle searchByUrl(ca.uhn.fhir.rest.client.api.IGenericClient c, String url) {
+				urls.add(url);
+				if (!url.startsWith("Organization") || pages.isEmpty()) {
+					return new org.hl7.fhir.r4.model.Bundle();
+				}
+				return pages.poll();
+			}
+		};
+
+		java.util.List<String> checkpoints = new ArrayList<>();
+		client.searchTypesByLastUpdated(
+				"http://x",
+				"s",
+				10,
+				null,
+				new FhirCrawlClient.ResumeContext(
+						Map.of("Organization", floor), (type, watermark) -> checkpoints.add(type + "@" + watermark)),
+				ev -> {},
+				batch -> {});
+
+		assertTrue(
+				urls.stream().anyMatch(u -> u.startsWith("Organization") && u.contains("ge2026-02-01")),
+				"the type resumes from its checkpoint floor instead of refetching from the start");
+		assertEquals(
+				List.of("Organization@" + t2),
+				checkpoints,
+				"the flushed page's watermark is checkpointed exactly once; empty types checkpoint nothing");
+	}
+
+	@Test
+	void partitionedPlanningCountsOnlyAboveTheCheckpointFloor() {
+		String floor = "2026-02-01T00:00:00Z";
+		java.util.List<String> countUrls = java.util.Collections.synchronizedList(new ArrayList<>());
+
+		FhirCrawlClient client = new FhirCrawlClient(FhirContext.forR4(), new ObjectMapper(), props()) {
+			@Override
+			ca.uhn.fhir.rest.client.api.IGenericClient newClient(String serverUrl) {
+				return null;
+			}
+
+			@Override
+			org.hl7.fhir.r4.model.Bundle searchByUrl(ca.uhn.fhir.rest.client.api.IGenericClient c, String url) {
+				if (url.contains("_summary=count")) {
+					countUrls.add(url);
+					org.hl7.fhir.r4.model.Bundle counted = new org.hl7.fhir.r4.model.Bundle();
+					counted.setTotal(0);
+					return counted;
+				}
+				return new org.hl7.fhir.r4.model.Bundle();
+			}
+		};
+
+		client.searchTypesPartitioned(
+				"http://x",
+				"s",
+				10,
+				null,
+				new FhirCrawlClient.ServerTime("2026-07-01T00:00:00.000Z", "date-header"),
+				new FhirCrawlClient.ResumeContext(Map.of("Organization", floor), (type, watermark) -> {}),
+				ev -> {},
+				batch -> {});
+
+		assertTrue(
+				countUrls.stream().anyMatch(u -> u.startsWith("Organization") && u.contains("ge2026-02-01")),
+				"the checkpointed type counts only the uncrawled remainder");
+		assertTrue(
+				countUrls.stream()
+						.filter(u -> !u.startsWith("Organization"))
+						.noneMatch(u -> u.contains("_lastUpdated")),
+				"types without a checkpoint still count unbounded on a first crawl");
+	}
+
 	private static org.hl7.fhir.r4.model.Bundle pageOf(boolean hasNext, String... idThenLastUpdated) {
 		org.hl7.fhir.r4.model.Bundle bundle = new org.hl7.fhir.r4.model.Bundle();
 		for (int i = 0; i < idThenLastUpdated.length; i += 2) {

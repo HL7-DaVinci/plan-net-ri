@@ -113,7 +113,11 @@ public class ApiJobController {
 	public JobResponse pause(@PathVariable("id") String id) {
 		CrawlJob job = requireJob(id);
 		job.setEnabled(false);
-		return toResponse(jobRepo.save(job));
+		JobResponse response = toResponse(jobRepo.save(job));
+		// An in-flight run stops gracefully: it records as PAUSED and keeps its checkpoints,
+		// so resume (or the next run) continues where it left off.
+		crawlService.pauseJob(id);
+		return response;
 	}
 
 	@PostMapping("/jobs/{id}/resume")
@@ -121,7 +125,17 @@ public class ApiJobController {
 		CrawlJob job = requireJob(id);
 		job.setEnabled(true);
 		job.setNextRunAt(CronSupport.nextRun(job.getCronExpression()));
-		return toResponse(jobRepo.save(job));
+		JobResponse response = toResponse(jobRepo.save(job));
+		// A job paused (or interrupted) mid-crawl left checkpoints; continue that crawl now
+		// rather than waiting for the next scheduled tick.
+		if (crawlService.isResumable(id)) {
+			try {
+				crawlService.triggerAsync(job);
+			} catch (JobAlreadyRunningException ignored) {
+				// Already running means the crawl is already being continued.
+			}
+		}
+		return response;
 	}
 
 	@GetMapping("/runs")
@@ -201,6 +215,7 @@ public class ApiJobController {
 				job.isEnabled(),
 				job.isRunning(),
 				crawlService.getActiveBatchId(job.getId()),
+				crawlService.isResumable(job.getId()),
 				str(job.getLastRunAt()),
 				str(job.getNextRunAt()),
 				str(job.getCreatedAt()));

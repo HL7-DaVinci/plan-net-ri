@@ -4,12 +4,14 @@ import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PreDestroy;
 import org.hl7.davinci.api.config.ApiProperties;
+import org.hl7.davinci.api.entity.CrawlCheckpoint;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlMode;
 import org.hl7.davinci.api.entity.CrawlRun;
 import org.hl7.davinci.api.entity.CrawlStrategy;
 import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.entity.RunStatus;
+import org.hl7.davinci.api.repository.CrawlCheckpointRepository;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.slf4j.Logger;
@@ -20,6 +22,7 @@ import org.springframework.stereotype.Service;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -33,8 +36,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.RejectedExecutionException;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 /** Orchestrates a crawl: fetch per server (outside any tx), persist, and record a run. */
 @Service
@@ -48,6 +53,7 @@ public class CrawlService {
 	private final CrawlEventService events;
 	private final CrawlJobRepository jobRepo;
 	private final CrawlRunRepository runRepo;
+	private final CrawlCheckpointRepository checkpointRepo;
 	private final ObjectMapper objectMapper;
 	private final ApiProperties props;
 
@@ -60,8 +66,14 @@ public class CrawlService {
 	/** Jobs whose in-flight run was cancelled; the worker suppresses all further writes. */
 	private final Set<String> cancelled = ConcurrentHashMap.newKeySet();
 
+	/** Jobs whose in-flight run was paused; the run records as PAUSED and keeps its checkpoints. */
+	private final Set<String> paused = ConcurrentHashMap.newKeySet();
+
 	/** Background workers for /run and scheduled crawls so callers return immediately. */
 	private final ExecutorService executor;
+
+	/** Set once at process shutdown; workers then leave the running flag for startup recovery. */
+	private volatile boolean shuttingDown;
 
 	public CrawlService(
 			FhirCrawlClient client,
@@ -70,6 +82,7 @@ public class CrawlService {
 			CrawlEventService events,
 			CrawlJobRepository jobRepo,
 			CrawlRunRepository runRepo,
+			CrawlCheckpointRepository checkpointRepo,
 			ObjectMapper objectMapper,
 			ApiProperties props) {
 		this.client = client;
@@ -78,6 +91,7 @@ public class CrawlService {
 		this.events = events;
 		this.jobRepo = jobRepo;
 		this.runRepo = runRepo;
+		this.checkpointRepo = checkpointRepo;
 		this.objectMapper = objectMapper;
 		this.props = props;
 		AtomicInteger counter = new AtomicInteger();
@@ -88,9 +102,25 @@ public class CrawlService {
 		});
 	}
 
+	/**
+	 * Process shutdown is an implicit pause: in-flight runs record as PAUSED with the counts
+	 * and checkpoints they reached, and the jobs' running flags deliberately stay set so
+	 * {@link CrawlStartupRecovery} re-triggers them on the next start. A worker that outlives
+	 * the wait behaves like a crash (a dangling RUNNING row), which startup recovery also
+	 * converts and resumes.
+	 */
 	@PreDestroy
-	void shutdown() {
+	public void shutdown() {
+		shuttingDown = true;
+		paused.addAll(inFlight.keySet());
 		executor.shutdownNow();
+		try {
+			if (!executor.awaitTermination(30, TimeUnit.SECONDS)) {
+				ourLog.warn("Crawl workers still running at shutdown; their runs will recover as crash segments");
+			}
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
 	}
 
 	/**
@@ -112,10 +142,14 @@ public class CrawlService {
 					} catch (Exception e) {
 						ourLog.error("Crawl failed for job {}: {}", job.getId(), e.getMessage(), e);
 					} finally {
-						markRunning(job.getId(), false);
+						// On shutdown the flag stays set so startup recovery re-triggers the job.
+						if (!shuttingDown) {
+							markRunning(job.getId(), false);
+						}
 						inFlight.remove(job.getId());
 						tasks.remove(job.getId());
 						cancelled.remove(job.getId());
+						paused.remove(job.getId());
 					}
 				},
 				null);
@@ -142,12 +176,37 @@ public class CrawlService {
 			return;
 		}
 		cancelled.add(jobId);
+		paused.remove(jobId);
 		Future<?> task = tasks.remove(jobId);
 		if (task != null) {
 			task.cancel(true);
 		}
 		markRunning(jobId, false);
 		inFlight.remove(jobId);
+	}
+
+	/**
+	 * Gracefully stop an in-flight run so it can be resumed later: the worker is interrupted,
+	 * the run records as PAUSED with the counts it reached, and its checkpoints are retained.
+	 * Unlike {@link #cancelJob} nothing is suppressed; the run row and a PAUSED step are written.
+	 * Returns false when the job is idle.
+	 */
+	public boolean pauseJob(String jobId) {
+		if (inFlight.get(jobId) == null) {
+			return false;
+		}
+		paused.add(jobId);
+		Future<?> task = tasks.get(jobId);
+		if (task != null) {
+			task.cancel(true);
+		}
+		ourLog.info("Pause requested for job {}", jobId);
+		return true;
+	}
+
+	/** Whether an interrupted or paused crawl left checkpoints for a later run to continue from. */
+	public boolean isResumable(String jobId) {
+		return checkpointRepo.existsByJobId(jobId);
 	}
 
 	private void markRunning(String jobId, boolean running) {
@@ -195,7 +254,7 @@ public class CrawlService {
 
 			List<ServerCrawlOutcome> outcomes = new ArrayList<>();
 			for (ServerScope server : servers) {
-				if (cancelled.contains(job.getId())) {
+				if (cancelled.contains(job.getId()) || paused.contains(job.getId())) {
 					break;
 				}
 				outcomes.add(crawlServer(job, server, batchId, seq));
@@ -204,6 +263,9 @@ public class CrawlService {
 
 			boolean allCompleted = !outcomes.isEmpty()
 					&& !cancelled.contains(job.getId())
+					// A pause between servers leaves completed outcomes; publishing then would
+					// snapshot a run the user just stopped.
+					&& !paused.contains(job.getId())
 					&& outcomes.stream().allMatch(o -> o.run().getStatus() == RunStatus.COMPLETED);
 			if (allCompleted) {
 				String windowSince = outcomes.stream()
@@ -211,8 +273,13 @@ public class CrawlService {
 						.filter(Objects::nonNull)
 						.min(Comparator.naturalOrder())
 						.orElse(null);
-				ManifestRecord manifest =
-						manifestService.createManifest(job, batchId, windowSince, serverKeys, operationStartNanos);
+				// Time absorbed from paused or crash-interrupted segments; without it the manifest's
+				// build time would cover only the final segment while the run row shows the whole crawl.
+				long carryoverMs = outcomes.stream()
+						.mapToLong(ServerCrawlOutcome::carryoverMs)
+						.sum();
+				ManifestRecord manifest = manifestService.createManifest(
+						job, batchId, windowSince, serverKeys, operationStartNanos, carryoverMs);
 				events.publish(
 						batchId,
 						null,
@@ -227,7 +294,7 @@ public class CrawlService {
 						manifest.getTotalResources(),
 						manifest.getBuildDurationMs());
 			}
-			if (!cancelled.contains(job.getId())) {
+			if (!cancelled.contains(job.getId()) && !paused.contains(job.getId())) {
 				events.publish(batchId, null, null, seq.incrementAndGet(), StepEvent.info("DONE", "Crawl complete"));
 				ourLog.info("Crawl complete");
 			}
@@ -240,7 +307,7 @@ public class CrawlService {
 		}
 	}
 
-	private record ServerCrawlOutcome(CrawlRun run, String sinceUsed) {}
+	private record ServerCrawlOutcome(CrawlRun run, String sinceUsed, long carryoverMs) {}
 
 	private ServerCrawlOutcome crawlServer(CrawlJob job, ServerScope server, String batchId, AtomicInteger seq) {
 		String serverKey = normalizeServerKey(server.url());
@@ -250,6 +317,14 @@ public class CrawlService {
 
 		String since = incrementalSince(job, serverKey);
 		CrawlMode mode = since != null ? CrawlMode.INCREMENTAL : CrawlMode.FULL;
+		// The prior segment of a paused crawl: the finishing run absorbs its numbers so the
+		// completed row reads as the whole crawl, not just the part since the last resume.
+		CrawlRun pausedSegment = runRepo.findTop1ByJobIdAndServerKeyOrderByStartedAtDesc(job.getId(), serverKey)
+				.filter(r -> r.getStatus() == RunStatus.PAUSED)
+				.orElse(null);
+		FhirCrawlClient.ResumeContext resume = new FhirCrawlClient.ResumeContext(
+				loadResumeFloors(job.getId(), serverKey),
+				(type, watermark) -> saveCheckpoint(job, serverKey, type, watermark));
 		ourLog.info("Server {}: {} crawl starting", serverLabel, mode);
 
 		CrawlRun run = new CrawlRun();
@@ -260,6 +335,12 @@ public class CrawlService {
 		run.setServerLabel(serverLabel);
 		run.setMode(mode);
 		run.setStartedAt(Instant.now());
+		run.setStatus(RunStatus.RUNNING);
+		if (!cancelled.contains(job.getId())) {
+			// Persisted up front so a kill mid-crawl leaves evidence; startup recovery converts a
+			// workerless RUNNING row to PAUSED and the resumed run absorbs its elapsed time.
+			runRepo.save(run);
+		}
 
 		// A cancelled run stops publishing so it cannot repopulate steps the delete just removed.
 		// Transient progress markers do not consume a sequence number, keeping the persisted
@@ -299,24 +380,29 @@ public class CrawlService {
 
 			if (!crawled) {
 				switch (strategy) {
+						// Page-link paging has no restart-stable cursor, so SEARCH neither consumes
+						// nor writes checkpoints.
 					case SEARCH -> crawlSearch(
-							(u, k, ps, snc, anc, st, rs) -> client.searchTypes(u, k, ps, snc, st, rs),
+							(u, k, ps, snc, anc, rsm, st, rs) -> client.searchTypes(u, k, ps, snc, st, rs),
 							mode,
 							server,
 							serverKey,
 							serverLabel,
 							since,
 							anchor,
+							FhirCrawlClient.ResumeContext.NONE,
 							run,
 							sink);
 					case SEARCH_LAST_UPDATED -> crawlSearch(
-							(u, k, ps, snc, anc, st, rs) -> client.searchTypesByLastUpdated(u, k, ps, snc, st, rs),
+							(u, k, ps, snc, anc, rsm, st, rs) ->
+									client.searchTypesByLastUpdated(u, k, ps, snc, rsm, st, rs),
 							mode,
 							server,
 							serverKey,
 							serverLabel,
 							since,
 							anchor,
+							resume,
 							run,
 							sink);
 					case SEARCH_LAST_UPDATED_PARTITIONED -> crawlSearch(
@@ -327,6 +413,7 @@ public class CrawlService {
 							serverLabel,
 							since,
 							anchor,
+							resume,
 							run,
 							sink);
 					case BULK_EXPORT -> crawlBulkExport(server, serverKey, serverLabel, since, run, sink);
@@ -335,32 +422,45 @@ public class CrawlService {
 				}
 			}
 			run.setStatus(RunStatus.COMPLETED);
+			clearCheckpoints(job, serverKey);
 		} catch (CancellationException e) {
-			run.setStatus(RunStatus.ABORTED);
+			run.setStatus(paused.contains(job.getId()) ? RunStatus.PAUSED : RunStatus.ABORTED);
 		} catch (Exception e) {
-			ourLog.error("Crawl failed for job {} server {}: {}", job.getId(), serverKey, e.getMessage(), e);
-			run.setStatus(RunStatus.ERROR);
-			run.setError(StepEvent.clip(e.getMessage(), StepEvent.MAX_TEXT_CHARS));
-			if (run.getServerTimeAtStart() == null) {
-				run.setServerTimeAtStart(Instant.now().toString());
-			}
-			String message = "Crawl failed for " + serverLabel + ": " + e.getMessage();
-			// Server errors keep their status and raw response body so the UI can show them.
-			if (e instanceof BaseServerResponseException serverError) {
-				sink.accept(StepEvent.failure(
-						"ERROR",
-						message,
-						null,
-						null,
-						serverError.getStatusCode(),
-						null,
-						serverError.getResponseBody()));
+			if (paused.contains(job.getId())) {
+				// The pause interrupt surfaces as whatever the in-flight request threw; the run
+				// stopped on request, so it records as paused rather than failed.
+				run.setStatus(RunStatus.PAUSED);
 			} else {
-				sink.accept(StepEvent.info("ERROR", message));
+				ourLog.error("Crawl failed for job {} server {}: {}", job.getId(), serverKey, e.getMessage(), e);
+				run.setStatus(RunStatus.ERROR);
+				run.setError(StepEvent.clip(e.getMessage(), StepEvent.MAX_TEXT_CHARS));
+				if (run.getServerTimeAtStart() == null) {
+					run.setServerTimeAtStart(Instant.now().toString());
+				}
+				String message = "Crawl failed for " + serverLabel + ": " + e.getMessage();
+				// Server errors keep their status and raw response body so the UI can show them.
+				if (e instanceof BaseServerResponseException serverError) {
+					sink.accept(StepEvent.failure(
+							"ERROR",
+							message,
+							null,
+							null,
+							serverError.getStatusCode(),
+							null,
+							serverError.getResponseBody()));
+				} else {
+					sink.accept(StepEvent.info("ERROR", message));
+				}
 			}
+		}
+		if (run.getStatus() == RunStatus.PAUSED) {
+			sink.accept(StepEvent.info("PAUSED", "Crawl paused; progress is checkpointed and resumes on the next run"));
 		}
 
 		run.setDurationMs((System.nanoTime() - startNanos) / 1_000_000);
+		if (pausedSegment != null) {
+			absorbSegment(run, pausedSegment);
+		}
 		ourLog.info(
 				"Server {}: {} in {} ms (+{} ~{} -{}, total {})",
 				serverLabel,
@@ -374,7 +474,10 @@ public class CrawlService {
 			runRepo.save(run);
 		}
 		// run.getMode(), not the local mode: a bulk run whose _since was rejected flipped to FULL.
-		return new ServerCrawlOutcome(run, run.getMode() == CrawlMode.INCREMENTAL ? since : null);
+		return new ServerCrawlOutcome(
+				run,
+				run.getMode() == CrawlMode.INCREMENTAL ? since : null,
+				pausedSegment != null ? pausedSegment.getDurationMs() : 0);
 	}
 
 	/** Mirror a step to the application log: failures at ERROR, transient progress at DEBUG, else INFO. */
@@ -407,6 +510,65 @@ public class CrawlService {
 	}
 
 	/**
+	 * Fold a prior paused segment's progress into this run. Every segment already absorbed its
+	 * own predecessor when it finished, so only the latest one is added and chains of repeated
+	 * pause/resume never double count.
+	 */
+	private static void absorbSegment(CrawlRun run, CrawlRun segment) {
+		run.setDurationMs(run.getDurationMs() + segment.getDurationMs());
+		run.setAdded(run.getAdded() + segment.getAdded());
+		run.setUpdated(run.getUpdated() + segment.getUpdated());
+		run.setDeleted(run.getDeleted() + segment.getDeleted());
+		run.setRecords(run.getRecords() + segment.getRecords());
+		run.setBytes(run.getBytes() + segment.getBytes());
+		run.setRequests(run.getRequests() + segment.getRequests());
+		run.setPages(run.getPages() + segment.getPages());
+	}
+
+	/** Per-type resume floors left by an interrupted run; empty when the last run finished cleanly. */
+	private Map<String, String> loadResumeFloors(String jobId, String serverKey) {
+		Map<String, String> floors = new HashMap<>();
+		for (CrawlCheckpoint cp : checkpointRepo.findByJobIdAndServerKey(jobId, serverKey)) {
+			if (cp.getWatermark() != null) {
+				floors.put(cp.getResourceType(), cp.getWatermark());
+			}
+		}
+		return floors;
+	}
+
+	/**
+	 * Upsert one type's advancing frontier. A checkpoint write failure only costs resume
+	 * granularity, so it must never fail the crawl that is making real progress.
+	 */
+	private void saveCheckpoint(CrawlJob job, String serverKey, String type, String watermark) {
+		if (cancelled.contains(job.getId())) {
+			return;
+		}
+		try {
+			CrawlCheckpoint cp = new CrawlCheckpoint();
+			cp.setKey(CrawlCheckpoint.key(job.getId(), serverKey, type));
+			cp.setJobId(job.getId());
+			cp.setServerKey(serverKey);
+			cp.setResourceType(type);
+			cp.setWatermark(watermark);
+			cp.setUpdatedAt(Instant.now());
+			checkpointRepo.save(cp);
+		} catch (Exception e) {
+			ourLog.warn("Failed to save crawl checkpoint {}/{} at {}: {}", serverKey, type, watermark, e.getMessage());
+		}
+	}
+
+	/** Checkpoints are only for interrupted runs; a completed server crawl clears them. */
+	private void clearCheckpoints(CrawlJob job, String serverKey) {
+		try {
+			checkpointRepo.deleteByJobIdAndServerKey(job.getId(), serverKey);
+		} catch (Exception e) {
+			// Stale floors only widen the next run's fetch window, so log and move on.
+			ourLog.warn("Failed to clear crawl checkpoints for {} on {}: {}", job.getId(), serverKey, e.getMessage());
+		}
+	}
+
+	/**
 	 * The search half of the AUTO pecking order, probed in decreasing preference. Falls back
 	 * only on unsupported-class rejections; a transient probe failure propagates and fails
 	 * the run. HISTORY is the unprobed last resort: if it fails too, the run fails.
@@ -436,6 +598,7 @@ public class CrawlService {
 				int pageSize,
 				String since,
 				FhirCrawlClient.ServerTime anchor,
+				FhirCrawlClient.ResumeContext resume,
 				Consumer<StepEvent> steps,
 				Consumer<List<FetchedResource>> resourceSink);
 	}
@@ -448,12 +611,21 @@ public class CrawlService {
 			String serverLabel,
 			String since,
 			FhirCrawlClient.ServerTime anchor,
+			FhirCrawlClient.ResumeContext resume,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
+		if (!resume.floors().isEmpty()) {
+			String floors = resume.floors().entrySet().stream()
+					.sorted(Map.Entry.comparingByKey())
+					.map(e -> e.getKey() + " from " + e.getValue())
+					.collect(Collectors.joining(", "));
+			sink.accept(StepEvent.info("RESUME", "Resuming an interrupted crawl from checkpoints: " + floors));
+			ourLog.info("Resuming an interrupted crawl of {} from checkpoints: {}", serverLabel, floors);
+		}
 		if (mode == CrawlMode.INCREMENTAL) {
-			crawlSearchIncremental(search, server, serverKey, serverLabel, since, anchor, run, sink);
+			crawlSearchIncremental(search, server, serverKey, serverLabel, since, anchor, resume, run, sink);
 		} else {
-			crawlSearchFull(search, server, serverKey, serverLabel, anchor, run, sink);
+			crawlSearchFull(search, server, serverKey, serverLabel, anchor, resume, run, sink);
 		}
 	}
 
@@ -463,13 +635,21 @@ public class CrawlService {
 			String serverKey,
 			String serverLabel,
 			FhirCrawlClient.ServerTime anchor,
+			FhirCrawlClient.ResumeContext resume,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
-		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
+		// A resumed full crawl skips everything below the checkpoint floors, so the stream cannot
+		// feed the full-snapshot deletion scan; it finishes with a first crawl's no-deletion
+		// semantics instead (a first crawl is the only full crawl the watermark strategies see).
+		boolean resumed = !resume.floors().isEmpty();
+		CrawlPersistenceService.SnapshotSession session = resumed
+				? persistence.openResumedFullSession(serverKey, serverLabel)
+				: persistence.openSession(serverKey, serverLabel);
 		FhirCrawlClient.SearchResult result = search.run(
-				server.url(), serverKey, props.getPageSize(), null, anchor, sink, resourceSink(run, session));
+				server.url(), serverKey, props.getPageSize(), null, anchor, resume, sink, resourceSink(run, session));
 		throwIfCancelled(run);
-		CrawlPersistenceService.PersistCounts counts = session.finishFullSnapshot();
+		CrawlPersistenceService.PersistCounts counts =
+				resumed ? session.finishIncremental(List.of()) : session.finishFullSnapshot();
 
 		applyCounts(run, counts, result, 0, 0, 0);
 		run.setHistorySupported(null);
@@ -483,11 +663,12 @@ public class CrawlService {
 			String serverLabel,
 			String since,
 			FhirCrawlClient.ServerTime anchor,
+			FhirCrawlClient.ResumeContext resume,
 			CrawlRun run,
 			Consumer<StepEvent> sink) {
 		CrawlPersistenceService.SnapshotSession session = persistence.openSession(serverKey, serverLabel);
 		FhirCrawlClient.SearchResult result = search.run(
-				server.url(), serverKey, props.getPageSize(), since, anchor, sink, resourceSink(run, session));
+				server.url(), serverKey, props.getPageSize(), since, anchor, resume, sink, resourceSink(run, session));
 		throwIfCancelled(run);
 
 		DeletionScan scan = scanIncrementalDeletions(server, since, sink);
@@ -614,7 +795,7 @@ public class CrawlService {
 	}
 
 	private void throwIfCancelled(CrawlRun run) {
-		if (cancelled.contains(run.getJobId())) {
+		if (cancelled.contains(run.getJobId()) || paused.contains(run.getJobId())) {
 			throw new CancellationException();
 		}
 	}

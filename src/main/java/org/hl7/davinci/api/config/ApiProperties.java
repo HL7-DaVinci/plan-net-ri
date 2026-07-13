@@ -36,10 +36,11 @@ public class ApiProperties {
 	private int retentionPerJob = 2;
 
 	/**
-	 * On startup, clear the stale {@code running} flag on jobs left mid-crawl by a crash so they can
-	 * run again. Default false; only meaningful where the database persists across restarts (dev).
+	 * On startup, re-trigger jobs left mid-crawl by a shutdown so they resume where they left off
+	 * (the stale {@code running} flag is always cleared regardless of this flag). Only meaningful
+	 * where the database persists across restarts; a no-op on an ephemeral database.
 	 */
-	private boolean resumeCrawlsOnStartup = false;
+	private boolean resumeCrawlsOnStartup = true;
 
 	public boolean isEnabled() {
 		return enabled;

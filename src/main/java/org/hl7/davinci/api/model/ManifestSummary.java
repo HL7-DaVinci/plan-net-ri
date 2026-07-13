@@ -10,4 +10,5 @@ public record ManifestSummary(
 		String generatedAt,
 		long totalResources,
 		String windowSince,
-		long buildDurationMs) {}
+		long buildDurationMs,
+		boolean regenerating) {}

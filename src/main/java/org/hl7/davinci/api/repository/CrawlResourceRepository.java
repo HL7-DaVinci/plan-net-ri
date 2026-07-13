@@ -41,18 +41,15 @@ public interface CrawlResourceRepository extends JpaRepository<CrawlResource, St
 		return deleteByKeyRange(serverKey + "|", serverKey + "}");
 	}
 
-	@Query("select count(distinct substring(r.key, 1, locate('|', r.key) - 1)) from CrawlResource r")
-	long countDistinctServers();
-
-	@Query("select r.resourceType as resourceType, count(r) as total from CrawlResource r "
-			+ "group by r.resourceType order by r.resourceType")
-	List<TypeCountView> countByResourceType();
-
-	/** Spring Data projection: a resource type and how many of it are tracked. */
-	interface TypeCountView {
-		String getResourceType();
-
-		long getTotal();
+	/**
+	 * One (server, type) count as a primary-key range: keys are {@code serverKey|Type/id} and
+	 * '0' is the character after '/', so the range covers exactly that type's rows. This keeps
+	 * overall stats on the PK index (an index-only range count) instead of a full-table scan
+	 * over an unindexed resourceType column.
+	 */
+	default long countByServerKeyAndType(String serverKey, String resourceType) {
+		String prefix = serverKey + "|" + resourceType + "/";
+		return countByKeyRange(prefix, serverKey + "|" + resourceType + "0");
 	}
 
 	/** Diff-key projection for the given keys. */

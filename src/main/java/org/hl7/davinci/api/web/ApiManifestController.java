@@ -1,10 +1,13 @@
 package org.hl7.davinci.api.web;
 
 import org.hl7.davinci.api.config.ApiProperties;
+import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.ManifestRecord;
 import org.hl7.davinci.api.model.ManifestJson;
 import org.hl7.davinci.api.model.ManifestSummary;
+import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.ManifestRepository;
+import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.ManifestService;
 import org.hl7.davinci.common.NdjsonFiles;
 import org.springframework.http.ContentDisposition;
@@ -15,6 +18,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,12 +41,20 @@ public class ApiManifestController {
 
 	private final ManifestService manifestService;
 	private final ManifestRepository manifestRepo;
+	private final CrawlJobRepository jobRepo;
+	private final CrawlService crawlService;
 	private final ApiProperties props;
 
 	public ApiManifestController(
-			ManifestService manifestService, ManifestRepository manifestRepo, ApiProperties props) {
+			ManifestService manifestService,
+			ManifestRepository manifestRepo,
+			CrawlJobRepository jobRepo,
+			CrawlService crawlService,
+			ApiProperties props) {
 		this.manifestService = manifestService;
 		this.manifestRepo = manifestRepo;
+		this.jobRepo = jobRepo;
+		this.crawlService = crawlService;
 		this.props = props;
 	}
 
@@ -56,9 +68,34 @@ public class ApiManifestController {
 		return manifestService.render(requireManifest(id), baseUrl());
 	}
 
+	/**
+	 * Re-export a manifest's snapshot files from the tracked aggregate (e.g. after the files
+	 * were lost to non-persistent storage). Runs in the background; the summary's
+	 * {@code regenerating} flag reports progress. Rejected while the manifest's job is
+	 * crawling, since the aggregate would be mid-change.
+	 */
+	@PostMapping("/manifests/{id}/regenerate")
+	@ResponseStatus(HttpStatus.ACCEPTED)
+	public void regenerate(@PathVariable("id") String id) {
+		ManifestRecord manifest = requireManifest(id);
+		CrawlJob job = jobRepo.findById(manifest.getJobId())
+				.orElseThrow(() -> new ResponseStatusException(
+						HttpStatus.CONFLICT, "The manifest's job no longer exists, so its server scope is unknown"));
+		if (crawlService.getActiveBatchId(job.getId()) != null) {
+			throw new ResponseStatusException(HttpStatus.CONFLICT, "The manifest's job is currently crawling");
+		}
+		if (!manifestService.startRegeneration(manifest, List.copyOf(crawlService.serverKeys(job)))) {
+			throw new ResponseStatusException(HttpStatus.CONFLICT, "A regeneration is already in progress");
+		}
+	}
+
 	@DeleteMapping("/manifests/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable("id") String id) {
+		// The regeneration worker would re-save the row at the end, resurrecting the manifest.
+		if (manifestService.isRegenerating(id)) {
+			throw new ResponseStatusException(HttpStatus.CONFLICT, "A regeneration is in progress");
+		}
 		if (!manifestService.deleteManifest(id)) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Manifest not found");
 		}

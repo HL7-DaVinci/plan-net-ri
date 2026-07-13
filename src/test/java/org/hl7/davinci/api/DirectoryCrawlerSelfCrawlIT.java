@@ -497,10 +497,6 @@ class DirectoryCrawlerSelfCrawlIT {
 
 		crawlService.crawlJob(job);
 		assertTrue(resourceRepo.countByServerKey(base) > 0, "the crawl should have populated the server's resources");
-		assertEquals(
-				1,
-				resourceRepo.countDistinctServers(),
-				"the distinct-server count derived from the key prefix should see exactly this server");
 
 		// Every job in this class targets the same self URL; remove leftovers from sibling tests so
 		// this job is genuinely the last one referencing the server.

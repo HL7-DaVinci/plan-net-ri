@@ -10,8 +10,12 @@ services:
       SPRING_DATASOURCE_PASSWORD: "admin"
       SPRING_DATASOURCE_DRIVERCLASSNAME: "org.postgresql.Driver"
       SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: "ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgresDialect"
+      PUBLISH_RESET_ON_STARTUP: "false"
     ports:
       - "8080:8080"
+    volumes:
+      - plan-net-crawler:/data/crawler
+      - plan-net-publish:/data/publish
   plan-net-pg:
     image: postgres:15-alpine
     container_name: plan-net-pg
@@ -20,7 +24,11 @@ services:
       POSTGRES_DB: "hapi"
       POSTGRES_USER: "admin"
       POSTGRES_PASSWORD: "admin"
+    # ports:
+    #   - "5432:5432"
     volumes:
       - plan-net-pg:/var/lib/postgresql/data
 volumes:
   plan-net-pg:
+  plan-net-crawler:
+  plan-net-publish:

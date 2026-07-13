@@ -62,15 +62,22 @@ public class CrawlEventService {
 					event.message(),
 					event.method(),
 					event.url(),
-					null,
-					null,
-					null,
-					null,
+					event.status(),
+					event.ms(),
+					event.bytes(),
+					event.count(),
 					null,
 					serverKey,
 					event.track(),
 					String.valueOf(Instant.now()));
-			upsertProgress(batchId, trackKey, dto);
+			// A marker carrying its HTTP result is a settled resolution: the track's work just
+			// finished, so its line comes down and is not replayed to late subscribers. Only
+			// in-flight markers (no status yet) stay live.
+			if (event.status() != null) {
+				clearProgress(batchId, trackKey);
+			} else {
+				upsertProgress(batchId, trackKey, dto);
+			}
 			broadcast(batchId, "progress", dto);
 			return;
 		}

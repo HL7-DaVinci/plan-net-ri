@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import type { CrawlStep } from "@/lib/api/types";
 import {
   applyProgressEvent,
-  isSettled,
   type ProgressLines,
 } from "@/lib/crawler/progress-lines";
 import { getApiBaseUrl } from "@/lib/fhir-config";
@@ -41,6 +40,15 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
       `${getApiBaseUrl()}/api/crawl/${batchId}/stream`,
     );
 
+    // Fires on every (re)connect, and the server replays the full timeline plus one line
+    // per genuinely active track on each subscribe. Without this reset a reconnect (server
+    // restart, proxy idle timeout) duplicates the replayed steps and strands progress lines
+    // whose settled resolution was broadcast while the connection was down.
+    source.addEventListener("open", () => {
+      setSteps([]);
+      setLines(new Map());
+    });
+
     source.addEventListener("step", (event) => {
       const step = JSON.parse((event as MessageEvent).data) as CrawlStep;
       setSteps((prev) => [...prev, step]);
@@ -66,7 +74,7 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
 
   // Tick once a second while an operation is in flight so its elapsed time updates.
   useEffect(() => {
-    if (![...lines.values()].some((line) => !isSettled(line))) return;
+    if (lines.size === 0) return;
     const timer = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(timer);
   }, [lines]);
@@ -158,23 +166,10 @@ export function PlayByPlay({ batchId }: { batchId: string; jobName?: string }) {
                     <span className="text-muted-foreground">
                       {line.message}
                     </span>
-                    {isSettled(line) ? (
-                      <>
-                        <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-success" />
-                        <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
-                          {line.ms != null && `${line.ms} ms`}
-                          {line.count != null &&
-                            ` · ${line.count.toLocaleString()} resources`}
-                        </span>
-                      </>
-                    ) : (
-                      <>
-                        <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" />
-                        <span className="text-xs tabular-nums text-muted-foreground">
-                          {Math.max(0, Math.round((now - line.at) / 1000))}s
-                        </span>
-                      </>
-                    )}
+                    <Loader2 className="h-3.5 w-3.5 shrink-0 animate-spin text-muted-foreground" />
+                    <span className="text-xs tabular-nums text-muted-foreground">
+                      {Math.max(0, Math.round((now - line.at) / 1000))}s
+                    </span>
                   </span>
                   {line.url && (
                     <code className="block break-all text-xs text-muted-foreground">

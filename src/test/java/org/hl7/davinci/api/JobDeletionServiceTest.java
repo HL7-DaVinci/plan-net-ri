@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import org.hl7.davinci.api.entity.CrawlJob;
+import org.hl7.davinci.api.repository.CrawlCheckpointRepository;
 import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
@@ -30,6 +31,7 @@ class JobDeletionServiceTest {
 				runRepo(List.of("batch-1", "batch-2"), rec),
 				stepRepo(rec),
 				resourceRepo(rec),
+				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
 
@@ -38,6 +40,7 @@ class JobDeletionServiceTest {
 		assertEquals("job-1", rec.manifestsClearedFor);
 		assertEquals(List.of("batch-1", "batch-2"), rec.stepsDeletedForBatchIds);
 		assertEquals("job-1", rec.runsDeletedForJob);
+		assertEquals("job-1", rec.checkpointsDeletedForJob);
 		assertEquals("job-1", rec.jobDeleted);
 	}
 
@@ -49,6 +52,7 @@ class JobDeletionServiceTest {
 				runRepo(List.of("batch-1"), rec),
 				stepRepo(rec),
 				resourceRepo(rec),
+				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
 
@@ -69,6 +73,7 @@ class JobDeletionServiceTest {
 				runRepo(List.of(), rec),
 				stepRepo(rec),
 				resourceRepo(rec),
+				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
 
@@ -88,6 +93,7 @@ class JobDeletionServiceTest {
 				runRepo(List.of(), rec),
 				stepRepo(rec),
 				resourceRepo(rec),
+				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
 
@@ -112,6 +118,7 @@ class JobDeletionServiceTest {
 				runRepo(List.of(), rec),
 				stepRepo(rec),
 				resourceRepo(rec),
+				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec, serverKeys));
 
@@ -128,6 +135,7 @@ class JobDeletionServiceTest {
 		String manifestsClearedFor;
 		List<String> stepsDeletedForBatchIds;
 		String runsDeletedForJob;
+		String checkpointsDeletedForJob;
 		String jobDeleted;
 		final List<String> deletedServers = new ArrayList<>();
 	}
@@ -137,7 +145,7 @@ class JobDeletionServiceTest {
 	}
 
 	private static CrawlService crawlService(Recorder rec, Map<String, Set<String>> serverKeysByJob) {
-		return new CrawlService(null, null, null, null, null, null, null, null) {
+		return new CrawlService(null, null, null, null, null, null, null, null, null) {
 			@Override
 			public void cancelJob(String jobId) {
 				rec.cancelledJob = jobId;
@@ -158,7 +166,7 @@ class JobDeletionServiceTest {
 	}
 
 	private static ManifestService manifestService(Recorder rec) {
-		return new ManifestService(null, null, null) {
+		return new ManifestService(null, null, null, null) {
 			@Override
 			public int deleteManifestsForJob(String jobId) {
 				rec.manifestsClearedFor = jobId;
@@ -194,6 +202,19 @@ class JobDeletionServiceTest {
 					case "deleteByServerKey" -> {
 						rec.deletedServers.add((String) args[0]);
 						yield 0;
+					}
+					default -> throw new UnsupportedOperationException(method.getName());
+				});
+	}
+
+	private static CrawlCheckpointRepository checkpointRepo(Recorder rec) {
+		return (CrawlCheckpointRepository) Proxy.newProxyInstance(
+				CrawlCheckpointRepository.class.getClassLoader(),
+				new Class<?>[] {CrawlCheckpointRepository.class},
+				(proxy, method, args) -> switch (method.getName()) {
+					case "deleteByJobId" -> {
+						rec.checkpointsDeletedForJob = (String) args[0];
+						yield null;
 					}
 					default -> throw new UnsupportedOperationException(method.getName());
 				});

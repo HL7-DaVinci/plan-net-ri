@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlStrategy;
@@ -64,6 +66,55 @@ class ApiJobControllerTest {
 	}
 
 	@Test
+	void pauseAlsoStopsARunningCrawl() {
+		List<String> pausedIds = new ArrayList<>();
+		ApiJobController controller = controller(
+				jobRepo(job("job-1", true, "0 0 2 * * *"), new CrawlJob[1]),
+				deletionService(new boolean[1]),
+				null,
+				false,
+				pausedIds,
+				new ArrayList<>());
+
+		controller.pause("job-1");
+
+		assertEquals(List.of("job-1"), pausedIds, "pausing must gracefully stop the in-flight run");
+	}
+
+	@Test
+	void resumeContinuesAnInterruptedCrawlFromItsCheckpoints() {
+		List<String> triggered = new ArrayList<>();
+		ApiJobController controller = controller(
+				jobRepo(job("job-1", false, ""), new CrawlJob[1]),
+				deletionService(new boolean[1]),
+				null,
+				true,
+				new ArrayList<>(),
+				triggered);
+
+		JobResponse response = controller.resume("job-1");
+
+		assertTrue(response.resumable());
+		assertEquals(List.of("job-1"), triggered, "resume must immediately continue the checkpointed crawl");
+	}
+
+	@Test
+	void resumeDoesNotTriggerWhenNothingIsCheckpointed() {
+		List<String> triggered = new ArrayList<>();
+		ApiJobController controller = controller(
+				jobRepo(job("job-1", false, "0 0 2 * * *"), new CrawlJob[1]),
+				deletionService(new boolean[1]),
+				null,
+				false,
+				new ArrayList<>(),
+				triggered);
+
+		controller.resume("job-1");
+
+		assertEquals(List.of(), triggered, "a schedule-only resume must not fire a crawl");
+	}
+
+	@Test
 	void deleteReturns204AndDelegatesTheCascade() {
 		boolean[] deleted = new boolean[1];
 		ApiJobController controller =
@@ -99,20 +150,54 @@ class ApiJobControllerTest {
 
 	private static ApiJobController controller(
 			CrawlJobRepository jobRepo, JobDeletionService deletion, String activeBatchId) {
-		return new ApiJobController(jobRepo, null, crawlService(activeBatchId), null, new ObjectMapper(), deletion);
+		return controller(jobRepo, deletion, activeBatchId, false, new ArrayList<>(), new ArrayList<>());
 	}
 
-	private static CrawlService crawlService(String activeBatchId) {
-		return new CrawlService(null, null, null, null, null, null, null, null) {
+	private static ApiJobController controller(
+			CrawlJobRepository jobRepo,
+			JobDeletionService deletion,
+			String activeBatchId,
+			boolean resumable,
+			List<String> pausedIds,
+			List<String> triggeredIds) {
+		return new ApiJobController(
+				jobRepo,
+				null,
+				crawlService(activeBatchId, resumable, pausedIds, triggeredIds),
+				null,
+				new ObjectMapper(),
+				deletion);
+	}
+
+	private static CrawlService crawlService(
+			String activeBatchId, boolean resumable, List<String> pausedIds, List<String> triggeredIds) {
+		return new CrawlService(null, null, null, null, null, null, null, null, null) {
 			@Override
 			public String getActiveBatchId(String jobId) {
 				return activeBatchId;
+			}
+
+			@Override
+			public boolean isResumable(String jobId) {
+				return resumable;
+			}
+
+			@Override
+			public boolean pauseJob(String jobId) {
+				pausedIds.add(jobId);
+				return true;
+			}
+
+			@Override
+			public String triggerAsync(CrawlJob job) {
+				triggeredIds.add(job.getId());
+				return "batch-resume";
 			}
 		};
 	}
 
 	private static JobDeletionService deletionService(boolean[] deletedFlag) {
-		return new JobDeletionService(null, null, null, null, null, null) {
+		return new JobDeletionService(null, null, null, null, null, null, null) {
 			@Override
 			public void deleteJob(String jobId) {
 				deletedFlag[0] = true;
