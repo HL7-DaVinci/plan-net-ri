@@ -520,9 +520,15 @@ hapi:
 
 # Directory Crawler API service (scheduled crawls + served manifests).
 # Bound to ApiProperties. The crawler uses its own isolated persistence unit
-# (CRAWLER_PU) over the same datasource as HAPI.
+# (CRAWLER_PU); by default it shares HAPI's datasource above.
 api:
   enabled: true
+  # Optional dedicated crawler database
+  # datasource:
+  #   url: jdbc:sqlite:./target/database/crawler.sqlite
+    # url: jdbc:postgresql://db:5432/crawler
+    # username: 
+    # password: 
   storage-path: ./target/crawler-data
   poller-interval-ms: 30000
   page-size: 500

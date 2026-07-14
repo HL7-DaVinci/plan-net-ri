@@ -47,7 +47,7 @@ Within `org.hl7.davinci` (all covered by the `custom-bean-packages` scan): `api.
 
 ### Traps (read before touching anything)
 
-- Any `@Transactional` touching crawler repositories MUST name the manager: `@Transactional("crawlerTransactionManager")`. Crawler entities/repositories live in a dedicated persistence unit `CRAWLER_PU` (`CrawlerPersistenceConfig`, `hbm2ddl.auto=update`) over the same datasource; a bare `@Transactional` binds to HAPI's primary manager and fails.
+- Any `@Transactional` touching crawler repositories MUST name the manager: `@Transactional("crawlerTransactionManager")`. Crawler entities/repositories live in a dedicated persistence unit `CRAWLER_PU` (`CrawlerPersistenceConfig`, `hbm2ddl.auto=update`), sharing HAPI's datasource unless `api.datasource.url` points them at their own database; a bare `@Transactional` binds to HAPI's primary manager and fails.
 - Do not put scannable test `@Configuration` classes under `org.hl7.davinci`; `custom-bean-packages` scans that package and they poison full-application boots.
 - Bean names `apiProperties` and `publishProperties` are referenced by scheduler SpEL (`#{@apiProperties.pollerIntervalMs}`); renaming either breaks scheduling.
 - `crawl_resource` has no secondary index and no serverKey/type columns by design; every per-server or per-type access must be a PK-range operation on the key prefix (see `CrawlResourceRepository` default methods). `hbm2ddl.auto=update` does not reliably add a new index to a populated table.
@@ -59,7 +59,7 @@ Within `org.hl7.davinci` (all covered by the `custom-bean-packages` scan): `api.
 
 ### Crawler configuration
 
-`ApiProperties` binds `api.*`; env vars via relaxed binding (`API_*`): `API_STORAGE_PATH` (snapshot file root), `API_PUBLIC_BASE_URL`, `API_REQUEST_TIMEOUT_MS` (default 180s), `API_PAGE_DELAY_MS` (politeness pause, paced per chain), `API_CRAWL_CONCURRENCY` (default 4, floor 1), `API_RESUME_CRAWLS_ON_STARTUP` (default true). Exception: the UI server list is `APP_FHIR_SERVERS` by deliberate choice, bridged into `ApiProperties` by yaml. `ConfigController` serves runtime config to the SPA as `/crawler/config.js` (`window.APP_CONFIG`).
+`ApiProperties` binds `api.*`; env vars via relaxed binding (`API_*`): `API_STORAGE_PATH` (snapshot file root), `API_PUBLIC_BASE_URL`, `API_REQUEST_TIMEOUT_MS` (default 180s), `API_PAGE_DELAY_MS` (politeness pause, paced per chain), `API_CRAWL_CONCURRENCY` (default 4, floor 1), `API_RESUME_CRAWLS_ON_STARTUP` (default true), `API_DATASOURCE_URL` (+`_USERNAME`/`_PASSWORD`: dedicated crawler database, SQLite or Postgres; SQLite urls get WAL mode automatically; blank shares HAPI's datasource, but H2 amplifies bulk crawl writes ~30x). Exception: the UI server list is `APP_FHIR_SERVERS` by deliberate choice, bridged into `ApiProperties` by yaml. `ConfigController` serves runtime config to the SPA as `/crawler/config.js` (`window.APP_CONFIG`).
 
 Every server has one `RateGate` (registry on `FhirCrawlClient`, keyed by `CrawlService.normalizeServerKey`) shared across all jobs targeting it: a semaphore caps in-flight requests, and a 429's `Retry-After` pauses all sibling chains (only a 429 does; a 500 or timeout does not).
 

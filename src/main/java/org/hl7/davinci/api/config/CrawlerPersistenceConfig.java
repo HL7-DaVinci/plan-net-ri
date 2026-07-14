@@ -1,5 +1,7 @@
 package org.hl7.davinci.api.config;
 
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +19,9 @@ import javax.sql.DataSource;
 /**
  * Isolated persistence unit for the crawler entities. Required because HAPI scans only its
  * own entity packages and scopes its own repository discovery, so our entities/repositories
- * are not picked up by the default context. Reuses HAPI's primary DataSource.
+ * are not picked up by the default context. By default reuses HAPI's primary DataSource;
+ * setting {@code api.datasource.url} moves the crawler tables to their own database
+ * (SQLite or Postgres) so bulk crawl writes stop churning HAPI's H2 file.
  */
 @Configuration
 @EnableJpaRepositories(
@@ -27,9 +31,10 @@ import javax.sql.DataSource;
 public class CrawlerPersistenceConfig {
 
 	@Bean
-	public LocalContainerEntityManagerFactoryBean crawlerEntityManagerFactory(DataSource dataSource) {
+	public LocalContainerEntityManagerFactoryBean crawlerEntityManagerFactory(
+			DataSource dataSource, ApiProperties apiProperties) {
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
-		emf.setDataSource(dataSource);
+		emf.setDataSource(crawlerDataSource(dataSource, apiProperties.getDatasource()));
 		emf.setPackagesToScan("org.hl7.davinci.api.entity");
 		emf.setPersistenceUnitName("CRAWLER_PU");
 
@@ -51,6 +56,27 @@ public class CrawlerPersistenceConfig {
 		emf.setJpaPropertyMap(properties);
 
 		return emf;
+	}
+
+	public static DataSource crawlerDataSource(DataSource shared, ApiProperties.Datasource config) {
+		if (config.getUrl() == null || config.getUrl().isBlank()) {
+			return shared;
+		}
+		HikariConfig hikari = new HikariConfig();
+		hikari.setPoolName("crawler-db");
+		hikari.setJdbcUrl(config.getUrl());
+		if (config.getUsername() != null) {
+			hikari.setUsername(config.getUsername());
+		}
+		if (config.getPassword() != null) {
+			hikari.setPassword(config.getPassword());
+		}
+		if (config.getUrl().startsWith("jdbc:sqlite:")) {
+			hikari.addDataSourceProperty("journal_mode", "WAL");
+			hikari.addDataSourceProperty("busy_timeout", "30000");
+			hikari.addDataSourceProperty("synchronous", "NORMAL");
+		}
+		return new HikariDataSource(hikari);
 	}
 
 	@Bean
