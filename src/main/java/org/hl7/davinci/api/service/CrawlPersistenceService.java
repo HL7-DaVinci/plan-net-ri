@@ -1,7 +1,9 @@
 package org.hl7.davinci.api.service;
 
 import org.hl7.davinci.api.entity.CrawlResource;
+import org.hl7.davinci.api.entity.CrawlResourceId;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageRequest;
@@ -37,13 +39,15 @@ public class CrawlPersistenceService {
 	/** Bounded recent-key window for deduping a first crawl's re-fetched keys. */
 	private static final int DEDUP_WINDOW = 50_000;
 
-	/** Keys per page when streaming the aggregate to find full-snapshot deletions. */
+	/** Rows per page when streaming the aggregate to find full-snapshot deletions. */
 	private static final int DELETE_SCAN_PAGE = 1000;
 
 	private final CrawlResourceRepository resourceRepo;
+	private final ServerRegistry serverRegistry;
 
-	public CrawlPersistenceService(CrawlResourceRepository resourceRepo) {
+	public CrawlPersistenceService(CrawlResourceRepository resourceRepo, ServerRegistry serverRegistry) {
 		this.resourceRepo = resourceRepo;
+		this.serverRegistry = serverRegistry;
 	}
 
 	/** Change counts plus the server's aggregate size after the run was applied. */
@@ -92,7 +96,7 @@ public class CrawlPersistenceService {
 	}
 
 	private final class DefaultSession implements SnapshotSession {
-		private final String serverKey;
+		private final int serverId;
 		private final String serverLabel;
 		private final long startCount;
 		private final boolean resumed;
@@ -106,9 +110,11 @@ public class CrawlPersistenceService {
 		private int lastLoggedAt;
 
 		private DefaultSession(String serverKey, String serverLabel, boolean resumed) {
-			this.serverKey = serverKey;
+			// The create point for new servers: the first session against a never-seen serverKey
+			// inserts its crawl_server row here.
+			this.serverId = serverRegistry.idFor(serverKey);
 			this.serverLabel = serverLabel;
-			this.startCount = resourceRepo.countByServerKey(serverKey);
+			this.startCount = resourceRepo.countByIdServerId(serverId);
 			this.resumed = resumed;
 			// A first crawl has no prior rows to delete and a resumed full crawl must not delete,
 			// so neither tracks the full seen-key set; a bounded recent window dedupes re-fetches.
@@ -124,13 +130,16 @@ public class CrawlPersistenceService {
 			// Skip the DB lookup for keys already handled this run: the stored row may hold this run's own
 			// write, so re-reading it would misclassify the re-fetch.
 			Set<String> handled = dedupOnly ? recentKeys : seenKeys;
-			List<String> queryKeys = new ArrayList<>();
+			Map<String, List<String>> unseenUidsByType = new HashMap<>();
 			for (FetchedResource fr : batch) {
-				if (!handled.contains(fr.key())) {
-					queryKeys.add(fr.key());
+				if (!handled.contains(key(fr))) {
+					unseenUidsByType
+							.computeIfAbsent(fr.resourceType(), t -> new ArrayList<>())
+							.add(fr.id());
 				}
 			}
-			Map<String, DiffUtil.VersionInfo> prior = queryKeys.isEmpty() ? Map.of() : loadVersions(queryKeys);
+			Map<String, DiffUtil.VersionInfo> prior =
+					unseenUidsByType.isEmpty() ? Map.of() : loadVersions(unseenUidsByType);
 
 			DiffUtil.DiffResult diff = DiffUtil.computeDiff(batch, prior);
 			List<FetchedResource> inserts = new ArrayList<>();
@@ -138,7 +147,7 @@ public class CrawlPersistenceService {
 			int newInserts = 0;
 			int newUpdates = 0;
 			for (FetchedResource fr : diff.added()) {
-				if (handled.add(fr.key())) {
+				if (handled.add(key(fr))) {
 					inserts.add(fr);
 					newInserts++;
 				} else {
@@ -146,7 +155,7 @@ public class CrawlPersistenceService {
 				}
 			}
 			for (FetchedResource fr : diff.updated()) {
-				if (updatedKeys.add(fr.key())) {
+				if (updatedKeys.add(key(fr))) {
 					newUpdates++;
 				}
 			}
@@ -158,7 +167,7 @@ public class CrawlPersistenceService {
 				// Full-snapshot deletion needs every fetched key; a first crawl has no prior rows to
 				// delete and a resumed full crawl never runs the deletion scan.
 				for (FetchedResource fr : batch) {
-					seenKeys.add(fr.key());
+					seenKeys.add(key(fr));
 				}
 			}
 			processed += batch.size();
@@ -180,77 +189,126 @@ public class CrawlPersistenceService {
 						"A resumed session cannot detect full-snapshot deletions; finish with finishIncremental");
 			}
 			// A first crawl has no prior rows, so nothing can be deleted.
-			List<String> deletedKeys = startCount > 0 ? scanDeletedKeys() : new ArrayList<>();
-			return finish(deletedKeys);
+			List<CrawlResourceId> deletedIds = startCount > 0 ? scanDeletedIds() : new ArrayList<>();
+			return finish(deletedIds);
 		}
 
 		@Override
 		public PersistCounts finishIncremental(List<DeletionEntry> deletions) {
-			List<String> deletedKeys = DiffUtil.applyDeletions(deletions, serverKey, existingDeletionKeys(deletions));
+			Set<String> existingKeys = existingDeletionKeys(deletions);
+			List<String> deletedKeys = DiffUtil.applyDeletions(deletions, existingKeys);
 			deletedKeys.removeIf(seenKeys::contains);
-			return finish(deletedKeys);
+			List<CrawlResourceId> deletedIds = new ArrayList<>(deletedKeys.size());
+			for (String key : deletedKeys) {
+				deletedIds.add(toId(key));
+			}
+			return finish(deletedIds);
 		}
 
-		private PersistCounts finish(List<String> deletedKeys) {
-			deleteInChunks(deletedKeys);
-			return new PersistCounts(added, updated, deletedKeys.size(), (int) startCount + added - deletedKeys.size());
+		private PersistCounts finish(List<CrawlResourceId> deletedIds) {
+			deleteInChunks(deletedIds);
+			return new PersistCounts(added, updated, deletedIds.size(), (int) startCount + added - deletedIds.size());
 		}
 
-		/** Keys of this server not re-seen this run. */
-		private List<String> scanDeletedKeys() {
-			List<String> deleted = new ArrayList<>();
-			String prefix = serverKey + "|";
-			String afterKey = prefix;
-			while (true) {
-				List<String> keys = resourceRepo.findKeysByKeyGreaterThanOrderByKeyAsc(
-						afterKey, PageRequest.ofSize(DELETE_SCAN_PAGE));
-				if (keys.isEmpty()) {
-					break;
-				}
-				for (String key : keys) {
-					if (!key.startsWith(prefix)) {
-						return deleted; // reached the next server's keys
+		/** {@code type/id} keys of this server not re-seen this run, across every Plan-Net type. */
+		private List<CrawlResourceId> scanDeletedIds() {
+			List<CrawlResourceId> deleted = new ArrayList<>();
+			for (String type : PlanNetTypes.TYPES) {
+				int typeId = PlanNetTypes.idOf(type);
+				String afterUid = "";
+				while (true) {
+					List<String> uids =
+							resourceRepo.findUids(serverId, typeId, afterUid, PageRequest.ofSize(DELETE_SCAN_PAGE));
+					if (uids.isEmpty()) {
+						break;
 					}
-					if (!seenKeys.contains(key)) {
-						deleted.add(key);
+					for (String uid : uids) {
+						if (!seenKeys.contains(type + "/" + uid)) {
+							deleted.add(new CrawlResourceId(serverId, typeId, uid));
+						}
+						afterUid = uid;
 					}
-					afterKey = key;
-				}
-				if (keys.size() < DELETE_SCAN_PAGE) {
-					break;
+					if (uids.size() < DELETE_SCAN_PAGE) {
+						break;
+					}
 				}
 			}
 			return deleted;
 		}
 
-		/** The explicit deletion keys that currently exist. */
+		/** The explicit deletion keys that currently exist, grouped by type for the IN lookup. */
 		private Set<String> existingDeletionKeys(List<DeletionEntry> deletions) {
 			if (deletions.isEmpty()) {
 				return Set.of();
 			}
-			List<String> candidates = new ArrayList<>(deletions.size());
+			Map<String, List<String>> uidsByType = new HashMap<>();
 			for (DeletionEntry d : deletions) {
-				candidates.add(serverKey + "|" + d.resourceType() + "/" + d.id());
+				uidsByType
+						.computeIfAbsent(d.resourceType(), t -> new ArrayList<>())
+						.add(d.id());
 			}
 			Set<String> present = new HashSet<>();
-			for (CrawlResourceRepository.ResourceVersionView view : resourceRepo.findVersionViewByKeys(candidates)) {
-				present.add(view.getKey());
+			for (Map.Entry<String, List<String>> e : uidsByType.entrySet()) {
+				int typeId = PlanNetTypes.idOf(e.getKey());
+				for (CrawlResourceRepository.ResourceVersionView view :
+						resourceRepo.findVersionViews(serverId, typeId, e.getValue())) {
+					present.add(e.getKey() + "/" + view.getUid());
+				}
 			}
 			return present;
 		}
-	}
 
-	/** Rewriting unchanged rows bloats the append-oriented MVStore, so only the changed set is saved. */
-	private void upsertInChunks(List<FetchedResource> changed, boolean isNew) {
-		for (int i = 0; i < changed.size(); i += CHUNK) {
-			List<FetchedResource> chunk = changed.subList(i, Math.min(i + CHUNK, changed.size()));
-			resourceRepo.saveAll(toEntities(chunk, isNew));
+		private Map<String, DiffUtil.VersionInfo> loadVersions(Map<String, List<String>> uidsByType) {
+			Map<String, DiffUtil.VersionInfo> index = new HashMap<>();
+			for (Map.Entry<String, List<String>> e : uidsByType.entrySet()) {
+				int typeId = PlanNetTypes.idOf(e.getKey());
+				for (CrawlResourceRepository.ResourceVersionView view :
+						resourceRepo.findVersionViews(serverId, typeId, e.getValue())) {
+					index.put(
+							e.getKey() + "/" + view.getUid(),
+							new DiffUtil.VersionInfo(view.getVersionId(), view.getLastUpdated()));
+				}
+			}
+			return index;
+		}
+
+		private void upsertInChunks(List<FetchedResource> changed, boolean isNew) {
+			for (int i = 0; i < changed.size(); i += CHUNK) {
+				List<FetchedResource> chunk = changed.subList(i, Math.min(i + CHUNK, changed.size()));
+				resourceRepo.saveAll(toEntities(chunk, isNew));
+			}
+		}
+
+		private List<CrawlResource> toEntities(List<FetchedResource> fetched, boolean isNew) {
+			List<CrawlResource> entities = new ArrayList<>(fetched.size());
+			for (FetchedResource fr : fetched) {
+				CrawlResource e = new CrawlResource();
+				e.setId(new CrawlResourceId(serverId, PlanNetTypes.idOf(fr.resourceType()), fr.id()));
+				e.setVersionId(fr.versionId());
+				e.setLastUpdated(fr.lastUpdated());
+				e.setResourceJson(ResourceJsonCodec.encode(fr.json()));
+				e.setNew(isNew);
+				entities.add(e);
+			}
+			return entities;
+		}
+
+		/** {@code type/uid}, parsed back into a full {@link CrawlResourceId} for this session's server. */
+		private CrawlResourceId toId(String key) {
+			int slash = key.indexOf('/');
+			String type = key.substring(0, slash);
+			String uid = key.substring(slash + 1);
+			return new CrawlResourceId(serverId, PlanNetTypes.idOf(type), uid);
 		}
 	}
 
-	private void deleteInChunks(List<String> deletedKeys) {
-		for (int i = 0; i < deletedKeys.size(); i += CHUNK) {
-			resourceRepo.deleteAllById(deletedKeys.subList(i, Math.min(i + CHUNK, deletedKeys.size())));
+	private static String key(FetchedResource fr) {
+		return fr.resourceType() + "/" + fr.id();
+	}
+
+	private void deleteInChunks(List<CrawlResourceId> deletedIds) {
+		for (int i = 0; i < deletedIds.size(); i += CHUNK) {
+			resourceRepo.deleteAllById(deletedIds.subList(i, Math.min(i + CHUNK, deletedIds.size())));
 		}
 	}
 
@@ -263,29 +321,5 @@ public class CrawlPersistenceService {
 				return size() > DEDUP_WINDOW;
 			}
 		});
-	}
-
-	/** Prior versions for the given keys. */
-	private Map<String, DiffUtil.VersionInfo> loadVersions(List<String> keys) {
-		Map<String, DiffUtil.VersionInfo> index = new HashMap<>();
-		for (CrawlResourceRepository.ResourceVersionView view : resourceRepo.findVersionViewByKeys(keys)) {
-			index.put(view.getKey(), new DiffUtil.VersionInfo(view.getVersionId(), view.getLastUpdated()));
-		}
-		return index;
-	}
-
-	private List<CrawlResource> toEntities(List<FetchedResource> fetched, boolean isNew) {
-		List<CrawlResource> entities = new ArrayList<>(fetched.size());
-		for (FetchedResource fr : fetched) {
-			CrawlResource e = new CrawlResource();
-			e.setKey(fr.key());
-			e.setResourceType(fr.resourceType());
-			e.setVersionId(fr.versionId());
-			e.setLastUpdated(fr.lastUpdated());
-			e.setResourceJson(ResourceJsonCodec.encode(fr.json()));
-			e.setNew(isNew);
-			entities.add(e);
-		}
-		return entities;
 	}
 }

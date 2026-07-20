@@ -197,7 +197,7 @@ class ApiJobControllerTest {
 	}
 
 	private static JobDeletionService deletionService(boolean[] deletedFlag) {
-		return new JobDeletionService(null, null, null, null, null, null, null) {
+		return new JobDeletionService(null, null, null, null, null, null, null, null) {
 			@Override
 			public void deleteJob(String jobId) {
 				deletedFlag[0] = true;

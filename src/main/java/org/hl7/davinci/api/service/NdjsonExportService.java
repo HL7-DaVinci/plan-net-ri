@@ -5,6 +5,7 @@ import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.entity.CrawlResource;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.common.NdjsonFiles;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageRequest;
@@ -19,6 +20,7 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.OptionalInt;
 import java.util.TreeMap;
 
 /** Writes one {Type}.ndjson per resource type from the aggregate store. */
@@ -45,10 +47,13 @@ public class NdjsonExportService {
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 
 	private final CrawlResourceRepository resourceRepo;
+	private final ServerRegistry serverRegistry;
 	private final ApiProperties props;
 
-	public NdjsonExportService(CrawlResourceRepository resourceRepo, ApiProperties props) {
+	public NdjsonExportService(
+			CrawlResourceRepository resourceRepo, ServerRegistry serverRegistry, ApiProperties props) {
 		this.resourceRepo = resourceRepo;
+		this.serverRegistry = serverRegistry;
 		this.props = props;
 	}
 
@@ -67,37 +72,39 @@ public class NdjsonExportService {
 			Files.createDirectories(dir);
 			ourLog.info("NDJSON export starting for {} server(s) into {}", serverKeys.size(), dir);
 			for (String serverKey : serverKeys) {
-				// Keys are serverKey|Type/id, so this server's rows are exactly those keyset-scanned
-				// from just past "serverKey|" until the prefix stops matching.
-				String prefix = serverKey + "|";
-				String afterKey = prefix;
-				boolean reachedNextServer = false;
-				while (!reachedNextServer) {
-					List<CrawlResource> batch = resourceRepo.findByKeyGreaterThanOrderByKeyAsc(afterKey, page);
-					if (batch.isEmpty()) {
-						break;
-					}
-					for (CrawlResource resource : batch) {
-						if (!resource.getKey().startsWith(prefix)) {
-							reachedNextServer = true;
+				OptionalInt serverId = serverRegistry.idIfExists(serverKey);
+				if (serverId.isEmpty()) {
+					ourLog.debug("Skipping NDJSON export for server {}: no crawl_server row", serverKey);
+					continue;
+				}
+				for (String type : PlanNetTypes.TYPES) {
+					int typeId = PlanNetTypes.idOf(type);
+					String afterUid = "";
+					while (true) {
+						List<CrawlResource> batch =
+								resourceRepo.findByIdServerIdAndIdTypeIdAndIdUidGreaterThanOrderByIdUidAsc(
+										serverId.getAsInt(), typeId, afterUid, page);
+						if (batch.isEmpty()) {
 							break;
 						}
-						BufferedWriter writer = writerFor(writers, dir, resource.getResourceType());
-						writer.write(ResourceJsonCodec.decode(resource.getResourceJson()));
-						writer.write("\n");
-						typeCounts.merge(resource.getResourceType(), 1L, Long::sum);
-						total++;
-						afterKey = resource.getKey();
-					}
-					if (total - lastLoggedAt >= EXPORT_LOG_EVERY) {
-						lastLoggedAt = total;
-						ourLog.info(
-								"NDJSON export progress: {} resources, {} ms",
-								total,
-								(System.nanoTime() - startNanos) / 1_000_000);
-					}
-					if (batch.size() < EXPORT_PAGE_SIZE) {
-						break;
+						BufferedWriter writer = writerFor(writers, dir, type);
+						for (CrawlResource resource : batch) {
+							writer.write(ResourceJsonCodec.decode(resource.getResourceJson()));
+							writer.write("\n");
+							total++;
+							afterUid = resource.getId().getUid();
+						}
+						typeCounts.merge(type, (long) batch.size(), Long::sum);
+						if (total - lastLoggedAt >= EXPORT_LOG_EVERY) {
+							lastLoggedAt = total;
+							ourLog.info(
+									"NDJSON export progress: {} resources, {} ms",
+									total,
+									(System.nanoTime() - startNanos) / 1_000_000);
+						}
+						if (batch.size() < EXPORT_PAGE_SIZE) {
+							break;
+						}
 					}
 				}
 			}

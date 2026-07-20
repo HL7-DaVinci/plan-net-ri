@@ -1,8 +1,8 @@
 package org.hl7.davinci.api.entity;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import jakarta.persistence.PostLoad;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
@@ -14,17 +14,15 @@ import org.springframework.data.domain.Persistable;
 
 /**
  * Current aggregated state of one resource for one server; the source for diffing and NDJSON.
- * The key embeds the server and identity, so every per-server access is a primary-key range scan
- * over the {@code serverKey|} prefix; no secondary columns or indexes duplicate it.
+ * The composite key (server_id, type_id, uid) is the only index, so every per-server or
+ * per-type access is a leftmost-prefix range scan; no secondary columns duplicate it.
  */
 @Entity
 @Table(name = "crawl_resource")
-public class CrawlResource implements Persistable<String> {
+public class CrawlResource implements Persistable<CrawlResourceId> {
 
-	/** {@code serverKey|resourceType/id}. */
-	@Id
-	@Column(name = "resource_key", length = 512)
-	private String key;
+	@EmbeddedId
+	private CrawlResourceId id;
 
 	/**
 	 * Assigned-id entities are otherwise treated as detached, forcing a SELECT before every write
@@ -33,8 +31,6 @@ public class CrawlResource implements Persistable<String> {
 	 */
 	@Transient
 	private boolean isNew = true;
-
-	private String resourceType;
 
 	private String versionId;
 
@@ -49,17 +45,13 @@ public class CrawlResource implements Persistable<String> {
 	@Column(name = "resource_json", length = Length.LONG32)
 	private byte[] resourceJson;
 
-	public String getKey() {
-		return key;
-	}
-
-	public void setKey(String key) {
-		this.key = key;
-	}
-
 	@Override
-	public String getId() {
-		return key;
+	public CrawlResourceId getId() {
+		return id;
+	}
+
+	public void setId(CrawlResourceId id) {
+		this.id = id;
 	}
 
 	@Override
@@ -76,14 +68,6 @@ public class CrawlResource implements Persistable<String> {
 	@PostLoad
 	void markNotNew() {
 		this.isNew = false;
-	}
-
-	public String getResourceType() {
-		return resourceType;
-	}
-
-	public void setResourceType(String resourceType) {
-		this.resourceType = resourceType;
 	}
 
 	public String getVersionId() {

@@ -2,10 +2,10 @@ package org.hl7.davinci.api;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 import java.util.List;
 import java.util.Map;
+import java.util.OptionalInt;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlRun;
@@ -16,7 +16,9 @@ import org.hl7.davinci.api.repository.CrawlJobRepository;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.api.repository.CrawlRunRepository;
 import org.hl7.davinci.api.repository.ManifestRepository;
+import org.hl7.davinci.api.service.ServerRegistry;
 import org.hl7.davinci.api.service.StatsService;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.junit.jupiter.api.Test;
 
 class StatsServiceTest {
@@ -28,7 +30,8 @@ class StatsServiceTest {
 		CrawlRun paused = run(RunStatus.PAUSED, 400, 4_000);
 		CrawlRun completed = run(RunStatus.COMPLETED, 1_000, 10_000);
 
-		StatsService service = new StatsService(manifestRepo(), runRepo(List.of(completed, paused)), null, null);
+		StatsService service =
+				new StatsService(manifestRepo(), runRepo(List.of(completed, paused)), null, null, null);
 		JobStatsResponse stats = service.computeStats("job-1");
 
 		assertEquals(1, stats.runCount(), "a paused segment is not a finished run");
@@ -42,16 +45,18 @@ class StatsServiceTest {
 	void overallStatsCountByPrimaryKeyRangeAndAreCached() {
 		CrawlJob job = new CrawlJob();
 		job.setId("job-1");
-		// Trailing slash exercises server-key normalization; range keys below use the normalized form.
+		// Trailing slash exercises server-key normalization; server ids below use the normalized form.
 		job.setServers("[{\"url\":\"http://a.example/fhir/\"},{\"url\":\"http://b.example/fhir\"}]");
-		AtomicInteger rangeQueries = new AtomicInteger();
-		Map<String, Long> countsByRangeStart = Map.of(
-				"http://a.example/fhir|Practitioner/", 5L,
-				"http://a.example/fhir|Organization/", 2L,
-				"http://b.example/fhir|Organization/", 7L);
+		AtomicInteger countQueries = new AtomicInteger();
+		Map<String, Long> countsByServerAndType =
+				Map.of("1:Practitioner", 5L, "1:Organization", 2L, "2:Organization", 7L);
 
 		StatsService service = new StatsService(
-				manifestRepo(), null, resourceRepo(countsByRangeStart, rangeQueries), jobRepo(List.of(job)));
+				manifestRepo(),
+				null,
+				resourceRepo(countsByServerAndType, countQueries),
+				serverRegistry(Map.of("http://a.example/fhir", 1, "http://b.example/fhir", 2)),
+				jobRepo(List.of(job)));
 		OverallStatsResponse stats = service.computeOverall();
 
 		assertEquals(14, stats.totalResources());
@@ -63,9 +68,9 @@ class StatsServiceTest {
 						new OverallStatsResponse.TypeCount("Practitioner", 5)),
 				stats.byType());
 
-		int queriesForFirstCall = rangeQueries.get();
+		int queriesForFirstCall = countQueries.get();
 		assertEquals(stats, service.computeOverall(), "a second call inside the TTL is served from cache");
-		assertEquals(queriesForFirstCall, rangeQueries.get(), "the cached call issues no count queries");
+		assertEquals(queriesForFirstCall, countQueries.get(), "the cached call issues no count queries");
 	}
 
 	private static CrawlRun run(RunStatus status, long records, long bytes) {
@@ -98,26 +103,30 @@ class StatsServiceTest {
 				});
 	}
 
-	/**
-	 * Answers {@code countByKeyRange} from the given map keyed by the range's lower bound;
-	 * default methods run for real so the (server, type) range math is exercised.
-	 */
-	private static CrawlResourceRepository resourceRepo(Map<String, Long> countsByRangeStart, AtomicInteger queries) {
+	/** Answers {@code countByIdServerIdAndIdTypeId} from the given map keyed by {@code serverId:type}. */
+	private static CrawlResourceRepository resourceRepo(Map<String, Long> countsByServerAndType, AtomicInteger queries) {
 		return (CrawlResourceRepository) Proxy.newProxyInstance(
 				CrawlResourceRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlResourceRepository.class},
-				(proxy, method, args) -> {
-					if (method.isDefault()) {
-						return InvocationHandler.invokeDefault(proxy, method, args);
+				(proxy, method, args) -> switch (method.getName()) {
+					case "countByIdServerIdAndIdTypeId" -> {
+						queries.incrementAndGet();
+						int serverId = (int) args[0];
+						String type = PlanNetTypes.typeOf((int) args[1]);
+						yield countsByServerAndType.getOrDefault(serverId + ":" + type, 0L);
 					}
-					return switch (method.getName()) {
-						case "countByKeyRange" -> {
-							queries.incrementAndGet();
-							yield countsByRangeStart.getOrDefault((String) args[0], 0L);
-						}
-						default -> throw new UnsupportedOperationException(method.getName());
-					};
+					default -> throw new UnsupportedOperationException(method.getName());
 				});
+	}
+
+	private static ServerRegistry serverRegistry(Map<String, Integer> idsByServerKey) {
+		return new ServerRegistry(null) {
+			@Override
+			public OptionalInt idIfExists(String serverKey) {
+				Integer id = idsByServerKey.get(serverKey);
+				return id == null ? OptionalInt.empty() : OptionalInt.of(id);
+			}
+		};
 	}
 
 	private static CrawlRunRepository runRepo(List<CrawlRun> runs) {

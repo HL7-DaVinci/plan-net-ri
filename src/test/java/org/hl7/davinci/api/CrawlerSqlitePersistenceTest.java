@@ -14,6 +14,9 @@ import javax.sql.DataSource;
 import org.hl7.davinci.api.config.ApiProperties;
 import org.hl7.davinci.api.config.CrawlerPersistenceConfig;
 import org.hl7.davinci.api.entity.CrawlResource;
+import org.hl7.davinci.api.entity.CrawlResourceId;
+import org.hl7.davinci.api.entity.CrawlServer;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -45,13 +48,17 @@ class CrawlerSqlitePersistenceTest {
 						em.createNativeQuery("pragma journal_mode").getSingleResult(),
 						"the WAL pragma must reach the SQLite connection");
 				em.getTransaction().begin();
+				CrawlResourceId id = new CrawlResourceId(1, PlanNetTypes.idOf("Organization"), "org-1");
 				CrawlResource resource = new CrawlResource();
-				resource.setKey("http://a.example/fhir|Organization/org-1");
-				resource.setResourceType("Organization");
+				resource.setId(id);
 				resource.setVersionId("3");
 				resource.setLastUpdated("2026-07-13T00:00:00Z");
 				resource.setResourceJson(body);
 				em.persist(resource);
+
+				CrawlServer server = new CrawlServer();
+				server.setServerKey("http://a.example/fhir");
+				em.persist(server);
 				em.getTransaction().commit();
 				em.close();
 			} finally {
@@ -63,10 +70,17 @@ class CrawlerSqlitePersistenceTest {
 			EntityManagerFactory second = emf(ds);
 			try {
 				EntityManager em = second.createEntityManager();
-				CrawlResource loaded = em.find(CrawlResource.class, "http://a.example/fhir|Organization/org-1");
+				CrawlResource loaded =
+						em.find(CrawlResource.class, new CrawlResourceId(1, PlanNetTypes.idOf("Organization"), "org-1"));
 				assertNotNull(loaded);
 				assertEquals("3", loaded.getVersionId());
 				assertArrayEquals(body, loaded.getResourceJson(), "the 100KB body must round-trip intact");
+
+				CrawlServer loadedServer = em.createQuery(
+								"select s from CrawlServer s where s.serverKey = :key", CrawlServer.class)
+						.setParameter("key", "http://a.example/fhir")
+						.getSingleResult();
+				assertNotNull(loadedServer, "the crawl_server row must also survive the restart");
 				em.close();
 			} finally {
 				second.close();

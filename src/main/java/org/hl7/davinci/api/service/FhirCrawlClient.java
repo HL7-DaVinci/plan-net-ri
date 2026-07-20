@@ -626,7 +626,7 @@ public class FhirCrawlClient {
 									mdcContext));
 						}
 
-						collectEntries(bundle, serverKey, parser, emitter, bytes);
+						collectEntries(bundle, parser, emitter, bytes);
 						if (typePages % PAGE_LOG_EVERY == 0) {
 							ourLog.info(
 									"SEARCH {}: {} pages fetched, {} resources so far",
@@ -862,7 +862,7 @@ public class FhirCrawlClient {
 							}
 						}
 
-						collectEntries(bundle, serverKey, parser, emitter, bytes);
+						collectEntries(bundle, parser, emitter, bytes);
 						if (progress != null) {
 							// The checkpoint may only claim what is persisted, so flush the page first.
 							emitter.flush();
@@ -1374,7 +1374,7 @@ public class FhirCrawlClient {
 		return windows;
 	}
 
-	private void collectEntries(Bundle bundle, String serverKey, IParser parser, BatchEmitter emitter, long[] bytes) {
+	private void collectEntries(Bundle bundle, IParser parser, BatchEmitter emitter, long[] bytes) {
 		for (Bundle.BundleEntryComponent entry : bundle.getEntry()) {
 			Resource resource = entry.getResource();
 			if (resource == null
@@ -1395,8 +1395,7 @@ public class FhirCrawlClient {
 							: null;
 			String json = parser.encodeResourceToString(resource);
 			bytes[0] += json.length();
-			emitter.add(new FetchedResource(
-					serverKey + "|" + type + "/" + id, type, id, versionId, lastUpdated, json, json.length()));
+			emitter.add(new FetchedResource(type, id, versionId, lastUpdated, json, json.length()));
 		}
 	}
 
@@ -1902,7 +1901,7 @@ public class FhirCrawlClient {
 								entry.getRequest() != null ? entry.getRequest().getUrl() : entry.getFullUrl());
 						if (deletion != null
 								&& PlanNetTypes.TYPES.contains(deletion.resourceType())
-								&& seenKeys.add(serverKey + "|" + deletion.resourceType() + "/" + deletion.id())) {
+								&& seenKeys.add(deletion.resourceType() + "/" + deletion.id())) {
 							deletions.add(deletion);
 						}
 						continue;
@@ -1917,8 +1916,8 @@ public class FhirCrawlClient {
 					if (!PlanNetTypes.TYPES.contains(type)) {
 						continue;
 					}
-					String key = serverKey + "|" + type + "/"
-							+ resource.getIdElement().getIdPart();
+					String id = resource.getIdElement().getIdPart();
+					String key = type + "/" + id;
 					if (!seenKeys.add(key)) {
 						continue;
 					}
@@ -1931,14 +1930,7 @@ public class FhirCrawlClient {
 							resource.getMeta() != null && resource.getMeta().hasLastUpdated()
 									? resource.getMeta().getLastUpdatedElement().getValueAsString()
 									: null;
-					emitter.add(new FetchedResource(
-							key,
-							type,
-							resource.getIdElement().getIdPart(),
-							versionId,
-							lastUpdated,
-							json,
-							json.length()));
+					emitter.add(new FetchedResource(type, id, versionId, lastUpdated, json, json.length()));
 				}
 
 				bundle = nextFuture == null ? null : awaitPrefetch(nextFuture);
@@ -2009,7 +2001,7 @@ public class FhirCrawlClient {
 				if (line.isBlank()) {
 					continue;
 				}
-				FetchedResource resource = toFetched(line.trim(), serverKey, parser);
+				FetchedResource resource = toFetched(line.trim(), parser);
 				if (resource != null) {
 					emitter.add(resource);
 				}
@@ -2018,7 +2010,7 @@ public class FhirCrawlClient {
 		return fileBytes;
 	}
 
-	private FetchedResource toFetched(String json, String serverKey, IParser parser) {
+	private FetchedResource toFetched(String json, IParser parser) {
 		try {
 			Resource resource = (Resource) parser.parseResource(json);
 			if (resource.getIdElement() == null || resource.getIdElement().getIdPart() == null) {
@@ -2035,8 +2027,7 @@ public class FhirCrawlClient {
 					resource.getMeta() != null && resource.getMeta().hasLastUpdated()
 							? resource.getMeta().getLastUpdatedElement().getValueAsString()
 							: null;
-			return new FetchedResource(
-					serverKey + "|" + type + "/" + id, type, id, versionId, lastUpdated, json, json.length());
+			return new FetchedResource(type, id, versionId, lastUpdated, json, json.length());
 		} catch (Exception e) {
 			return null;
 		}

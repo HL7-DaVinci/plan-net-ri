@@ -535,15 +535,15 @@ class FhirCrawlClientTest {
 
 		java.util.Set<String> keys = new java.util.HashSet<>();
 		client.searchTypesByLastUpdated(
-				"http://x", "s", 10, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.key())));
+				"http://x", "s", 10, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertEquals(
 				java.util.Set.of(
-						"s|Organization/a",
-						"s|Organization/b",
-						"s|Organization/c",
-						"s|Organization/d",
-						"s|Organization/e"),
+						"Organization/a",
+						"Organization/b",
+						"Organization/c",
+						"Organization/d",
+						"Organization/e"),
 				keys,
 				"all five resources are captured even though every page is shorter than the requested _count");
 	}
@@ -597,15 +597,15 @@ class FhirCrawlClientTest {
 
 		java.util.Set<String> keys = new java.util.HashSet<>();
 		client.searchTypesByLastUpdated(
-				"http://x", "s", 10, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.key())));
+				"http://x", "s", 10, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertEquals(
 				java.util.Set.of(
-						"s|Organization/org1",
-						"s|Organization/org2",
-						"s|Organization/org3",
-						"s|Organization/org4",
-						"s|Organization/org5"),
+						"Organization/org1",
+						"Organization/org2",
+						"Organization/org3",
+						"Organization/org4",
+						"Organization/org5"),
 				keys,
 				"all resources are captured and the OperationOutcome is neither followed nor persisted");
 	}
@@ -648,13 +648,13 @@ class FhirCrawlClientTest {
 				null,
 				new FhirCrawlClient.ServerTime("2026-01-10T00:00:00.000Z", "date-header"),
 				steps::add,
-				batch -> batch.forEach(r -> keys.add(r.key())));
+				batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertTrue(
 				steps.stream().anyMatch(s -> s.message() != null && s.message().contains("did not honor")),
 				"the filter violation must be surfaced as a step");
 		assertTrue(
-				keys.containsAll(java.util.Set.of("s|Organization/a", "s|Organization/x")),
+				keys.containsAll(java.util.Set.of("Organization/a", "Organization/x")),
 				"the page's resources are still captured");
 	}
 
@@ -715,7 +715,7 @@ class FhirCrawlClientTest {
 				null,
 				new FhirCrawlClient.ServerTime("2026-01-09T00:00:00.000Z", "date-header"),
 				steps::add,
-				batch -> batch.forEach(r -> keys.add(r.key())));
+				batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		java.util.List<StepEvent> persisted = steps.stream()
 				.filter(s -> !s.progress() && s.message() != null && s.message().startsWith("Searched Organization"))
@@ -723,7 +723,7 @@ class FhirCrawlClientTest {
 		assertEquals(1, persisted.size(), "a multi-window type persists one rollup, not one step per window");
 		assertTrue(persisted.get(0).message().contains("across 2 windows"), persisted.get(0).message());
 		assertTrue(
-				keys.containsAll(java.util.Set.of("s|Organization/a", "s|Organization/b")),
+				keys.containsAll(java.util.Set.of("Organization/a", "Organization/b")),
 				"both windows' resources are captured");
 	}
 
@@ -757,10 +757,10 @@ class FhirCrawlClientTest {
 		};
 
 		java.util.Set<String> keys = new java.util.HashSet<>();
-		client.searchTypesByLastUpdated("http://x", "s", 2, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.key())));
+		client.searchTypesByLastUpdated("http://x", "s", 2, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertTrue(
-				keys.containsAll(java.util.Set.of("s|Organization/a", "s|Organization/b", "s|Organization/c")),
+				keys.containsAll(java.util.Set.of("Organization/a", "Organization/b", "Organization/c")),
 				"all three same-instant resources captured without looping");
 	}
 
@@ -799,11 +799,11 @@ class FhirCrawlClientTest {
 		};
 
 		java.util.Set<String> keys = new java.util.HashSet<>();
-		client.searchTypesByLastUpdated("http://x", "s", 2, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.key())));
+		client.searchTypesByLastUpdated("http://x", "s", 2, null, s -> {}, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
-		assertTrue(keys.contains("s|Organization/a") && keys.contains("s|Organization/b"), "first page captured");
-		assertTrue(keys.contains("s|Organization/c"), "the cluster member past the first page is captured, not dropped");
-		assertTrue(keys.contains("s|Organization/d"), "the resource after the cluster is captured");
+		assertTrue(keys.contains("Organization/a") && keys.contains("Organization/b"), "first page captured");
+		assertTrue(keys.contains("Organization/c"), "the cluster member past the first page is captured, not dropped");
+		assertTrue(keys.contains("Organization/d"), "the resource after the cluster is captured");
 	}
 
 	@Test
@@ -877,10 +877,10 @@ class FhirCrawlClientTest {
 		};
 
 		client.searchTypesByLastUpdated(
-				"http://x", "s", 10, null, steps::add, batch -> batch.forEach(r -> keys.add(r.key())));
+				"http://x", "s", 10, null, steps::add, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertTrue(
-				keys.containsAll(java.util.Set.of("s|Location/loc-a", "s|Location/loc-b")),
+				keys.containsAll(java.util.Set.of("Location/loc-a", "Location/loc-b")),
 				"the succeeding type's resources should all arrive despite the sibling type's failure");
 		assertTrue(
 				steps.stream()
@@ -1199,13 +1199,13 @@ class FhirCrawlClientTest {
 		java.util.Set<String> keys = java.util.concurrent.ConcurrentHashMap.newKeySet();
 
 		FhirCrawlClient.SearchResult result = client.bulkExport(
-				"http://example.test/fhir", "server", null, steps::add, batch -> batch.forEach(r -> keys.add(r.key())));
+				"http://example.test/fhir", "server", null, steps::add, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertEquals(3, result.records(), "records should sum across all three files");
 		assertEquals(0, result.pages(), "bulk export never reports a page count");
 		assertTrue(result.bytes() > 0, "downloaded bytes should be counted");
 		assertEquals(
-				java.util.Set.of("server|Organization/a", "server|Organization/b", "server|Location/c"),
+				java.util.Set.of("Organization/a", "Organization/b", "Location/c"),
 				keys,
 				"every file's resource should have been persisted");
 		assertTrue(
@@ -1489,10 +1489,10 @@ class FhirCrawlClientTest {
 		FhirCrawlClient.ServerTime anchor = new FhirCrawlClient.ServerTime(hi, "date-header");
 
 		client.searchTypesPartitioned(
-				"http://x", "s", 10, t0, anchor, steps::add, batch -> batch.forEach(r -> keys.add(r.key())));
+				"http://x", "s", 10, t0, anchor, steps::add, batch -> batch.forEach(r -> keys.add(r.resourceType() + "/" + r.id())));
 
 		assertEquals(
-				java.util.Set.of("s|Organization/a", "s|Organization/b"),
+				java.util.Set.of("Organization/a", "Organization/b"),
 				keys,
 				"each window's resource should arrive exactly once");
 		assertTrue(
@@ -1567,9 +1567,9 @@ class FhirCrawlClientTest {
 
 		client.searchTypesPartitioned(
 				"http://x", "s", 10, "2026-01-01T00:00:00Z", anchor, steps::add, batch -> batch.forEach(
-						r -> keys.add(r.key())));
+						r -> keys.add(r.resourceType() + "/" + r.id())));
 
-		assertEquals(java.util.Set.of("s|Organization/a"), keys);
+		assertEquals(java.util.Set.of("Organization/a"), keys);
 		assertTrue(
 				steps.stream()
 						.anyMatch(s -> s.message() != null && s.message().contains("No count form worked for Organization")),
@@ -1604,9 +1604,9 @@ class FhirCrawlClientTest {
 
 		client.searchTypesPartitioned(
 				"http://x", "s", 10, "2026-01-01T00:00:00Z", anchor, steps::add, batch -> batch.forEach(
-						r -> keys.add(r.key())));
+						r -> keys.add(r.resourceType() + "/" + r.id())));
 
-		assertEquals(java.util.Set.of("s|Organization/a"), keys, "the type must not be skipped when census is rejected");
+		assertEquals(java.util.Set.of("Organization/a"), keys, "the type must not be skipped when census is rejected");
 		assertTrue(
 				steps.stream()
 						.anyMatch(s -> s.message() != null && s.message().startsWith("Count query failed for Organization")),

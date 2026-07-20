@@ -18,6 +18,11 @@ public final class DiffUtil {
 	public record DiffResult(
 			List<FetchedResource> added, List<FetchedResource> updated, List<FetchedResource> unchanged) {}
 
+	/** {@code type/id}: a persistence session is single-server, so this alone is unique within it. */
+	private static String key(String resourceType, String id) {
+		return resourceType + "/" + id;
+	}
+
 	/**
 	 * Classify incoming resources: added when the key is absent; unchanged when the
 	 * versionId OR lastUpdated matches the stored marker; updated otherwise.
@@ -28,7 +33,7 @@ public final class DiffUtil {
 		List<FetchedResource> unchanged = new ArrayList<>();
 
 		for (FetchedResource resource : incoming) {
-			VersionInfo prior = existing.get(resource.key());
+			VersionInfo prior = existing.get(key(resource.resourceType(), resource.id()));
 			if (prior == null) {
 				added.add(resource);
 				continue;
@@ -60,11 +65,10 @@ public final class DiffUtil {
 	}
 
 	/** Keep only deletions that match a stored key, so the count is verifiable. */
-	public static List<String> applyDeletions(
-			List<DeletionEntry> deletions, String serverKey, Set<String> existingKeys) {
+	public static List<String> applyDeletions(List<DeletionEntry> deletions, Set<String> existingKeys) {
 		List<String> keys = new ArrayList<>();
 		for (DeletionEntry deletion : deletions) {
-			String key = serverKey + "|" + deletion.resourceType() + "/" + deletion.id();
+			String key = key(deletion.resourceType(), deletion.id());
 			if (existingKeys.contains(key)) {
 				keys.add(key);
 			}

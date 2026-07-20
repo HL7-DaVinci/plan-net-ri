@@ -29,6 +29,7 @@ import org.hl7.davinci.api.service.JobAlreadyRunningException;
 import org.hl7.davinci.api.service.FetchedResource;
 import org.hl7.davinci.api.service.FhirCrawlClient;
 import org.hl7.davinci.api.service.ManifestService;
+import org.hl7.davinci.api.service.ServerRegistry;
 import org.hl7.davinci.api.service.SinceUnsupportedException;
 import org.hl7.davinci.api.service.StepEvent;
 import org.hl7.davinci.api.service.StrategyUnsupportedException;
@@ -50,7 +51,6 @@ class CrawlServiceTest {
 		String good = "http://good.example/fhir";
 		String bad = "http://bad.example/fhir";
 		FetchedResource fetched = new FetchedResource(
-				good + "|Organization/a",
 				"Organization",
 				"a",
 				"1",
@@ -134,7 +134,6 @@ class CrawlServiceTest {
 	void cancelJobStopsTheRunAndSuppressesItsWrites() throws Exception {
 		String server = "http://good.example/fhir";
 		FetchedResource fetched = new FetchedResource(
-				server + "|Organization/a",
 				"Organization",
 				"a",
 				"1",
@@ -181,8 +180,8 @@ class CrawlServiceTest {
 	@Test
 	void cancelJobStopsStreamedResourceBatches() throws Exception {
 		String server = "http://good.example/fhir";
-		FetchedResource first = new FetchedResource(server + "|Organization/a", "Organization", "a", "1", null, "{}", 2);
-		FetchedResource second = new FetchedResource(server + "|Organization/b", "Organization", "b", "1", null, "{}", 2);
+		FetchedResource first = new FetchedResource("Organization", "a", "1", null, "{}", 2);
+		FetchedResource second = new FetchedResource("Organization", "b", "1", null, "{}", 2);
 		EmittingAfterCancelFhirCrawlClient client = new EmittingAfterCancelFhirCrawlClient(first, second);
 		RecordingPersistence persistence = new RecordingPersistence();
 		CompletionAwareEvents events = new CompletionAwareEvents();
@@ -218,7 +217,6 @@ class CrawlServiceTest {
 	void serverShutdownRecordsInFlightRunsAsPausedAndKeepsTheRunningFlagForStartupResume() throws Exception {
 		String server = "http://good.example/fhir";
 		FetchedResource fetched = new FetchedResource(
-				server + "|Organization/a",
 				"Organization",
 				"a",
 				"1",
@@ -285,7 +283,6 @@ class CrawlServiceTest {
 	void pauseJobRecordsAPausedRunAndKeepsItsCheckpoints() throws Exception {
 		String server = "http://good.example/fhir";
 		FetchedResource fetched = new FetchedResource(
-				server + "|Organization/a",
 				"Organization",
 				"a",
 				"1",
@@ -418,7 +415,6 @@ class CrawlServiceTest {
 	void triggerAsyncExposesTheActiveBatchUntilTheRunCompletes() throws Exception {
 		String server = "http://good.example/fhir";
 		FetchedResource fetched = new FetchedResource(
-				server + "|Organization/a",
 				"Organization",
 				"a",
 				"1",
@@ -584,7 +580,7 @@ class CrawlServiceTest {
 					default -> throw new UnsupportedOperationException(method.getName());
 				});
 
-		CrawlPersistenceService persistence = new CrawlPersistenceService(resourceRepo()) {
+		CrawlPersistenceService persistence = new CrawlPersistenceService(resourceRepo(), serverRegistry()) {
 			@Override
 			public SnapshotSession openSession(String serverKey, String serverLabel) {
 				throw new AssertionError("a resumed full crawl must open the resumed session");
@@ -763,7 +759,7 @@ class CrawlServiceTest {
 		final List<String> finishes = new ArrayList<>();
 
 		FinishRecordingPersistence() {
-			super(resourceRepo());
+			super(resourceRepo(), serverRegistry());
 		}
 
 		@Override
@@ -864,7 +860,7 @@ class CrawlServiceTest {
 
 	private static class FakePersistence extends CrawlPersistenceService {
 		FakePersistence() {
-			super(resourceRepo());
+			super(resourceRepo(), serverRegistry());
 		}
 
 		@Override
@@ -890,7 +886,7 @@ class CrawlServiceTest {
 		final AtomicInteger accepted = new AtomicInteger();
 
 		RecordingPersistence() {
-			super(resourceRepo());
+			super(resourceRepo(), serverRegistry());
 		}
 
 		@Override
@@ -1104,6 +1100,11 @@ class CrawlServiceTest {
 
 	private static CrawlResourceRepository resourceRepo() {
 		return proxy(CrawlResourceRepository.class);
+	}
+
+	/** Never actually invoked: every fake persistence subclass overrides openSession directly. */
+	private static ServerRegistry serverRegistry() {
+		return new ServerRegistry(null);
 	}
 
 	@SuppressWarnings("unchecked")

@@ -14,13 +14,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.Random;
 import java.util.Set;
-import java.util.stream.Collectors;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.entity.CrawlMode;
 import org.hl7.davinci.api.entity.CrawlResource;
+import org.hl7.davinci.api.entity.CrawlResourceId;
 import org.hl7.davinci.api.entity.CrawlRun;
 import org.hl7.davinci.api.entity.CrawlStrategy;
 import org.hl7.davinci.api.entity.ManifestRecord;
@@ -39,7 +41,9 @@ import org.hl7.davinci.api.repository.ManifestRepository;
 import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.ManifestService;
 import org.hl7.davinci.api.service.ResourceJsonCodec;
+import org.hl7.davinci.api.service.ServerRegistry;
 import org.hl7.davinci.api.service.ServerScope;
+import org.hl7.davinci.common.PlanNetTypes;
 import org.hl7.fhir.r4.model.Organization;
 import org.junit.jupiter.api.Test;
 import org.opencds.cqf.fhir.cr.hapi.config.RepositoryConfig;
@@ -95,6 +99,9 @@ class DirectoryCrawlerSelfCrawlIT {
 	private CrawlResourceRepository resourceRepo;
 
 	@Autowired
+	private ServerRegistry serverRegistry;
+
+	@Autowired
 	private CrawlRunRepository runRepo;
 
 	@Autowired
@@ -125,7 +132,6 @@ class DirectoryCrawlerSelfCrawlIT {
 		org.setName("Large Body Org");
 		org.addAlias(highEntropy.toString());
 		String orgId = client.create().resource(org).execute().getId().getIdPart();
-		String key = base + "|Organization/" + orgId;
 
 		CrawlJob job = new CrawlJob();
 		job.setId("large-body");
@@ -138,7 +144,7 @@ class DirectoryCrawlerSelfCrawlIT {
 
 		CrawlRun run = crawlService.crawlJob(job).get(0);
 		assertEquals(RunStatus.COMPLETED, run.getStatus());
-		CrawlResource stored = resourceRepo.findById(key).orElseThrow();
+		CrawlResource stored = resourceRepo.findById(resourceId(base, "Organization", orgId)).orElseThrow();
 		assertTrue(
 				stored.getResourceJson().length > 32_600,
 				"expected a gzip body above the old column limit, was " + stored.getResourceJson().length);
@@ -147,7 +153,7 @@ class DirectoryCrawlerSelfCrawlIT {
 		// Remove the oversized org so other tests crawl only the ordinary seed data.
 		client.delete().resourceById("Organization", orgId).execute();
 		crawlService.crawlJob(job);
-		assertTrue(resourceRepo.findById(key).isEmpty());
+		assertTrue(resourceRepo.findById(resourceId(base, "Organization", orgId)).isEmpty());
 	}
 
 	@Test
@@ -297,7 +303,6 @@ class DirectoryCrawlerSelfCrawlIT {
 		org.setName("Crawler IT Temp Org");
 		org.setActive(true);
 		String orgId = client.create().resource(org).execute().getId().getIdPart();
-		String key = base + "|Organization/" + orgId;
 
 		CrawlRun added = crawlService.crawlJob(job).get(0);
 		assertEquals(CrawlMode.INCREMENTAL, added.getMode());
@@ -308,7 +313,7 @@ class DirectoryCrawlerSelfCrawlIT {
 				Integer.valueOf(first.getTotalAfter() + 1),
 				added.getTotalAfter(),
 				"the directory total should grow by the added resource even though only the delta was fetched");
-		assertTrue(resourceRepo.findById(key).isPresent(), "new resource should be stored");
+		assertTrue(resourceRepo.findById(resourceId(base, "Organization", orgId)).isPresent(), "new resource should be stored");
 		assertTrue(
 				added.getRecords() < first.getRecords(),
 				"incremental run should fetch fewer than a full crawl ("
@@ -330,7 +335,7 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(CrawlMode.INCREMENTAL, deleted.getMode());
 		assertEquals(RunStatus.COMPLETED, deleted.getStatus());
 		assertTrue(deleted.getDeleted() >= 1, "the deletion should be detected via system _history");
-		assertTrue(resourceRepo.findById(key).isEmpty(), "deleted resource should be removed from the store");
+		assertTrue(resourceRepo.findById(resourceId(base, "Organization", orgId)).isEmpty(), "deleted resource should be removed from the store");
 		assertEquals(
 				first.getTotalAfter(),
 				deleted.getTotalAfter(),
@@ -359,13 +364,12 @@ class DirectoryCrawlerSelfCrawlIT {
 		org.setName("History IT Temp Org");
 		org.setActive(true);
 		String orgId = client.create().resource(org).execute().getId().getIdPart();
-		String key = base + "|Organization/" + orgId;
 
 		CrawlRun added = crawlService.crawlJob(job).get(0);
 		assertEquals(CrawlMode.INCREMENTAL, added.getMode());
 		assertEquals(RunStatus.COMPLETED, added.getStatus(), "incremental history errored: " + added.getError());
 		assertTrue(added.getAdded() >= 1, "the new resource should be detected as added");
-		assertTrue(resourceRepo.findById(key).isPresent(), "new resource should be stored");
+		assertTrue(resourceRepo.findById(resourceId(base, "Organization", orgId)).isPresent(), "new resource should be stored");
 		assertTrue(
 				added.getRecords() < 100,
 				"incremental history should process only the delta, was " + added.getRecords());
@@ -376,7 +380,7 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(CrawlMode.INCREMENTAL, deleted.getMode());
 		assertEquals(RunStatus.COMPLETED, deleted.getStatus());
 		assertTrue(deleted.getDeleted() >= 1, "the deletion should be detected via _history?_since");
-		assertTrue(resourceRepo.findById(key).isEmpty(), "deleted resource should be removed from the store");
+		assertTrue(resourceRepo.findById(resourceId(base, "Organization", orgId)).isEmpty(), "deleted resource should be removed from the store");
 	}
 
 	@Test
@@ -412,12 +416,7 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(RunStatus.COMPLETED, run.getStatus(), "partitioned crawl errored: " + run.getError());
 		assertTrue(run.getRecords() > 0, "expected the seeded directory to yield resources");
 
-		String prefix = base + "|";
-		Set<String> partitionedKeys =
-				resourceRepo.findKeysByKeyGreaterThanOrderByKeyAsc(prefix, PageRequest.ofSize(100_000)).stream()
-						.filter(key -> key.startsWith(prefix))
-						.map(key -> key.substring(prefix.length()))
-						.collect(Collectors.toSet());
+		Set<String> partitionedKeys = resourceIdentities(base);
 
 		assertEquals(
 				lastUpdatedKeys,
@@ -496,7 +495,7 @@ class DirectoryCrawlerSelfCrawlIT {
 		jobRepo.save(job);
 
 		crawlService.crawlJob(job);
-		assertTrue(resourceRepo.countByServerKey(base) > 0, "the crawl should have populated the server's resources");
+		assertTrue(serverResourceCount(base) > 0, "the crawl should have populated the server's resources");
 
 		// Every job in this class targets the same self URL; remove leftovers from sibling tests so
 		// this job is genuinely the last one referencing the server.
@@ -506,15 +505,12 @@ class DirectoryCrawlerSelfCrawlIT {
 			}
 		}
 		assertTrue(
-				resourceRepo.countByServerKey(base) > 0,
+				serverResourceCount(base) > 0,
 				"deleting other jobs must not clear resources while this job still references the server");
 
 		jobDeletionService.deleteJob("orphan-cleanup");
 
-		assertEquals(
-				0,
-				resourceRepo.countByServerKey(base),
-				"no remaining job targets the server, so its resources are cleared");
+		assertEquals(0, serverResourceCount(base), "no remaining job targets the server, so its resources are cleared");
 	}
 
 	@Test
@@ -589,10 +585,43 @@ class DirectoryCrawlerSelfCrawlIT {
 		assertEquals(CrawlMode.FULL, run.getMode());
 
 		// Capture the aggregate before the next strategy clears and reloads this server's rows.
-		String prefix = base + "|";
-		return resourceRepo.findKeysByKeyGreaterThanOrderByKeyAsc(prefix, PageRequest.ofSize(100_000)).stream()
-				.filter(key -> key.startsWith(prefix))
-				.map(key -> key.substring(prefix.length()))
-				.collect(Collectors.toSet());
+		return resourceIdentities(base);
+	}
+
+	private CrawlResourceId resourceId(String base, String type, String uid) {
+		return new CrawlResourceId(serverRegistry.idIfExists(base).orElseThrow(), PlanNetTypes.idOf(type), uid);
+	}
+
+	/** Every fetched resource identity ({@code Type/id}) currently stored for a server. */
+	private Set<String> resourceIdentities(String base) {
+		OptionalInt serverId = serverRegistry.idIfExists(base);
+		if (serverId.isEmpty()) {
+			return Set.of();
+		}
+		Set<String> identities = new HashSet<>();
+		for (String type : PlanNetTypes.TYPES) {
+			int typeId = PlanNetTypes.idOf(type);
+			String afterUid = "";
+			while (true) {
+				List<String> uids = resourceRepo.findUids(
+						serverId.getAsInt(), typeId, afterUid, PageRequest.ofSize(100_000));
+				if (uids.isEmpty()) {
+					break;
+				}
+				for (String uid : uids) {
+					identities.add(type + "/" + uid);
+					afterUid = uid;
+				}
+				if (uids.size() < 100_000) {
+					break;
+				}
+			}
+		}
+		return identities;
+	}
+
+	private long serverResourceCount(String base) {
+		OptionalInt serverId = serverRegistry.idIfExists(base);
+		return serverId.isEmpty() ? 0L : resourceRepo.countByIdServerId(serverId.getAsInt());
 	}
 }

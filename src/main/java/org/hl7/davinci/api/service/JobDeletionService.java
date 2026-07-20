@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.Set;
 
 /** Removes a crawl job together with its run history and retained manifests. */
@@ -25,6 +26,7 @@ public class JobDeletionService {
 	private final CrawlRunRepository runRepo;
 	private final CrawlStepRepository stepRepo;
 	private final CrawlResourceRepository resourceRepo;
+	private final ServerRegistry serverRegistry;
 	private final CrawlCheckpointRepository checkpointRepo;
 	private final ManifestService manifestService;
 	private final CrawlService crawlService;
@@ -34,6 +36,7 @@ public class JobDeletionService {
 			CrawlRunRepository runRepo,
 			CrawlStepRepository stepRepo,
 			CrawlResourceRepository resourceRepo,
+			ServerRegistry serverRegistry,
 			CrawlCheckpointRepository checkpointRepo,
 			ManifestService manifestService,
 			CrawlService crawlService) {
@@ -41,6 +44,7 @@ public class JobDeletionService {
 		this.runRepo = runRepo;
 		this.stepRepo = stepRepo;
 		this.resourceRepo = resourceRepo;
+		this.serverRegistry = serverRegistry;
 		this.checkpointRepo = checkpointRepo;
 		this.manifestService = manifestService;
 		this.crawlService = crawlService;
@@ -83,10 +87,16 @@ public class JobDeletionService {
 			}
 		}
 		for (String serverKey : serversOfJob) {
-			if (!stillReferenced.contains(serverKey)) {
-				int deleted = resourceRepo.deleteByServerKey(serverKey);
-				ourLog.info("Cleared {} resources for server {}: no remaining job targets it", deleted, serverKey);
+			if (stillReferenced.contains(serverKey)) {
+				continue;
 			}
+			OptionalInt serverId = serverRegistry.idIfExists(serverKey);
+			if (serverId.isEmpty()) {
+				continue;
+			}
+			int deleted = resourceRepo.deleteByServerId(serverId.getAsInt());
+			serverRegistry.deleteServer(serverKey);
+			ourLog.info("Cleared {} resources for server {}: no remaining job targets it", deleted, serverKey);
 		}
 	}
 }

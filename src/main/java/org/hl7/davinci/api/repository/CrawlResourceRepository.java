@@ -1,6 +1,7 @@
 package org.hl7.davinci.api.repository;
 
 import org.hl7.davinci.api.entity.CrawlResource;
+import org.hl7.davinci.api.entity.CrawlResourceId;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -10,60 +11,40 @@ import org.springframework.data.repository.query.Param;
 import java.util.Collection;
 import java.util.List;
 
-public interface CrawlResourceRepository extends JpaRepository<CrawlResource, String> {
+public interface CrawlResourceRepository extends JpaRepository<CrawlResource, CrawlResourceId> {
 
-	/**
-	 * One keyset page ordered by primary key, used to stream the manifest snapshot without
-	 * materializing the whole aggregate. Filtering on the primary key alone (no serverKey equality)
-	 * forces H2 to range-scan the primary key index, which never sorts; adding a serverKey equality
-	 * predicate lets the optimizer pick the serverKey index and re-sort every page. Keys are
-	 * {@code serverKey|Type/id}, so the caller bounds one server by its {@code serverKey|} prefix.
-	 */
-	List<CrawlResource> findByKeyGreaterThanOrderByKeyAsc(String afterKey, Pageable pageable);
+	/** Diff-key projection for the given uids within one (server, type). */
+	@Query("select r.id.uid as uid, r.versionId as versionId, r.lastUpdated as lastUpdated "
+			+ "from CrawlResource r where r.id.serverId = :serverId and r.id.typeId = :typeId "
+			+ "and r.id.uid in :uids")
+	List<ResourceVersionView> findVersionViews(
+			@Param("serverId") int serverId, @Param("typeId") int typeId, @Param("uids") Collection<String> uids);
 
-	/**
-	 * One server's rows occupy an exclusive primary-key range: keys are {@code serverKey|Type/id},
-	 * '}' is the character after '|', and server keys never contain '|'.
-	 */
-	@Query("select count(r) from CrawlResource r where r.key > :from and r.key < :to")
-	long countByKeyRange(@Param("from") String from, @Param("to") String to);
+	/** One keyset page within (server, type), used to stream the aggregate for export and deletion scans. */
+	List<CrawlResource> findByIdServerIdAndIdTypeIdAndIdUidGreaterThanOrderByIdUidAsc(
+			int serverId, int typeId, String afterUid, Pageable pageable);
 
-	default long countByServerKey(String serverKey) {
-		return countByKeyRange(serverKey + "|", serverKey + "}");
-	}
+	/** A keyset page of bare uids within (server, type), ordered by uid. */
+	@Query("select r.id.uid from CrawlResource r where r.id.serverId = :serverId "
+			+ "and r.id.typeId = :typeId and r.id.uid > :afterUid order by r.id.uid asc")
+	List<String> findUids(
+			@Param("serverId") int serverId,
+			@Param("typeId") int typeId,
+			@Param("afterUid") String afterUid,
+			Pageable pageable);
 
-	@Modifying
-	@Query("delete from CrawlResource r where r.key > :from and r.key < :to")
-	int deleteByKeyRange(@Param("from") String from, @Param("to") String to);
+	long countByIdServerIdAndIdTypeId(int serverId, int typeId);
+
+	long countByIdServerId(int serverId);
 
 	/** A bulk SQL delete (no entity loading) of a whole server's aggregate. Needs an ambient transaction. */
-	default int deleteByServerKey(String serverKey) {
-		return deleteByKeyRange(serverKey + "|", serverKey + "}");
-	}
-
-	/**
-	 * One (server, type) count as a primary-key range: keys are {@code serverKey|Type/id} and
-	 * '0' is the character after '/', so the range covers exactly that type's rows. This keeps
-	 * overall stats on the PK index (an index-only range count) instead of a full-table scan
-	 * over an unindexed resourceType column.
-	 */
-	default long countByServerKeyAndType(String serverKey, String resourceType) {
-		String prefix = serverKey + "|" + resourceType + "/";
-		return countByKeyRange(prefix, serverKey + "|" + resourceType + "0");
-	}
-
-	/** Diff-key projection for the given keys. */
-	@Query("select r.key as key, r.versionId as versionId, r.lastUpdated as lastUpdated "
-			+ "from CrawlResource r where r.key in :keys")
-	List<ResourceVersionView> findVersionViewByKeys(@Param("keys") Collection<String> keys);
-
-	/** A keyset page of bare primary keys, ordered by key; the caller bounds one server by its {@code serverKey|} prefix. */
-	@Query("select r.key from CrawlResource r where r.key > :afterKey order by r.key asc")
-	List<String> findKeysByKeyGreaterThanOrderByKeyAsc(@Param("afterKey") String afterKey, Pageable pageable);
+	@Modifying
+	@Query("delete from CrawlResource r where r.id.serverId = :serverId")
+	int deleteByServerId(@Param("serverId") int serverId);
 
 	/** Spring Data projection: just the fields the diff needs. */
 	interface ResourceVersionView {
-		String getKey();
+		String getUid();
 
 		String getVersionId();
 

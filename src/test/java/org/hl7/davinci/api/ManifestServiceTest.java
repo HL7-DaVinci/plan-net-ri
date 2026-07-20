@@ -126,7 +126,7 @@ class ManifestServiceTest {
 		record.setTransactionTime(Instant.parse("2026-07-01T00:00:00Z"));
 		List<ManifestRecord> store = new ArrayList<>(List.of(record));
 		Instant lastCrawlStart = Instant.parse("2026-07-10T08:00:00Z");
-		NdjsonExportService fakeExport = new NdjsonExportService(null, props) {
+		NdjsonExportService fakeExport = new NdjsonExportService(null, null, props) {
 			@Override
 			public SnapshotResult writeSnapshot(String manifestId, List<String> serverKeys) {
 				Path dir = tmp.resolve(manifestId);
@@ -164,7 +164,7 @@ class ManifestServiceTest {
 		ManifestRecord record = manifest("m-lost", "job-1", tmp.resolve("m-lost"));
 		Instant originalTime = Instant.parse("2026-07-01T00:00:00Z");
 		record.setTransactionTime(originalTime);
-		NdjsonExportService fakeExport = new NdjsonExportService(null, props) {
+		NdjsonExportService fakeExport = new NdjsonExportService(null, null, props) {
 			@Override
 			public SnapshotResult writeSnapshot(String manifestId, List<String> serverKeys) {
 				Path dir = tmp.resolve(manifestId);

@@ -6,34 +6,36 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.hl7.davinci.api.entity.CrawlResource;
+import org.hl7.davinci.api.entity.CrawlResourceId;
 import org.hl7.davinci.api.repository.CrawlResourceRepository;
 import org.hl7.davinci.api.service.CrawlPersistenceService;
 import org.hl7.davinci.api.service.DeletionEntry;
 import org.hl7.davinci.api.service.FetchedResource;
 import org.hl7.davinci.api.service.ResourceJsonCodec;
+import org.hl7.davinci.api.service.ServerRegistry;
+import org.hl7.davinci.common.PlanNetTypes;
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicReference;
 import org.junit.jupiter.api.Test;
+import org.springframework.data.domain.Pageable;
 
 class CrawlPersistenceServiceTest {
 
+	private static final int ORG = PlanNetTypes.idOf("Organization");
+
 	@Test
 	void incrementalDeleteDoesNotRemoveResourceFetchedInSameDelta() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
-		CrawlResourceRepository resourceRepo = repo(
-				List.of(version("s|Organization/a", "1", "2026-01-01T00:00:00Z")), deletedIds);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
+		CrawlResourceRepository resourceRepo = repo(List.of(row(1, "a", "1", "2026-01-01T00:00:00Z")), deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry("s", 1));
 
 		FetchedResource recreated = new FetchedResource(
-				"s|Organization/a",
-				"Organization",
-				"a",
-				"2",
-				"2026-01-02T00:00:00Z",
-				"{\"resourceType\":\"Organization\",\"id\":\"a\"}",
-				40);
+				"Organization", "a", "2", "2026-01-02T00:00:00Z", "{\"resourceType\":\"Organization\",\"id\":\"a\"}", 40);
 
 		CrawlPersistenceService.PersistCounts counts = service.persistIncremental(
 				"s", "server", List.of(recreated), List.of(new DeletionEntry("Organization", "a")));
@@ -47,20 +49,18 @@ class CrawlPersistenceServiceTest {
 
 	@Test
 	void fullSnapshotUpsertsOnlyChangesAndDeletesMissing() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
 		AtomicReference<List<CrawlResource>> saved = new AtomicReference<>(List.of());
 		CrawlResourceRepository resourceRepo = repo(
-				List.of(
-						version("s|Organization/a", "1", "2026-01-01T00:00:00Z"),
-						version("s|Organization/b", "1", "2026-01-01T00:00:00Z")),
+				List.of(row(1, "a", "1", "2026-01-01T00:00:00Z"), row(1, "b", "1", "2026-01-01T00:00:00Z")),
 				deletedIds,
 				saved);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry("s", 1));
 
 		String json = "{\"resourceType\":\"Organization\",\"id\":\"c\"}";
-		FetchedResource unchanged = new FetchedResource(
-				"s|Organization/a", "Organization", "a", "1", "2026-01-01T00:00:00Z", "{}", 2);
-		FetchedResource added = new FetchedResource("s|Organization/c", "Organization", "c", "1", null, json, 40);
+		FetchedResource unchanged =
+				new FetchedResource("Organization", "a", "1", "2026-01-01T00:00:00Z", "{}", 2);
+		FetchedResource added = new FetchedResource("Organization", "c", "1", null, json, 40);
 
 		CrawlPersistenceService.PersistCounts counts =
 				service.persistFullSnapshot("s", "server", List.of(unchanged, added));
@@ -70,34 +70,32 @@ class CrawlPersistenceServiceTest {
 		assertEquals(1, counts.deleted());
 		assertEquals(2, counts.total(), "two existing plus one added minus one deleted");
 		assertEquals(
-				List.of("s|Organization/c"),
-				saved.get().stream().map(CrawlResource::getKey).toList(),
+				List.of("c"),
+				saved.get().stream().map(r -> r.getId().getUid()).toList(),
 				"unchanged rows must not be rewritten");
-		assertEquals(List.of("s|Organization/b"), deletedIds.get(), "keys absent from the fetch are deletions");
+		assertEquals(List.of(id(1, "b")), deletedIds.get(), "keys absent from the fetch are deletions");
 		assertTrue(saved.get().get(0).getResourceJson()[0] == (byte) 0x1f, "bodies are stored gzip-compressed");
 		assertEquals(json, ResourceJsonCodec.decode(saved.get().get(0).getResourceJson()));
 	}
 
 	@Test
 	void addedRowsAreFlaggedNewSoTheyInsertWithoutASelect() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
 		AtomicReference<List<CrawlResource>> saved = new AtomicReference<>(List.of());
-		CrawlResourceRepository resourceRepo =
-				repo(List.of(version("s|Organization/a", "1", "2026-01-01T00:00:00Z")), deletedIds, saved);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+		CrawlResourceRepository resourceRepo = repo(List.of(row(1, "a", "1", "2026-01-01T00:00:00Z")), deletedIds, saved);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry("s", 1));
 
-		FetchedResource updated =
-				new FetchedResource("s|Organization/a", "Organization", "a", "2", "2026-01-02T00:00:00Z", "{}", 2);
-		FetchedResource added = new FetchedResource("s|Organization/b", "Organization", "b", "1", null, "{}", 2);
+		FetchedResource updated = new FetchedResource("Organization", "a", "2", "2026-01-02T00:00:00Z", "{}", 2);
+		FetchedResource added = new FetchedResource("Organization", "b", "1", null, "{}", 2);
 
 		service.persistFullSnapshot("s", "server", List.of(updated, added));
 
 		CrawlResource addedRow = saved.get().stream()
-				.filter(r -> r.getKey().equals("s|Organization/b"))
+				.filter(r -> r.getId().getUid().equals("b"))
 				.findFirst()
 				.orElseThrow();
 		CrawlResource updatedRow = saved.get().stream()
-				.filter(r -> r.getKey().equals("s|Organization/a"))
+				.filter(r -> r.getId().getUid().equals("a"))
 				.findFirst()
 				.orElseThrow();
 		assertTrue(addedRow.isNew(), "an added row inserts (persist) without a pre-select");
@@ -106,12 +104,13 @@ class CrawlPersistenceServiceTest {
 
 	@Test
 	void repeatedStreamedAddedKeyCountsOnce() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
 		AtomicReference<List<CrawlResource>> saved = new AtomicReference<>(List.of());
-		CrawlPersistenceService.SnapshotSession session =
-				new CrawlPersistenceService(repo(List.of(), deletedIds, saved)).openSession("s", "server");
-		FetchedResource first = new FetchedResource("s|Organization/a", "Organization", "a", "1", null, "{}", 2);
-		FetchedResource duplicate = new FetchedResource("s|Organization/a", "Organization", "a", "2", null, "{}", 2);
+		CrawlPersistenceService.SnapshotSession session = new CrawlPersistenceService(
+						repo(List.of(), deletedIds, saved), registry("s", 1))
+				.openSession("s", "server");
+		FetchedResource first = new FetchedResource("Organization", "a", "1", null, "{}", 2);
+		FetchedResource duplicate = new FetchedResource("Organization", "a", "2", null, "{}", 2);
 
 		session.accept(List.of(first));
 		session.accept(List.of(duplicate));
@@ -131,8 +130,8 @@ class CrawlPersistenceServiceTest {
 				CrawlResourceRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlResourceRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-						case "countByServerKey" -> 0L;
-						case "findVersionViewByKeys" -> List.of();
+						case "countByIdServerId" -> 0L;
+						case "findVersionViews" -> List.of();
 					case "saveAll" -> {
 						saveAllCalls[0]++;
 						List<CrawlResource> acc = new ArrayList<>(saved.get());
@@ -147,11 +146,11 @@ class CrawlPersistenceServiceTest {
 
 		List<FetchedResource> fetched = new ArrayList<>();
 		for (int i = 0; i < 1500; i++) {
-			fetched.add(new FetchedResource("s|Organization/" + i, "Organization", "" + i, "1", null, "{}", 2));
+			fetched.add(new FetchedResource("Organization", "" + i, "1", null, "{}", 2));
 		}
 
-		CrawlPersistenceService.PersistCounts counts =
-				new CrawlPersistenceService(resourceRepo).persistFullSnapshot("s", "server", fetched);
+		CrawlPersistenceService.PersistCounts counts = new CrawlPersistenceService(resourceRepo, registry("s", 1))
+				.persistFullSnapshot("s", "server", fetched);
 
 		assertEquals(1500, counts.added());
 		assertEquals(1500, counts.total());
@@ -161,10 +160,9 @@ class CrawlPersistenceServiceTest {
 
 	@Test
 	void incrementalDeletionOfAnAbsentKeyIsDropped() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
-		CrawlResourceRepository resourceRepo =
-				repo(List.of(version("s|Organization/a", "1", "2026-01-01T00:00:00Z")), deletedIds);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
+		CrawlResourceRepository resourceRepo = repo(List.of(row(1, "a", "1", "2026-01-01T00:00:00Z")), deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry("s", 1));
 
 		// A history-scan deletion for a key the DB never held must not be reported as a delete.
 		CrawlPersistenceService.PersistCounts counts =
@@ -176,40 +174,35 @@ class CrawlPersistenceServiceTest {
 
 	@Test
 	void fullSnapshotDeletesOnlyTheTargetServersUnfetchedKeys() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
 		AtomicReference<List<CrawlResource>> saved = new AtomicReference<>(List.of());
-		// Two servers share the table; crawling s1 must never touch s2's keys (PK-stream prefix bound).
+		// Two servers share the table; crawling s1 must never touch s2's rows (PK-prefix bound).
 		CrawlResourceRepository resourceRepo = repo(
 				List.of(
-						version("s1|Organization/a", "1", "2026-01-01T00:00:00Z"),
-						version("s1|Organization/b", "1", "2026-01-01T00:00:00Z"),
-						version("s2|Organization/c", "1", "2026-01-01T00:00:00Z")),
+						row(1, "a", "1", "2026-01-01T00:00:00Z"),
+						row(1, "b", "1", "2026-01-01T00:00:00Z"),
+						row(2, "c", "1", "2026-01-01T00:00:00Z")),
 				deletedIds,
 				saved);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry(Map.of("s1", 1, "s2", 2)));
 
-		FetchedResource a =
-				new FetchedResource("s1|Organization/a", "Organization", "a", "1", "2026-01-01T00:00:00Z", "{}", 2);
+		FetchedResource a = new FetchedResource("Organization", "a", "1", "2026-01-01T00:00:00Z", "{}", 2);
 
 		CrawlPersistenceService.PersistCounts counts = service.persistFullSnapshot("s1", "server", List.of(a));
 
-		assertEquals(1, counts.deleted(), "only s1's un-fetched key b is deleted");
-		assertEquals(List.of("s1|Organization/b"), deletedIds.get());
+		assertEquals(1, counts.deleted(), "only s1's un-fetched row b is deleted");
+		assertEquals(List.of(id(1, "b")), deletedIds.get());
 		assertEquals(1, counts.total(), "s1 had 2 rows; a kept, b deleted, 0 added");
 	}
 
 	@Test
 	void resumedFullSessionDoesNotDeleteRowsBelowTheFloors() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
 		CrawlResourceRepository resourceRepo = repo(
-				List.of(
-						version("s|Organization/a", "1", "2026-01-01T00:00:00Z"),
-						version("s|Organization/b", "1", "2026-01-01T00:00:00Z")),
-				deletedIds);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+				List.of(row(1, "a", "1", "2026-01-01T00:00:00Z"), row(1, "b", "1", "2026-01-01T00:00:00Z")), deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry("s", 1));
 
-		FetchedResource refetched = new FetchedResource(
-				"s|Organization/a", "Organization", "a", "2", "2026-02-01T00:00:00Z", "{}", 2);
+		FetchedResource refetched = new FetchedResource("Organization", "a", "2", "2026-02-01T00:00:00Z", "{}", 2);
 		CrawlPersistenceService.SnapshotSession session = service.openResumedFullSession("s", "server");
 		session.accept(List.of(refetched));
 		CrawlPersistenceService.PersistCounts counts = session.finishIncremental(List.of());
@@ -223,10 +216,9 @@ class CrawlPersistenceServiceTest {
 
 	@Test
 	void resumedFullSessionRefusesTheFullSnapshotFinish() {
-		AtomicReference<List<String>> deletedIds = new AtomicReference<>(List.of());
-		CrawlResourceRepository resourceRepo =
-				repo(List.of(version("s|Organization/a", "1", "2026-01-01T00:00:00Z")), deletedIds);
-		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo);
+		AtomicReference<List<CrawlResourceId>> deletedIds = new AtomicReference<>(List.of());
+		CrawlResourceRepository resourceRepo = repo(List.of(row(1, "a", "1", "2026-01-01T00:00:00Z")), deletedIds);
+		CrawlPersistenceService service = new CrawlPersistenceService(resourceRepo, registry("s", 1));
 
 		CrawlPersistenceService.SnapshotSession session = service.openResumedFullSession("s", "server");
 
@@ -236,34 +228,78 @@ class CrawlPersistenceServiceTest {
 				"the absent-key scan would misclassify everything below the floors as deleted");
 	}
 
-	private static CrawlResourceRepository repo(
-			List<CrawlResourceRepository.ResourceVersionView> versions, AtomicReference<List<String>> deletedIds) {
-		return repo(versions, deletedIds, new AtomicReference<>(List.of()));
+	private record ExistingRow(CrawlResourceId id, String versionId, String lastUpdated) {}
+
+	private static ExistingRow row(int serverId, String uid, String versionId, String lastUpdated) {
+		return new ExistingRow(id(serverId, uid), versionId, lastUpdated);
+	}
+
+	private static CrawlResourceId id(int serverId, String uid) {
+		return new CrawlResourceId(serverId, ORG, uid);
+	}
+
+	/** A fake {@link ServerRegistry} resolving a single serverKey to a fixed serverId. */
+	private static ServerRegistry registry(String serverKey, int serverId) {
+		return registry(Map.of(serverKey, serverId));
+	}
+
+	private static ServerRegistry registry(Map<String, Integer> ids) {
+		return new ServerRegistry(null) {
+			@Override
+			public int idFor(String serverKey) {
+				return ids.get(serverKey);
+			}
+		};
 	}
 
 	private static CrawlResourceRepository repo(
-			List<CrawlResourceRepository.ResourceVersionView> versions,
-			AtomicReference<List<String>> deletedIds,
+			List<ExistingRow> existing, AtomicReference<List<CrawlResourceId>> deletedIds) {
+		return repo(existing, deletedIds, new AtomicReference<>(List.of()));
+	}
+
+	private static CrawlResourceRepository repo(
+			List<ExistingRow> existing,
+			AtomicReference<List<CrawlResourceId>> deletedIds,
 			AtomicReference<List<CrawlResource>> saved) {
 		return (CrawlResourceRepository) Proxy.newProxyInstance(
 				CrawlResourceRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlResourceRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-					case "countByServerKey" -> versions.stream()
-							.filter(v -> v.getKey().startsWith((String) args[0] + "|"))
-							.count();
-					case "findVersionViewByKeys" -> {
-						@SuppressWarnings("unchecked")
-						java.util.Collection<String> keys = (java.util.Collection<String>) args[0];
-						yield versions.stream().filter(v -> keys.contains(v.getKey())).toList();
+					case "countByIdServerId" -> {
+						int serverId = (int) args[0];
+						yield existing.stream()
+								.filter(r -> r.id().getServerId() == serverId)
+								.count();
 					}
-					case "findKeysByKeyGreaterThanOrderByKeyAsc" -> {
-						String afterKey = (String) args[0];
-						int pageSize = ((org.springframework.data.domain.Pageable) args[1]).getPageSize();
-						java.util.TreeSet<String> all = new java.util.TreeSet<>();
-						versions.forEach(v -> all.add(v.getKey()));
-						saved.get().forEach(e -> all.add(e.getKey()));
-						yield all.stream().filter(k -> k.compareTo(afterKey) > 0).limit(pageSize).toList();
+					case "findVersionViews" -> {
+						int serverId = (int) args[0];
+						int typeId = (int) args[1];
+						@SuppressWarnings("unchecked")
+						Collection<String> uids = (Collection<String>) args[2];
+						yield existing.stream()
+								.filter(r -> r.id().getServerId() == serverId
+										&& r.id().getTypeId() == typeId
+										&& uids.contains(r.id().getUid()))
+								.<CrawlResourceRepository.ResourceVersionView>map(
+										r -> version(r.id().getUid(), r.versionId(), r.lastUpdated()))
+								.toList();
+					}
+					case "findUids" -> {
+						int serverId = (int) args[0];
+						int typeId = (int) args[1];
+						String afterUid = (String) args[2];
+						int pageSize = ((Pageable) args[3]).getPageSize();
+						TreeSet<String> all = new TreeSet<>();
+						existing.stream()
+								.filter(r -> r.id().getServerId() == serverId && r.id().getTypeId() == typeId)
+								.forEach(r -> all.add(r.id().getUid()));
+						saved.get().stream()
+								.filter(e -> e.getId().getServerId() == serverId && e.getId().getTypeId() == typeId)
+								.forEach(e -> all.add(e.getId().getUid()));
+						yield all.stream()
+								.filter(u -> u.compareTo(afterUid) > 0)
+								.limit(pageSize)
+								.toList();
 					}
 					case "saveAll" -> {
 						List<CrawlResource> entities = new ArrayList<>(saved.get());
@@ -274,9 +310,9 @@ class CrawlPersistenceServiceTest {
 						yield args[0];
 					}
 					case "deleteAllById" -> {
-						List<String> ids = new ArrayList<>(deletedIds.get());
+						List<CrawlResourceId> ids = new ArrayList<>(deletedIds.get());
 						for (Object id : (Iterable<?>) args[0]) {
-							ids.add((String) id);
+							ids.add((CrawlResourceId) id);
 						}
 						deletedIds.set(ids);
 						yield null;
@@ -286,11 +322,11 @@ class CrawlPersistenceServiceTest {
 	}
 
 	private static CrawlResourceRepository.ResourceVersionView version(
-			String key, String versionId, String lastUpdated) {
+			String uid, String versionId, String lastUpdated) {
 		return new CrawlResourceRepository.ResourceVersionView() {
 			@Override
-			public String getKey() {
-				return key;
+			public String getUid() {
+				return uid;
 			}
 
 			@Override

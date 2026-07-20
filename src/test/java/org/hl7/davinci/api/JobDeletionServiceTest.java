@@ -9,6 +9,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.Set;
 import org.hl7.davinci.api.entity.CrawlJob;
 import org.hl7.davinci.api.repository.CrawlCheckpointRepository;
@@ -19,6 +20,7 @@ import org.hl7.davinci.api.repository.CrawlStepRepository;
 import org.hl7.davinci.api.service.CrawlService;
 import org.hl7.davinci.api.service.JobDeletionService;
 import org.hl7.davinci.api.service.ManifestService;
+import org.hl7.davinci.api.service.ServerRegistry;
 import org.junit.jupiter.api.Test;
 
 class JobDeletionServiceTest {
@@ -30,7 +32,8 @@ class JobDeletionServiceTest {
 				jobRepo(job("job-1", false), rec),
 				runRepo(List.of("batch-1", "batch-2"), rec),
 				stepRepo(rec),
-				resourceRepo(rec),
+				resourceRepo(),
+				serverRegistry(rec, Map.of()),
 				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
@@ -51,7 +54,8 @@ class JobDeletionServiceTest {
 				jobRepo(job("job-1", true), rec),
 				runRepo(List.of("batch-1"), rec),
 				stepRepo(rec),
-				resourceRepo(rec),
+				resourceRepo(),
+				serverRegistry(rec, Map.of()),
 				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
@@ -72,7 +76,8 @@ class JobDeletionServiceTest {
 				jobRepo(null, rec),
 				runRepo(List.of(), rec),
 				stepRepo(rec),
-				resourceRepo(rec),
+				resourceRepo(),
+				serverRegistry(rec, Map.of()),
 				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
@@ -92,7 +97,8 @@ class JobDeletionServiceTest {
 				jobRepo(job("job-1", false), rec),
 				runRepo(List.of(), rec),
 				stepRepo(rec),
-				resourceRepo(rec),
+				resourceRepo(),
+				serverRegistry(rec, Map.of()),
 				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec));
@@ -117,7 +123,8 @@ class JobDeletionServiceTest {
 				jobRepo(deleted, rec, List.of(other)),
 				runRepo(List.of(), rec),
 				stepRepo(rec),
-				resourceRepo(rec),
+				resourceRepo(),
+				serverRegistry(rec, Map.of("https://a.example", 1, "https://b.example", 2)),
 				checkpointRepo(rec),
 				manifestService(rec),
 				crawlService(rec, serverKeys));
@@ -194,17 +201,29 @@ class JobDeletionServiceTest {
 				});
 	}
 
-	private static CrawlResourceRepository resourceRepo(Recorder rec) {
+	private static CrawlResourceRepository resourceRepo() {
 		return (CrawlResourceRepository) Proxy.newProxyInstance(
 				CrawlResourceRepository.class.getClassLoader(),
 				new Class<?>[] {CrawlResourceRepository.class},
 				(proxy, method, args) -> switch (method.getName()) {
-					case "deleteByServerKey" -> {
-						rec.deletedServers.add((String) args[0]);
-						yield 0;
-					}
+					case "deleteByServerId" -> 0;
 					default -> throw new UnsupportedOperationException(method.getName());
 				});
+	}
+
+	private static ServerRegistry serverRegistry(Recorder rec, Map<String, Integer> ids) {
+		return new ServerRegistry(null) {
+			@Override
+			public OptionalInt idIfExists(String serverKey) {
+				Integer id = ids.get(serverKey);
+				return id == null ? OptionalInt.empty() : OptionalInt.of(id);
+			}
+
+			@Override
+			public void deleteServer(String serverKey) {
+				rec.deletedServers.add(serverKey);
+			}
+		};
 	}
 
 	private static CrawlCheckpointRepository checkpointRepo(Recorder rec) {

@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.OptionalInt;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -39,6 +40,7 @@ public class StatsService {
 	private final ManifestRepository manifestRepo;
 	private final CrawlRunRepository runRepo;
 	private final CrawlResourceRepository resourceRepo;
+	private final ServerRegistry serverRegistry;
 	private final CrawlJobRepository jobRepo;
 
 	private final AtomicReference<OverallStatsResponse> cachedOverall = new AtomicReference<>();
@@ -49,10 +51,12 @@ public class StatsService {
 			ManifestRepository manifestRepo,
 			CrawlRunRepository runRepo,
 			CrawlResourceRepository resourceRepo,
+			ServerRegistry serverRegistry,
 			CrawlJobRepository jobRepo) {
 		this.manifestRepo = manifestRepo;
 		this.runRepo = runRepo;
 		this.resourceRepo = resourceRepo;
+		this.serverRegistry = serverRegistry;
 		this.jobRepo = jobRepo;
 	}
 
@@ -138,9 +142,10 @@ public class StatsService {
 	}
 
 	/**
-	 * Counts ride the primary key: every (server, type) pair is one PK-range count, and the
-	 * server list comes from the jobs table ({@code crawl_resource} only ever holds servers
-	 * some job targets), so no query full-scans the aggregate table.
+	 * Counts ride the composite primary key: every (server, type) pair is one index-only prefix
+	 * count on (server_id, type_id, uid), and the server list comes from the jobs table
+	 * ({@code crawl_resource} only ever holds servers some job targets), so no query full-scans
+	 * the aggregate table.
 	 */
 	private OverallStatsResponse refreshOverall() {
 		Set<String> servers = new TreeSet<>();
@@ -157,9 +162,13 @@ public class StatsService {
 		long serversWithData = 0;
 		Map<String, Long> byType = new TreeMap<>();
 		for (String serverKey : servers) {
+			OptionalInt serverId = serverRegistry.idIfExists(serverKey);
+			if (serverId.isEmpty()) {
+				continue;
+			}
 			long serverTotal = 0;
 			for (String type : PlanNetTypes.TYPES) {
-				long count = resourceRepo.countByServerKeyAndType(serverKey, type);
+				long count = resourceRepo.countByIdServerIdAndIdTypeId(serverId.getAsInt(), PlanNetTypes.idOf(type));
 				if (count > 0) {
 					byType.merge(type, count, Long::sum);
 					serverTotal += count;
